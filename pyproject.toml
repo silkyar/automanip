@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "automanip"
+version = "0.1.0"
+description = "Trusted interfaces for bounded robot-policy experiments"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+# Provisional simulator recipe; install and resolve on Linux before training.
+sim = ["mani_skill==3.0.0b21", "torch==2.6.0", "numpy==2.2.6", "gymnasium==0.29.1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
