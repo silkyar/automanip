@@ -1,0 +1,26 @@
+{
+  "state": "complete",
+  "comparisons": {
+    "joint-actor-step-0": {
+      "torch_cpu_rng": true,
+      "torch_cuda_rng": true,
+      "initial_21_tensors_equal": true
+    },
+    "coordinate-actor-step-0": {
+      "torch_cpu_rng": true,
+      "torch_cuda_rng": true,
+      "initial_21_tensors_equal": true
+    },
+    "joint-actor-step-102400": {
+      "torch_cpu_rng": true,
+      "torch_cuda_rng": true
+    },
+    "coordinate-actor-step-102400": {
+      "torch_cpu_rng": true,
+      "torch_cuda_rng": true
+    }
+  },
+  "meaning": "RNGpositions andinitialtensors match; physicaltrajectories are not promisedidentical",
+  "new_simulator_transitions": 0,
+  "optimizer_calls": 0
+}

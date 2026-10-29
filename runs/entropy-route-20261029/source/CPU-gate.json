@@ -1,0 +1,46 @@
+{
+  "state": "passed",
+  "routes": [
+    {
+      "route": "high-actor-low-backup",
+      "initial_tensors_equal": 32,
+      "RNG_position_equal": true,
+      "original_alpha_optimizer_parameter_reference": true,
+      "target_delta_max_abs_error": 1.4901161193847656e-08,
+      "terminated_targets_exactly_reward": true,
+      "timeout_bootstrap_mask_unchanged": true,
+      "actor_temperature_losses_and_gradients_bit_equal": true
+    },
+    {
+      "route": "low-actor-high-backup",
+      "initial_tensors_equal": 32,
+      "RNG_position_equal": true,
+      "original_alpha_optimizer_parameter_reference": true,
+      "target_delta_max_abs_error": 2.384185791015625e-07,
+      "terminated_targets_exactly_reward": true,
+      "timeout_bootstrap_mask_unchanged": true,
+      "actor_temperature_losses_and_gradients_bit_equal": true
+    }
+  ],
+  "new_simulator_transitions": 0,
+  "optimizer_calls": 0,
+  "elapsed_seconds": 0.6136759580112994,
+  "fixed_batch_rows": 32,
+  "critic_head_forward_rows": 768,
+  "actor_forward_rows": 128,
+  "source_mapping": {
+    "replay_learner.py": "entropy_route_learner.py",
+    "replay_learner_base.py": "replay_learner.py",
+    "sac_baseline.py": "sac_baseline.py",
+    "replay_robot.py": "replay_robot.py",
+    "entropy_route.py": "entropy_route.py"
+  },
+  "source_sha256": {
+    "replay_learner.py": "f5f02cd89321fd75dca5b9db8bca08a554c5b5c37e48da6468147bf11fd35642",
+    "replay_learner_base.py": "009b4662a3b248e8e677905e2e7cafe2a69611a9259ab5fe91ec0cbe3b2efdfc",
+    "sac_baseline.py": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca",
+    "replay_robot.py": "e753b684f97b475dcadd7bdf1736395a79485ea4f431fa8f04083ffb89945d7f",
+    "entropy_route.py": "d8592895769cc450ff812c4acd722ae5c192819fce3f3aea97309a4df927285d"
+  },
+  "note": "Fixed masks include8terminations and24bootstrapping transitions; historical timeout helper byte unchanged. Does not predict robot results."
+}

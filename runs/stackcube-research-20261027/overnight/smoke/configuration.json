@@ -1,0 +1,40 @@
+{
+  "campaign_id": "stackcube-overnight-20261027-tune",
+  "hypothesis": "Refine discount near 0.9 and test small entropy bonuses, one change at a time.",
+  "requested_transitions": 25000000,
+  "training_seeds": [
+    1,
+    2,
+    3
+  ],
+  "candidates": [
+    {
+      "id": "tune-gamma0875-control",
+      "gamma": 0.875,
+      "ent_coef": 0.0,
+      "learning_rate": 0.0003,
+      "update_epochs": 8
+    },
+    {
+      "id": "tune-gamma0925-control",
+      "gamma": 0.925,
+      "ent_coef": 0.0,
+      "learning_rate": 0.0003,
+      "update_epochs": 8
+    },
+    {
+      "id": "tune-entropy001-control",
+      "gamma": 0.9,
+      "ent_coef": 0.001,
+      "learning_rate": 0.0003,
+      "update_epochs": 8
+    },
+    {
+      "id": "tune-entropy003-control",
+      "gamma": 0.9,
+      "ent_coef": 0.003,
+      "learning_rate": 0.0003,
+      "update_epochs": 8
+    }
+  ]
+}

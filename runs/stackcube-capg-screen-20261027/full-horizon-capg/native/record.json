@@ -1,0 +1,202 @@
+{
+  "job": {
+    "job_id": "stackcube-capg-screen-20261027-full-horizon-capg-seed-1",
+    "method": "full-horizon-capg",
+    "seed": 1,
+    "trainer_sha256": "8a95fca4ac08a8118ecb361fb9a458e137578673a1b4fcfe2c94fdbd3033b971",
+    "gpu": "L40S",
+    "trainer_seconds_cap": 1320,
+    "requested_steps": 25000000,
+    "actual_steps_ceiling": 24985600
+  },
+  "state": "complete",
+  "dispatched_at": 1793132445.1242487,
+  "admitted_at": 1793132453.6030066,
+  "queue_seconds": 8.478757858276367,
+  "expires_at": 1793133765.1242487,
+  "trainer_sha256": "8a95fca4ac08a8118ecb361fb9a458e137578673a1b4fcfe2c94fdbd3033b971",
+  "gpu_requested": "L40S",
+  "confirmation_queries": 0,
+  "new_training_processes": 1,
+  "gpu_actual_name": "NVIDIA L40S",
+  "versions": {
+    "torch": "2.6.0+cu124",
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "subprocess_started_at": 1793132456.649895,
+  "trainer_process_seconds": 1157.1581514000002,
+  "return_code": 0,
+  "nonfinite_diagnostic_scalars": {},
+  "actual_steps": 24985600,
+  "completed_rollouts": 488,
+  "optimizer_step_count": null,
+  "optimizer_step_upper_bound": 124928,
+  "built_in_evaluation_calls": 20,
+  "built_in_evaluation_transitions": 8000,
+  "built_in_evaluation_episodes": 160,
+  "stopped_early": false,
+  "wrapper_seconds": 1160.9514614690002,
+  "completed_at": 1793133614.554471,
+  "files": [
+    {
+      "path": "attempt.json",
+      "bytes": 138,
+      "sha256": "956ca15541db79f8cb1c65c13e71879d8d721a2810912006377fce45c474f768",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "scalars.json",
+      "bytes": 1755141,
+      "sha256": "f27fdad3e44d370be63aa6c2d8405cd313c7feed2e752fd144d19a8046c66adf",
+      "trainer_seconds": 1157.5944330692291
+    },
+    {
+      "path": "trainer.py",
+      "bytes": 25426,
+      "sha256": "8a95fca4ac08a8118ecb361fb9a458e137578673a1b4fcfe2c94fdbd3033b971",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "work/train.log",
+      "bytes": 28272,
+      "sha256": "845fa28ee6c00deda1392e790494d80de39f93b5894c4ac48ccd9dcc1a1e2023",
+      "trainer_seconds": 1155.4093425273895
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "fe0b2ad4d99fc88f0c408a1da3ccfbf80fdf51e0d643f7ad977ad4604aa8f753",
+      "trainer_seconds": 20.891204118728638
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_101.pt",
+      "bytes": 1168376,
+      "sha256": "6bf4cc43e055d18a5cd7ba5f26f2af14ca8f47c995ea3e6d51eeb86ab2446b3f",
+      "trainer_seconds": 326.64692974090576
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_126.pt",
+      "bytes": 1168376,
+      "sha256": "8f93bda0a04ff4bd72614e81daa54bfeb9da7dac5454bc35ec510670e6d03e92",
+      "trainer_seconds": 389.503545999527
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_151.pt",
+      "bytes": 1168376,
+      "sha256": "d77447fa6064909edfeaee18959a4748b543a706ee28c0b990dc43f967a50f5a",
+      "trainer_seconds": 443.318785905838
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_176.pt",
+      "bytes": 1168376,
+      "sha256": "cf59a6f4af77554d8b64ae5b8d987dc93b07ddb44b2d8d5ca19d5ba45d6e9749",
+      "trainer_seconds": 494.7159249782562
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_201.pt",
+      "bytes": 1168376,
+      "sha256": "f418920e0556b2357f682922ea6fa0c8812e0b79b7e1676b79bfe76c9fec6827",
+      "trainer_seconds": 545.0570201873779
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_226.pt",
+      "bytes": 1168376,
+      "sha256": "e98518d1b5ed731806353839ef1559e95f10bb0903c80a3b822fe6b6917268c1",
+      "trainer_seconds": 596.4781603813171
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_251.pt",
+      "bytes": 1168376,
+      "sha256": "af07c2e08977ea98c3479bd1c4ac3d3b0e8a9ad4389455e0f6bdf96bdc9eb971",
+      "trainer_seconds": 649.7573781013489
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "7f65ec0dbebb5b69bb64b0ce861de003da97674d0fc8c1e086986ed1bf84f8d6",
+      "trainer_seconds": 99.11145973205566
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_276.pt",
+      "bytes": 1168376,
+      "sha256": "8795da83930c7a0e238f35f16e8b422a067fa410483adc97d046fb7dc8c20976",
+      "trainer_seconds": 701.0135107040405
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_301.pt",
+      "bytes": 1168376,
+      "sha256": "4cc01a4a79b16205497bd725f44c0db442732a23eb7502a20fbcc421b113de44",
+      "trainer_seconds": 754.2187156677246
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_326.pt",
+      "bytes": 1168376,
+      "sha256": "abc3629671a9b6f0c193b7e09102f57c90e9267512d398a13f32f78bee737be3",
+      "trainer_seconds": 806.4798815250397
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_351.pt",
+      "bytes": 1168376,
+      "sha256": "25fb20f4a4e93e9b2978213e6067e75012dd50535bb1a30482499428b872f3b7",
+      "trainer_seconds": 855.9429314136505
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_376.pt",
+      "bytes": 1168376,
+      "sha256": "6f305de1b55ec350dbf2ca580cf7e4f035d922821a361173703a39972063027b",
+      "trainer_seconds": 907.1060519218445
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_401.pt",
+      "bytes": 1168376,
+      "sha256": "f9a093109984f5c2973527e347c3bad7c082622056ac7af80d38279e3bc9fae1",
+      "trainer_seconds": 958.5591843128204
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_426.pt",
+      "bytes": 1168376,
+      "sha256": "31b00315645ad6cda00fa15016491a4e0ec92e1530ad2ceaae961433aa03a85e",
+      "trainer_seconds": 1012.6684267520905
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_451.pt",
+      "bytes": 1168376,
+      "sha256": "a6c60e868eb94e9a58b618b8fdbbfd7492824f07cd4f2654c425220dc031bb91",
+      "trainer_seconds": 1067.4566974639893
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_476.pt",
+      "bytes": 1168376,
+      "sha256": "e4b309a18c64f89a31b90491f6a4797923cc1c5c036230110e372ac7cab0d867",
+      "trainer_seconds": 1123.755030632019
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_51.pt",
+      "bytes": 1167971,
+      "sha256": "581d6b640f4040a02bf5e56e18517bc136c1cd68138666b74d702519817cd309",
+      "trainer_seconds": 177.68072962760925
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/ckpt_76.pt",
+      "bytes": 1167971,
+      "sha256": "b11fd59e443d7cb3439f3193f938298038a82d2d9035effcba3df98e3f1dc98a",
+      "trainer_seconds": 259.5731382369995
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/events.out.tfevents.1793132474.modal.8.0",
+      "bytes": 893107,
+      "sha256": "81b9ecada792f0a9185ab037e8676039b86552d39c5a345a4cd0cb909f4255fa",
+      "trainer_seconds": 1154.8113176822662
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-capg-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "c296c9a7142aeaa65353566902984b17f1b76764cdef2a60de1022b13ec5f383",
+      "trainer_seconds": 1155.1023297309875
+    }
+  ],
+  "output_bytes": 27235869
+}

@@ -1,0 +1,23 @@
+{
+  "observed_at": 1793203769.058909,
+  "original_app_id": "ap-aOgs5ZVpEL4grVdeeVjNIi",
+  "local_launch_record_exists": false,
+  "original_lifecycle": {
+    "app_state": "APP_STATE_STOPPED",
+    "created_at": 1793203472.900456,
+    "created_by": "silkyarora-2188",
+    "stopped_at": 1793203698.214004
+  },
+  "existing_paths": {
+    "attempt.json": {
+      "exists": false
+    },
+    "receipt.json": {
+      "exists": false
+    },
+    "run/report.json": {
+      "exists": false
+    }
+  },
+  "safe_to_submit": true
+}

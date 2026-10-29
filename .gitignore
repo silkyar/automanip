@@ -3,3 +3,12 @@ __pycache__/
 .venv/
 checkpoints/
 runs/
+.venv311/
+.venv-modal/
+.python/
+.uv-cache/
+.runtime/
+.env
+.env.*
+# Independently versioned publication extraction and portable Git bundle.
+/publication/

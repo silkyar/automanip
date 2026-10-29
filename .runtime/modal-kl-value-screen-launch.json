@@ -1,0 +1,18 @@
+{
+  "experiment_id": "stackcube-kl-value-screen-20261028",
+  "function_call_id": "fc-01M61F8GAKT8WH4DYJ8W4EV74T",
+  "gpu_requested": "L40S",
+  "training_seeds": [
+    1
+  ],
+  "methods": [
+    "scratch-kl-stop-control",
+    "scratch-kl-stop-critic"
+  ],
+  "budget_cap_usd": 3.0,
+  "ledger_snapshot_sha256": "6337f0ec545f842ca9f2652558690f7530eb09137150ecf794a16f940e23b48f",
+  "plan_sha256": "ca78ba1537582330dcfaddcd0586f0b2ee37cf732b87d1702aafe88a57db40a9",
+  "summary_path": "stackcube-kl-value-screen-20261028/summary.json",
+  "confirmation_queries": 0,
+  "app_id": "ap-1EVyFxgga0JHgUxU70mYgg"
+}

@@ -1,0 +1,249 @@
+{
+  "experiment_id": "stackcube-sac-screen-seed1-20261027",
+  "state": "complete",
+  "archived_at": 1793139920.026023,
+  "files": [
+    {
+      "path": "summary.json",
+      "bytes": 12016,
+      "sha256": "2449446dcfba1e7fe8d0d1733933dfa91c148bab3900a9e27c301284e60bd1ce",
+      "remote_path": "stackcube-sac-screen-seed1-20261027/summary.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "sac/native/record.json",
+      "bytes": 8375,
+      "sha256": "eac478a579cc7d30585fd5592570602c72d7f164e4ffbaf5cf52f98c7671b993",
+      "remote_path": "trial/record.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/attempt.json",
+      "bytes": 125,
+      "sha256": "c8e44029357bd4bdff873d8f0d922f91162ecc5abd1444fb541082dbe09a6989",
+      "remote_path": "trial/attempt.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/train.log",
+      "bytes": 3152,
+      "sha256": "57369a5e7011a4c905892bea954661f5034f6a785ba9ee51a509c3a6f54b6481",
+      "remote_path": "trial/train.log",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/trainer.py",
+      "bytes": 20278,
+      "sha256": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca",
+      "remote_path": "trial/trainer.py",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/report.json",
+      "bytes": 2231,
+      "sha256": "3d2f8c8e213659bc13bf6d2358283d5240c9341d7efc266a26380e9c97ef09e3",
+      "remote_path": "trial/run/report.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/run.json",
+      "bytes": 1109,
+      "sha256": "f55769e762a5fbd8cc569d6f7e0cb74ba21d22b6b302f583e921dbf22933370d",
+      "remote_path": "trial/run/run.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/training.jsonl",
+      "bytes": 2738751,
+      "sha256": "2954bfb14de9e9f40b1fcc91a85a7ee52e80419bf1bcc5c9fa5c3f401ce723b6",
+      "remote_path": "trial/run/training.jsonl",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/actor-final/manifest.json",
+      "bytes": 287,
+      "sha256": "b1e25946082ce81602bb45dfe1f995115fd6d24ff9fb4f2c6eefd13cdeefe026",
+      "remote_path": "trial/run/actor-final/manifest.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/actor-final/weights.json",
+      "bytes": 1638749,
+      "sha256": "0002c0ec0c0204bbc0c59d0513c247ab969174c202dad4cdf4c5e6dd143efb5a",
+      "remote_path": "trial/run/actor-final/weights.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/actor-step-0/manifest.json",
+      "bytes": 287,
+      "sha256": "8f658f26c2aa0d026d8bb385410c273f7c8efe8fc8f3f4c19b852247320f8e26",
+      "remote_path": "trial/run/actor-step-0/manifest.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/actor-step-0/weights.json",
+      "bytes": 1687178,
+      "sha256": "6f768e630c4751d41ed3bd032a21078ea44d12c219c00bf6e606caae0e4c149f",
+      "remote_path": "trial/run/actor-step-0/weights.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/actor-step-102400/manifest.json",
+      "bytes": 287,
+      "sha256": "585c45fd75590e2e68187ba049127d8788ce303066191e23bc7e81646869b9df",
+      "remote_path": "trial/run/actor-step-102400/manifest.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/actor-step-102400/weights.json",
+      "bytes": 1647225,
+      "sha256": "7c2a0747dd53137acd7628d0475f81c90819527b7eee210065b7328a27477677",
+      "remote_path": "trial/run/actor-step-102400/weights.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/actor-step-153600/manifest.json",
+      "bytes": 287,
+      "sha256": "34b8f914d52bd65421d93e5fdbadab5df4111ebe040d49ec603367574c99e34c",
+      "remote_path": "trial/run/actor-step-153600/manifest.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/actor-step-153600/weights.json",
+      "bytes": 1642657,
+      "sha256": "e64132bfde2c2f4a23e41ddd7bfc9a569a767e5a4ec03334273bd0c5c576cafa",
+      "remote_path": "trial/run/actor-step-153600/weights.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/actor-step-204800/manifest.json",
+      "bytes": 287,
+      "sha256": "8897a66cfbd7c68957ac997ba5d5367c22296f9386986b840351048cd5b9083c",
+      "remote_path": "trial/run/actor-step-204800/manifest.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/actor-step-204800/weights.json",
+      "bytes": 1640715,
+      "sha256": "35d6d009596dd1ca5d290df40f12908deae22a2bc67925f7be603438272dd595",
+      "remote_path": "trial/run/actor-step-204800/weights.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/actor-step-256000/manifest.json",
+      "bytes": 287,
+      "sha256": "a7cb19ec06bec5fcd5e788f8e4ddd637f03aad5b312d9286cb787864b7b4f3c6",
+      "remote_path": "trial/run/actor-step-256000/manifest.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/actor-step-256000/weights.json",
+      "bytes": 1638881,
+      "sha256": "56b37154efa2564b42ea5553bcd5b41bdae27b0cc5e54e146aaabbcc0f646ad1",
+      "remote_path": "trial/run/actor-step-256000/weights.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/actor-step-51200/manifest.json",
+      "bytes": 287,
+      "sha256": "9303678415b4996f164d7845b5ae786893eba7fc9dfa26bce16709839d688de2",
+      "remote_path": "trial/run/actor-step-51200/manifest.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/native/run/actor-step-51200/weights.json",
+      "bytes": 1680469,
+      "sha256": "2614e4988b838bda9ca22206ee23f02aa2ed0e17fd5cb237a8d311e7d31b57f6",
+      "remote_path": "trial/run/actor-step-51200/weights.json",
+      "volume": "automanip-modal-sac-screen-seed1-20261027"
+    },
+    {
+      "path": "sac/step-51200/manifest.json",
+      "bytes": 287,
+      "sha256": "9303678415b4996f164d7845b5ae786893eba7fc9dfa26bce16709839d688de2",
+      "remote_path": "stackcube-sac-screen-seed1-20261027/step-51200/manifest.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "sac/step-51200/weights.json",
+      "bytes": 1680469,
+      "sha256": "2614e4988b838bda9ca22206ee23f02aa2ed0e17fd5cb237a8d311e7d31b57f6",
+      "remote_path": "stackcube-sac-screen-seed1-20261027/step-51200/weights.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "development/2614e4988b838bda9ca22206ee23f02aa2ed0e17fd5cb237a8d311e7d31b57f6.json",
+      "bytes": 82597,
+      "sha256": "6e2078cc4397271fed962f31e8c1a7ddc95eaf57d48ef86feb5bd49a11054b6e",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/2614e4988b838bda9ca22206ee23f02aa2ed0e17fd5cb237a8d311e7d31b57f6/development/result.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "sac/step-102400/manifest.json",
+      "bytes": 287,
+      "sha256": "585c45fd75590e2e68187ba049127d8788ce303066191e23bc7e81646869b9df",
+      "remote_path": "stackcube-sac-screen-seed1-20261027/step-102400/manifest.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "sac/step-102400/weights.json",
+      "bytes": 1647225,
+      "sha256": "7c2a0747dd53137acd7628d0475f81c90819527b7eee210065b7328a27477677",
+      "remote_path": "stackcube-sac-screen-seed1-20261027/step-102400/weights.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "development/7c2a0747dd53137acd7628d0475f81c90819527b7eee210065b7328a27477677.json",
+      "bytes": 83164,
+      "sha256": "d1d5a29cdee8b7a268b94d3d64cb0f6784ceba8e64c35e71340b930159dcd960",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/7c2a0747dd53137acd7628d0475f81c90819527b7eee210065b7328a27477677/development/result.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "sac/step-256000/manifest.json",
+      "bytes": 287,
+      "sha256": "a7cb19ec06bec5fcd5e788f8e4ddd637f03aad5b312d9286cb787864b7b4f3c6",
+      "remote_path": "stackcube-sac-screen-seed1-20261027/step-256000/manifest.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "sac/step-256000/weights.json",
+      "bytes": 1638881,
+      "sha256": "56b37154efa2564b42ea5553bcd5b41bdae27b0cc5e54e146aaabbcc0f646ad1",
+      "remote_path": "stackcube-sac-screen-seed1-20261027/step-256000/weights.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "development/56b37154efa2564b42ea5553bcd5b41bdae27b0cc5e54e146aaabbcc0f646ad1.json",
+      "bytes": 82986,
+      "sha256": "b37981552afedbdbb968834abd862d2926d10a78acb660757e3bb646a46e578f",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/56b37154efa2564b42ea5553bcd5b41bdae27b0cc5e54e146aaabbcc0f646ad1/development/result.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "sac/step-262432/manifest.json",
+      "bytes": 287,
+      "sha256": "b1e25946082ce81602bb45dfe1f995115fd6d24ff9fb4f2c6eefd13cdeefe026",
+      "remote_path": "stackcube-sac-screen-seed1-20261027/step-262432/manifest.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "sac/step-262432/weights.json",
+      "bytes": 1638749,
+      "sha256": "0002c0ec0c0204bbc0c59d0513c247ab969174c202dad4cdf4c5e6dd143efb5a",
+      "remote_path": "stackcube-sac-screen-seed1-20261027/step-262432/weights.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "development/0002c0ec0c0204bbc0c59d0513c247ab969174c202dad4cdf4c5e6dd143efb5a.json",
+      "bytes": 82967,
+      "sha256": "91a7e9f09f6ab690cef8fe1f0459b0e780478cff103851f2c20185036a857a9d",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/0002c0ec0c0204bbc0c59d0513c247ab969174c202dad4cdf4c5e6dd143efb5a/development/result.json",
+      "volume": "automanip-modal-validation"
+    }
+  ],
+  "total_bytes": 21302106,
+  "new_training_jobs": 0,
+  "new_evaluations": 0,
+  "confirmation_queries": 0
+}

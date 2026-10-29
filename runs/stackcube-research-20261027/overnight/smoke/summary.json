@@ -1,0 +1,335 @@
+{
+  "campaign": {
+    "campaign_id": "stackcube-overnight-20261027-tune",
+    "hypothesis": "Refine discount near 0.9 and test small entropy bonuses, one change at a time.",
+    "requested_transitions": 25000000,
+    "training_seeds": [
+      1,
+      2,
+      3
+    ],
+    "candidates": [
+      {
+        "id": "tune-gamma0875-control",
+        "gamma": 0.875,
+        "ent_coef": 0.0,
+        "learning_rate": 0.0003,
+        "update_epochs": 8
+      },
+      {
+        "id": "tune-gamma0925-control",
+        "gamma": 0.925,
+        "ent_coef": 0.0,
+        "learning_rate": 0.0003,
+        "update_epochs": 8
+      },
+      {
+        "id": "tune-entropy001-control",
+        "gamma": 0.9,
+        "ent_coef": 0.001,
+        "learning_rate": 0.0003,
+        "update_epochs": 8
+      },
+      {
+        "id": "tune-entropy003-control",
+        "gamma": 0.9,
+        "ent_coef": 0.003,
+        "learning_rate": 0.0003,
+        "update_epochs": 8
+      }
+    ]
+  },
+  "configuration_sha256": "8db0c268adc6f9b3ec4f520674efb2f751f675906d2dc338d704b3516478c50d",
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "official_ppo_sha256": "3fa4818861d428480244aae889bc679b2c8e89b59d6289014003c266a84dbab0",
+  "mode": "smoke",
+  "runner_sha256": "0f4ab49845e95c6000e16c9e0b259f8e060e7163d810117d9ca553939b09c380",
+  "evaluation_split": "development",
+  "confirmation_queries": 0,
+  "versions": {
+    "mani_skill": "3.0.0b21",
+    "torch": "2.6.0",
+    "sapien": "3.0.0b1",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1",
+    "tensorboard": "2.20.0"
+  },
+  "runs": [
+    {
+      "candidate": {
+        "id": "tune-gamma0875-control",
+        "gamma": 0.875,
+        "ent_coef": 0.0,
+        "learning_rate": 0.0003,
+        "update_epochs": 8
+      },
+      "seed": 1,
+      "name": "tune-gamma0875-control-seed-1-smoke",
+      "status": "complete",
+      "command": [
+        "/opt/automanip-stackcube-venv/bin/python",
+        "/opt/automanip-credit-20261026/smoke-work/trainer-program/ppo.py",
+        "--env-id",
+        "StackCube-v1",
+        "--seed",
+        "1",
+        "--num-envs",
+        "8",
+        "--update-epochs",
+        "8",
+        "--num-minibatches",
+        "2",
+        "--total-timesteps",
+        "400",
+        "--num-eval-envs",
+        "8",
+        "--no-capture-video",
+        "--no-track",
+        "--exp-name",
+        "tune-gamma0875-control-seed-1-smoke",
+        "--gamma",
+        "0.875",
+        "--ent-coef",
+        "0.0",
+        "--learning-rate",
+        "0.0003"
+      ],
+      "started_at": 1793069902.9259326,
+      "configuration_sha256": "8db0c268adc6f9b3ec4f520674efb2f751f675906d2dc338d704b3516478c50d",
+      "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+      "hypothesis": "Refine discount near 0.9 and test small entropy bonuses, one change at a time.",
+      "environment_transitions": 400,
+      "trainer_process_seconds": 15.042227952973917,
+      "rollout_seconds": 0.7798624038696289,
+      "optimization_seconds": 0.11991739273071289,
+      "finished_at": 1793069933.5431647,
+      "final": {
+        "report": {
+          "task_fingerprint": "b524435b1d25e915ff9cbdc1cc18f129ded8257d12129f5a426bad9fa6e22d4f",
+          "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+          "weights_sha256": "e7d2f91615403b2a59023bb0f9cf748c574bec315405286db391554a8c8e27b2",
+          "split": "development",
+          "smoke": true,
+          "episode_count": 8,
+          "successes_at_end": 0,
+          "success_at_end_rate": 0.0,
+          "success_ever_rate": 0.0,
+          "failed_episodes": 0,
+          "wilson_95_interval": [
+            0.0,
+            0.32440756488388023
+          ],
+          "diagnostics_rates": {
+            "grasp": 0.0,
+            "lift": 0.0,
+            "transport": 0.0,
+            "placement": 0.0,
+            "release": 0.0,
+            "contact_free_placement": 0.0,
+            "stable_stack_10_steps": 0.0
+          },
+          "first_unmet_stages": {
+            "never_grasped": 8
+          },
+          "episodes": [
+            {
+              "outcome": {
+                "terminal_success": false,
+                "ever_success": false,
+                "terminated": false,
+                "truncated": true,
+                "failed": false
+              },
+              "steps": 50,
+              "error": "",
+              "diagnostics": {
+                "ever": {
+                  "grasp": false,
+                  "lift": false,
+                  "transport": false,
+                  "placement": false,
+                  "release": false,
+                  "contact_free_placement": false,
+                  "stable_stack_10_steps": false
+                },
+                "max_stable_steps": 0,
+                "first_unmet_stage": "never_grasped"
+              }
+            },
+            {
+              "outcome": {
+                "terminal_success": false,
+                "ever_success": false,
+                "terminated": false,
+                "truncated": true,
+                "failed": false
+              },
+              "steps": 50,
+              "error": "",
+              "diagnostics": {
+                "ever": {
+                  "grasp": false,
+                  "lift": false,
+                  "transport": false,
+                  "placement": false,
+                  "release": false,
+                  "contact_free_placement": false,
+                  "stable_stack_10_steps": false
+                },
+                "max_stable_steps": 0,
+                "first_unmet_stage": "never_grasped"
+              }
+            },
+            {
+              "outcome": {
+                "terminal_success": false,
+                "ever_success": false,
+                "terminated": false,
+                "truncated": true,
+                "failed": false
+              },
+              "steps": 50,
+              "error": "",
+              "diagnostics": {
+                "ever": {
+                  "grasp": false,
+                  "lift": false,
+                  "transport": false,
+                  "placement": false,
+                  "release": false,
+                  "contact_free_placement": false,
+                  "stable_stack_10_steps": false
+                },
+                "max_stable_steps": 0,
+                "first_unmet_stage": "never_grasped"
+              }
+            },
+            {
+              "outcome": {
+                "terminal_success": false,
+                "ever_success": false,
+                "terminated": false,
+                "truncated": true,
+                "failed": false
+              },
+              "steps": 50,
+              "error": "",
+              "diagnostics": {
+                "ever": {
+                  "grasp": false,
+                  "lift": false,
+                  "transport": false,
+                  "placement": false,
+                  "release": false,
+                  "contact_free_placement": false,
+                  "stable_stack_10_steps": false
+                },
+                "max_stable_steps": 0,
+                "first_unmet_stage": "never_grasped"
+              }
+            },
+            {
+              "outcome": {
+                "terminal_success": false,
+                "ever_success": false,
+                "terminated": false,
+                "truncated": true,
+                "failed": false
+              },
+              "steps": 50,
+              "error": "",
+              "diagnostics": {
+                "ever": {
+                  "grasp": false,
+                  "lift": false,
+                  "transport": false,
+                  "placement": false,
+                  "release": false,
+                  "contact_free_placement": false,
+                  "stable_stack_10_steps": false
+                },
+                "max_stable_steps": 0,
+                "first_unmet_stage": "never_grasped"
+              }
+            },
+            {
+              "outcome": {
+                "terminal_success": false,
+                "ever_success": false,
+                "terminated": false,
+                "truncated": true,
+                "failed": false
+              },
+              "steps": 50,
+              "error": "",
+              "diagnostics": {
+                "ever": {
+                  "grasp": false,
+                  "lift": false,
+                  "transport": false,
+                  "placement": false,
+                  "release": false,
+                  "contact_free_placement": false,
+                  "stable_stack_10_steps": false
+                },
+                "max_stable_steps": 0,
+                "first_unmet_stage": "never_grasped"
+              }
+            },
+            {
+              "outcome": {
+                "terminal_success": false,
+                "ever_success": false,
+                "terminated": false,
+                "truncated": true,
+                "failed": false
+              },
+              "steps": 50,
+              "error": "",
+              "diagnostics": {
+                "ever": {
+                  "grasp": false,
+                  "lift": false,
+                  "transport": false,
+                  "placement": false,
+                  "release": false,
+                  "contact_free_placement": false,
+                  "stable_stack_10_steps": false
+                },
+                "max_stable_steps": 0,
+                "first_unmet_stage": "never_grasped"
+              }
+            },
+            {
+              "outcome": {
+                "terminal_success": false,
+                "ever_success": false,
+                "terminated": false,
+                "truncated": true,
+                "failed": false
+              },
+              "steps": 50,
+              "error": "",
+              "diagnostics": {
+                "ever": {
+                  "grasp": false,
+                  "lift": false,
+                  "transport": false,
+                  "placement": false,
+                  "release": false,
+                  "contact_free_placement": false,
+                  "stable_stack_10_steps": false
+                },
+                "max_stable_steps": 0,
+                "first_unmet_stage": "never_grasped"
+              }
+            }
+          ]
+        },
+        "evaluation_seconds": 10.032278161961585,
+        "checkpoint_sha256": "2c720b62afcf9321f84d2e221e0af4e23bcad68be3d3d899b823cc70167b7b9e",
+        "weights_sha256": "e7d2f91615403b2a59023bb0f9cf748c574bec315405286db391554a8c8e27b2"
+      }
+    }
+  ]
+}

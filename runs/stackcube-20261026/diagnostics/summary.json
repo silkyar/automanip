@@ -1,0 +1,272 @@
+{
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "cases": [
+    {
+      "case_id": "seed-1-dev-1-success",
+      "training_seed": 1,
+      "development_episode_index": 1,
+      "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+      "weights_sha256": "fbd931840353ab30f725637f76bcf289deb59c7d564b8d4823fafcc5be91ae4e",
+      "selection": "first matching public development episode; descriptive, not representative sampling",
+      "reference_diagnostics": {
+        "ever": {
+          "grasp": true,
+          "lift": true,
+          "transport": true,
+          "placement": true,
+          "release": true,
+          "contact_free_placement": true,
+          "stable_stack_10_steps": true
+        },
+        "max_stable_steps": 13,
+        "first_unmet_stage": "success"
+      },
+      "reference_success": true,
+      "replay_diagnostics": {
+        "ever": {
+          "grasp": true,
+          "lift": true,
+          "transport": true,
+          "placement": true,
+          "release": true,
+          "contact_free_placement": true,
+          "stable_stack_10_steps": true
+        },
+        "max_stable_steps": 13,
+        "first_unmet_stage": "success"
+      },
+      "replay_success": true,
+      "reference_matches_replay": true
+    },
+    {
+      "case_id": "seed-1-dev-0-grasped_not_lifted",
+      "training_seed": 1,
+      "development_episode_index": 0,
+      "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+      "weights_sha256": "fbd931840353ab30f725637f76bcf289deb59c7d564b8d4823fafcc5be91ae4e",
+      "selection": "first matching public development episode; descriptive, not representative sampling",
+      "reference_diagnostics": {
+        "ever": {
+          "grasp": true,
+          "lift": false,
+          "transport": false,
+          "placement": false,
+          "release": false,
+          "contact_free_placement": false,
+          "stable_stack_10_steps": false
+        },
+        "max_stable_steps": 0,
+        "first_unmet_stage": "grasped_not_lifted"
+      },
+      "reference_success": false,
+      "replay_diagnostics": {
+        "ever": {
+          "grasp": true,
+          "lift": false,
+          "transport": false,
+          "placement": false,
+          "release": false,
+          "contact_free_placement": false,
+          "stable_stack_10_steps": false
+        },
+        "max_stable_steps": 0,
+        "first_unmet_stage": "grasped_not_lifted"
+      },
+      "replay_success": false,
+      "reference_matches_replay": true
+    },
+    {
+      "case_id": "seed-1-dev-3-released_not_stable",
+      "training_seed": 1,
+      "development_episode_index": 3,
+      "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+      "weights_sha256": "fbd931840353ab30f725637f76bcf289deb59c7d564b8d4823fafcc5be91ae4e",
+      "selection": "first matching public development episode; descriptive, not representative sampling",
+      "reference_diagnostics": {
+        "ever": {
+          "grasp": true,
+          "lift": true,
+          "transport": true,
+          "placement": true,
+          "release": true,
+          "contact_free_placement": true,
+          "stable_stack_10_steps": false
+        },
+        "max_stable_steps": 8,
+        "first_unmet_stage": "released_not_stable"
+      },
+      "reference_success": false,
+      "replay_diagnostics": {
+        "ever": {
+          "grasp": true,
+          "lift": true,
+          "transport": true,
+          "placement": true,
+          "release": true,
+          "contact_free_placement": true,
+          "stable_stack_10_steps": false
+        },
+        "max_stable_steps": 8,
+        "first_unmet_stage": "released_not_stable"
+      },
+      "replay_success": false,
+      "reference_matches_replay": true
+    },
+    {
+      "case_id": "seed-2-dev-2-success",
+      "training_seed": 2,
+      "development_episode_index": 2,
+      "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+      "weights_sha256": "9d0f8ecd9c1c932d3db7552353601361c586d38e1f6467eca8312abf3bf56920",
+      "selection": "first matching public development episode; descriptive, not representative sampling",
+      "reference_diagnostics": {
+        "ever": {
+          "grasp": true,
+          "lift": true,
+          "transport": true,
+          "placement": true,
+          "release": true,
+          "contact_free_placement": true,
+          "stable_stack_10_steps": true
+        },
+        "max_stable_steps": 25,
+        "first_unmet_stage": "success"
+      },
+      "reference_success": true,
+      "replay_diagnostics": {
+        "ever": {
+          "grasp": true,
+          "lift": true,
+          "transport": true,
+          "placement": true,
+          "release": true,
+          "contact_free_placement": true,
+          "stable_stack_10_steps": true
+        },
+        "max_stable_steps": 25,
+        "first_unmet_stage": "success"
+      },
+      "replay_success": true,
+      "reference_matches_replay": true
+    },
+    {
+      "case_id": "seed-3-dev-1-success",
+      "training_seed": 3,
+      "development_episode_index": 1,
+      "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+      "weights_sha256": "4d58a835ebb49499feafcabbbc12c2cdfe7a3f9808acd1fc457944270f6feaf0",
+      "selection": "first matching public development episode; descriptive, not representative sampling",
+      "reference_diagnostics": {
+        "ever": {
+          "grasp": true,
+          "lift": true,
+          "transport": true,
+          "placement": true,
+          "release": true,
+          "contact_free_placement": true,
+          "stable_stack_10_steps": false
+        },
+        "max_stable_steps": 6,
+        "first_unmet_stage": "success"
+      },
+      "reference_success": true,
+      "replay_diagnostics": {
+        "ever": {
+          "grasp": true,
+          "lift": true,
+          "transport": true,
+          "placement": true,
+          "release": true,
+          "contact_free_placement": true,
+          "stable_stack_10_steps": false
+        },
+        "max_stable_steps": 6,
+        "first_unmet_stage": "success"
+      },
+      "replay_success": true,
+      "reference_matches_replay": true
+    },
+    {
+      "case_id": "seed-1-dev-16-placed_still_grasped",
+      "training_seed": 1,
+      "development_episode_index": 16,
+      "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+      "weights_sha256": "fbd931840353ab30f725637f76bcf289deb59c7d564b8d4823fafcc5be91ae4e",
+      "selection": "first matching public development episode; descriptive, not representative sampling",
+      "reference_diagnostics": {
+        "ever": {
+          "grasp": true,
+          "lift": true,
+          "transport": true,
+          "placement": true,
+          "release": false,
+          "contact_free_placement": false,
+          "stable_stack_10_steps": false
+        },
+        "max_stable_steps": 0,
+        "first_unmet_stage": "placed_still_grasped"
+      },
+      "reference_success": false,
+      "replay_diagnostics": {
+        "ever": {
+          "grasp": true,
+          "lift": true,
+          "transport": true,
+          "placement": true,
+          "release": false,
+          "contact_free_placement": false,
+          "stable_stack_10_steps": false
+        },
+        "max_stable_steps": 0,
+        "first_unmet_stage": "placed_still_grasped"
+      },
+      "replay_success": false,
+      "reference_matches_replay": true
+    },
+    {
+      "case_id": "seed-1-dev-48-lost_stack_before_horizon",
+      "training_seed": 1,
+      "development_episode_index": 48,
+      "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+      "weights_sha256": "fbd931840353ab30f725637f76bcf289deb59c7d564b8d4823fafcc5be91ae4e",
+      "selection": "first matching public development episode; descriptive, not representative sampling",
+      "reference_diagnostics": {
+        "ever": {
+          "grasp": true,
+          "lift": true,
+          "transport": true,
+          "placement": true,
+          "release": true,
+          "contact_free_placement": true,
+          "stable_stack_10_steps": true
+        },
+        "max_stable_steps": 11,
+        "first_unmet_stage": "lost_stack_before_horizon"
+      },
+      "reference_success": false,
+      "replay_diagnostics": {
+        "ever": {
+          "grasp": true,
+          "lift": true,
+          "transport": true,
+          "placement": true,
+          "release": true,
+          "contact_free_placement": true,
+          "stable_stack_10_steps": true
+        },
+        "max_stable_steps": 11,
+        "first_unmet_stage": "lost_stack_before_horizon"
+      },
+      "replay_success": false,
+      "reference_matches_replay": true
+    }
+  ],
+  "stage_histories": {
+    "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+    "episode_count": 384,
+    "reference_matches": 384,
+    "note": "Development-only descriptive replays; original frozen benchmark reports remain authoritative."
+  },
+  "source_sha256": "47b3ab8893aaaa406faf4b243342e17a6c3460eb7802a84a25c7f61aa7a708ae",
+  "note": "Additional development-only replays. Frozen baseline scores and confirmation episodes are unchanged."
+}

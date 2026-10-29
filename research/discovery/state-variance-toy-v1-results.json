@@ -1,0 +1,1005 @@
+{
+  "hypothesis": "State-conditioned per-step variance resolves exploration-versus-precision conflict without changing deterministic actor.",
+  "prespecified_gate": "At least5percentage-point mean final success gain over best conventional control and strict paired wins over both in at least4/6 seeds.",
+  "gate_passed": false,
+  "summary": {
+    "global-std": 1.0,
+    "global-std-entropy-decay": 0.9990234375,
+    "state-std": 0.88671875
+  },
+  "paired_wins_over_both_controls": 0,
+  "records": [
+    {
+      "seed": 0,
+      "method": "global-std",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 432,
+          "episodes": 512,
+          "coarse_std": 0.31658872961997986,
+          "fine_std": 0.31658872961997986,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 294,
+          "episodes": 512,
+          "coarse_std": 0.16544532775878906,
+          "fine_std": 0.16544532775878906,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.10250366479158401,
+          "fine_std": 0.10250366479158401,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.06988382339477539,
+          "fine_std": 0.06988382339477539,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.049297090619802475,
+          "fine_std": 0.049297090619802475,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 0,
+      "method": "global-std-entropy-decay",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 434,
+          "episodes": 512,
+          "coarse_std": 0.3159019351005554,
+          "fine_std": 0.3159019351005554,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 294,
+          "episodes": 512,
+          "coarse_std": 0.16548600792884827,
+          "fine_std": 0.16548600792884827,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.10150706022977829,
+          "fine_std": 0.10150706022977829,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.07034049928188324,
+          "fine_std": 0.07034049928188324,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.04967600479722023,
+          "fine_std": 0.04967600479722023,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 0,
+      "method": "state-std",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 468,
+          "episodes": 512,
+          "coarse_std": 0.16746965050697327,
+          "fine_std": 0.009967146441340446,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 367,
+          "episodes": 512,
+          "coarse_std": 0.14675605297088623,
+          "fine_std": 0.0075374869629740715,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 261,
+          "episodes": 512,
+          "coarse_std": 0.13977183401584625,
+          "fine_std": 0.006775671616196632,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 179,
+          "episodes": 512,
+          "coarse_std": 0.13874080777168274,
+          "fine_std": 0.006743581034243107,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 164,
+          "episodes": 512,
+          "coarse_std": 0.1709240823984146,
+          "fine_std": 0.006743859499692917,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "method": "global-std",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.32465869188308716,
+          "fine_std": 0.32465869188308716,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 506,
+          "episodes": 512,
+          "coarse_std": 0.17575575411319733,
+          "fine_std": 0.17575575411319733,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 490,
+          "episodes": 512,
+          "coarse_std": 0.11532760411500931,
+          "fine_std": 0.11532760411500931,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.07727348804473877,
+          "fine_std": 0.07727348804473877,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.05767512694001198,
+          "fine_std": 0.05767512694001198,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "method": "global-std-entropy-decay",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.3245601952075958,
+          "fine_std": 0.3245601952075958,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 505,
+          "episodes": 512,
+          "coarse_std": 0.1762077659368515,
+          "fine_std": 0.1762077659368515,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 477,
+          "episodes": 512,
+          "coarse_std": 0.11517563462257385,
+          "fine_std": 0.11517563462257385,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.08047071844339371,
+          "fine_std": 0.08047071844339371,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.05951899662613869,
+          "fine_std": 0.05951899662613869,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "method": "state-std",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 465,
+          "episodes": 512,
+          "coarse_std": 0.25095415115356445,
+          "fine_std": 0.009177496656775475,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 445,
+          "episodes": 512,
+          "coarse_std": 0.230329692363739,
+          "fine_std": 0.006991483271121979,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 424,
+          "episodes": 512,
+          "coarse_std": 0.23573297262191772,
+          "fine_std": 0.007131311576813459,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 503,
+          "episodes": 512,
+          "coarse_std": 0.22678989171981812,
+          "fine_std": 0.006781517527997494,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.29236555099487305,
+          "fine_std": 0.006760965101420879,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "method": "global-std",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 398,
+          "episodes": 512,
+          "coarse_std": 0.3117735981941223,
+          "fine_std": 0.3117735981941223,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 455,
+          "episodes": 512,
+          "coarse_std": 0.15938988327980042,
+          "fine_std": 0.15938988327980042,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.0932823047041893,
+          "fine_std": 0.0932823047041893,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.06105773150920868,
+          "fine_std": 0.06105773150920868,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.04410244897007942,
+          "fine_std": 0.04410244897007942,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "method": "global-std-entropy-decay",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 398,
+          "episodes": 512,
+          "coarse_std": 0.31163281202316284,
+          "fine_std": 0.31163281202316284,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 454,
+          "episodes": 512,
+          "coarse_std": 0.1593686044216156,
+          "fine_std": 0.1593686044216156,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.09311695396900177,
+          "fine_std": 0.09311695396900177,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.06083100661635399,
+          "fine_std": 0.06083100661635399,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.04369346424937248,
+          "fine_std": 0.04369346424937248,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "method": "state-std",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 487,
+          "episodes": 512,
+          "coarse_std": 0.16118699312210083,
+          "fine_std": 0.007274024188518524,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 420,
+          "episodes": 512,
+          "coarse_std": 0.16996264457702637,
+          "fine_std": 0.007170198485255241,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 399,
+          "episodes": 512,
+          "coarse_std": 0.16655951738357544,
+          "fine_std": 0.007252975832670927,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 464,
+          "episodes": 512,
+          "coarse_std": 0.14179158210754395,
+          "fine_std": 0.006924683228135109,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.11628590524196625,
+          "fine_std": 0.0067379469983279705,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "method": "global-std",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 320,
+          "episodes": 512,
+          "coarse_std": 0.30384019017219543,
+          "fine_std": 0.30384019017219543,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.16426023840904236,
+          "fine_std": 0.16426023840904236,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 503,
+          "episodes": 512,
+          "coarse_std": 0.10597482323646545,
+          "fine_std": 0.10597482323646545,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.07362808287143707,
+          "fine_std": 0.07362808287143707,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.05401844158768654,
+          "fine_std": 0.05401844158768654,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "method": "global-std-entropy-decay",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 323,
+          "episodes": 512,
+          "coarse_std": 0.30375242233276367,
+          "fine_std": 0.30375242233276367,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.16434979438781738,
+          "fine_std": 0.16434979438781738,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.10489735007286072,
+          "fine_std": 0.10489735007286072,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.07431651651859283,
+          "fine_std": 0.07431651651859283,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.05371928587555885,
+          "fine_std": 0.05371928587555885,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "method": "state-std",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 1.094447135925293,
+          "fine_std": 0.007663802243769169,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.532848060131073,
+          "fine_std": 0.0067379469983279705,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.17215967178344727,
+          "fine_std": 0.0067379469983279705,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.15683184564113617,
+          "fine_std": 0.0067379469983279705,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.13885262608528137,
+          "fine_std": 0.0067379469983279705,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "method": "global-std",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 468,
+          "episodes": 512,
+          "coarse_std": 0.30741333961486816,
+          "fine_std": 0.30741333961486816,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 452,
+          "episodes": 512,
+          "coarse_std": 0.16404923796653748,
+          "fine_std": 0.16404923796653748,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 507,
+          "episodes": 512,
+          "coarse_std": 0.10296880453824997,
+          "fine_std": 0.10296880453824997,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.06877749413251877,
+          "fine_std": 0.06877749413251877,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.04946846142411232,
+          "fine_std": 0.04946846142411232,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "method": "global-std-entropy-decay",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 457,
+          "episodes": 512,
+          "coarse_std": 0.30721431970596313,
+          "fine_std": 0.30721431970596313,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 456,
+          "episodes": 512,
+          "coarse_std": 0.16376850008964539,
+          "fine_std": 0.16376850008964539,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 501,
+          "episodes": 512,
+          "coarse_std": 0.103444904088974,
+          "fine_std": 0.103444904088974,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.06857289373874664,
+          "fine_std": 0.06857289373874664,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.050241705030202866,
+          "fine_std": 0.050241705030202866,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "method": "state-std",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 485,
+          "episodes": 512,
+          "coarse_std": 0.2045058012008667,
+          "fine_std": 0.008164793252944946,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.17566761374473572,
+          "fine_std": 0.006741011049598455,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.1763319969177246,
+          "fine_std": 0.00673877215012908,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.17001685500144958,
+          "fine_std": 0.0067379469983279705,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.17372936010360718,
+          "fine_std": 0.0067379469983279705,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "method": "global-std",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 492,
+          "episodes": 512,
+          "coarse_std": 0.3123369812965393,
+          "fine_std": 0.3123369812965393,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 483,
+          "episodes": 512,
+          "coarse_std": 0.16347719728946686,
+          "fine_std": 0.16347719728946686,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 510,
+          "episodes": 512,
+          "coarse_std": 0.09831634908914566,
+          "fine_std": 0.09831634908914566,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.06634747236967087,
+          "fine_std": 0.06634747236967087,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.049063555896282196,
+          "fine_std": 0.049063555896282196,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "method": "global-std-entropy-decay",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 492,
+          "episodes": 512,
+          "coarse_std": 0.3122154772281647,
+          "fine_std": 0.3122154772281647,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 482,
+          "episodes": 512,
+          "coarse_std": 0.16326871514320374,
+          "fine_std": 0.16326871514320374,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.09826788306236267,
+          "fine_std": 0.09826788306236267,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 506,
+          "episodes": 512,
+          "coarse_std": 0.06629902869462967,
+          "fine_std": 0.06629902869462967,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 509,
+          "episodes": 512,
+          "coarse_std": 0.048263732343912125,
+          "fine_std": 0.048263732343912125,
+          "deterministic_reach": 512
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "method": "state-std",
+      "curve": [
+        {
+          "iteration": 0,
+          "successes": 0,
+          "episodes": 512,
+          "coarse_std": 0.6065306663513184,
+          "fine_std": 0.6065306663513184,
+          "deterministic_reach": 0
+        },
+        {
+          "iteration": 200,
+          "successes": 469,
+          "episodes": 512,
+          "coarse_std": 0.13085007667541504,
+          "fine_std": 0.008708039298653603,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 400,
+          "successes": 448,
+          "episodes": 512,
+          "coarse_std": 0.12800948321819305,
+          "fine_std": 0.007465500384569168,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 600,
+          "successes": 426,
+          "episodes": 512,
+          "coarse_std": 0.11484147608280182,
+          "fine_std": 0.0071516744792461395,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 800,
+          "successes": 457,
+          "episodes": 512,
+          "coarse_std": 0.10716824233531952,
+          "fine_std": 0.006890424527227879,
+          "deterministic_reach": 512
+        },
+        {
+          "iteration": 1000,
+          "successes": 512,
+          "episodes": 512,
+          "coarse_std": 0.08486760407686234,
+          "fine_std": 0.006738902535289526,
+          "deterministic_reach": 512
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 58.91373479200411,
+  "source_sha256": "484c738614d069ce5c50cc26f9f302df383839ae99aed19f4bf6f2e009150210",
+  "exploration_source_sha256": "dcb6067deb89c34e5a865255942afdfe0c6ad8f96f0472ec4f81d8755928a0e2",
+  "accounting": {
+    "toy_transitions": 9216000,
+    "actor_updates": 72000,
+    "critic_updates": 72000,
+    "training_minibatch_rows": 36864000,
+    "deterministic_toy_eval_actions": 110592,
+    "robot_transitions": 0,
+    "simulator_queries": 0,
+    "gpu_seconds": 0,
+    "dollars_spent": 0
+  },
+  "limitations": [
+    "Hand-designed two-step toy, not robotic dynamics or a StackCube performance prediction.",
+    "State-variance head adds parameters/forward/backward computation; transition count alone is not compute equality.",
+    "Common random variates across methods do not imply equal state/action trajectories.",
+    "No optimal-action labels, demonstrations, teacher or analytic environment gradient enters training."
+  ]
+}

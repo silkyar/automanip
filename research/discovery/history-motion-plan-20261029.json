@@ -1,0 +1,149 @@
+{
+  "admitted": false,
+  "experiment": "history-motion-prediction-20261029",
+  "files": [
+    {
+      "path": "runs/temperature-sufficiency-20261028/run/actor-step-51200-trajectory.npz",
+      "sha256": "acb0cc1b03a017cfead47f0b999c13a9b712be1ea727d161e6c0170392e69b9e",
+      "steps": 51200,
+      "seed": 1,
+      "collector": "baseline"
+    },
+    {
+      "path": "runs/temperature-sufficiency-20261028/run/actor-step-102400-trajectory.npz",
+      "sha256": "37163a3013beae44ce936273636f953ed19fe74c17916f854a03a33092d20006",
+      "steps": 102400,
+      "seed": 1,
+      "collector": "baseline"
+    },
+    {
+      "path": "runs/temperature-sufficiency-20261028/run/actor-step-256000-trajectory.npz",
+      "sha256": "fdd401f214a41f8f7dcd26df6c7d4797b0dd0e3be3ce7ab8fc6750cf123d6332",
+      "steps": 256000,
+      "seed": 1,
+      "collector": "baseline"
+    },
+    {
+      "path": "runs/joint-exploration-20261029/joint/run/actor-step-51200-trajectory.npz",
+      "sha256": "24e572a169607864edf71bd2955b959d6263f181ed063df2bf8ed58c3cfa33c2",
+      "steps": 51200,
+      "seed": 1,
+      "collector": "joint"
+    },
+    {
+      "path": "runs/joint-exploration-20261029/joint/run/actor-step-102400-trajectory.npz",
+      "sha256": "9d22cd4e4b3c0456bc1f90a06f0919cf37b265963c70748d540e89cfe8b7ac12",
+      "steps": 102400,
+      "seed": 1,
+      "collector": "joint"
+    },
+    {
+      "path": "runs/joint-exploration-20261029/coordinate/run/actor-step-51200-trajectory.npz",
+      "sha256": "f829c8ac4305383e367ecc7ce4db54c95b6210835cf2bd031adfc60e34c7f81f",
+      "steps": 51200,
+      "seed": 1,
+      "collector": "coordinate"
+    },
+    {
+      "path": "runs/joint-exploration-20261029/coordinate/run/actor-step-102400-trajectory.npz",
+      "sha256": "afc0a9cf44d6028c0001275d2fd7004ddcadfc52550871bbd02d620e1cc45699",
+      "steps": 102400,
+      "seed": 1,
+      "collector": "coordinate"
+    },
+    {
+      "path": "runs/full-stacking-curve-20261029/baseline/run/actor-step-51200-trajectory.npz",
+      "sha256": "00c86bf2066db3228257c24b3d71547cd4a37949f93bea1e6e3db7d303a79224",
+      "steps": 51200,
+      "seed": 2,
+      "collector": "baseline"
+    },
+    {
+      "path": "runs/full-stacking-curve-20261029/baseline/run/actor-step-102400-trajectory.npz",
+      "sha256": "34d0107800a8550f45fa3db3979946616fe730ac51828347a60f3fa5c1aa18fb",
+      "steps": 102400,
+      "seed": 2,
+      "collector": "baseline"
+    },
+    {
+      "path": "runs/full-stacking-curve-20261029/baseline/run/actor-step-256000-trajectory.npz",
+      "sha256": "486ee9056dab0a9685265dac56dd1071317576c3c97e1f3bd7aefe88e90696f1",
+      "steps": 256000,
+      "seed": 2,
+      "collector": "baseline"
+    },
+    {
+      "path": "runs/full-stacking-curve-20261029/baseline/run/actor-step-512000-trajectory.npz",
+      "sha256": "adbb36b9cb6d328caf05856216ea536ed29c71d2308eb4de4dc607aef0e9931f",
+      "steps": 512000,
+      "seed": 2,
+      "collector": "baseline"
+    },
+    {
+      "path": "runs/full-stacking-curve-20261029/coordinate/run/actor-step-51200-trajectory.npz",
+      "sha256": "f57c34f522f818e592d8855cf41d147c1cb029845805020258e9a96e738328ee",
+      "steps": 51200,
+      "seed": 2,
+      "collector": "coordinate"
+    },
+    {
+      "path": "runs/full-stacking-curve-20261029/coordinate/run/actor-step-102400-trajectory.npz",
+      "sha256": "8d584be9a15a28f13a99d3228c4496b11bd4fd583b35e3aac9268ed5ffedb7bb",
+      "steps": 102400,
+      "seed": 2,
+      "collector": "coordinate"
+    },
+    {
+      "path": "runs/full-stacking-curve-20261029/coordinate/run/actor-step-256000-trajectory.npz",
+      "sha256": "dcba4d33ca07d52c06f6d48483c95ee9363b4e5ea559418eaa3bcde891e5cedc",
+      "steps": 256000,
+      "seed": 2,
+      "collector": "coordinate"
+    },
+    {
+      "path": "runs/full-stacking-curve-20261029/coordinate/run/actor-step-512000-trajectory.npz",
+      "sha256": "7f1b86d55198cf14e44d3d05c16c0e06130505d62fd48afb50bf18f95dc9fe1a",
+      "steps": 512000,
+      "seed": 2,
+      "collector": "coordinate"
+    }
+  ],
+  "fit_seconds_cap": 180,
+  "environment_queries": 0,
+  "new_teacher_data": 0,
+  "GPU_work": 0,
+  "folds": 4,
+  "split_group": "trainingseed+environmentlane held together across all checkpoints/collectors",
+  "subsample": "t=3,6,...48 of each complete50frame exact-step window, previous transition nonterminal/nontruncated and observation continuity required",
+  "target": "next cubeA position minus current cubeA position,3Dmeters",
+  "current_features": "state48,executedaction8,phase/49,log2steps/51200,collectoronehot3,seedonehot2",
+  "history_features": "previous cubeA displacement3 and previous action8",
+  "models": [
+    "current128",
+    "history128",
+    "shuffled128",
+    "current256",
+    "kinematic128"
+  ],
+  "model": "Shared seeded Gaussian random Fourier features128 or256, plus standardized linear inputs; ridge1, float64; train-only centering/scaling; no hyperparameter search",
+  "shuffle": "For each train/test partition separately: replace history by nearest-current-input neighbor from different lane within seed/collector/checkpoint/12-step phase bin, using train-only scaling; not a bijective permutation. No target used; record feature-space distance, no conditional-exchangeability claim.",
+  "primary": "current cubeA height>.04m and TCP distance<.06m, geometry only, no privileged stage flag",
+  "sufficiency": "Atleast16 distinct seed+lane clusters per trainingseed in primary; otherwise inconclusive. Promising predictive effect requires history distance-MAE reduction>=20% AND>=.25mm vs EACH other model including kinematic128 in EACH trainingseed; paired cluster-bootstrap95%lower difference vs current256 positive in each seed. This is no GPU admission or proof of Markov insufficiency.",
+  "bootstrap": "500 draws clustered by seed+lane separately within each seed; np.random.default_rng(93422500+trainingseed)",
+  "negative_controls": "Zero/persistence motion baselines; current256 capacity check; shuffled history; all rows and phase strata reported regardless of gate",
+  "conclusion_scope": "Only these fixed supervised predictors on recent training windows. No fullreplay, criticgroundtruth, causal contact-state explanation, algorithmrank or RLgain inference.",
+  "source_sha256": "a0cc0d6698012ee1a6e3c9f0a5fa94cc57124a5d14c84b2f5dbe9d05de2eed4d",
+  "kinematic_urdf": ".venv311/lib/python3.11/site-packages/mani_skill/assets/robots/panda/panda_v3.urdf",
+  "kinematic_helper_sha256": "f6fb65177962cc9740038152da287f2c5f40ed1ef746a05eed2c86e0975ed929",
+  "kinematic_urdf_sha256": "d040277352476639950e2ddce1dff8a1c0e95df470e5e9ed186cd01c468fa412",
+  "kinematic_control": "9 features: TCPv3/omega3 and rigid-attachment cube velocity proxyv_tcp+omega cross(pA-pTCP), plus2zero slots; analytic current-q/qvel/publicURDF only. FK agreement<=20um;64 directionalJacobian-vsFK centraldifference tests epsilon1e-6 maxerror<=1e-6 beforefit. Countanalyticcalls/assistance, neveruseoracle cube velocity. Also FK TCP rotation disagreement<=50microradians versus observed TCP quaternion.",
+  "prefit_amendment": "Added one current-kinematic128 essentialcounterargument control beforeanyfits/results, independent reviewer recommendation. Originalplan/source preserved .runtime/history-motion-plan-before-kinematic-control.json and .runtime/history-motion-before-kinematic-control.py.",
+  "gate_comparators": [
+    "current128",
+    "current256",
+    "shuffled128",
+    "kinematic128"
+  ],
+  "zero_and_persistence": "Descriptive controls, not gate comparators",
+  "phase_reporting": "Emit every checkpoint primary count/error plus all phase-bin and primary/nonprimary strata, regardless of gate"
+}

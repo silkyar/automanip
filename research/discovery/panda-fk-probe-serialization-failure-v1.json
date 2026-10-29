@@ -1,0 +1,85 @@
+{
+  "state": "started",
+  "config": {
+    "base_link": "panda_link0",
+    "tcp_link": "panda_hand_tcp",
+    "base_translation_m": [
+      -0.615,
+      0.0,
+      0.0
+    ],
+    "base_quaternion_wxyz": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "joint_names": [
+      "panda_joint1",
+      "panda_joint2",
+      "panda_joint3",
+      "panda_joint4",
+      "panda_joint5",
+      "panda_joint6",
+      "panda_joint7"
+    ],
+    "position_max_tolerance_m": 0.0001,
+    "orientation_max_tolerance_rad": 0.001,
+    "jacobian_max_abs_tolerance": 0.0001,
+    "finite_difference_delta_rad": 1e-06,
+    "finite_difference_flat_pose_indices": [
+      0,
+      63,
+      512,
+      1023,
+      1536,
+      2047,
+      2560,
+      3199
+    ],
+    "finite_difference_directions": "all seven canonical joint directions at each of eight poses",
+    "dls": {
+      "desired_translation_m": [
+        0.0,
+        0.0,
+        0.005
+      ],
+      "desired_rotation_vector_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "damping": 0.05,
+      "pose_row_weights": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "unit_caveat": "Translation rows are m/rad, rotation rows rad/rad; conditioning depends on this explicit unscaled weighting",
+      "iterations": 1,
+      "joint_clipping": false
+    },
+    "no_tolerance_tuning": true,
+    "no_simulator": true,
+    "no_fitting": true
+  },
+  "source_and_input_sha256": {
+    "research/discovery/panda_fk_probe.py": "fff7cf0f39cc95cfa8ebded085150c1fec4598de624f08e1b16ef87b93a5983b",
+    ".venv311/lib/python3.11/site-packages/mani_skill/assets/robots/panda/panda_v3.urdf": "d040277352476639950e2ddce1dff8a1c0e95df470e5e9ed186cd01c468fa412",
+    "runs/temperature-sufficiency-20261028/run/actor-step-256000-trajectory.npz": "fdd401f214a41f8f7dcd26df6c7d4797b0dd0e3be3ce7ab8fc6750cf123d6332",
+    ".venv311/lib/python3.11/site-packages/mani_skill/envs/tasks/tabletop/stack_cube.py": "ff76ae608f79ba3ea13334e61ccb72f291660f9461895c70e3c30f8390694440",
+    ".venv311/lib/python3.11/site-packages/mani_skill/utils/scene_builder/table/scene_builder.py": "807202b8a03b7cd63b02f73348d8a8710e87cedfe2fd35791cff80fb7a670b1d",
+    ".venv311/lib/python3.11/site-packages/mani_skill/agents/robots/panda/panda.py": "6ae7c2f5eb7b4cae4e8e6b34dc84d3ddc6fb8ec54295c6ea2eab8659a5f3107e",
+    ".venv311/lib/python3.11/site-packages/mani_skill/agents/robots/panda/panda_wristcam.py": "792c3ae7609a03cd987deb42a9ab0718071491a27f6972628c99bab476662b24",
+    ".venv311/lib/python3.11/site-packages/mani_skill/utils/structs/pose.py": "efa4a3aecfb2ddff18867baa31936287e3717278677e89886e7356d525aa2ba0",
+    "research/discovery/temperature_grasp_diagnostic.py": "6b63aa20b31080fbad33c85a46d1b2e7fced6b008cd2e4e3704410c796f24dc7"
+  },
+  "structural_prior": "Public pinned Panda URDF plus task-defined base transform; assisted diagnostic only",
+  "simulator_queries": 0,
+  "simulator_state_writes": 0,
+  "training_optimizer_calls": 0,
+  "evaluator_queries": 0
+}

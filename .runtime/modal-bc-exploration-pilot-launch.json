@@ -1,0 +1,11 @@
+{
+  "experiment_id": "stackcube-bc-exploration-pilot-20261028",
+  "function_call_id": "fc-01M61DKE9HGYTGD91C2KACJRT4",
+  "summary_path": "stackcube-bc-exploration-pilot-20261028/summary.json",
+  "budget_cap_usd": 3.0,
+  "teacher_weights_sha256": "ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16",
+  "plan_sha256": "ae8d4becc9ac272d3ab6512acafff846757615cc950242fb0d8a224bdc166ddf",
+  "ledger_snapshot_sha256": "1fa62cf7ff9bea970ae37c74591bf0d9a09e39c2031f1b523c4d43e6e70dda6c",
+  "confirmation_queries": 0,
+  "app_id": "ap-bOBQJKXj8qg3MiLITcrYGF"
+}

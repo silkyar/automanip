@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "path": "summary.json",
+      "bytes": 1102706,
+      "sha256": "0ae5f2d22ad5ff76cf9eabad16912afdd6dc3dbd616413d5d050bfb2f4639829"
+    }
+  ],
+  "policies": [
+    {
+      "seed": 1,
+      "weights_sha256": "ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16",
+      "successes": 497,
+      "episodes": 512,
+      "evaluation_seconds": 106.296295921
+    },
+    {
+      "seed": 2,
+      "weights_sha256": "c3abf0e70973e39c3616f0a217f75583aeff56aea86ad253370e501a24472959",
+      "successes": 489,
+      "episodes": 512,
+      "evaluation_seconds": 100.401235661
+    },
+    {
+      "seed": 3,
+      "weights_sha256": "ec3202403c8cb7c705c1591ce61d61a242d4d9ab957241b4b98d8697bef5cb10",
+      "successes": 487,
+      "episodes": 512,
+      "evaluation_seconds": 100.834196175
+    }
+  ],
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "mean_success": 0.958984375,
+  "target_met": false,
+  "no_requeries": true
+}

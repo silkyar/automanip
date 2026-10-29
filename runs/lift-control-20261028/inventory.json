@@ -1,0 +1,32 @@
+[
+  {
+    "path": "attempt.json",
+    "bytes": 116,
+    "sha256": "0115bfd42553457162663128aa76965ed3b6e9f429c626b42a9c2bf68a648718"
+  },
+  {
+    "path": "diagnostic.log",
+    "bytes": 1262,
+    "sha256": "ce0c6eed7999e9ce2007835291b935f3f52337fa4df8a7d9f9630842fb629e89"
+  },
+  {
+    "path": "run/A.npz",
+    "bytes": 160670,
+    "sha256": "330b9cd3a2fdcbb8fd1ba4b339bf5c8e75895a91813ec3638da4cdad08046c9a"
+  },
+  {
+    "path": "run/B.npz",
+    "bytes": 45384,
+    "sha256": "00237483eed71e3ac9f217be3420156ac715438d83075fec7f0a50ac0ab1d875"
+  },
+  {
+    "path": "run/report.json",
+    "bytes": 2852,
+    "sha256": "18db2fe6d66706020d7379efbed3bc05b75862fcf0b65383c95e306b0f61b2a3"
+  },
+  {
+    "path": "wrapper-receipt.json",
+    "bytes": 489,
+    "sha256": "85b9cf2f030cb5d7fc323543a32078d69db883310492be193eef7f349c046c29"
+  }
+]

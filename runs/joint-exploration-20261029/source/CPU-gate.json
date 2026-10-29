@@ -1,0 +1,126 @@
+{
+  "state": "passed",
+  "records": [
+    {
+      "mode": "joint",
+      "epsilon": 0.0,
+      "constructor_and_proposal_global_RNG_parity": true,
+      "proposal_and_density_bit_equal": true,
+      "unchanged_actor_state": true,
+      "mask_semantics_passed": true,
+      "work": {
+        "policy_proposal_rows": 512,
+        "coin_scalar_draws": 4096,
+        "uniform_scalar_draws": 4096,
+        "rows_with_any_uniform": 0,
+        "rows_with_all_uniform": 0,
+        "uniform_per_coordinate": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "mode": "joint",
+      "epsilon": 0.1,
+      "constructor_and_proposal_global_RNG_parity": true,
+      "proposal_and_density_bit_equal": true,
+      "unchanged_actor_state": true,
+      "mask_semantics_passed": true,
+      "work": {
+        "policy_proposal_rows": 512,
+        "coin_scalar_draws": 4096,
+        "uniform_scalar_draws": 4096,
+        "rows_with_any_uniform": 48,
+        "rows_with_all_uniform": 48,
+        "uniform_per_coordinate": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "mode": "coordinate",
+      "epsilon": 0.0,
+      "constructor_and_proposal_global_RNG_parity": true,
+      "proposal_and_density_bit_equal": true,
+      "unchanged_actor_state": true,
+      "mask_semantics_passed": true,
+      "work": {
+        "policy_proposal_rows": 512,
+        "coin_scalar_draws": 4096,
+        "uniform_scalar_draws": 4096,
+        "rows_with_any_uniform": 0,
+        "rows_with_all_uniform": 0,
+        "uniform_per_coordinate": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "mode": "coordinate",
+      "epsilon": 0.1,
+      "constructor_and_proposal_global_RNG_parity": true,
+      "proposal_and_density_bit_equal": true,
+      "unchanged_actor_state": true,
+      "mask_semantics_passed": true,
+      "work": {
+        "policy_proposal_rows": 512,
+        "coin_scalar_draws": 4096,
+        "uniform_scalar_draws": 4096,
+        "rows_with_any_uniform": 293,
+        "rows_with_all_uniform": 0,
+        "uniform_per_coordinate": [
+          48,
+          52,
+          50,
+          57,
+          59,
+          50,
+          53,
+          53
+        ]
+      }
+    }
+  ],
+  "independent_generator_position_equal_between_modes": true,
+  "shared_uniform_proposals_equal": true,
+  "source_mapping": {
+    "joint_exploration_train.py": "joint_exploration_train.py",
+    "replay_robot.py": "replay_robot_exploration.py",
+    "replay_learner.py": "replay_learner_lowalpha.py",
+    "sac_baseline.py": "sac_baseline.py",
+    "joint_exploration.py": "joint_exploration.py"
+  },
+  "source_sha256": {
+    "joint_exploration_train.py": "fc86b1cc12eb406a46f178d8eb4150f6cde5ecde2795cc3413f149627f43003b",
+    "replay_robot.py": "7c0f6390691f9f01aef90843ba1e46c062906ad40952ec830d2f02ca8d54d0d1",
+    "replay_learner.py": "aeea61b2a55458a207f1dccb6c996a411acda67bc3238dc9c9c33fec7bd965bf",
+    "sac_baseline.py": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca",
+    "joint_exploration.py": "895010dca8affe6bc3361ce0adf39863158433d2ca980dffded58df85afe43a7"
+  },
+  "new_simulator_transitions": 0,
+  "optimizer_calls": 0,
+  "actor_forward_rows": 4096,
+  "elapsed_seconds": 0.05998550000367686,
+  "post_gate_logging_only_change": "Addcollectorcountercopytoper5120stepJSONcurve; no sampler/model/RNG/optimizer change"
+}

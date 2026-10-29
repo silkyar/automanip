@@ -1,0 +1,97 @@
+{
+  "candidate_id": "stackcube-full-horizon-20261027",
+  "state": "complete",
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "preregistration_sha256": "32a63fcd93d2cef359742e374c51353d09b0902a9d7ec3d735ba057053367b0f",
+  "per_seed": [
+    {
+      "seed": 1,
+      "weights_sha256": "39ba198d0c98af14a3d2965ef9a3be859f31aa3c4889db3da311da910c2da153",
+      "successes": 478,
+      "episodes": 512,
+      "success_rate": 0.93359375,
+      "wilson_95_interval": [
+        0.9086366418684898,
+        0.9520929338718228
+      ],
+      "failed_episodes": 0,
+      "evaluation_seconds": 98.337524962,
+      "gpu_requested": "L40S",
+      "gpu_actual_name": "NVIDIA L40S",
+      "queue_seconds": 6.376833915710449,
+      "exact_report_path": "runs/private-confirmation/stackcube-full-horizon-20261027/seed-1.json",
+      "exact_report_sha256": "1f0266708319f409adf22ea397dccb2581502ebe21640206d4cbdbc8ba53e7df"
+    },
+    {
+      "seed": 2,
+      "weights_sha256": "117e2be0c0dffd8dd91f5d5093cbd69cb80f5579505b4ed04203a9f57b75299b",
+      "successes": 483,
+      "episodes": 512,
+      "success_rate": 0.943359375,
+      "wilson_95_interval": [
+        0.9198386034432544,
+        0.9602767735524707
+      ],
+      "failed_episodes": 0,
+      "evaluation_seconds": 99.99590912400001,
+      "gpu_requested": "L40S",
+      "gpu_actual_name": "NVIDIA L40S",
+      "queue_seconds": 4.435012578964233,
+      "exact_report_path": "runs/private-confirmation/stackcube-full-horizon-20261027/seed-2.json",
+      "exact_report_sha256": "5cc91b1d960c936455b6f329e4495b0eb2dc8aed806de4ce82d4ae29d161b135"
+    },
+    {
+      "seed": 3,
+      "weights_sha256": "69064ec80d1649e82d3083838236209848f49fbac154332e64dfd6020edda0a6",
+      "successes": 484,
+      "episodes": 512,
+      "success_rate": 0.9453125,
+      "wilson_95_interval": [
+        0.9220969712394934,
+        0.9618955660073142
+      ],
+      "failed_episodes": 0,
+      "evaluation_seconds": 145.437167122,
+      "gpu_requested": "L4",
+      "gpu_actual_name": "not captured by original L4 adapter",
+      "queue_seconds": 1154.113822221756,
+      "exact_report_path": "runs/private-confirmation/stackcube-full-horizon-20261027/seed-3.json",
+      "exact_report_sha256": "13cf2679a9443aa3985357d1b9b0aa4a92ef6464d924e64618ba8ca3d00cd1f4"
+    }
+  ],
+  "total_successes": 1445,
+  "total_episodes": 1536,
+  "mean_training_seed_success": 0.9407552083333334,
+  "minimum_training_seed_success": 0.93359375,
+  "training_seed_sample_standard_deviation": 0.006278418464188122,
+  "training_seed_range": [
+    0.93359375,
+    0.9453125
+  ],
+  "eligibility_rule": {
+    "mean_success_at_least": 0.9,
+    "every_training_seed_success_at_least": 0.85
+  },
+  "research_reference_eligible": true,
+  "policy_execution_failures": 0,
+  "post_persistence_transport_failures": 2,
+  "repeated_policies": 0,
+  "new_training_runs": 0,
+  "private_final_holdout": false,
+  "sample_efficiency_discovery": false,
+  "uncertainty_note": "Per-policy Wilson intervals describe episode uncertainty. The same512episodes are shared across policies, so no pooled independent-episode interval is claimed. Three training seeds provide limited evidence about the broader training-seed distribution.",
+  "hardware_note": "Seeds 1 and 2 requested and observed NVIDIA L40S after exact development parity; seed 3 requested L4, and its actual name was not captured by the old adapter. Evaluation hardware is reported separately and is not a training speed comparison.",
+  "reported_cost_by_app_usd": {
+    "ap-uDjtW4TMoecYCfqcZ31fmj": "0",
+    "ap-iRYUW23YEpPqQ6AHra4XOq": "0.13973110",
+    "ap-c7LGxj3lnhepSEyI7dXt8c": "0",
+    "ap-x0OVxynO2Bapp5vxZcN8g4": "0.03656949",
+    "ap-8A3U3Ee2io7IMxOwzgmDTK": "0.05573010"
+  },
+  "reported_total_cost_usd": "0.23203069",
+  "billing_may_lag": true,
+  "all_apps_stopped": true,
+  "active_containers": [],
+  "transport_note": "GPU records completed and committed before two SDK Blob/DNS return failures. Original failed coordinator audits preserved; exact GPU reports used without rerunning. Future adapter returns small metadata and CPU reads the committed report from Volume.",
+  "transport_reconciliation": ".runtime/modal-full-horizon-reconciled-summary.json"
+}

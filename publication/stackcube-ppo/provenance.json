@@ -1,0 +1,25 @@
+{
+  "upstream_commit": "6226567ce326625fa6eacf9aeb3f4008e4339f7e",
+  "upstream_release": "v3.0.0b21",
+  "ppo_sha256": "3fa4818861d428480244aae889bc679b2c8e89b59d6289014003c266a84dbab0",
+  "historical_runs": "AutoManip training seeds1,2,3; final checkpoints; new extraction not rerun",
+  "aggregate_ledger_sha256": "822c200402b24b57ea264fb634d3465dab5360658d536a1614db5d98e954d103",
+  "results_csv_sha256": "b5566f3c63244b8e626f5149b494743dab7f97c8f0bbb9b5bbd494be49c33e2b",
+  "task": "StackCube-v1",
+  "controller": "pd_joint_delta_pos",
+  "observation_dim": 48,
+  "action_dim": 8,
+  "horizon": 50,
+  "robot": "panda_wristcam",
+  "task_source_sha256": "ff76ae608f79ba3ea13334e61ccb72f291660f9461895c70e3c30f8390694440",
+  "independent_protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "versions": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "assistance": "Random initialization, no pretrained policies/demonstrations",
+  "published_data": "Aggregates only; no protected episode seeds, individual benchmark outputs, credentials or checkpoints."
+}

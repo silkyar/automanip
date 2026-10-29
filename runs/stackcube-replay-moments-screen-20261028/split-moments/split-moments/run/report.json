@@ -1,0 +1,120 @@
+{
+  "state": "complete",
+  "config": {
+    "method": "split-moments",
+    "seed": 1,
+    "num_envs": 64,
+    "total_transitions": 1024000,
+    "max_seconds": 600.0,
+    "batch_size": 2048,
+    "collection_block": 128,
+    "critic_updates_per_block": 8,
+    "learning_starts": 5000,
+    "replay_capacity": 1048576,
+    "critic_width": 256,
+    "gamma": 0.99,
+    "learning_rate": 0.001,
+    "policy_delay": 3
+  },
+  "versions": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "gpu": "NVIDIA L40S",
+  "source_sha256": "e753b684f97b475dcadd7bdf1736395a79485ea4f431fa8f04083ffb89945d7f",
+  "counts": {
+    "transitions": 409600,
+    "vector_step_calls": 6400,
+    "completed_episodes": 8192,
+    "explicit_reset_episodes": 64,
+    "inference_seconds": 4.812651315997385,
+    "simulator_seconds": 115.96521779199921,
+    "replay_seconds": 4.707057307998742,
+    "learner_seconds": 446.37485873899993,
+    "export_seconds": 2.0200175589999176,
+    "training_success_at_end_sum": 0,
+    "initial_random_transitions": 5056
+  },
+  "source_files_sha256": {
+    "replay_robot.py": "e753b684f97b475dcadd7bdf1736395a79485ea4f431fa8f04083ffb89945d7f",
+    "replay_learner.py": "009b4662a3b248e8e677905e2e7cafe2a69611a9259ab5fe91ec0cbe3b2efdfc",
+    "sac_baseline.py": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca"
+  },
+  "checkpoint_exports": [
+    {
+      "label": "actor-step-0",
+      "transitions": 0,
+      "elapsed_seconds": 8.149475183,
+      "weights_sha256": "6f768e630c4751d41ed3bd032a21078ea44d12c219c00bf6e606caae0e4c149f",
+      "critic_updates": 0,
+      "actor_updates": 0
+    },
+    {
+      "label": "actor-step-51200",
+      "transitions": 51200,
+      "elapsed_seconds": 75.06454907,
+      "weights_sha256": "694e26857e7db35baf92b259ee2fcdb43fd48401951640b9c7fbdd16152b55d1",
+      "critic_updates": 2888,
+      "actor_updates": 962
+    },
+    {
+      "label": "actor-step-102400",
+      "transitions": 102400,
+      "elapsed_seconds": 147.828852213,
+      "weights_sha256": "ab8ac727fcdba06eed05d4352f83f218f9cf316591a8749532b5965e45c5f18e",
+      "critic_updates": 6088,
+      "actor_updates": 2029
+    },
+    {
+      "label": "actor-step-256000",
+      "transitions": 256000,
+      "elapsed_seconds": 365.385921211,
+      "weights_sha256": "65debf6ef1ecef06ba1e4f298dfe51d844875b0d024a38e3fee534e283872329",
+      "critic_updates": 15688,
+      "actor_updates": 5229
+    },
+    {
+      "label": "actor-final",
+      "transitions": 409600,
+      "elapsed_seconds": 583.75890237,
+      "weights_sha256": "7e64d0fe4020d43b6dbb39e1d32d5deeb28f2e0b5bd54161b8882d9b23aaa049",
+      "critic_updates": 25283,
+      "actor_updates": 8427
+    }
+  ],
+  "optimizer_work": {
+    "critic_forward_rows": 241635328,
+    "actor_forward_rows": 69038080,
+    "critic_sampled_rows": 51779584,
+    "actor_sampled_rows": 17258496,
+    "critic_optimizer_calls": 25283,
+    "actor_optimizer_calls": 8427,
+    "alpha_optimizer_calls": 8427
+  },
+  "new_teacher_transitions": 0,
+  "demonstrations": 0,
+  "pretrained_weights": false,
+  "planning_queries": 0,
+  "extra_simulator_queries": 0,
+  "evaluation_transitions": 0,
+  "observation_dim": 48,
+  "action_dim": 8,
+  "horizon": 50,
+  "task_source_sha256": "ff76ae608f79ba3ea13334e61ccb72f291660f9461895c70e3c30f8390694440",
+  "algorithm": "Matched vectorized SAC/CrossQ-inspired moment study; not an official CrossQ reproduction",
+  "warmup_note": "BRN100000 critic updates; <=64000 updates here, so normalized arms remain in BN warmup.",
+  "elapsed_seconds": 583.760814298,
+  "stopped_by": "deadline",
+  "replay_size": 409600,
+  "critic_updates": 25283,
+  "actor_updates": 8427,
+  "expected_critic_updates_without_deadline": 25288,
+  "normalization_steps": [
+    25283,
+    25283,
+    25283
+  ]
+}

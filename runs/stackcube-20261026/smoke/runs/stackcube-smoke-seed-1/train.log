@@ -1,0 +1,22 @@
+/opt/automanip-stackcube-venv/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/automanip-stackcube-venv/lib/python3.11/site-packages/sapien/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/automanip-stackcube-venv/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+Running training
+####
+args.num_iterations=1 args.num_envs=8 args.num_eval_envs=8
+args.minibatch_size=200 args.batch_size=400 args.update_epochs=8
+####
+Epoch: 1, global_step=0
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=2.4053964614868164
+eval_episode_len_mean=50.0
+eval_reward_mean=0.048107922077178955
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-smoke-seed-1/ckpt_1.pt
+SPS: 122
+model saved to runs/stackcube-smoke-seed-1/final_ckpt.pt

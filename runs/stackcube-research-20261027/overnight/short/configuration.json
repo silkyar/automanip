@@ -1,0 +1,33 @@
+{
+  "campaign_id": "stackcube-overnight-20261027-short",
+  "hypothesis": "At half the transition budget, test faster learning and fewer PPO optimization epochs against a paired control.",
+  "requested_transitions": 12500000,
+  "training_seeds": [
+    1,
+    2,
+    3
+  ],
+  "candidates": [
+    {
+      "id": "short-entropy003-control",
+      "gamma": 0.9,
+      "ent_coef": 0.003,
+      "learning_rate": 0.0003,
+      "update_epochs": 8
+    },
+    {
+      "id": "short-entropy003-lr2",
+      "gamma": 0.9,
+      "ent_coef": 0.003,
+      "learning_rate": 0.0006,
+      "update_epochs": 8
+    },
+    {
+      "id": "short-entropy003-epochs4",
+      "gamma": 0.9,
+      "ent_coef": 0.003,
+      "learning_rate": 0.0003,
+      "update_epochs": 4
+    }
+  ]
+}

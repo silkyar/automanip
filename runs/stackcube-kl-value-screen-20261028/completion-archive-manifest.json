@@ -1,0 +1,262 @@
+{
+  "experiment_id": "stackcube-kl-value-screen-20261028",
+  "files": [
+    {
+      "path": "development/5790c94cc54f14ba60f3887f535e2a98fff182cf58a67b98a48d354fd2e3f33f.json",
+      "bytes": 81001,
+      "sha256": "415825876b26cdf18f90bb95f730411e58078249fd0062ae7dca1e39a4d2f558"
+    },
+    {
+      "path": "development/7e9599d1aa081727617dfa77f1a12282edd38519e5e2d0457064a1217140a953.json",
+      "bytes": 82740,
+      "sha256": "108aa70c17c9d9f1624d6ef25aee525429eef1bbbcf01fbddc342d919beafe05"
+    },
+    {
+      "path": "development/a95c61401ddcb446c4eb50d871b0832ffc868f343556e67004191561ae17458c.json",
+      "bytes": 82699,
+      "sha256": "fe1310f2b875280dc92d1e3ab9db4bd37112ad4d4e965fae978ab9c7862b5092"
+    },
+    {
+      "path": "development/d64d542136228ca3202a936f45cdf00c8490de002a8426fc36df00542fd25cd0.json",
+      "bytes": 82087,
+      "sha256": "b0dc505cd01b87ef231c45aec233633e362c35256ee2fb6766b6176d4c54f65b"
+    },
+    {
+      "path": "original-archive-manifest.json",
+      "bytes": 18349,
+      "sha256": "2680a46a7a927410494485d563cfc643b1ba59718b50e00406c66d03729bbbe8"
+    },
+    {
+      "path": "original-scope-audit.json",
+      "bytes": 7160,
+      "sha256": "40b1205b49e8e3ad9fb20c9d45ef119993ef49ba883d8ae2c75942e216b3914c"
+    },
+    {
+      "path": "reconciled-summary.json",
+      "bytes": 20022,
+      "sha256": "4a25b9159021943b1920e47d8c2b967ac41f6247fb50a125a75d6b380f0032c6"
+    },
+    {
+      "path": "scratch-kl-stop-control/native/attempt.json",
+      "bytes": 146,
+      "sha256": "f8c00312b3d5a556242bbc7bcf7f5a35eef56519e571e01afea4689faedacfa7"
+    },
+    {
+      "path": "scratch-kl-stop-control/native/record.json",
+      "bytes": 5668,
+      "sha256": "97aa1d6c6f2460cc16e0906b3c96d7910f2d03c240feaa7c59c86c78c7b74308"
+    },
+    {
+      "path": "scratch-kl-stop-control/native/scalars.json",
+      "bytes": 1429892,
+      "sha256": "81ace17ae8f06808489c7664db7bf866e19101fb320d819f9cda69a87bbbf6b7"
+    },
+    {
+      "path": "scratch-kl-stop-control/native/trainer.py",
+      "bytes": 34682,
+      "sha256": "de067415f6895f7b4fcc534cff20fe9cd628fef6faae3846c3b49687ff526632"
+    },
+    {
+      "path": "scratch-kl-stop-control/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "fe0b2ad4d99fc88f0c408a1da3ccfbf80fdf51e0d643f7ad977ad4604aa8f753"
+    },
+    {
+      "path": "scratch-kl-stop-control/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_101.pt",
+      "bytes": 1168376,
+      "sha256": "69fde942fd7587b7fad59886c1585f18abb9d7371474acf8d63a68d163adc00e"
+    },
+    {
+      "path": "scratch-kl-stop-control/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_126.pt",
+      "bytes": 1168376,
+      "sha256": "f17467ffe4a24f61d11fd8adffaaa50049d64fc2846b0e3c90478699e86732f0"
+    },
+    {
+      "path": "scratch-kl-stop-control/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_151.pt",
+      "bytes": 1168376,
+      "sha256": "0f638d23e2ba71a86eb67fdda373a019bfe533b28e5f61038b3f81799a9e5dbf"
+    },
+    {
+      "path": "scratch-kl-stop-control/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_176.pt",
+      "bytes": 1168376,
+      "sha256": "603e4596cfec96ff49c99d1365c59df7c599f573e14bd96e0f7c23f13d293857"
+    },
+    {
+      "path": "scratch-kl-stop-control/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "292c8eeeacd22efe8d9547e99ed04c06fefed90e8ce7286c1df7c1962f7180d9"
+    },
+    {
+      "path": "scratch-kl-stop-control/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_51.pt",
+      "bytes": 1167971,
+      "sha256": "ebe73770a97f3de5ba40e9731cd9968c4d87d20c9c1d037f14e09a50bf00ceec"
+    },
+    {
+      "path": "scratch-kl-stop-control/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_76.pt",
+      "bytes": 1167971,
+      "sha256": "98e88d62db7bab3a5921d59c36bdf2930b835a05a85b2c73e45d09af094bc502"
+    },
+    {
+      "path": "scratch-kl-stop-control/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/events.out.tfevents.1793198442.modal.8.0",
+      "bytes": 848277,
+      "sha256": "816126dddaa1c76c7f433451c7b7c35503b3811d8ffd7c69e403e682e3b2ad1c"
+    },
+    {
+      "path": "scratch-kl-stop-control/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "ffcdd42e94f81b35ebffc62206d611121ea03ca136fe3791c7c2c92b95d43a0a"
+    },
+    {
+      "path": "scratch-kl-stop-control/native/work/train.log",
+      "bytes": 256454,
+      "sha256": "829b92906167bd7de19b0c4be4437f67910eb030e335f80a0bcbabe3c82e30d1"
+    },
+    {
+      "path": "scratch-kl-stop-control/step-10240000/export.json",
+      "bytes": 377,
+      "sha256": "60efafacea1886fa35617b5556e5f05d0f02759ff17182511161e16cba59766b"
+    },
+    {
+      "path": "scratch-kl-stop-control/step-10240000/manifest.json",
+      "bytes": 337,
+      "sha256": "0bca628a95b28e6bff0add1c0db3b2c82d7280143161673739fd2111f08b7ac0"
+    },
+    {
+      "path": "scratch-kl-stop-control/step-10240000/weights.json",
+      "bytes": 3017066,
+      "sha256": "5790c94cc54f14ba60f3887f535e2a98fff182cf58a67b98a48d354fd2e3f33f"
+    },
+    {
+      "path": "scratch-kl-stop-control/step-5120000/export.json",
+      "bytes": 377,
+      "sha256": "8237c88deeae777526f1a792916046950f6d80db4b9b46a7e3ce5145fc91c098"
+    },
+    {
+      "path": "scratch-kl-stop-control/step-5120000/manifest.json",
+      "bytes": 337,
+      "sha256": "a0f38729d11dc3824b29d68f97395be176c0aa8a29cdb194463551cde05b085a"
+    },
+    {
+      "path": "scratch-kl-stop-control/step-5120000/weights.json",
+      "bytes": 3018160,
+      "sha256": "a95c61401ddcb446c4eb50d871b0832ffc868f343556e67004191561ae17458c"
+    },
+    {
+      "path": "scratch-kl-stop-critic/native/attempt.json",
+      "bytes": 146,
+      "sha256": "1646fa871e20a12783b8fa42e26d662a9003aecce5651e9f61d2573d8f750ae7"
+    },
+    {
+      "path": "scratch-kl-stop-critic/native/record.json",
+      "bytes": 5683,
+      "sha256": "d04359606fc6def1416d0c281fddc0e86f38c413683def260ba07de50be55ded"
+    },
+    {
+      "path": "scratch-kl-stop-critic/native/scalars.json",
+      "bytes": 1448088,
+      "sha256": "483d544a60a7384ddcac3c93ea676a68419ade123baaf7dae001367ef440d5e7"
+    },
+    {
+      "path": "scratch-kl-stop-critic/native/trainer.py",
+      "bytes": 34680,
+      "sha256": "8784f4d7aeb268a4794a59c509b761f740fffdd5932b0e6dd364ec4157c9228b"
+    },
+    {
+      "path": "scratch-kl-stop-critic/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-critic-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "fe0b2ad4d99fc88f0c408a1da3ccfbf80fdf51e0d643f7ad977ad4604aa8f753"
+    },
+    {
+      "path": "scratch-kl-stop-critic/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-critic-seed-1/ckpt_101.pt",
+      "bytes": 1168376,
+      "sha256": "5481df2304dbf0e109afca4bc734cc16e9161fe3c7cd6d121740813f0b61e743"
+    },
+    {
+      "path": "scratch-kl-stop-critic/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-critic-seed-1/ckpt_126.pt",
+      "bytes": 1168376,
+      "sha256": "0e2e69177b1a8e7151ed6471c697965e3133fdda516c664c0910bf23ca59f62d"
+    },
+    {
+      "path": "scratch-kl-stop-critic/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-critic-seed-1/ckpt_151.pt",
+      "bytes": 1168376,
+      "sha256": "585b1bc5e95c9b9dc9f09dbf2fc65fc880990f80f242a891e283d3f0cb35668b"
+    },
+    {
+      "path": "scratch-kl-stop-critic/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-critic-seed-1/ckpt_176.pt",
+      "bytes": 1168376,
+      "sha256": "54c2f7ded97863cc77832d85bad069897b1127940e093fbafdba923954becd33"
+    },
+    {
+      "path": "scratch-kl-stop-critic/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-critic-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "292c8eeeacd22efe8d9547e99ed04c06fefed90e8ce7286c1df7c1962f7180d9"
+    },
+    {
+      "path": "scratch-kl-stop-critic/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-critic-seed-1/ckpt_51.pt",
+      "bytes": 1167971,
+      "sha256": "ebe73770a97f3de5ba40e9731cd9968c4d87d20c9c1d037f14e09a50bf00ceec"
+    },
+    {
+      "path": "scratch-kl-stop-critic/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-critic-seed-1/ckpt_76.pt",
+      "bytes": 1167971,
+      "sha256": "98e88d62db7bab3a5921d59c36bdf2930b835a05a85b2c73e45d09af094bc502"
+    },
+    {
+      "path": "scratch-kl-stop-critic/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-critic-seed-1/events.out.tfevents.1793198438.modal.8.0",
+      "bytes": 858073,
+      "sha256": "835be1abc1346d44af129c24cee41727c43bed6370467bfd401e93e031227885"
+    },
+    {
+      "path": "scratch-kl-stop-critic/native/work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-critic-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "aa4c032fa92f416083c4ba984bfa262072e28d7d4782201243d4195923688c24"
+    },
+    {
+      "path": "scratch-kl-stop-critic/native/work/train.log",
+      "bytes": 261329,
+      "sha256": "f21d0eca501611d8b835a5161c333712cc2e82beb96239f9a17593b6085a868a"
+    },
+    {
+      "path": "scratch-kl-stop-critic/step-10240000/export.json",
+      "bytes": 377,
+      "sha256": "b96e958310f6cd09fa83a85480cd5f3c20aa9f67be45e1f3318514a276c114d1"
+    },
+    {
+      "path": "scratch-kl-stop-critic/step-10240000/manifest.json",
+      "bytes": 337,
+      "sha256": "5c512f7a77196777fac161643dd72805597e6c81f7ce88c0b7906f77ec91c459"
+    },
+    {
+      "path": "scratch-kl-stop-critic/step-10240000/weights.json",
+      "bytes": 3016917,
+      "sha256": "d64d542136228ca3202a936f45cdf00c8490de002a8426fc36df00542fd25cd0"
+    },
+    {
+      "path": "scratch-kl-stop-critic/step-5120000/export.json",
+      "bytes": 377,
+      "sha256": "5e701e883d09643b6476cb6395c4d2dbc89ae0ea9b96107500e680ed3d2a9e2c"
+    },
+    {
+      "path": "scratch-kl-stop-critic/step-5120000/manifest.json",
+      "bytes": 337,
+      "sha256": "2ef5a328ef5ab6f4c296fa75c5fd41a14ebe5ff1b6e83cd281a447ec4d8098ec"
+    },
+    {
+      "path": "scratch-kl-stop-critic/step-5120000/weights.json",
+      "bytes": 3018157,
+      "sha256": "7e9599d1aa081727617dfa77f1a12282edd38519e5e2d0457064a1217140a953"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 13469,
+      "sha256": "fac8015b2aea9dcb5bff4a032e0158b0e13490f7bb4c56becef56bec7648f131"
+    }
+  ],
+  "total_bytes": 38670347,
+  "unique_development_reports": 4,
+  "original_failed_summary_preserved": true,
+  "new_training_jobs": 0,
+  "repeated_policy_evaluations": 0,
+  "original_scope_completed": true,
+  "pt_deserialized": false
+}

@@ -1,0 +1,68 @@
+{
+  "transitions": 262432,
+  "vector_step_calls": 8201,
+  "resets": 5280,
+  "reset_calls": 165,
+  "completed_episodes": 5248,
+  "critic_optimizer_steps": 129216,
+  "actor_optimizer_steps": 129216,
+  "alpha_optimizer_steps": 129216,
+  "minibatch_presentations": 132317184,
+  "inference_seconds": 5.842885736003883,
+  "step_seconds_including_resets": 204.4365138319972,
+  "reset_seconds": 2.2135016890014043,
+  "replay_seconds": 5.426119348007287,
+  "update_seconds": 1060.6349674709877,
+  "export_seconds": 1.0940916300001113,
+  "elapsed_seconds": 1289.432120495,
+  "exports": [
+    {
+      "transitions": 0,
+      "path": "/trainer-output/run/actor-step-0",
+      "weights_sha256": "6f768e630c4751d41ed3bd032a21078ea44d12c219c00bf6e606caae0e4c149f",
+      "bytes": 1687178
+    },
+    {
+      "transitions": 51200,
+      "path": "/trainer-output/run/actor-step-51200",
+      "weights_sha256": "2614e4988b838bda9ca22206ee23f02aa2ed0e17fd5cb237a8d311e7d31b57f6",
+      "bytes": 1680469
+    },
+    {
+      "transitions": 102400,
+      "path": "/trainer-output/run/actor-step-102400",
+      "weights_sha256": "7c2a0747dd53137acd7628d0475f81c90819527b7eee210065b7328a27477677",
+      "bytes": 1647225
+    },
+    {
+      "transitions": 153600,
+      "path": "/trainer-output/run/actor-step-153600",
+      "weights_sha256": "e64132bfde2c2f4a23e41ddd7bfc9a569a767e5a4ec03334273bd0c5c576cafa",
+      "bytes": 1642657
+    },
+    {
+      "transitions": 204800,
+      "path": "/trainer-output/run/actor-step-204800",
+      "weights_sha256": "35d6d009596dd1ca5d290df40f12908deae22a2bc67925f7be603438272dd595",
+      "bytes": 1640715
+    },
+    {
+      "transitions": 256000,
+      "path": "/trainer-output/run/actor-step-256000",
+      "weights_sha256": "56b37154efa2564b42ea5553bcd5b41bdae27b0cc5e54e146aaabbcc0f646ad1",
+      "bytes": 1638881
+    },
+    {
+      "transitions": 262432,
+      "path": "/trainer-output/run/actor-final",
+      "weights_sha256": "0002c0ec0c0204bbc0c59d0513c247ab969174c202dad4cdf4c5e6dd143efb5a",
+      "bytes": 1638749
+    }
+  ],
+  "stopped_by": "deadline",
+  "replay_size": 262432,
+  "external_hard_timeout_required": true,
+  "extra_simulator_queries": 0,
+  "evaluation_transitions": 0,
+  "provider_cost": null
+}

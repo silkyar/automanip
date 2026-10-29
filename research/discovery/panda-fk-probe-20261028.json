@@ -1,0 +1,492 @@
+{
+  "state": "complete",
+  "config": {
+    "base_link": "panda_link0",
+    "tcp_link": "panda_hand_tcp",
+    "base_translation_m": [
+      -0.615,
+      0.0,
+      0.0
+    ],
+    "base_quaternion_wxyz": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "joint_names": [
+      "panda_joint1",
+      "panda_joint2",
+      "panda_joint3",
+      "panda_joint4",
+      "panda_joint5",
+      "panda_joint6",
+      "panda_joint7"
+    ],
+    "position_max_tolerance_m": 0.0001,
+    "orientation_max_tolerance_rad": 0.001,
+    "jacobian_max_abs_tolerance": 0.0001,
+    "finite_difference_delta_rad": 1e-06,
+    "finite_difference_flat_pose_indices": [
+      0,
+      63,
+      512,
+      1023,
+      1536,
+      2047,
+      2560,
+      3199
+    ],
+    "finite_difference_directions": "all seven canonical joint directions at each of eight poses",
+    "dls": {
+      "desired_translation_m": [
+        0.0,
+        0.0,
+        0.005
+      ],
+      "desired_rotation_vector_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "damping": 0.05,
+      "pose_row_weights": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "unit_caveat": "Translation rows are m/rad, rotation rows rad/rad; conditioning depends on this explicit unscaled weighting",
+      "iterations": 1,
+      "joint_clipping": false
+    },
+    "no_tolerance_tuning": true,
+    "no_simulator": true,
+    "no_fitting": true
+  },
+  "source_and_input_sha256": {
+    "research/discovery/panda_fk_probe.py": "679d8d823dddc34063c18209818f3057eddbd49403d9cede81c15fe5e3efcda9",
+    ".venv311/lib/python3.11/site-packages/mani_skill/assets/robots/panda/panda_v3.urdf": "d040277352476639950e2ddce1dff8a1c0e95df470e5e9ed186cd01c468fa412",
+    "runs/temperature-sufficiency-20261028/run/actor-step-256000-trajectory.npz": "fdd401f214a41f8f7dcd26df6c7d4797b0dd0e3be3ce7ab8fc6750cf123d6332",
+    ".venv311/lib/python3.11/site-packages/mani_skill/envs/tasks/tabletop/stack_cube.py": "ff76ae608f79ba3ea13334e61ccb72f291660f9461895c70e3c30f8390694440",
+    ".venv311/lib/python3.11/site-packages/mani_skill/utils/scene_builder/table/scene_builder.py": "807202b8a03b7cd63b02f73348d8a8710e87cedfe2fd35791cff80fb7a670b1d",
+    ".venv311/lib/python3.11/site-packages/mani_skill/agents/robots/panda/panda.py": "6ae7c2f5eb7b4cae4e8e6b34dc84d3ddc6fb8ec54295c6ea2eab8659a5f3107e",
+    ".venv311/lib/python3.11/site-packages/mani_skill/agents/robots/panda/panda_wristcam.py": "792c3ae7609a03cd987deb42a9ab0718071491a27f6972628c99bab476662b24",
+    ".venv311/lib/python3.11/site-packages/mani_skill/utils/structs/pose.py": "efa4a3aecfb2ddff18867baa31936287e3717278677e89886e7356d525aa2ba0",
+    "research/discovery/temperature_grasp_diagnostic.py": "6b63aa20b31080fbad33c85a46d1b2e7fced6b008cd2e4e3704410c796f24dc7"
+  },
+  "structural_prior": "Public pinned Panda URDF plus task-defined base transform; assisted diagnostic only",
+  "simulator_queries": 0,
+  "simulator_state_writes": 0,
+  "training_optimizer_calls": 0,
+  "evaluator_queries": 0,
+  "parsed_chain": [
+    {
+      "name": "panda_joint1",
+      "type": "revolute",
+      "parent": "panda_link0",
+      "child": "panda_link1",
+      "origin_xyz": [
+        0.0,
+        0.0,
+        0.333
+      ],
+      "origin_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limits": [
+        -2.8973,
+        2.8973
+      ]
+    },
+    {
+      "name": "panda_joint2",
+      "type": "revolute",
+      "parent": "panda_link1",
+      "child": "panda_link2",
+      "origin_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_rpy": [
+        -1.5707963267948966,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limits": [
+        -1.7628,
+        1.7628
+      ]
+    },
+    {
+      "name": "panda_joint3",
+      "type": "revolute",
+      "parent": "panda_link2",
+      "child": "panda_link3",
+      "origin_xyz": [
+        0.0,
+        -0.316,
+        0.0
+      ],
+      "origin_rpy": [
+        1.5707963267948966,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limits": [
+        -2.8973,
+        2.8973
+      ]
+    },
+    {
+      "name": "panda_joint4",
+      "type": "revolute",
+      "parent": "panda_link3",
+      "child": "panda_link4",
+      "origin_xyz": [
+        0.0825,
+        0.0,
+        0.0
+      ],
+      "origin_rpy": [
+        1.5707963267948966,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limits": [
+        -3.0718,
+        -0.0698
+      ]
+    },
+    {
+      "name": "panda_joint5",
+      "type": "revolute",
+      "parent": "panda_link4",
+      "child": "panda_link5",
+      "origin_xyz": [
+        -0.0825,
+        0.384,
+        0.0
+      ],
+      "origin_rpy": [
+        -1.5707963267948966,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limits": [
+        -2.8973,
+        2.8973
+      ]
+    },
+    {
+      "name": "panda_joint6",
+      "type": "revolute",
+      "parent": "panda_link5",
+      "child": "panda_link6",
+      "origin_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_rpy": [
+        1.5707963267948966,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limits": [
+        -0.0175,
+        3.7525
+      ]
+    },
+    {
+      "name": "panda_joint7",
+      "type": "revolute",
+      "parent": "panda_link6",
+      "child": "panda_link7",
+      "origin_xyz": [
+        0.088,
+        0.0,
+        0.0
+      ],
+      "origin_rpy": [
+        1.5707963267948966,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limits": [
+        -2.8973,
+        2.8973
+      ]
+    },
+    {
+      "name": "panda_joint8",
+      "type": "fixed",
+      "parent": "panda_link7",
+      "child": "panda_link8",
+      "origin_xyz": [
+        0.0,
+        0.0,
+        0.107
+      ],
+      "origin_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "panda_hand_joint",
+      "type": "fixed",
+      "parent": "panda_link8",
+      "child": "panda_hand",
+      "origin_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_rpy": [
+        0.0,
+        0.0,
+        -0.7853981633974483
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "panda_hand_tcp_joint",
+      "type": "fixed",
+      "parent": "panda_hand",
+      "child": "panda_hand_tcp",
+      "origin_xyz": [
+        0.0,
+        0.0,
+        0.1034
+      ],
+      "origin_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "pre_step": {
+    "poses": 3200,
+    "position_error_m": {
+      "n": 3200,
+      "minimum": 4.0275437162629656e-08,
+      "median": 1.0479474613374036e-06,
+      "mean": 1.2432996789791357e-06,
+      "q90": 2.372310099517098e-06,
+      "maximum": 6.7326194078253696e-06
+    },
+    "orientation_error_rad": {
+      "n": 3200,
+      "minimum": 4.1732946474686736e-08,
+      "median": 8.35541307813045e-07,
+      "mean": 8.671632458327572e-07,
+      "q90": 1.326674504768539e-06,
+      "maximum": 2.4965160685120916e-06
+    },
+    "quaternion_norm_max_error": 1.229678904257625e-07
+  },
+  "post_step": {
+    "poses": 3200,
+    "position_error_m": {
+      "n": 3200,
+      "minimum": 4.0275437162629656e-08,
+      "median": 1.0464872189798342e-06,
+      "mean": 1.2392309230090528e-06,
+      "q90": 2.3592819472640484e-06,
+      "maximum": 6.7326194078253696e-06
+    },
+    "orientation_error_rad": {
+      "n": 3200,
+      "minimum": 4.1732946474686736e-08,
+      "median": 8.408463621677963e-07,
+      "mean": 8.734451939066125e-07,
+      "q90": 1.339156485415679e-06,
+      "maximum": 2.4965160685120916e-06
+    },
+    "quaternion_norm_max_error": 1.229678904257625e-07
+  },
+  "finite_difference": {
+    "saved_flat_pose_indices": [
+      0,
+      63,
+      512,
+      1023,
+      1536,
+      2047,
+      2560,
+      3199
+    ],
+    "canonical_directions_per_pose": 7,
+    "analytic_fk_evaluations": 112,
+    "max_abs_error": 2.212617866703681e-10,
+    "per_pose_max_abs_error": [
+      9.182732352286394e-11,
+      1.4440026951945129e-10,
+      1.5382706219924103e-10,
+      1.0996548116537497e-10,
+      2.212617866703681e-10,
+      1.890207990129511e-10,
+      1.2695078321911524e-10,
+      1.3316259206419545e-10
+    ],
+    "linear_max_abs_error": 9.776551790352528e-11,
+    "angular_max_abs_error": 2.212617866703681e-10
+  },
+  "verification_passed": true,
+  "counterfactual_dls": {
+    "grasped_post_step_poses": 1904,
+    "full_pose_singular_minimum": {
+      "n": 1904,
+      "minimum": 0.0007718760764407677,
+      "median": 0.12152776757143505,
+      "mean": 0.11776903893202724,
+      "q90": 0.17180862463029636,
+      "maximum": 0.20998421177912333
+    },
+    "full_pose_condition_number": {
+      "n": 1904,
+      "minimum": 9.206893791054181,
+      "median": 15.746200852466863,
+      "mean": 24.572925747841982,
+      "q90": 32.85827678597551,
+      "maximum": 2550.9693674721752
+    },
+    "translation_jacobian_condition_number": {
+      "n": 1904,
+      "minimum": 2.576855922327012,
+      "median": 3.990787531715533,
+      "mean": 4.103481746281299,
+      "q90": 5.331226870295231,
+      "maximum": 7.381438746595292
+    },
+    "requested_z_step_m": 0.005,
+    "predicted_linear_z_step_m": {
+      "n": 1904,
+      "minimum": 0.004753973048180945,
+      "median": 0.004910400896545325,
+      "mean": 0.00490555440101032,
+      "q90": 0.004924125473083316,
+      "maximum": 0.004928400020341391
+    },
+    "predicted_linear_lateral_step_m": {
+      "n": 1904,
+      "minimum": 4.2715922596098924e-05,
+      "median": 0.00011890098846924061,
+      "mean": 0.00016687593300514082,
+      "q90": 0.00033427569377294397,
+      "maximum": 0.0008279226152651323
+    },
+    "predicted_linear_angular_step_rad": {
+      "n": 1904,
+      "minimum": 1.1134807543775117e-06,
+      "median": 1.6648282459874613e-05,
+      "mean": 2.545943436762482e-05,
+      "q90": 6.074640047135621e-05,
+      "maximum": 0.00015802712500306905
+    },
+    "joint_delta_max_abs_rad_per_pose": {
+      "n": 1904,
+      "minimum": 0.006604314987363256,
+      "median": 0.010102947146961172,
+      "mean": 0.01018139541481638,
+      "q90": 0.011069247302085966,
+      "maximum": 0.01247354375870602
+    },
+    "normalized_pd_joint_delta_max_abs": {
+      "n": 1904,
+      "minimum": 0.06604314987363256,
+      "median": 0.1010294714696117,
+      "mean": 0.10181395414816376,
+      "q90": 0.11069247302085965,
+      "maximum": 0.1247354375870602
+    },
+    "candidate_joint_limit_violations": 0,
+    "candidate_normalized_action_bound_violations": 0,
+    "nonlinear_fk_z_step_m": {
+      "n": 1904,
+      "minimum": 0.004757341262890791,
+      "median": 0.004906595657945878,
+      "mean": 0.004902431895453255,
+      "q90": 0.0049217222908561915,
+      "maximum": 0.004926282040323179
+    },
+    "nonlinear_fk_lateral_step_m": {
+      "n": 1904,
+      "minimum": 1.6445084378750615e-05,
+      "median": 9.781371334339082e-05,
+      "mean": 0.00014558111832260626,
+      "q90": 0.00031335587759599644,
+      "maximum": 0.0008085275260502743
+    },
+    "nonlinear_fk_orientation_change_rad": {
+      "n": 1904,
+      "minimum": 4.202992774731569e-07,
+      "median": 1.919848342835468e-05,
+      "mean": 2.8205681693214425e-05,
+      "q90": 6.37918841355889e-05,
+      "maximum": 0.00016193418778275899
+    },
+    "interpretation": "Counterfactual unconstrained kinematics only; no collision/contact/force/dynamics/tracking validation"
+  },
+  "cpu_wall_seconds": 0.03193720895797014,
+  "cpu_process_seconds": 0.027841000000000005,
+  "analytic_fk_pose_evaluations": 8416,
+  "geometric_jacobian_pose_evaluations": 6400
+}

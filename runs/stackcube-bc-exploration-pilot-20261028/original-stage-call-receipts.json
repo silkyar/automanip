@@ -1,0 +1,22 @@
+{
+  "assist-bc-ppo": {
+    "record_path": "trial/record.json",
+    "stage": "assist-bc-ppo",
+    "state": "complete"
+  },
+  "assist-bc-ppo-residual-std": {
+    "record_path": "trial/record.json",
+    "stage": "assist-bc-ppo-residual-std",
+    "state": "complete"
+  },
+  "bc": {
+    "record_path": "trial/record.json",
+    "stage": "bc",
+    "state": "complete"
+  },
+  "collect": {
+    "record_path": "trial/record.json",
+    "stage": "collect",
+    "state": "complete"
+  }
+}

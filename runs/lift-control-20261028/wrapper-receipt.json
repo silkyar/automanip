@@ -1,0 +1,9 @@
+{
+  "state": "failed",
+  "plan_sha256": "a4b68120c060d9fc51e02917edceafca55765d7be502c8e0d68c8b03982c6814",
+  "new_training_runs": 0,
+  "protected_evaluations": 0,
+  "error": "RuntimeError: Diagnostic child failed; preserve log and report",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/silkyarora/Work/automanip/deploy/modal/lift_control.py\", line 69, in probe\nRuntimeError: Diagnostic child failed; preserve log and report\n",
+  "wrapper_seconds": 15.751325781
+}

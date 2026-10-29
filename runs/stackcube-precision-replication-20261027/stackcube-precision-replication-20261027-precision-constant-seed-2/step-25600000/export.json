@@ -1,0 +1,6 @@
+{
+  "checkpoint_sha256": "4c8e9052565ef713e3a6d5987bdd52a89c6392ab39de408bc6416e96734b3705",
+  "weights_sha256": "b564d38f44e1ccf0dd67b5a06fe89cd96c88a929b57d2c3d2ce1059745bf98ab",
+  "expected_official_ppo_sha256": "3fa4818861d428480244aae889bc679b2c8e89b59d6289014003c266a84dbab0",
+  "conversion": "restricted weights-only load, exact tensor schema, actor-only JSON export"
+}

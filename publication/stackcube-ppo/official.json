@@ -1,0 +1,5 @@
+{
+  "gamma": 0.8,
+  "ent_coef": 0.0,
+  "partial_reset": true
+}

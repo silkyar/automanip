@@ -1,0 +1,82 @@
+[
+  {
+    "steps": 51200,
+    "trainer_seconds": 260.34974551200867,
+    "successes": 0,
+    "diagnostics_rates": {
+      "grasp": 0.421875,
+      "lift": 0.015625,
+      "transport": 0.0078125,
+      "placement": 0.0,
+      "release": 0.0,
+      "contact_free_placement": 0.0,
+      "stable_stack_10_steps": 0.0
+    },
+    "first_unmet_stages": {
+      "never_grasped": 74,
+      "grasped_not_lifted": 52,
+      "lifted_not_transported": 1,
+      "transported_not_placed": 1
+    }
+  },
+  {
+    "steps": 102400,
+    "trainer_seconds": 515.4358239173889,
+    "successes": 0,
+    "diagnostics_rates": {
+      "grasp": 1.0,
+      "lift": 0.8984375,
+      "transport": 0.53125,
+      "placement": 0.015625,
+      "release": 0.0,
+      "contact_free_placement": 0.0,
+      "stable_stack_10_steps": 0.0
+    },
+    "first_unmet_stages": {
+      "transported_not_placed": 66,
+      "lifted_not_transported": 47,
+      "grasped_not_lifted": 13,
+      "placed_still_grasped": 2
+    }
+  },
+  {
+    "steps": 256000,
+    "trainer_seconds": 1259.6294419765472,
+    "successes": 0,
+    "diagnostics_rates": {
+      "grasp": 1.0,
+      "lift": 0.9453125,
+      "transport": 0.921875,
+      "placement": 0.3984375,
+      "release": 0.0,
+      "contact_free_placement": 0.0,
+      "stable_stack_10_steps": 0.0
+    },
+    "first_unmet_stages": {
+      "transported_not_placed": 67,
+      "placed_still_grasped": 51,
+      "lifted_not_transported": 3,
+      "grasped_not_lifted": 7
+    }
+  },
+  {
+    "steps": 262432,
+    "trainer_seconds": 1290.7740535736084,
+    "successes": 0,
+    "diagnostics_rates": {
+      "grasp": 1.0,
+      "lift": 0.8984375,
+      "transport": 0.875,
+      "placement": 0.4296875,
+      "release": 0.0,
+      "contact_free_placement": 0.0,
+      "stable_stack_10_steps": 0.0
+    },
+    "first_unmet_stages": {
+      "placed_still_grasped": 55,
+      "transported_not_placed": 57,
+      "lifted_not_transported": 3,
+      "grasped_not_lifted": 13
+    }
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "base_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+  "payloads": {
+    "assist-bc-ppo": {
+      "path": "research/discovery/amp-prior-assisted-v1/assist-bc-ppo.py",
+      "sha256": "7a4de8deecf0adc15d9f8beaef1bf6b9874ca9eb7b0122efbab5d9b1bc80d427"
+    },
+    "assist-bc-ppo-amp": {
+      "path": "research/discovery/amp-prior-assisted-v1/assist-bc-ppo-amp.py",
+      "sha256": "c2af05677a3a3652b0bd6b27f482a4946a51cad72b0ce0106e6b2b7b90f457ad"
+    }
+  },
+  "candidate_source_hashes": {
+    "research/discovery/amp_v1.py": "463303be5809392e7ea9597eb47c0e45ccd256438750d4a0b219c2abd9dee5bd",
+    "research/discovery/amp_collect_v1.py": "523459ce91a59200970d66a7dd83fa8dc06c7c96879e72ab541f2f263403ef3b",
+    "research/discovery/amp_bc_v1.py": "1e8b1a6ea1e2007bf43adb24fc0d96008c54d01d3af5d6650548c35f6392f7f6",
+    "research/discovery/amp_precision_v1.py": "c2dce5e8b878004331ee6f5da359efdc6d14946c51078a5581c2bfc6409e0b61",
+    "research/discovery/amp_cpu_gate_v1.py": "559c7bbbe316c2a63abe184b7b43ecd33b231c788af9b8de75d8f1e7e7500fe7"
+  },
+  "unit_tests_passed": 9,
+  "component_gate": "research/discovery/amp-cpu-gate-v1.json",
+  "gpu_launched": false,
+  "dollars_spent": 0
+}

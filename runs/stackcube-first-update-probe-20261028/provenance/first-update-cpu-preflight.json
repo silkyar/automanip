@@ -1,0 +1,65 @@
+{
+  "state": "passed",
+  "cpu_seconds": 1.3986146670067683,
+  "new_simulator_transitions": 0,
+  "checks": [
+    {
+      "finite_horizon_gae": false,
+      "passed": true,
+      "bitwise_parameters": true,
+      "bitwise_adam_state": true,
+      "bitwise_advantages": true,
+      "bitwise_returns": true,
+      "bitwise_gradients": true,
+      "bitwise_rng": true,
+      "rng_devices_checked": [
+        "numpy",
+        "torch_cpu"
+      ],
+      "reference_optimizer_calls": 1,
+      "reconstruction_optimizer_calls": 1,
+      "fitting_rows": 1600,
+      "gae_forward_rows": 2048,
+      "production_source_sha256": "c5ca37a6ff22ddd2e89288f5697e3041507e834adf8f8731a49a17d1423fd200",
+      "branch_fractions": {
+        "no_update": 0.0,
+        "full": 1.0,
+        "bounded": 0.5,
+        "tiny_forward": 0.25,
+        "tiny_reverse": -0.25
+      },
+      "analytic_kl": 0.011967252008616924,
+      "disjoint_holdout_episodes": 64
+    },
+    {
+      "finite_horizon_gae": true,
+      "passed": true,
+      "bitwise_parameters": true,
+      "bitwise_adam_state": true,
+      "bitwise_advantages": true,
+      "bitwise_returns": true,
+      "bitwise_gradients": true,
+      "bitwise_rng": true,
+      "rng_devices_checked": [
+        "numpy",
+        "torch_cpu"
+      ],
+      "reference_optimizer_calls": 1,
+      "reconstruction_optimizer_calls": 1,
+      "fitting_rows": 1600,
+      "gae_forward_rows": 2048,
+      "production_source_sha256": "c5ca37a6ff22ddd2e89288f5697e3041507e834adf8f8731a49a17d1423fd200",
+      "branch_fractions": {
+        "no_update": 0.0,
+        "full": 1.0,
+        "bounded": 0.5,
+        "tiny_forward": 0.25,
+        "tiny_reverse": -0.25
+      },
+      "analytic_kl": 0.012072011828422546,
+      "disjoint_holdout_episodes": 64
+    }
+  ],
+  "optimizer_calls": 4,
+  "production_args_finite_horizon_gae": false
+}

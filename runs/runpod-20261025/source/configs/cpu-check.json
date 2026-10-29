@@ -1,0 +1,9 @@
+{
+  "num_envs": 1,
+  "num_steps": 50,
+  "total_timesteps": 50,
+  "max_seconds": 60,
+  "num_minibatches": 1,
+  "update_epochs": 1,
+  "hidden_sizes": [16]
+}

@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "state": "complete",
+  "cpu_seconds": 8.406491499976255,
+  "config": {
+    "width": 64,
+    "heads": 1,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "steps": 1000,
+    "batch_size": 256,
+    "replay_rows": 16384,
+    "heldout_rows": 4096,
+    "learning_rate": 0.001,
+    "adam_betas": [
+      0.5,
+      0.999
+    ],
+    "target_tau": 0.005,
+    "gamma": 0.95,
+    "state_coefficient": 0.8,
+    "action_coefficient": 0.5,
+    "action_cost": 0.1,
+    "policy_gain": -0.6,
+    "state_distribution": "Uniform[-1,1]",
+    "behavior_action_distribution": "independent Uniform[-1,1]",
+    "actor_updates": 0,
+    "entropy_coefficient": 0.0,
+    "warmup_updates": 100000
+  },
+  "probe_source_sha256": "6396c278ee8d0b5297736607cc52b7bb536777a5b7a94b8b66fde246e3374afc",
+  "actual_critic_source_sha256": "009b4662a3b248e8e677905e2e7cafe2a69611a9259ab5fe91ec0cbe3b2efdfc",
+  "upstream_crossq_commit": "a318a266679bec3f9d93c44e029860a6da077c89",
+  "actual_critic_identity": {
+    "target-sac": {
+      "warm_training_mean_current": 0.039449915289878845,
+      "warm_training_mean_next": 0.04060281068086624,
+      "warm_training_mean_difference": -0.0011528953909873962,
+      "final_affine_offset": 0.03910481929779053,
+      "warm_current_offset_error": 0.00034509599208831787,
+      "warm_next_offset_error": 0.0014979913830757141,
+      "running_inference_mean_difference": -0.0011528953909873962,
+      "postwarm_brn_training_mean_difference": -0.0011528953909873962
+    },
+    "joint-moments": {
+      "warm_training_mean_current": -0.15034155547618866,
+      "warm_training_mean_next": 0.22855119407176971,
+      "warm_training_mean_difference": -0.3788927495479584,
+      "final_affine_offset": 0.03910481929779053,
+      "warm_current_offset_error": 0.1894463747739792,
+      "warm_next_offset_error": 0.1894463747739792,
+      "running_inference_mean_difference": -0.0011614933609962463,
+      "postwarm_brn_training_mean_difference": -0.1722230613231659
+    },
+    "split-moments": {
+      "warm_training_mean_current": 0.039104849100112915,
+      "warm_training_mean_next": 0.039104826748371124,
+      "warm_training_mean_difference": 2.2351741790771484e-08,
+      "final_affine_offset": 0.03910481929779053,
+      "warm_current_offset_error": 2.9802322387695312e-08,
+      "warm_next_offset_error": 7.450580596923828e-09,
+      "running_inference_mean_difference": -0.0011623091995716095,
+      "postwarm_brn_training_mean_difference": -0.011396672576665878
+    }
+  },
+  "records": [
+    {
+      "seed": 1,
+      "method": "target-sac",
+      "optimizer_calls": 1000,
+      "sampled_fitting_rows": 256000,
+      "critic_forward_rows": 512000,
+      "mean_last_100_fitting_td_mse": 0.00017899444683280307,
+      "metrics": {
+        "oracle_value_coefficient": 1.358688524590164,
+        "true_q_mean_current": -0.7311251215292525,
+        "true_q_mean_next": -0.3881776995773004,
+        "true_q_mean_difference": -0.34294742195195205,
+        "training_view_q_rmse": 0.04461546262278867,
+        "training_view_q_mean_bias": -0.032981094931934254,
+        "actual_bootstrap_target_rmse": 0.03950398596427124,
+        "self_td_mse": 0.00021176334121264517,
+        "training_view_q_mean_difference": -0.3505648970603943,
+        "running_inference_q_rmse": 0.04461546262278867,
+        "running_inference_q_mean_bias": -0.032981094931934254,
+        "running_inference_q_mean_difference": -0.3323836028575897
+      }
+    },
+    {
+      "seed": 1,
+      "method": "joint-moments",
+      "optimizer_calls": 1000,
+      "sampled_fitting_rows": 256000,
+      "critic_forward_rows": 512000,
+      "mean_last_100_fitting_td_mse": 0.0027824714768212287,
+      "metrics": {
+        "oracle_value_coefficient": 1.358688524590164,
+        "true_q_mean_current": -0.7311251215292525,
+        "true_q_mean_next": -0.3881776995773004,
+        "true_q_mean_difference": -0.34294742195195205,
+        "training_view_q_rmse": 0.10434033296255954,
+        "training_view_q_mean_bias": 0.09743517786369392,
+        "actual_bootstrap_target_rmse": 0.12761534122950755,
+        "self_td_mse": 0.002304341644048691,
+        "training_view_q_mean_difference": -0.37469229102134705,
+        "running_inference_q_rmse": 0.12277867358297861,
+        "running_inference_q_mean_bias": 0.11192320400237277,
+        "running_inference_q_mean_difference": -0.37664374709129333
+      }
+    },
+    {
+      "seed": 1,
+      "method": "split-moments",
+      "optimizer_calls": 1000,
+      "sampled_fitting_rows": 256000,
+      "critic_forward_rows": 512000,
+      "mean_last_100_fitting_td_mse": 0.01851527625694871,
+      "metrics": {
+        "oracle_value_coefficient": 1.358688524590164,
+        "true_q_mean_current": -0.7311251215292525,
+        "true_q_mean_next": -0.3881776995773004,
+        "true_q_mean_difference": -0.34294742195195205,
+        "training_view_q_rmse": 6.632511981130491,
+        "training_view_q_mean_bias": -6.608892030023932,
+        "actual_bootstrap_target_rmse": 6.629587303853442,
+        "self_td_mse": 0.009053557179868221,
+        "training_view_q_mean_difference": 0.0,
+        "running_inference_q_rmse": 7.306934135537096,
+        "running_inference_q_mean_bias": -7.259942953765354,
+        "running_inference_q_mean_difference": -0.6024351119995117
+      }
+    },
+    {
+      "seed": 2,
+      "method": "target-sac",
+      "optimizer_calls": 1000,
+      "sampled_fitting_rows": 256000,
+      "critic_forward_rows": 512000,
+      "mean_last_100_fitting_td_mse": 0.00011598751883866498,
+      "metrics": {
+        "oracle_value_coefficient": 1.358688524590164,
+        "true_q_mean_current": -0.7311251215292525,
+        "true_q_mean_next": -0.3881776995773004,
+        "true_q_mean_difference": -0.34294742195195205,
+        "training_view_q_rmse": 0.12364833298564955,
+        "training_view_q_mean_bias": -0.11867466189819044,
+        "actual_bootstrap_target_rmse": 0.12030904827229259,
+        "self_td_mse": 8.661714673507959e-05,
+        "training_view_q_mean_difference": -0.34035807847976685,
+        "running_inference_q_rmse": 0.12364833298564955,
+        "running_inference_q_mean_bias": -0.11867466189819044,
+        "running_inference_q_mean_difference": -0.3243246078491211
+      }
+    },
+    {
+      "seed": 2,
+      "method": "joint-moments",
+      "optimizer_calls": 1000,
+      "sampled_fitting_rows": 256000,
+      "critic_forward_rows": 512000,
+      "mean_last_100_fitting_td_mse": 0.0026966220414033158,
+      "metrics": {
+        "oracle_value_coefficient": 1.358688524590164,
+        "true_q_mean_current": -0.7311251215292525,
+        "true_q_mean_next": -0.3881776995773004,
+        "true_q_mean_difference": -0.34294742195195205,
+        "training_view_q_rmse": 0.1164362875192769,
+        "training_view_q_mean_bias": -0.0075574545512116075,
+        "actual_bootstrap_target_rmse": 0.07681690540540265,
+        "self_td_mse": 0.0030817328952252865,
+        "training_view_q_mean_difference": -0.3657604455947876,
+        "running_inference_q_rmse": 0.1097006604265808,
+        "running_inference_q_mean_bias": 0.002465970068946432,
+        "running_inference_q_mean_difference": -0.362976610660553
+      }
+    },
+    {
+      "seed": 2,
+      "method": "split-moments",
+      "optimizer_calls": 1000,
+      "sampled_fitting_rows": 256000,
+      "critic_forward_rows": 512000,
+      "mean_last_100_fitting_td_mse": 0.019553326265886427,
+      "metrics": {
+        "oracle_value_coefficient": 1.358688524590164,
+        "true_q_mean_current": -0.7311251215292525,
+        "true_q_mean_next": -0.3881776995773004,
+        "true_q_mean_difference": -0.34294742195195205,
+        "training_view_q_rmse": 6.725372571115641,
+        "training_view_q_mean_bias": -6.669736540817617,
+        "actual_bootstrap_target_rmse": 6.710759655277178,
+        "self_td_mse": 0.011213250458240509,
+        "training_view_q_mean_difference": 4.76837158203125e-07,
+        "running_inference_q_rmse": 8.043898288401243,
+        "running_inference_q_mean_bias": -7.828211323648653,
+        "running_inference_q_mean_difference": -1.8794736862182617
+      }
+    },
+    {
+      "seed": 3,
+      "method": "target-sac",
+      "optimizer_calls": 1000,
+      "sampled_fitting_rows": 256000,
+      "critic_forward_rows": 512000,
+      "mean_last_100_fitting_td_mse": 0.00014499083823466208,
+      "metrics": {
+        "oracle_value_coefficient": 1.358688524590164,
+        "true_q_mean_current": -0.7311251215292525,
+        "true_q_mean_next": -0.3881776995773004,
+        "true_q_mean_difference": -0.34294742195195205,
+        "training_view_q_rmse": 0.1043159919287851,
+        "training_view_q_mean_bias": -0.09747654973711707,
+        "actual_bootstrap_target_rmse": 0.10192388228939768,
+        "self_td_mse": 6.136298907222226e-05,
+        "training_view_q_mean_difference": -0.33982259035110474,
+        "running_inference_q_rmse": 0.1043159919287851,
+        "running_inference_q_mean_bias": -0.09747654973711707,
+        "running_inference_q_mean_difference": -0.32303524017333984
+      }
+    },
+    {
+      "seed": 3,
+      "method": "joint-moments",
+      "optimizer_calls": 1000,
+      "sampled_fitting_rows": 256000,
+      "critic_forward_rows": 512000,
+      "mean_last_100_fitting_td_mse": 0.0024155008955858647,
+      "metrics": {
+        "oracle_value_coefficient": 1.358688524590164,
+        "true_q_mean_current": -0.7311251215292525,
+        "true_q_mean_next": -0.3881776995773004,
+        "true_q_mean_difference": -0.34294742195195205,
+        "training_view_q_rmse": 0.24669427316087678,
+        "training_view_q_mean_bias": 0.24123530796310133,
+        "actual_bootstrap_target_rmse": 0.21940862453337523,
+        "self_td_mse": 0.0032077771611511707,
+        "training_view_q_mean_difference": -0.32947349548339844,
+        "running_inference_q_rmse": 0.24586586506349112,
+        "running_inference_q_mean_bias": 0.24021288582530742,
+        "running_inference_q_mean_difference": -0.3313279151916504
+      }
+    },
+    {
+      "seed": 3,
+      "method": "split-moments",
+      "optimizer_calls": 1000,
+      "sampled_fitting_rows": 256000,
+      "critic_forward_rows": 512000,
+      "mean_last_100_fitting_td_mse": 0.039505610684864224,
+      "metrics": {
+        "oracle_value_coefficient": 1.358688524590164,
+        "true_q_mean_current": -0.7311251215292525,
+        "true_q_mean_next": -0.3881776995773004,
+        "true_q_mean_difference": -0.34294742195195205,
+        "training_view_q_rmse": 6.987615443666841,
+        "training_view_q_mean_bias": -6.647784091124272,
+        "actual_bootstrap_target_rmse": 7.000359116351574,
+        "self_td_mse": 0.018505968153476715,
+        "training_view_q_mean_difference": 0.0,
+        "running_inference_q_rmse": 9.426325581124068,
+        "running_inference_q_mean_bias": -8.46411032165583,
+        "running_inference_q_mean_difference": -3.012645721435547
+      }
+    }
+  ],
+  "total_optimizer_calls": 9000,
+  "total_sampled_fitting_rows": 2304000,
+  "unique_synthetic_training_transitions": 16384,
+  "synthetic_heldout_transitions": 4096,
+  "new_robot_simulator_transitions": 0,
+  "actor_updates": 0,
+  "teacher_rows": 0,
+  "gpu_seconds": 0,
+  "dollars": 0,
+  "limitations": [
+    "One head, scalar deterministic fixed-policy toy; no entropy, exploration or contact dynamics.",
+    "Analytic values are measurement-only, never optimizer inputs.",
+    "Fixed replay and common minibatches; three initial-weight/sampler seeds, not robot training seeds.",
+    "No tuning, extension or retries permitted to rescue this fixed result."
+  ]
+}

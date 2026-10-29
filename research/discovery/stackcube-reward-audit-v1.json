@@ -1,0 +1,29 @@
+{
+  "public_task_source_sha256": "ff76ae608f79ba3ea13334e61ccb72f291660f9461895c70e3c30f8390694440",
+  "installed_release": "mani_skill==3.0.0b21",
+  "matching_upstream_release_commit": "6226567ce326625fa6eacf9aeb3f4008e4339f7e",
+  "commit_note": "Release mapping from earlier public provenance; remote task bytes not fetched in this audit.",
+  "values": {
+    "on_stack_grasped_moving": 0.78349769115448,
+    "on_stack_released_moving": 0.8334977030754089,
+    "on_stack_released_slower": 0.8675357699394226,
+    "on_stack_released_success": 1.0,
+    "off_stack_grasped": 0.5672353506088257,
+    "off_stack_released": 0.25
+  },
+  "checks": {
+    "release_is_rewarded_when_on_stack": true,
+    "slowing_is_rewarded_when_on_stack": true,
+    "success_override_is_one": true,
+    "premature_release_can_reduce_reward": true
+  },
+  "audit_wall_seconds": 0.023873958009062335,
+  "robot_transitions": 0,
+  "simulator_queries": 0,
+  "optimizer_updates": 0,
+  "gpu_seconds": 0,
+  "paid_api_calls": 0,
+  "dollars_spent": 0,
+  "scope": "Six hand-constructed CPU reward inputs; no dynamics or robot learning claim.",
+  "audit_source_sha256": "a50312e57f506e62457c67aecfde308956b99b6ea39714664163cc16601b2e78"
+}

@@ -1,0 +1,61 @@
+/opt/automanip-stackcube-venv/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/automanip-stackcube-venv/lib/python3.11/site-packages/sapien/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/automanip-stackcube-venv/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+TRACE seed-1-dev-1-success replay success matches True
+TRACE seed-1-dev-0-grasped_not_lifted replay grasped_not_lifted matches True
+TRACE seed-1-dev-3-released_not_stable replay released_not_stable matches True
+TRACE seed-2-dev-2-success replay success matches True
+TRACE seed-3-dev-1-success replay success matches True
+TRACE seed-1-dev-16-placed_still_grasped replay placed_still_grasped matches True
+TRACE seed-1-dev-48-lost_stack_before_horizon replay lost_stack_before_horizon matches True
+STAGE_HISTORY 1 8 / 128
+STAGE_HISTORY 1 16 / 128
+STAGE_HISTORY 1 24 / 128
+STAGE_HISTORY 1 32 / 128
+STAGE_HISTORY 1 40 / 128
+STAGE_HISTORY 1 48 / 128
+STAGE_HISTORY 1 56 / 128
+STAGE_HISTORY 1 64 / 128
+STAGE_HISTORY 1 72 / 128
+STAGE_HISTORY 1 80 / 128
+STAGE_HISTORY 1 88 / 128
+STAGE_HISTORY 1 96 / 128
+STAGE_HISTORY 1 104 / 128
+STAGE_HISTORY 1 112 / 128
+STAGE_HISTORY 1 120 / 128
+STAGE_HISTORY 1 128 / 128
+STAGE_HISTORY 2 8 / 128
+STAGE_HISTORY 2 16 / 128
+STAGE_HISTORY 2 24 / 128
+STAGE_HISTORY 2 32 / 128
+STAGE_HISTORY 2 40 / 128
+STAGE_HISTORY 2 48 / 128
+STAGE_HISTORY 2 56 / 128
+STAGE_HISTORY 2 64 / 128
+STAGE_HISTORY 2 72 / 128
+STAGE_HISTORY 2 80 / 128
+STAGE_HISTORY 2 88 / 128
+STAGE_HISTORY 2 96 / 128
+STAGE_HISTORY 2 104 / 128
+STAGE_HISTORY 2 112 / 128
+STAGE_HISTORY 2 120 / 128
+STAGE_HISTORY 2 128 / 128
+STAGE_HISTORY 3 8 / 128
+STAGE_HISTORY 3 16 / 128
+STAGE_HISTORY 3 24 / 128
+STAGE_HISTORY 3 32 / 128
+STAGE_HISTORY 3 40 / 128
+STAGE_HISTORY 3 48 / 128
+STAGE_HISTORY 3 56 / 128
+STAGE_HISTORY 3 64 / 128
+STAGE_HISTORY 3 72 / 128
+STAGE_HISTORY 3 80 / 128
+STAGE_HISTORY 3 88 / 128
+STAGE_HISTORY 3 96 / 128
+STAGE_HISTORY 3 104 / 128
+STAGE_HISTORY 3 112 / 128
+STAGE_HISTORY 3 120 / 128
+STAGE_HISTORY 3 128 / 128

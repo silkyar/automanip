@@ -1,0 +1,333 @@
+{
+  "job": {
+    "job_id": "stackcube-precision-screen-20261027-precision-lr-anneal-seed-1",
+    "method": "precision-lr-anneal",
+    "seed": 1,
+    "trainer_sha256": "878c99d186f2bd554d36999e437302c52c768204246c5d4c35ecb68a34116a24",
+    "gpu": "L40S",
+    "trainer_seconds_cap": 2700,
+    "requested_steps": 50000000,
+    "actual_steps_ceiling": 49971200
+  },
+  "state": "complete",
+  "dispatched_at": 1793148042.8604603,
+  "admitted_at": 1793148112.2627325,
+  "queue_seconds": 69.40227222442627,
+  "expires_at": 1793150742.8604603,
+  "trainer_sha256": "878c99d186f2bd554d36999e437302c52c768204246c5d4c35ecb68a34116a24",
+  "gpu_requested": "L40S",
+  "confirmation_queries": 0,
+  "new_training_processes": 1,
+  "gpu_actual_name": "NVIDIA L40S",
+  "versions": {
+    "torch": "2.6.0+cu124",
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "subprocess_started_at": 1793148115.3083131,
+  "trainer_process_seconds": 2466.69422551,
+  "return_code": 0,
+  "nonfinite_diagnostic_scalars": {},
+  "actual_steps": 49971200,
+  "completed_rollouts": 976,
+  "optimizer_step_upper_bound": 249856,
+  "built_in_evaluation_calls": 40,
+  "built_in_evaluation_transitions": 16000,
+  "built_in_evaluation_episodes": 320,
+  "stopped_early": false,
+  "optimizer_step_count": 156882,
+  "final_logstd_per_dimension": [
+    -2.0179426670074463,
+    -1.8726810216903687,
+    -2.072035074234009,
+    -2.096815347671509,
+    -0.29998934268951416,
+    -1.4893628358840942,
+    0.33901622891426086,
+    -1.3832871913909912
+  ],
+  "audit_trace_rows": 976,
+  "wrapper_seconds": 2470.7567577229997,
+  "completed_at": 1793150583.0195007,
+  "files": [
+    {
+      "path": "attempt.json",
+      "bytes": 145,
+      "sha256": "5cf7f5ebbb2c2a34ceede40f98635e33318fb76ecd68fb8cdd2063cdb4801f5f",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "scalars.json",
+      "bytes": 4705004,
+      "sha256": "1145acb6e156f707d2496a157670ec0cfd04da3c8b95349880ce193b990475d7",
+      "trainer_seconds": 2467.6989357471466
+    },
+    {
+      "path": "trainer.py",
+      "bytes": 26382,
+      "sha256": "878c99d186f2bd554d36999e437302c52c768204246c5d4c35ecb68a34116a24",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "work/train.log",
+      "bytes": 55985,
+      "sha256": "26d65f2700a9dd6dc1e3c56819b29b4eb654ee8a9a27fd75b13140553f774d7e",
+      "trainer_seconds": 2464.9418840408325
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "fe0b2ad4d99fc88f0c408a1da3ccfbf80fdf51e0d643f7ad977ad4604aa8f753",
+      "trainer_seconds": 20.659879446029663
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_101.pt",
+      "bytes": 1168376,
+      "sha256": "69fde942fd7587b7fad59886c1585f18abb9d7371474acf8d63a68d163adc00e",
+      "trainer_seconds": 302.5332067012787
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_126.pt",
+      "bytes": 1168376,
+      "sha256": "f17467ffe4a24f61d11fd8adffaaa50049d64fc2846b0e3c90478699e86732f0",
+      "trainer_seconds": 358.0432560443878
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_151.pt",
+      "bytes": 1168376,
+      "sha256": "0f638d23e2ba71a86eb67fdda373a019bfe533b28e5f61038b3f81799a9e5dbf",
+      "trainer_seconds": 407.2201852798462
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_176.pt",
+      "bytes": 1168376,
+      "sha256": "603e4596cfec96ff49c99d1365c59df7c599f573e14bd96e0f7c23f13d293857",
+      "trainer_seconds": 457.3251323699951
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_201.pt",
+      "bytes": 1168376,
+      "sha256": "af8d69b5eb2f1149ed3f9426b6450118371802f4371f10fa123bb0fdf1b8b4e0",
+      "trainer_seconds": 514.7942185401917
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_226.pt",
+      "bytes": 1168376,
+      "sha256": "c24400afbbdf5bbafd446d4d3d9afba1443a6afcf6a8f7607404450b4a682930",
+      "trainer_seconds": 569.7532572746277
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_251.pt",
+      "bytes": 1168376,
+      "sha256": "311111d52e90602778138e4c45d890a1b8ee7e26d64e8720dcf168716f11dd31",
+      "trainer_seconds": 622.7042579650879
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "292c8eeeacd22efe8d9547e99ed04c06fefed90e8ce7286c1df7c1962f7180d9",
+      "trainer_seconds": 90.70020318031311
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_276.pt",
+      "bytes": 1168376,
+      "sha256": "bc03afd86cef0a4730f14c7a02b0918fd4374d5c715a55db8ba4688694af11de",
+      "trainer_seconds": 674.8802442550659
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_301.pt",
+      "bytes": 1168376,
+      "sha256": "7fae4e62222e77c39dc4f8615a905a6cd7191cc490cf98db1f7b7cd760d9f3a0",
+      "trainer_seconds": 728.2122521400452
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_326.pt",
+      "bytes": 1168376,
+      "sha256": "5603cc8830f5e913e0921e876c32c4dee9d7cf882f5a70a103c9f41843ce26fb",
+      "trainer_seconds": 781.4172549247742
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_351.pt",
+      "bytes": 1168376,
+      "sha256": "65d41a975c657a0dbefedae6b6f531636e25fa77e6770530b829120f6803273c",
+      "trainer_seconds": 838.7273333072662
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_376.pt",
+      "bytes": 1168376,
+      "sha256": "34454d5fb949c24a14f9a74cbbd35f6a75deac2342d5bc166224618eb2ab32d5",
+      "trainer_seconds": 895.4684011936188
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_401.pt",
+      "bytes": 1168376,
+      "sha256": "39fe6feb6fe5d1df085d7c72b92815be8a6338e9393565f671074d3f2f5d96ae",
+      "trainer_seconds": 949.402416229248
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_426.pt",
+      "bytes": 1168376,
+      "sha256": "8a9e818bc81d799c26886e2edb0f6101ad8cb8403c683a4f4321e67e3be64dfb",
+      "trainer_seconds": 1001.7424013614655
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_451.pt",
+      "bytes": 1168376,
+      "sha256": "c112c51d865699f751cf8324c66c9baf5b0129888fd9786ce3c1cfde0a7b9cb1",
+      "trainer_seconds": 1053.53937625885
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_476.pt",
+      "bytes": 1168376,
+      "sha256": "1fff53a4dd4f93936b85789304c1b293c6bba919a71b2e43df341ae2ca919b72",
+      "trainer_seconds": 1105.1133468151093
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_501.pt",
+      "bytes": 1168376,
+      "sha256": "41c6e60c5ba7866e7fd2aaff7de985dd47b0f69d1122e3b16b0f632760ebfd05",
+      "trainer_seconds": 1157.121325492859
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_51.pt",
+      "bytes": 1167971,
+      "sha256": "ebe73770a97f3de5ba40e9731cd9968c4d87d20c9c1d037f14e09a50bf00ceec",
+      "trainer_seconds": 162.52056050300598
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_526.pt",
+      "bytes": 1168376,
+      "sha256": "173cf7cf1a0017f6a6ef59f220433a2c5bd0a617ded9ecd326c743b8d0283070",
+      "trainer_seconds": 1211.1633427143097
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_551.pt",
+      "bytes": 1168376,
+      "sha256": "8d27ebeb8a7f2bb645c4851d6c5186cd3e87679f3f8de3b395297b5d6cac33d7",
+      "trainer_seconds": 1269.1014330387115
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_576.pt",
+      "bytes": 1168376,
+      "sha256": "2409ab54de1f88ae62ddb586d48ea1f1431e965e19605f6920f2ecf59d529e8a",
+      "trainer_seconds": 1331.9846165180206
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_601.pt",
+      "bytes": 1168376,
+      "sha256": "0dac9d6b3bc17d48190136901c26ca8980132f841c67264f28644767835833d0",
+      "trainer_seconds": 1399.6378898620605
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_626.pt",
+      "bytes": 1168376,
+      "sha256": "0d99c1639266c9c6cf24b18a93e83b95318479daf46d4743af67d1013a3056c6",
+      "trainer_seconds": 1468.9661946296692
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_651.pt",
+      "bytes": 1168376,
+      "sha256": "3a17643c3f1402bfb5fb867d39e2c32d5bf34f76926ea89bc488be01ad4f4f67",
+      "trainer_seconds": 1538.3655006885529
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_676.pt",
+      "bytes": 1168376,
+      "sha256": "63cd7f74a6ec3e4e5df4aff525355a7d2336d37e192442bec370476f585d39c0",
+      "trainer_seconds": 1609.6198415756226
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_701.pt",
+      "bytes": 1168376,
+      "sha256": "69800ad2349c93084ce4fdefcef295875e32e88c71b9f52ea50aa54bb5a3f7f9",
+      "trainer_seconds": 1681.5291950702667
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_726.pt",
+      "bytes": 1168376,
+      "sha256": "25d4f58e15277cd802f3bd8efbb579e3607f499685d24dd73eeed30530aee0e0",
+      "trainer_seconds": 1753.0945417881012
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_751.pt",
+      "bytes": 1168376,
+      "sha256": "5946f8b0fe501de9e79be4bd8bf3ed09ffcef24dec5718f55da99caf5a14aa36",
+      "trainer_seconds": 1825.7889065742493
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_76.pt",
+      "bytes": 1167971,
+      "sha256": "98e88d62db7bab3a5921d59c36bdf2930b835a05a85b2c73e45d09af094bc502",
+      "trainer_seconds": 235.08493208885193
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_776.pt",
+      "bytes": 1168376,
+      "sha256": "3ae55cde55a048aff3adb74ae335e4d19e011da3c56e186693657e3c04aa5388",
+      "trainer_seconds": 1897.2912466526031
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_801.pt",
+      "bytes": 1168376,
+      "sha256": "e2289f43cad0537f9009b06ca55640f3c865c66215498bcc8bd7975dee338874",
+      "trainer_seconds": 1968.8705878257751
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_826.pt",
+      "bytes": 1168376,
+      "sha256": "20ce29a227de0eb1370d6b45ecfc68b33bbf6161ac76cbbefdd395ef09c2d90d",
+      "trainer_seconds": 2039.194905757904
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_851.pt",
+      "bytes": 1168376,
+      "sha256": "d117aa1da3c09a70ff59608ae1abbebd647a197a9db7a5a605aa0636b69d6ad8",
+      "trainer_seconds": 2110.0542335510254
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_876.pt",
+      "bytes": 1168376,
+      "sha256": "b4c3533c101e470f16a859cf830756f9aabaa7bb3a826fa4bcd311c675f49c69",
+      "trainer_seconds": 2180.479553461075
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_901.pt",
+      "bytes": 1168376,
+      "sha256": "eda7bc89ab334d238d9400f20c9c8412835bc69083bed09d64c200f41059b3c3",
+      "trainer_seconds": 2250.2968616485596
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_926.pt",
+      "bytes": 1168376,
+      "sha256": "606eac0dd8a464bff40618dd88df01b76b2d283029ae09c2bfd8f3fec6a0f9f9",
+      "trainer_seconds": 2320.8191833496094
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_951.pt",
+      "bytes": 1168376,
+      "sha256": "dacefdd54037199820ad405dc4e5339943bc29599891cf7d98966f84e1856118",
+      "trainer_seconds": 2392.4095249176025
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_976.pt",
+      "bytes": 1168376,
+      "sha256": "c4d5c741aefe7c272a25068441487ca99255855c50cf3cf5fff79bc65c8f03dd",
+      "trainer_seconds": 2461.754824399948
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/events.out.tfevents.1793148132.modal.8.0",
+      "bytes": 2373518,
+      "sha256": "3c385f65039bc8adef4da98dbdb25c42f9db080b7ce8b955d87b62f072747509",
+      "trainer_seconds": 2464.6238780021667
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "0bc3fb0663866a74a043f63252f22d5a8775e34441de35e65b731fe047e1d745",
+      "trainer_seconds": 2464.620877981186
+    }
+  ],
+  "output_bytes": 55062339
+}

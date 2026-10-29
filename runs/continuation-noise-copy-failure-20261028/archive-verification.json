@@ -1,0 +1,14 @@
+{
+  "state": "verified_failed_setup",
+  "files": 5,
+  "actual_public_transitions": 0,
+  "attempted_public_transitions": 0,
+  "state_read_calls": 2,
+  "state_write_calls": 1,
+  "controller_reset_calls": 1,
+  "extra_observation_read_calls": 1,
+  "initial_observation_max_difference": 1.9073486328125e-05,
+  "physical_state_copy_max_difference": 1.1920928955078125e-07,
+  "scientific_variance_estimate": false,
+  "new_training_runs": 0
+}

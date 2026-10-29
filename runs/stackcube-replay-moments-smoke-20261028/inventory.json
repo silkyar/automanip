@@ -1,0 +1,172 @@
+[
+  {
+    "path": "attempt.json",
+    "bytes": 77,
+    "sha256": "3259d55e6020bbfebacff3763b9416c4c63acc123664fd24af939a4f6654f1bd"
+  },
+  {
+    "path": "joint-moments/run/actor-final/manifest.json",
+    "bytes": 287,
+    "sha256": "c3a1c43b4bd0b01c3d98a8d98da7d97b53ad88306bf68f2990c187c9775a7524"
+  },
+  {
+    "path": "joint-moments/run/actor-final/weights.json",
+    "bytes": 1687005,
+    "sha256": "964eb41d3528cd4ea649e66ecdec5f3314711dcc702ca7b6ae4de8945d56cd44"
+  },
+  {
+    "path": "joint-moments/run/actor-final-state.npz",
+    "bytes": 931492,
+    "sha256": "8aa61fa82bb4ed86ecf3d9af601e385339f63229baab65fb51a2387873b36142"
+  },
+  {
+    "path": "joint-moments/run/actor-final-trajectory.npz",
+    "bytes": 1105417,
+    "sha256": "2c8a2ec360ab7262eb92ef55b74cf20902d220964146dfd7250c5777c19f67e5"
+  },
+  {
+    "path": "joint-moments/run/actor-step-0/manifest.json",
+    "bytes": 287,
+    "sha256": "8f658f26c2aa0d026d8bb385410c273f7c8efe8fc8f3f4c19b852247320f8e26"
+  },
+  {
+    "path": "joint-moments/run/actor-step-0/weights.json",
+    "bytes": 1687178,
+    "sha256": "6f768e630c4751d41ed3bd032a21078ea44d12c219c00bf6e606caae0e4c149f"
+  },
+  {
+    "path": "joint-moments/run/actor-step-0-state.npz",
+    "bytes": 906470,
+    "sha256": "0d4529b598e8d21c0872bd4d4bebb166777dd8d22f7a757e95526b48cbdf7165"
+  },
+  {
+    "path": "joint-moments/run/learning.jsonl",
+    "bytes": 658,
+    "sha256": "6e039ecb4be951d0498436c0ec242514a158da0b98eaf938930c8856d3678e27"
+  },
+  {
+    "path": "joint-moments/run/metadata.json",
+    "bytes": 2139,
+    "sha256": "7e77c4471d9b49b79a632585ee3ead0d009412e29051654764e05f6a48a250b4"
+  },
+  {
+    "path": "joint-moments/run/report.json",
+    "bytes": 2987,
+    "sha256": "1b7c31ed0c3daf7349f82af0cf79d91c3b1ad6f9dcf030a71e6aeb4ae0414d49"
+  },
+  {
+    "path": "joint-moments/training.log",
+    "bytes": 1001,
+    "sha256": "2f143adc2b0187d3047645f4102271d12c63ff6f76ad9f77da4d7e0147192071"
+  },
+  {
+    "path": "split-moments/run/actor-final/manifest.json",
+    "bytes": 287,
+    "sha256": "28bef55a749a2ef3c2308f1405bdb5dde0f5acf98f0e4e30acd287e270f76ee1"
+  },
+  {
+    "path": "split-moments/run/actor-final/weights.json",
+    "bytes": 1686908,
+    "sha256": "15f992aa30ecf809235dd09cfe8f6ec36e2f3264d475c219a602aefedc7737d6"
+  },
+  {
+    "path": "split-moments/run/actor-final-state.npz",
+    "bytes": 931232,
+    "sha256": "b5622b72cad144d5b49bf94d28699b5143958e43e3f33d87af8f326869893c7f"
+  },
+  {
+    "path": "split-moments/run/actor-final-trajectory.npz",
+    "bytes": 1105417,
+    "sha256": "2c8a2ec360ab7262eb92ef55b74cf20902d220964146dfd7250c5777c19f67e5"
+  },
+  {
+    "path": "split-moments/run/actor-step-0/manifest.json",
+    "bytes": 287,
+    "sha256": "8f658f26c2aa0d026d8bb385410c273f7c8efe8fc8f3f4c19b852247320f8e26"
+  },
+  {
+    "path": "split-moments/run/actor-step-0/weights.json",
+    "bytes": 1687178,
+    "sha256": "6f768e630c4751d41ed3bd032a21078ea44d12c219c00bf6e606caae0e4c149f"
+  },
+  {
+    "path": "split-moments/run/actor-step-0-state.npz",
+    "bytes": 906470,
+    "sha256": "0d4529b598e8d21c0872bd4d4bebb166777dd8d22f7a757e95526b48cbdf7165"
+  },
+  {
+    "path": "split-moments/run/learning.jsonl",
+    "bytes": 658,
+    "sha256": "5d57d7b05b8339d4e39eca82329eb77ae033cc3598766351c1ddb68e2fc3bc54"
+  },
+  {
+    "path": "split-moments/run/metadata.json",
+    "bytes": 2139,
+    "sha256": "33b774acfd852843b53e08130daf191c36119ade00173cc44ddf78cb3eb3ceff"
+  },
+  {
+    "path": "split-moments/run/report.json",
+    "bytes": 2989,
+    "sha256": "6b9571148035550e8fe623dc817662fcc590e16b38bf85d1bda12d3b523e6dee"
+  },
+  {
+    "path": "split-moments/training.log",
+    "bytes": 1001,
+    "sha256": "7ef0c58d2660569dab848edbbaa407fd9df01631c33cc1b992459f36b5df1c89"
+  },
+  {
+    "path": "target-sac/run/actor-final/manifest.json",
+    "bytes": 287,
+    "sha256": "2086d07d051221af3b4372334c9993f3c41a5ac03fd53d63a13218e9475f202d"
+  },
+  {
+    "path": "target-sac/run/actor-final/weights.json",
+    "bytes": 1687019,
+    "sha256": "c7c6cf68a27a8c34d8835e2d07b8a3399431575d419c1ace2467d8e0e2159c14"
+  },
+  {
+    "path": "target-sac/run/actor-final-state.npz",
+    "bytes": 908967,
+    "sha256": "14b00089ff652597fa7ea6565eea77d28474a5cc56cd3c923b53e7cb118b8538"
+  },
+  {
+    "path": "target-sac/run/actor-final-trajectory.npz",
+    "bytes": 1105417,
+    "sha256": "2c8a2ec360ab7262eb92ef55b74cf20902d220964146dfd7250c5777c19f67e5"
+  },
+  {
+    "path": "target-sac/run/actor-step-0/manifest.json",
+    "bytes": 287,
+    "sha256": "8f658f26c2aa0d026d8bb385410c273f7c8efe8fc8f3f4c19b852247320f8e26"
+  },
+  {
+    "path": "target-sac/run/actor-step-0/weights.json",
+    "bytes": 1687178,
+    "sha256": "6f768e630c4751d41ed3bd032a21078ea44d12c219c00bf6e606caae0e4c149f"
+  },
+  {
+    "path": "target-sac/run/actor-step-0-state.npz",
+    "bytes": 899760,
+    "sha256": "457eb9f6024091f0d308d5452610c42ed434a449df83835f53c3287dba4baf90"
+  },
+  {
+    "path": "target-sac/run/learning.jsonl",
+    "bytes": 660,
+    "sha256": "8a4520c026af2baed4af91cbe39286b41237da16e6776b00db0e4d79ee2b0565"
+  },
+  {
+    "path": "target-sac/run/metadata.json",
+    "bytes": 2136,
+    "sha256": "734ec4edfe6206b4530f848a541feb1814623a890fd1e72c4186ad52cfa472b3"
+  },
+  {
+    "path": "target-sac/run/report.json",
+    "bytes": 2960,
+    "sha256": "6c38e9dfce506060af485b32a510b9f1df1fb094aa40ba6fc3e9155ccb7ec21c"
+  },
+  {
+    "path": "target-sac/training.log",
+    "bytes": 1002,
+    "sha256": "2eb4fa7cf32e5b0a33e4840e01e80cec9ef3e6ed6d74422363fa73a15e0f0074"
+  }
+]

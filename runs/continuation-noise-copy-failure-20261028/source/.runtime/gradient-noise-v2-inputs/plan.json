@@ -1,0 +1,40 @@
+{
+  "admitted": true,
+  "experiment": "continuation-noise-v2-20261028",
+  "policies": [
+    {
+      "name": "initial",
+      "filename": "initial.json",
+      "sha256": "5a39ef90abb7e12b08e08590bad160cf61b005d79291d9f5d5989b2aab9982e1",
+      "source": "runs/stackcube-replay-moments-screen-20261028/joint-moments/joint-moments/run/actor-step-0-state.npz",
+      "source_sha256": "0d4529b598e8d21c0872bd4d4bebb166777dd8d22f7a757e95526b48cbdf7165"
+    },
+    {
+      "name": "joint-256k",
+      "filename": "joint-256k.json",
+      "sha256": "e28ca8e4ac18620877bd380bf765cdc78100a0e143d40f93df5ba53369810d69",
+      "source": "runs/stackcube-replay-moments-screen-20261028/joint-moments/joint-moments/run/actor-step-256000-state.npz",
+      "source_sha256": "e657f3dc1d81c1e83f8920daae854a46d35a3835d296427dc633495a7f74b74d"
+    }
+  ],
+  "public_initial_seeds": [
+    93274000,
+    93274001,
+    93274002,
+    93274003
+  ],
+  "max_public_transitions": 409600,
+  "source_sha256": {
+    "continuation_noise_robot_v2.py": "9be36dca2c8245c46aa4495df61344234ea5cd0f5ea04d1e60eb1d6ac3e424f9",
+    "continuation_variance.py": "058fc4e2a3dd49792939f1075b5fef0f71a26ba0cd8f925b3121505e4cbeffbb",
+    "sac_baseline.py": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca",
+    "replicate_initial_state.py": "4664db278972967339cc8ac53157e63be18c9b7a47b0785b64bf914b09a159bd"
+  },
+  "plan_path": "docs/continuation-noise-v2-plan-20261028.md",
+  "scientific_plan_sha256": "d7f0fc826b4d2b4356653dc84e8394abf4ceed5c23412f1f244bfec0caff4ca6",
+  "budget_cap_usd": 2,
+  "window_deadline_epoch": 1793219553,
+  "adapter_sha256": "91cae850913434b202177566ad836b210650c70de06c3eca2a6714f2aca69025",
+  "root_admitted_epoch": 1793211663.750928,
+  "review": "Independent exact-source v2 review passed; root verified failedv1archive/STOPPEDzero and CPU gates/pins/caps. One diagnostic, no third setup attempt, no training admission."
+}

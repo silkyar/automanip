@@ -1,0 +1,61 @@
+{
+  "experiment_id": "stackcube-replay-moments-20261028",
+  "admitted_phases": [
+    "smoke",
+    "screen"
+  ],
+  "scientific_plan": "docs/replay-moment-study-plan-20261028.md",
+  "scientific_plan_sha256": "9a0e8d7bfca7e6571b4534c7765791d5e9e4bfb12f99b69f5096af8a418c7e49",
+  "adapter_sha256": "ee23a16ceb9e4d1b078fc469ebec668cc0e3988f33ace475a6b4cd903dab1ce1",
+  "source_sha256": {
+    "replay_robot.py": "e753b684f97b475dcadd7bdf1736395a79485ea4f431fa8f04083ffb89945d7f",
+    "replay_learner.py": "009b4662a3b248e8e677905e2e7cafe2a69611a9259ab5fe91ec0cbe3b2efdfc",
+    "sac_baseline.py": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca"
+  },
+  "cpu_mechanism_gate_sha256": "a41cce570d617a5cf9f219d5c6c17391672c5a21637f105558cb926bc4ff4365",
+  "cpu_mechanism_source_sha256": "d5ef313a3eeabe8f9558f7ff30577f047362472d5587654ca6609d60924a4d4f",
+  "cpu_unit_tests": "6 replay mechanism tests passed",
+  "training_seeds": [
+    1
+  ],
+  "methods": [
+    "target-sac",
+    "joint-moments",
+    "split-moments"
+  ],
+  "window_deadline_epoch": 1793219553.0,
+  "budget_caps_usd": {
+    "smoke": 1,
+    "screen": 6,
+    "shared_session": 100
+  },
+  "root_review": {
+    "smoke": "CPU algebra gate +6 meaningful operator/artifact tests passed; first check realphysics/wrappers/counters/artifacts before scientific screen.",
+    "screen": "Rootpassed actual3arm GPUsmoke:15360transitions,24Qupdates/6actorupdates,allmomentclocks8,sixsafeactorsvalidated,initialactorhashesidentical; pins/task/sourcechecks passed; no protectedscore. Reviewed coordinator globalseeded reportreuse/commitbeforeeval/reload/transport recovery, fixedonce budgets."
+  },
+  "authorization": "User explicitly requested autonomous4hour research with no feedback; preserve frozen task/evaluator and shared100Modal cap.",
+  "independent_development_steps": [
+    51200,
+    102400,
+    256000,
+    512000,
+    1024000
+  ],
+  "maximum_development_queries_per_arm": 6,
+  "confirmation_queries": 0,
+  "teacher_transitions": 0,
+  "demonstrations": 0,
+  "pretrained_policies": false,
+  "matched_replay_settings": {
+    "num_envs": 64,
+    "batch_size": 2048,
+    "collection_block": 128,
+    "critic_updates_per_block": 8,
+    "policy_delay": 3,
+    "gamma": 0.99,
+    "learning_rate": 0.001,
+    "adam_beta1": 0.5,
+    "critic_width": 256
+  },
+  "smoke_proof_sha256": "0d9ad134736ba22be2df1c74280de1ad1c47f99548901d43434616d36bb1fa22"
+}

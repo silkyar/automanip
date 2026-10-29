@@ -1,0 +1,13 @@
+{
+  "route": "high-actor-low-backup",
+  "weights_sha256": "4cd3a58a9da3c916723d870017b839e7cbbe8d26f4ab3b303bb4431bcd0b561e",
+  "plan_sha256": "e5c0f0605b6134c84fd9166ca06076f31eaceb4b44540b6cd15936a3f3837cac",
+  "submitted_at": 1793276906.45255,
+  "reused_existing_report": false,
+  "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/4cd3a58a9da3c916723d870017b839e7cbbe8d26f4ab3b303bb4431bcd0b561e/development/result.json",
+  "new_training_runs": 0,
+  "new_confirmation_queries": 0,
+  "source_sha256": "de14c8a85d27e69f3659a837cda018da116314e396408afd8717cd4b19c711f5",
+  "state": "submitted",
+  "function_call_id": "fc-01M63T43QVJW8T32RAHWY0WHSZ"
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "stackcube-first-update-probe-20261028",
+  "function_call_id": "fc-01M61MDCZWPD8JSVFCK26EFQED",
+  "dispatched_at": 1793203811.26369,
+  "expires_at": 1793204391.26369,
+  "plan_sha256": "f152873223a086e077dfcbc6d9b5225463fe4828b1b47080286f1d24e88b7b48",
+  "output_volume": "automanip-first-update-probe-20261028",
+  "gpu": "L40S",
+  "maximum_gpu_workers": 1,
+  "budget_cap_usd": 1,
+  "maximum_new_transitions": 201600
+}

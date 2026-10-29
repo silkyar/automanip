@@ -1,0 +1,151 @@
+{
+  "job": {
+    "job_id": "stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1",
+    "method": "scratch-kl-stop-control",
+    "seed": 1,
+    "trainer_sha256": "de067415f6895f7b4fcc534cff20fe9cd628fef6faae3846c3b49687ff526632",
+    "gpu": "L40S",
+    "trainer_seconds_cap": 600,
+    "requested_steps": 10240000,
+    "actual_steps_ceiling": 10240000
+  },
+  "state": "complete",
+  "dispatched_at": 1793198411.528895,
+  "admitted_at": 1793198419.145106,
+  "queue_seconds": 7.616211175918579,
+  "expires_at": 1793199011.528895,
+  "trainer_sha256": "de067415f6895f7b4fcc534cff20fe9cd628fef6faae3846c3b49687ff526632",
+  "gpu_requested": "L40S",
+  "confirmation_queries": 0,
+  "new_training_processes": 1,
+  "gpu_actual_name": "NVIDIA L40S",
+  "versions": {
+    "torch": "2.6.0+cu124",
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "subprocess_started_at": 1793198423.0728688,
+  "trainer_process_seconds": 572.611207391,
+  "return_code": 0,
+  "nonfinite_diagnostic_scalars": {},
+  "actual_steps": 10240000,
+  "completed_rollouts": 200,
+  "optimizer_step_upper_bound": 51200,
+  "built_in_evaluation_calls": 8,
+  "built_in_evaluation_transitions": 3200,
+  "built_in_evaluation_episodes": 64,
+  "stopped_early": false,
+  "final_logstd_per_dimension": [
+    -1.7237268686294556,
+    -2.1000852584838867,
+    -1.8438736200332642,
+    -1.9640008211135864,
+    -0.6382184624671936,
+    -1.4425654411315918,
+    -0.42001715302467346,
+    -1.3851251602172852
+  ],
+  "audit_trace_rows": 200,
+  "optimizer_step_count": 31269,
+  "legacy_joint_optimizer_step_count": 31269,
+  "measured_actor_optimizer_calls": 31269,
+  "measured_critic_optimizer_calls": 31269,
+  "measured_joint_optimizer_calls": 31269,
+  "measured_critic_only_optimizer_calls": 0,
+  "critic_only_training_rows": 0,
+  "critic_only_seconds": 0.0,
+  "full_optimizer_loop_seconds": 128.1457808700001,
+  "kl_stop_rollouts": 95,
+  "private_rng_evidence": "Pinned reviewed source and CPU actor/Adam/NumPy/Torch parity tests; no untrusted source execution in scorer.",
+  "wrapper_seconds": 577.165508894,
+  "completed_at": 1793198996.310618,
+  "files": [
+    {
+      "path": "attempt.json",
+      "bytes": 146,
+      "sha256": "f8c00312b3d5a556242bbc7bcf7f5a35eef56519e571e01afea4689faedacfa7",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "scalars.json",
+      "bytes": 1429892,
+      "sha256": "81ace17ae8f06808489c7664db7bf866e19101fb320d819f9cda69a87bbbf6b7",
+      "trainer_seconds": 573.0092663764954
+    },
+    {
+      "path": "trainer.py",
+      "bytes": 34682,
+      "sha256": "de067415f6895f7b4fcc534cff20fe9cd628fef6faae3846c3b49687ff526632",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "work/train.log",
+      "bytes": 256454,
+      "sha256": "829b92906167bd7de19b0c4be4437f67910eb030e335f80a0bcbabe3c82e30d1",
+      "trainer_seconds": 570.6742222309113
+    },
+    {
+      "path": "work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "fe0b2ad4d99fc88f0c408a1da3ccfbf80fdf51e0d643f7ad977ad4604aa8f753",
+      "trainer_seconds": 23.039895057678223
+    },
+    {
+      "path": "work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_101.pt",
+      "bytes": 1168376,
+      "sha256": "69fde942fd7587b7fad59886c1585f18abb9d7371474acf8d63a68d163adc00e",
+      "trainer_seconds": 334.2767641544342
+    },
+    {
+      "path": "work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_126.pt",
+      "bytes": 1168376,
+      "sha256": "f17467ffe4a24f61d11fd8adffaaa50049d64fc2846b0e3c90478699e86732f0",
+      "trainer_seconds": 396.3349344730377
+    },
+    {
+      "path": "work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_151.pt",
+      "bytes": 1168376,
+      "sha256": "0f638d23e2ba71a86eb67fdda373a019bfe533b28e5f61038b3f81799a9e5dbf",
+      "trainer_seconds": 451.6769781112671
+    },
+    {
+      "path": "work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_176.pt",
+      "bytes": 1168376,
+      "sha256": "603e4596cfec96ff49c99d1365c59df7c599f573e14bd96e0f7c23f13d293857",
+      "trainer_seconds": 508.07904171943665
+    },
+    {
+      "path": "work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "292c8eeeacd22efe8d9547e99ed04c06fefed90e8ce7286c1df7c1962f7180d9",
+      "trainer_seconds": 101.23336958885193
+    },
+    {
+      "path": "work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_51.pt",
+      "bytes": 1167971,
+      "sha256": "ebe73770a97f3de5ba40e9731cd9968c4d87d20c9c1d037f14e09a50bf00ceec",
+      "trainer_seconds": 180.29886054992676
+    },
+    {
+      "path": "work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/ckpt_76.pt",
+      "bytes": 1167971,
+      "sha256": "98e88d62db7bab3a5921d59c36bdf2930b835a05a85b2c73e45d09af094bc502",
+      "trainer_seconds": 260.03036403656006
+    },
+    {
+      "path": "work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/events.out.tfevents.1793198442.modal.8.0",
+      "bytes": 848277,
+      "sha256": "816126dddaa1c76c7f433451c7b7c35503b3811d8ffd7c69e403e682e3b2ad1c",
+      "trainer_seconds": 570.1432123184204
+    },
+    {
+      "path": "work/runs/stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "ffcdd42e94f81b35ebffc62206d611121ea03ca136fe3791c7c2c92b95d43a0a",
+      "trainer_seconds": 570.3302156925201
+    }
+  ],
+  "output_bytes": 13082724
+}

@@ -1,0 +1,252 @@
+[
+  {
+    "name": "settle-entropy-decay-seed-1",
+    "steps": 24985600,
+    "trainer_seconds": 1304.0924388677813,
+    "rollout_seconds": 1127.8551180362701,
+    "optimization_seconds": 111.19938850402832,
+    "success": 0.8125,
+    "diagnostics": {
+      "grasp": 1.0,
+      "lift": 1.0,
+      "transport": 1.0,
+      "placement": 1.0,
+      "release": 1.0,
+      "contact_free_placement": 1.0,
+      "stable_stack_10_steps": 0.8203125
+    },
+    "failures": {
+      "success": 104,
+      "released_not_stable": 12,
+      "lost_stack_before_horizon": 12
+    },
+    "critic_larger_fraction": 0.0020491803278688526,
+    "critic_actor_norm_ratio_median": 0.027124258569206115,
+    "metrics": {
+      "audit/sampled_action_clip_fraction": {
+        "n": 488,
+        "median": 0.17701293528079987,
+        "early_mean": 0.1324003993487749,
+        "late_mean": 0.3223384198595266
+      },
+      "audit/global_clip_multiplier": {
+        "n": 488,
+        "median": 0.08092021569609642,
+        "early_mean": 0.2023198896499931,
+        "late_mean": 0.06587187646598112
+      },
+      "losses/entropy": {
+        "n": 488,
+        "median": 0.036762893199920654,
+        "early_mean": 3.392351649823736,
+        "late_mean": -1.15721239613705
+      },
+      "losses/explained_variance": {
+        "n": 488,
+        "median": 0.9625707268714905,
+        "early_mean": 0.9020677580208075,
+        "late_mean": 0.959582558420838
+      },
+      "losses/approx_kl": {
+        "n": 488,
+        "median": 0.10528403148055077,
+        "early_mean": 0.04438014598715989,
+        "late_mean": 0.11269955972179038
+      },
+      "losses/clipfrac": {
+        "n": 488,
+        "median": 0.4291744828224182,
+        "early_mean": 0.3355687846902941,
+        "late_mean": 0.42716957775295755
+      }
+    }
+  },
+  {
+    "name": "settle-full-horizon-seed-1",
+    "steps": 24985600,
+    "trainer_seconds": 1088.766732081771,
+    "rollout_seconds": 887.4720520973206,
+    "optimization_seconds": 137.1496479511261,
+    "success": 0.9375,
+    "diagnostics": {
+      "grasp": 1.0,
+      "lift": 1.0,
+      "transport": 1.0,
+      "placement": 1.0,
+      "release": 1.0,
+      "contact_free_placement": 1.0,
+      "stable_stack_10_steps": 0.8984375
+    },
+    "failures": {
+      "success": 120,
+      "released_not_stable": 8
+    },
+    "critic_larger_fraction": 0.0020491803278688526,
+    "critic_actor_norm_ratio_median": 0.041530833537966064,
+    "metrics": {
+      "audit/sampled_action_clip_fraction": {
+        "n": 488,
+        "median": 0.15355467796325684,
+        "early_mean": 0.1358959324291495,
+        "late_mean": 0.21551847335745078
+      },
+      "audit/global_clip_multiplier": {
+        "n": 488,
+        "median": 0.0895409807562828,
+        "early_mean": 0.20167923996560885,
+        "late_mean": 0.08717508601849197
+      },
+      "losses/entropy": {
+        "n": 488,
+        "median": -0.0667155385017395,
+        "early_mean": 3.402845097369835,
+        "late_mean": -0.3167871328406647
+      },
+      "losses/explained_variance": {
+        "n": 488,
+        "median": 0.9587469696998596,
+        "early_mean": 0.902073579733489,
+        "late_mean": 0.9599082489482692
+      },
+      "losses/approx_kl": {
+        "n": 488,
+        "median": 0.1043374352157116,
+        "early_mean": 0.045109332203254346,
+        "late_mean": 0.10636719810913821
+      },
+      "losses/clipfrac": {
+        "n": 488,
+        "median": 0.4272715747356415,
+        "early_mean": 0.3337842160072483,
+        "late_mean": 0.4292529296191012
+      }
+    }
+  },
+  {
+    "name": "settle-gamma0925-entropy003-seed-1",
+    "steps": 24985600,
+    "trainer_seconds": 1218.8966742902994,
+    "rollout_seconds": 1045.5995018482208,
+    "optimization_seconds": 108.28737688064575,
+    "success": 0.078125,
+    "diagnostics": {
+      "grasp": 1.0,
+      "lift": 0.9921875,
+      "transport": 0.9921875,
+      "placement": 0.984375,
+      "release": 0.4765625,
+      "contact_free_placement": 0.3828125,
+      "stable_stack_10_steps": 0.0625
+    },
+    "failures": {
+      "success": 10,
+      "placed_still_grasped": 65,
+      "released_not_stable": 48,
+      "grasped_not_lifted": 1,
+      "lost_stack_before_horizon": 3,
+      "transported_not_placed": 1
+    },
+    "critic_larger_fraction": 0.0,
+    "critic_actor_norm_ratio_median": 0.03060642121712523,
+    "metrics": {
+      "audit/sampled_action_clip_fraction": {
+        "n": 488,
+        "median": 0.15900268405675888,
+        "early_mean": 0.13830391940523368,
+        "late_mean": 0.1791349976766305
+      },
+      "audit/global_clip_multiplier": {
+        "n": 488,
+        "median": 0.0892542339861393,
+        "early_mean": 0.20269757692442567,
+        "late_mean": 0.08173636707370399
+      },
+      "losses/entropy": {
+        "n": 488,
+        "median": 0.5797126293182373,
+        "early_mean": 3.647320727344419,
+        "late_mean": 0.12322763536797195
+      },
+      "losses/explained_variance": {
+        "n": 488,
+        "median": 0.9647072553634644,
+        "early_mean": 0.9029264176478151,
+        "late_mean": 0.9524417714994462
+      },
+      "losses/approx_kl": {
+        "n": 488,
+        "median": 0.10688334703445435,
+        "early_mean": 0.04531221884134851,
+        "late_mean": 0.11478372602189174
+      },
+      "losses/clipfrac": {
+        "n": 488,
+        "median": 0.4124048054218292,
+        "early_mean": 0.32719883628067425,
+        "late_mean": 0.4351303318484885
+      }
+    }
+  },
+  {
+    "name": "settle-timed-control-seed-1",
+    "steps": 24985600,
+    "trainer_seconds": 1298.8896873733029,
+    "rollout_seconds": 1117.061181306839,
+    "optimization_seconds": 116.66335868835449,
+    "success": 0.890625,
+    "diagnostics": {
+      "grasp": 1.0,
+      "lift": 1.0,
+      "transport": 1.0,
+      "placement": 1.0,
+      "release": 1.0,
+      "contact_free_placement": 1.0,
+      "stable_stack_10_steps": 0.890625
+    },
+    "failures": {
+      "success": 114,
+      "lost_stack_before_horizon": 5,
+      "released_not_stable": 9
+    },
+    "critic_larger_fraction": 0.0020491803278688526,
+    "critic_actor_norm_ratio_median": 0.028300604757103817,
+    "metrics": {
+      "audit/sampled_action_clip_fraction": {
+        "n": 488,
+        "median": 0.17701293528079987,
+        "early_mean": 0.1324003993487749,
+        "late_mean": 0.3304440889690743
+      },
+      "audit/global_clip_multiplier": {
+        "n": 488,
+        "median": 0.08165911585092545,
+        "early_mean": 0.2023198896499931,
+        "late_mean": 0.0669379147899444
+      },
+      "losses/entropy": {
+        "n": 488,
+        "median": 0.036762893199920654,
+        "early_mean": 3.392351649823736,
+        "late_mean": -1.0151604633839404
+      },
+      "losses/explained_variance": {
+        "n": 488,
+        "median": 0.9635847210884094,
+        "early_mean": 0.9020677580208075,
+        "late_mean": 0.9620150933500196
+      },
+      "losses/approx_kl": {
+        "n": 488,
+        "median": 0.10544535890221596,
+        "early_mean": 0.04438014598715989,
+        "late_mean": 0.11209613316860355
+      },
+      "losses/clipfrac": {
+        "n": 488,
+        "median": 0.4303457587957382,
+        "early_mean": 0.3355687846902941,
+        "late_mean": 0.4389218670911476
+      }
+    }
+  }
+]

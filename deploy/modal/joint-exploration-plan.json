@@ -1,0 +1,36 @@
+{
+  "admitted": true,
+  "experiment": "joint-exploration-20261029",
+  "routes": [
+    "joint",
+    "coordinate"
+  ],
+  "source_mapping": {
+    "joint_exploration_train.py": "joint_exploration_train.py",
+    "replay_robot.py": "replay_robot_exploration.py",
+    "replay_learner.py": "replay_learner_lowalpha.py",
+    "sac_baseline.py": "sac_baseline.py",
+    "joint_exploration.py": "joint_exploration.py"
+  },
+  "source_sha256": {
+    "joint_exploration_train.py": "fc86b1cc12eb406a46f178d8eb4150f6cde5ecde2795cc3413f149627f43003b",
+    "replay_robot.py": "7c0f6390691f9f01aef90843ba1e46c062906ad40952ec830d2f02ca8d54d0d1",
+    "replay_learner.py": "aeea61b2a55458a207f1dccb6c996a411acda67bc3238dc9c9c33fec7bd965bf",
+    "sac_baseline.py": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca",
+    "joint_exploration.py": "895010dca8affe6bc3361ce0adf39863158433d2ca980dffded58df85afe43a7"
+  },
+  "scientific_plan": "docs/joint-exploration-plan-20261029.md",
+  "scientific_plan_sha256": "d4acfd16652ae2638d0e990acfdbff1453f67103684a83c98451232c66f04406",
+  "adapter_sha256": "5c569a3c0df0451867c4750c69775e1daa271c43aec60390145cf6e4e3ca8339",
+  "cpu_gate_sha256": "4c6a56d7a4ff4cf6c63fc52fcc55039ae02d1aa976b0d01b99c36e7c8bab8cf7",
+  "initial_actor_sha256": "6f768e630c4751d41ed3bd032a21078ea44d12c219c00bf6e606caae0e4c149f",
+  "total_transitions_per_arm": 102400,
+  "max_child_seconds_per_arm": 150,
+  "development_points": [
+    102400
+  ],
+  "epsilon": 0.1,
+  "budget_cap_usd": 2,
+  "root_admission_note": "Independent exactreview passed collector/RNG/learner-source/isolation/APIreads/once-onlyprimarygates; CPUparity andmechanism/negativecontrolgates passed. Two102.4k150sworkers and2originalprimarydevscores only,2USDsharedcapreserved; no confirmation/extensions/automaticpromotion.",
+  "root_admitted_epoch": 1793281478.5178208
+}

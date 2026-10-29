@@ -1,0 +1,52 @@
+{
+  "campaign_id": "stackcube-settling-time-20261027",
+  "hypothesis": "At most 22 trainer minutes and 25M transitions per run: paired control, full-horizon training, late entropy decay, and discount/entropy interaction.",
+  "requested_transitions": 25000000,
+  "training_seeds": [
+    1,
+    2,
+    3
+  ],
+  "candidates": [
+    {
+      "id": "settle-timed-control",
+      "gamma": 0.9,
+      "partial_reset": true,
+      "entropy_schedule": "constant",
+      "ent_coef": 0.003,
+      "learning_rate": 0.0003,
+      "update_epochs": 8,
+      "max_training_seconds": 1320
+    },
+    {
+      "id": "settle-full-horizon",
+      "gamma": 0.9,
+      "partial_reset": false,
+      "entropy_schedule": "constant",
+      "ent_coef": 0.003,
+      "learning_rate": 0.0003,
+      "update_epochs": 8,
+      "max_training_seconds": 1320
+    },
+    {
+      "id": "settle-entropy-decay",
+      "gamma": 0.9,
+      "partial_reset": true,
+      "entropy_schedule": "decay-after-15m",
+      "ent_coef": 0.003,
+      "learning_rate": 0.0003,
+      "update_epochs": 8,
+      "max_training_seconds": 1320
+    },
+    {
+      "id": "settle-gamma0925-entropy003",
+      "gamma": 0.925,
+      "partial_reset": true,
+      "entropy_schedule": "constant",
+      "ent_coef": 0.003,
+      "learning_rate": 0.0003,
+      "update_epochs": 8,
+      "max_training_seconds": 1320
+    }
+  ]
+}

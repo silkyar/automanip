@@ -1,0 +1,10 @@
+{
+  "num_envs": 8,
+  "num_steps": 50,
+  "total_timesteps": 800,
+  "max_seconds": 120,
+  "num_minibatches": 2,
+  "update_epochs": 1,
+  "partial_reset": false,
+  "hidden_sizes": [16]
+}

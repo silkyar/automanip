@@ -1,0 +1,22 @@
+[
+  {
+    "path": "attempt.json",
+    "bytes": 117,
+    "sha256": "8355384d0e699a9f2d5db0c281920bf3a78fe67c7586e36f43ab8c9051e74346"
+  },
+  {
+    "path": "diagnostic.log",
+    "bytes": 1488,
+    "sha256": "6678218869844510f3839945fd7c4b26af28840e5e0c73d5161497c27155b00a"
+  },
+  {
+    "path": "run/report.json",
+    "bytes": 1727,
+    "sha256": "751f812fda21fac73116bf55408aa585abff04b1961f91c08b7a8e6883eeca04"
+  },
+  {
+    "path": "wrapper-receipt.json",
+    "bytes": 487,
+    "sha256": "ccf025a2da13bf4ecb4f20e0b331427b58dac4091792210598fb874933873689"
+  }
+]

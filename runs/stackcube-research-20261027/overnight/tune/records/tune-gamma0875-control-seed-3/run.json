@@ -1,0 +1,3174 @@
+{
+  "candidate": {
+    "id": "tune-gamma0875-control",
+    "gamma": 0.875,
+    "ent_coef": 0.0,
+    "learning_rate": 0.0003,
+    "update_epochs": 8
+  },
+  "seed": 3,
+  "name": "tune-gamma0875-control-seed-3",
+  "status": "complete",
+  "command": [
+    "/opt/automanip-stackcube-venv/bin/python",
+    "/opt/automanip-credit-20261026/work/trainer-program/ppo.py",
+    "--env-id",
+    "StackCube-v1",
+    "--seed",
+    "3",
+    "--num-envs",
+    "1024",
+    "--update-epochs",
+    "8",
+    "--num-minibatches",
+    "32",
+    "--total-timesteps",
+    "25000000",
+    "--num-eval-envs",
+    "8",
+    "--no-capture-video",
+    "--no-track",
+    "--exp-name",
+    "tune-gamma0875-control-seed-3",
+    "--gamma",
+    "0.875",
+    "--ent-coef",
+    "0.0",
+    "--learning-rate",
+    "0.0003"
+  ],
+  "started_at": 1793082540.9285924,
+  "configuration_sha256": "8db0c268adc6f9b3ec4f520674efb2f751f675906d2dc338d704b3516478c50d",
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "hypothesis": "Refine discount near 0.9 and test small entropy bonuses, one change at a time.",
+  "environment_transitions": 24985600,
+  "trainer_process_seconds": 1349.2849117640872,
+  "rollout_seconds": 1150.1844747066498,
+  "optimization_seconds": 132.17180705070496,
+  "finished_at": 1793084153.814548,
+  "final": {
+    "report": {
+      "task_fingerprint": "b524435b1d25e915ff9cbdc1cc18f129ded8257d12129f5a426bad9fa6e22d4f",
+      "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+      "weights_sha256": "45feab06939392b93d30a2635c6a66aa6cd63e76661a8415bf6c73654dad89c8",
+      "split": "development",
+      "smoke": false,
+      "episode_count": 128,
+      "successes_at_end": 96,
+      "success_at_end_rate": 0.75,
+      "success_ever_rate": 0.9140625,
+      "failed_episodes": 0,
+      "wilson_95_interval": [
+        0.6684443704768313,
+        0.8169871513864144
+      ],
+      "diagnostics_rates": {
+        "grasp": 1.0,
+        "lift": 0.984375,
+        "transport": 0.984375,
+        "placement": 0.984375,
+        "release": 0.953125,
+        "contact_free_placement": 0.9453125,
+        "stable_stack_10_steps": 0.6875
+      },
+      "first_unmet_stages": {
+        "success": 96,
+        "lost_stack_before_horizon": 5,
+        "released_not_stable": 21,
+        "placed_still_grasped": 4,
+        "grasped_not_lifted": 2
+      },
+      "episodes": [
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 25,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 32,
+            "first_unmet_stage": "lost_stack_before_horizon"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 29,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 35,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 37,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 15,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 35,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 32,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 19,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 3,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 39,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 36,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 24,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 37,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 4,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 19,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 35,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 27,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 21,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 2,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 5,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 36,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 7,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 25,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": false,
+            "terminated": false,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 0,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 40,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 35,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 34,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 36,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 37,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 8,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 12,
+            "first_unmet_stage": "lost_stack_before_horizon"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 36,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 29,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 4,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": false,
+            "terminated": false,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": false,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 0,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 35,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 1,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 32,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 32,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 9,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 24,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 34,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 37,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 33,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 34,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 1,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 10,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 33,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 41,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 25,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 33,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 30,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 31,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 32,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 2,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 3,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 11,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 32,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 31,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 26,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 37,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": false,
+            "terminated": false,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": false,
+              "contact_free_placement": false,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 0,
+            "first_unmet_stage": "placed_still_grasped"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 4,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": false,
+            "terminated": false,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": false,
+              "transport": false,
+              "placement": false,
+              "release": false,
+              "contact_free_placement": false,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 0,
+            "first_unmet_stage": "grasped_not_lifted"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 34,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 36,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 30,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 7,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 26,
+            "first_unmet_stage": "lost_stack_before_horizon"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 36,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": false,
+            "terminated": false,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 0,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 3,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 1,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 2,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": false,
+            "terminated": false,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": false,
+              "contact_free_placement": false,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 0,
+            "first_unmet_stage": "placed_still_grasped"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 32,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 21,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 32,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 4,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 24,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 2,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 30,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 38,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 5,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 32,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 27,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 3,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 7,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 1,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 24,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 5,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 37,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 31,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 36,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 33,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 36,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 16,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 31,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 37,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 31,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 3,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 16,
+            "first_unmet_stage": "lost_stack_before_horizon"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 19,
+            "first_unmet_stage": "lost_stack_before_horizon"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 27,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 28,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 35,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 36,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 39,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": false,
+            "terminated": false,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 0,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": false,
+            "terminated": false,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": false,
+              "contact_free_placement": false,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 0,
+            "first_unmet_stage": "placed_still_grasped"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 35,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 31,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 34,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 36,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": false,
+            "terminated": false,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": false,
+              "transport": false,
+              "placement": false,
+              "release": false,
+              "contact_free_placement": false,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 0,
+            "first_unmet_stage": "grasped_not_lifted"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": false,
+            "terminated": false,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": false,
+              "contact_free_placement": false,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 0,
+            "first_unmet_stage": "placed_still_grasped"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 37,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 3,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 29,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 1,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 1,
+            "first_unmet_stage": "released_not_stable"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 40,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 32,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 6,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 32,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": true,
+            "ever_success": true,
+            "terminated": true,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": true
+            },
+            "max_stable_steps": 38,
+            "first_unmet_stage": "success"
+          }
+        },
+        {
+          "outcome": {
+            "terminal_success": false,
+            "ever_success": false,
+            "terminated": false,
+            "truncated": true,
+            "failed": false
+          },
+          "steps": 50,
+          "error": "",
+          "diagnostics": {
+            "ever": {
+              "grasp": true,
+              "lift": true,
+              "transport": true,
+              "placement": true,
+              "release": true,
+              "contact_free_placement": true,
+              "stable_stack_10_steps": false
+            },
+            "max_stable_steps": 0,
+            "first_unmet_stage": "released_not_stable"
+          }
+        }
+      ]
+    },
+    "evaluation_seconds": 40.13860513083637,
+    "checkpoint_sha256": "2ec340eb6ccf9ef09a2c25de1bf6e67abf740414072fedc4515d33b0d12d652a",
+    "weights_sha256": "45feab06939392b93d30a2635c6a66aa6cd63e76661a8415bf6c73654dad89c8"
+  },
+  "paired_baseline_comparison": {
+    "candidate_successes": 96,
+    "baseline_successes": 30,
+    "paired_wins": 75,
+    "paired_losses": 9,
+    "success_rate_delta": 0.515625
+  },
+  "paired_anchor_comparison": {
+    "candidate_successes": 96,
+    "baseline_successes": 101,
+    "paired_wins": 18,
+    "paired_losses": 23,
+    "success_rate_delta": -0.0390625
+  }
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "path": "attempt.json",
+    "bytes": 87,
+    "sha256": "07fe302f9fc66fbfc6fd59c88195bff4c881eea2214c678baae0c5e218b43167"
+  },
+  {
+    "path": "joint-moments/run/actor-final/manifest.json",
+    "bytes": 287,
+    "sha256": "0162714572a78c0464d33228a91787eeba05497f6dc72c8c9a5303bf7ba50e49"
+  },
+  {
+    "path": "joint-moments/run/actor-final/weights.json",
+    "bytes": 1654763,
+    "sha256": "582137a17b33c0f6841dee86e84a05fbe34159524caca85dabf97ad1dd4e459c"
+  },
+  {
+    "path": "joint-moments/run/actor-final-state.npz",
+    "bytes": 938554,
+    "sha256": "f40eee629848e20428550c250a447588dd8fcf1463ba137cf818ed9fef78ce30"
+  },
+  {
+    "path": "joint-moments/run/actor-final-trajectory.npz",
+    "bytes": 1106080,
+    "sha256": "a279d4b291121fa34f0a72518ab0a5899507c5ccf53cb3940c46b1c3c9200f45"
+  },
+  {
+    "path": "joint-moments/run/actor-step-0/manifest.json",
+    "bytes": 287,
+    "sha256": "8f658f26c2aa0d026d8bb385410c273f7c8efe8fc8f3f4c19b852247320f8e26"
+  },
+  {
+    "path": "joint-moments/run/actor-step-0/weights.json",
+    "bytes": 1687178,
+    "sha256": "6f768e630c4751d41ed3bd032a21078ea44d12c219c00bf6e606caae0e4c149f"
+  },
+  {
+    "path": "joint-moments/run/actor-step-0-state.npz",
+    "bytes": 906470,
+    "sha256": "0d4529b598e8d21c0872bd4d4bebb166777dd8d22f7a757e95526b48cbdf7165"
+  },
+  {
+    "path": "joint-moments/run/actor-step-102400/manifest.json",
+    "bytes": 287,
+    "sha256": "712096b079b8391ac121a95ae4137f9e90c41bba1ce4ea092558149ef7df0d6e"
+  },
+  {
+    "path": "joint-moments/run/actor-step-102400/weights.json",
+    "bytes": 1684494,
+    "sha256": "a03d80f62eeb875297f6771fa663f712d1c5f28dea42891b789a90de9835f3fb"
+  },
+  {
+    "path": "joint-moments/run/actor-step-102400-state.npz",
+    "bytes": 935936,
+    "sha256": "82d41b243fcd31051f66b393610afa87295aae75424f6efae31c5c7bb727d84f"
+  },
+  {
+    "path": "joint-moments/run/actor-step-102400-trajectory.npz",
+    "bytes": 1112813,
+    "sha256": "f870dc26a9031dfece6f183a2e279200ad6fe764a18d4d03fc393d9d04f612fe"
+  },
+  {
+    "path": "joint-moments/run/actor-step-256000/manifest.json",
+    "bytes": 287,
+    "sha256": "38d2207860236dc8319599c29a22a1c08409ed1dbea41ddadbdaf1f4a2b8533a"
+  },
+  {
+    "path": "joint-moments/run/actor-step-256000/weights.json",
+    "bytes": 1683034,
+    "sha256": "26c90e6d717e82da825db2abef7d8c953bc3feee9e20ac229aafbaec3dc824ac"
+  },
+  {
+    "path": "joint-moments/run/actor-step-256000-state.npz",
+    "bytes": 937751,
+    "sha256": "e657f3dc1d81c1e83f8920daae854a46d35a3835d296427dc633495a7f74b74d"
+  },
+  {
+    "path": "joint-moments/run/actor-step-256000-trajectory.npz",
+    "bytes": 1111976,
+    "sha256": "71cd32abc41c361f4f43f1072f143efb8d2f74cde8893eadc402f79f113e8294"
+  },
+  {
+    "path": "joint-moments/run/actor-step-51200/manifest.json",
+    "bytes": 287,
+    "sha256": "ba0a42a994e27265d07aeacc700ea02bd9342dbce7aa547e3ccad5c8379955fb"
+  },
+  {
+    "path": "joint-moments/run/actor-step-51200/weights.json",
+    "bytes": 1685287,
+    "sha256": "a0961334b9d39891c704e6905ae9ced0194c618938b8fc6c7af098686dafd859"
+  },
+  {
+    "path": "joint-moments/run/actor-step-51200-state.npz",
+    "bytes": 934850,
+    "sha256": "87e9e2c694cc63e7b1a17c93419f08401f51a6e6db0ae7d9640003fa766c8a15"
+  },
+  {
+    "path": "joint-moments/run/actor-step-51200-trajectory.npz",
+    "bytes": 1111815,
+    "sha256": "d3c45e1b11d760c33423c40dbb07f76e760136e532dae33534f9eb15aca2c760"
+  },
+  {
+    "path": "joint-moments/run/actor-step-512000/manifest.json",
+    "bytes": 287,
+    "sha256": "ffa7cb1a6cada55470debdfabae8090b348600c899b8beac63279735200b410d"
+  },
+  {
+    "path": "joint-moments/run/actor-step-512000/weights.json",
+    "bytes": 1660666,
+    "sha256": "2665a598bd913e097a3b858bdf3f4597befbcbb411ba0183db50960ea227e520"
+  },
+  {
+    "path": "joint-moments/run/actor-step-512000-state.npz",
+    "bytes": 938403,
+    "sha256": "459897cb8376dc5b22e5e094a230abae95d453e64745ab4ab2d868e34d4328b4"
+  },
+  {
+    "path": "joint-moments/run/actor-step-512000-trajectory.npz",
+    "bytes": 1105768,
+    "sha256": "0e6fcd3f5592faeabb9c8d8626f5690b09b0f04fbb94750d84a8f535a589e6cd"
+  },
+  {
+    "path": "joint-moments/run/learning.jsonl",
+    "bytes": 81618,
+    "sha256": "367eb322a862633ca32d283f0dcdfcea5ad4c5b20d09b995a6ed550c324ba69f"
+  },
+  {
+    "path": "joint-moments/run/metadata.json",
+    "bytes": 2143,
+    "sha256": "a4c5efb95f4a749b3747ac09055f521ca11930d76e7f6f1c04a1cd83ebc6f70a"
+  },
+  {
+    "path": "joint-moments/run/report.json",
+    "bytes": 4123,
+    "sha256": "5bf10729f5b9d9db544f3dece56e812299eb45e602efe5e15249050536241fcb"
+  },
+  {
+    "path": "joint-moments/training.log",
+    "bytes": 998,
+    "sha256": "7d21c476c20a3c67d8ed7cd01f9cc7a1d57a1b605d89fb8e75b19e2ab00bada1"
+  }
+]

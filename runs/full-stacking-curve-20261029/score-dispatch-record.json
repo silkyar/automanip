@@ -1,0 +1,321 @@
+{
+  "state": "complete",
+  "plan_sha256": "f267df14cdaf1009bd42576d7adb43ea9853c7646c3e9ebb0a0041df5b994223",
+  "points": {
+    "baseline/actor-step-102400": {
+      "route": "baseline",
+      "checkpoint": {
+        "label": "actor-step-102400",
+        "transitions": 102400,
+        "elapsed_seconds": 85.743539217,
+        "weights_sha256": "075579d27e27895ae23dfd7660885227e6e0cd9ea6a9248b20d235cee31444e0",
+        "critic_updates": 6088,
+        "actor_updates": 2029
+      },
+      "weights_sha256": "075579d27e27895ae23dfd7660885227e6e0cd9ea6a9248b20d235cee31444e0",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/075579d27e27895ae23dfd7660885227e6e0cd9ea6a9248b20d235cee31444e0/development/result.json",
+      "reused_existing_report": false,
+      "state": "complete",
+      "submitted_at": 1793286148.126206,
+      "function_call_id": "fc-01M642Y4VT7HA1JRG765DX2KT8",
+      "transport_result": {
+        "state": "complete",
+        "weights_sha256": "075579d27e27895ae23dfd7660885227e6e0cd9ea6a9248b20d235cee31444e0",
+        "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+        "evaluation_seconds": 31.443153692000003,
+        "gpu_requested": "L40S",
+        "gpu_actual_name": "NVIDIA L40S",
+        "queue_seconds": 11.209899663925171,
+        "gpu_durable_result_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/075579d27e27895ae23dfd7660885227e6e0cd9ea6a9248b20d235cee31444e0/development/result.json"
+      },
+      "successes": 0,
+      "episodes": 128,
+      "diagnostics_rates": {
+        "grasp": 0.5390625,
+        "lift": 0.0,
+        "transport": 0.0,
+        "placement": 0.0,
+        "release": 0.0,
+        "contact_free_placement": 0.0,
+        "stable_stack_10_steps": 0.0
+      },
+      "local_report": "runs/full-stacking-curve-20261029/development/baseline-actor-step-102400.json"
+    },
+    "baseline/actor-step-256000": {
+      "route": "baseline",
+      "checkpoint": {
+        "label": "actor-step-256000",
+        "transitions": 256000,
+        "elapsed_seconds": 198.12588203500002,
+        "weights_sha256": "fe61192922330909c917a49556176af4eec533386ad5fbaf624e9b3b310d27ac",
+        "critic_updates": 15688,
+        "actor_updates": 5229
+      },
+      "weights_sha256": "fe61192922330909c917a49556176af4eec533386ad5fbaf624e9b3b310d27ac",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/fe61192922330909c917a49556176af4eec533386ad5fbaf624e9b3b310d27ac/development/result.json",
+      "reused_existing_report": false,
+      "state": "complete",
+      "submitted_at": 1793286195.3107378,
+      "function_call_id": "fc-01M642ZJPC75DE0KDD230H1RS4",
+      "transport_result": {
+        "state": "complete",
+        "weights_sha256": "fe61192922330909c917a49556176af4eec533386ad5fbaf624e9b3b310d27ac",
+        "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+        "evaluation_seconds": 44.869011068999995,
+        "gpu_requested": "L40S",
+        "gpu_actual_name": "NVIDIA L40S",
+        "queue_seconds": 3.0714313983917236,
+        "gpu_durable_result_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/fe61192922330909c917a49556176af4eec533386ad5fbaf624e9b3b310d27ac/development/result.json"
+      },
+      "successes": 0,
+      "episodes": 128,
+      "diagnostics_rates": {
+        "grasp": 0.8203125,
+        "lift": 0.015625,
+        "transport": 0.0078125,
+        "placement": 0.0,
+        "release": 0.0,
+        "contact_free_placement": 0.0,
+        "stable_stack_10_steps": 0.0
+      },
+      "local_report": "runs/full-stacking-curve-20261029/development/baseline-actor-step-256000.json"
+    },
+    "baseline/actor-step-512000": {
+      "route": "baseline",
+      "checkpoint": {
+        "label": "actor-step-512000",
+        "transitions": 512000,
+        "elapsed_seconds": 384.432149597,
+        "weights_sha256": "54a7e231e3415f77df60a32061ed8a5bb9eaae69eef994a06f60bbd2fc90ee6c",
+        "critic_updates": 31688,
+        "actor_updates": 10562
+      },
+      "weights_sha256": "54a7e231e3415f77df60a32061ed8a5bb9eaae69eef994a06f60bbd2fc90ee6c",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/54a7e231e3415f77df60a32061ed8a5bb9eaae69eef994a06f60bbd2fc90ee6c/development/result.json",
+      "reused_existing_report": false,
+      "state": "complete",
+      "submitted_at": 1793286249.165545,
+      "function_call_id": "fc-01M643177VN7VVKHBDQEGE2AT7",
+      "transport_result": {
+        "state": "complete",
+        "weights_sha256": "54a7e231e3415f77df60a32061ed8a5bb9eaae69eef994a06f60bbd2fc90ee6c",
+        "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+        "evaluation_seconds": 39.59373966,
+        "gpu_requested": "L40S",
+        "gpu_actual_name": "NVIDIA L40S",
+        "queue_seconds": 6.873867511749268,
+        "gpu_durable_result_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/54a7e231e3415f77df60a32061ed8a5bb9eaae69eef994a06f60bbd2fc90ee6c/development/result.json"
+      },
+      "successes": 0,
+      "episodes": 128,
+      "diagnostics_rates": {
+        "grasp": 0.875,
+        "lift": 0.0078125,
+        "transport": 0.0,
+        "placement": 0.0,
+        "release": 0.0,
+        "contact_free_placement": 0.0,
+        "stable_stack_10_steps": 0.0
+      },
+      "local_report": "runs/full-stacking-curve-20261029/development/baseline-actor-step-512000.json"
+    },
+    "baseline/actor-final": {
+      "route": "baseline",
+      "checkpoint": {
+        "label": "actor-final",
+        "transitions": 783936,
+        "elapsed_seconds": 583.823748809,
+        "weights_sha256": "8c9597784660d4fa80640311ac552b9e731bd0d6795bdc61281693661a5d91be",
+        "critic_updates": 48680,
+        "actor_updates": 16226
+      },
+      "weights_sha256": "8c9597784660d4fa80640311ac552b9e731bd0d6795bdc61281693661a5d91be",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/8c9597784660d4fa80640311ac552b9e731bd0d6795bdc61281693661a5d91be/development/result.json",
+      "reused_existing_report": false,
+      "state": "complete",
+      "submitted_at": 1793286301.835219,
+      "function_call_id": "fc-01M6432TPB7YFQ4S62G42XZ4Y1",
+      "transport_result": {
+        "state": "complete",
+        "weights_sha256": "8c9597784660d4fa80640311ac552b9e731bd0d6795bdc61281693661a5d91be",
+        "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+        "evaluation_seconds": 35.816727332999996,
+        "gpu_requested": "L40S",
+        "gpu_actual_name": "NVIDIA L40S",
+        "queue_seconds": 19.23442316055298,
+        "gpu_durable_result_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/8c9597784660d4fa80640311ac552b9e731bd0d6795bdc61281693661a5d91be/development/result.json"
+      },
+      "successes": 0,
+      "episodes": 128,
+      "diagnostics_rates": {
+        "grasp": 0.4140625,
+        "lift": 0.0,
+        "transport": 0.0,
+        "placement": 0.0,
+        "release": 0.0,
+        "contact_free_placement": 0.0,
+        "stable_stack_10_steps": 0.0
+      },
+      "local_report": "runs/full-stacking-curve-20261029/development/baseline-actor-final.json"
+    },
+    "coordinate/actor-step-102400": {
+      "route": "coordinate",
+      "checkpoint": {
+        "label": "actor-step-102400",
+        "transitions": 102400,
+        "elapsed_seconds": 81.434502915,
+        "weights_sha256": "80abb7a45fa171239e81b768f736c219f376bcd465a5ea16f8608023c12334f1",
+        "critic_updates": 6088,
+        "actor_updates": 2029
+      },
+      "weights_sha256": "80abb7a45fa171239e81b768f736c219f376bcd465a5ea16f8608023c12334f1",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/80abb7a45fa171239e81b768f736c219f376bcd465a5ea16f8608023c12334f1/development/result.json",
+      "reused_existing_report": false,
+      "state": "complete",
+      "submitted_at": 1793286362.425285,
+      "function_call_id": "fc-01M6434NZGHC7FJ66F0G1YG1TP",
+      "transport_result": {
+        "state": "complete",
+        "weights_sha256": "80abb7a45fa171239e81b768f736c219f376bcd465a5ea16f8608023c12334f1",
+        "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+        "evaluation_seconds": 30.234619308,
+        "gpu_requested": "L40S",
+        "gpu_actual_name": "NVIDIA L40S",
+        "queue_seconds": 9.144662380218506,
+        "gpu_durable_result_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/80abb7a45fa171239e81b768f736c219f376bcd465a5ea16f8608023c12334f1/development/result.json"
+      },
+      "successes": 0,
+      "episodes": 128,
+      "diagnostics_rates": {
+        "grasp": 0.390625,
+        "lift": 0.0078125,
+        "transport": 0.0,
+        "placement": 0.0,
+        "release": 0.0,
+        "contact_free_placement": 0.0,
+        "stable_stack_10_steps": 0.0
+      },
+      "local_report": "runs/full-stacking-curve-20261029/development/coordinate-actor-step-102400.json"
+    },
+    "coordinate/actor-step-256000": {
+      "route": "coordinate",
+      "checkpoint": {
+        "label": "actor-step-256000",
+        "transitions": 256000,
+        "elapsed_seconds": 192.844893303,
+        "weights_sha256": "e16280374ac40a07bf6b12a84d759950d45b0c9f9e2b51eda87532440a1ee505",
+        "critic_updates": 15688,
+        "actor_updates": 5229
+      },
+      "weights_sha256": "e16280374ac40a07bf6b12a84d759950d45b0c9f9e2b51eda87532440a1ee505",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/e16280374ac40a07bf6b12a84d759950d45b0c9f9e2b51eda87532440a1ee505/development/result.json",
+      "reused_existing_report": false,
+      "state": "complete",
+      "submitted_at": 1793286411.833322,
+      "function_call_id": "fc-01M643669V5G5VB3EZQXVARTYT",
+      "transport_result": {
+        "state": "complete",
+        "weights_sha256": "e16280374ac40a07bf6b12a84d759950d45b0c9f9e2b51eda87532440a1ee505",
+        "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+        "evaluation_seconds": 30.038660169000003,
+        "gpu_requested": "L40S",
+        "gpu_actual_name": "NVIDIA L40S",
+        "queue_seconds": 7.5808022022247314,
+        "gpu_durable_result_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/e16280374ac40a07bf6b12a84d759950d45b0c9f9e2b51eda87532440a1ee505/development/result.json"
+      },
+      "successes": 0,
+      "episodes": 128,
+      "diagnostics_rates": {
+        "grasp": 0.8828125,
+        "lift": 0.0390625,
+        "transport": 0.015625,
+        "placement": 0.0,
+        "release": 0.0,
+        "contact_free_placement": 0.0,
+        "stable_stack_10_steps": 0.0
+      },
+      "local_report": "runs/full-stacking-curve-20261029/development/coordinate-actor-step-256000.json"
+    },
+    "coordinate/actor-step-512000": {
+      "route": "coordinate",
+      "checkpoint": {
+        "label": "actor-step-512000",
+        "transitions": 512000,
+        "elapsed_seconds": 377.230542319,
+        "weights_sha256": "30ab9cbed4ca25e0ecdcbefe355232c9df26db730c7527b5ca7c4f65b5762f84",
+        "critic_updates": 31688,
+        "actor_updates": 10562
+      },
+      "weights_sha256": "30ab9cbed4ca25e0ecdcbefe355232c9df26db730c7527b5ca7c4f65b5762f84",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/30ab9cbed4ca25e0ecdcbefe355232c9df26db730c7527b5ca7c4f65b5762f84/development/result.json",
+      "reused_existing_report": false,
+      "state": "complete",
+      "submitted_at": 1793286453.450586,
+      "function_call_id": "fc-01M6437ETSS854678MAWJT69AM",
+      "transport_result": {
+        "state": "complete",
+        "weights_sha256": "30ab9cbed4ca25e0ecdcbefe355232c9df26db730c7527b5ca7c4f65b5762f84",
+        "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+        "evaluation_seconds": 29.689103683,
+        "gpu_requested": "L40S",
+        "gpu_actual_name": "NVIDIA L40S",
+        "queue_seconds": 6.680767059326172,
+        "gpu_durable_result_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/30ab9cbed4ca25e0ecdcbefe355232c9df26db730c7527b5ca7c4f65b5762f84/development/result.json"
+      },
+      "successes": 0,
+      "episodes": 128,
+      "diagnostics_rates": {
+        "grasp": 0.984375,
+        "lift": 0.453125,
+        "transport": 0.3203125,
+        "placement": 0.015625,
+        "release": 0.0,
+        "contact_free_placement": 0.0,
+        "stable_stack_10_steps": 0.0
+      },
+      "local_report": "runs/full-stacking-curve-20261029/development/coordinate-actor-step-512000.json"
+    },
+    "coordinate/actor-final": {
+      "route": "coordinate",
+      "checkpoint": {
+        "label": "actor-final",
+        "transitions": 801472,
+        "elapsed_seconds": 583.920757042,
+        "weights_sha256": "2fe69e699fd06a3d64657a79c569e03f5a776e8f6afddf65ce770a9b805fa6ce",
+        "critic_updates": 49776,
+        "actor_updates": 16592
+      },
+      "weights_sha256": "2fe69e699fd06a3d64657a79c569e03f5a776e8f6afddf65ce770a9b805fa6ce",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/2fe69e699fd06a3d64657a79c569e03f5a776e8f6afddf65ce770a9b805fa6ce/development/result.json",
+      "reused_existing_report": false,
+      "state": "complete",
+      "submitted_at": 1793286499.647767,
+      "function_call_id": "fc-01M6438W24GF9RZC7KADHQ97EH",
+      "transport_result": {
+        "state": "complete",
+        "weights_sha256": "2fe69e699fd06a3d64657a79c569e03f5a776e8f6afddf65ce770a9b805fa6ce",
+        "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+        "evaluation_seconds": 32.297000532,
+        "gpu_requested": "L40S",
+        "gpu_actual_name": "NVIDIA L40S",
+        "queue_seconds": 7.98973822593689,
+        "gpu_durable_result_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/2fe69e699fd06a3d64657a79c569e03f5a776e8f6afddf65ce770a9b805fa6ce/development/result.json"
+      },
+      "successes": 0,
+      "episodes": 128,
+      "diagnostics_rates": {
+        "grasp": 0.96875,
+        "lift": 0.1875,
+        "transport": 0.1328125,
+        "placement": 0.0078125,
+        "release": 0.0,
+        "contact_free_placement": 0.0,
+        "stable_stack_10_steps": 0.0
+      },
+      "local_report": "runs/full-stacking-curve-20261029/development/coordinate-actor-final.json"
+    }
+  },
+  "new_training_runs": 0,
+  "new_confirmation_queries": 0,
+  "source_sha256": "338c832ee16000646bb768165f88483bf32ebfed38c20afec38c4c4c8061c28d"
+}

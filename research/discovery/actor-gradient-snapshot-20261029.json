@@ -1,0 +1,475 @@
+{
+  "state": "complete",
+  "kind": "Frozen current surrogate-gradient diagnostic, not learning or critic validation",
+  "saved_grasped_successor_rows": 1904,
+  "alpha": 0.004171775653958321,
+  "safe_policy_parity_max_abs": 3.2751579226442118e-15,
+  "samples_per_observation": 16,
+  "sample_seed": 93294000,
+  "per_joint": [
+    {
+      "index": 0,
+      "deterministic_action": {
+        "mean": -0.6221728417322673,
+        "median": -0.7167696315459656,
+        "min": -0.9965418389485001,
+        "max": 0.9290412975798513,
+        "positive_fraction": 0.05934873949579832
+      },
+      "deterministic_tanh_derivative": {
+        "mean": 0.5178624289228375,
+        "median": 0.48563736495998266,
+        "min": 0.006904363225141652,
+        "max": 0.9999996430541818,
+        "positive_fraction": 1.0
+      },
+      "deterministic_Q_action_gradient": {
+        "mean": 0.022067360750544395,
+        "median": 0.017991537624094892,
+        "min": -0.8062639825799212,
+        "max": 0.93314040426838,
+        "positive_fraction": 0.5409663865546218
+      },
+      "deterministic_Q_mean_gradient": {
+        "mean": 0.01876223508954879,
+        "median": 0.006037170274107932,
+        "min": -0.7995055994715856,
+        "max": 0.7442781387522581,
+        "positive_fraction": 0.5409663865546218
+      },
+      "sampled_Q_mean_ascent": {
+        "mean": 0.017225671764692384,
+        "median": 0.005856856674281401,
+        "min": -0.817821143379061,
+        "max": 0.7709376170037885,
+        "positive_fraction": 0.5430672268907563
+      },
+      "sampled_entropy_mean_ascent": {
+        "mean": 0.005090622812354646,
+        "median": 0.005945861525894167,
+        "min": -0.007964240767453643,
+        "max": 0.008335753373953519,
+        "positive_fraction": 0.9312631302521008
+      },
+      "sampled_total_mean_ascent": {
+        "mean": 0.022316294577047025,
+        "median": 0.01232036302544931,
+        "min": -0.8173993274612057,
+        "max": 0.773275624136271,
+        "positive_fraction": 0.622078518907563
+      },
+      "sampled_action_mean": -0.6101266264791219
+    },
+    {
+      "index": 1,
+      "deterministic_action": {
+        "mean": 0.9799368892064959,
+        "median": 0.9960008320260876,
+        "min": -0.3490544218985083,
+        "max": 0.9997013412814338,
+        "positive_fraction": 0.9984243697478992
+      },
+      "deterministic_tanh_derivative": {
+        "mean": 0.03235408480812915,
+        "median": 0.007982342598421566,
+        "min": 0.0005972282401021101,
+        "max": 0.9979397746918126,
+        "positive_fraction": 1.0
+      },
+      "deterministic_Q_action_gradient": {
+        "mean": 0.5347492967769729,
+        "median": 0.5684787119455567,
+        "min": -0.9769810740826398,
+        "max": 1.7285683290742007,
+        "positive_fraction": 0.8897058823529411
+      },
+      "deterministic_Q_mean_gradient": {
+        "mean": 0.006295801486111617,
+        "median": 0.0034425370306549346,
+        "min": -0.3054860169772604,
+        "max": 0.5509166173265891,
+        "positive_fraction": 0.8897058823529411
+      },
+      "sampled_Q_mean_ascent": {
+        "mean": 0.01016834483058197,
+        "median": 0.0032720274711330196,
+        "min": -0.5882849844583323,
+        "max": 1.0730640874070514,
+        "positive_fraction": 0.8885241596638656
+      },
+      "sampled_entropy_mean_ascent": {
+        "mean": -0.008135888391207626,
+        "median": -0.00830726031998611,
+        "min": -0.008343523411500613,
+        "max": 0.007838962720775906,
+        "positive_fraction": 0.0027245273109243696
+      },
+      "sampled_total_mean_ascent": {
+        "mean": 0.002032456439374345,
+        "median": -0.005032237918739083,
+        "min": -0.5920263363492535,
+        "max": 1.0730012370822928,
+        "positive_fraction": 0.2815454306722689
+      },
+      "sampled_action_mean": 0.9751109678546618
+    },
+    {
+      "index": 2,
+      "deterministic_action": {
+        "mean": -0.35571575101077885,
+        "median": -0.3849275058549943,
+        "min": -0.9940218864926865,
+        "max": 0.7393568750141407,
+        "positive_fraction": 0.16701680672268907
+      },
+      "deterministic_tanh_derivative": {
+        "mean": 0.7537205453135345,
+        "median": 0.840063477417522,
+        "min": 0.011920489173520621,
+        "max": 0.9999999462252706,
+        "positive_fraction": 1.0
+      },
+      "deterministic_Q_action_gradient": {
+        "mean": 0.0007304810154167033,
+        "median": -0.002551836195786816,
+        "min": -0.6855127590949649,
+        "max": 0.7979650167523997,
+        "positive_fraction": 0.49369747899159666
+      },
+      "deterministic_Q_mean_gradient": {
+        "mean": 0.0011648083297446004,
+        "median": -0.0013445462587314233,
+        "min": -0.6034350556136392,
+        "max": 0.7141885965966451,
+        "positive_fraction": 0.49369747899159666
+      },
+      "sampled_Q_mean_ascent": {
+        "mean": -0.0014499492711064143,
+        "median": -0.0019830593846178806,
+        "min": -0.7471357261995548,
+        "max": 0.6920052946225577,
+        "positive_fraction": 0.4928768382352941
+      },
+      "sampled_entropy_mean_ascent": {
+        "mean": 0.0029160310394011906,
+        "median": 0.003258024034480735,
+        "min": -0.007474546401244343,
+        "max": 0.00833070053403022,
+        "positive_fraction": 0.818999474789916
+      },
+      "sampled_total_mean_ascent": {
+        "mean": 0.0014660817682947756,
+        "median": 0.0025752527112337855,
+        "min": -0.7462626844774274,
+        "max": 0.6944317641708742,
+        "positive_fraction": 0.5101431197478992
+      },
+      "sampled_action_mean": -0.3494951887734378
+    },
+    {
+      "index": 3,
+      "deterministic_action": {
+        "mean": -0.13560323664249832,
+        "median": -0.18103465916879935,
+        "min": -0.915236287310589,
+        "max": 0.9003795984495259,
+        "positive_fraction": 0.3329831932773109
+      },
+      "deterministic_tanh_derivative": {
+        "mean": 0.839798632340437,
+        "median": 0.9001497941860334,
+        "min": 0.16234253838992896,
+        "max": 0.9999999347898672,
+        "positive_fraction": 1.0
+      },
+      "deterministic_Q_action_gradient": {
+        "mean": -0.013569054789013177,
+        "median": -0.018754079439868617,
+        "min": -0.8371747205964702,
+        "max": 1.0973403145008078,
+        "positive_fraction": 0.453781512605042
+      },
+      "deterministic_Q_mean_gradient": {
+        "mean": -0.009485911202685236,
+        "median": -0.015164189246309417,
+        "min": -0.7965874189899307,
+        "max": 1.0819731702008846,
+        "positive_fraction": 0.453781512605042
+      },
+      "sampled_Q_mean_ascent": {
+        "mean": -0.011593190840089309,
+        "median": -0.01788095593154071,
+        "min": -0.8380901292100341,
+        "max": 1.257798832694636,
+        "positive_fraction": 0.45496323529411764
+      },
+      "sampled_entropy_mean_ascent": {
+        "mean": 0.0011082601832579848,
+        "median": 0.0014642903362920038,
+        "min": -0.008034924676754958,
+        "max": 0.007974237128428204,
+        "positive_fraction": 0.6553308823529411
+      },
+      "sampled_total_mean_ascent": {
+        "mean": -0.010484930656831324,
+        "median": -0.01654117071709267,
+        "min": -0.8383573496485349,
+        "max": 1.2601316118720285,
+        "positive_fraction": 0.45791754201680673
+      },
+      "sampled_action_mean": -0.13282835358205689
+    },
+    {
+      "index": 4,
+      "deterministic_action": {
+        "mean": -0.03855705348162706,
+        "median": -0.10966885276519346,
+        "min": -0.9375329345026524,
+        "max": 0.9919723066958792,
+        "positive_fraction": 0.4054621848739496
+      },
+      "deterministic_tanh_derivative": {
+        "mean": 0.8012798185210724,
+        "median": 0.8904931247067395,
+        "min": 0.015990942748456582,
+        "max": 0.9999999983974144,
+        "positive_fraction": 1.0
+      },
+      "deterministic_Q_action_gradient": {
+        "mean": -0.01604539420395847,
+        "median": -0.020535543393394043,
+        "min": -0.42411073125320103,
+        "max": 0.36060546989723236,
+        "positive_fraction": 0.4059873949579832
+      },
+      "deterministic_Q_mean_gradient": {
+        "mean": -0.014983636466948993,
+        "median": -0.015953911995019176,
+        "min": -0.3896429381128001,
+        "max": 0.33612660526754884,
+        "positive_fraction": 0.4059873949579832
+      },
+      "sampled_Q_mean_ascent": {
+        "mean": -0.015093393418905034,
+        "median": -0.013685886020266984,
+        "min": -0.4980133875291945,
+        "max": 0.377597125263274,
+        "positive_fraction": 0.40359112394957986
+      },
+      "sampled_entropy_mean_ascent": {
+        "mean": 0.00028954367907145365,
+        "median": 0.000783990014969033,
+        "min": -0.008332667723185347,
+        "max": 0.008187427797518472,
+        "positive_fraction": 0.5644038865546218
+      },
+      "sampled_total_mean_ascent": {
+        "mean": -0.014803849739833582,
+        "median": -0.012881799028886406,
+        "min": -0.49706553127184955,
+        "max": 0.37901608431014294,
+        "positive_fraction": 0.3898043592436975
+      },
+      "sampled_action_mean": -0.034702690543381084
+    },
+    {
+      "index": 5,
+      "deterministic_action": {
+        "mean": -0.7043331750368561,
+        "median": -0.7656285314646265,
+        "min": -0.9909603357689839,
+        "max": 0.7365061685822218,
+        "positive_fraction": 0.014180672268907563
+      },
+      "deterministic_tanh_derivative": {
+        "mean": 0.4463223853543725,
+        "median": 0.41381291342008714,
+        "min": 0.017997612932622697,
+        "max": 0.999999865881453,
+        "positive_fraction": 1.0
+      },
+      "deterministic_Q_action_gradient": {
+        "mean": -0.03838483190629712,
+        "median": -0.0330009551056921,
+        "min": -0.7914455692887065,
+        "max": 0.5841057752952318,
+        "positive_fraction": 0.4180672268907563
+      },
+      "deterministic_Q_mean_gradient": {
+        "mean": -0.0018670713253543846,
+        "median": -0.008229559490267973,
+        "min": -0.4467108272788776,
+        "max": 0.4738895576292219,
+        "positive_fraction": 0.4180672268907563
+      },
+      "sampled_Q_mean_ascent": {
+        "mean": -0.007767835578548159,
+        "median": -0.008899629563751243,
+        "min": -0.5924488273446692,
+        "max": 0.6029787330705267,
+        "positive_fraction": 0.4089745273109244
+      },
+      "sampled_entropy_mean_ascent": {
+        "mean": 0.00574780967857149,
+        "median": 0.006403728213876975,
+        "min": -0.007081152318699255,
+        "max": 0.00833410546057647,
+        "positive_fraction": 0.9689141281512605
+      },
+      "sampled_total_mean_ascent": {
+        "mean": -0.002020025899976669,
+        "median": -0.0019295823540948116,
+        "min": -0.5907712615061985,
+        "max": 0.6063596677002684,
+        "positive_fraction": 0.48230698529411764
+      },
+      "sampled_action_mean": -0.6888924711372932
+    },
+    {
+      "index": 6,
+      "deterministic_action": {
+        "mean": 0.15320003227549966,
+        "median": 0.1264093932800467,
+        "min": -0.9272120872444733,
+        "max": 0.9373633502817889,
+        "positive_fraction": 0.6102941176470589
+      },
+      "deterministic_tanh_derivative": {
+        "mean": 0.7914491684613764,
+        "median": 0.8828986008000974,
+        "min": 0.12134994954850042,
+        "max": 0.9999999997159805,
+        "positive_fraction": 1.0
+      },
+      "deterministic_Q_action_gradient": {
+        "mean": -0.003436882986050877,
+        "median": -0.009923174822843139,
+        "min": -0.2900372018661985,
+        "max": 0.39025273241912783,
+        "positive_fraction": 0.45168067226890757
+      },
+      "deterministic_Q_mean_gradient": {
+        "mean": -0.00267580807781633,
+        "median": -0.007155969806270649,
+        "min": -0.27467715056872427,
+        "max": 0.38051621712008443,
+        "positive_fraction": 0.45168067226890757
+      },
+      "sampled_Q_mean_ascent": {
+        "mean": 0.0005867688548930488,
+        "median": -0.0031321623282134373,
+        "min": -0.5738377127645364,
+        "max": 0.4692808934723434,
+        "positive_fraction": 0.4687828256302521
+      },
+      "sampled_entropy_mean_ascent": {
+        "mean": -0.0010450847351069627,
+        "median": -0.0010119197977461552,
+        "min": -0.008337221178303381,
+        "max": 0.008196863107108154,
+        "positive_fraction": 0.4244353991596639
+      },
+      "sampled_total_mean_ascent": {
+        "mean": -0.0004583158802139139,
+        "median": -0.007007667177355426,
+        "min": -0.5756284935457625,
+        "max": 0.4718844832091525,
+        "positive_fraction": 0.44784007352941174
+      },
+      "sampled_action_mean": 0.12525658398185327
+    },
+    {
+      "index": 7,
+      "deterministic_action": {
+        "mean": 0.56684717098332,
+        "median": 0.9026296645028871,
+        "min": -0.9937322247119301,
+        "max": 0.9993321616441632,
+        "positive_fraction": 0.8109243697478992
+      },
+      "deterministic_tanh_derivative": {
+        "mean": 0.2842657858350692,
+        "median": 0.152911155756214,
+        "min": 0.0013352307036041955,
+        "max": 0.9999998946193185,
+        "positive_fraction": 1.0
+      },
+      "deterministic_Q_action_gradient": {
+        "mean": 0.027348105219169506,
+        "median": 0.03449136514783369,
+        "min": -0.46568301238708676,
+        "max": 0.45671974162014767,
+        "positive_fraction": 0.6039915966386554
+      },
+      "deterministic_Q_mean_gradient": {
+        "mean": 0.0010741408113307056,
+        "median": 0.0023554694445287626,
+        "min": -0.3066397444335578,
+        "max": 0.31300167152179387,
+        "positive_fraction": 0.6039915966386554
+      },
+      "sampled_Q_mean_ascent": {
+        "mean": 0.002813271991802549,
+        "median": 0.0015621423652905377,
+        "min": -0.4275993741987738,
+        "max": 0.4489202626816875,
+        "positive_fraction": 0.6009059873949579
+      },
+      "sampled_entropy_mean_ascent": {
+        "mean": -0.004610830208057609,
+        "median": -0.00737358220776725,
+        "min": -0.008343443641097533,
+        "max": 0.008335855852861816,
+        "positive_fraction": 0.19225971638655462
+      },
+      "sampled_total_mean_ascent": {
+        "mean": -0.0017975582162550604,
+        "median": -0.005536987762921128,
+        "min": -0.4267630487316348,
+        "max": 0.45026171360747674,
+        "positive_fraction": 0.37371980042016806
+      },
+      "sampled_action_mean": 0.5526220236319155
+    }
+  ],
+  "entropy_gradient_identity_max_abs_error": 5.204170427930421e-18,
+  "Q_tanh_chain_rule_max_abs_error": 0.0,
+  "surrogate_decomposition_max_abs_error": 0.0,
+  "finite_difference_directional_max_abs_error": 3.7119984863664968e-09,
+  "deterministic_minQ": {
+    "mean": 17.741117090418598,
+    "median": 18.124977292786035,
+    "min": 10.64276947845443,
+    "max": 22.61701492023344,
+    "positive_fraction": 1.0
+  },
+  "actor_forward_rows": 1904,
+  "safe_numpy_policy_forward_rows": 1904,
+  "twin_critic_forward_rows": 64800,
+  "autograd_requests_rows": {
+    "deterministic_Q_action": 1904,
+    "sampled_Q_action": 30464,
+    "sampled_Q_mean": 30464,
+    "sampled_entropy_mean": 30464,
+    "sampled_surrogate_mean": 30464
+  },
+  "new_simulator_transitions": 0,
+  "optimizer_calls": 0,
+  "elapsed_seconds": 0.6686595839564689,
+  "input_sha256": {
+    "runs/temperature-sufficiency-20261028/run/actor-step-256000-state.npz": "ed55d938dcf21a5e80a1268921303ebed23d67dbb556b761cdd736f761f4ae6f",
+    "runs/temperature-sufficiency-20261028/run/actor-step-256000-trajectory.npz": "fdd401f214a41f8f7dcd26df6c7d4797b0dd0e3be3ce7ab8fc6750cf123d6332"
+  },
+  "source_sha256": {
+    "research/discovery/actor_gradient_snapshot.py": "493de898706cf6ebf9d7785c0187c702a60208a8f11beb35599abe8cfd5fd1de",
+    "research/discovery/replay_learner_lowalpha.py": "aeea61b2a55458a207f1dccb6c996a411acda67bc3238dc9c9c33fec7bd965bf",
+    "research/discovery/sac_baseline.py": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca"
+  },
+  "limitations": [
+    "No historical minibatch/target/optimizer reconstruction",
+    "Critic preferences are not physical counterfactual returns",
+    "Saved behavior states are not the full replay distribution",
+    "Mean-space directions are not complete network/Adam updates",
+    "Monte Carlo rows are dependent repeated states, not independent episodes"
+  ]
+}

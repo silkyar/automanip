@@ -1,0 +1,1257 @@
+{
+  "experiment_id": "stackcube-precision-screen-20261027",
+  "state": "complete",
+  "archived_at": 1793150886.5062778,
+  "files": [
+    {
+      "path": "summary.json",
+      "bytes": 58974,
+      "sha256": "21e300cf4467ee9dbeca1b91d35a3b5f8d6358f532bdf443f0ae939be95d2d2f",
+      "remote_path": "stackcube-precision-screen-20261027/summary.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-constant/native/record.json",
+      "bytes": 13623,
+      "sha256": "68121886179a61850c33b0a40c6b6e52c4f94cac7080a7daed5ffb8622461c33",
+      "remote_path": "trial/record.json",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/attempt.json",
+      "bytes": 144,
+      "sha256": "06dafec07d0bb69879913090aa6082b3e29f52af79f68265ef8efa94bd9e988f",
+      "remote_path": "trial/attempt.json",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/scalars.json",
+      "bytes": 4705203,
+      "sha256": "d1697a70e0b9f61ea73bddc47fbac650c301c3b89dedc977f35d7c38b8e6901e",
+      "remote_path": "trial/scalars.json",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/trainer.py",
+      "bytes": 26381,
+      "sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+      "remote_path": "trial/trainer.py",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/train.log",
+      "bytes": 55941,
+      "sha256": "97767a3510c2dccb9792382036de3cc4a19b7fa1d3d2a1490d8a7a1a44439bde",
+      "remote_path": "trial/work/train.log",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "fe0b2ad4d99fc88f0c408a1da3ccfbf80fdf51e0d643f7ad977ad4604aa8f753",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_1.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_101.pt",
+      "bytes": 1168376,
+      "sha256": "69fde942fd7587b7fad59886c1585f18abb9d7371474acf8d63a68d163adc00e",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_101.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_126.pt",
+      "bytes": 1168376,
+      "sha256": "f17467ffe4a24f61d11fd8adffaaa50049d64fc2846b0e3c90478699e86732f0",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_126.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_151.pt",
+      "bytes": 1168376,
+      "sha256": "0f638d23e2ba71a86eb67fdda373a019bfe533b28e5f61038b3f81799a9e5dbf",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_151.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_176.pt",
+      "bytes": 1168376,
+      "sha256": "603e4596cfec96ff49c99d1365c59df7c599f573e14bd96e0f7c23f13d293857",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_176.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_201.pt",
+      "bytes": 1168376,
+      "sha256": "af8d69b5eb2f1149ed3f9426b6450118371802f4371f10fa123bb0fdf1b8b4e0",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_201.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_226.pt",
+      "bytes": 1168376,
+      "sha256": "c24400afbbdf5bbafd446d4d3d9afba1443a6afcf6a8f7607404450b4a682930",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_226.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_251.pt",
+      "bytes": 1168376,
+      "sha256": "311111d52e90602778138e4c45d890a1b8ee7e26d64e8720dcf168716f11dd31",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_251.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "292c8eeeacd22efe8d9547e99ed04c06fefed90e8ce7286c1df7c1962f7180d9",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_26.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_276.pt",
+      "bytes": 1168376,
+      "sha256": "bc03afd86cef0a4730f14c7a02b0918fd4374d5c715a55db8ba4688694af11de",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_276.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_301.pt",
+      "bytes": 1168376,
+      "sha256": "7fae4e62222e77c39dc4f8615a905a6cd7191cc490cf98db1f7b7cd760d9f3a0",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_301.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_326.pt",
+      "bytes": 1168376,
+      "sha256": "5603cc8830f5e913e0921e876c32c4dee9d7cf882f5a70a103c9f41843ce26fb",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_326.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_351.pt",
+      "bytes": 1168376,
+      "sha256": "65d41a975c657a0dbefedae6b6f531636e25fa77e6770530b829120f6803273c",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_351.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_376.pt",
+      "bytes": 1168376,
+      "sha256": "34454d5fb949c24a14f9a74cbbd35f6a75deac2342d5bc166224618eb2ab32d5",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_376.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_401.pt",
+      "bytes": 1168376,
+      "sha256": "39fe6feb6fe5d1df085d7c72b92815be8a6338e9393565f671074d3f2f5d96ae",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_401.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_426.pt",
+      "bytes": 1168376,
+      "sha256": "8a9e818bc81d799c26886e2edb0f6101ad8cb8403c683a4f4321e67e3be64dfb",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_426.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_451.pt",
+      "bytes": 1168376,
+      "sha256": "c112c51d865699f751cf8324c66c9baf5b0129888fd9786ce3c1cfde0a7b9cb1",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_451.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_476.pt",
+      "bytes": 1168376,
+      "sha256": "1fff53a4dd4f93936b85789304c1b293c6bba919a71b2e43df341ae2ca919b72",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_476.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_501.pt",
+      "bytes": 1168376,
+      "sha256": "41c6e60c5ba7866e7fd2aaff7de985dd47b0f69d1122e3b16b0f632760ebfd05",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_501.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_51.pt",
+      "bytes": 1167971,
+      "sha256": "ebe73770a97f3de5ba40e9731cd9968c4d87d20c9c1d037f14e09a50bf00ceec",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_51.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_526.pt",
+      "bytes": 1168376,
+      "sha256": "722b550241dd77e34e8d7908536b4badeb82a3ba5c7b923e7f626cda5eb0aa61",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_526.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_551.pt",
+      "bytes": 1168376,
+      "sha256": "ac3d0514eef9d1168e8b0baac17786db796b77dcd427ac8d94b179a46c870f45",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_551.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_576.pt",
+      "bytes": 1168376,
+      "sha256": "5156eb17de0287babe5a47f612e89f8adb2629b9939d417286fac0659e131929",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_576.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_601.pt",
+      "bytes": 1168376,
+      "sha256": "c81b15e629e60c53578b0aff5c0ac47c229b1e4814ddcdf5ea9ad3f9bb6702d7",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_601.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_626.pt",
+      "bytes": 1168376,
+      "sha256": "a75f122891c3b1302f702a736a3ad7b4b7e6e15e14c36f82c6985695b3ea5b6b",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_626.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_651.pt",
+      "bytes": 1168376,
+      "sha256": "d6959f2d1dc06562b6cb9f092d7ead7430965865b899c7d9b4e855857cd1ae33",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_651.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_676.pt",
+      "bytes": 1168376,
+      "sha256": "2d3041cd5b75f5607c1ad20bf83872d2bb255ba3d9ebd4db0267f6e0ec48658e",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_676.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_701.pt",
+      "bytes": 1168376,
+      "sha256": "8072aa1290772411294eae61726a106db76e9ea05f8a1b09966e4edeeabfa739",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_701.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_726.pt",
+      "bytes": 1168376,
+      "sha256": "d601823c6aa978473fcdb72fc1eecdbe35aa658a5b56d1dc435eed57fc1f5dea",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_726.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_751.pt",
+      "bytes": 1168376,
+      "sha256": "4b14fd27a01a2ef412f3cf8242faaa37f1963a31856e2aa72a0b579e4f28f3fa",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_751.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_76.pt",
+      "bytes": 1167971,
+      "sha256": "98e88d62db7bab3a5921d59c36bdf2930b835a05a85b2c73e45d09af094bc502",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_76.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_776.pt",
+      "bytes": 1168376,
+      "sha256": "e8069284133710dda9b794f8575b5d149e2c61740273459c6f776a75c3b199d8",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_776.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_801.pt",
+      "bytes": 1168376,
+      "sha256": "549d02ab063edf94a6efcf4c93eb89d38438ff8737737ce1299594697db76db3",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_801.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_826.pt",
+      "bytes": 1168376,
+      "sha256": "421a7ba3c806e801d2ddd4f874a9fd7fe93b9bbf925371b32f34b652c1556ab7",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_826.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_851.pt",
+      "bytes": 1168376,
+      "sha256": "98e3de40dad6e117c569d8844e1ce9a2ca8d9d0b71cdabbc440ed6070d166242",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_851.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_876.pt",
+      "bytes": 1168376,
+      "sha256": "dd4c3462ad7135a7bdea1922d4c7b36447cca5c03d15c6c48ec516e4513475fd",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_876.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_901.pt",
+      "bytes": 1168376,
+      "sha256": "fbfec4efb38f582dad9f9c97967c7dd9d236ca4438754079b0d0c9375207d648",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_901.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_926.pt",
+      "bytes": 1168376,
+      "sha256": "2d35135b2b67f7ac085605eafc7a6b2c1987f62623ffd8a5219c64bf9733f86b",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_926.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_951.pt",
+      "bytes": 1168376,
+      "sha256": "c7b39db361e6b0bf1dd54554edbae52ce606a9dbdd80ba9de1efc9ce9bee888d",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_951.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_976.pt",
+      "bytes": 1168376,
+      "sha256": "4d45cfce65ce0bd462eecd1f5bc32947bf832610a3af87f1a17ea5b51904d17a",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_976.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/events.out.tfevents.1793148063.modal.8.0",
+      "bytes": 2373517,
+      "sha256": "99558e873ee57fbe712ec8bee438302eeb622577e670046420d1eaba485da050",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/events.out.tfevents.1793148063.modal.8.0",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/native/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "27e6655e122244b6777c9c388b52a87bab91ffa861bf39bfa0cbfec72f755791",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/final_ckpt.pt",
+      "volume": "automanip-modal-precision-constant-seed1-20261027"
+    },
+    {
+      "path": "precision-constant/step-25600000/manifest.json",
+      "bytes": 337,
+      "sha256": "71adc5ab7016f4bbe46b51500169c9922698af8d0482e68bbb32f32f9a86d545",
+      "remote_path": "stackcube-precision-screen-20261027/precision-constant/step-25600000/manifest.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-constant/step-25600000/weights.json",
+      "bytes": 3015503,
+      "sha256": "42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd",
+      "remote_path": "stackcube-precision-screen-20261027/precision-constant/step-25600000/weights.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-constant/step-25600000/export.json",
+      "bytes": 377,
+      "sha256": "17908469176601ba7305e079a9d62583b410e02ee5af357faabfafe5dcf8b893",
+      "remote_path": "stackcube-precision-screen-20261027/precision-constant/step-25600000/export.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "development/42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd.json",
+      "bytes": 80607,
+      "sha256": "2cf4e67ad6eee8907361426ccfc5bf0aef8699393e365e4a72d6d1ba82b884c2",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd/development/result.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-constant/step-38400000/manifest.json",
+      "bytes": 337,
+      "sha256": "d44a4ca6ff86ced0e1dfe4aff0bbea79ad07b82353a7e0fbdae5ebc778a084bf",
+      "remote_path": "stackcube-precision-screen-20261027/precision-constant/step-38400000/manifest.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-constant/step-38400000/weights.json",
+      "bytes": 3012487,
+      "sha256": "96e3c7b0461506568370937bdfdbc4d29d4047054c5edee1533161eb603b55cd",
+      "remote_path": "stackcube-precision-screen-20261027/precision-constant/step-38400000/weights.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-constant/step-38400000/export.json",
+      "bytes": 377,
+      "sha256": "8620e55ac56a89013c137161a0537a052b1487ebd5f57f7cdb6d27e8030513a5",
+      "remote_path": "stackcube-precision-screen-20261027/precision-constant/step-38400000/export.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "development/96e3c7b0461506568370937bdfdbc4d29d4047054c5edee1533161eb603b55cd.json",
+      "bytes": 80466,
+      "sha256": "3c8cdf4091f202cfe5e458094f7f27bb0cb845c95430dc65b3dc202e074f19ad",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/96e3c7b0461506568370937bdfdbc4d29d4047054c5edee1533161eb603b55cd/development/result.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-constant/step-49971200/manifest.json",
+      "bytes": 337,
+      "sha256": "7907d391c032c9b83a3fdc16348a8cecb63bc3f529ebaeb5338d997a7bde1421",
+      "remote_path": "stackcube-precision-screen-20261027/precision-constant/step-49971200/manifest.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-constant/step-49971200/weights.json",
+      "bytes": 3007902,
+      "sha256": "ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16",
+      "remote_path": "stackcube-precision-screen-20261027/precision-constant/step-49971200/weights.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-constant/step-49971200/export.json",
+      "bytes": 377,
+      "sha256": "2e53fdf9d0afbc5530093b871ed40cb3341acefa0f4d4a17a956f828d22e65d3",
+      "remote_path": "stackcube-precision-screen-20261027/precision-constant/step-49971200/export.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "development/ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16.json",
+      "bytes": 80401,
+      "sha256": "c4e8708771db99a4bf0e99585a92c7e8b45a90db95515aa2fbae27e6314a7671",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16/development/result.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-entropy-anneal/native/record.json",
+      "bytes": 13881,
+      "sha256": "dd229cee0e08fe00696b5fd6bc00b98cb4ba88e74023afc130f7a1d4452be6c4",
+      "remote_path": "trial/record.json",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/attempt.json",
+      "bytes": 149,
+      "sha256": "74f97759dcc65dc0567e83056dc6d8bf1580a14a0dbb1f21668407962c40636e",
+      "remote_path": "trial/attempt.json",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/scalars.json",
+      "bytes": 4705408,
+      "sha256": "e23bebc1ac5ef2e330e0880b5cc85d0198a761739e17b1eddd3bdbeec35b281a",
+      "remote_path": "trial/scalars.json",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/trainer.py",
+      "bytes": 26387,
+      "sha256": "4618b428c35838417b95996a4245530f3b24fd5011b674ef9666a1ae6319c761",
+      "remote_path": "trial/trainer.py",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/train.log",
+      "bytes": 56186,
+      "sha256": "d89bfb9e6145b8bf0159cabb76e66851a9f0720333b53c3ef0dbc07922af2d5e",
+      "remote_path": "trial/work/train.log",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "fe0b2ad4d99fc88f0c408a1da3ccfbf80fdf51e0d643f7ad977ad4604aa8f753",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_1.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_101.pt",
+      "bytes": 1168376,
+      "sha256": "69fde942fd7587b7fad59886c1585f18abb9d7371474acf8d63a68d163adc00e",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_101.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_126.pt",
+      "bytes": 1168376,
+      "sha256": "f17467ffe4a24f61d11fd8adffaaa50049d64fc2846b0e3c90478699e86732f0",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_126.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_151.pt",
+      "bytes": 1168376,
+      "sha256": "0f638d23e2ba71a86eb67fdda373a019bfe533b28e5f61038b3f81799a9e5dbf",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_151.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_176.pt",
+      "bytes": 1168376,
+      "sha256": "603e4596cfec96ff49c99d1365c59df7c599f573e14bd96e0f7c23f13d293857",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_176.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_201.pt",
+      "bytes": 1168376,
+      "sha256": "af8d69b5eb2f1149ed3f9426b6450118371802f4371f10fa123bb0fdf1b8b4e0",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_201.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_226.pt",
+      "bytes": 1168376,
+      "sha256": "c24400afbbdf5bbafd446d4d3d9afba1443a6afcf6a8f7607404450b4a682930",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_226.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_251.pt",
+      "bytes": 1168376,
+      "sha256": "311111d52e90602778138e4c45d890a1b8ee7e26d64e8720dcf168716f11dd31",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_251.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "292c8eeeacd22efe8d9547e99ed04c06fefed90e8ce7286c1df7c1962f7180d9",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_26.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_276.pt",
+      "bytes": 1168376,
+      "sha256": "bc03afd86cef0a4730f14c7a02b0918fd4374d5c715a55db8ba4688694af11de",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_276.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_301.pt",
+      "bytes": 1168376,
+      "sha256": "7fae4e62222e77c39dc4f8615a905a6cd7191cc490cf98db1f7b7cd760d9f3a0",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_301.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_326.pt",
+      "bytes": 1168376,
+      "sha256": "5603cc8830f5e913e0921e876c32c4dee9d7cf882f5a70a103c9f41843ce26fb",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_326.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_351.pt",
+      "bytes": 1168376,
+      "sha256": "65d41a975c657a0dbefedae6b6f531636e25fa77e6770530b829120f6803273c",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_351.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_376.pt",
+      "bytes": 1168376,
+      "sha256": "34454d5fb949c24a14f9a74cbbd35f6a75deac2342d5bc166224618eb2ab32d5",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_376.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_401.pt",
+      "bytes": 1168376,
+      "sha256": "39fe6feb6fe5d1df085d7c72b92815be8a6338e9393565f671074d3f2f5d96ae",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_401.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_426.pt",
+      "bytes": 1168376,
+      "sha256": "8a9e818bc81d799c26886e2edb0f6101ad8cb8403c683a4f4321e67e3be64dfb",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_426.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_451.pt",
+      "bytes": 1168376,
+      "sha256": "c112c51d865699f751cf8324c66c9baf5b0129888fd9786ce3c1cfde0a7b9cb1",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_451.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_476.pt",
+      "bytes": 1168376,
+      "sha256": "1fff53a4dd4f93936b85789304c1b293c6bba919a71b2e43df341ae2ca919b72",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_476.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_501.pt",
+      "bytes": 1168376,
+      "sha256": "41c6e60c5ba7866e7fd2aaff7de985dd47b0f69d1122e3b16b0f632760ebfd05",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_501.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_51.pt",
+      "bytes": 1167971,
+      "sha256": "ebe73770a97f3de5ba40e9731cd9968c4d87d20c9c1d037f14e09a50bf00ceec",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_51.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_526.pt",
+      "bytes": 1168376,
+      "sha256": "fd54eaa2f3fca1b7b82d3d5feecec3176d5e792a4cd395392bfa776db9c411f4",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_526.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_551.pt",
+      "bytes": 1168376,
+      "sha256": "f3942620f8d3d5397018b949eda7375e7bb95852d407e1542735b8da545662b4",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_551.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_576.pt",
+      "bytes": 1168376,
+      "sha256": "4f2ba791154aba1044cde997eb70972e14e310029f5458b5a15764e5963fd7d6",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_576.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_601.pt",
+      "bytes": 1168376,
+      "sha256": "8c5fe3222f479a28293300e10f5158663badb619067d6099173efa940f366940",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_601.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_626.pt",
+      "bytes": 1168376,
+      "sha256": "2c9f104fd9abf8c3cadd742e89a77e3fa0fc8fca3ed2a1b2a01bafb7b8bb8195",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_626.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_651.pt",
+      "bytes": 1168376,
+      "sha256": "91ad199a555bc368ee4271dd3e0a25867e7d7c9fd9d7c46c4498381ee256875a",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_651.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_676.pt",
+      "bytes": 1168376,
+      "sha256": "67f2c9c9666a749d7f96ec3351cefd5137754b9db0a2d6415dabc45a56238ca8",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_676.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_701.pt",
+      "bytes": 1168376,
+      "sha256": "56f0246ef8dd30e7d018634d9933d62c3efdf9f04f72a7227cfd044f19a49daa",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_701.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_726.pt",
+      "bytes": 1168376,
+      "sha256": "b017f2a8403ceb2183226b6c04d130de0a93d705520ae513b05c94758409a1ab",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_726.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_751.pt",
+      "bytes": 1168376,
+      "sha256": "81222c281be24552fe1b8918b51b82960cfa972fa9beb397e565b65a6022b7df",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_751.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_76.pt",
+      "bytes": 1167971,
+      "sha256": "98e88d62db7bab3a5921d59c36bdf2930b835a05a85b2c73e45d09af094bc502",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_76.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_776.pt",
+      "bytes": 1168376,
+      "sha256": "6a69f4106b589b011a742e2da796428f09fbb75ab89821ddba6376e8dbb64930",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_776.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_801.pt",
+      "bytes": 1168376,
+      "sha256": "be65006a7372dfaaa706b7768fdcff34c61dde039ce2cbecd7b4b0beafc2053f",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_801.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_826.pt",
+      "bytes": 1168376,
+      "sha256": "0bc1f119868fc136682d4737f8c10eff4b190c9d4ce9038a43eab0d021463ef8",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_826.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_851.pt",
+      "bytes": 1168376,
+      "sha256": "19fe8f338c4a19be22007c53112c893b4b245ed06b4743ae918521b2c2584dd2",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_851.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_876.pt",
+      "bytes": 1168376,
+      "sha256": "b836e8c4a7f684119c2c617074f3fd2ca84775150ca4c390850d53a029bee1d6",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_876.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_901.pt",
+      "bytes": 1168376,
+      "sha256": "3f9a675d89d593c65c8ba97171dad48c7b9d4afa397d5675c8aee1e509f9576d",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_901.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_926.pt",
+      "bytes": 1168376,
+      "sha256": "c312048710e56d3b6f7a4d10939628969068254d4fc25e6ad21af2bff6e5269e",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_926.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_951.pt",
+      "bytes": 1168376,
+      "sha256": "454e46f09c8a98d340cdc2ca03fdbc65f84c5ffab892d8a0788850d7a5eda893",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_951.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_976.pt",
+      "bytes": 1168376,
+      "sha256": "90f6df06639a8c557f98bef4f6bf244e2ff286a7880aefb833dad9195b559c0f",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_976.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/events.out.tfevents.1793148070.modal.8.0",
+      "bytes": 2373523,
+      "sha256": "0db5e9d8444bfb9b52f545fd766d0971052961dfea8cd36267e60d3a1760846d",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/events.out.tfevents.1793148070.modal.8.0",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "b59f8bbc83d954b4bc9a173a3c341a51af99f78eaf060452bd589bb8ed392dfd",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/final_ckpt.pt",
+      "volume": "automanip-modal-precision-entropy-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-entropy-anneal/step-25600000/manifest.json",
+      "bytes": 337,
+      "sha256": "71adc5ab7016f4bbe46b51500169c9922698af8d0482e68bbb32f32f9a86d545",
+      "remote_path": "stackcube-precision-screen-20261027/precision-entropy-anneal/step-25600000/manifest.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-entropy-anneal/step-25600000/weights.json",
+      "bytes": 3015503,
+      "sha256": "42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd",
+      "remote_path": "stackcube-precision-screen-20261027/precision-entropy-anneal/step-25600000/weights.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-entropy-anneal/step-25600000/export.json",
+      "bytes": 377,
+      "sha256": "17908469176601ba7305e079a9d62583b410e02ee5af357faabfafe5dcf8b893",
+      "remote_path": "stackcube-precision-screen-20261027/precision-entropy-anneal/step-25600000/export.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "development/42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd.json",
+      "bytes": 80607,
+      "sha256": "2cf4e67ad6eee8907361426ccfc5bf0aef8699393e365e4a72d6d1ba82b884c2",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd/development/result.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-entropy-anneal/step-38400000/manifest.json",
+      "bytes": 337,
+      "sha256": "1a578a4494f8744988d1479c55b3b1156010473b905ee81474d9df7b80d1910d",
+      "remote_path": "stackcube-precision-screen-20261027/precision-entropy-anneal/step-38400000/manifest.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-entropy-anneal/step-38400000/weights.json",
+      "bytes": 3013041,
+      "sha256": "057ee809557304d21b8a595896a28ce63e9e54608fefa1dc1cfcb68442ea00a0",
+      "remote_path": "stackcube-precision-screen-20261027/precision-entropy-anneal/step-38400000/weights.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-entropy-anneal/step-38400000/export.json",
+      "bytes": 377,
+      "sha256": "2bbf5840ea5ca09976342112449770f8bb7d68874e3c595a80cbf71d18318774",
+      "remote_path": "stackcube-precision-screen-20261027/precision-entropy-anneal/step-38400000/export.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "development/057ee809557304d21b8a595896a28ce63e9e54608fefa1dc1cfcb68442ea00a0.json",
+      "bytes": 80702,
+      "sha256": "d47ffc0c01167de3a4f294050e431143ffe2d787b88ecbea7614d5f4868d2e52",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/057ee809557304d21b8a595896a28ce63e9e54608fefa1dc1cfcb68442ea00a0/development/result.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-entropy-anneal/step-49971200/manifest.json",
+      "bytes": 337,
+      "sha256": "46f92b7f65923370cddc3b9e7d5606a2580e5d8aa42fe0666f78d5568e0b1b36",
+      "remote_path": "stackcube-precision-screen-20261027/precision-entropy-anneal/step-49971200/manifest.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-entropy-anneal/step-49971200/weights.json",
+      "bytes": 3012048,
+      "sha256": "2b5e3a683a599817447486fb51f356b681ed8ebdc15e0d75de0c9c5c019a9afa",
+      "remote_path": "stackcube-precision-screen-20261027/precision-entropy-anneal/step-49971200/weights.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-entropy-anneal/step-49971200/export.json",
+      "bytes": 377,
+      "sha256": "0ccae7eff150354f2daf6daf247a8f518b7dabf8f21ba14938c49c2cfef117bc",
+      "remote_path": "stackcube-precision-screen-20261027/precision-entropy-anneal/step-49971200/export.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "development/2b5e3a683a599817447486fb51f356b681ed8ebdc15e0d75de0c9c5c019a9afa.json",
+      "bytes": 80478,
+      "sha256": "529509e079b343189faac6f2c11e1638389285c8367392dd6b9da7a77a3ac78c",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/2b5e3a683a599817447486fb51f356b681ed8ebdc15e0d75de0c9c5c019a9afa/development/result.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-lr-anneal/native/record.json",
+      "bytes": 13672,
+      "sha256": "040ceb373415f8fcb7a017022ea1b131e580558e8ccd87cf520213c7bc75abcc",
+      "remote_path": "trial/record.json",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/attempt.json",
+      "bytes": 145,
+      "sha256": "5cf7f5ebbb2c2a34ceede40f98635e33318fb76ecd68fb8cdd2063cdb4801f5f",
+      "remote_path": "trial/attempt.json",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/scalars.json",
+      "bytes": 4705004,
+      "sha256": "1145acb6e156f707d2496a157670ec0cfd04da3c8b95349880ce193b990475d7",
+      "remote_path": "trial/scalars.json",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/trainer.py",
+      "bytes": 26382,
+      "sha256": "878c99d186f2bd554d36999e437302c52c768204246c5d4c35ecb68a34116a24",
+      "remote_path": "trial/trainer.py",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/train.log",
+      "bytes": 55985,
+      "sha256": "26d65f2700a9dd6dc1e3c56819b29b4eb654ee8a9a27fd75b13140553f774d7e",
+      "remote_path": "trial/work/train.log",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "fe0b2ad4d99fc88f0c408a1da3ccfbf80fdf51e0d643f7ad977ad4604aa8f753",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_1.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_101.pt",
+      "bytes": 1168376,
+      "sha256": "69fde942fd7587b7fad59886c1585f18abb9d7371474acf8d63a68d163adc00e",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_101.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_126.pt",
+      "bytes": 1168376,
+      "sha256": "f17467ffe4a24f61d11fd8adffaaa50049d64fc2846b0e3c90478699e86732f0",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_126.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_151.pt",
+      "bytes": 1168376,
+      "sha256": "0f638d23e2ba71a86eb67fdda373a019bfe533b28e5f61038b3f81799a9e5dbf",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_151.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_176.pt",
+      "bytes": 1168376,
+      "sha256": "603e4596cfec96ff49c99d1365c59df7c599f573e14bd96e0f7c23f13d293857",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_176.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_201.pt",
+      "bytes": 1168376,
+      "sha256": "af8d69b5eb2f1149ed3f9426b6450118371802f4371f10fa123bb0fdf1b8b4e0",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_201.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_226.pt",
+      "bytes": 1168376,
+      "sha256": "c24400afbbdf5bbafd446d4d3d9afba1443a6afcf6a8f7607404450b4a682930",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_226.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_251.pt",
+      "bytes": 1168376,
+      "sha256": "311111d52e90602778138e4c45d890a1b8ee7e26d64e8720dcf168716f11dd31",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_251.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "292c8eeeacd22efe8d9547e99ed04c06fefed90e8ce7286c1df7c1962f7180d9",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_26.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_276.pt",
+      "bytes": 1168376,
+      "sha256": "bc03afd86cef0a4730f14c7a02b0918fd4374d5c715a55db8ba4688694af11de",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_276.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_301.pt",
+      "bytes": 1168376,
+      "sha256": "7fae4e62222e77c39dc4f8615a905a6cd7191cc490cf98db1f7b7cd760d9f3a0",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_301.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_326.pt",
+      "bytes": 1168376,
+      "sha256": "5603cc8830f5e913e0921e876c32c4dee9d7cf882f5a70a103c9f41843ce26fb",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_326.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_351.pt",
+      "bytes": 1168376,
+      "sha256": "65d41a975c657a0dbefedae6b6f531636e25fa77e6770530b829120f6803273c",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_351.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_376.pt",
+      "bytes": 1168376,
+      "sha256": "34454d5fb949c24a14f9a74cbbd35f6a75deac2342d5bc166224618eb2ab32d5",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_376.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_401.pt",
+      "bytes": 1168376,
+      "sha256": "39fe6feb6fe5d1df085d7c72b92815be8a6338e9393565f671074d3f2f5d96ae",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_401.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_426.pt",
+      "bytes": 1168376,
+      "sha256": "8a9e818bc81d799c26886e2edb0f6101ad8cb8403c683a4f4321e67e3be64dfb",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_426.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_451.pt",
+      "bytes": 1168376,
+      "sha256": "c112c51d865699f751cf8324c66c9baf5b0129888fd9786ce3c1cfde0a7b9cb1",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_451.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_476.pt",
+      "bytes": 1168376,
+      "sha256": "1fff53a4dd4f93936b85789304c1b293c6bba919a71b2e43df341ae2ca919b72",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_476.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_501.pt",
+      "bytes": 1168376,
+      "sha256": "41c6e60c5ba7866e7fd2aaff7de985dd47b0f69d1122e3b16b0f632760ebfd05",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_501.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_51.pt",
+      "bytes": 1167971,
+      "sha256": "ebe73770a97f3de5ba40e9731cd9968c4d87d20c9c1d037f14e09a50bf00ceec",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_51.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_526.pt",
+      "bytes": 1168376,
+      "sha256": "173cf7cf1a0017f6a6ef59f220433a2c5bd0a617ded9ecd326c743b8d0283070",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_526.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_551.pt",
+      "bytes": 1168376,
+      "sha256": "8d27ebeb8a7f2bb645c4851d6c5186cd3e87679f3f8de3b395297b5d6cac33d7",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_551.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_576.pt",
+      "bytes": 1168376,
+      "sha256": "2409ab54de1f88ae62ddb586d48ea1f1431e965e19605f6920f2ecf59d529e8a",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_576.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_601.pt",
+      "bytes": 1168376,
+      "sha256": "0dac9d6b3bc17d48190136901c26ca8980132f841c67264f28644767835833d0",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_601.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_626.pt",
+      "bytes": 1168376,
+      "sha256": "0d99c1639266c9c6cf24b18a93e83b95318479daf46d4743af67d1013a3056c6",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_626.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_651.pt",
+      "bytes": 1168376,
+      "sha256": "3a17643c3f1402bfb5fb867d39e2c32d5bf34f76926ea89bc488be01ad4f4f67",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_651.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_676.pt",
+      "bytes": 1168376,
+      "sha256": "63cd7f74a6ec3e4e5df4aff525355a7d2336d37e192442bec370476f585d39c0",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_676.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_701.pt",
+      "bytes": 1168376,
+      "sha256": "69800ad2349c93084ce4fdefcef295875e32e88c71b9f52ea50aa54bb5a3f7f9",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_701.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_726.pt",
+      "bytes": 1168376,
+      "sha256": "25d4f58e15277cd802f3bd8efbb579e3607f499685d24dd73eeed30530aee0e0",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_726.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_751.pt",
+      "bytes": 1168376,
+      "sha256": "5946f8b0fe501de9e79be4bd8bf3ed09ffcef24dec5718f55da99caf5a14aa36",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_751.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_76.pt",
+      "bytes": 1167971,
+      "sha256": "98e88d62db7bab3a5921d59c36bdf2930b835a05a85b2c73e45d09af094bc502",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_76.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_776.pt",
+      "bytes": 1168376,
+      "sha256": "3ae55cde55a048aff3adb74ae335e4d19e011da3c56e186693657e3c04aa5388",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_776.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_801.pt",
+      "bytes": 1168376,
+      "sha256": "e2289f43cad0537f9009b06ca55640f3c865c66215498bcc8bd7975dee338874",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_801.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_826.pt",
+      "bytes": 1168376,
+      "sha256": "20ce29a227de0eb1370d6b45ecfc68b33bbf6161ac76cbbefdd395ef09c2d90d",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_826.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_851.pt",
+      "bytes": 1168376,
+      "sha256": "d117aa1da3c09a70ff59608ae1abbebd647a197a9db7a5a605aa0636b69d6ad8",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_851.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_876.pt",
+      "bytes": 1168376,
+      "sha256": "b4c3533c101e470f16a859cf830756f9aabaa7bb3a826fa4bcd311c675f49c69",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_876.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_901.pt",
+      "bytes": 1168376,
+      "sha256": "eda7bc89ab334d238d9400f20c9c8412835bc69083bed09d64c200f41059b3c3",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_901.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_926.pt",
+      "bytes": 1168376,
+      "sha256": "606eac0dd8a464bff40618dd88df01b76b2d283029ae09c2bfd8f3fec6a0f9f9",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_926.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_951.pt",
+      "bytes": 1168376,
+      "sha256": "dacefdd54037199820ad405dc4e5339943bc29599891cf7d98966f84e1856118",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_951.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_976.pt",
+      "bytes": 1168376,
+      "sha256": "c4d5c741aefe7c272a25068441487ca99255855c50cf3cf5fff79bc65c8f03dd",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_976.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/events.out.tfevents.1793148132.modal.8.0",
+      "bytes": 2373518,
+      "sha256": "3c385f65039bc8adef4da98dbdb25c42f9db080b7ce8b955d87b62f072747509",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/events.out.tfevents.1793148132.modal.8.0",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/native/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "0bc3fb0663866a74a043f63252f22d5a8775e34441de35e65b731fe047e1d745",
+      "remote_path": "trial/work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/final_ckpt.pt",
+      "volume": "automanip-modal-precision-lr-anneal-seed1-20261027"
+    },
+    {
+      "path": "precision-lr-anneal/step-25600000/manifest.json",
+      "bytes": 337,
+      "sha256": "71adc5ab7016f4bbe46b51500169c9922698af8d0482e68bbb32f32f9a86d545",
+      "remote_path": "stackcube-precision-screen-20261027/precision-lr-anneal/step-25600000/manifest.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-lr-anneal/step-25600000/weights.json",
+      "bytes": 3015503,
+      "sha256": "42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd",
+      "remote_path": "stackcube-precision-screen-20261027/precision-lr-anneal/step-25600000/weights.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-lr-anneal/step-25600000/export.json",
+      "bytes": 377,
+      "sha256": "17908469176601ba7305e079a9d62583b410e02ee5af357faabfafe5dcf8b893",
+      "remote_path": "stackcube-precision-screen-20261027/precision-lr-anneal/step-25600000/export.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "development/42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd.json",
+      "bytes": 80607,
+      "sha256": "2cf4e67ad6eee8907361426ccfc5bf0aef8699393e365e4a72d6d1ba82b884c2",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd/development/result.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-lr-anneal/step-38400000/manifest.json",
+      "bytes": 337,
+      "sha256": "9fc2449331d06b1f6b17d80fd3cb792a1653d134f2db43593a70e35687271c58",
+      "remote_path": "stackcube-precision-screen-20261027/precision-lr-anneal/step-38400000/manifest.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-lr-anneal/step-38400000/weights.json",
+      "bytes": 3010775,
+      "sha256": "e8ef1ccc6ec0f0a3f16a0c9ecb62cec5709d95fb4645b8f16531b27f635bdfb8",
+      "remote_path": "stackcube-precision-screen-20261027/precision-lr-anneal/step-38400000/weights.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-lr-anneal/step-38400000/export.json",
+      "bytes": 377,
+      "sha256": "412de5599c65330ab140ac38e138394e35d577a17c53baa3d4cbfec7d203a624",
+      "remote_path": "stackcube-precision-screen-20261027/precision-lr-anneal/step-38400000/export.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "development/e8ef1ccc6ec0f0a3f16a0c9ecb62cec5709d95fb4645b8f16531b27f635bdfb8.json",
+      "bytes": 80459,
+      "sha256": "b97f20e1a537d5f52f39a81fd89df377c46d888959e90c9026d9886e277edad9",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/e8ef1ccc6ec0f0a3f16a0c9ecb62cec5709d95fb4645b8f16531b27f635bdfb8/development/result.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-lr-anneal/step-49971200/manifest.json",
+      "bytes": 337,
+      "sha256": "e9f03c681448fb48d8d4e431500e94563b1bfc441f9b7de273ccb48f9e1d5f7f",
+      "remote_path": "stackcube-precision-screen-20261027/precision-lr-anneal/step-49971200/manifest.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-lr-anneal/step-49971200/weights.json",
+      "bytes": 3009340,
+      "sha256": "06cf7efb0535193b96193d21a46269667274570b3adf2984763da80f981a1e42",
+      "remote_path": "stackcube-precision-screen-20261027/precision-lr-anneal/step-49971200/weights.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "precision-lr-anneal/step-49971200/export.json",
+      "bytes": 377,
+      "sha256": "0742545998172edaffa911972664a40a22c6f9f4a73783336077823a20fc0c19",
+      "remote_path": "stackcube-precision-screen-20261027/precision-lr-anneal/step-49971200/export.json",
+      "volume": "automanip-modal-validation"
+    },
+    {
+      "path": "development/06cf7efb0535193b96193d21a46269667274570b3adf2984763da80f981a1e42.json",
+      "bytes": 80404,
+      "sha256": "5dc1bce42f1611914230a571a593e64e90beef4e3058e506e0563739672b7bed",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/06cf7efb0535193b96193d21a46269667274570b3adf2984763da80f981a1e42/development/result.json",
+      "volume": "automanip-modal-validation"
+    }
+  ],
+  "total_bytes": 193131197,
+  "new_training_jobs": 0,
+  "new_evaluations": 0,
+  "confirmation_queries": 0
+}

@@ -1,0 +1,12 @@
+{
+  "num_envs": 512,
+  "num_steps": 50,
+  "total_timesteps": 9984000,
+  "max_seconds": 600,
+  "learning_rate": 0.0003,
+  "gamma": 0.8,
+  "gae_lambda": 0.9,
+  "num_minibatches": 32,
+  "update_epochs": 4,
+  "hidden_sizes": [256, 256, 256]
+}

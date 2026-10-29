@@ -1,0 +1,166 @@
+[
+  {
+    "name": "settle-entropy-decay-seed-1",
+    "trainer_seconds": 1304.0924388677813,
+    "steps": 24985600,
+    "success_at_end": 0.8125,
+    "success_ever": 0.96875,
+    "rollout_seconds": 1127.8551180362701,
+    "optimization_seconds": 111.19938850402832,
+    "curve": [
+      {
+        "steps": 0,
+        "success": 0.0,
+        "logged_trainer_elapsed_seconds": 0
+      },
+      {
+        "steps": 5120000,
+        "success": 0.0,
+        "logged_trainer_elapsed_seconds": 277.53547763824463
+      },
+      {
+        "steps": 10240000,
+        "success": 0.1015625,
+        "logged_trainer_elapsed_seconds": 523.6554589271545
+      },
+      {
+        "steps": 15360000,
+        "success": 0.5625,
+        "logged_trainer_elapsed_seconds": 795.8658633232117
+      },
+      {
+        "steps": 20480000,
+        "success": 0.8515625,
+        "logged_trainer_elapsed_seconds": 1067.78626704216
+      },
+      {
+        "steps": 24985600,
+        "success": 0.8125,
+        "logged_trainer_elapsed_seconds": 1297.8905403614044
+      }
+    ]
+  },
+  {
+    "name": "settle-full-horizon-seed-1",
+    "trainer_seconds": 1088.766732081771,
+    "steps": 24985600,
+    "success_at_end": 0.9375,
+    "success_ever": 0.9921875,
+    "rollout_seconds": 887.4720520973206,
+    "optimization_seconds": 137.1496479511261,
+    "curve": [
+      {
+        "steps": 0,
+        "success": 0.0,
+        "logged_trainer_elapsed_seconds": 0
+      },
+      {
+        "steps": 5120000,
+        "success": 0.0,
+        "logged_trainer_elapsed_seconds": 279.96253180503845
+      },
+      {
+        "steps": 10240000,
+        "success": 0.0859375,
+        "logged_trainer_elapsed_seconds": 488.93319368362427
+      },
+      {
+        "steps": 15360000,
+        "success": 0.8828125,
+        "logged_trainer_elapsed_seconds": 696.2793188095093
+      },
+      {
+        "steps": 20480000,
+        "success": 0.890625,
+        "logged_trainer_elapsed_seconds": 897.7615008354187
+      },
+      {
+        "steps": 24985600,
+        "success": 0.9375,
+        "logged_trainer_elapsed_seconds": 1082.3983418941498
+      }
+    ]
+  },
+  {
+    "name": "settle-gamma0925-entropy003-seed-1",
+    "trainer_seconds": 1218.8966742902994,
+    "steps": 24985600,
+    "success_at_end": 0.078125,
+    "success_ever": 0.3203125,
+    "rollout_seconds": 1045.5995018482208,
+    "optimization_seconds": 108.28737688064575,
+    "curve": [
+      {
+        "steps": 0,
+        "success": 0.0,
+        "logged_trainer_elapsed_seconds": 0
+      },
+      {
+        "steps": 5120000,
+        "success": 0.0,
+        "logged_trainer_elapsed_seconds": 284.6162180900574
+      },
+      {
+        "steps": 10240000,
+        "success": 0.0,
+        "logged_trainer_elapsed_seconds": 517.7823815345764
+      },
+      {
+        "steps": 15360000,
+        "success": 0.0,
+        "logged_trainer_elapsed_seconds": 756.6562442779541
+      },
+      {
+        "steps": 20480000,
+        "success": 0.0546875,
+        "logged_trainer_elapsed_seconds": 997.0006306171417
+      },
+      {
+        "steps": 24985600,
+        "success": 0.078125,
+        "logged_trainer_elapsed_seconds": 1212.0926773548126
+      }
+    ]
+  },
+  {
+    "name": "settle-timed-control-seed-1",
+    "trainer_seconds": 1298.8896873733029,
+    "steps": 24985600,
+    "success_at_end": 0.890625,
+    "success_ever": 0.984375,
+    "rollout_seconds": 1117.061181306839,
+    "optimization_seconds": 116.66335868835449,
+    "curve": [
+      {
+        "steps": 0,
+        "success": 0.0,
+        "logged_trainer_elapsed_seconds": 0
+      },
+      {
+        "steps": 5120000,
+        "success": 0.0,
+        "logged_trainer_elapsed_seconds": 281.3076455593109
+      },
+      {
+        "steps": 10240000,
+        "success": 0.1015625,
+        "logged_trainer_elapsed_seconds": 527.6359438896179
+      },
+      {
+        "steps": 15360000,
+        "success": 0.6015625,
+        "logged_trainer_elapsed_seconds": 800.1007075309753
+      },
+      {
+        "steps": 20480000,
+        "success": 0.8828125,
+        "logged_trainer_elapsed_seconds": 1065.7459983825684
+      },
+      {
+        "steps": 24985600,
+        "success": 0.890625,
+        "logged_trainer_elapsed_seconds": 1292.2054262161255
+      }
+    ]
+  }
+]

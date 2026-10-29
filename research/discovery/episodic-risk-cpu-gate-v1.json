@@ -1,0 +1,102 @@
+{
+  "check": "Two-step stochastic Bernoulli policy, shared parameter; complete-episode joint score, exact probability enumeration.",
+  "records": [
+    {
+      "policy_probability": 0.2,
+      "alpha": 0.2,
+      "var": 0.9,
+      "score_gradient": -0.07679999999999998,
+      "exact_finite_difference": -0.07679999999843368,
+      "absolute_error": 1.5663026431411708e-12,
+      "incorrectly_tail_centered_gradient": -0.3840000000000002
+    },
+    {
+      "policy_probability": 0.2,
+      "alpha": 0.5,
+      "var": 0.9,
+      "score_gradient": -0.03071999999999999,
+      "exact_finite_difference": -0.030720000004924582,
+      "absolute_error": 4.924591984201143e-12,
+      "incorrectly_tail_centered_gradient": -0.15360000000000013
+    },
+    {
+      "policy_probability": 0.2,
+      "alpha": 1.0,
+      "var": 1.3,
+      "score_gradient": 0.026880000000000084,
+      "exact_finite_difference": 0.026880000009166235,
+      "absolute_error": 9.166150477524226e-12,
+      "incorrectly_tail_centered_gradient": 0.02687999999999996
+    },
+    {
+      "policy_probability": 0.4,
+      "alpha": 0.2,
+      "var": 0.8,
+      "score_gradient": -0.0768,
+      "exact_finite_difference": -0.07680000000398479,
+      "absolute_error": 3.984798602196804e-12,
+      "incorrectly_tail_centered_gradient": 0.023999999999999997
+    },
+    {
+      "policy_probability": 0.4,
+      "alpha": 0.5,
+      "var": 0.9,
+      "score_gradient": -0.04416,
+      "exact_finite_difference": -0.044160000001181025,
+      "absolute_error": 1.1810274980206259e-12,
+      "incorrectly_tail_centered_gradient": -0.2208000000000001
+    },
+    {
+      "policy_probability": 0.4,
+      "alpha": 1.0,
+      "var": 1.3,
+      "score_gradient": 0.05664000000000007,
+      "exact_finite_difference": 0.05664000001237567,
+      "absolute_error": 1.2375600544345389e-11,
+      "incorrectly_tail_centered_gradient": 0.05664000000000001
+    },
+    {
+      "policy_probability": 0.7,
+      "alpha": 0.2,
+      "var": 0.8,
+      "score_gradient": -0.11760000000000002,
+      "exact_finite_difference": -0.1175999999991628,
+      "absolute_error": 8.372191828698305e-13,
+      "incorrectly_tail_centered_gradient": -0.1995
+    },
+    {
+      "policy_probability": 0.7,
+      "alpha": 0.5,
+      "var": 1.1,
+      "score_gradient": 0.03612000000000003,
+      "exact_finite_difference": 0.036120000002082264,
+      "absolute_error": 2.082237160472289e-12,
+      "incorrectly_tail_centered_gradient": -0.2814000000000001
+    },
+    {
+      "policy_probability": 0.7,
+      "alpha": 1.0,
+      "var": 1.3,
+      "score_gradient": 0.07097999999999997,
+      "exact_finite_difference": 0.07097999999983173,
+      "absolute_error": 1.6824042159413466e-13,
+      "incorrectly_tail_centered_gradient": 0.07098000000000004
+    }
+  ],
+  "maximum_absolute_error": 1.2375600544345389e-11,
+  "alpha1_matches_conventional_mean": true,
+  "ordinary_baseline_inside_tail_counterexample": true,
+  "payload_sha256": "b80e4fcd10d9c256f875b85444dc31c7c131867e4a19a3855d4bcac91272029f",
+  "source_sha256": "ddc93fd8a6f5ca2e8bd5b67e96e1f4b69a8ee0511fb7f0a00f82a78fef502555",
+  "adapter_sha256": "5a7aedf7eb2603d93b0bb7f3e026cbbb3fcca53edcd33dd1cf68d0191cc5d364",
+  "wall_seconds": 0.060708000004524365,
+  "robot_transitions": 0,
+  "simulator_queries": 0,
+  "optimizer_updates": 0,
+  "gpu_seconds": 0,
+  "dollars_spent": 0,
+  "limitations": [
+    "Population score identity at behavior policy only; empirical VaR, RMS scaling, clipping and multiple epochs remain approximations.",
+    "Analytic toy, not StackCube policy performance or a protected-evaluator test."
+  ]
+}

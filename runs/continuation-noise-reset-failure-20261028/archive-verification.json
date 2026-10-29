@@ -1,0 +1,9 @@
+{
+  "state": "verified_failed_setup",
+  "files": 5,
+  "actual_public_transitions": 0,
+  "attempted_public_transitions": 0,
+  "initial_observation_max_difference": 1.8388419151306152,
+  "scientific_variance_estimate": false,
+  "new_training_runs": 0
+}

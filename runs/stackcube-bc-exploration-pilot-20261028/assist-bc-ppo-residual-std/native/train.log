@@ -1,0 +1,246 @@
+/opt/conda/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/conda/lib/python3.11/site-packages/sapien/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/conda/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+Running training
+AUTOMANIP_ASSISTANCE {"all_teacher_episodes": 512, "amp_enabled": false, "amp_style_weight": 0.0, "bc_prefix_demonstration_minibatch_rows": 5120000, "bc_prefix_optimizer_updates": 5000, "bc_prefix_wall_seconds": 8.754884399000002, "bc_report_sha256": "a9718a30ad8a149de08d7672c959c03af0cddf3afbdccafb207323e67dc687c2", "bc_student_weights_sha256": "4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2", "dataset_sha256": "495a392364926211397222bfa77e79ff4a6c2c87564f226dc1212f333ebec782", "discriminator_input": "existing state48 followed by actual successor state48", "discriminator_models_in_agent_serialization": false, "failed_teacher_episodes_preserved": 15, "task_reward_weight": 1.0, "teacher_generation_transitions": 25600, "teacher_prefix_dollars": null, "teacher_prefix_trainer_seconds": 2295.408300588, "teacher_prefix_transitions": 49971200, "teacher_weights_loaded": false, "track": "prior-assisted random student: BC then PPO", "training_demo_episodes": 448, "validation_demo_episodes": 49}
+AUTOMANIP_EXPLORATION_INITIALIZATION {"bc_actor_weights_sha256": "4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2", "calibration_wall_seconds": 0.09115499800000038, "ceiling": 0.6065306597126334, "dataset_sha256": "495a392364926211397222bfa77e79ff4a6c2c87564f226dc1212f333ebec782", "excluded_validation_episode_indices": [0, 32, 37, 65, 100, 101, 104, 117, 118, 126, 141, 153, 213, 228, 240, 243, 271, 280, 290, 304, 307, 308, 312, 320, 323, 327, 348, 356, 370, 372, 377, 379, 381, 384, 389, 411, 423, 426, 428, 435, 436, 442, 443, 447, 454, 457, 475, 483, 510], "floor": 0.05, "frozen_assisted_base_sha256": "7a4de8deecf0adc15d9f8beaef1bf6b9874ca9eb7b0122efbab5d9b1bc80d427", "initial_std": [0.07161122560501099, 0.07851020991802216, 0.07931241393089294, 0.08390970528125763, 0.11644907295703888, 0.09796664118766785, 0.11457139998674393, 0.09181715548038483], "mean_critic_reward_architecture_unchanged": true, "mechanism": "training-demo residual RMS initializes existing per-coordinate Gaussian std only", "new_environment_transitions": 0, "new_optimizer_updates": 0, "note": "Residual scale is a heuristic using clipped action labels, not calibrated posterior uncertainty.", "original_std": [0.6065306663513184, 0.6065306663513184, 0.6065306663513184, 0.6065306663513184, 0.6065306663513184, 0.6065306663513184, 0.6065306663513184, 0.6065306663513184], "residual_forward_rows": 22400, "residual_patch_source_sha256": "32475453cf5080e0cfdd0c0ed11170f785a27e947c3ca7eb7e744faa8f51692a", "residual_rms": [0.07161122579230646, 0.07851020703155594, 0.07931240934022714, 0.08390970561558418, 0.11644906897367151, 0.09796665528908503, 0.11457139199692831, 0.09181716375254775], "trainable_after_initialization": true, "training_episode_indices": [1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 33, 34, 35, 36, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 63, 64, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 98, 99, 102, 103, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 119, 120, 121, 122, 123, 124, 125, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 208, 209, 210, 211, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 241, 242, 244, 245, 246, 247, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 263, 264, 265, 266, 267, 268, 269, 270, 272, 273, 274, 275, 276, 277, 278, 279, 281, 282, 283, 284, 285, 286, 287, 288, 289, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 305, 306, 309, 310, 311, 313, 314, 315, 316, 317, 318, 319, 321, 322, 324, 325, 326, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 349, 350, 351, 352, 353, 354, 355, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 371, 373, 374, 375, 376, 378, 380, 382, 385, 386, 387, 388, 390, 391, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 424, 425, 427, 429, 430, 431, 432, 433, 434, 437, 438, 439, 440, 441, 444, 445, 446, 448, 449, 450, 451, 452, 453, 455, 456, 459, 460, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 476, 477, 478, 479, 480, 481, 482, 484, 485, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 504, 505, 506, 507, 509, 511]}
+####
+args.num_iterations=100 args.num_envs=1024 args.num_eval_envs=8
+args.minibatch_size=1600 args.batch_size=51200 args.update_epochs=8
+####
+Epoch: 1, global_step=0
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.875
+eval_return_mean=32.82200241088867
+eval_episode_len_mean=50.0
+eval_reward_mean=0.656440019607544
+eval_success_at_end_mean=0.625
+model saved to runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/ckpt_1.pt
+SPS: 12126
+Epoch: 2, global_step=51200
+SPS: 17086
+Epoch: 3, global_step=102400
+SPS: 19962
+Epoch: 4, global_step=153600
+SPS: 21890
+Epoch: 5, global_step=204800
+SPS: 23194
+Epoch: 6, global_step=256000
+SPS: 24175
+Epoch: 7, global_step=307200
+SPS: 24833
+Epoch: 8, global_step=358400
+SPS: 25397
+Epoch: 9, global_step=409600
+SPS: 25836
+Epoch: 10, global_step=460800
+SPS: 26165
+Epoch: 11, global_step=512000
+SPS: 26400
+Epoch: 12, global_step=563200
+SPS: 26575
+Epoch: 13, global_step=614400
+SPS: 26723
+Epoch: 14, global_step=665600
+SPS: 26835
+Epoch: 15, global_step=716800
+SPS: 26931
+Epoch: 16, global_step=768000
+SPS: 27024
+Epoch: 17, global_step=819200
+SPS: 27094
+Epoch: 18, global_step=870400
+SPS: 27174
+Epoch: 19, global_step=921600
+SPS: 27241
+Epoch: 20, global_step=972800
+SPS: 27296
+Epoch: 21, global_step=1024000
+SPS: 27350
+Epoch: 22, global_step=1075200
+SPS: 27410
+Epoch: 23, global_step=1126400
+SPS: 27452
+Epoch: 24, global_step=1177600
+SPS: 27492
+Epoch: 25, global_step=1228800
+SPS: 27523
+Epoch: 26, global_step=1280000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=7.170063018798828
+eval_episode_len_mean=50.0
+eval_reward_mean=0.14340125024318695
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/ckpt_26.pt
+SPS: 26625
+Epoch: 27, global_step=1331200
+SPS: 26662
+Epoch: 28, global_step=1382400
+SPS: 26690
+Epoch: 29, global_step=1433600
+SPS: 26701
+Epoch: 30, global_step=1484800
+SPS: 26688
+Epoch: 31, global_step=1536000
+SPS: 26627
+Epoch: 32, global_step=1587200
+SPS: 26644
+Epoch: 33, global_step=1638400
+SPS: 26648
+Epoch: 34, global_step=1689600
+SPS: 26650
+Epoch: 35, global_step=1740800
+SPS: 26666
+Epoch: 36, global_step=1792000
+SPS: 26679
+Epoch: 37, global_step=1843200
+SPS: 26706
+Epoch: 38, global_step=1894400
+SPS: 26734
+Epoch: 39, global_step=1945600
+SPS: 26766
+Epoch: 40, global_step=1996800
+SPS: 26786
+Epoch: 41, global_step=2048000
+SPS: 26814
+Epoch: 42, global_step=2099200
+SPS: 26827
+Epoch: 43, global_step=2150400
+SPS: 26858
+Epoch: 44, global_step=2201600
+SPS: 26885
+Epoch: 45, global_step=2252800
+SPS: 26908
+Epoch: 46, global_step=2304000
+SPS: 26933
+Epoch: 47, global_step=2355200
+SPS: 26941
+Epoch: 48, global_step=2406400
+SPS: 26950
+Epoch: 49, global_step=2457600
+SPS: 26961
+Epoch: 50, global_step=2508800
+SPS: 26981
+Epoch: 51, global_step=2560000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=2.9389381408691406
+eval_episode_len_mean=50.0
+eval_reward_mean=0.058778759092092514
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/ckpt_51.pt
+SPS: 26561
+Epoch: 52, global_step=2611200
+SPS: 26587
+Epoch: 53, global_step=2662400
+SPS: 26620
+Epoch: 54, global_step=2713600
+SPS: 26653
+Epoch: 55, global_step=2764800
+SPS: 26678
+Epoch: 56, global_step=2816000
+SPS: 26705
+Epoch: 57, global_step=2867200
+SPS: 26729
+Epoch: 58, global_step=2918400
+SPS: 26759
+Epoch: 59, global_step=2969600
+SPS: 26789
+Epoch: 60, global_step=3020800
+SPS: 26815
+Epoch: 61, global_step=3072000
+SPS: 26846
+Epoch: 62, global_step=3123200
+SPS: 26875
+Epoch: 63, global_step=3174400
+SPS: 26904
+Epoch: 64, global_step=3225600
+SPS: 26926
+Epoch: 65, global_step=3276800
+SPS: 26950
+Epoch: 66, global_step=3328000
+SPS: 26974
+Epoch: 67, global_step=3379200
+SPS: 27001
+Epoch: 68, global_step=3430400
+SPS: 27025
+Epoch: 69, global_step=3481600
+SPS: 27050
+Epoch: 70, global_step=3532800
+SPS: 27074
+Epoch: 71, global_step=3584000
+SPS: 27098
+Epoch: 72, global_step=3635200
+SPS: 27117
+Epoch: 73, global_step=3686400
+SPS: 27135
+Epoch: 74, global_step=3737600
+SPS: 27137
+Epoch: 75, global_step=3788800
+SPS: 27144
+Epoch: 76, global_step=3840000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=2.5232083797454834
+eval_episode_len_mean=50.0
+eval_reward_mean=0.050464168190956116
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/ckpt_76.pt
+SPS: 26860
+Epoch: 77, global_step=3891200
+SPS: 26873
+Epoch: 78, global_step=3942400
+SPS: 26896
+Epoch: 79, global_step=3993600
+SPS: 26916
+Epoch: 80, global_step=4044800
+SPS: 26927
+Epoch: 81, global_step=4096000
+SPS: 26938
+Epoch: 82, global_step=4147200
+SPS: 26954
+Epoch: 83, global_step=4198400
+SPS: 26965
+Epoch: 84, global_step=4249600
+SPS: 26966
+Epoch: 85, global_step=4300800
+SPS: 26973
+Epoch: 86, global_step=4352000
+SPS: 26911
+Epoch: 87, global_step=4403200
+SPS: 26906
+Epoch: 88, global_step=4454400
+SPS: 26926
+Epoch: 89, global_step=4505600
+SPS: 26944
+Epoch: 90, global_step=4556800
+SPS: 26960
+Epoch: 91, global_step=4608000
+SPS: 26977
+Epoch: 92, global_step=4659200
+SPS: 26989
+Epoch: 93, global_step=4710400
+SPS: 26985
+Epoch: 94, global_step=4761600
+SPS: 26998
+Epoch: 95, global_step=4812800
+SPS: 27013
+Epoch: 96, global_step=4864000
+SPS: 27024
+Epoch: 97, global_step=4915200
+SPS: 27034
+Epoch: 98, global_step=4966400
+SPS: 27044
+Epoch: 99, global_step=5017600
+SPS: 27053
+Epoch: 100, global_step=5068800
+SPS: 27064
+model saved to runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/final_ckpt.pt

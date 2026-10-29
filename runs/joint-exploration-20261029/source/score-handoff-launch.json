@@ -1,0 +1,45 @@
+{
+  "state": "complete",
+  "plan_sha256": "4a35139b207da6fe35e5f55e6ae87aa189620e23aa61c3ff511517a5726465f4",
+  "arms": {
+    "joint": {
+      "weights_sha256": "a36b61761a9f5de682cc6dadac3091e9e62d4e0fa16f7f1d1dac7b6bbb740d0e",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/a36b61761a9f5de682cc6dadac3091e9e62d4e0fa16f7f1d1dac7b6bbb740d0e/development/result.json",
+      "reused_existing_report": false,
+      "state": "complete",
+      "submitted_at": 1793282982.489036,
+      "function_call_id": "fc-01M63ZXHH2HMNQ3ZHGCQQEW9SD",
+      "result": {
+        "state": "complete",
+        "weights_sha256": "a36b61761a9f5de682cc6dadac3091e9e62d4e0fa16f7f1d1dac7b6bbb740d0e",
+        "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+        "evaluation_seconds": 32.781945227,
+        "gpu_requested": "L40S",
+        "gpu_actual_name": "NVIDIA L40S",
+        "queue_seconds": 5.458177328109741,
+        "gpu_durable_result_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/a36b61761a9f5de682cc6dadac3091e9e62d4e0fa16f7f1d1dac7b6bbb740d0e/development/result.json"
+      }
+    },
+    "coordinate": {
+      "weights_sha256": "5b6a775e3ec19dd4e5f2c7e63d792b9a0191c5c646189503e5a5b27d4f939fb6",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/5b6a775e3ec19dd4e5f2c7e63d792b9a0191c5c646189503e5a5b27d4f939fb6/development/result.json",
+      "reused_existing_report": false,
+      "state": "complete",
+      "submitted_at": 1793283025.908288,
+      "function_call_id": "fc-01M63ZYVHRMAMHF8C7H67R4AMV",
+      "result": {
+        "state": "complete",
+        "weights_sha256": "5b6a775e3ec19dd4e5f2c7e63d792b9a0191c5c646189503e5a5b27d4f939fb6",
+        "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+        "evaluation_seconds": 32.914678626,
+        "gpu_requested": "L40S",
+        "gpu_actual_name": "NVIDIA L40S",
+        "queue_seconds": 4.487487316131592,
+        "gpu_durable_result_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/5b6a775e3ec19dd4e5f2c7e63d792b9a0191c5c646189503e5a5b27d4f939fb6/development/result.json"
+      }
+    }
+  },
+  "new_training_runs": 0,
+  "new_confirmation_queries": 0,
+  "source_sha256": "d5c66bc927000c03ae5fefb250cdefeb62428a68981c96ca97641c258e9f9d8d"
+}

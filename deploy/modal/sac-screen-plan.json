@@ -1,0 +1,59 @@
+{
+  "experiment_id": "stackcube-sac-screen-seed1-20261027",
+  "launch_enabled": true,
+  "source_sha256": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca",
+  "config": {
+    "seed": 1,
+    "num_envs": 32,
+    "total_transitions": 500000,
+    "buffer_size": 500000,
+    "batch_size": 1024,
+    "learning_starts": 4000,
+    "training_freq": 64,
+    "utd": 0.5,
+    "gamma": 0.9,
+    "max_seconds": 1320,
+    "checkpoint_every": 51200,
+    "device": "cuda"
+  },
+  "gpu_requested": "L40S",
+  "training_seeds": [
+    1
+  ],
+  "trainer_seconds_cap": 1320,
+  "save_reserve_seconds": 20,
+  "absolute_deadline_at_cpu_dispatch": true,
+  "development_steps": [
+    51200,
+    102400,
+    256000,
+    "final_actual_steps"
+  ],
+  "development_episodes": 128,
+  "max_development_evaluations": 4,
+  "confirmation_queries": 0,
+  "cost": {
+    "gpu_container_seconds_bound": 2010,
+    "gpu_cpu_ram_usd": 1.2661392,
+    "coordinator_cpu_ram_usd": 0.094716,
+    "subtotal_usd": 1.3608552,
+    "cap_usd": 1.5,
+    "reserve_usd": 0.13914479999999999
+  },
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "scientific_description": "Conventional adapted SAC seed1 screen; one run is not a reliable sample-efficiency claim; no autonomous extension",
+  "smoke_proof_path": ".runtime/modal-sac-smoke-v2-result.json",
+  "no_candidate_imports_in_trusted_code": true,
+  "no_pickle_deserialization": true,
+  "scientific_plan": "docs/stackcube-sac-screen-20261027.md",
+  "scientific_plan_sha256": "68f04a86e9491e28020b246c5ebcb65df2abfb7aecc3063b7bcb589890e27c8c",
+  "root_review": {
+    "approved_at": "2026-10-27T20:39:26.048921+00:00",
+    "scope": "One seed 1 dedicated L40S adapted SAC run, original 1320-second lease, at most four development evaluations, $1.50 total cap",
+    "checks": "Root reviewed complete adapter, exact source and CLI, isolation, bounded safe JSON flow and scientific plan; independently passed three contract tests",
+    "additional_smokes": false,
+    "additional_seeds": false,
+    "confirmation_queries": 0,
+    "fresh_retries": false
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "full-horizon-control": {
+    "early": {
+      "audit/sampled_action_clip_fraction": {
+        "mean": 0.11945579580962658,
+        "median": 0.12069335579872131,
+        "samples": 200
+      },
+      "losses/entropy": {
+        "mean": 2.184708352163434,
+        "median": 1.0253123044967651,
+        "samples": 200
+      },
+      "losses/approx_kl": {
+        "mean": 0.07063659626524896,
+        "median": 0.059884777292609215,
+        "samples": 200
+      },
+      "losses/clipfrac": {
+        "mean": 0.37038601595908405,
+        "median": 0.3811086267232895,
+        "samples": 200
+      },
+      "audit/actor_gradient_norm": {
+        "mean": 4.3815413576364515,
+        "median": 4.414438247680664,
+        "samples": 200
+      },
+      "audit/critic_gradient_norm": {
+        "mean": 0.21355186546221375,
+        "median": 0.15645229816436768,
+        "samples": 200
+      },
+      "audit/global_clip_multiplier": {
+        "mean": 0.15872985891997815,
+        "median": 0.11320474371314049,
+        "samples": 200
+      }
+    },
+    "middle": {
+      "audit/sampled_action_clip_fraction": {
+        "mean": 0.17216982036828996,
+        "median": 0.1796533167362213,
+        "samples": 100
+      },
+      "losses/entropy": {
+        "mean": -0.47431770771741866,
+        "median": -0.4716949313879013,
+        "samples": 100
+      },
+      "losses/approx_kl": {
+        "mean": 0.10867610987275839,
+        "median": 0.10729556530714035,
+        "samples": 100
+      },
+      "losses/clipfrac": {
+        "mean": 0.45115951359272005,
+        "median": 0.4538561701774597,
+        "samples": 100
+      },
+      "audit/actor_gradient_norm": {
+        "mean": 6.585080943107605,
+        "median": 6.309778213500977,
+        "samples": 100
+      },
+      "audit/critic_gradient_norm": {
+        "mean": 0.3487200777232647,
+        "median": 0.31426598131656647,
+        "samples": 100
+      },
+      "audit/global_clip_multiplier": {
+        "mean": 0.07869370937347413,
+        "median": 0.07916568964719772,
+        "samples": 100
+      }
+    },
+    "late": {
+      "audit/sampled_action_clip_fraction": {
+        "mean": 0.2067050190365061,
+        "median": 0.204345703125,
+        "samples": 188
+      },
+      "losses/entropy": {
+        "mean": -0.2500528526353709,
+        "median": -0.25642210245132446,
+        "samples": 188
+      },
+      "losses/approx_kl": {
+        "mean": 0.1054174846553422,
+        "median": 0.10598978772759438,
+        "samples": 188
+      },
+      "losses/clipfrac": {
+        "mean": 0.43890226473833654,
+        "median": 0.44253748655319214,
+        "samples": 188
+      },
+      "audit/actor_gradient_norm": {
+        "mean": 6.055862651226368,
+        "median": 5.828273773193359,
+        "samples": 188
+      },
+      "audit/critic_gradient_norm": {
+        "mean": 0.24112914732479035,
+        "median": 0.21994419395923615,
+        "samples": 188
+      },
+      "audit/global_clip_multiplier": {
+        "mean": 0.08514795731753111,
+        "median": 0.0857376977801323,
+        "samples": 188
+      }
+    }
+  },
+  "full-horizon-capg": {
+    "early": {
+      "audit/sampled_action_clip_fraction": {
+        "mean": 0.14842726696282627,
+        "median": 0.1541418433189392,
+        "samples": 200
+      },
+      "losses/entropy": {
+        "mean": 2.4119222289323807,
+        "median": 1.190665364265442,
+        "samples": 200
+      },
+      "losses/approx_kl": {
+        "mean": 0.07602314024232328,
+        "median": 0.10214121639728546,
+        "samples": 200
+      },
+      "losses/clipfrac": {
+        "mean": 0.35794148840010165,
+        "median": 0.37490250170230865,
+        "samples": 200
+      },
+      "audit/actor_gradient_norm": {
+        "mean": 4.587918457686901,
+        "median": 4.673431158065796,
+        "samples": 200
+      },
+      "audit/critic_gradient_norm": {
+        "mean": 0.19262177909724415,
+        "median": 0.1264197826385498,
+        "samples": 200
+      },
+      "audit/global_clip_multiplier": {
+        "mean": 0.15821293778717518,
+        "median": 0.10689109563827515,
+        "samples": 200
+      }
+    },
+    "middle": {
+      "audit/sampled_action_clip_fraction": {
+        "mean": 0.1878671346604824,
+        "median": 0.1950390562415123,
+        "samples": 100
+      },
+      "losses/entropy": {
+        "mean": 0.4019355747103691,
+        "median": 0.3938852995634079,
+        "samples": 100
+      },
+      "losses/approx_kl": {
+        "mean": 0.11574248865246772,
+        "median": 0.10963325574994087,
+        "samples": 100
+      },
+      "losses/clipfrac": {
+        "mean": 0.427572977244854,
+        "median": 0.4358653724193573,
+        "samples": 100
+      },
+      "audit/actor_gradient_norm": {
+        "mean": 6.402750179767609,
+        "median": 6.131700038909912,
+        "samples": 100
+      },
+      "audit/critic_gradient_norm": {
+        "mean": 0.3233088942244649,
+        "median": 0.27909591794013977,
+        "samples": 100
+      },
+      "audit/global_clip_multiplier": {
+        "mean": 0.08292226526886225,
+        "median": 0.08147457242012024,
+        "samples": 100
+      }
+    },
+    "late": {
+      "audit/sampled_action_clip_fraction": {
+        "mean": 0.2738246385879973,
+        "median": 0.2717663645744324,
+        "samples": 188
+      },
+      "losses/entropy": {
+        "mean": 0.3281672041308373,
+        "median": 0.2786710262298584,
+        "samples": 188
+      },
+      "losses/approx_kl": {
+        "mean": 0.10533676203340292,
+        "median": 0.10563099756836891,
+        "samples": 188
+      },
+      "losses/clipfrac": {
+        "mean": 0.42623223602137666,
+        "median": 0.4310874193906784,
+        "samples": 188
+      },
+      "audit/actor_gradient_norm": {
+        "mean": 5.484673555861128,
+        "median": 5.370722770690918,
+        "samples": 188
+      },
+      "audit/critic_gradient_norm": {
+        "mean": 0.25198196041140153,
+        "median": 0.23633717745542526,
+        "samples": 188
+      },
+      "audit/global_clip_multiplier": {
+        "mean": 0.0948556184253477,
+        "median": 0.09298614412546158,
+        "samples": 188
+      }
+    }
+  }
+}

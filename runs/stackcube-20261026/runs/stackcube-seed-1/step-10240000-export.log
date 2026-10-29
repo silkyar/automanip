@@ -1,0 +1,3 @@
+/opt/automanip-stackcube-venv/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+{"checkpoint_sha256": "d0b44417e83d7fe65ad5cace6c58099612bafcf6d36e123ded690f847e958066", "weights_sha256": "9cebf6cd6220eaa4e81ae5a7f69e518d197b0243986821213a4dfdc9efba79b0", "expected_official_ppo_sha256": "3fa4818861d428480244aae889bc679b2c8e89b59d6289014003c266a84dbab0", "conversion": "restricted weights-only load, exact tensor schema, actor-only JSON export"}

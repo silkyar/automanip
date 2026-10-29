@@ -1,0 +1,126 @@
+{
+  "job": {
+    "job_id": "stackcube-risk-continuation-20261028-risk-ppo-control-seed-1",
+    "method": "risk-ppo-control",
+    "seed": 1,
+    "trainer_sha256": "5f802501efb026560774d795f16bacb0b8fc7767a17822f5c191b1431fc7988b",
+    "reference_sha256": "307a2bc5996d5def9f696ab35b27a9cf96a5cf7401c678ecc981b78170d1084b",
+    "gpu": "L40S",
+    "trainer_seconds_cap": 300,
+    "requested_steps": 2048000,
+    "actual_steps_ceiling": 2048000
+  },
+  "state": "complete",
+  "dispatched_at": 1793150847.5449426,
+  "admitted_at": 1793150852.538525,
+  "queue_seconds": 4.993582487106323,
+  "expires_at": 1793151147.5449426,
+  "trainer_sha256": "5f802501efb026560774d795f16bacb0b8fc7767a17822f5c191b1431fc7988b",
+  "gpu_requested": "L40S",
+  "confirmation_queries": 0,
+  "new_training_processes": 1,
+  "training_prefix": {
+    "training_steps": 24985600,
+    "trainer_seconds": 1088.7667,
+    "training_seed": 1,
+    "native_checkpoint_sha256": "307a2bc5996d5def9f696ab35b27a9cf96a5cf7401c678ecc981b78170d1084b",
+    "actor_weights_sha256": "39ba198d0c98af14a3d2965ef9a3be859f31aa3c4889db3da311da910c2da153",
+    "optimizer_state_restarted": true,
+    "initialization": "continuation from own confirmed PPO policy; not fresh random initialization"
+  },
+  "reference_verified": true,
+  "gpu_actual_name": "NVIDIA L40S",
+  "versions": {
+    "torch": "2.6.0+cu124",
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "subprocess_started_at": 1793150855.1606715,
+  "trainer_process_seconds": 85.566247402,
+  "return_code": 0,
+  "nonfinite_diagnostic_scalars": {},
+  "actual_steps": 2048000,
+  "completed_rollouts": 40,
+  "optimizer_step_count": 1889,
+  "optimizer_step_upper_bound": 10240,
+  "total_training_steps_including_prefix": 27033600,
+  "built_in_evaluation_calls": 2,
+  "built_in_evaluation_transitions": 800,
+  "built_in_evaluation_episodes": 16,
+  "stopped_early": false,
+  "final_logstd_per_dimension": [
+    -1.8598735332489014,
+    -1.899485468864441,
+    -1.8841071128845215,
+    -1.94784414768219,
+    -0.5981343984603882,
+    -1.4901176691055298,
+    -0.3158494532108307,
+    -1.3643019199371338
+  ],
+  "audit_trace_rows": 40,
+  "actor_objective": "risk-ppo-control",
+  "actor_alpha": 1.0,
+  "training_success_labels_diagnostic_only": true,
+  "wrapper_seconds": 88.312749526,
+  "completed_at": 1793150940.8512766,
+  "files": [
+    {
+      "path": "attempt.json",
+      "bytes": 142,
+      "sha256": "97d5ef6554916aa980d6460d77e6fd701ff10271c669b2b66e0544ec57ed98dc",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "reference.pt",
+      "bytes": 1168418,
+      "sha256": "307a2bc5996d5def9f696ab35b27a9cf96a5cf7401c678ecc981b78170d1084b",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "scalars.json",
+      "bytes": 281825,
+      "sha256": "bd8b5b14370663587aed0ad84b9bcbfe6942347f9feb545979f74b3d254f4ce0",
+      "trainer_seconds": 85.6715760231018
+    },
+    {
+      "path": "trainer.py",
+      "bytes": 31590,
+      "sha256": "5f802501efb026560774d795f16bacb0b8fc7767a17822f5c191b1431fc7988b",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "work/train.log",
+      "bytes": 38135,
+      "sha256": "af0059c6a714d815e69bf2015a1c4cc21adbc48fbd4b0b7e0af10896b4346c5d",
+      "trainer_seconds": 84.1675763130188
+    },
+    {
+      "path": "work/runs/stackcube-risk-continuation-20261028-risk-ppo-control-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "988fad98c61cac6ed57dd0a36df18a6ab50d8f930f36c789accb6627e04eaf80",
+      "trainer_seconds": 15.404590368270874
+    },
+    {
+      "path": "work/runs/stackcube-risk-continuation-20261028-risk-ppo-control-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "cfed531c1afde64d3a01d85770a3f62fc5fde2112332599ea4e1141d2a93d870",
+      "trainer_seconds": 58.39658164978027
+    },
+    {
+      "path": "work/runs/stackcube-risk-continuation-20261028-risk-ppo-control-seed-1/events.out.tfevents.1793150867.modal.8.0",
+      "bytes": 152240,
+      "sha256": "29d8fa3e7d623375f6a309107d1d930e732759e371326afb5d1842bf771ff247",
+      "trainer_seconds": 83.88657641410828
+    },
+    {
+      "path": "work/runs/stackcube-risk-continuation-20261028-risk-ppo-control-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "4ccc2bf92e2863e2edff7c6343b355d5b587b80a5f02a8c7bf184dcc648d1b44",
+      "trainer_seconds": 83.96257638931274
+    }
+  ],
+  "output_bytes": 5176177
+}

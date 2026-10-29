@@ -1,0 +1,22 @@
+{
+  "state": "verified",
+  "observed_at": 1793208636.233997,
+  "counts": {
+    "target-sac": {
+      "files": 30,
+      "bytes": 21250922
+    },
+    "joint-moments": {
+      "files": 30,
+      "bytes": 21296484
+    },
+    "split-moments": {
+      "files": 26,
+      "bytes": 17539281
+    }
+  },
+  "new_training_transitions": 1881024,
+  "development_queries": 14,
+  "confirmation_queries": 0,
+  "trusted_summary_sha256": "1a038141062cfcbee7ff003a05f635076c09b4c2ff9d0a26e5e5904bf231eb83"
+}

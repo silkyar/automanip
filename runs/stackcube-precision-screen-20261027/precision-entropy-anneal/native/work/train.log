@@ -1,0 +1,2284 @@
+/opt/conda/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/conda/lib/python3.11/site-packages/sapien/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/conda/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+Running training
+####
+args.num_iterations=976 args.num_envs=1024 args.num_eval_envs=8
+args.minibatch_size=1600 args.batch_size=51200 args.update_epochs=8
+####
+Epoch: 1, global_step=0
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=2.4053964614868164
+eval_episode_len_mean=50.0
+eval_reward_mean=0.048107922077178955
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_1.pt
+SPS: 10851
+Epoch: 2, global_step=51200
+SPS: 14115
+Epoch: 3, global_step=102400
+SPS: 15682
+Epoch: 4, global_step=153600
+SPS: 16351
+Epoch: 5, global_step=204800
+SPS: 16805
+Epoch: 6, global_step=256000
+SPS: 17120
+Epoch: 7, global_step=307200
+SPS: 16907
+Epoch: 8, global_step=358400
+SPS: 17020
+Epoch: 9, global_step=409600
+SPS: 17107
+Epoch: 10, global_step=460800
+SPS: 17231
+Epoch: 11, global_step=512000
+SPS: 17326
+Epoch: 12, global_step=563200
+SPS: 17382
+Epoch: 13, global_step=614400
+SPS: 17440
+Epoch: 14, global_step=665600
+SPS: 17498
+Epoch: 15, global_step=716800
+SPS: 17545
+Epoch: 16, global_step=768000
+SPS: 17572
+Epoch: 17, global_step=819200
+SPS: 17556
+Epoch: 18, global_step=870400
+SPS: 17526
+Epoch: 19, global_step=921600
+SPS: 17527
+Epoch: 20, global_step=972800
+SPS: 17538
+Epoch: 21, global_step=1024000
+SPS: 17390
+Epoch: 22, global_step=1075200
+SPS: 17359
+Epoch: 23, global_step=1126400
+SPS: 17360
+Epoch: 24, global_step=1177600
+SPS: 17394
+Epoch: 25, global_step=1228800
+SPS: 17408
+Epoch: 26, global_step=1280000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=23.843852996826172
+eval_episode_len_mean=50.0
+eval_reward_mean=0.4768770933151245
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_26.pt
+SPS: 17010
+Epoch: 27, global_step=1331200
+SPS: 17045
+Epoch: 28, global_step=1382400
+SPS: 17060
+Epoch: 29, global_step=1433600
+SPS: 17094
+Epoch: 30, global_step=1484800
+SPS: 17128
+Epoch: 31, global_step=1536000
+SPS: 17149
+Epoch: 32, global_step=1587200
+SPS: 17164
+Epoch: 33, global_step=1638400
+SPS: 17185
+Epoch: 34, global_step=1689600
+SPS: 17212
+Epoch: 35, global_step=1740800
+SPS: 17242
+Epoch: 36, global_step=1792000
+SPS: 17271
+Epoch: 37, global_step=1843200
+SPS: 17293
+Epoch: 38, global_step=1894400
+SPS: 17312
+Epoch: 39, global_step=1945600
+SPS: 17336
+Epoch: 40, global_step=1996800
+SPS: 17358
+Epoch: 41, global_step=2048000
+SPS: 17371
+Epoch: 42, global_step=2099200
+SPS: 17382
+Epoch: 43, global_step=2150400
+SPS: 17399
+Epoch: 44, global_step=2201600
+SPS: 17412
+Epoch: 45, global_step=2252800
+SPS: 17424
+Epoch: 46, global_step=2304000
+SPS: 17428
+Epoch: 47, global_step=2355200
+SPS: 17423
+Epoch: 48, global_step=2406400
+SPS: 17435
+Epoch: 49, global_step=2457600
+SPS: 17449
+Epoch: 50, global_step=2508800
+SPS: 17460
+Epoch: 51, global_step=2560000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=26.464204788208008
+eval_episode_len_mean=50.0
+eval_reward_mean=0.5292841196060181
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_51.pt
+SPS: 17263
+Epoch: 52, global_step=2611200
+SPS: 17272
+Epoch: 53, global_step=2662400
+SPS: 17292
+Epoch: 54, global_step=2713600
+SPS: 17307
+Epoch: 55, global_step=2764800
+SPS: 17317
+Epoch: 56, global_step=2816000
+SPS: 17326
+Epoch: 57, global_step=2867200
+SPS: 17338
+Epoch: 58, global_step=2918400
+SPS: 17356
+Epoch: 59, global_step=2969600
+SPS: 17358
+Epoch: 60, global_step=3020800
+SPS: 17364
+Epoch: 61, global_step=3072000
+SPS: 17376
+Epoch: 62, global_step=3123200
+SPS: 17355
+Epoch: 63, global_step=3174400
+SPS: 17364
+Epoch: 64, global_step=3225600
+SPS: 17372
+Epoch: 65, global_step=3276800
+SPS: 17336
+Epoch: 66, global_step=3328000
+SPS: 17307
+Epoch: 67, global_step=3379200
+SPS: 17315
+Epoch: 68, global_step=3430400
+SPS: 17308
+Epoch: 69, global_step=3481600
+SPS: 17314
+Epoch: 70, global_step=3532800
+SPS: 17321
+Epoch: 71, global_step=3584000
+SPS: 17324
+Epoch: 72, global_step=3635200
+SPS: 17316
+Epoch: 73, global_step=3686400
+SPS: 17312
+Epoch: 74, global_step=3737600
+SPS: 17313
+Epoch: 75, global_step=3788800
+SPS: 17314
+Epoch: 76, global_step=3840000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=33.414695739746094
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6682939529418945
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_76.pt
+SPS: 17175
+Epoch: 77, global_step=3891200
+SPS: 17175
+Epoch: 78, global_step=3942400
+SPS: 17173
+Epoch: 79, global_step=3993600
+SPS: 17171
+Epoch: 80, global_step=4044800
+SPS: 17174
+Epoch: 81, global_step=4096000
+SPS: 17178
+Epoch: 82, global_step=4147200
+SPS: 17184
+Epoch: 83, global_step=4198400
+SPS: 17186
+Epoch: 84, global_step=4249600
+SPS: 17193
+Epoch: 85, global_step=4300800
+SPS: 17201
+Epoch: 86, global_step=4352000
+SPS: 17206
+Epoch: 87, global_step=4403200
+SPS: 17208
+Epoch: 88, global_step=4454400
+SPS: 17215
+Epoch: 89, global_step=4505600
+SPS: 17223
+Epoch: 90, global_step=4556800
+SPS: 17227
+Epoch: 91, global_step=4608000
+SPS: 17232
+Epoch: 92, global_step=4659200
+SPS: 17272
+Epoch: 93, global_step=4710400
+SPS: 17325
+Epoch: 94, global_step=4761600
+SPS: 17329
+Epoch: 95, global_step=4812800
+SPS: 17332
+Epoch: 96, global_step=4864000
+SPS: 17328
+Epoch: 97, global_step=4915200
+SPS: 17327
+Epoch: 98, global_step=4966400
+SPS: 17369
+Epoch: 99, global_step=5017600
+SPS: 17424
+Epoch: 100, global_step=5068800
+SPS: 17480
+Epoch: 101, global_step=5120000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=31.735591888427734
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6347118616104126
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_101.pt
+SPS: 17374
+Epoch: 102, global_step=5171200
+SPS: 17408
+Epoch: 103, global_step=5222400
+SPS: 17409
+Epoch: 104, global_step=5273600
+SPS: 17464
+Epoch: 105, global_step=5324800
+SPS: 17467
+Epoch: 106, global_step=5376000
+SPS: 17470
+Epoch: 107, global_step=5427200
+SPS: 17517
+Epoch: 108, global_step=5478400
+SPS: 17521
+Epoch: 109, global_step=5529600
+SPS: 17573
+Epoch: 110, global_step=5580800
+SPS: 17606
+Epoch: 111, global_step=5632000
+SPS: 17628
+Epoch: 112, global_step=5683200
+SPS: 17633
+Epoch: 113, global_step=5734400
+SPS: 17672
+Epoch: 114, global_step=5785600
+SPS: 17716
+Epoch: 115, global_step=5836800
+SPS: 17760
+Epoch: 116, global_step=5888000
+SPS: 17806
+Epoch: 117, global_step=5939200
+SPS: 17838
+Epoch: 118, global_step=5990400
+SPS: 17887
+Epoch: 119, global_step=6041600
+SPS: 17932
+Epoch: 120, global_step=6092800
+SPS: 17975
+Epoch: 121, global_step=6144000
+SPS: 18017
+Epoch: 122, global_step=6195200
+SPS: 18042
+Epoch: 123, global_step=6246400
+SPS: 18071
+Epoch: 124, global_step=6297600
+SPS: 18112
+Epoch: 125, global_step=6348800
+SPS: 18151
+Epoch: 126, global_step=6400000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=33.120819091796875
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6624163389205933
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_126.pt
+SPS: 18078
+Epoch: 127, global_step=6451200
+SPS: 18111
+Epoch: 128, global_step=6502400
+SPS: 18145
+Epoch: 129, global_step=6553600
+SPS: 18179
+Epoch: 130, global_step=6604800
+SPS: 18206
+Epoch: 131, global_step=6656000
+SPS: 18237
+Epoch: 132, global_step=6707200
+SPS: 18275
+Epoch: 133, global_step=6758400
+SPS: 18307
+Epoch: 134, global_step=6809600
+SPS: 18337
+Epoch: 135, global_step=6860800
+SPS: 18367
+Epoch: 136, global_step=6912000
+SPS: 18399
+Epoch: 137, global_step=6963200
+SPS: 18431
+Epoch: 138, global_step=7014400
+SPS: 18466
+Epoch: 139, global_step=7065600
+SPS: 18494
+Epoch: 140, global_step=7116800
+SPS: 18529
+Epoch: 141, global_step=7168000
+SPS: 18568
+Epoch: 142, global_step=7219200
+SPS: 18611
+Epoch: 143, global_step=7270400
+SPS: 18649
+Epoch: 144, global_step=7321600
+SPS: 18690
+Epoch: 145, global_step=7372800
+SPS: 18728
+Epoch: 146, global_step=7424000
+SPS: 18765
+Epoch: 147, global_step=7475200
+SPS: 18805
+Epoch: 148, global_step=7526400
+SPS: 18842
+Epoch: 149, global_step=7577600
+SPS: 18879
+Epoch: 150, global_step=7628800
+SPS: 18907
+Epoch: 151, global_step=7680000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.375
+eval_return_mean=31.366220474243164
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6273244619369507
+eval_success_at_end_mean=0.125
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_151.pt
+SPS: 18851
+Epoch: 152, global_step=7731200
+SPS: 18875
+Epoch: 153, global_step=7782400
+SPS: 18908
+Epoch: 154, global_step=7833600
+SPS: 18945
+Epoch: 155, global_step=7884800
+SPS: 18981
+Epoch: 156, global_step=7936000
+SPS: 19017
+Epoch: 157, global_step=7987200
+SPS: 19053
+Epoch: 158, global_step=8038400
+SPS: 19081
+Epoch: 159, global_step=8089600
+SPS: 19109
+Epoch: 160, global_step=8140800
+SPS: 19145
+Epoch: 161, global_step=8192000
+SPS: 19176
+Epoch: 162, global_step=8243200
+SPS: 19205
+Epoch: 163, global_step=8294400
+SPS: 19234
+Epoch: 164, global_step=8345600
+SPS: 19261
+Epoch: 165, global_step=8396800
+SPS: 19286
+Epoch: 166, global_step=8448000
+SPS: 19314
+Epoch: 167, global_step=8499200
+SPS: 19344
+Epoch: 168, global_step=8550400
+SPS: 19372
+Epoch: 169, global_step=8601600
+SPS: 19404
+Epoch: 170, global_step=8652800
+SPS: 19436
+Epoch: 171, global_step=8704000
+SPS: 19471
+Epoch: 172, global_step=8755200
+SPS: 19500
+Epoch: 173, global_step=8806400
+SPS: 19518
+Epoch: 174, global_step=8857600
+SPS: 19544
+Epoch: 175, global_step=8908800
+SPS: 19577
+Epoch: 176, global_step=8960000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.25
+eval_return_mean=34.94203186035156
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6988406181335449
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_176.pt
+SPS: 19523
+Epoch: 177, global_step=9011200
+SPS: 19553
+Epoch: 178, global_step=9062400
+SPS: 19584
+Epoch: 179, global_step=9113600
+SPS: 19600
+Epoch: 180, global_step=9164800
+SPS: 19612
+Epoch: 181, global_step=9216000
+SPS: 19621
+Epoch: 182, global_step=9267200
+SPS: 19634
+Epoch: 183, global_step=9318400
+SPS: 19640
+Epoch: 184, global_step=9369600
+SPS: 19663
+Epoch: 185, global_step=9420800
+SPS: 19693
+Epoch: 186, global_step=9472000
+SPS: 19719
+Epoch: 187, global_step=9523200
+SPS: 19744
+Epoch: 188, global_step=9574400
+SPS: 19766
+Epoch: 189, global_step=9625600
+SPS: 19789
+Epoch: 190, global_step=9676800
+SPS: 19810
+Epoch: 191, global_step=9728000
+SPS: 19834
+Epoch: 192, global_step=9779200
+SPS: 19817
+Epoch: 193, global_step=9830400
+SPS: 19832
+Epoch: 194, global_step=9881600
+SPS: 19813
+Epoch: 195, global_step=9932800
+SPS: 19830
+Epoch: 196, global_step=9984000
+SPS: 19820
+Epoch: 197, global_step=10035200
+SPS: 19811
+Epoch: 198, global_step=10086400
+SPS: 19804
+Epoch: 199, global_step=10137600
+SPS: 19816
+Epoch: 200, global_step=10188800
+SPS: 19807
+Epoch: 201, global_step=10240000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.75
+eval_return_mean=38.31184768676758
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7662369608879089
+eval_success_at_end_mean=0.5
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_201.pt
+SPS: 19713
+Epoch: 202, global_step=10291200
+SPS: 19711
+Epoch: 203, global_step=10342400
+SPS: 19722
+Epoch: 204, global_step=10393600
+SPS: 19716
+Epoch: 205, global_step=10444800
+SPS: 19733
+Epoch: 206, global_step=10496000
+SPS: 19753
+Epoch: 207, global_step=10547200
+SPS: 19776
+Epoch: 208, global_step=10598400
+SPS: 19785
+Epoch: 209, global_step=10649600
+SPS: 19807
+Epoch: 210, global_step=10700800
+SPS: 19825
+Epoch: 211, global_step=10752000
+SPS: 19847
+Epoch: 212, global_step=10803200
+SPS: 19870
+Epoch: 213, global_step=10854400
+SPS: 19892
+Epoch: 214, global_step=10905600
+SPS: 19911
+Epoch: 215, global_step=10956800
+SPS: 19925
+Epoch: 216, global_step=11008000
+SPS: 19948
+Epoch: 217, global_step=11059200
+SPS: 19964
+Epoch: 218, global_step=11110400
+SPS: 19986
+Epoch: 219, global_step=11161600
+SPS: 20009
+Epoch: 220, global_step=11212800
+SPS: 20032
+Epoch: 221, global_step=11264000
+SPS: 20053
+Epoch: 222, global_step=11315200
+SPS: 20065
+Epoch: 223, global_step=11366400
+SPS: 20085
+Epoch: 224, global_step=11417600
+SPS: 20096
+Epoch: 225, global_step=11468800
+SPS: 20119
+Epoch: 226, global_step=11520000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.875
+eval_return_mean=40.912864685058594
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8182573318481445
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_226.pt
+SPS: 20081
+Epoch: 227, global_step=11571200
+SPS: 20104
+Epoch: 228, global_step=11622400
+SPS: 20126
+Epoch: 229, global_step=11673600
+SPS: 20147
+Epoch: 230, global_step=11724800
+SPS: 20168
+Epoch: 231, global_step=11776000
+SPS: 20190
+Epoch: 232, global_step=11827200
+SPS: 20185
+Epoch: 233, global_step=11878400
+SPS: 20176
+Epoch: 234, global_step=11929600
+SPS: 20198
+Epoch: 235, global_step=11980800
+SPS: 20189
+Epoch: 236, global_step=12032000
+SPS: 20211
+Epoch: 237, global_step=12083200
+SPS: 20226
+Epoch: 238, global_step=12134400
+SPS: 20250
+Epoch: 239, global_step=12185600
+SPS: 20271
+Epoch: 240, global_step=12236800
+SPS: 20283
+Epoch: 241, global_step=12288000
+SPS: 20297
+Epoch: 242, global_step=12339200
+SPS: 20319
+Epoch: 243, global_step=12390400
+SPS: 20341
+Epoch: 244, global_step=12441600
+SPS: 20339
+Epoch: 245, global_step=12492800
+SPS: 20358
+Epoch: 246, global_step=12544000
+SPS: 20377
+Epoch: 247, global_step=12595200
+SPS: 20390
+Epoch: 248, global_step=12646400
+SPS: 20411
+Epoch: 249, global_step=12697600
+SPS: 20434
+Epoch: 250, global_step=12748800
+SPS: 20447
+Epoch: 251, global_step=12800000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.0842170715332
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7816843390464783
+eval_success_at_end_mean=0.75
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_251.pt
+SPS: 20410
+Epoch: 252, global_step=12851200
+SPS: 20426
+Epoch: 253, global_step=12902400
+SPS: 20446
+Epoch: 254, global_step=12953600
+SPS: 20466
+Epoch: 255, global_step=13004800
+SPS: 20467
+Epoch: 256, global_step=13056000
+SPS: 20485
+Epoch: 257, global_step=13107200
+SPS: 20494
+Epoch: 258, global_step=13158400
+SPS: 20510
+Epoch: 259, global_step=13209600
+SPS: 20531
+Epoch: 260, global_step=13260800
+SPS: 20552
+Epoch: 261, global_step=13312000
+SPS: 20567
+Epoch: 262, global_step=13363200
+SPS: 20584
+Epoch: 263, global_step=13414400
+SPS: 20602
+Epoch: 264, global_step=13465600
+SPS: 20618
+Epoch: 265, global_step=13516800
+SPS: 20635
+Epoch: 266, global_step=13568000
+SPS: 20654
+Epoch: 267, global_step=13619200
+SPS: 20673
+Epoch: 268, global_step=13670400
+SPS: 20690
+Epoch: 269, global_step=13721600
+SPS: 20711
+Epoch: 270, global_step=13772800
+SPS: 20720
+Epoch: 271, global_step=13824000
+SPS: 20731
+Epoch: 272, global_step=13875200
+SPS: 20748
+Epoch: 273, global_step=13926400
+SPS: 20737
+Epoch: 274, global_step=13977600
+SPS: 20743
+Epoch: 275, global_step=14028800
+SPS: 20752
+Epoch: 276, global_step=14080000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.582191467285156
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7916438579559326
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_276.pt
+SPS: 20707
+Epoch: 277, global_step=14131200
+SPS: 20722
+Epoch: 278, global_step=14182400
+SPS: 20720
+Epoch: 279, global_step=14233600
+SPS: 20723
+Epoch: 280, global_step=14284800
+SPS: 20726
+Epoch: 281, global_step=14336000
+SPS: 20741
+Epoch: 282, global_step=14387200
+SPS: 20760
+Epoch: 283, global_step=14438400
+SPS: 20769
+Epoch: 284, global_step=14489600
+SPS: 20785
+Epoch: 285, global_step=14540800
+SPS: 20802
+Epoch: 286, global_step=14592000
+SPS: 20811
+Epoch: 287, global_step=14643200
+SPS: 20825
+Epoch: 288, global_step=14694400
+SPS: 20839
+Epoch: 289, global_step=14745600
+SPS: 20849
+Epoch: 290, global_step=14796800
+SPS: 20864
+Epoch: 291, global_step=14848000
+SPS: 20881
+Epoch: 292, global_step=14899200
+SPS: 20894
+Epoch: 293, global_step=14950400
+SPS: 20912
+Epoch: 294, global_step=15001600
+SPS: 20926
+Epoch: 295, global_step=15052800
+SPS: 20938
+Epoch: 296, global_step=15104000
+SPS: 20952
+Epoch: 297, global_step=15155200
+SPS: 20959
+Epoch: 298, global_step=15206400
+SPS: 20973
+Epoch: 299, global_step=15257600
+SPS: 20990
+Epoch: 300, global_step=15308800
+SPS: 21005
+Epoch: 301, global_step=15360000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.95848083496094
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8191696405410767
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_301.pt
+SPS: 20964
+Epoch: 302, global_step=15411200
+SPS: 20975
+Epoch: 303, global_step=15462400
+SPS: 20992
+Epoch: 304, global_step=15513600
+SPS: 21008
+Epoch: 305, global_step=15564800
+SPS: 21025
+Epoch: 306, global_step=15616000
+SPS: 21029
+Epoch: 307, global_step=15667200
+SPS: 21046
+Epoch: 308, global_step=15718400
+SPS: 21061
+Epoch: 309, global_step=15769600
+SPS: 21061
+Epoch: 310, global_step=15820800
+SPS: 21077
+Epoch: 311, global_step=15872000
+SPS: 21086
+Epoch: 312, global_step=15923200
+SPS: 21102
+Epoch: 313, global_step=15974400
+SPS: 21117
+Epoch: 314, global_step=16025600
+SPS: 21130
+Epoch: 315, global_step=16076800
+SPS: 21144
+Epoch: 316, global_step=16128000
+SPS: 21152
+Epoch: 317, global_step=16179200
+SPS: 21165
+Epoch: 318, global_step=16230400
+SPS: 21179
+Epoch: 319, global_step=16281600
+SPS: 21179
+Epoch: 320, global_step=16332800
+SPS: 21176
+Epoch: 321, global_step=16384000
+SPS: 21190
+Epoch: 322, global_step=16435200
+SPS: 21207
+Epoch: 323, global_step=16486400
+SPS: 21222
+Epoch: 324, global_step=16537600
+SPS: 21235
+Epoch: 325, global_step=16588800
+SPS: 21247
+Epoch: 326, global_step=16640000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=41.59405517578125
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8318811655044556
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_326.pt
+SPS: 21210
+Epoch: 327, global_step=16691200
+SPS: 21200
+Epoch: 328, global_step=16742400
+SPS: 21216
+Epoch: 329, global_step=16793600
+SPS: 21230
+Epoch: 330, global_step=16844800
+SPS: 21245
+Epoch: 331, global_step=16896000
+SPS: 21253
+Epoch: 332, global_step=16947200
+SPS: 21268
+Epoch: 333, global_step=16998400
+SPS: 21282
+Epoch: 334, global_step=17049600
+SPS: 21297
+Epoch: 335, global_step=17100800
+SPS: 21306
+Epoch: 336, global_step=17152000
+SPS: 21320
+Epoch: 337, global_step=17203200
+SPS: 21335
+Epoch: 338, global_step=17254400
+SPS: 21348
+Epoch: 339, global_step=17305600
+SPS: 21355
+Epoch: 340, global_step=17356800
+SPS: 21363
+Epoch: 341, global_step=17408000
+SPS: 21374
+Epoch: 342, global_step=17459200
+SPS: 21389
+Epoch: 343, global_step=17510400
+SPS: 21386
+Epoch: 344, global_step=17561600
+SPS: 21399
+Epoch: 345, global_step=17612800
+SPS: 21390
+Epoch: 346, global_step=17664000
+SPS: 21405
+Epoch: 347, global_step=17715200
+SPS: 21405
+Epoch: 348, global_step=17766400
+SPS: 21417
+Epoch: 349, global_step=17817600
+SPS: 21428
+Epoch: 350, global_step=17868800
+SPS: 21441
+Epoch: 351, global_step=17920000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.00635528564453
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7801270484924316
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_351.pt
+SPS: 21402
+Epoch: 352, global_step=17971200
+SPS: 21414
+Epoch: 353, global_step=18022400
+SPS: 21421
+Epoch: 354, global_step=18073600
+SPS: 21433
+Epoch: 355, global_step=18124800
+SPS: 21423
+Epoch: 356, global_step=18176000
+SPS: 21432
+Epoch: 357, global_step=18227200
+SPS: 21422
+Epoch: 358, global_step=18278400
+SPS: 21433
+Epoch: 359, global_step=18329600
+SPS: 21440
+Epoch: 360, global_step=18380800
+SPS: 21452
+Epoch: 361, global_step=18432000
+SPS: 21462
+Epoch: 362, global_step=18483200
+SPS: 21473
+Epoch: 363, global_step=18534400
+SPS: 21480
+Epoch: 364, global_step=18585600
+SPS: 21470
+Epoch: 365, global_step=18636800
+SPS: 21459
+Epoch: 366, global_step=18688000
+SPS: 21461
+Epoch: 367, global_step=18739200
+SPS: 21471
+Epoch: 368, global_step=18790400
+SPS: 21483
+Epoch: 369, global_step=18841600
+SPS: 21493
+Epoch: 370, global_step=18892800
+SPS: 21481
+Epoch: 371, global_step=18944000
+SPS: 21487
+Epoch: 372, global_step=18995200
+SPS: 21498
+Epoch: 373, global_step=19046400
+SPS: 21504
+Epoch: 374, global_step=19097600
+SPS: 21500
+Epoch: 375, global_step=19148800
+SPS: 21508
+Epoch: 376, global_step=19200000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.875
+eval_return_mean=34.923919677734375
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6984783411026001
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_376.pt
+SPS: 21473
+Epoch: 377, global_step=19251200
+SPS: 21484
+Epoch: 378, global_step=19302400
+SPS: 21473
+Epoch: 379, global_step=19353600
+SPS: 21485
+Epoch: 380, global_step=19404800
+SPS: 21495
+Epoch: 381, global_step=19456000
+SPS: 21502
+Epoch: 382, global_step=19507200
+SPS: 21511
+Epoch: 383, global_step=19558400
+SPS: 21500
+Epoch: 384, global_step=19609600
+SPS: 21511
+Epoch: 385, global_step=19660800
+SPS: 21518
+Epoch: 386, global_step=19712000
+SPS: 21529
+Epoch: 387, global_step=19763200
+SPS: 21541
+Epoch: 388, global_step=19814400
+SPS: 21550
+Epoch: 389, global_step=19865600
+SPS: 21561
+Epoch: 390, global_step=19916800
+SPS: 21572
+Epoch: 391, global_step=19968000
+SPS: 21581
+Epoch: 392, global_step=20019200
+SPS: 21589
+Epoch: 393, global_step=20070400
+SPS: 21598
+Epoch: 394, global_step=20121600
+SPS: 21607
+Epoch: 395, global_step=20172800
+SPS: 21615
+Epoch: 396, global_step=20224000
+SPS: 21623
+Epoch: 397, global_step=20275200
+SPS: 21634
+Epoch: 398, global_step=20326400
+SPS: 21643
+Epoch: 399, global_step=20377600
+SPS: 21649
+Epoch: 400, global_step=20428800
+SPS: 21640
+Epoch: 401, global_step=20480000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.412166595458984
+eval_episode_len_mean=50.0
+eval_reward_mean=0.788243293762207
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_401.pt
+SPS: 21604
+Epoch: 402, global_step=20531200
+SPS: 21615
+Epoch: 403, global_step=20582400
+SPS: 21627
+Epoch: 404, global_step=20633600
+SPS: 21638
+Epoch: 405, global_step=20684800
+SPS: 21650
+Epoch: 406, global_step=20736000
+SPS: 21661
+Epoch: 407, global_step=20787200
+SPS: 21651
+Epoch: 408, global_step=20838400
+SPS: 21663
+Epoch: 409, global_step=20889600
+SPS: 21669
+Epoch: 410, global_step=20940800
+SPS: 21680
+Epoch: 411, global_step=20992000
+SPS: 21691
+Epoch: 412, global_step=21043200
+SPS: 21702
+Epoch: 413, global_step=21094400
+SPS: 21713
+Epoch: 414, global_step=21145600
+SPS: 21724
+Epoch: 415, global_step=21196800
+SPS: 21732
+Epoch: 416, global_step=21248000
+SPS: 21739
+Epoch: 417, global_step=21299200
+SPS: 21750
+Epoch: 418, global_step=21350400
+SPS: 21749
+Epoch: 419, global_step=21401600
+SPS: 21759
+Epoch: 420, global_step=21452800
+SPS: 21766
+Epoch: 421, global_step=21504000
+SPS: 21770
+Epoch: 422, global_step=21555200
+SPS: 21780
+Epoch: 423, global_step=21606400
+SPS: 21789
+Epoch: 424, global_step=21657600
+SPS: 21797
+Epoch: 425, global_step=21708800
+SPS: 21800
+Epoch: 426, global_step=21760000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=38.18592834472656
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7637185454368591
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_426.pt
+SPS: 21759
+Epoch: 427, global_step=21811200
+SPS: 21750
+Epoch: 428, global_step=21862400
+SPS: 21759
+Epoch: 429, global_step=21913600
+SPS: 21766
+Epoch: 430, global_step=21964800
+SPS: 21775
+Epoch: 431, global_step=22016000
+SPS: 21782
+Epoch: 432, global_step=22067200
+SPS: 21791
+Epoch: 433, global_step=22118400
+SPS: 21801
+Epoch: 434, global_step=22169600
+SPS: 21809
+Epoch: 435, global_step=22220800
+SPS: 21819
+Epoch: 436, global_step=22272000
+SPS: 21829
+Epoch: 437, global_step=22323200
+SPS: 21835
+Epoch: 438, global_step=22374400
+SPS: 21842
+Epoch: 439, global_step=22425600
+SPS: 21846
+Epoch: 440, global_step=22476800
+SPS: 21854
+Epoch: 441, global_step=22528000
+SPS: 21860
+Epoch: 442, global_step=22579200
+SPS: 21870
+Epoch: 443, global_step=22630400
+SPS: 21879
+Epoch: 444, global_step=22681600
+SPS: 21889
+Epoch: 445, global_step=22732800
+SPS: 21896
+Epoch: 446, global_step=22784000
+SPS: 21904
+Epoch: 447, global_step=22835200
+SPS: 21914
+Epoch: 448, global_step=22886400
+SPS: 21919
+Epoch: 449, global_step=22937600
+SPS: 21920
+Epoch: 450, global_step=22988800
+SPS: 21931
+Epoch: 451, global_step=23040000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.872352600097656
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7974470853805542
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_451.pt
+SPS: 21895
+Epoch: 452, global_step=23091200
+SPS: 21904
+Epoch: 453, global_step=23142400
+SPS: 21913
+Epoch: 454, global_step=23193600
+SPS: 21914
+Epoch: 455, global_step=23244800
+SPS: 21923
+Epoch: 456, global_step=23296000
+SPS: 21931
+Epoch: 457, global_step=23347200
+SPS: 21940
+Epoch: 458, global_step=23398400
+SPS: 21949
+Epoch: 459, global_step=23449600
+SPS: 21956
+Epoch: 460, global_step=23500800
+SPS: 21964
+Epoch: 461, global_step=23552000
+SPS: 21974
+Epoch: 462, global_step=23603200
+SPS: 21980
+Epoch: 463, global_step=23654400
+SPS: 21980
+Epoch: 464, global_step=23705600
+SPS: 21987
+Epoch: 465, global_step=23756800
+SPS: 21995
+Epoch: 466, global_step=23808000
+SPS: 22004
+Epoch: 467, global_step=23859200
+SPS: 22013
+Epoch: 468, global_step=23910400
+SPS: 22021
+Epoch: 469, global_step=23961600
+SPS: 22030
+Epoch: 470, global_step=24012800
+SPS: 22040
+Epoch: 471, global_step=24064000
+SPS: 22048
+Epoch: 472, global_step=24115200
+SPS: 22054
+Epoch: 473, global_step=24166400
+SPS: 22057
+Epoch: 474, global_step=24217600
+SPS: 22062
+Epoch: 475, global_step=24268800
+SPS: 22067
+Epoch: 476, global_step=24320000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=42.1144905090332
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8422898054122925
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_476.pt
+SPS: 22020
+Epoch: 477, global_step=24371200
+SPS: 22028
+Epoch: 478, global_step=24422400
+SPS: 22037
+Epoch: 479, global_step=24473600
+SPS: 22046
+Epoch: 480, global_step=24524800
+SPS: 22057
+Epoch: 481, global_step=24576000
+SPS: 22066
+Epoch: 482, global_step=24627200
+SPS: 22073
+Epoch: 483, global_step=24678400
+SPS: 22079
+Epoch: 484, global_step=24729600
+SPS: 22087
+Epoch: 485, global_step=24780800
+SPS: 22097
+Epoch: 486, global_step=24832000
+SPS: 22103
+Epoch: 487, global_step=24883200
+SPS: 22111
+Epoch: 488, global_step=24934400
+SPS: 22121
+Epoch: 489, global_step=24985600
+SPS: 22129
+Epoch: 490, global_step=25036800
+SPS: 22138
+Epoch: 491, global_step=25088000
+SPS: 22147
+Epoch: 492, global_step=25139200
+SPS: 22158
+Epoch: 493, global_step=25190400
+SPS: 22166
+Epoch: 494, global_step=25241600
+SPS: 22176
+Epoch: 495, global_step=25292800
+SPS: 22181
+Epoch: 496, global_step=25344000
+SPS: 22186
+Epoch: 497, global_step=25395200
+SPS: 22193
+Epoch: 498, global_step=25446400
+SPS: 22203
+Epoch: 499, global_step=25497600
+SPS: 22206
+Epoch: 500, global_step=25548800
+SPS: 22212
+Epoch: 501, global_step=25600000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=37.67955780029297
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7535911798477173
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_501.pt
+SPS: 22182
+Epoch: 502, global_step=25651200
+SPS: 22191
+Epoch: 503, global_step=25702400
+SPS: 22199
+Epoch: 504, global_step=25753600
+SPS: 22208
+Epoch: 505, global_step=25804800
+SPS: 22215
+Epoch: 506, global_step=25856000
+SPS: 22222
+Epoch: 507, global_step=25907200
+SPS: 22232
+Epoch: 508, global_step=25958400
+SPS: 22236
+Epoch: 509, global_step=26009600
+SPS: 22228
+Epoch: 510, global_step=26060800
+SPS: 22237
+Epoch: 511, global_step=26112000
+SPS: 22234
+Epoch: 512, global_step=26163200
+SPS: 22240
+Epoch: 513, global_step=26214400
+SPS: 22250
+Epoch: 514, global_step=26265600
+SPS: 22258
+Epoch: 515, global_step=26316800
+SPS: 22266
+Epoch: 516, global_step=26368000
+SPS: 22271
+Epoch: 517, global_step=26419200
+SPS: 22280
+Epoch: 518, global_step=26470400
+SPS: 22287
+Epoch: 519, global_step=26521600
+SPS: 22295
+Epoch: 520, global_step=26572800
+SPS: 22303
+Epoch: 521, global_step=26624000
+SPS: 22298
+Epoch: 522, global_step=26675200
+SPS: 22288
+Epoch: 523, global_step=26726400
+SPS: 22282
+Epoch: 524, global_step=26777600
+SPS: 22291
+Epoch: 525, global_step=26828800
+SPS: 22298
+Epoch: 526, global_step=26880000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.824676513671875
+eval_episode_len_mean=50.0
+eval_reward_mean=0.816493570804596
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_526.pt
+SPS: 22270
+Epoch: 527, global_step=26931200
+SPS: 22279
+Epoch: 528, global_step=26982400
+SPS: 22287
+Epoch: 529, global_step=27033600
+SPS: 22285
+Epoch: 530, global_step=27084800
+SPS: 22289
+Epoch: 531, global_step=27136000
+SPS: 22292
+Epoch: 532, global_step=27187200
+SPS: 22296
+Epoch: 533, global_step=27238400
+SPS: 22304
+Epoch: 534, global_step=27289600
+SPS: 22313
+Epoch: 535, global_step=27340800
+SPS: 22320
+Epoch: 536, global_step=27392000
+SPS: 22325
+Epoch: 537, global_step=27443200
+SPS: 22331
+Epoch: 538, global_step=27494400
+SPS: 22340
+Epoch: 539, global_step=27545600
+SPS: 22349
+Epoch: 540, global_step=27596800
+SPS: 22356
+Epoch: 541, global_step=27648000
+SPS: 22364
+Epoch: 542, global_step=27699200
+SPS: 22357
+Epoch: 543, global_step=27750400
+SPS: 22351
+Epoch: 544, global_step=27801600
+SPS: 22360
+Epoch: 545, global_step=27852800
+SPS: 22366
+Epoch: 546, global_step=27904000
+SPS: 22374
+Epoch: 547, global_step=27955200
+SPS: 22381
+Epoch: 548, global_step=28006400
+SPS: 22386
+Epoch: 549, global_step=28057600
+SPS: 22383
+Epoch: 550, global_step=28108800
+SPS: 22392
+Epoch: 551, global_step=28160000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=41.25654220581055
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8251308798789978
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_551.pt
+SPS: 22365
+Epoch: 552, global_step=28211200
+SPS: 22372
+Epoch: 553, global_step=28262400
+SPS: 22373
+Epoch: 554, global_step=28313600
+SPS: 22378
+Epoch: 555, global_step=28364800
+SPS: 22387
+Epoch: 556, global_step=28416000
+SPS: 22395
+Epoch: 557, global_step=28467200
+SPS: 22402
+Epoch: 558, global_step=28518400
+SPS: 22406
+Epoch: 559, global_step=28569600
+SPS: 22411
+Epoch: 560, global_step=28620800
+SPS: 22418
+Epoch: 561, global_step=28672000
+SPS: 22424
+Epoch: 562, global_step=28723200
+SPS: 22429
+Epoch: 563, global_step=28774400
+SPS: 22436
+Epoch: 564, global_step=28825600
+SPS: 22442
+Epoch: 565, global_step=28876800
+SPS: 22433
+Epoch: 566, global_step=28928000
+SPS: 22438
+Epoch: 567, global_step=28979200
+SPS: 22442
+Epoch: 568, global_step=29030400
+SPS: 22446
+Epoch: 569, global_step=29081600
+SPS: 22437
+Epoch: 570, global_step=29132800
+SPS: 22440
+Epoch: 571, global_step=29184000
+SPS: 22434
+Epoch: 572, global_step=29235200
+SPS: 22437
+Epoch: 573, global_step=29286400
+SPS: 22444
+Epoch: 574, global_step=29337600
+SPS: 22449
+Epoch: 575, global_step=29388800
+SPS: 22456
+Epoch: 576, global_step=29440000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=38.726890563964844
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7745378017425537
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_576.pt
+SPS: 22434
+Epoch: 577, global_step=29491200
+SPS: 22440
+Epoch: 578, global_step=29542400
+SPS: 22448
+Epoch: 579, global_step=29593600
+SPS: 22454
+Epoch: 580, global_step=29644800
+SPS: 22447
+Epoch: 581, global_step=29696000
+SPS: 22454
+Epoch: 582, global_step=29747200
+SPS: 22456
+Epoch: 583, global_step=29798400
+SPS: 22463
+Epoch: 584, global_step=29849600
+SPS: 22456
+Epoch: 585, global_step=29900800
+SPS: 22448
+Epoch: 586, global_step=29952000
+SPS: 22451
+Epoch: 587, global_step=30003200
+SPS: 22457
+Epoch: 588, global_step=30054400
+SPS: 22462
+Epoch: 589, global_step=30105600
+SPS: 22467
+Epoch: 590, global_step=30156800
+SPS: 22459
+Epoch: 591, global_step=30208000
+SPS: 22467
+Epoch: 592, global_step=30259200
+SPS: 22459
+Epoch: 593, global_step=30310400
+SPS: 22466
+Epoch: 594, global_step=30361600
+SPS: 22474
+Epoch: 595, global_step=30412800
+SPS: 22481
+Epoch: 596, global_step=30464000
+SPS: 22488
+Epoch: 597, global_step=30515200
+SPS: 22481
+Epoch: 598, global_step=30566400
+SPS: 22484
+Epoch: 599, global_step=30617600
+SPS: 22491
+Epoch: 600, global_step=30668800
+SPS: 22498
+Epoch: 601, global_step=30720000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.50788116455078
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7901575565338135
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_601.pt
+SPS: 22471
+Epoch: 602, global_step=30771200
+SPS: 22477
+Epoch: 603, global_step=30822400
+SPS: 22484
+Epoch: 604, global_step=30873600
+SPS: 22483
+Epoch: 605, global_step=30924800
+SPS: 22490
+Epoch: 606, global_step=30976000
+SPS: 22497
+Epoch: 607, global_step=31027200
+SPS: 22498
+Epoch: 608, global_step=31078400
+SPS: 22502
+Epoch: 609, global_step=31129600
+SPS: 22509
+Epoch: 610, global_step=31180800
+SPS: 22516
+Epoch: 611, global_step=31232000
+SPS: 22522
+Epoch: 612, global_step=31283200
+SPS: 22530
+Epoch: 613, global_step=31334400
+SPS: 22537
+Epoch: 614, global_step=31385600
+SPS: 22543
+Epoch: 615, global_step=31436800
+SPS: 22550
+Epoch: 616, global_step=31488000
+SPS: 22545
+Epoch: 617, global_step=31539200
+SPS: 22551
+Epoch: 618, global_step=31590400
+SPS: 22557
+Epoch: 619, global_step=31641600
+SPS: 22562
+Epoch: 620, global_step=31692800
+SPS: 22567
+Epoch: 621, global_step=31744000
+SPS: 22567
+Epoch: 622, global_step=31795200
+SPS: 22561
+Epoch: 623, global_step=31846400
+SPS: 22567
+Epoch: 624, global_step=31897600
+SPS: 22573
+Epoch: 625, global_step=31948800
+SPS: 22579
+Epoch: 626, global_step=32000000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=38.34123611450195
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7668247222900391
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_626.pt
+SPS: 22557
+Epoch: 627, global_step=32051200
+SPS: 22564
+Epoch: 628, global_step=32102400
+SPS: 22569
+Epoch: 629, global_step=32153600
+SPS: 22576
+Epoch: 630, global_step=32204800
+SPS: 22582
+Epoch: 631, global_step=32256000
+SPS: 22588
+Epoch: 632, global_step=32307200
+SPS: 22593
+Epoch: 633, global_step=32358400
+SPS: 22598
+Epoch: 634, global_step=32409600
+SPS: 22604
+Epoch: 635, global_step=32460800
+SPS: 22608
+Epoch: 636, global_step=32512000
+SPS: 22614
+Epoch: 637, global_step=32563200
+SPS: 22607
+Epoch: 638, global_step=32614400
+SPS: 22607
+Epoch: 639, global_step=32665600
+SPS: 22605
+Epoch: 640, global_step=32716800
+SPS: 22612
+Epoch: 641, global_step=32768000
+SPS: 22605
+Epoch: 642, global_step=32819200
+SPS: 22598
+Epoch: 643, global_step=32870400
+SPS: 22605
+Epoch: 644, global_step=32921600
+SPS: 22612
+Epoch: 645, global_step=32972800
+SPS: 22615
+Epoch: 646, global_step=33024000
+SPS: 22617
+Epoch: 647, global_step=33075200
+SPS: 22625
+Epoch: 648, global_step=33126400
+SPS: 22618
+Epoch: 649, global_step=33177600
+SPS: 22612
+Epoch: 650, global_step=33228800
+SPS: 22605
+Epoch: 651, global_step=33280000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.875
+eval_return_mean=40.294044494628906
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8058809041976929
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_651.pt
+SPS: 22584
+Epoch: 652, global_step=33331200
+SPS: 22586
+Epoch: 653, global_step=33382400
+SPS: 22593
+Epoch: 654, global_step=33433600
+SPS: 22599
+Epoch: 655, global_step=33484800
+SPS: 22606
+Epoch: 656, global_step=33536000
+SPS: 22611
+Epoch: 657, global_step=33587200
+SPS: 22612
+Epoch: 658, global_step=33638400
+SPS: 22618
+Epoch: 659, global_step=33689600
+SPS: 22611
+Epoch: 660, global_step=33740800
+SPS: 22603
+Epoch: 661, global_step=33792000
+SPS: 22609
+Epoch: 662, global_step=33843200
+SPS: 22602
+Epoch: 663, global_step=33894400
+SPS: 22603
+Epoch: 664, global_step=33945600
+SPS: 22608
+Epoch: 665, global_step=33996800
+SPS: 22613
+Epoch: 666, global_step=34048000
+SPS: 22606
+Epoch: 667, global_step=34099200
+SPS: 22600
+Epoch: 668, global_step=34150400
+SPS: 22606
+Epoch: 669, global_step=34201600
+SPS: 22600
+Epoch: 670, global_step=34252800
+SPS: 22607
+Epoch: 671, global_step=34304000
+SPS: 22601
+Epoch: 672, global_step=34355200
+SPS: 22595
+Epoch: 673, global_step=34406400
+SPS: 22601
+Epoch: 674, global_step=34457600
+SPS: 22607
+Epoch: 675, global_step=34508800
+SPS: 22601
+Epoch: 676, global_step=34560000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.67673110961914
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7935346364974976
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_676.pt
+SPS: 22579
+Epoch: 677, global_step=34611200
+SPS: 22584
+Epoch: 678, global_step=34662400
+SPS: 22590
+Epoch: 679, global_step=34713600
+SPS: 22595
+Epoch: 680, global_step=34764800
+SPS: 22588
+Epoch: 681, global_step=34816000
+SPS: 22594
+Epoch: 682, global_step=34867200
+SPS: 22595
+Epoch: 683, global_step=34918400
+SPS: 22602
+Epoch: 684, global_step=34969600
+SPS: 22606
+Epoch: 685, global_step=35020800
+SPS: 22610
+Epoch: 686, global_step=35072000
+SPS: 22616
+Epoch: 687, global_step=35123200
+SPS: 22610
+Epoch: 688, global_step=35174400
+SPS: 22617
+Epoch: 689, global_step=35225600
+SPS: 22611
+Epoch: 690, global_step=35276800
+SPS: 22618
+Epoch: 691, global_step=35328000
+SPS: 22624
+Epoch: 692, global_step=35379200
+SPS: 22630
+Epoch: 693, global_step=35430400
+SPS: 22637
+Epoch: 694, global_step=35481600
+SPS: 22643
+Epoch: 695, global_step=35532800
+SPS: 22631
+Epoch: 696, global_step=35584000
+SPS: 22635
+Epoch: 697, global_step=35635200
+SPS: 22640
+Epoch: 698, global_step=35686400
+SPS: 22642
+Epoch: 699, global_step=35737600
+SPS: 22645
+Epoch: 700, global_step=35788800
+SPS: 22638
+Epoch: 701, global_step=35840000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=38.62956237792969
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7725913524627686
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_701.pt
+SPS: 22606
+Epoch: 702, global_step=35891200
+SPS: 22611
+Epoch: 703, global_step=35942400
+SPS: 22617
+Epoch: 704, global_step=35993600
+SPS: 22623
+Epoch: 705, global_step=36044800
+SPS: 22629
+Epoch: 706, global_step=36096000
+SPS: 22632
+Epoch: 707, global_step=36147200
+SPS: 22639
+Epoch: 708, global_step=36198400
+SPS: 22633
+Epoch: 709, global_step=36249600
+SPS: 22639
+Epoch: 710, global_step=36300800
+SPS: 22634
+Epoch: 711, global_step=36352000
+SPS: 22635
+Epoch: 712, global_step=36403200
+SPS: 22642
+Epoch: 713, global_step=36454400
+SPS: 22648
+Epoch: 714, global_step=36505600
+SPS: 22652
+Epoch: 715, global_step=36556800
+SPS: 22657
+Epoch: 716, global_step=36608000
+SPS: 22663
+Epoch: 717, global_step=36659200
+SPS: 22668
+Epoch: 718, global_step=36710400
+SPS: 22663
+Epoch: 719, global_step=36761600
+SPS: 22656
+Epoch: 720, global_step=36812800
+SPS: 22661
+Epoch: 721, global_step=36864000
+SPS: 22667
+Epoch: 722, global_step=36915200
+SPS: 22670
+Epoch: 723, global_step=36966400
+SPS: 22663
+Epoch: 724, global_step=37017600
+SPS: 22668
+Epoch: 725, global_step=37068800
+SPS: 22669
+Epoch: 726, global_step=37120000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=42.25653839111328
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8451308012008667
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_726.pt
+SPS: 22648
+Epoch: 727, global_step=37171200
+SPS: 22643
+Epoch: 728, global_step=37222400
+SPS: 22647
+Epoch: 729, global_step=37273600
+SPS: 22654
+Epoch: 730, global_step=37324800
+SPS: 22648
+Epoch: 731, global_step=37376000
+SPS: 22654
+Epoch: 732, global_step=37427200
+SPS: 22661
+Epoch: 733, global_step=37478400
+SPS: 22655
+Epoch: 734, global_step=37529600
+SPS: 22661
+Epoch: 735, global_step=37580800
+SPS: 22655
+Epoch: 736, global_step=37632000
+SPS: 22662
+Epoch: 737, global_step=37683200
+SPS: 22667
+Epoch: 738, global_step=37734400
+SPS: 22670
+Epoch: 739, global_step=37785600
+SPS: 22665
+Epoch: 740, global_step=37836800
+SPS: 22668
+Epoch: 741, global_step=37888000
+SPS: 22674
+Epoch: 742, global_step=37939200
+SPS: 22680
+Epoch: 743, global_step=37990400
+SPS: 22686
+Epoch: 744, global_step=38041600
+SPS: 22691
+Epoch: 745, global_step=38092800
+SPS: 22696
+Epoch: 746, global_step=38144000
+SPS: 22702
+Epoch: 747, global_step=38195200
+SPS: 22708
+Epoch: 748, global_step=38246400
+SPS: 22714
+Epoch: 749, global_step=38297600
+SPS: 22720
+Epoch: 750, global_step=38348800
+SPS: 22726
+Epoch: 751, global_step=38400000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=37.259788513183594
+eval_episode_len_mean=50.0
+eval_reward_mean=0.745195746421814
+eval_success_at_end_mean=0.75
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_751.pt
+SPS: 22704
+Epoch: 752, global_step=38451200
+SPS: 22702
+Epoch: 753, global_step=38502400
+SPS: 22707
+Epoch: 754, global_step=38553600
+SPS: 22711
+Epoch: 755, global_step=38604800
+SPS: 22716
+Epoch: 756, global_step=38656000
+SPS: 22721
+Epoch: 757, global_step=38707200
+SPS: 22715
+Epoch: 758, global_step=38758400
+SPS: 22721
+Epoch: 759, global_step=38809600
+SPS: 22727
+Epoch: 760, global_step=38860800
+SPS: 22733
+Epoch: 761, global_step=38912000
+SPS: 22738
+Epoch: 762, global_step=38963200
+SPS: 22744
+Epoch: 763, global_step=39014400
+SPS: 22750
+Epoch: 764, global_step=39065600
+SPS: 22752
+Epoch: 765, global_step=39116800
+SPS: 22747
+Epoch: 766, global_step=39168000
+SPS: 22752
+Epoch: 767, global_step=39219200
+SPS: 22758
+Epoch: 768, global_step=39270400
+SPS: 22765
+Epoch: 769, global_step=39321600
+SPS: 22759
+Epoch: 770, global_step=39372800
+SPS: 22765
+Epoch: 771, global_step=39424000
+SPS: 22771
+Epoch: 772, global_step=39475200
+SPS: 22777
+Epoch: 773, global_step=39526400
+SPS: 22781
+Epoch: 774, global_step=39577600
+SPS: 22784
+Epoch: 775, global_step=39628800
+SPS: 22789
+Epoch: 776, global_step=39680000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.9979248046875
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8199584484100342
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_776.pt
+SPS: 22772
+Epoch: 777, global_step=39731200
+SPS: 22776
+Epoch: 778, global_step=39782400
+SPS: 22773
+Epoch: 779, global_step=39833600
+SPS: 22779
+Epoch: 780, global_step=39884800
+SPS: 22781
+Epoch: 781, global_step=39936000
+SPS: 22787
+Epoch: 782, global_step=39987200
+SPS: 22792
+Epoch: 783, global_step=40038400
+SPS: 22798
+Epoch: 784, global_step=40089600
+SPS: 22802
+Epoch: 785, global_step=40140800
+SPS: 22806
+Epoch: 786, global_step=40192000
+SPS: 22806
+Epoch: 787, global_step=40243200
+SPS: 22811
+Epoch: 788, global_step=40294400
+SPS: 22817
+Epoch: 789, global_step=40345600
+SPS: 22822
+Epoch: 790, global_step=40396800
+SPS: 22828
+Epoch: 791, global_step=40448000
+SPS: 22828
+Epoch: 792, global_step=40499200
+SPS: 22834
+Epoch: 793, global_step=40550400
+SPS: 22839
+Epoch: 794, global_step=40601600
+SPS: 22834
+Epoch: 795, global_step=40652800
+SPS: 22829
+Epoch: 796, global_step=40704000
+SPS: 22835
+Epoch: 797, global_step=40755200
+SPS: 22829
+Epoch: 798, global_step=40806400
+SPS: 22833
+Epoch: 799, global_step=40857600
+SPS: 22837
+Epoch: 800, global_step=40908800
+SPS: 22840
+Epoch: 801, global_step=40960000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=38.80851745605469
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7761703729629517
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_801.pt
+SPS: 22811
+Epoch: 802, global_step=41011200
+SPS: 22808
+Epoch: 803, global_step=41062400
+SPS: 22814
+Epoch: 804, global_step=41113600
+SPS: 22809
+Epoch: 805, global_step=41164800
+SPS: 22815
+Epoch: 806, global_step=41216000
+SPS: 22821
+Epoch: 807, global_step=41267200
+SPS: 22827
+Epoch: 808, global_step=41318400
+SPS: 22826
+Epoch: 809, global_step=41369600
+SPS: 22830
+Epoch: 810, global_step=41420800
+SPS: 22834
+Epoch: 811, global_step=41472000
+SPS: 22839
+Epoch: 812, global_step=41523200
+SPS: 22844
+Epoch: 813, global_step=41574400
+SPS: 22848
+Epoch: 814, global_step=41625600
+SPS: 22846
+Epoch: 815, global_step=41676800
+SPS: 22851
+Epoch: 816, global_step=41728000
+SPS: 22856
+Epoch: 817, global_step=41779200
+SPS: 22860
+Epoch: 818, global_step=41830400
+SPS: 22864
+Epoch: 819, global_step=41881600
+SPS: 22869
+Epoch: 820, global_step=41932800
+SPS: 22874
+Epoch: 821, global_step=41984000
+SPS: 22877
+Epoch: 822, global_step=42035200
+SPS: 22883
+Epoch: 823, global_step=42086400
+SPS: 22887
+Epoch: 824, global_step=42137600
+SPS: 22893
+Epoch: 825, global_step=42188800
+SPS: 22898
+Epoch: 826, global_step=42240000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.12138366699219
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7824276685714722
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_826.pt
+SPS: 22881
+Epoch: 827, global_step=42291200
+SPS: 22888
+Epoch: 828, global_step=42342400
+SPS: 22893
+Epoch: 829, global_step=42393600
+SPS: 22899
+Epoch: 830, global_step=42444800
+SPS: 22905
+Epoch: 831, global_step=42496000
+SPS: 22902
+Epoch: 832, global_step=42547200
+SPS: 22908
+Epoch: 833, global_step=42598400
+SPS: 22913
+Epoch: 834, global_step=42649600
+SPS: 22918
+Epoch: 835, global_step=42700800
+SPS: 22925
+Epoch: 836, global_step=42752000
+SPS: 22931
+Epoch: 837, global_step=42803200
+SPS: 22936
+Epoch: 838, global_step=42854400
+SPS: 22941
+Epoch: 839, global_step=42905600
+SPS: 22947
+Epoch: 840, global_step=42956800
+SPS: 22952
+Epoch: 841, global_step=43008000
+SPS: 22956
+Epoch: 842, global_step=43059200
+SPS: 22962
+Epoch: 843, global_step=43110400
+SPS: 22957
+Epoch: 844, global_step=43161600
+SPS: 22963
+Epoch: 845, global_step=43212800
+SPS: 22968
+Epoch: 846, global_step=43264000
+SPS: 22963
+Epoch: 847, global_step=43315200
+SPS: 22968
+Epoch: 848, global_step=43366400
+SPS: 22974
+Epoch: 849, global_step=43417600
+SPS: 22979
+Epoch: 850, global_step=43468800
+SPS: 22983
+Epoch: 851, global_step=43520000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=38.89934158325195
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7779868841171265
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_851.pt
+SPS: 22966
+Epoch: 852, global_step=43571200
+SPS: 22970
+Epoch: 853, global_step=43622400
+SPS: 22975
+Epoch: 854, global_step=43673600
+SPS: 22970
+Epoch: 855, global_step=43724800
+SPS: 22976
+Epoch: 856, global_step=43776000
+SPS: 22981
+Epoch: 857, global_step=43827200
+SPS: 22985
+Epoch: 858, global_step=43878400
+SPS: 22987
+Epoch: 859, global_step=43929600
+SPS: 22988
+Epoch: 860, global_step=43980800
+SPS: 22993
+Epoch: 861, global_step=44032000
+SPS: 22988
+Epoch: 862, global_step=44083200
+SPS: 22993
+Epoch: 863, global_step=44134400
+SPS: 22998
+Epoch: 864, global_step=44185600
+SPS: 23002
+Epoch: 865, global_step=44236800
+SPS: 23007
+Epoch: 866, global_step=44288000
+SPS: 23002
+Epoch: 867, global_step=44339200
+SPS: 23005
+Epoch: 868, global_step=44390400
+SPS: 23001
+Epoch: 869, global_step=44441600
+SPS: 23004
+Epoch: 870, global_step=44492800
+SPS: 23009
+Epoch: 871, global_step=44544000
+SPS: 23010
+Epoch: 872, global_step=44595200
+SPS: 23015
+Epoch: 873, global_step=44646400
+SPS: 23020
+Epoch: 874, global_step=44697600
+SPS: 23026
+Epoch: 875, global_step=44748800
+SPS: 23030
+Epoch: 876, global_step=44800000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.89208221435547
+eval_episode_len_mean=50.0
+eval_reward_mean=0.817841649055481
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_876.pt
+SPS: 23014
+Epoch: 877, global_step=44851200
+SPS: 23018
+Epoch: 878, global_step=44902400
+SPS: 23023
+Epoch: 879, global_step=44953600
+SPS: 23026
+Epoch: 880, global_step=45004800
+SPS: 23029
+Epoch: 881, global_step=45056000
+SPS: 23033
+Epoch: 882, global_step=45107200
+SPS: 23039
+Epoch: 883, global_step=45158400
+SPS: 23044
+Epoch: 884, global_step=45209600
+SPS: 23049
+Epoch: 885, global_step=45260800
+SPS: 23048
+Epoch: 886, global_step=45312000
+SPS: 23053
+Epoch: 887, global_step=45363200
+SPS: 23057
+Epoch: 888, global_step=45414400
+SPS: 23062
+Epoch: 889, global_step=45465600
+SPS: 23065
+Epoch: 890, global_step=45516800
+SPS: 23070
+Epoch: 891, global_step=45568000
+SPS: 23075
+Epoch: 892, global_step=45619200
+SPS: 23080
+Epoch: 893, global_step=45670400
+SPS: 23082
+Epoch: 894, global_step=45721600
+SPS: 23076
+Epoch: 895, global_step=45772800
+SPS: 23081
+Epoch: 896, global_step=45824000
+SPS: 23086
+Epoch: 897, global_step=45875200
+SPS: 23090
+Epoch: 898, global_step=45926400
+SPS: 23095
+Epoch: 899, global_step=45977600
+SPS: 23098
+Epoch: 900, global_step=46028800
+SPS: 23091
+Epoch: 901, global_step=46080000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.502220153808594
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8100444078445435
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_901.pt
+SPS: 23063
+Epoch: 902, global_step=46131200
+SPS: 23060
+Epoch: 903, global_step=46182400
+SPS: 23055
+Epoch: 904, global_step=46233600
+SPS: 23060
+Epoch: 905, global_step=46284800
+SPS: 23066
+Epoch: 906, global_step=46336000
+SPS: 23070
+Epoch: 907, global_step=46387200
+SPS: 23075
+Epoch: 908, global_step=46438400
+SPS: 23080
+Epoch: 909, global_step=46489600
+SPS: 23085
+Epoch: 910, global_step=46540800
+SPS: 23090
+Epoch: 911, global_step=46592000
+SPS: 23095
+Epoch: 912, global_step=46643200
+SPS: 23100
+Epoch: 913, global_step=46694400
+SPS: 23106
+Epoch: 914, global_step=46745600
+SPS: 23101
+Epoch: 915, global_step=46796800
+SPS: 23105
+Epoch: 916, global_step=46848000
+SPS: 23110
+Epoch: 917, global_step=46899200
+SPS: 23115
+Epoch: 918, global_step=46950400
+SPS: 23110
+Epoch: 919, global_step=47001600
+SPS: 23107
+Epoch: 920, global_step=47052800
+SPS: 23111
+Epoch: 921, global_step=47104000
+SPS: 23113
+Epoch: 922, global_step=47155200
+SPS: 23107
+Epoch: 923, global_step=47206400
+SPS: 23111
+Epoch: 924, global_step=47257600
+SPS: 23114
+Epoch: 925, global_step=47308800
+SPS: 23118
+Epoch: 926, global_step=47360000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=37.546653747558594
+eval_episode_len_mean=50.0
+eval_reward_mean=0.750933051109314
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_926.pt
+SPS: 23100
+Epoch: 927, global_step=47411200
+SPS: 23104
+Epoch: 928, global_step=47462400
+SPS: 23107
+Epoch: 929, global_step=47513600
+SPS: 23112
+Epoch: 930, global_step=47564800
+SPS: 23106
+Epoch: 931, global_step=47616000
+SPS: 23100
+Epoch: 932, global_step=47667200
+SPS: 23105
+Epoch: 933, global_step=47718400
+SPS: 23109
+Epoch: 934, global_step=47769600
+SPS: 23114
+Epoch: 935, global_step=47820800
+SPS: 23118
+Epoch: 936, global_step=47872000
+SPS: 23123
+Epoch: 937, global_step=47923200
+SPS: 23127
+Epoch: 938, global_step=47974400
+SPS: 23132
+Epoch: 939, global_step=48025600
+SPS: 23137
+Epoch: 940, global_step=48076800
+SPS: 23141
+Epoch: 941, global_step=48128000
+SPS: 23144
+Epoch: 942, global_step=48179200
+SPS: 23149
+Epoch: 943, global_step=48230400
+SPS: 23153
+Epoch: 944, global_step=48281600
+SPS: 23156
+Epoch: 945, global_step=48332800
+SPS: 23161
+Epoch: 946, global_step=48384000
+SPS: 23165
+Epoch: 947, global_step=48435200
+SPS: 23168
+Epoch: 948, global_step=48486400
+SPS: 23173
+Epoch: 949, global_step=48537600
+SPS: 23177
+Epoch: 950, global_step=48588800
+SPS: 23180
+Epoch: 951, global_step=48640000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.26422119140625
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8052843809127808
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_951.pt
+SPS: 23163
+Epoch: 952, global_step=48691200
+SPS: 23166
+Epoch: 953, global_step=48742400
+SPS: 23170
+Epoch: 954, global_step=48793600
+SPS: 23175
+Epoch: 955, global_step=48844800
+SPS: 23179
+Epoch: 956, global_step=48896000
+SPS: 23180
+Epoch: 957, global_step=48947200
+SPS: 23183
+Epoch: 958, global_step=48998400
+SPS: 23186
+Epoch: 959, global_step=49049600
+SPS: 23190
+Epoch: 960, global_step=49100800
+SPS: 23194
+Epoch: 961, global_step=49152000
+SPS: 23198
+Epoch: 962, global_step=49203200
+SPS: 23203
+Epoch: 963, global_step=49254400
+SPS: 23207
+Epoch: 964, global_step=49305600
+SPS: 23212
+Epoch: 965, global_step=49356800
+SPS: 23216
+Epoch: 966, global_step=49408000
+SPS: 23210
+Epoch: 967, global_step=49459200
+SPS: 23215
+Epoch: 968, global_step=49510400
+SPS: 23220
+Epoch: 969, global_step=49561600
+SPS: 23225
+Epoch: 970, global_step=49612800
+SPS: 23229
+Epoch: 971, global_step=49664000
+SPS: 23232
+Epoch: 972, global_step=49715200
+SPS: 23237
+Epoch: 973, global_step=49766400
+SPS: 23241
+Epoch: 974, global_step=49817600
+SPS: 23246
+Epoch: 975, global_step=49868800
+SPS: 23250
+Epoch: 976, global_step=49920000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=41.14678192138672
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8229357004165649
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_976.pt
+SPS: 23231
+model saved to runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/final_ckpt.pt

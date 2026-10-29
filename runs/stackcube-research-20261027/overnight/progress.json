@@ -1,0 +1,184 @@
+{
+  "status": "complete",
+  "started_at": 1793069329.937879,
+  "max_additional_runs": 24,
+  "confirmation_queries": 0,
+  "promoted": false,
+  "phases": [
+    {
+      "label": "smoke",
+      "configuration": {
+        "campaign_id": "stackcube-overnight-20261027-tune",
+        "hypothesis": "Refine discount near 0.9 and test small entropy bonuses, one change at a time.",
+        "requested_transitions": 25000000,
+        "training_seeds": [
+          1,
+          2,
+          3
+        ],
+        "candidates": [
+          {
+            "id": "tune-gamma0875-control",
+            "gamma": 0.875,
+            "ent_coef": 0.0,
+            "learning_rate": 0.0003,
+            "update_epochs": 8
+          },
+          {
+            "id": "tune-gamma0925-control",
+            "gamma": 0.925,
+            "ent_coef": 0.0,
+            "learning_rate": 0.0003,
+            "update_epochs": 8
+          },
+          {
+            "id": "tune-entropy001-control",
+            "gamma": 0.9,
+            "ent_coef": 0.001,
+            "learning_rate": 0.0003,
+            "update_epochs": 8
+          },
+          {
+            "id": "tune-entropy003-control",
+            "gamma": 0.9,
+            "ent_coef": 0.003,
+            "learning_rate": 0.0003,
+            "update_epochs": 8
+          }
+        ]
+      },
+      "configuration_sha256": "8db0c268adc6f9b3ec4f520674efb2f751f675906d2dc338d704b3516478c50d",
+      "started_at": 1793069891.0303757,
+      "finished_at": 1793069933.6686878
+    },
+    {
+      "label": "tune",
+      "configuration": {
+        "campaign_id": "stackcube-overnight-20261027-tune",
+        "hypothesis": "Refine discount near 0.9 and test small entropy bonuses, one change at a time.",
+        "requested_transitions": 25000000,
+        "training_seeds": [
+          1,
+          2,
+          3
+        ],
+        "candidates": [
+          {
+            "id": "tune-gamma0875-control",
+            "gamma": 0.875,
+            "ent_coef": 0.0,
+            "learning_rate": 0.0003,
+            "update_epochs": 8
+          },
+          {
+            "id": "tune-gamma0925-control",
+            "gamma": 0.925,
+            "ent_coef": 0.0,
+            "learning_rate": 0.0003,
+            "update_epochs": 8
+          },
+          {
+            "id": "tune-entropy001-control",
+            "gamma": 0.9,
+            "ent_coef": 0.001,
+            "learning_rate": 0.0003,
+            "update_epochs": 8
+          },
+          {
+            "id": "tune-entropy003-control",
+            "gamma": 0.9,
+            "ent_coef": 0.003,
+            "learning_rate": 0.0003,
+            "update_epochs": 8
+          }
+        ]
+      },
+      "configuration_sha256": "8db0c268adc6f9b3ec4f520674efb2f751f675906d2dc338d704b3516478c50d",
+      "started_at": 1793069933.916488,
+      "finished_at": 1793088848.5196166
+    },
+    {
+      "label": "short",
+      "configuration": {
+        "campaign_id": "stackcube-overnight-20261027-short",
+        "hypothesis": "At half the transition budget, test faster learning and fewer PPO optimization epochs against a paired control.",
+        "requested_transitions": 12500000,
+        "training_seeds": [
+          1,
+          2,
+          3
+        ],
+        "candidates": [
+          {
+            "id": "short-entropy003-control",
+            "gamma": 0.9,
+            "ent_coef": 0.003,
+            "learning_rate": 0.0003,
+            "update_epochs": 8
+          },
+          {
+            "id": "short-entropy003-lr2",
+            "gamma": 0.9,
+            "ent_coef": 0.003,
+            "learning_rate": 0.0006,
+            "update_epochs": 8
+          },
+          {
+            "id": "short-entropy003-epochs4",
+            "gamma": 0.9,
+            "ent_coef": 0.003,
+            "learning_rate": 0.0003,
+            "update_epochs": 4
+          }
+        ]
+      },
+      "configuration_sha256": "65c12118eca31606b41fdb46eb5544738493c523ce688f2f088c66cb8786d356",
+      "started_at": 1793088848.7833326,
+      "finished_at": 1793096267.2354033
+    }
+  ],
+  "stopping_rules": {
+    "hard_deadline": "16 hours after original Pod start, independently supervised",
+    "max_total_pod_compute_usd": 10,
+    "max_hourly_rate_used": 0.6,
+    "plateau": "No meaningful success or speed improvement in the half-budget phase",
+    "error": "Stop on any failed training, artifact, protocol or evaluator check"
+  },
+  "anchor": {
+    "candidate": {
+      "id": "short-anchor090-control",
+      "gamma": 0.9,
+      "ent_coef": 0.0,
+      "learning_rate": 0.0003,
+      "update_epochs": 8
+    },
+    "rates": [
+      0.5625,
+      0.78125,
+      0.7890625
+    ],
+    "mean": 0.7109375,
+    "mean_training_seconds": 1334.074486552272
+  },
+  "current_phase": "short",
+  "tuning_choice": {
+    "candidate": {
+      "id": "tune-entropy003-control",
+      "gamma": 0.9,
+      "ent_coef": 0.003,
+      "learning_rate": 0.0003,
+      "update_epochs": 8
+    },
+    "rates": [
+      0.890625,
+      0.75,
+      0.8671875
+    ],
+    "mean": 0.8359375,
+    "mean_training_seconds": 1346.2763615583535
+  },
+  "tuning_improved": true,
+  "efficiency_choice": null,
+  "stop_reason": "Plateau: neither half-budget change met success/speed criteria",
+  "finished_at": 1793096267.283956
+}

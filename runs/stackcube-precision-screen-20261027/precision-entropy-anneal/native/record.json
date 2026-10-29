@@ -1,0 +1,333 @@
+{
+  "job": {
+    "job_id": "stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1",
+    "method": "precision-entropy-anneal",
+    "seed": 1,
+    "trainer_sha256": "4618b428c35838417b95996a4245530f3b24fd5011b674ef9666a1ae6319c761",
+    "gpu": "L40S",
+    "trainer_seconds_cap": 2700,
+    "requested_steps": 50000000,
+    "actual_steps_ceiling": 49971200
+  },
+  "state": "complete",
+  "dispatched_at": 1793148039.2065341,
+  "admitted_at": 1793148050.084282,
+  "queue_seconds": 10.877747774124146,
+  "expires_at": 1793150739.2065341,
+  "trainer_sha256": "4618b428c35838417b95996a4245530f3b24fd5011b674ef9666a1ae6319c761",
+  "gpu_requested": "L40S",
+  "confirmation_queries": 0,
+  "new_training_processes": 1,
+  "gpu_actual_name": "NVIDIA L40S",
+  "versions": {
+    "torch": "2.6.0+cu124",
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "subprocess_started_at": 1793148053.2947526,
+  "trainer_process_seconds": 2172.979352031,
+  "return_code": 0,
+  "nonfinite_diagnostic_scalars": {},
+  "actual_steps": 49971200,
+  "completed_rollouts": 976,
+  "optimizer_step_upper_bound": 249856,
+  "built_in_evaluation_calls": 40,
+  "built_in_evaluation_transitions": 16000,
+  "built_in_evaluation_episodes": 320,
+  "stopped_early": false,
+  "optimizer_step_count": 84080,
+  "final_logstd_per_dimension": [
+    -1.925020456314087,
+    -1.7652066946029663,
+    -1.9451723098754883,
+    -2.0167438983917236,
+    -0.637283444404602,
+    -1.4840611219406128,
+    -0.07785614579916,
+    -1.2532105445861816
+  ],
+  "audit_trace_rows": 976,
+  "wrapper_seconds": 2177.527993893,
+  "completed_at": 1793150227.6122837,
+  "files": [
+    {
+      "path": "attempt.json",
+      "bytes": 149,
+      "sha256": "74f97759dcc65dc0567e83056dc6d8bf1580a14a0dbb1f21668407962c40636e",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "scalars.json",
+      "bytes": 4705408,
+      "sha256": "e23bebc1ac5ef2e330e0880b5cc85d0198a761739e17b1eddd3bdbeec35b281a",
+      "trainer_seconds": 2173.994495153427
+    },
+    {
+      "path": "trainer.py",
+      "bytes": 26387,
+      "sha256": "4618b428c35838417b95996a4245530f3b24fd5011b674ef9666a1ae6319c761",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "work/train.log",
+      "bytes": 56186,
+      "sha256": "d89bfb9e6145b8bf0159cabb76e66851a9f0720333b53c3ef0dbc07922af2d5e",
+      "trainer_seconds": 2170.9634313583374
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "fe0b2ad4d99fc88f0c408a1da3ccfbf80fdf51e0d643f7ad977ad4604aa8f753",
+      "trainer_seconds": 21.5590660572052
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_101.pt",
+      "bytes": 1168376,
+      "sha256": "69fde942fd7587b7fad59886c1585f18abb9d7371474acf8d63a68d163adc00e",
+      "trainer_seconds": 314.2052743434906
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_126.pt",
+      "bytes": 1168376,
+      "sha256": "f17467ffe4a24f61d11fd8adffaaa50049d64fc2846b0e3c90478699e86732f0",
+      "trainer_seconds": 373.96954226493835
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_151.pt",
+      "bytes": 1168376,
+      "sha256": "0f638d23e2ba71a86eb67fdda373a019bfe533b28e5f61038b3f81799a9e5dbf",
+      "trainer_seconds": 427.66668128967285
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_176.pt",
+      "bytes": 1168376,
+      "sha256": "603e4596cfec96ff49c99d1365c59df7c599f573e14bd96e0f7c23f13d293857",
+      "trainer_seconds": 479.1377680301666
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_201.pt",
+      "bytes": 1168376,
+      "sha256": "af8d69b5eb2f1149ed3f9426b6450118371802f4371f10fa123bb0fdf1b8b4e0",
+      "trainer_seconds": 538.5180191993713
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_226.pt",
+      "bytes": 1168376,
+      "sha256": "c24400afbbdf5bbafd446d4d3d9afba1443a6afcf6a8f7607404450b4a682930",
+      "trainer_seconds": 593.7641830444336
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_251.pt",
+      "bytes": 1168376,
+      "sha256": "311111d52e90602778138e4c45d890a1b8ee7e26d64e8720dcf168716f11dd31",
+      "trainer_seconds": 647.1833086013794
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "292c8eeeacd22efe8d9547e99ed04c06fefed90e8ce7286c1df7c1962f7180d9",
+      "trainer_seconds": 94.83462047576904
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_276.pt",
+      "bytes": 1168376,
+      "sha256": "bc03afd86cef0a4730f14c7a02b0918fd4374d5c715a55db8ba4688694af11de",
+      "trainer_seconds": 699.7354159355164
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_301.pt",
+      "bytes": 1168376,
+      "sha256": "7fae4e62222e77c39dc4f8615a905a6cd7191cc490cf98db1f7b7cd760d9f3a0",
+      "trainer_seconds": 752.5225279331207
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_326.pt",
+      "bytes": 1168376,
+      "sha256": "5603cc8830f5e913e0921e876c32c4dee9d7cf882f5a70a103c9f41843ce26fb",
+      "trainer_seconds": 804.4886229038239
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_351.pt",
+      "bytes": 1168376,
+      "sha256": "65d41a975c657a0dbefedae6b6f531636e25fa77e6770530b829120f6803273c",
+      "trainer_seconds": 857.1527326107025
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_376.pt",
+      "bytes": 1168376,
+      "sha256": "34454d5fb949c24a14f9a74cbbd35f6a75deac2342d5bc166224618eb2ab32d5",
+      "trainer_seconds": 914.0209307670593
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_401.pt",
+      "bytes": 1168376,
+      "sha256": "39fe6feb6fe5d1df085d7c72b92815be8a6338e9393565f671074d3f2f5d96ae",
+      "trainer_seconds": 967.8380644321442
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_426.pt",
+      "bytes": 1168376,
+      "sha256": "8a9e818bc81d799c26886e2edb0f6101ad8cb8403c683a4f4321e67e3be64dfb",
+      "trainer_seconds": 1019.6521561145782
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_451.pt",
+      "bytes": 1168376,
+      "sha256": "c112c51d865699f751cf8324c66c9baf5b0129888fd9786ce3c1cfde0a7b9cb1",
+      "trainer_seconds": 1072.0472600460052
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_476.pt",
+      "bytes": 1168376,
+      "sha256": "1fff53a4dd4f93936b85789304c1b293c6bba919a71b2e43df341ae2ca919b72",
+      "trainer_seconds": 1123.4533431529999
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_501.pt",
+      "bytes": 1168376,
+      "sha256": "41c6e60c5ba7866e7fd2aaff7de985dd47b0f69d1122e3b16b0f632760ebfd05",
+      "trainer_seconds": 1173.9014060497284
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_51.pt",
+      "bytes": 1167971,
+      "sha256": "ebe73770a97f3de5ba40e9731cd9968c4d87d20c9c1d037f14e09a50bf00ceec",
+      "trainer_seconds": 167.8861701488495
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_526.pt",
+      "bytes": 1168376,
+      "sha256": "fd54eaa2f3fca1b7b82d3d5feecec3176d5e792a4cd395392bfa776db9c411f4",
+      "trainer_seconds": 1226.8665220737457
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_551.pt",
+      "bytes": 1168376,
+      "sha256": "f3942620f8d3d5397018b949eda7375e7bb95852d407e1542735b8da545662b4",
+      "trainer_seconds": 1278.7376148700714
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_576.pt",
+      "bytes": 1168376,
+      "sha256": "4f2ba791154aba1044cde997eb70972e14e310029f5458b5a15764e5963fd7d6",
+      "trainer_seconds": 1332.1087393760681
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_601.pt",
+      "bytes": 1168376,
+      "sha256": "8c5fe3222f479a28293300e10f5158663badb619067d6099173efa940f366940",
+      "trainer_seconds": 1386.469884634018
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_626.pt",
+      "bytes": 1168376,
+      "sha256": "2c9f104fd9abf8c3cadd742e89a77e3fa0fc8fca3ed2a1b2a01bafb7b8bb8195",
+      "trainer_seconds": 1438.4699802398682
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_651.pt",
+      "bytes": 1168376,
+      "sha256": "91ad199a555bc368ee4271dd3e0a25867e7d7c9fd9d7c46c4498381ee256875a",
+      "trainer_seconds": 1493.2351343631744
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_676.pt",
+      "bytes": 1168376,
+      "sha256": "67f2c9c9666a749d7f96ec3351cefd5137754b9db0a2d6415dabc45a56238ca8",
+      "trainer_seconds": 1550.436341047287
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_701.pt",
+      "bytes": 1168376,
+      "sha256": "56f0246ef8dd30e7d018634d9933d62c3efdf9f04f72a7227cfd044f19a49daa",
+      "trainer_seconds": 1604.342478275299
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_726.pt",
+      "bytes": 1168376,
+      "sha256": "b017f2a8403ceb2183226b6c04d130de0a93d705520ae513b05c94758409a1ab",
+      "trainer_seconds": 1658.626623392105
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_751.pt",
+      "bytes": 1168376,
+      "sha256": "81222c281be24552fe1b8918b51b82960cfa972fa9beb397e565b65a6022b7df",
+      "trainer_seconds": 1711.0637295246124
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_76.pt",
+      "bytes": 1167971,
+      "sha256": "98e88d62db7bab3a5921d59c36bdf2930b835a05a85b2c73e45d09af094bc502",
+      "trainer_seconds": 243.0567648410797
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_776.pt",
+      "bytes": 1168376,
+      "sha256": "6a69f4106b589b011a742e2da796428f09fbb75ab89821ddba6376e8dbb64930",
+      "trainer_seconds": 1762.3808121681213
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_801.pt",
+      "bytes": 1168376,
+      "sha256": "be65006a7372dfaaa706b7768fdcff34c61dde039ce2cbecd7b4b0beafc2053f",
+      "trainer_seconds": 1814.610913991928
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_826.pt",
+      "bytes": 1168376,
+      "sha256": "0bc1f119868fc136682d4737f8c10eff4b190c9d4ce9038a43eab0d021463ef8",
+      "trainer_seconds": 1865.8889956474304
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_851.pt",
+      "bytes": 1168376,
+      "sha256": "19fe8f338c4a19be22007c53112c893b4b245ed06b4743ae918521b2c2584dd2",
+      "trainer_seconds": 1914.8190279006958
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_876.pt",
+      "bytes": 1168376,
+      "sha256": "b836e8c4a7f684119c2c617074f3fd2ca84775150ca4c390850d53a029bee1d6",
+      "trainer_seconds": 1966.4231164455414
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_901.pt",
+      "bytes": 1168376,
+      "sha256": "3f9a675d89d593c65c8ba97171dad48c7b9d4afa397d5675c8aee1e509f9576d",
+      "trainer_seconds": 2016.979182958603
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_926.pt",
+      "bytes": 1168376,
+      "sha256": "c312048710e56d3b6f7a4d10939628969068254d4fc25e6ad21af2bff6e5269e",
+      "trainer_seconds": 2069.975301027298
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_951.pt",
+      "bytes": 1168376,
+      "sha256": "454e46f09c8a98d340cdc2ca03fdbc65f84c5ffab892d8a0788850d7a5eda893",
+      "trainer_seconds": 2119.7043499946594
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_976.pt",
+      "bytes": 1168376,
+      "sha256": "90f6df06639a8c557f98bef4f6bf244e2ff286a7880aefb833dad9195b559c0f",
+      "trainer_seconds": 2168.428377866745
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/events.out.tfevents.1793148070.modal.8.0",
+      "bytes": 2373523,
+      "sha256": "0db5e9d8444bfb9b52f545fd766d0971052961dfea8cd36267e60d3a1760846d",
+      "trainer_seconds": 2170.4774210453033
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "b59f8bbc83d954b4bc9a173a3c341a51af99f78eaf060452bd589bb8ed392dfd",
+      "trainer_seconds": 2170.669425010681
+    }
+  ],
+  "output_bytes": 55062958
+}

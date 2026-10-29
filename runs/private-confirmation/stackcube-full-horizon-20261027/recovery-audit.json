@@ -1,0 +1,47 @@
+{
+  "recovery_id": "fullhorizon-l40s-20261027",
+  "gpu_requested": "L40S",
+  "previous_app_id": "ap-8A3U3Ee2io7IMxOwzgmDTK",
+  "records": [
+    {
+      "seed": 1,
+      "weights_sha256": "39ba198d0c98af14a3d2965ef9a3be859f31aa3c4889db3da311da910c2da153",
+      "split": "confirmation",
+      "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+      "recovery_id": "fullhorizon-l40s-20261027",
+      "state": "failed",
+      "admitted_at": 1793130736.9140015,
+      "original_admission_claim": {
+        "weights_sha256": "39ba198d0c98af14a3d2965ef9a3be859f31aa3c4889db3da311da910c2da153",
+        "split": "confirmation",
+        "started_at": 1793128932.5038445
+      },
+      "original_gpu_claim_absent": true,
+      "gpu_requested": "L40S",
+      "submitted_at": 1793130741.7551696,
+      "function_call_id": "fc-01M5ZEQJBT6KGBGEZ7877FR8PM",
+      "completed_at": 1793130853.230411,
+      "error": "RemoteError: ClientConnectorDNSError(ConnectionKey(host='e29e5794c3a8abd52b1549c7703408b1.r2.cloudflarestorage.com', port=443, is_ssl=True, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), gaierror(-3, 'Temporary failure in name resolution'))"
+    },
+    {
+      "seed": 2,
+      "weights_sha256": "117e2be0c0dffd8dd91f5d5093cbd69cb80f5579505b4ed04203a9f57b75299b",
+      "split": "confirmation",
+      "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+      "recovery_id": "fullhorizon-l40s-20261027",
+      "state": "failed",
+      "admitted_at": 1793130737.9890943,
+      "original_admission_claim": {
+        "weights_sha256": "117e2be0c0dffd8dd91f5d5093cbd69cb80f5579505b4ed04203a9f57b75299b",
+        "split": "confirmation",
+        "started_at": 1793128932.3904579
+      },
+      "original_gpu_claim_absent": true,
+      "gpu_requested": "L40S",
+      "submitted_at": 1793130746.821053,
+      "function_call_id": "fc-01M5ZEQPRZ4K4EB8MD63E0FWHT",
+      "completed_at": 1793130858.0628142,
+      "error": "RemoteError: ClientConnectorDNSError(ConnectionKey(host='e29e5794c3a8abd52b1549c7703408b1.r2.cloudflarestorage.com', port=443, is_ssl=True, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), gaierror(-3, 'Temporary failure in name resolution'))"
+    }
+  ]
+}

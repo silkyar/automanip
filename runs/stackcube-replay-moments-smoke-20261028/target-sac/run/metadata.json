@@ -1,0 +1,68 @@
+{
+  "state": "started",
+  "config": {
+    "method": "target-sac",
+    "seed": 1,
+    "num_envs": 64,
+    "total_transitions": 5120,
+    "max_seconds": 45.0,
+    "batch_size": 2048,
+    "collection_block": 128,
+    "critic_updates_per_block": 8,
+    "learning_starts": 5000,
+    "replay_capacity": 1048576,
+    "critic_width": 256,
+    "gamma": 0.99,
+    "learning_rate": 0.001,
+    "policy_delay": 3
+  },
+  "versions": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "gpu": "NVIDIA L40S",
+  "source_sha256": "e753b684f97b475dcadd7bdf1736395a79485ea4f431fa8f04083ffb89945d7f",
+  "counts": {
+    "transitions": 0,
+    "vector_step_calls": 0,
+    "completed_episodes": 0,
+    "explicit_reset_episodes": 64,
+    "inference_seconds": 0.0,
+    "simulator_seconds": 0.0,
+    "replay_seconds": 0.0,
+    "learner_seconds": 0.0,
+    "export_seconds": 0.0,
+    "training_success_at_end_sum": 0,
+    "initial_random_transitions": 0
+  },
+  "source_files_sha256": {
+    "replay_robot.py": "e753b684f97b475dcadd7bdf1736395a79485ea4f431fa8f04083ffb89945d7f",
+    "replay_learner.py": "009b4662a3b248e8e677905e2e7cafe2a69611a9259ab5fe91ec0cbe3b2efdfc",
+    "sac_baseline.py": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca"
+  },
+  "checkpoint_exports": [],
+  "optimizer_work": {
+    "critic_forward_rows": 0,
+    "actor_forward_rows": 0,
+    "critic_sampled_rows": 0,
+    "actor_sampled_rows": 0,
+    "critic_optimizer_calls": 0,
+    "actor_optimizer_calls": 0,
+    "alpha_optimizer_calls": 0
+  },
+  "new_teacher_transitions": 0,
+  "demonstrations": 0,
+  "pretrained_weights": false,
+  "planning_queries": 0,
+  "extra_simulator_queries": 0,
+  "evaluation_transitions": 0,
+  "observation_dim": 48,
+  "action_dim": 8,
+  "horizon": 50,
+  "task_source_sha256": "ff76ae608f79ba3ea13334e61ccb72f291660f9461895c70e3c30f8390694440",
+  "algorithm": "Matched vectorized SAC/CrossQ-inspired moment study; not an official CrossQ reproduction",
+  "warmup_note": "BRN100000 critic updates; <=64000 updates here, so normalized arms remain in BN warmup."
+}

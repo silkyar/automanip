@@ -1,0 +1,10 @@
+{
+  "campaign_id": "stackcube-credit-20261026",
+  "hypothesis": "Longer PPO credit assignment improves the grasp-to-release-to-stability sequence at the same transition budget.",
+  "requested_transitions": 25000000,
+  "training_seeds": [1, 2, 3],
+  "candidates": [
+    {"id": "gamma090", "gamma": 0.9},
+    {"id": "gamma095", "gamma": 0.95}
+  ]
+}

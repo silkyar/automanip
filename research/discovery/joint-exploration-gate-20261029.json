@@ -1,0 +1,587 @@
+{
+  "state": "complete",
+  "primary_proxy": "10mm setpoint and valid target-FK rise>=5mm, not physical success",
+  "gate_passed": true,
+  "vector_mean": 0.02246731975619242,
+  "coordinate_mean": 0.016845789199025057,
+  "vector_median": 0.018789062500000002,
+  "coordinate_median": 0.0019531250057400586,
+  "median_ratio": 9.619999971727687,
+  "toy_rare_pair": {
+    "vector_probability": 0.0062509,
+    "coordinate_probability": 0.0006708100000000002,
+    "ratio": 9.31843592075252
+  },
+  "toy_mixed_negative": {
+    "vector_probability": 0.0011491000000000001,
+    "coordinate_probability": 0.023312590000000005
+  },
+  "single_coordinate_equal": true,
+  "exact_identity_abs_error": 8.673617379884035e-19,
+  "states": [
+    {
+      "lane": 0,
+      "vector_proxy_mass": 0.019531250000000003,
+      "coordinate_proxy_mass": 0.001953125000014337,
+      "coordinate_up_MC_count": 25,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 1,
+      "vector_proxy_mass": 0.019062500000000003,
+      "coordinate_proxy_mass": 0.0009375009713368513,
+      "coordinate_up_MC_count": 12,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 2,
+      "vector_proxy_mass": 0.019218750000000003,
+      "coordinate_proxy_mass": 0.0028125309962183866,
+      "coordinate_up_MC_count": 36,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 4,
+      "vector_proxy_mass": 0.021015625000000003,
+      "coordinate_proxy_mass": 0.0011719647873163978,
+      "coordinate_up_MC_count": 15,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 5,
+      "vector_proxy_mass": 0.018593750000000003,
+      "coordinate_proxy_mass": 0.0014068508497381638,
+      "coordinate_up_MC_count": 18,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 7,
+      "vector_proxy_mass": 0.017421875000000003,
+      "coordinate_proxy_mass": 0.0016763086079115373,
+      "coordinate_up_MC_count": 14,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 10,
+      "vector_proxy_mass": 0.018828125000000005,
+      "coordinate_proxy_mass": 0.0025784892642453307,
+      "coordinate_up_MC_count": 33,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 11,
+      "vector_proxy_mass": 0.018515625000000004,
+      "coordinate_proxy_mass": 0.0009375021701407258,
+      "coordinate_up_MC_count": 12,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 12,
+      "vector_proxy_mass": 0.018281250000000002,
+      "coordinate_proxy_mass": 0.04957031249999935,
+      "coordinate_up_MC_count": 27,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 13,
+      "vector_proxy_mass": 0.019687500000000004,
+      "coordinate_proxy_mass": 0.001614229631076434,
+      "coordinate_up_MC_count": 16,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 14,
+      "vector_proxy_mass": 0.020703125000000003,
+      "coordinate_proxy_mass": 0.0012500067822368095,
+      "coordinate_up_MC_count": 16,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 17,
+      "vector_proxy_mass": 0.019048252179546876,
+      "coordinate_proxy_mass": 0.030915159268534123,
+      "coordinate_up_MC_count": 393,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 19,
+      "vector_proxy_mass": 0.017109375000000003,
+      "coordinate_proxy_mass": 0.024598698962219303,
+      "coordinate_up_MC_count": 17,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 20,
+      "vector_proxy_mass": 0.018750000000000003,
+      "coordinate_proxy_mass": 0.051243930253367764,
+      "coordinate_up_MC_count": 28,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 22,
+      "vector_proxy_mass": 0.2523615147658075,
+      "coordinate_proxy_mass": 0.2531474775967635,
+      "coordinate_up_MC_count": 416,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 23,
+      "vector_proxy_mass": 0.018671875000000004,
+      "coordinate_proxy_mass": 0.0007821618645593389,
+      "coordinate_up_MC_count": 10,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 24,
+      "vector_proxy_mass": 0.017578125000000003,
+      "coordinate_proxy_mass": 0.030988559136608286,
+      "coordinate_up_MC_count": 24,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 26,
+      "vector_proxy_mass": 0.018515625000000004,
+      "coordinate_proxy_mass": 0.02193320981837101,
+      "coordinate_up_MC_count": 12,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 27,
+      "vector_proxy_mass": 0.018046875000000004,
+      "coordinate_proxy_mass": 0.0015625633353334592,
+      "coordinate_up_MC_count": 20,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 28,
+      "vector_proxy_mass": 0.018671875000000004,
+      "coordinate_proxy_mass": 0.0020312501781099665,
+      "coordinate_up_MC_count": 26,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 29,
+      "vector_proxy_mass": 0.018046875000000004,
+      "coordinate_proxy_mass": 0.031199386391977363,
+      "coordinate_up_MC_count": 17,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 31,
+      "vector_proxy_mass": 0.019453125000000005,
+      "coordinate_proxy_mass": 0.0018750001786579644,
+      "coordinate_up_MC_count": 24,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 32,
+      "vector_proxy_mass": 0.018828125000000005,
+      "coordinate_proxy_mass": 0.0015625251507686729,
+      "coordinate_up_MC_count": 20,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 33,
+      "vector_proxy_mass": 0.017578125000000003,
+      "coordinate_proxy_mass": 0.0010156350297457425,
+      "coordinate_up_MC_count": 13,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 34,
+      "vector_proxy_mass": 0.019531250000000003,
+      "coordinate_proxy_mass": 0.0013281256647503206,
+      "coordinate_up_MC_count": 17,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 35,
+      "vector_proxy_mass": 0.020078125000000002,
+      "coordinate_proxy_mass": 0.0014062550441080943,
+      "coordinate_up_MC_count": 18,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 36,
+      "vector_proxy_mass": 0.018828125000000005,
+      "coordinate_proxy_mass": 0.03164883016337284,
+      "coordinate_up_MC_count": 24,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 37,
+      "vector_proxy_mass": 0.017421875000000003,
+      "coordinate_proxy_mass": 0.029612213003255054,
+      "coordinate_up_MC_count": 24,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 38,
+      "vector_proxy_mass": 0.019687500000000004,
+      "coordinate_proxy_mass": 0.001953125305991477,
+      "coordinate_up_MC_count": 25,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 39,
+      "vector_proxy_mass": 0.019843750000000004,
+      "coordinate_proxy_mass": 0.0015634332134486213,
+      "coordinate_up_MC_count": 20,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 40,
+      "vector_proxy_mass": 0.019062500000000003,
+      "coordinate_proxy_mass": 0.002109871197561109,
+      "coordinate_up_MC_count": 27,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 41,
+      "vector_proxy_mass": 0.019531250000000003,
+      "coordinate_proxy_mass": 0.00195312501146578,
+      "coordinate_up_MC_count": 25,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 42,
+      "vector_proxy_mass": 0.017812500000000002,
+      "coordinate_proxy_mass": 0.001796879290844362,
+      "coordinate_up_MC_count": 23,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 43,
+      "vector_proxy_mass": 0.019843750000000004,
+      "coordinate_proxy_mass": 0.062421874999999995,
+      "coordinate_up_MC_count": 34,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 44,
+      "vector_proxy_mass": 0.020468750000000004,
+      "coordinate_proxy_mass": 0.013880327777055772,
+      "coordinate_up_MC_count": 26,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 47,
+      "vector_proxy_mass": 0.018750000000000003,
+      "coordinate_proxy_mass": 0.0014141848026130658,
+      "coordinate_up_MC_count": 18,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 49,
+      "vector_proxy_mass": 0.019843750000000004,
+      "coordinate_proxy_mass": 0.04440622142136018,
+      "coordinate_up_MC_count": 26,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 50,
+      "vector_proxy_mass": 0.018906250000000003,
+      "coordinate_proxy_mass": 0.0012522585903496288,
+      "coordinate_up_MC_count": 16,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 51,
+      "vector_proxy_mass": 0.017656250000000002,
+      "coordinate_proxy_mass": 0.04957031249999567,
+      "coordinate_up_MC_count": 27,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 53,
+      "vector_proxy_mass": 0.018750000000000003,
+      "coordinate_proxy_mass": 0.034868051779063984,
+      "coordinate_up_MC_count": 19,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 56,
+      "vector_proxy_mass": 0.0453515624958897,
+      "coordinate_proxy_mass": 0.08996093748657302,
+      "coordinate_up_MC_count": 49,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 58,
+      "vector_proxy_mass": 0.018281250000000002,
+      "coordinate_proxy_mass": 0.008087083460766894,
+      "coordinate_up_MC_count": 22,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 59,
+      "vector_proxy_mass": 0.018359375000000004,
+      "coordinate_proxy_mass": 0.0012500343787805515,
+      "coordinate_up_MC_count": 16,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 63,
+      "vector_proxy_mass": 0.018671875000000004,
+      "coordinate_proxy_mass": 0.0019531255924554124,
+      "coordinate_up_MC_count": 25,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 64,
+      "vector_proxy_mass": 0.018906250000000003,
+      "coordinate_proxy_mass": 0.05488981694265546,
+      "coordinate_up_MC_count": 30,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 66,
+      "vector_proxy_mass": 0.020078125000000002,
+      "coordinate_proxy_mass": 0.0015628212129089564,
+      "coordinate_up_MC_count": 20,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 67,
+      "vector_proxy_mass": 0.017187500000000005,
+      "coordinate_proxy_mass": 0.0015625000526443343,
+      "coordinate_up_MC_count": 20,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 69,
+      "vector_proxy_mass": 0.017421875000000003,
+      "coordinate_proxy_mass": 0.0030340441772557757,
+      "coordinate_up_MC_count": 27,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 70,
+      "vector_proxy_mass": 0.018750000000000003,
+      "coordinate_proxy_mass": 0.03659654671011728,
+      "coordinate_up_MC_count": 20,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 71,
+      "vector_proxy_mass": 0.017890625000000004,
+      "coordinate_proxy_mass": 0.0013281465749860161,
+      "coordinate_up_MC_count": 17,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 72,
+      "vector_proxy_mass": 0.018125000000000002,
+      "coordinate_proxy_mass": 0.0016406250000015688,
+      "coordinate_up_MC_count": 21,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 74,
+      "vector_proxy_mass": 0.018906250000000003,
+      "coordinate_proxy_mass": 0.0012513738398729584,
+      "coordinate_up_MC_count": 16,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 76,
+      "vector_proxy_mass": 0.019218750000000003,
+      "coordinate_proxy_mass": 0.0007815217363333811,
+      "coordinate_up_MC_count": 10,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 79,
+      "vector_proxy_mass": 0.017656250000000002,
+      "coordinate_proxy_mass": 0.019022553328731352,
+      "coordinate_up_MC_count": 30,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 81,
+      "vector_proxy_mass": 0.017265625000000003,
+      "coordinate_proxy_mass": 0.04875825553663541,
+      "coordinate_up_MC_count": 29,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 82,
+      "vector_proxy_mass": 0.0175,
+      "coordinate_proxy_mass": 0.022031249970878124,
+      "coordinate_up_MC_count": 12,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 83,
+      "vector_proxy_mass": 0.017656250000000002,
+      "coordinate_proxy_mass": 0.026621095959872165,
+      "coordinate_up_MC_count": 21,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 86,
+      "vector_proxy_mass": 0.019218750000000003,
+      "coordinate_proxy_mass": 0.0017187704784544133,
+      "coordinate_up_MC_count": 22,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 89,
+      "vector_proxy_mass": 0.017187500000000005,
+      "coordinate_proxy_mass": 0.0012500295755844967,
+      "coordinate_up_MC_count": 16,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 91,
+      "vector_proxy_mass": 0.020156250000000004,
+      "coordinate_proxy_mass": 0.002737048014765064,
+      "coordinate_up_MC_count": 25,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 92,
+      "vector_proxy_mass": 0.019218750000000003,
+      "coordinate_proxy_mass": 0.0014843757681239334,
+      "coordinate_up_MC_count": 19,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 93,
+      "vector_proxy_mass": 0.017890625000000004,
+      "coordinate_proxy_mass": 0.0017188788242878284,
+      "coordinate_up_MC_count": 22,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 96,
+      "vector_proxy_mass": 0.049750299055999765,
+      "coordinate_proxy_mass": 0.09321822346017325,
+      "coordinate_up_MC_count": 64,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 98,
+      "vector_proxy_mass": 0.017578125000000003,
+      "coordinate_proxy_mass": 0.001640666151286333,
+      "coordinate_up_MC_count": 21,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 99,
+      "vector_proxy_mass": 0.017109375000000003,
+      "coordinate_proxy_mass": 0.0017187853412114187,
+      "coordinate_up_MC_count": 22,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 102,
+      "vector_proxy_mass": 0.018906250000000003,
+      "coordinate_proxy_mass": 0.00203232763634322,
+      "coordinate_up_MC_count": 26,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 105,
+      "vector_proxy_mass": 0.020546875000000003,
+      "coordinate_proxy_mass": 0.0014062501114930246,
+      "coordinate_up_MC_count": 18,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 107,
+      "vector_proxy_mass": 0.020000000000000004,
+      "coordinate_proxy_mass": 0.0015638579832444233,
+      "coordinate_up_MC_count": 20,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 109,
+      "vector_proxy_mass": 0.017343750000000005,
+      "coordinate_proxy_mass": 0.0009375000001394748,
+      "coordinate_up_MC_count": 12,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 110,
+      "vector_proxy_mass": 0.019921875000000006,
+      "coordinate_proxy_mass": 0.002500007115916007,
+      "coordinate_up_MC_count": 32,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 112,
+      "vector_proxy_mass": 0.018281250000000002,
+      "coordinate_proxy_mass": 0.0012500000001624454,
+      "coordinate_up_MC_count": 16,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 114,
+      "vector_proxy_mass": 0.018906250000000003,
+      "coordinate_proxy_mass": 0.047734374999999225,
+      "coordinate_up_MC_count": 26,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 119,
+      "vector_proxy_mass": 0.01937681248576468,
+      "coordinate_proxy_mass": 0.0020391041049802666,
+      "coordinate_up_MC_count": 26,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 121,
+      "vector_proxy_mass": 0.019062500000000003,
+      "coordinate_proxy_mass": 0.0031643687118637852,
+      "coordinate_up_MC_count": 29,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 123,
+      "vector_proxy_mass": 0.018593750000000003,
+      "coordinate_proxy_mass": 0.0016406250236079738,
+      "coordinate_up_MC_count": 21,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 124,
+      "vector_proxy_mass": 0.018359375000000004,
+      "coordinate_proxy_mass": 0.0009375321169215349,
+      "coordinate_up_MC_count": 12,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 125,
+      "vector_proxy_mass": 0.019765625000000005,
+      "coordinate_proxy_mass": 0.021591381633969557,
+      "coordinate_up_MC_count": 25,
+      "coordinate_valid_targets": 512
+    },
+    {
+      "lane": 127,
+      "vector_proxy_mass": 0.018515625000000004,
+      "coordinate_proxy_mass": 0.0014062500194712913,
+      "coordinate_up_MC_count": 18,
+      "coordinate_valid_targets": 512
+    }
+  ],
+  "analytic_FK_pose_evaluations": 40014,
+  "actor_forward_rows": 78,
+  "newly_evaluated_arm_vectors": 39936,
+  "regenerated_original_scalar_variates": 559104,
+  "new_mask_scalar_draws": 279552,
+  "reused_coverage_receipt_sha256": "b32eb97c0a65c52023563a1c7d3d8e8da1e6c341277bb61a92b91fc532d5e3b9",
+  "original_measurements_reused_not_replications": true,
+  "MC_resolution_per_state": 0.001953125,
+  "optimizer_calls": 0,
+  "new_simulator_transitions": 0,
+  "elapsed_seconds": 0.13381774997105822,
+  "source_sha256": "08c4d99b29d35ea176612045cdcf29d80c77413b2d28fed352bc94c0b778c46f",
+  "caveats": [
+    "Matched conditional marginals only at the same fixed policy/state",
+    "Finite MC point gate, not a guaranteed distributional inequality or population effect",
+    "No temporal-coherence or learning-rate claim",
+    "No candidate or GPU admission from gate alone"
+  ]
+}

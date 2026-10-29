@@ -1,0 +1,14 @@
+{
+  "bc.py": {
+    "url": "https://raw.githubusercontent.com/haosulab/ManiSkill/6226567ce326625fa6eacf9aeb3f4008e4339f7e/examples/baselines/bc/bc.py",
+    "sha256": "dc7b1f3a55ce7c5dcf79a627105e3689e0e5a2240440e6e24d439632867412c3"
+  },
+  "README.md": {
+    "url": "https://raw.githubusercontent.com/haosulab/ManiSkill/6226567ce326625fa6eacf9aeb3f4008e4339f7e/examples/baselines/bc/README.md",
+    "sha256": "a33109cf3cd0438a74b0cef0bdf8d1658949f5f2cddeaeaea9b392e21fea22e5"
+  },
+  "examples.sh": {
+    "url": "https://raw.githubusercontent.com/haosulab/ManiSkill/6226567ce326625fa6eacf9aeb3f4008e4339f7e/examples/baselines/bc/examples.sh",
+    "sha256": "cc85c5ad92a2607d560c36d6f0e4b58bc4e92daea51aa6969ba7df1e31fdb183"
+  }
+}

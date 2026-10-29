@@ -1,0 +1,137 @@
+{
+  "state": "complete",
+  "config": {
+    "method": "target-sac",
+    "seed": 1,
+    "num_envs": 64,
+    "total_transitions": 102400,
+    "max_seconds": 150.0,
+    "batch_size": 2048,
+    "collection_block": 128,
+    "critic_updates_per_block": 8,
+    "learning_starts": 5000,
+    "replay_capacity": 1048576,
+    "critic_width": 256,
+    "gamma": 0.99,
+    "learning_rate": 0.001,
+    "policy_delay": 3
+  },
+  "versions": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "gpu": "NVIDIA L40S",
+  "source_sha256": "7c0f6390691f9f01aef90843ba1e46c062906ad40952ec830d2f02ca8d54d0d1",
+  "counts": {
+    "transitions": 102400,
+    "vector_step_calls": 1600,
+    "completed_episodes": 2048,
+    "explicit_reset_episodes": 64,
+    "inference_seconds": 1.6123485849998112,
+    "simulator_seconds": 44.505154406000116,
+    "replay_seconds": 1.2902216649999083,
+    "learner_seconds": 28.49314163899983,
+    "export_seconds": 0.8372705380000092,
+    "training_success_at_end_sum": 0,
+    "initial_random_transitions": 5056
+  },
+  "source_files_sha256": {
+    "replay_robot.py": "7c0f6390691f9f01aef90843ba1e46c062906ad40952ec830d2f02ca8d54d0d1",
+    "replay_learner.py": "aeea61b2a55458a207f1dccb6c996a411acda67bc3238dc9c9c33fec7bd965bf",
+    "sac_baseline.py": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca",
+    "joint_exploration.py": "895010dca8affe6bc3361ce0adf39863158433d2ca980dffded58df85afe43a7"
+  },
+  "checkpoint_exports": [
+    {
+      "label": "actor-step-0",
+      "transitions": 0,
+      "elapsed_seconds": 8.88229428,
+      "weights_sha256": "6f768e630c4751d41ed3bd032a21078ea44d12c219c00bf6e606caae0e4c149f",
+      "critic_updates": 0,
+      "actor_updates": 0
+    },
+    {
+      "label": "actor-step-51200",
+      "transitions": 51200,
+      "elapsed_seconds": 45.865311395,
+      "weights_sha256": "75ced09b9b8f50f4ed07504853edc0d137d8f5dcde49d6e017d7827685488225",
+      "critic_updates": 2888,
+      "actor_updates": 962
+    },
+    {
+      "label": "actor-step-102400",
+      "transitions": 102400,
+      "elapsed_seconds": 85.801194502,
+      "weights_sha256": "5b6a775e3ec19dd4e5f2c7e63d792b9a0191c5c646189503e5a5b27d4f939fb6",
+      "critic_updates": 6088,
+      "actor_updates": 2029
+    },
+    {
+      "label": "actor-final",
+      "transitions": 102400,
+      "elapsed_seconds": 85.959676812,
+      "weights_sha256": "5b6a775e3ec19dd4e5f2c7e63d792b9a0191c5c646189503e5a5b27d4f939fb6",
+      "critic_updates": 6088,
+      "actor_updates": 2029
+    }
+  ],
+  "optimizer_work": {
+    "critic_forward_rows": 58183680,
+    "actor_forward_rows": 16623616,
+    "critic_sampled_rows": 12468224,
+    "actor_sampled_rows": 4155392,
+    "critic_optimizer_calls": 6088,
+    "actor_optimizer_calls": 2029,
+    "alpha_optimizer_calls": 2029
+  },
+  "new_teacher_transitions": 0,
+  "demonstrations": 0,
+  "pretrained_weights": false,
+  "planning_queries": 0,
+  "extra_simulator_queries": 0,
+  "evaluation_transitions": 0,
+  "observation_dim": 48,
+  "action_dim": 8,
+  "horizon": 50,
+  "task_source_sha256": "ff76ae608f79ba3ea13334e61ccb72f291660f9461895c70e3c30f8390694440",
+  "algorithm": "Original low-alpha SAC learning; behavior-only joint or coordinate uniform mixture",
+  "collector_work": {
+    "policy_proposal_rows": 97344,
+    "coin_scalar_draws": 778752,
+    "uniform_scalar_draws": 778752,
+    "rows_with_any_uniform": 55193,
+    "rows_with_all_uniform": 0,
+    "uniform_per_coordinate": [
+      9716,
+      9817,
+      9838,
+      9630,
+      9652,
+      9604,
+      9728,
+      9670
+    ]
+  },
+  "behavior_mode": "coordinate",
+  "behavior_epsilon": 0.1,
+  "proposal_logprob_note": "Unmodified proposal density; not executed mixture-action density; never used in learner updates",
+  "warmup_note": "BRN100000 critic updates; <=64000 updates here, so normalized arms remain in BN warmup.",
+  "elapsed_seconds": 85.961561029,
+  "stopped_by": "steps",
+  "replay_size": 102400,
+  "critic_updates": 6088,
+  "actor_updates": 2029,
+  "expected_critic_updates_without_deadline": 6088,
+  "normalization_steps": [],
+  "admission": {
+    "experiment": "joint-exploration-20261029",
+    "route": "coordinate",
+    "launcher_sha256": "fc86b1cc12eb406a46f178d8eb4150f6cde5ecde2795cc3413f149627f43003b",
+    "collector_sha256": "895010dca8affe6bc3361ce0adf39863158433d2ca980dffded58df85afe43a7",
+    "primary_transitions": 102400,
+    "scope": "Fresh SAC behavior dependence, not a new target objective or assisted policy"
+  }
+}

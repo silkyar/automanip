@@ -1,0 +1,45 @@
+{
+  "state": "partial_or_failed",
+  "experiment": "joint-exploration-20261029",
+  "plan_sha256": "4a35139b207da6fe35e5f55e6ae87aa189620e23aa61c3ff511517a5726465f4",
+  "arms": {
+    "joint": {
+      "state": "failed",
+      "worker_call_id": "fc-01M63YGZB9ZD75DT4CXXCKAZBV",
+      "error": "UnicodeDecodeError: 'utf-32-be' codec can't decode bytes in position 5040-5041: truncated data"
+    },
+    "coordinate": {
+      "state": "failed",
+      "worker_call_id": "fc-01M63YGZDMASCVYA8793AC6E9B",
+      "error": "UnicodeDecodeError: 'utf-32-be' codec can't decode bytes in position 5036-5037: truncated data"
+    }
+  },
+  "confirmation_queries": 0,
+  "file_visibility_retries": [
+    {
+      "path": "joint/receipt.json",
+      "retry": 1
+    },
+    {
+      "path": "joint/receipt.json",
+      "retry": 2
+    },
+    {
+      "path": "joint/receipt.json",
+      "retry": 3
+    },
+    {
+      "path": "joint/receipt.json",
+      "retry": 4
+    },
+    {
+      "path": "coordinate/receipt.json",
+      "retry": 1
+    },
+    {
+      "path": "coordinate/receipt.json",
+      "retry": 2
+    }
+  ],
+  "primary_verdict": "missing_primary"
+}

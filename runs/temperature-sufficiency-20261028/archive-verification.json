@@ -1,0 +1,9 @@
+{
+  "state": "verified",
+  "candidate_files": 26,
+  "bytes": 17714985,
+  "training_transitions": 256000,
+  "development_queries": 3,
+  "primary_verdict": "partial_or_inconclusive",
+  "initial_safe_actor_validated": true
+}

@@ -1,0 +1,126 @@
+{
+  "job": {
+    "job_id": "stackcube-risk-continuation-20261028-risk-episode-mean-seed-1",
+    "method": "risk-episode-mean",
+    "seed": 1,
+    "trainer_sha256": "3c5fbf9334a16a1cdb584000ff74c49e05f645e9177488f079ca2e917142c2f0",
+    "reference_sha256": "307a2bc5996d5def9f696ab35b27a9cf96a5cf7401c678ecc981b78170d1084b",
+    "gpu": "L40S",
+    "trainer_seconds_cap": 300,
+    "requested_steps": 2048000,
+    "actual_steps_ceiling": 2048000
+  },
+  "state": "complete",
+  "dispatched_at": 1793150942.597167,
+  "admitted_at": 1793150946.989488,
+  "queue_seconds": 4.392320871353149,
+  "expires_at": 1793151242.597167,
+  "trainer_sha256": "3c5fbf9334a16a1cdb584000ff74c49e05f645e9177488f079ca2e917142c2f0",
+  "gpu_requested": "L40S",
+  "confirmation_queries": 0,
+  "new_training_processes": 1,
+  "training_prefix": {
+    "training_steps": 24985600,
+    "trainer_seconds": 1088.7667,
+    "training_seed": 1,
+    "native_checkpoint_sha256": "307a2bc5996d5def9f696ab35b27a9cf96a5cf7401c678ecc981b78170d1084b",
+    "actor_weights_sha256": "39ba198d0c98af14a3d2965ef9a3be859f31aa3c4889db3da311da910c2da153",
+    "optimizer_state_restarted": true,
+    "initialization": "continuation from own confirmed PPO policy; not fresh random initialization"
+  },
+  "reference_verified": true,
+  "gpu_actual_name": "NVIDIA L40S",
+  "versions": {
+    "torch": "2.6.0+cu124",
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "subprocess_started_at": 1793150950.377963,
+  "trainer_process_seconds": 146.27237248199998,
+  "return_code": 0,
+  "nonfinite_diagnostic_scalars": {},
+  "actual_steps": 2048000,
+  "completed_rollouts": 40,
+  "optimizer_step_count": 9289,
+  "optimizer_step_upper_bound": 10240,
+  "total_training_steps_including_prefix": 27033600,
+  "built_in_evaluation_calls": 2,
+  "built_in_evaluation_transitions": 800,
+  "built_in_evaluation_episodes": 16,
+  "stopped_early": false,
+  "final_logstd_per_dimension": [
+    -1.0222855806350708,
+    -0.8533321022987366,
+    -0.9822165966033936,
+    -0.9636240005493164,
+    -0.25219547748565674,
+    -0.675277054309845,
+    0.0013448538957163692,
+    -0.5020713806152344
+  ],
+  "audit_trace_rows": 40,
+  "actor_objective": "risk-episode-mean",
+  "actor_alpha": 1.0,
+  "training_success_labels_diagnostic_only": true,
+  "wrapper_seconds": 149.936706072,
+  "completed_at": 1793151096.9261956,
+  "files": [
+    {
+      "path": "attempt.json",
+      "bytes": 142,
+      "sha256": "9c6772347b7f910cced1188855c3ca18248f2c9b204f1fdfa19dc10ee1f7f52d",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "reference.pt",
+      "bytes": 1168418,
+      "sha256": "307a2bc5996d5def9f696ab35b27a9cf96a5cf7401c678ecc981b78170d1084b",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "scalars.json",
+      "bytes": 282183,
+      "sha256": "13a80e0e949129eba358d4482d4b09987e7d45467863af6eade3a002b1923627",
+      "trainer_seconds": 146.46393299102783
+    },
+    {
+      "path": "trainer.py",
+      "bytes": 31586,
+      "sha256": "3c5fbf9334a16a1cdb584000ff74c49e05f645e9177488f079ca2e917142c2f0",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "work/train.log",
+      "bytes": 37971,
+      "sha256": "589129ca3434a85fc3f81d0026702ef726a98dc3fb1a214e0471a6be8bb2f09a",
+      "trainer_seconds": 144.29489088058472
+    },
+    {
+      "path": "work/runs/stackcube-risk-continuation-20261028-risk-episode-mean-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "988fad98c61cac6ed57dd0a36df18a6ab50d8f930f36c789accb6627e04eaf80",
+      "trainer_seconds": 22.00550603866577
+    },
+    {
+      "path": "work/runs/stackcube-risk-continuation-20261028-risk-episode-mean-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "5c290e21fbb79e388a2a6adc3dc1c8de3cc7e7ab4d1fa09c15ab9210b5d3198e",
+      "trainer_seconds": 96.7529649734497
+    },
+    {
+      "path": "work/runs/stackcube-risk-continuation-20261028-risk-episode-mean-seed-1/events.out.tfevents.1793150968.modal.8.0",
+      "bytes": 152242,
+      "sha256": "d39d71e0ab1c0c0295a1e66ff90401fdbdd89b05729c4600793202ad3af2bdd6",
+      "trainer_seconds": 143.7138795852661
+    },
+    {
+      "path": "work/runs/stackcube-risk-continuation-20261028-risk-episode-mean-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "44508c17acea078edf8e9190a133af3c95c16bf7e8df4e0afd54ff281ef7a85d",
+      "trainer_seconds": 143.95088410377502
+    }
+  ],
+  "output_bytes": 5176369
+}

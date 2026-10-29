@@ -1,0 +1,37 @@
+{
+  "candidate_id": "stackcube-full-horizon-20261027",
+  "registered_at": "2026-10-27T19:20:18.237716+00:00",
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "promotion_manifest_sha256": "4b8c71fb7499600a0433e428b0956801f8fbbf9e890a162fa403277a9ec90d69",
+  "split": "confirmation",
+  "episodes_per_policy": 512,
+  "total_planned_episodes": 1536,
+  "policies": [
+    {
+      "seed": 1,
+      "weights_sha256": "39ba198d0c98af14a3d2965ef9a3be859f31aa3c4889db3da311da910c2da153",
+      "policy_dir": "checkpoints/stackcube-full-horizon-20261027/seed-1/policy"
+    },
+    {
+      "seed": 2,
+      "weights_sha256": "117e2be0c0dffd8dd91f5d5093cbd69cb80f5579505b4ed04203a9f57b75299b",
+      "policy_dir": "checkpoints/stackcube-full-horizon-20261027/seed-2/policy"
+    },
+    {
+      "seed": 3,
+      "weights_sha256": "69064ec80d1649e82d3083838236209848f49fbac154332e64dfd6020edda0a6",
+      "policy_dir": "checkpoints/stackcube-full-horizon-20261027/seed-3/policy"
+    }
+  ],
+  "acceptance_rule": {
+    "mean_success_at_least": 0.9,
+    "every_training_seed_success_at_least": 0.85
+  },
+  "purpose": "One reserved confirmation for reference eligibility; not adaptive optimization, private final holdout, or sample-efficiency discovery",
+  "new_training_runs": 0,
+  "maximum_parallel_evaluations": 3,
+  "additional_spend_cap_usd": 2,
+  "evaluator_timeout_seconds": 1200,
+  "retries": 0,
+  "no_requery_on_failure": true
+}

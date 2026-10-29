@@ -1,0 +1,122 @@
+[
+  {
+    "path": "attempt.json",
+    "bytes": 87,
+    "sha256": "57e100f6b0b8ff33c76d58e9529272de9d291dae84da8b8637d1232f42d20bc9"
+  },
+  {
+    "path": "split-moments/run/actor-final/manifest.json",
+    "bytes": 287,
+    "sha256": "15c50c4dfb60ebcb7374a8c36899ee8781c8f933c696f473491417c900ab5026"
+  },
+  {
+    "path": "split-moments/run/actor-final/weights.json",
+    "bytes": 1663563,
+    "sha256": "7e64d0fe4020d43b6dbb39e1d32d5deeb28f2e0b5bd54161b8882d9b23aaa049"
+  },
+  {
+    "path": "split-moments/run/actor-final-state.npz",
+    "bytes": 937977,
+    "sha256": "4f26b8a4706493acd2d918a617b5bb5d8913321326b099711d9227dbdd3b71ef"
+  },
+  {
+    "path": "split-moments/run/actor-final-trajectory.npz",
+    "bytes": 1078585,
+    "sha256": "5bc443184c8c2f2d811ca5c3b3de6c9773de738ce037b511ca4fa9ee435df68b"
+  },
+  {
+    "path": "split-moments/run/actor-step-0/manifest.json",
+    "bytes": 287,
+    "sha256": "8f658f26c2aa0d026d8bb385410c273f7c8efe8fc8f3f4c19b852247320f8e26"
+  },
+  {
+    "path": "split-moments/run/actor-step-0/weights.json",
+    "bytes": 1687178,
+    "sha256": "6f768e630c4751d41ed3bd032a21078ea44d12c219c00bf6e606caae0e4c149f"
+  },
+  {
+    "path": "split-moments/run/actor-step-0-state.npz",
+    "bytes": 906470,
+    "sha256": "0d4529b598e8d21c0872bd4d4bebb166777dd8d22f7a757e95526b48cbdf7165"
+  },
+  {
+    "path": "split-moments/run/actor-step-102400/manifest.json",
+    "bytes": 287,
+    "sha256": "5f605412eacc3830674b6f609415e27595a235c194174b97700147f732db2a65"
+  },
+  {
+    "path": "split-moments/run/actor-step-102400/weights.json",
+    "bytes": 1683975,
+    "sha256": "ab8ac727fcdba06eed05d4352f83f218f9cf316591a8749532b5965e45c5f18e"
+  },
+  {
+    "path": "split-moments/run/actor-step-102400-state.npz",
+    "bytes": 937677,
+    "sha256": "e30c90c7f1819301af5ae3213370701925b22e5fcb14d1b9607c3c3679967ede"
+  },
+  {
+    "path": "split-moments/run/actor-step-102400-trajectory.npz",
+    "bytes": 1112575,
+    "sha256": "9aa59948f3d07c66f5327b01aef97c605338780755e80e73eca29a143e07c78d"
+  },
+  {
+    "path": "split-moments/run/actor-step-256000/manifest.json",
+    "bytes": 287,
+    "sha256": "3a01d758788930622588d36cf9fbc24e9735f251e2b1d8b97aa08d4e16274b13"
+  },
+  {
+    "path": "split-moments/run/actor-step-256000/weights.json",
+    "bytes": 1677686,
+    "sha256": "65debf6ef1ecef06ba1e4f298dfe51d844875b0d024a38e3fee534e283872329"
+  },
+  {
+    "path": "split-moments/run/actor-step-256000-state.npz",
+    "bytes": 938712,
+    "sha256": "ad1bee98a416833ae9a0b85ebea31e934ac726edd91bfd800e3634ced58d908b"
+  },
+  {
+    "path": "split-moments/run/actor-step-256000-trajectory.npz",
+    "bytes": 1111287,
+    "sha256": "caa118b44c80c1a87a8798314f56b732bc65c82a1228e6b0a349dc330cd0fb17"
+  },
+  {
+    "path": "split-moments/run/actor-step-51200/manifest.json",
+    "bytes": 287,
+    "sha256": "91fc362e9e4b98060377542b01b2c0bf77e856952b877f7e84e9d986ee247930"
+  },
+  {
+    "path": "split-moments/run/actor-step-51200/weights.json",
+    "bytes": 1683676,
+    "sha256": "694e26857e7db35baf92b259ee2fcdb43fd48401951640b9c7fbdd16152b55d1"
+  },
+  {
+    "path": "split-moments/run/actor-step-51200-state.npz",
+    "bytes": 937000,
+    "sha256": "24c0e7406582cd32410394cccf1fbceb5348c70c7caae27bcb0eaaf2a6378b7e"
+  },
+  {
+    "path": "split-moments/run/actor-step-51200-trajectory.npz",
+    "bytes": 1109687,
+    "sha256": "97b18b8e23c6856166ea6057333c1e22982eee5acd248d8ae503e963a473075d"
+  },
+  {
+    "path": "split-moments/run/learning.jsonl",
+    "bytes": 55803,
+    "sha256": "9cb8f94d3be5047deff0f57a4e5991d3f1c5f9dcaf866cfc7e2789e1179deff2"
+  },
+  {
+    "path": "split-moments/run/metadata.json",
+    "bytes": 2143,
+    "sha256": "94bf9bccc14aad909c2b842538fa57c9d65b791005d20773aec62ff81a6bf4a9"
+  },
+  {
+    "path": "split-moments/run/report.json",
+    "bytes": 3842,
+    "sha256": "5410c7604deaa22aaeb7533cecc10b1adcc3626d0a211967afdcacb947dcac15"
+  },
+  {
+    "path": "split-moments/training.log",
+    "bytes": 999,
+    "sha256": "3d8f78e19f4ad0f0d7fe7d2c1a756c30a54214491798f458a25127bb9c7da448"
+  }
+]

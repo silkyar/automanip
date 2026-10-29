@@ -1,0 +1,90 @@
+{
+  "metric": "ManiSkill stock PickCube success at episode end; release not required",
+  "evaluation_scope": "Paired public development episodes only; no confirmation or private holdout",
+  "task_fingerprint": "aa34b8495725f90c42e151cfa42c59698bc89e02712cce302db253568661ea79",
+  "backend": "physx_cuda",
+  "training_source_sha256": "b64658434caf26e681143c40966ac1a169b498957b077cb49df8051c4d8e64b6",
+  "mean_seed_success_rate": 0.9869791666666666,
+  "total_training_seconds": 1800.1054314430803,
+  "total_environment_transitions": 17133056,
+  "runs": [
+    {
+      "training_seed": 1,
+      "training_seconds": 600.0429382460425,
+      "environment_transitions": 5853696,
+      "learner_updates": 15060,
+      "status": "time_budget",
+      "development_episodes": 128,
+      "successes_at_end": 125,
+      "success_at_end_rate": 0.9765625,
+      "successes_ever": 126,
+      "failed_episodes": 0,
+      "all_episodes_full_horizon": true,
+      "wilson_95_interval": [
+        0.9333562549485678,
+        0.9919975836032445
+      ],
+      "weights_sha256": "fec1691e39ed4104f4a9c7ecc36284ec1e5c22a4d72197bf7c7fbb78d48d1d47",
+      "policy_directory": "runs/runpod-20261025/runs/reference/seed-1/policy",
+      "versions": {
+        "mani_skill": "3.0.0b21",
+        "torch": "2.6.0",
+        "numpy": "1.26.4",
+        "gymnasium": "0.29.1",
+        "sapien": "3.0.0b1"
+      }
+    },
+    {
+      "training_seed": 2,
+      "training_seconds": 600.0195033190539,
+      "environment_transitions": 5657600,
+      "learner_updates": 15939,
+      "status": "time_budget",
+      "development_episodes": 128,
+      "successes_at_end": 127,
+      "success_at_end_rate": 0.9921875,
+      "successes_ever": 127,
+      "failed_episodes": 0,
+      "all_episodes_full_horizon": true,
+      "wilson_95_interval": [
+        0.9570737405611394,
+        0.9986195681071257
+      ],
+      "weights_sha256": "44bf86e51d92dec007656e1ca8bc320815145da1f32b5730cde04c22dec41c4c",
+      "policy_directory": "runs/runpod-20261025/runs/reference/seed-2/policy",
+      "versions": {
+        "mani_skill": "3.0.0b21",
+        "torch": "2.6.0",
+        "numpy": "1.26.4",
+        "gymnasium": "0.29.1",
+        "sapien": "3.0.0b1"
+      }
+    },
+    {
+      "training_seed": 3,
+      "training_seconds": 600.0429898779839,
+      "environment_transitions": 5621760,
+      "learner_updates": 15090,
+      "status": "time_budget",
+      "development_episodes": 128,
+      "successes_at_end": 127,
+      "success_at_end_rate": 0.9921875,
+      "successes_ever": 127,
+      "failed_episodes": 0,
+      "all_episodes_full_horizon": true,
+      "wilson_95_interval": [
+        0.9570737405611394,
+        0.9986195681071257
+      ],
+      "weights_sha256": "7234ac96abb37a510cfff27927121cf510717772384f9e10b7a7b5a919e99b1b",
+      "policy_directory": "runs/runpod-20261025/runs/reference/seed-3/policy",
+      "versions": {
+        "mani_skill": "3.0.0b21",
+        "torch": "2.6.0",
+        "numpy": "1.26.4",
+        "gymnasium": "0.29.1",
+        "sapien": "3.0.0b1"
+      }
+    }
+  ]
+}

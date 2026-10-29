@@ -12,8 +12,8 @@ class TaskSpec:
     control_mode: str = "pd_ee_delta_pose"
     horizon: int = 50
     mani_skill_version: str = "3.0.0b21"
-    # State dimension must be measured and frozen on the pinned simulator.
-    # Do not accept a candidate-provided dimension as the benchmark interface.
+    # Measured with the pinned ManiSkill CPU task on macOS.
+    observation_dim: int = 42
     action_dim: int = 7
 
     @property

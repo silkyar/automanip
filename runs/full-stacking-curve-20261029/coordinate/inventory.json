@@ -1,0 +1,147 @@
+[
+  {
+    "path": "attempt.json",
+    "bytes": 140,
+    "sha256": "e306d9556d5e88fada1f1001d2c18d2bd6a5d4ff651d1040bf7146138ae78eeb"
+  },
+  {
+    "path": "receipt.json",
+    "bytes": 5709,
+    "sha256": "376a61cf3593ba056bd624005771e7fdc68dcb1768656306ea66698bdfa29275"
+  },
+  {
+    "path": "run/actor-final/manifest.json",
+    "bytes": 287,
+    "sha256": "04dd5485820b6d5d191b7310ea9b10d5ac5661144196ded22d834f0472a71df3"
+  },
+  {
+    "path": "run/actor-final/weights.json",
+    "bytes": 1640240,
+    "sha256": "2fe69e699fd06a3d64657a79c569e03f5a776e8f6afddf65ce770a9b805fa6ce"
+  },
+  {
+    "path": "run/actor-final-state.npz",
+    "bytes": 1530391,
+    "sha256": "aff6b8d63bde627c16d092a555b7175e31d1cbb4d4083feef0042d88ba72217b"
+  },
+  {
+    "path": "run/actor-final-trajectory.npz",
+    "bytes": 1295037,
+    "sha256": "5ddeed9ef776c71b9ea7999a38d40f60fcffaebaf7b07e65cfea8f76c3fcc5f4"
+  },
+  {
+    "path": "run/actor-step-0/manifest.json",
+    "bytes": 287,
+    "sha256": "a91404eda9e80ec3f34a05292789d028a28e774482f7a079b14fe4867308a1a7"
+  },
+  {
+    "path": "run/actor-step-0/weights.json",
+    "bytes": 1687188,
+    "sha256": "6f778277f0b7025acb49c1c51c79e400c150e0ecfe8e538935c7170ffe66b5b7"
+  },
+  {
+    "path": "run/actor-step-0-state.npz",
+    "bytes": 1492007,
+    "sha256": "e17d839b6ecce0deec54324afb0e040b5ca50970cbf1e50157ac1001eac602d2"
+  },
+  {
+    "path": "run/actor-step-102400/manifest.json",
+    "bytes": 287,
+    "sha256": "f67abfd75cf6ab3f2768e94ffb9d7ef544d3a76543c6a8cf87cb9d78027946fb"
+  },
+  {
+    "path": "run/actor-step-102400/weights.json",
+    "bytes": 1671358,
+    "sha256": "80abb7a45fa171239e81b768f736c219f376bcd465a5ea16f8608023c12334f1"
+  },
+  {
+    "path": "run/actor-step-102400-state.npz",
+    "bytes": 1521861,
+    "sha256": "337cf65386fc14e114491c9da29dabf121c6aced99a8cd7fb7d85415e373f7ee"
+  },
+  {
+    "path": "run/actor-step-102400-trajectory.npz",
+    "bytes": 1276316,
+    "sha256": "8d584be9a15a28f13a99d3228c4496b11bd4fd583b35e3aac9268ed5ffedb7bb"
+  },
+  {
+    "path": "run/actor-step-256000/manifest.json",
+    "bytes": 287,
+    "sha256": "86b971bfb86feb96bc97082c3a2376e26dc4a2e0f93c082c9189e7413418b13d"
+  },
+  {
+    "path": "run/actor-step-256000/weights.json",
+    "bytes": 1651195,
+    "sha256": "e16280374ac40a07bf6b12a84d759950d45b0c9f9e2b51eda87532440a1ee505"
+  },
+  {
+    "path": "run/actor-step-256000-state.npz",
+    "bytes": 1527567,
+    "sha256": "e3cd46f9f4f81089514f884bc538c1c08afd5ee5664d4e1216cb4d1fcc797ff6"
+  },
+  {
+    "path": "run/actor-step-256000-trajectory.npz",
+    "bytes": 1288228,
+    "sha256": "dcba4d33ca07d52c06f6d48483c95ee9363b4e5ea559418eaa3bcde891e5cedc"
+  },
+  {
+    "path": "run/actor-step-51200/manifest.json",
+    "bytes": 287,
+    "sha256": "961ef01ac3759e0702c63fdbe5109a78ee31a554bc61e5722a9460c3cf50e465"
+  },
+  {
+    "path": "run/actor-step-51200/weights.json",
+    "bytes": 1679799,
+    "sha256": "9d48baff29690bd1e06feaaa11a4ce4e2f38cb3f087f10caf8733f054d2ab3e6"
+  },
+  {
+    "path": "run/actor-step-51200-state.npz",
+    "bytes": 1517076,
+    "sha256": "a5798d0f10e44661331c97350c1bb79bbc611f9a939175d6c4e8a04de29c814a"
+  },
+  {
+    "path": "run/actor-step-51200-trajectory.npz",
+    "bytes": 1275981,
+    "sha256": "f57c34f522f818e592d8855cf41d147c1cb029845805020258e9a96e738328ee"
+  },
+  {
+    "path": "run/actor-step-512000/manifest.json",
+    "bytes": 287,
+    "sha256": "231ce1f8e09fdd116dc243addddd4f0cb2ee8b86315ec7f6bf41bade50845de0"
+  },
+  {
+    "path": "run/actor-step-512000/weights.json",
+    "bytes": 1644283,
+    "sha256": "30ab9cbed4ca25e0ecdcbefe355232c9df26db730c7527b5ca7c4f65b5762f84"
+  },
+  {
+    "path": "run/actor-step-512000-state.npz",
+    "bytes": 1529857,
+    "sha256": "c457e9f53a7d997b995890a8550319115a5a13309e37993524342b57b9092e8c"
+  },
+  {
+    "path": "run/actor-step-512000-trajectory.npz",
+    "bytes": 1295831,
+    "sha256": "7f1b86d55198cf14e44d3d05c16c0e06130505d62fd48afb50bf18f95dc9fe1a"
+  },
+  {
+    "path": "run/learning.jsonl",
+    "bytes": 150190,
+    "sha256": "b7c709afc91cb63f3a2df2bfb2f22b8fe5f22ff67b548e1efdd22773e2c16fc6"
+  },
+  {
+    "path": "run/metadata.json",
+    "bytes": 2750,
+    "sha256": "976ed8792e9c3c1814712e7293dbd2faca4f20ee5dfd170734428c62d00ab59a"
+  },
+  {
+    "path": "run/report.json",
+    "bytes": 5175,
+    "sha256": "034358cb4856925f04a11266c3b8e881199b1f000a9ee27b7f598b7012c0cb9d"
+  },
+  {
+    "path": "training.log",
+    "bytes": 920,
+    "sha256": "c90e9e2e92225ee24f43623fb41608c357567835f745abcb6cb33cec6559d684"
+  }
+]

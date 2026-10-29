@@ -1,0 +1,35 @@
+{
+  "admitted": true,
+  "experiment": "entropy-route-20261029",
+  "routes": [
+    "high-actor-low-backup",
+    "low-actor-high-backup"
+  ],
+  "source_sha256": {
+    "replay_learner.py": "f5f02cd89321fd75dca5b9db8bca08a554c5b5c37e48da6468147bf11fd35642",
+    "replay_learner_base.py": "009b4662a3b248e8e677905e2e7cafe2a69611a9259ab5fe91ec0cbe3b2efdfc",
+    "sac_baseline.py": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca",
+    "replay_robot.py": "e753b684f97b475dcadd7bdf1736395a79485ea4f431fa8f04083ffb89945d7f",
+    "entropy_route.py": "d8592895769cc450ff812c4acd722ae5c192819fce3f3aea97309a4df927285d"
+  },
+  "source_mapping": {
+    "replay_learner.py": "entropy_route_learner.py",
+    "replay_learner_base.py": "replay_learner.py",
+    "sac_baseline.py": "sac_baseline.py",
+    "replay_robot.py": "replay_robot.py",
+    "entropy_route.py": "entropy_route.py"
+  },
+  "scientific_plan": "docs/entropy-route-plan-20261029.md",
+  "scientific_plan_sha256": "5f5d5ecf4bd31c0944c78280858cde6c3f3e86854232903458beec6c80172427",
+  "adapter_sha256": "f8f7269659775c84d46470414942fb15ed3ce76658b9614512d2b10ef7fb88c9",
+  "initial_actor_sha256": "6f768e630c4751d41ed3bd032a21078ea44d12c219c00bf6e606caae0e4c149f",
+  "total_transitions_per_arm": 102400,
+  "max_child_seconds_per_arm": 150,
+  "development_points": [
+    102400
+  ],
+  "budget_cap_usd": 2,
+  "root_admission_note": "Explicit user resumption; fixedCPU identity/terminal tests andindependentreview passed; exactsource pins and2USDsharedcapreservation. Two102.4k/150srouteinterventions only; no confirmation, repeats, extensions or automaticpromotion.",
+  "cpu_gate_sha256": "b2275107d1c1adc560d397db2aa7e66f1ba0a76876b441fa0e61b50e2158248a",
+  "root_admitted_epoch": 1793276393.602144
+}

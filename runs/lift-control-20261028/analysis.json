@@ -1,0 +1,275 @@
+{
+  "kind": "Assisted mechanical probe; no learning efficiency estimate",
+  "state": "failed",
+  "eligible_lanes": 6,
+  "validity_passed": false,
+  "conditions": {
+    "A": {
+      "data_sha256": "330b9cd3a2fdcbb8fd1ba4b339bf5c8e75895a91813ec3638da4cdad08046c9a",
+      "lanes": [
+        {
+          "lane": 0,
+          "public_seed": 93284000,
+          "eligible": false,
+          "intervention_start_step": -1,
+          "completed_steps": 50,
+          "ever_grasp": true,
+          "final_grasp": false,
+          "reset_relative_max_cube_rise_m": 0.007410747930407524,
+          "reset_relative_ever_3cm_lift": false
+        },
+        {
+          "lane": 1,
+          "public_seed": 93284001,
+          "eligible": false,
+          "intervention_start_step": -1,
+          "completed_steps": 50,
+          "ever_grasp": true,
+          "final_grasp": true,
+          "reset_relative_max_cube_rise_m": 0.005539055913686752,
+          "reset_relative_ever_3cm_lift": false
+        },
+        {
+          "lane": 2,
+          "public_seed": 93284002,
+          "eligible": true,
+          "intervention_start_step": 24,
+          "completed_steps": 50,
+          "ever_grasp": true,
+          "final_grasp": true,
+          "reset_relative_max_cube_rise_m": 0.007130565121769905,
+          "reset_relative_ever_3cm_lift": false,
+          "max_cube_rise_after_intervention_m": 0.005917636677622795,
+          "max_tcp_rise_after_intervention_m": 0.0058822669088840485,
+          "cube_lift_3cm": false,
+          "delivered_tcp_dose_4cm": false,
+          "drops_after_intervention": 0,
+          "mean_gripper_action_after_intervention": -0.09669792756394502,
+          "final_finger_qpos": [
+            0.01220129244029522,
+            0.019137928262352943
+          ],
+          "final_tcp_z_target_error_m": 0.05422136321663856
+        },
+        {
+          "lane": 3,
+          "public_seed": 93284003,
+          "eligible": true,
+          "intervention_start_step": 24,
+          "completed_steps": 50,
+          "ever_grasp": true,
+          "final_grasp": true,
+          "reset_relative_max_cube_rise_m": 0.004643846303224564,
+          "reset_relative_ever_3cm_lift": false,
+          "max_cube_rise_after_intervention_m": 0.002714909613132477,
+          "max_tcp_rise_after_intervention_m": 0.0030914992094039917,
+          "cube_lift_3cm": false,
+          "delivered_tcp_dose_4cm": false,
+          "drops_after_intervention": 0,
+          "mean_gripper_action_after_intervention": 0.9807319030809292,
+          "final_finger_qpos": [
+            0.015316416509449482,
+            0.021677903831005096
+          ],
+          "final_tcp_z_target_error_m": 0.056908500790596006
+        },
+        {
+          "lane": 4,
+          "public_seed": 93284004,
+          "eligible": true,
+          "intervention_start_step": 14,
+          "completed_steps": 50,
+          "ever_grasp": true,
+          "final_grasp": true,
+          "reset_relative_max_cube_rise_m": 0.004751231521368027,
+          "reset_relative_ever_3cm_lift": false,
+          "max_cube_rise_after_intervention_m": 0.004765914753079414,
+          "max_tcp_rise_after_intervention_m": 0.0016331747174263,
+          "cube_lift_3cm": false,
+          "delivered_tcp_dose_4cm": false,
+          "drops_after_intervention": 0,
+          "mean_gripper_action_after_intervention": 0.7714973640480531,
+          "final_finger_qpos": [
+            0.0075598228722810745,
+            0.018088974058628082
+          ],
+          "final_tcp_z_target_error_m": 0.0592423802614212
+        },
+        {
+          "lane": 5,
+          "public_seed": 93284005,
+          "eligible": true,
+          "intervention_start_step": 21,
+          "completed_steps": 50,
+          "ever_grasp": true,
+          "final_grasp": true,
+          "reset_relative_max_cube_rise_m": 0.009353095665574074,
+          "reset_relative_ever_3cm_lift": false,
+          "max_cube_rise_after_intervention_m": 0.004042565822601318,
+          "max_tcp_rise_after_intervention_m": 0.0026577189564704895,
+          "cube_lift_3cm": false,
+          "delivered_tcp_dose_4cm": false,
+          "drops_after_intervention": 0,
+          "mean_gripper_action_after_intervention": 0.7618687478383103,
+          "final_finger_qpos": [
+            0.01624380424618721,
+            0.021100152283906937
+          ],
+          "final_tcp_z_target_error_m": 0.05842832237482071
+        },
+        {
+          "lane": 6,
+          "public_seed": 93284006,
+          "eligible": true,
+          "intervention_start_step": 25,
+          "completed_steps": 50,
+          "ever_grasp": true,
+          "final_grasp": true,
+          "reset_relative_max_cube_rise_m": 0.00571865402162075,
+          "reset_relative_ever_3cm_lift": false,
+          "max_cube_rise_after_intervention_m": 0.0034235790371894836,
+          "max_tcp_rise_after_intervention_m": 0.003935396671295166,
+          "cube_lift_3cm": false,
+          "delivered_tcp_dose_4cm": false,
+          "drops_after_intervention": 0,
+          "mean_gripper_action_after_intervention": 0.9621825705076624,
+          "final_finger_qpos": [
+            0.013207880780100822,
+            0.01935012824833393
+          ],
+          "final_tcp_z_target_error_m": 0.05606460332870483
+        },
+        {
+          "lane": 7,
+          "public_seed": 93284007,
+          "eligible": true,
+          "intervention_start_step": 21,
+          "completed_steps": 50,
+          "ever_grasp": true,
+          "final_grasp": true,
+          "reset_relative_max_cube_rise_m": 0.006190042942762375,
+          "reset_relative_ever_3cm_lift": false,
+          "max_cube_rise_after_intervention_m": 0.0030493661761283875,
+          "max_tcp_rise_after_intervention_m": 0.0030860528349876404,
+          "cube_lift_3cm": false,
+          "delivered_tcp_dose_4cm": false,
+          "drops_after_intervention": 0,
+          "mean_gripper_action_after_intervention": 0.9650145035266491,
+          "final_finger_qpos": [
+            0.01615716516971588,
+            0.021458638831973076
+          ],
+          "final_tcp_z_target_error_m": 0.05937814101576805
+        }
+      ],
+      "eligible_completed": 6,
+      "cube_lifts": 0,
+      "delivered_tcp_doses": 0,
+      "both_lift_and_dose": 0
+    },
+    "B": {
+      "data_sha256": "00237483eed71e3ac9f217be3420156ac715438d83075fec7f0a50ac0ab1d875",
+      "lanes": [
+        {
+          "lane": 0,
+          "public_seed": 93284000,
+          "eligible": false,
+          "intervention_start_step": -1,
+          "completed_steps": 14,
+          "ever_grasp": false,
+          "final_grasp": false,
+          "reset_relative_max_cube_rise_m": -9.685754776000977e-08,
+          "reset_relative_ever_3cm_lift": false
+        },
+        {
+          "lane": 1,
+          "public_seed": 93284001,
+          "eligible": false,
+          "intervention_start_step": -1,
+          "completed_steps": 14,
+          "ever_grasp": false,
+          "final_grasp": false,
+          "reset_relative_max_cube_rise_m": 1.341104507446289e-07,
+          "reset_relative_ever_3cm_lift": false
+        },
+        {
+          "lane": 2,
+          "public_seed": 93284002,
+          "eligible": true,
+          "intervention_start_step": 24,
+          "completed_steps": 14,
+          "ever_grasp": false,
+          "final_grasp": false,
+          "reset_relative_max_cube_rise_m": -1.993030309677124e-07,
+          "reset_relative_ever_3cm_lift": false
+        },
+        {
+          "lane": 3,
+          "public_seed": 93284003,
+          "eligible": true,
+          "intervention_start_step": 24,
+          "completed_steps": 14,
+          "ever_grasp": false,
+          "final_grasp": false,
+          "reset_relative_max_cube_rise_m": -8.754432201385498e-08,
+          "reset_relative_ever_3cm_lift": false
+        },
+        {
+          "lane": 4,
+          "public_seed": 93284004,
+          "eligible": true,
+          "intervention_start_step": 14,
+          "completed_steps": 14,
+          "ever_grasp": true,
+          "final_grasp": true,
+          "reset_relative_max_cube_rise_m": 0.00040883012115955353,
+          "reset_relative_ever_3cm_lift": false
+        },
+        {
+          "lane": 5,
+          "public_seed": 93284005,
+          "eligible": true,
+          "intervention_start_step": 21,
+          "completed_steps": 14,
+          "ever_grasp": false,
+          "final_grasp": false,
+          "reset_relative_max_cube_rise_m": 7.195398211479187e-06,
+          "reset_relative_ever_3cm_lift": false
+        },
+        {
+          "lane": 6,
+          "public_seed": 93284006,
+          "eligible": true,
+          "intervention_start_step": 25,
+          "completed_steps": 14,
+          "ever_grasp": false,
+          "final_grasp": false,
+          "reset_relative_max_cube_rise_m": -7.636845111846924e-08,
+          "reset_relative_ever_3cm_lift": false
+        },
+        {
+          "lane": 7,
+          "public_seed": 93284007,
+          "eligible": true,
+          "intervention_start_step": 21,
+          "completed_steps": 14,
+          "ever_grasp": false,
+          "final_grasp": false,
+          "reset_relative_max_cube_rise_m": -2.7939677238464355e-08,
+          "reset_relative_ever_3cm_lift": false
+        }
+      ],
+      "eligible_completed": 0,
+      "cube_lifts": 0,
+      "delivered_tcp_doses": 0,
+      "both_lift_and_dose": 0
+    },
+    "C": {
+      "missing": true
+    },
+    "D": {
+      "missing": true
+    }
+  },
+  "interpretation": "No paired causal conclusion: incomplete or invalid probe"
+}

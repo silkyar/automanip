@@ -1,0 +1,13 @@
+diff --git a/recipe.json b/recipe.json
+index 9795a32..b14d64c 100644
+--- a/recipe.json
++++ b/recipe.json
+@@ -1,5 +1,5 @@
+ {
+-  "gamma": 0.8,
+-  "ent_coef": 0.0,
+-  "partial_reset": true
++  "gamma": 0.9,
++  "ent_coef": 0.003,
++  "partial_reset": false
+ }

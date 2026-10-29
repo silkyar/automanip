@@ -1,0 +1,128 @@
+{
+  "eval/success_once": [
+    {
+      "step": 0,
+      "wall_time": 1793047386.5857215,
+      "value": 0.0
+    }
+  ],
+  "eval/return": [
+    {
+      "step": 0,
+      "wall_time": 1793047386.5859296,
+      "value": 2.4053964614868164
+    }
+  ],
+  "eval/episode_len": [
+    {
+      "step": 0,
+      "wall_time": 1793047386.5860288,
+      "value": 50.0
+    }
+  ],
+  "eval/reward": [
+    {
+      "step": 0,
+      "wall_time": 1793047386.586091,
+      "value": 0.048107922077178955
+    }
+  ],
+  "eval/success_at_end": [
+    {
+      "step": 0,
+      "wall_time": 1793047386.5861573,
+      "value": 0.0
+    }
+  ],
+  "charts/learning_rate": [
+    {
+      "step": 400,
+      "wall_time": 1793047387.4679825,
+      "value": 0.0003000000142492354
+    }
+  ],
+  "losses/value_loss": [
+    {
+      "step": 400,
+      "wall_time": 1793047387.4680943,
+      "value": 0.006510221865028143
+    }
+  ],
+  "losses/policy_loss": [
+    {
+      "step": 400,
+      "wall_time": 1793047387.4681132,
+      "value": -0.05101369693875313
+    }
+  ],
+  "losses/entropy": [
+    {
+      "step": 400,
+      "wall_time": 1793047387.4681275,
+      "value": 7.339709281921387
+    }
+  ],
+  "losses/old_approx_kl": [
+    {
+      "step": 400,
+      "wall_time": 1793047387.4681408,
+      "value": 0.015663456171751022
+    }
+  ],
+  "losses/approx_kl": [
+    {
+      "step": 400,
+      "wall_time": 1793047387.468154,
+      "value": 0.012645143084228039
+    }
+  ],
+  "losses/clipfrac": [
+    {
+      "step": 400,
+      "wall_time": 1793047387.4681802,
+      "value": 0.15625
+    }
+  ],
+  "losses/explained_variance": [
+    {
+      "step": 400,
+      "wall_time": 1793047387.4681861,
+      "value": -1.4973549842834473
+    }
+  ],
+  "charts/SPS": [
+    {
+      "step": 400,
+      "wall_time": 1793047387.4681978,
+      "value": 122.0
+    }
+  ],
+  "time/step": [
+    {
+      "step": 400,
+      "wall_time": 1793047387.4682035,
+      "value": 400.0
+    }
+  ],
+  "time/update_time": [
+    {
+      "step": 400,
+      "wall_time": 1793047387.4682083,
+      "value": 0.09406495094299316
+    }
+  ],
+  "time/rollout_time": [
+    {
+      "step": 400,
+      "wall_time": 1793047387.4682133,
+      "value": 0.7586774826049805
+    }
+  ],
+  "time/rollout_fps": [
+    {
+      "step": 400,
+      "wall_time": 1793047387.4809067,
+      "value": 527.2332763671875
+    }
+  ]
+}

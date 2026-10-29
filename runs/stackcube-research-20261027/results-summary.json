@@ -1,0 +1,158 @@
+[
+  {
+    "phase": ".",
+    "candidate": {
+      "id": "gamma090",
+      "gamma": 0.9
+    },
+    "success_by_seed": [
+      0.5625,
+      0.78125,
+      0.7890625
+    ],
+    "mean_success": 0.7109375,
+    "mean_training_seconds": 1334.074486552272,
+    "transitions_per_seed": 24985600
+  },
+  {
+    "phase": ".",
+    "candidate": {
+      "id": "gamma095",
+      "gamma": 0.95
+    },
+    "success_by_seed": [
+      0.078125,
+      0.71875,
+      0.25
+    ],
+    "mean_success": 0.3489583333333333,
+    "mean_training_seconds": 1257.494789714304,
+    "transitions_per_seed": 24985600
+  },
+  {
+    "phase": "overnight/tune",
+    "candidate": {
+      "id": "tune-gamma0875-control",
+      "gamma": 0.875,
+      "ent_coef": 0.0,
+      "learning_rate": 0.0003,
+      "update_epochs": 8
+    },
+    "success_by_seed": [
+      0.6328125,
+      0.734375,
+      0.75
+    ],
+    "mean_success": 0.7057291666666666,
+    "mean_training_seconds": 1307.6560817543261,
+    "transitions_per_seed": 24985600
+  },
+  {
+    "phase": "overnight/tune",
+    "candidate": {
+      "id": "tune-gamma0925-control",
+      "gamma": 0.925,
+      "ent_coef": 0.0,
+      "learning_rate": 0.0003,
+      "update_epochs": 8
+    },
+    "success_by_seed": [
+      0.890625,
+      0.8203125,
+      0.7265625
+    ],
+    "mean_success": 0.8125,
+    "mean_training_seconds": 1279.201063929281,
+    "transitions_per_seed": 24985600
+  },
+  {
+    "phase": "overnight/tune",
+    "candidate": {
+      "id": "tune-entropy001-control",
+      "gamma": 0.9,
+      "ent_coef": 0.001,
+      "learning_rate": 0.0003,
+      "update_epochs": 8
+    },
+    "success_by_seed": [
+      0.4296875,
+      0.6796875,
+      0.84375
+    ],
+    "mean_success": 0.6510416666666666,
+    "mean_training_seconds": 1312.7931873767327,
+    "transitions_per_seed": 24985600
+  },
+  {
+    "phase": "overnight/tune",
+    "candidate": {
+      "id": "tune-entropy003-control",
+      "gamma": 0.9,
+      "ent_coef": 0.003,
+      "learning_rate": 0.0003,
+      "update_epochs": 8
+    },
+    "success_by_seed": [
+      0.890625,
+      0.75,
+      0.8671875
+    ],
+    "mean_success": 0.8359375,
+    "mean_training_seconds": 1346.2763615583535,
+    "transitions_per_seed": 24985600
+  },
+  {
+    "phase": "overnight/short",
+    "candidate": {
+      "id": "short-entropy003-control",
+      "gamma": 0.9,
+      "ent_coef": 0.003,
+      "learning_rate": 0.0003,
+      "update_epochs": 8
+    },
+    "success_by_seed": [
+      0.0546875,
+      0.015625,
+      0.296875
+    ],
+    "mean_success": 0.12239583333333333,
+    "mean_training_seconds": 690.8973711329357,
+    "transitions_per_seed": 12492800
+  },
+  {
+    "phase": "overnight/short",
+    "candidate": {
+      "id": "short-entropy003-lr2",
+      "gamma": 0.9,
+      "ent_coef": 0.003,
+      "learning_rate": 0.0006,
+      "update_epochs": 8
+    },
+    "success_by_seed": [
+      0.03125,
+      0.0625,
+      0.046875
+    ],
+    "mean_success": 0.046875,
+    "mean_training_seconds": 640.623996273304,
+    "transitions_per_seed": 12492800
+  },
+  {
+    "phase": "overnight/short",
+    "candidate": {
+      "id": "short-entropy003-epochs4",
+      "gamma": 0.9,
+      "ent_coef": 0.003,
+      "learning_rate": 0.0003,
+      "update_epochs": 4
+    },
+    "success_by_seed": [
+      0.0,
+      0.0,
+      0.0859375
+    ],
+    "mean_success": 0.028645833333333332,
+    "mean_training_seconds": 620.6921104083303,
+    "transitions_per_seed": 12492800
+  }
+]

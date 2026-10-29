@@ -55,3 +55,36 @@ release equivalence. Before simulator integration: retrieve the pinned task and
 baseline, compare source, resolve and lock transitive dependencies on the target
 Linux platform, assert spaces and flattening order, and exercise seeded resets.
 Do not promote this recipe as reproducible training until those checks pass.
+
+## Local installation update
+
+Network access became available through approved shell execution. Installed the
+pinned ManiSkill release and inspected its installed task/controller source.
+Created project-local Python 3.11.17 with uv. The old SAPIEN guide URL returned
+404; used the official nightly macOS asset 3.0.4.dev20261009+7dba23f1 instead.
+Pinned OpenCV 4.11.0.86 to retain NumPy 1.26.4. Installed `pin==2.7.0` for CPU
+inverse kinematics and MoltenVK v1.4.2 for Vulkan initialization.
+
+Dependency consistency checks pass. PickCube CPU initialization, one zero-action
+step, and repeated seeded reset succeeded with 42 observation and 7 action values.
+The observation size is now checked against the frozen task specification.
+No GPU physics, policy training, reference performance, or vectorized real-device
+throughput has been verified. The macOS snapshot is not a tested Linux lock.
+
+## PPO source retrieved and adapted
+
+With approved network access, the exact v3.0.0b21 official PPO source was fetched
+successfully and used to implement `train.py`. Installed pinned-release task and
+vector-wrapper source was also inspected. Final-observation masks and both
+termination/truncation paths are handled explicitly. The 50-step CPU training
+wrapper check passed without any optimizer updates. See `docs/training.md` for
+the recipe, attribution, intentional changes, and remaining GPU validation.
+
+## Linux GPU verification update — 2026-10-25
+
+The hashed Linux lock installed on an official Runpod Python 3.11 image and
+passed dependency checks and all 31 CPU tests. CUDA PhysX wrapper checks and
+three random-init training/development-evaluation runs passed on an NVIDIA L4.
+The frozen 42-observation/seven-action interface was checked on this backend.
+This dated result supersedes the earlier GPU-pending status above; the source
+and controller differences remain. See `docs/runpod-reference-20261025.md`.

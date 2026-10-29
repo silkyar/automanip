@@ -1,0 +1,117 @@
+{
+  "files": [
+    {
+      "path": "assets/figure-notes.md",
+      "bytes": 5368,
+      "sha256": "e2c5c7385b9d9710dc2fd30fef9c7129d3b5d1ef4eb1b5b466a16ea85ee75320"
+    },
+    {
+      "path": "assets/progress-data.json",
+      "bytes": 15180,
+      "sha256": "69659fed8c4780f7ab4f9398235689091b3efb89167b06c8a4f693a8a239a08d"
+    },
+    {
+      "path": "assets/public-success-step-00.png",
+      "bytes": 297058,
+      "sha256": "8dc4cb70717f4225cfd4ae0434da018cabaae6acfbe7dd7a8bc961d3a9f6833f"
+    },
+    {
+      "path": "assets/public-success-step-10.png",
+      "bytes": 291731,
+      "sha256": "dfdf3774c5d9241ef7fc0128a5a97e2f83c16d4c9c722a471178f4fc67d71cfc"
+    },
+    {
+      "path": "assets/public-success-step-20.png",
+      "bytes": 291766,
+      "sha256": "6866d645802894f0e3d586ad7cb5445c9e410467e7f696675674d9817cbad5cf"
+    },
+    {
+      "path": "assets/public-success-step-30.png",
+      "bytes": 290017,
+      "sha256": "acabe9dd974fae2a772e55654b6ff2a53202fd8dd802d8366ca6dddd320ea7bb"
+    },
+    {
+      "path": "assets/public-success-step-40.png",
+      "bytes": 289787,
+      "sha256": "de34ce428b3275d0952afb1ba442f7127f33bd150f8a900012f070f71cb348ff"
+    },
+    {
+      "path": "assets/public-success-step-50.png",
+      "bytes": 289650,
+      "sha256": "88189be8451909c03b29770df4733e72ae1b3d44994e1d673c91ac613457fe51"
+    },
+    {
+      "path": "assets/render-receipt.json",
+      "bytes": 1647,
+      "sha256": "4fa8dff1245e67bc54372dc0960768fb604f7611d41cf09800d8be70039c4885"
+    },
+    {
+      "path": "assets/stackcube-full-horizon-25m-public-success.mp4",
+      "bytes": 365269,
+      "sha256": "6f5f4d2efbc741deafeb53b530b7b4ddb54c4aaf17b8062eb7c6c56b90de0d1d"
+    },
+    {
+      "path": "assets/stackcube-observed-by-22min.pdf",
+      "bytes": 31843,
+      "sha256": "1a71ee782734315c97b49fa3445cc30ba10f94da069d48ef8ea33d6032856dfa"
+    },
+    {
+      "path": "assets/stackcube-observed-by-22min.png",
+      "bytes": 241517,
+      "sha256": "b3d04870482c4fd90efb008f2a43f41e26cbc65979579ff64bc35634551418a5"
+    },
+    {
+      "path": "assets/stackcube-observed-by-22min.svg",
+      "bytes": 21072,
+      "sha256": "aac52a9d5bc9e2af98def5acf2bb8617b46f4a27b333f1cf347cfa60a353333f"
+    },
+    {
+      "path": "assets/stackcube-progress-25m.pdf",
+      "bytes": 41180,
+      "sha256": "422d9c347a5100111dcb45b2b101778a3a5064a891c1a7da2aafd320821e8ad3"
+    },
+    {
+      "path": "assets/stackcube-progress-25m.png",
+      "bytes": 320106,
+      "sha256": "d44996c5f19b3ee46f2cce28dc629e5c7f6ef81723d54175fbe0eab5807c54c6"
+    },
+    {
+      "path": "assets/stackcube-progress-25m.svg",
+      "bytes": 33190,
+      "sha256": "08338ed3ef86466d32686ec566ee5b50d9d95fad6e915814bd9521975bdbeaa6"
+    },
+    {
+      "path": "assets/timing-checkpoints.json",
+      "bytes": 105630,
+      "sha256": "fa1cef74f7669fab6e8baee292490bc54428d374b8092126336b82c5a94b55e0"
+    },
+    {
+      "path": "assets/video-render-handoff.json",
+      "bytes": 1937,
+      "sha256": "ffa2b8be34f8f04d7656b30bf1c73d809a196c382493d7095a5e929bfca2c12c"
+    },
+    {
+      "path": "scripts/collect_progress_data.py",
+      "bytes": 8166,
+      "sha256": "1f720f4564a1e07e78dad18c15bfde9cd482f487f92af08f80af6d117009453a"
+    },
+    {
+      "path": "scripts/plot_progress.py",
+      "bytes": 6591,
+      "sha256": "ab706b06ca45282b51b4cc68c1cffc8980d7df235d5f2ea6cabcf071bf960c80"
+    }
+  ],
+  "graph_new_training_runs": 0,
+  "graph_new_evaluations": 0,
+  "video_new_training_transitions": 0,
+  "video_public_render_episodes": 8,
+  "video_public_simulator_transitions": 400,
+  "video_protected_queries": 0,
+  "public_posting": false,
+  "visual_checks": [
+    "stackcube-progress-25m.png",
+    "stackcube-observed-by-22min.png",
+    "stackcube-full-horizon-25m-public-success.mp4 (root decoded/visually reviewed)"
+  ],
+  "timing_revision": "Latest eligible checkpoint across equivalent recipe records; identical-policy entropy timed reruns included;90 source aggregate points."
+}

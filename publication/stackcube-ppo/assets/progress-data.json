@@ -1,0 +1,427 @@
+{
+  "task": "StackCube-v1",
+  "metric": "Frozen terminal StackCube success",
+  "training_transitions_per_seed": 24985600,
+  "training_seeds": [
+    1,
+    2,
+    3
+  ],
+  "development_episodes_per_seed": 128,
+  "confirmation_episodes_per_seed": 512,
+  "families": [
+    {
+      "index": 1,
+      "experiment": "StackCube official PPO",
+      "label": "Official PPO",
+      "selected": true,
+      "runs": [
+        {
+          "seed": 1,
+          "trainer_seconds": 1319.6522893510992,
+          "environment_transitions": 24985600,
+          "development_successes": 30,
+          "development_episodes": 128,
+          "confirmation_successes": 115,
+          "confirmation_episodes": 512,
+          "weights_sha256": "fbd931840353ab30f725637f76bcf289deb59c7d564b8d4823fafcc5be91ae4e"
+        },
+        {
+          "seed": 2,
+          "trainer_seconds": 1455.5186597539578,
+          "environment_transitions": 24985600,
+          "development_successes": 61,
+          "development_episodes": 128,
+          "confirmation_successes": 244,
+          "confirmation_episodes": 512,
+          "weights_sha256": "9d0f8ecd9c1c932d3db7552353601361c586d38e1f6467eca8312abf3bf56920"
+        },
+        {
+          "seed": 3,
+          "trainer_seconds": 1480.0385317880427,
+          "environment_transitions": 24985600,
+          "development_successes": 30,
+          "development_episodes": 128,
+          "confirmation_successes": 136,
+          "confirmation_episodes": 512,
+          "weights_sha256": "4d58a835ebb49499feafcabbbc12c2cdfe7a3f9808acd1fc457944270f6feaf0"
+        }
+      ],
+      "development_mean_percent": 31.510416666666668,
+      "confirmation_mean_percent": 32.2265625
+    },
+    {
+      "index": 2,
+      "experiment": "gamma090",
+      "label": "Discount 0.9",
+      "selected": true,
+      "runs": [
+        {
+          "seed": 1,
+          "trainer_seconds": 1349.0710658829194,
+          "environment_transitions": 24985600,
+          "development_successes": 72,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "98b2a779c37f5339120ad25806a1736aafc3ccf95125c5432b4a18cc8a6beb88"
+        },
+        {
+          "seed": 2,
+          "trainer_seconds": 1299.1435673828237,
+          "environment_transitions": 24985600,
+          "development_successes": 100,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "e14f5ec3e00c268970a67fb3206aa57b19545de4f80900d815d014faff30afec"
+        },
+        {
+          "seed": 3,
+          "trainer_seconds": 1354.008826391073,
+          "environment_transitions": 24985600,
+          "development_successes": 101,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "775247745a04ff184bcaff669221f6622a77098021eab696e335679b25e243a8"
+        }
+      ],
+      "development_mean_percent": 71.09375,
+      "confirmation_mean_percent": null
+    },
+    {
+      "index": 3,
+      "experiment": "gamma095",
+      "label": "Discount 0.95",
+      "selected": false,
+      "runs": [
+        {
+          "seed": 1,
+          "trainer_seconds": 1238.6211397550069,
+          "environment_transitions": 24985600,
+          "development_successes": 10,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "d436a5be57eb482e025e9e7a93aecd457830036db0b2d4a7d39247cb950aa672"
+        },
+        {
+          "seed": 2,
+          "trainer_seconds": 1269.8046249998733,
+          "environment_transitions": 24985600,
+          "development_successes": 92,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "b8e9a5e747153401150dbfb77b14adc8dcaf58aff3a4c11a3849067f33de15d2"
+        },
+        {
+          "seed": 3,
+          "trainer_seconds": 1264.058604388032,
+          "environment_transitions": 24985600,
+          "development_successes": 32,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "852d5909ce4c7db7b18e224b935d26a170f79caad6d148c297e29d71321ad6ff"
+        }
+      ],
+      "development_mean_percent": 34.89583333333333,
+      "confirmation_mean_percent": null
+    },
+    {
+      "index": 4,
+      "experiment": "tune-gamma0875-control",
+      "label": "Discount 0.875",
+      "selected": false,
+      "runs": [
+        {
+          "seed": 1,
+          "trainer_seconds": 1299.8039614809677,
+          "environment_transitions": 24985600,
+          "development_successes": 81,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "24b77697f20ec91c84b1ac2500b6c5516ece9f0944478fb4b1ddc5b33b9b5e85"
+        },
+        {
+          "seed": 2,
+          "trainer_seconds": 1273.8793720179237,
+          "environment_transitions": 24985600,
+          "development_successes": 94,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "ec65323d6b0a18b879c1f5c00eb8c257c0a62d629b13b587911421ab058a3148"
+        },
+        {
+          "seed": 3,
+          "trainer_seconds": 1349.2849117640872,
+          "environment_transitions": 24985600,
+          "development_successes": 96,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "45feab06939392b93d30a2635c6a66aa6cd63e76661a8415bf6c73654dad89c8"
+        }
+      ],
+      "development_mean_percent": 70.57291666666666,
+      "confirmation_mean_percent": null
+    },
+    {
+      "index": 5,
+      "experiment": "tune-gamma0925-control",
+      "label": "Discount 0.925",
+      "selected": false,
+      "runs": [
+        {
+          "seed": 1,
+          "trainer_seconds": 1304.5335733857937,
+          "environment_transitions": 24985600,
+          "development_successes": 114,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "934ca333d533af08062c5d36fc8e733d99b0c45cba0f509d2efa2e64cb7adc98"
+        },
+        {
+          "seed": 2,
+          "trainer_seconds": 1264.007574510062,
+          "environment_transitions": 24985600,
+          "development_successes": 105,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "eb95bbee121aa8aa2e8deebe7b62d634cc32e93c26ecb7f9bd7ea05c0eb4a514"
+        },
+        {
+          "seed": 3,
+          "trainer_seconds": 1269.0620438919868,
+          "environment_transitions": 24985600,
+          "development_successes": 93,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "b00d19d8eb11f487c241c85d7602974dd42b2dda4c6744ea93ceaac80218ab86"
+        }
+      ],
+      "development_mean_percent": 81.25,
+      "confirmation_mean_percent": null
+    },
+    {
+      "index": 6,
+      "experiment": "tune-entropy001-control",
+      "label": "Entropy 0.001",
+      "selected": false,
+      "runs": [
+        {
+          "seed": 1,
+          "trainer_seconds": 1344.801847735187,
+          "environment_transitions": 24985600,
+          "development_successes": 55,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "358127d445181aa917e2cfe5cf66cd70d489c0f139b57c29f37df9720f108126"
+        },
+        {
+          "seed": 2,
+          "trainer_seconds": 1289.2058285819367,
+          "environment_transitions": 24985600,
+          "development_successes": 87,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "2f20c9e7ee00e8ff1022495f81abd038ecc13cd35a77701aa434a57fbeb4dc4b"
+        },
+        {
+          "seed": 3,
+          "trainer_seconds": 1304.3718858130742,
+          "environment_transitions": 24985600,
+          "development_successes": 108,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "0e24aa864cdb968d304ac0deeb5c72bff9fee977ab4089f15dbebb34c90a4426"
+        }
+      ],
+      "development_mean_percent": 65.10416666666666,
+      "confirmation_mean_percent": null
+    },
+    {
+      "index": 7,
+      "experiment": "tune-entropy003-control",
+      "label": "Entropy 0.003",
+      "selected": true,
+      "runs": [
+        {
+          "seed": 1,
+          "trainer_seconds": 1369.6211864240468,
+          "environment_transitions": 24985600,
+          "development_successes": 114,
+          "development_episodes": 128,
+          "confirmation_successes": 465,
+          "confirmation_episodes": 512,
+          "weights_sha256": "5facca57c7ed6b141bf4af949e86842576bc5ce392e4f11465a172a0d389a6c3"
+        },
+        {
+          "seed": 2,
+          "trainer_seconds": 1339.29601099086,
+          "environment_transitions": 24985600,
+          "development_successes": 96,
+          "development_episodes": 128,
+          "confirmation_successes": 347,
+          "confirmation_episodes": 512,
+          "weights_sha256": "351127d9f5e07ff78facbe93ab7445a00ad3ba4b95abf2438118cccdd26a98f1"
+        },
+        {
+          "seed": 3,
+          "trainer_seconds": 1329.911887260154,
+          "environment_transitions": 24985600,
+          "development_successes": 111,
+          "development_episodes": 128,
+          "confirmation_successes": 449,
+          "confirmation_episodes": 512,
+          "weights_sha256": "a2db4f5b1228ccf4fc788a6fd8949004e1f4632ddb1a3b13b387bb69c86cc6b5"
+        }
+      ],
+      "development_mean_percent": 83.59375,
+      "confirmation_mean_percent": 82.09635416666666
+    },
+    {
+      "index": 8,
+      "experiment": "settle-full-horizon",
+      "label": "Full horizon",
+      "selected": true,
+      "runs": [
+        {
+          "seed": 1,
+          "trainer_seconds": 1088.766732081771,
+          "environment_transitions": 24985600,
+          "development_successes": 120,
+          "development_episodes": 128,
+          "confirmation_successes": 478,
+          "confirmation_episodes": 512,
+          "weights_sha256": "39ba198d0c98af14a3d2965ef9a3be859f31aa3c4889db3da311da910c2da153"
+        },
+        {
+          "seed": 2,
+          "trainer_seconds": 1049.0199430971406,
+          "environment_transitions": 24985600,
+          "development_successes": 122,
+          "development_episodes": 128,
+          "confirmation_successes": 483,
+          "confirmation_episodes": 512,
+          "weights_sha256": "117e2be0c0dffd8dd91f5d5093cbd69cb80f5579505b4ed04203a9f57b75299b"
+        },
+        {
+          "seed": 3,
+          "trainer_seconds": 1069.0141148162074,
+          "environment_transitions": 24985600,
+          "development_successes": 119,
+          "development_episodes": 128,
+          "confirmation_successes": 484,
+          "confirmation_episodes": 512,
+          "weights_sha256": "69064ec80d1649e82d3083838236209848f49fbac154332e64dfd6020edda0a6"
+        }
+      ],
+      "development_mean_percent": 94.01041666666666,
+      "confirmation_mean_percent": 94.07552083333334
+    },
+    {
+      "index": 9,
+      "experiment": "settle-entropy-decay",
+      "label": "Entropy decay",
+      "selected": false,
+      "runs": [
+        {
+          "seed": 1,
+          "trainer_seconds": 1304.0924388677813,
+          "environment_transitions": 24985600,
+          "development_successes": 104,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "5475713be70b47ad9a1937322ac8f27a3a8fa816e9b8d3ef1aa95fb52c81b266"
+        },
+        {
+          "seed": 2,
+          "trainer_seconds": 1269.634489864111,
+          "environment_transitions": 24985600,
+          "development_successes": 73,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "306d2c531f622b01f5ac05f1262820c1115cac88121c24957aabd875d98f3a35"
+        },
+        {
+          "seed": 3,
+          "trainer_seconds": 1274.3390295952559,
+          "environment_transitions": 24985600,
+          "development_successes": 97,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "ac8c6ae6262fbafe97576d8725d009bb4b3321d26bdd81ab29618e8fde80c594"
+        }
+      ],
+      "development_mean_percent": 71.35416666666666,
+      "confirmation_mean_percent": null
+    },
+    {
+      "index": 10,
+      "experiment": "settle-gamma0925-entropy003",
+      "label": "Discount 0.925 + entropy",
+      "selected": false,
+      "runs": [
+        {
+          "seed": 1,
+          "trainer_seconds": 1218.8966742902994,
+          "environment_transitions": 24985600,
+          "development_successes": 10,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "cb8af6e22110f3a2caafbc578f79983182e1f42aa521c0c3567468c83de0b258"
+        },
+        {
+          "seed": 2,
+          "trainer_seconds": 1235.393366675824,
+          "environment_transitions": 24985600,
+          "development_successes": 103,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "7956fafa246798f9bd469f9f57c772578c015bf9e0c87b01aa3013f4ae3d5b01"
+        },
+        {
+          "seed": 3,
+          "trainer_seconds": 1254.240065697115,
+          "environment_transitions": 24985600,
+          "development_successes": 122,
+          "development_episodes": 128,
+          "confirmation_successes": null,
+          "confirmation_episodes": null,
+          "weights_sha256": "427f9d78fd7617eee423b53ee26b8d50e079297fdf80cae134a284e2745d1fdc"
+        }
+      ],
+      "development_mean_percent": 61.197916666666664,
+      "confirmation_mean_percent": null
+    }
+  ],
+  "source": "docs/experiment-runs.json",
+  "source_sha256": "27b799cc10e3d3acb812e21df25c4f803f5200048049acfbe3456b412768b1fb",
+  "exclusions": [
+    "PickCube task",
+    "12.5M and shorter budgets",
+    "50M and longer budgets",
+    "assisted/continuation",
+    "SAC",
+    "CAPG on L40S",
+    "settle-timed-control duplicates identical entropy-policy digests"
+  ],
+  "path_note": "Retrospective selected recipe path, not a formal running maximum or strict serial experiment clock.",
+  "timing_note": "Primary comparison holds transitions fixed; elapsed training time differs. No interpolation to22 minutes."
+}

@@ -1,0 +1,18 @@
+{
+  "admitted": true,
+  "experiment": "gamma-sufficiency-20261028",
+  "source_sha256": {
+    "gamma_sufficiency.py": "251f02f76a14f488ee918a40fbdf2462864abfd1598daf2465a3476bb25f8647",
+    "replay_robot.py": "e753b684f97b475dcadd7bdf1736395a79485ea4f431fa8f04083ffb89945d7f",
+    "replay_learner.py": "009b4662a3b248e8e677905e2e7cafe2a69611a9259ab5fe91ec0cbe3b2efdfc",
+    "sac_baseline.py": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca"
+  },
+  "adapter_sha256": "ea0e1e843cafd5fb3522b61e4d433352908751adb3d4c9dddcbaafc34b566bb9",
+  "scientific_plan": "docs/replay-discount-sufficiency-plan-20261028.md",
+  "initial_actor_sha256": "6f768e630c4751d41ed3bd032a21078ea44d12c219c00bf6e606caae0e4c149f",
+  "window_deadline_epoch": 1793219553,
+  "budget_cap_usd": 2,
+  "scientific_plan_sha256": "a449e84c656a4ea50afd558d07c8099b130dcfc8bc08d06c41d1a39175a7a60e",
+  "root_admitted_epoch": 1793213198.484981,
+  "review": "Independent exact-source review passed after processcap240 and safeinitialvalidation fixes; coreconfig/source parity gate passed; one factor/seed only"
+}

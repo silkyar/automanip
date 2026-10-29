@@ -1,0 +1,7 @@
+Includes the unchanged state-based PPO example from ManiSkill v3.0.0b21,
+commit 6226567ce326625fa6eacf9aeb3f4008e4339f7e:
+https://github.com/haosulab/ManiSkill/blob/6226567ce326625fa6eacf9aeb3f4008e4339f7e/examples/baselines/ppo/ppo.py
+
+Copyright the ManiSkill authors and contributors. Licensed under Apache 2.0;
+see LICENSE. The launcher, recipe files and result notes were extracted from
+Silky Arora's AutoManip experiments. No modifications to upstream ppo.py.

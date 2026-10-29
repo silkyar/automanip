@@ -1,0 +1,202 @@
+{
+  "job": {
+    "job_id": "stackcube-capg-screen-20261027-full-horizon-control-seed-1",
+    "method": "full-horizon-control",
+    "seed": 1,
+    "trainer_sha256": "68e09965db1378616f380eb763862149d8c28232075e06741426caba3dfb5064",
+    "gpu": "L40S",
+    "trainer_seconds_cap": 1320,
+    "requested_steps": 25000000,
+    "actual_steps_ceiling": 24985600
+  },
+  "state": "complete",
+  "dispatched_at": 1793132442.1916475,
+  "admitted_at": 1793132466.5289361,
+  "queue_seconds": 24.33728861808777,
+  "expires_at": 1793133762.1916475,
+  "trainer_sha256": "68e09965db1378616f380eb763862149d8c28232075e06741426caba3dfb5064",
+  "gpu_requested": "L40S",
+  "confirmation_queries": 0,
+  "new_training_processes": 1,
+  "gpu_actual_name": "NVIDIA L40S",
+  "versions": {
+    "torch": "2.6.0+cu124",
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "subprocess_started_at": 1793132470.242106,
+  "trainer_process_seconds": 1152.073390803,
+  "return_code": 0,
+  "nonfinite_diagnostic_scalars": {},
+  "actual_steps": 24985600,
+  "completed_rollouts": 488,
+  "optimizer_step_count": null,
+  "optimizer_step_upper_bound": 124928,
+  "built_in_evaluation_calls": 20,
+  "built_in_evaluation_transitions": 8000,
+  "built_in_evaluation_episodes": 160,
+  "stopped_early": false,
+  "wrapper_seconds": 1156.322478792,
+  "completed_at": 1793133622.8514242,
+  "files": [
+    {
+      "path": "attempt.json",
+      "bytes": 141,
+      "sha256": "30c090b7ed81c36f5cc5849ffa1e03bb94e91d1593160b4839657632842c8e7e",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "scalars.json",
+      "bytes": 1756369,
+      "sha256": "27a00e6a2b752bf3822bb83ea02ae3526784908943bb9de1180eca3d86dfd29e",
+      "trainer_seconds": 1152.506514787674
+    },
+    {
+      "path": "trainer.py",
+      "bytes": 24927,
+      "sha256": "68e09965db1378616f380eb763862149d8c28232075e06741426caba3dfb5064",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "work/train.log",
+      "bytes": 28339,
+      "sha256": "0a49225ae352a97afced8e448d733c270a6f42794470e15ed4a7a06a5121687f",
+      "trainer_seconds": 1150.4464688301086
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "fe0b2ad4d99fc88f0c408a1da3ccfbf80fdf51e0d643f7ad977ad4604aa8f753",
+      "trainer_seconds": 22.58428382873535
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_101.pt",
+      "bytes": 1168376,
+      "sha256": "69fde942fd7587b7fad59886c1585f18abb9d7371474acf8d63a68d163adc00e",
+      "trainer_seconds": 323.1379952430725
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_126.pt",
+      "bytes": 1168376,
+      "sha256": "f17467ffe4a24f61d11fd8adffaaa50049d64fc2846b0e3c90478699e86732f0",
+      "trainer_seconds": 381.91530776023865
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_151.pt",
+      "bytes": 1168376,
+      "sha256": "0f638d23e2ba71a86eb67fdda373a019bfe533b28e5f61038b3f81799a9e5dbf",
+      "trainer_seconds": 435.3605012893677
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_176.pt",
+      "bytes": 1168376,
+      "sha256": "603e4596cfec96ff49c99d1365c59df7c599f573e14bd96e0f7c23f13d293857",
+      "trainer_seconds": 486.73064827919006
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_201.pt",
+      "bytes": 1168376,
+      "sha256": "af8d69b5eb2f1149ed3f9426b6450118371802f4371f10fa123bb0fdf1b8b4e0",
+      "trainer_seconds": 545.8499684333801
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_226.pt",
+      "bytes": 1168376,
+      "sha256": "c24400afbbdf5bbafd446d4d3d9afba1443a6afcf6a8f7607404450b4a682930",
+      "trainer_seconds": 602.1312253475189
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_251.pt",
+      "bytes": 1168376,
+      "sha256": "311111d52e90602778138e4c45d890a1b8ee7e26d64e8720dcf168716f11dd31",
+      "trainer_seconds": 658.0934748649597
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "292c8eeeacd22efe8d9547e99ed04c06fefed90e8ce7286c1df7c1962f7180d9",
+      "trainer_seconds": 98.24397349357605
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_276.pt",
+      "bytes": 1168376,
+      "sha256": "bc03afd86cef0a4730f14c7a02b0918fd4374d5c715a55db8ba4688694af11de",
+      "trainer_seconds": 711.2356615066528
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_301.pt",
+      "bytes": 1168376,
+      "sha256": "7fae4e62222e77c39dc4f8615a905a6cd7191cc490cf98db1f7b7cd760d9f3a0",
+      "trainer_seconds": 763.1318204402924
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_326.pt",
+      "bytes": 1168376,
+      "sha256": "5603cc8830f5e913e0921e876c32c4dee9d7cf882f5a70a103c9f41843ce26fb",
+      "trainer_seconds": 814.4999673366547
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_351.pt",
+      "bytes": 1168376,
+      "sha256": "65d41a975c657a0dbefedae6b6f531636e25fa77e6770530b829120f6803273c",
+      "trainer_seconds": 865.3581030368805
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_376.pt",
+      "bytes": 1168376,
+      "sha256": "34454d5fb949c24a14f9a74cbbd35f6a75deac2342d5bc166224618eb2ab32d5",
+      "trainer_seconds": 921.4593555927277
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_401.pt",
+      "bytes": 1168376,
+      "sha256": "39fe6feb6fe5d1df085d7c72b92815be8a6338e9393565f671074d3f2f5d96ae",
+      "trainer_seconds": 974.1355319023132
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_426.pt",
+      "bytes": 1168376,
+      "sha256": "8a9e818bc81d799c26886e2edb0f6101ad8cb8403c683a4f4321e67e3be64dfb",
+      "trainer_seconds": 1024.1666491031647
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_451.pt",
+      "bytes": 1168376,
+      "sha256": "c112c51d865699f751cf8324c66c9baf5b0129888fd9786ce3c1cfde0a7b9cb1",
+      "trainer_seconds": 1074.1737656593323
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_476.pt",
+      "bytes": 1168376,
+      "sha256": "1fff53a4dd4f93936b85789304c1b293c6bba919a71b2e43df341ae2ca919b72",
+      "trainer_seconds": 1124.8278968334198
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_51.pt",
+      "bytes": 1167971,
+      "sha256": "ebe73770a97f3de5ba40e9731cd9968c4d87d20c9c1d037f14e09a50bf00ceec",
+      "trainer_seconds": 175.5216989517212
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_76.pt",
+      "bytes": 1167971,
+      "sha256": "98e88d62db7bab3a5921d59c36bdf2930b835a05a85b2c73e45d09af094bc502",
+      "trainer_seconds": 251.89940452575684
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/events.out.tfevents.1793132488.modal.8.0",
+      "bytes": 893110,
+      "sha256": "30dea924ce58f436d8ba6cd543d600e112916412342993583c5d434d33cb2c00",
+      "trainer_seconds": 1150.0214593410492
+    },
+    {
+      "path": "work/runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "f5fe3dc898a5944e0f749397b2b8477d505f12a84b5c8f52e3ac78f906e16c8a",
+      "trainer_seconds": 1150.1714627742767
+    }
+  ],
+  "output_bytes": 27236671
+}

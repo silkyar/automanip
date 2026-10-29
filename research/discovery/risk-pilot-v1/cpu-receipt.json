@@ -1,0 +1,103 @@
+{
+  "base_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+  "analytic_gradient_checks": [
+    {
+      "policy_probability": 0.2,
+      "alpha": 0.2,
+      "var": 0.9,
+      "score_gradient": -0.07679999999999998,
+      "exact_finite_difference": -0.07679999999843368,
+      "absolute_error": 1.5663026431411708e-12,
+      "incorrectly_tail_centered_gradient": -0.3840000000000002
+    },
+    {
+      "policy_probability": 0.2,
+      "alpha": 0.5,
+      "var": 0.9,
+      "score_gradient": -0.03071999999999999,
+      "exact_finite_difference": -0.030720000004924582,
+      "absolute_error": 4.924591984201143e-12,
+      "incorrectly_tail_centered_gradient": -0.15360000000000013
+    },
+    {
+      "policy_probability": 0.2,
+      "alpha": 1.0,
+      "var": 1.3,
+      "score_gradient": 0.026880000000000084,
+      "exact_finite_difference": 0.026880000009166235,
+      "absolute_error": 9.166150477524226e-12,
+      "incorrectly_tail_centered_gradient": 0.02687999999999996
+    },
+    {
+      "policy_probability": 0.4,
+      "alpha": 0.2,
+      "var": 0.8,
+      "score_gradient": -0.0768,
+      "exact_finite_difference": -0.07680000000398479,
+      "absolute_error": 3.984798602196804e-12,
+      "incorrectly_tail_centered_gradient": 0.023999999999999997
+    },
+    {
+      "policy_probability": 0.4,
+      "alpha": 0.5,
+      "var": 0.9,
+      "score_gradient": -0.04416,
+      "exact_finite_difference": -0.044160000001181025,
+      "absolute_error": 1.1810274980206259e-12,
+      "incorrectly_tail_centered_gradient": -0.2208000000000001
+    },
+    {
+      "policy_probability": 0.4,
+      "alpha": 1.0,
+      "var": 1.3,
+      "score_gradient": 0.05664000000000007,
+      "exact_finite_difference": 0.05664000001237567,
+      "absolute_error": 1.2375600544345389e-11,
+      "incorrectly_tail_centered_gradient": 0.05664000000000001
+    },
+    {
+      "policy_probability": 0.7,
+      "alpha": 0.2,
+      "var": 0.8,
+      "score_gradient": -0.11760000000000002,
+      "exact_finite_difference": -0.1175999999991628,
+      "absolute_error": 8.372191828698305e-13,
+      "incorrectly_tail_centered_gradient": -0.1995
+    },
+    {
+      "policy_probability": 0.7,
+      "alpha": 0.5,
+      "var": 1.1,
+      "score_gradient": 0.03612000000000003,
+      "exact_finite_difference": 0.036120000002082264,
+      "absolute_error": 2.082237160472289e-12,
+      "incorrectly_tail_centered_gradient": -0.2814000000000001
+    },
+    {
+      "policy_probability": 0.7,
+      "alpha": 1.0,
+      "var": 1.3,
+      "score_gradient": 0.07097999999999997,
+      "exact_finite_difference": 0.07097999999983173,
+      "absolute_error": 1.6824042159413466e-13,
+      "incorrectly_tail_centered_gradient": 0.07098000000000004
+    }
+  ],
+  "payloads": {
+    "risk-ppo-control": {
+      "path": "research/discovery/risk-pilot-v1/risk-ppo-control.py",
+      "sha256": "5f802501efb026560774d795f16bacb0b8fc7767a17822f5c191b1431fc7988b"
+    },
+    "risk-episode-mean": {
+      "path": "research/discovery/risk-pilot-v1/risk-episode-mean.py",
+      "sha256": "3c5fbf9334a16a1cdb584000ff74c49e05f645e9177488f079ca2e917142c2f0"
+    },
+    "risk-episode-cvar10": {
+      "path": "research/discovery/risk-pilot-v1/risk-episode-cvar10.py",
+      "sha256": "ebf5469003849787e5d8469a48a76f94eb232f0554b8c8f0a07e0c5b85f3495c"
+    }
+  },
+  "robot_transitions": 0,
+  "gpu_seconds": 0,
+  "dollars_spent": 0
+}

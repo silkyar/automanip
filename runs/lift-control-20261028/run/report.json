@@ -1,0 +1,139 @@
+{
+  "state": "failed",
+  "kind": "Assisted mechanical diagnostic, not a learned method",
+  "actual_public_transitions": 512,
+  "attempted_public_transitions": 512,
+  "vector_step_calls": 64,
+  "explicit_vector_reset_calls": 2,
+  "optimizer_calls": 0,
+  "protected_evaluations": 0,
+  "new_training_runs": 0,
+  "policy_inference_rows": 520,
+  "inverse_kinematics_pose_evaluations": 0,
+  "assistance": {
+    "own_policy_training_transitions": 256000,
+    "own_policy_training_seconds": 195.434352986,
+    "public_URDF": true
+  },
+  "conditions": [
+    {
+      "condition": "A",
+      "initial_match": null,
+      "intervention_matches": [],
+      "state": "complete",
+      "completed_vector_steps": 50
+    },
+    {
+      "condition": "B",
+      "initial_match": {
+        "position_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "qpos": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "intervention_matches": [
+        {
+          "step": 14,
+          "lanes": [
+            4
+          ],
+          "residual": {
+            "position_m": [
+              0.006559185683727264
+            ],
+            "qpos": [
+              0.0037975311279296875
+            ],
+            "qvel": [
+              1.151429295539856
+            ],
+            "rotation_rad": [
+              0.13773499429225922
+            ]
+          },
+          "preceding_five_grasp_flags": [
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ],
+            [
+              true
+            ]
+          ],
+          "contact_eligible": true
+        }
+      ],
+      "state": "started",
+      "completed_vector_steps": 14
+    }
+  ],
+  "validity_passed": false,
+  "versions": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "live_fk_max_position_m": 1.7426641797318246e-06,
+  "live_fk_max_rotation_rad": 2.342432632121314e-06,
+  "error": "ValueError: Intervention-state matching failed; no paired conclusion",
+  "analytic_fk_pose_evaluations": 1032,
+  "analytic_jacobian_pose_evaluations": 0,
+  "eligibility_step": [
+    -1,
+    -1,
+    24,
+    24,
+    14,
+    21,
+    25,
+    21
+  ],
+  "eligible_lanes": 6,
+  "elapsed_seconds": 11.466751708999999
+}

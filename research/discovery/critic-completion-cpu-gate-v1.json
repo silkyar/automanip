@@ -1,0 +1,320 @@
+{
+  "hypothesis": "Independent value fitting can use existing rollout data after policy-KL stopping, while biased targets can make extra fit harmful.",
+  "summary": {
+    "clean_paired_balanced_mse_improvements": 5,
+    "biased_paired_rare_phase_regressions": 2,
+    "clean_mean_before": 0.18810375283161798,
+    "clean_mean_after": 0.18253760412335396,
+    "biased_rare_mean_before": 3.890372713406881,
+    "biased_rare_mean_after": 3.7396135330200195
+  },
+  "records": [
+    {
+      "seed": 0,
+      "deliberately_biased_targets": false,
+      "before": {
+        "ordinary_phase_mse": 0.17843060195446014,
+        "rare_phase_mse": 0.17758026719093323,
+        "balanced_mse": 0.17800543457269669
+      },
+      "after": {
+        "ordinary_phase_mse": 0.17841418087482452,
+        "rare_phase_mse": 0.17631752789020538,
+        "balanced_mse": 0.17736585438251495
+      },
+      "stats": {
+        "extra_critic_optimizer_steps": 32,
+        "extra_critic_training_rows": 256,
+        "extra_critic_forward_rows": 768,
+        "fixed_target_mse_before": 0.21513128280639648,
+        "fixed_target_mse_after": 0.20012050867080688,
+        "extra_critic_seconds": 0.006314625003142282,
+        "actor_updates_in_extra_phase": 0,
+        "new_environment_transitions": 0
+      }
+    },
+    {
+      "seed": 0,
+      "deliberately_biased_targets": true,
+      "before": {
+        "ordinary_phase_mse": 0.19963917136192322,
+        "rare_phase_mse": 4.318016052246094,
+        "balanced_mse": 2.2588276118040085
+      },
+      "after": {
+        "ordinary_phase_mse": 0.18826992809772491,
+        "rare_phase_mse": 4.326931953430176,
+        "balanced_mse": 2.2576009407639503
+      },
+      "stats": {
+        "extra_critic_optimizer_steps": 32,
+        "extra_critic_training_rows": 256,
+        "extra_critic_forward_rows": 768,
+        "fixed_target_mse_before": 0.25690993666648865,
+        "fixed_target_mse_after": 0.21918857097625732,
+        "extra_critic_seconds": 0.006281207985011861,
+        "actor_updates_in_extra_phase": 0,
+        "new_environment_transitions": 0
+      }
+    },
+    {
+      "seed": 1,
+      "deliberately_biased_targets": false,
+      "before": {
+        "ordinary_phase_mse": 0.2066345512866974,
+        "rare_phase_mse": 0.2139039784669876,
+        "balanced_mse": 0.2102692648768425
+      },
+      "after": {
+        "ordinary_phase_mse": 0.197134867310524,
+        "rare_phase_mse": 0.22298051416873932,
+        "balanced_mse": 0.21005769073963165
+      },
+      "stats": {
+        "extra_critic_optimizer_steps": 32,
+        "extra_critic_training_rows": 256,
+        "extra_critic_forward_rows": 768,
+        "fixed_target_mse_before": 0.21182380616664886,
+        "fixed_target_mse_after": 0.20116360485553741,
+        "extra_critic_seconds": 0.006253916013520211,
+        "actor_updates_in_extra_phase": 0,
+        "new_environment_transitions": 0
+      }
+    },
+    {
+      "seed": 1,
+      "deliberately_biased_targets": true,
+      "before": {
+        "ordinary_phase_mse": 0.22942224144935608,
+        "rare_phase_mse": 3.2504754066467285,
+        "balanced_mse": 1.7399488240480423
+      },
+      "after": {
+        "ordinary_phase_mse": 0.20895738899707794,
+        "rare_phase_mse": 2.925140142440796,
+        "balanced_mse": 1.567048765718937
+      },
+      "stats": {
+        "extra_critic_optimizer_steps": 32,
+        "extra_critic_training_rows": 256,
+        "extra_critic_forward_rows": 768,
+        "fixed_target_mse_before": 0.24072569608688354,
+        "fixed_target_mse_after": 0.23266571760177612,
+        "extra_critic_seconds": 0.006171625020215288,
+        "actor_updates_in_extra_phase": 0,
+        "new_environment_transitions": 0
+      }
+    },
+    {
+      "seed": 2,
+      "deliberately_biased_targets": false,
+      "before": {
+        "ordinary_phase_mse": 0.18322937190532684,
+        "rare_phase_mse": 0.17665867507457733,
+        "balanced_mse": 0.1799440234899521
+      },
+      "after": {
+        "ordinary_phase_mse": 0.1661127358675003,
+        "rare_phase_mse": 0.1780034750699997,
+        "balanced_mse": 0.17205810546875
+      },
+      "stats": {
+        "extra_critic_optimizer_steps": 32,
+        "extra_critic_training_rows": 256,
+        "extra_critic_forward_rows": 768,
+        "fixed_target_mse_before": 0.1649133265018463,
+        "fixed_target_mse_after": 0.15829911828041077,
+        "extra_critic_seconds": 0.006051540985936299,
+        "actor_updates_in_extra_phase": 0,
+        "new_environment_transitions": 0
+      }
+    },
+    {
+      "seed": 2,
+      "deliberately_biased_targets": true,
+      "before": {
+        "ordinary_phase_mse": 0.256014883518219,
+        "rare_phase_mse": 2.9119713306427,
+        "balanced_mse": 1.5839931070804596
+      },
+      "after": {
+        "ordinary_phase_mse": 0.17647609114646912,
+        "rare_phase_mse": 3.7586324214935303,
+        "balanced_mse": 1.9675542563199997
+      },
+      "stats": {
+        "extra_critic_optimizer_steps": 32,
+        "extra_critic_training_rows": 256,
+        "extra_critic_forward_rows": 768,
+        "fixed_target_mse_before": 0.2233518809080124,
+        "fixed_target_mse_after": 0.17564129829406738,
+        "extra_critic_seconds": 0.0060435830091591924,
+        "actor_updates_in_extra_phase": 0,
+        "new_environment_transitions": 0
+      }
+    },
+    {
+      "seed": 3,
+      "deliberately_biased_targets": false,
+      "before": {
+        "ordinary_phase_mse": 0.19031476974487305,
+        "rare_phase_mse": 0.1959015130996704,
+        "balanced_mse": 0.19310814142227173
+      },
+      "after": {
+        "ordinary_phase_mse": 0.17416614294052124,
+        "rare_phase_mse": 0.178483784198761,
+        "balanced_mse": 0.1763249635696411
+      },
+      "stats": {
+        "extra_critic_optimizer_steps": 32,
+        "extra_critic_training_rows": 256,
+        "extra_critic_forward_rows": 768,
+        "fixed_target_mse_before": 0.21033596992492676,
+        "fixed_target_mse_after": 0.19582729041576385,
+        "extra_critic_seconds": 0.006046416005119681,
+        "actor_updates_in_extra_phase": 0,
+        "new_environment_transitions": 0
+      }
+    },
+    {
+      "seed": 3,
+      "deliberately_biased_targets": true,
+      "before": {
+        "ordinary_phase_mse": 0.19659371674060822,
+        "rare_phase_mse": 3.9552392959594727,
+        "balanced_mse": 2.0759165063500404
+      },
+      "after": {
+        "ordinary_phase_mse": 0.18119356036186218,
+        "rare_phase_mse": 3.5958168506622314,
+        "balanced_mse": 1.8885052055120468
+      },
+      "stats": {
+        "extra_critic_optimizer_steps": 32,
+        "extra_critic_training_rows": 256,
+        "extra_critic_forward_rows": 768,
+        "fixed_target_mse_before": 0.22587573528289795,
+        "fixed_target_mse_after": 0.21638354659080505,
+        "extra_critic_seconds": 0.006194666988449171,
+        "actor_updates_in_extra_phase": 0,
+        "new_environment_transitions": 0
+      }
+    },
+    {
+      "seed": 4,
+      "deliberately_biased_targets": false,
+      "before": {
+        "ordinary_phase_mse": 0.18825583159923553,
+        "rare_phase_mse": 0.1924811452627182,
+        "balanced_mse": 0.19036848843097687
+      },
+      "after": {
+        "ordinary_phase_mse": 0.1694110780954361,
+        "rare_phase_mse": 0.1704900562763214,
+        "balanced_mse": 0.16995056718587875
+      },
+      "stats": {
+        "extra_critic_optimizer_steps": 32,
+        "extra_critic_training_rows": 256,
+        "extra_critic_forward_rows": 768,
+        "fixed_target_mse_before": 0.2054004967212677,
+        "fixed_target_mse_after": 0.1909462809562683,
+        "extra_critic_seconds": 0.0060994170198682696,
+        "actor_updates_in_extra_phase": 0,
+        "new_environment_transitions": 0
+      }
+    },
+    {
+      "seed": 4,
+      "deliberately_biased_targets": true,
+      "before": {
+        "ordinary_phase_mse": 0.20547254383563995,
+        "rare_phase_mse": 5.448904514312744,
+        "balanced_mse": 2.827188529074192
+      },
+      "after": {
+        "ordinary_phase_mse": 0.20911826193332672,
+        "rare_phase_mse": 4.4804606437683105,
+        "balanced_mse": 2.3447894528508186
+      },
+      "stats": {
+        "extra_critic_optimizer_steps": 32,
+        "extra_critic_training_rows": 256,
+        "extra_critic_forward_rows": 768,
+        "fixed_target_mse_before": 0.22712337970733643,
+        "fixed_target_mse_after": 0.21814438700675964,
+        "extra_critic_seconds": 0.00611299998126924,
+        "actor_updates_in_extra_phase": 0,
+        "new_environment_transitions": 0
+      }
+    },
+    {
+      "seed": 5,
+      "deliberately_biased_targets": false,
+      "before": {
+        "ordinary_phase_mse": 0.17821598052978516,
+        "rare_phase_mse": 0.175638347864151,
+        "balanced_mse": 0.17692716419696808
+      },
+      "after": {
+        "ordinary_phase_mse": 0.17535091936588287,
+        "rare_phase_mse": 0.20358596742153168,
+        "balanced_mse": 0.18946844339370728
+      },
+      "stats": {
+        "extra_critic_optimizer_steps": 32,
+        "extra_critic_training_rows": 256,
+        "extra_critic_forward_rows": 768,
+        "fixed_target_mse_before": 0.2109854370355606,
+        "fixed_target_mse_after": 0.21031752228736877,
+        "extra_critic_seconds": 0.006111374997999519,
+        "actor_updates_in_extra_phase": 0,
+        "new_environment_transitions": 0
+      }
+    },
+    {
+      "seed": 5,
+      "deliberately_biased_targets": true,
+      "before": {
+        "ordinary_phase_mse": 0.17807124555110931,
+        "rare_phase_mse": 3.457629680633545,
+        "balanced_mse": 1.8178504630923271
+      },
+      "after": {
+        "ordinary_phase_mse": 0.179477259516716,
+        "rare_phase_mse": 3.3506991863250732,
+        "balanced_mse": 1.7650882229208946
+      },
+      "stats": {
+        "extra_critic_optimizer_steps": 32,
+        "extra_critic_training_rows": 256,
+        "extra_critic_forward_rows": 768,
+        "fixed_target_mse_before": 0.23904232680797577,
+        "fixed_target_mse_after": 0.22756513953208923,
+        "extra_critic_seconds": 0.0061105829954613,
+        "actor_updates_in_extra_phase": 0,
+        "new_environment_transitions": 0
+      }
+    }
+  ],
+  "wall_seconds": 0.8082827079924755,
+  "source_sha256": "5b14354451f9c1848db855e081f16f761c14dac38339643c6b1c95ddc2e25aaa",
+  "kernel_sha256": "ecf923375afdd0b522081a689e224ffcf8e0cd68efe75961875ce7252e32da8b",
+  "accounting": {
+    "toy_fixed_target_rows": 3072,
+    "critic_optimizer_updates": 1152,
+    "critic_training_presentations": 9216,
+    "actor_optimizer_updates": 0,
+    "robot_transitions": 0,
+    "simulator_queries": 0,
+    "teacher_demo_rows": 0,
+    "gpu_seconds": 0,
+    "dollars_spent": 0
+  },
+  "limitations": [
+    "Frozen-actor regression toy, not a PPO learning curve or sample-efficiency result.",
+    "The deliberate phase-target bias is a counterexample, not measured StackCube critic bias.",
+    "More optimizer work is additional compute; no new independent experience is created."
+  ]
+}

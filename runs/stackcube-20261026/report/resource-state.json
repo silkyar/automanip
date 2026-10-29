@@ -1,0 +1,67 @@
+{
+  "resource": {
+    "pod_id": "sptbqb2mwe2ed7",
+    "status": "EXITED",
+    "catalog_hourly_rate": 0.59,
+    "network_volume_id": "zvx3i1sjnx",
+    "started_at": "2026-10-26T20:38:31.399Z",
+    "archive_sha256": "1040a988e3062015d2fa3da5bfe104e717b3460622a493c32c32cecf659a217f"
+  },
+  "posted_pod_billing": {
+    "metadata": {
+      "query": {
+        "bucketSize": "day",
+        "endTime": "2026-10-27T00:00:00Z",
+        "podId": "sptbqb2mwe2ed7",
+        "startTime": "2026-10-26T00:00:00Z"
+      },
+      "recordCount": 1,
+      "totals": {
+        "cpuAmount": 0,
+        "diskAmount": 0.005208333372138441,
+        "gpuAmount": 0.4044223865494132,
+        "totalAmount": 0.40963071992155164
+      },
+      "uniquePodCount": 1
+    },
+    "records": [
+      {
+        "cpuAmount": 0,
+        "diskAmount": 0.005208333372138441,
+        "endTime": "2026-10-27T00:00:00Z",
+        "gpuAmount": 0.4044223865494132,
+        "podId": "sptbqb2mwe2ed7",
+        "startTime": "2026-10-26T00:00:00Z",
+        "totalAmount": 0.40963071992155164
+      }
+    ]
+  },
+  "posted_network_volume_billing": {
+    "metadata": {
+      "query": {
+        "bucketSize": "day",
+        "endTime": "2026-10-27T00:00:00Z",
+        "networkVolumeId": "zvx3i1sjnx",
+        "startTime": "2026-10-26T00:00:00Z"
+      },
+      "recordCount": 1,
+      "totals": {
+        "highPerformanceAmount": 0,
+        "standardAmount": 0.04277777881361544,
+        "totalAmount": 0.04277777881361544
+      },
+      "uniqueNetworkVolumeCount": 1
+    },
+    "records": [
+      {
+        "endTime": "2026-10-27T00:00:00Z",
+        "highPerformanceAmount": 0,
+        "networkVolumeId": "zvx3i1sjnx",
+        "standardAmount": 0.04277777881361544,
+        "startTime": "2026-10-26T00:00:00Z",
+        "totalAmount": 0.04277777881361544
+      }
+    ]
+  },
+  "billing_note": "Posted amounts are a snapshot and have not been established as the final reconciled campaign charge."
+}

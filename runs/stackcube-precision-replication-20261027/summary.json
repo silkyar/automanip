@@ -1,0 +1,853 @@
+{
+  "experiment_id": "stackcube-precision-replication-20261027",
+  "state": "complete",
+  "confirmation_queries": 0,
+  "training": [
+    {
+      "job": {
+        "job_id": "stackcube-precision-replication-20261027-precision-constant-seed-2",
+        "method": "precision-constant",
+        "seed": 2,
+        "trainer_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+        "gpu": "L40S",
+        "trainer_seconds_cap": 2700,
+        "requested_steps": 50000000,
+        "actual_steps_ceiling": 49971200
+      },
+      "state": "complete",
+      "dispatched_at": 1793187735.3902593,
+      "expires_at": 1793190435.3902593,
+      "function_call_id": "fc-01M6152Y73VPXDHRHGY5CG4E6W",
+      "admitted_at": 1793187745.743864,
+      "queue_seconds": 10.353604793548584,
+      "trainer_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+      "gpu_requested": "L40S",
+      "confirmation_queries": 0,
+      "new_training_processes": 1,
+      "gpu_actual_name": "NVIDIA L40S",
+      "versions": {
+        "torch": "2.6.0+cu124",
+        "mani_skill": "3.0.0b21",
+        "sapien": "3.0.0b1",
+        "numpy": "1.26.4",
+        "gymnasium": "0.29.1"
+      },
+      "subprocess_started_at": 1793187749.0032046,
+      "trainer_process_seconds": 2228.222694148,
+      "return_code": 0,
+      "nonfinite_diagnostic_scalars": {},
+      "actual_steps": 49971200,
+      "completed_rollouts": 976,
+      "optimizer_step_upper_bound": 249856,
+      "built_in_evaluation_calls": 40,
+      "built_in_evaluation_transitions": 16000,
+      "built_in_evaluation_episodes": 320,
+      "stopped_early": false,
+      "optimizer_step_count": 103775,
+      "final_logstd_per_dimension": [
+        -1.7301790714263916,
+        -1.636026382446289,
+        -1.7781144380569458,
+        -1.7717862129211426,
+        -0.05522623658180237,
+        -1.0841766595840454,
+        0.26820096373558044,
+        -0.8770872950553894
+      ],
+      "audit_trace_rows": 976,
+      "wrapper_seconds": 2232.619052931,
+      "completed_at": 1793189978.3629193,
+      "files": [
+        {
+          "path": "attempt.json",
+          "bytes": 148,
+          "sha256": "2d51316ca20f5cf087ab8a02568cd05df815b71598826e5c1bae8e1e33f3e592",
+          "trainer_seconds": 0.0
+        },
+        {
+          "path": "scalars.json",
+          "bytes": 4704771,
+          "sha256": "357c28003c1225553bc7162470fe00f165435f70fcf5e381df7ab6a8851d3e01",
+          "trainer_seconds": 2229.192433834076
+        },
+        {
+          "path": "trainer.py",
+          "bytes": 26381,
+          "sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+          "trainer_seconds": 0.0
+        },
+        {
+          "path": "work/train.log",
+          "bytes": 56164,
+          "sha256": "2905364752e851a24da93da12081c3a814af3b584d0186a5e68edf6e22ec3363",
+          "trainer_seconds": 2226.6093146800995
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_1.pt",
+          "bytes": 1167438,
+          "sha256": "2434a3fc98f732c0c9aa624f0530d9a214d7a70b434f790a17e0c5b50e745705",
+          "trainer_seconds": 20.605815172195435
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_101.pt",
+          "bytes": 1168376,
+          "sha256": "df32bc8dd71200934ee91af02926109cec5915b6bf9718f0a6abc42ff6b5f194",
+          "trainer_seconds": 297.43469619750977
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_126.pt",
+          "bytes": 1168376,
+          "sha256": "165a98e3c95eafc8326b6eb68113e62a08418d22c342f91314bf2e4f18954256",
+          "trainer_seconds": 349.0120961666107
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_151.pt",
+          "bytes": 1168376,
+          "sha256": "0143be9114f056bd2bb1f4fc3a9d224d26c2c8a3694d7d07537ad00ccb7153b8",
+          "trainer_seconds": 398.456396818161
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_176.pt",
+          "bytes": 1168376,
+          "sha256": "f787850ffacff99f757d967215114eb99b1c98d5e2c114f97031610120c3df37",
+          "trainer_seconds": 447.20366525650024
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_201.pt",
+          "bytes": 1168376,
+          "sha256": "a45aab2fb44a5818ec108694d45929f2f9aa686d34e2006c29a2ccb94a8229f2",
+          "trainer_seconds": 495.8259274959564
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_226.pt",
+          "bytes": 1168376,
+          "sha256": "5de26b079d62bd60083dc580995171f54ef028edf18223049f2b969ea26e0f86",
+          "trainer_seconds": 549.1124069690704
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_251.pt",
+          "bytes": 1168376,
+          "sha256": "13ca53c0c168b4a6f8b7352a3a383655c2205e99373669224bee64afbe841e31",
+          "trainer_seconds": 602.3198828697205
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_26.pt",
+          "bytes": 1167971,
+          "sha256": "27deee22a1b69b5c23d5d887fd3c324e215c08b3499c09c63ac3d53ede455be4",
+          "trainer_seconds": 90.40006279945374
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_276.pt",
+          "bytes": 1168376,
+          "sha256": "48757146c37155657ebb1c0e9a512186dacd8fa5b0fc869528e5b42543ec5c70",
+          "trainer_seconds": 660.856606721878
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_301.pt",
+          "bytes": 1168376,
+          "sha256": "acba71a217083edaa1e6986f41e751b3b2faa02cf667b41f915a1765243a1853",
+          "trainer_seconds": 715.8921675682068
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_326.pt",
+          "bytes": 1168376,
+          "sha256": "f2d87aaee4f3667abc6844b8c9ea11b7dd444a66f44f7f13d45740ff9c4c5c91",
+          "trainer_seconds": 765.2764654159546
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_351.pt",
+          "bytes": 1168376,
+          "sha256": "c4b81d36cfd800c80c3272f0d02a5c51a3f9fd830fa29589668dc595416cae94",
+          "trainer_seconds": 815.2417902946472
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_376.pt",
+          "bytes": 1168376,
+          "sha256": "c87463d0db905bad5f798605865af868a16fef3f182267965a53224990fbb083",
+          "trainer_seconds": 866.1861600875854
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_401.pt",
+          "bytes": 1168376,
+          "sha256": "15a712866f332aa63c3254b40a287d3eb89543d4521e23a384568ca98ffa5258",
+          "trainer_seconds": 912.9293344020844
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_426.pt",
+          "bytes": 1168376,
+          "sha256": "dc4577a34bbdcef44f4ed9723efea6360ddec367848f83083684c1383c462161",
+          "trainer_seconds": 960.1065287590027
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_451.pt",
+          "bytes": 1168376,
+          "sha256": "3b4c2bbc7b30a8a827c7434ab562921a9c4d6e08861f2773ba137059ea16427c",
+          "trainer_seconds": 1009.7578382492065
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_476.pt",
+          "bytes": 1168376,
+          "sha256": "293289ece50492b3a8afbb919c479c15626b7dec25abd5004edefb5aafb721d1",
+          "trainer_seconds": 1058.1130874156952
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_501.pt",
+          "bytes": 1168376,
+          "sha256": "4c8e9052565ef713e3a6d5987bdd52a89c6392ab39de408bc6416e96734b3705",
+          "trainer_seconds": 1105.68630027771
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_51.pt",
+          "bytes": 1167971,
+          "sha256": "8f3854ef20123f3b7409f0996bb79b46e121f6fe1551ecea5b74c5413288bd90",
+          "trainer_seconds": 161.81138563156128
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_526.pt",
+          "bytes": 1168376,
+          "sha256": "22dc9097697b89bc499d69e70734b20c93163c29af60b6049e2eda5dca50d092",
+          "trainer_seconds": 1154.324562549591
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_551.pt",
+          "bytes": 1168376,
+          "sha256": "c652dc135e01c615c3b5c136a00aea4e5426cdb3c94be101f5a0f32a1e746370",
+          "trainer_seconds": 1204.885914325714
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_576.pt",
+          "bytes": 1168376,
+          "sha256": "ab47aa223e7028ae81c6109719cfc40c5489ee118742b177632e3f996171c6d1",
+          "trainer_seconds": 1257.4293584823608
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_601.pt",
+          "bytes": 1168376,
+          "sha256": "292d1b3163668eacd3e24fab1635ca299fca5ed09fb8fbdc6d44fe85fc43b178",
+          "trainer_seconds": 1312.1149020195007
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_626.pt",
+          "bytes": 1168376,
+          "sha256": "063d39c36a8d29c7d939417b25b3404636cf43f3a5631272390f1d8808e292cd",
+          "trainer_seconds": 1367.2104647159576
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_651.pt",
+          "bytes": 1168376,
+          "sha256": "717776782a08eebb5358ae70e70a52068b9bb594ff4c5aaeb7747f1ea1528bbc",
+          "trainer_seconds": 1418.5868544578552
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_676.pt",
+          "bytes": 1168376,
+          "sha256": "077193b495152b8d264117c6c409f4fb6598af8646faac852828e99dec2856e3",
+          "trainer_seconds": 1475.0854823589325
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_701.pt",
+          "bytes": 1168376,
+          "sha256": "3034358f6a89f8b34fa782a4d82aced9d6d4a89946db75de9dced73264f7559a",
+          "trainer_seconds": 1529.9360337257385
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_726.pt",
+          "bytes": 1168376,
+          "sha256": "d0c2c16600410d1b9b704a97defb7027bfd7878e0693af7409ba2234843949d6",
+          "trainer_seconds": 1582.2254660129547
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_751.pt",
+          "bytes": 1168376,
+          "sha256": "17297444e1bff86456701998b499e7980f0bbc1c70023bddf4993bbdd2bb6359",
+          "trainer_seconds": 1643.0842967033386
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_76.pt",
+          "bytes": 1167971,
+          "sha256": "b5f7390c77c87f48462e0f4b712b10a731447b24888587db7236f3b39c742f2f",
+          "trainer_seconds": 233.1517050266266
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_776.pt",
+          "bytes": 1168376,
+          "sha256": "48189aa53b296de24c68d2e4f56a6eb32158effb916473b4fef1070643792532",
+          "trainer_seconds": 1700.3779616355896
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_801.pt",
+          "bytes": 1168376,
+          "sha256": "77ce83674d242f4ade80b64428899df8814b4465de3c5029a168405a96e1bf27",
+          "trainer_seconds": 1759.1376948356628
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_826.pt",
+          "bytes": 1168376,
+          "sha256": "523d983a81de8e813367c5ca67eca584f3612d24eeb7a2567c1c39e5e630c508",
+          "trainer_seconds": 1822.0176196098328
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_851.pt",
+          "bytes": 1168376,
+          "sha256": "c7f5bd4779c3c26092090f53b042578dbdb3627c5276d86d9003b0838e0e24c9",
+          "trainer_seconds": 1884.1164989471436
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_876.pt",
+          "bytes": 1168376,
+          "sha256": "6968b3a4ab279fbd6f39b782ade745fda38828647c1be1f0c7171fb9ee1145c5",
+          "trainer_seconds": 1949.972540140152
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_901.pt",
+          "bytes": 1168376,
+          "sha256": "3426fc4856b411000c7072edc1e06c6e1ffcad4164076f46a7b1733b58594255",
+          "trainer_seconds": 2021.2978336811066
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_926.pt",
+          "bytes": 1168376,
+          "sha256": "4f04c3b1e9f57dba560e180b2c7604816c0baa80453f6d3c2e2e527ec7ffc4aa",
+          "trainer_seconds": 2088.6549441814423
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_951.pt",
+          "bytes": 1168376,
+          "sha256": "d255d76169b6cd2f1f2498cd6ef0253e1adc6c3a3c66b970106ae39ce558d974",
+          "trainer_seconds": 2157.022101163864
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_976.pt",
+          "bytes": 1168376,
+          "sha256": "bb2b0135aaf02c62e0405791a92d3eef3d1621191e6123812d946e8a62aea1bd",
+          "trainer_seconds": 2223.445168495178
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/events.out.tfevents.1793187766.modal.8.0",
+          "bytes": 2373522,
+          "sha256": "45afc86897429f08cf988b0bf20848cfb0ad508709e80fa358ab1ba251182dee",
+          "trainer_seconds": 2226.1852951049805
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-2/final_ckpt.pt",
+          "bytes": 1168418,
+          "sha256": "70d6f16a4a285b8be76c775d340650211987d5824ab491ff88478972067de810",
+          "trainer_seconds": 2226.3163011074066
+        }
+      ],
+      "output_bytes": 55062291,
+      "prespecified_censored_steps": []
+    },
+    {
+      "job": {
+        "job_id": "stackcube-precision-replication-20261027-precision-constant-seed-3",
+        "method": "precision-constant",
+        "seed": 3,
+        "trainer_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+        "gpu": "L40S",
+        "trainer_seconds_cap": 2700,
+        "requested_steps": 50000000,
+        "actual_steps_ceiling": 49971200
+      },
+      "state": "complete",
+      "dispatched_at": 1793187742.4424553,
+      "expires_at": 1793190442.4424553,
+      "function_call_id": "fc-01M61533PMQ7ZATBZN2D1F9F4P",
+      "admitted_at": 1793187750.802999,
+      "queue_seconds": 8.360543727874756,
+      "trainer_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+      "gpu_requested": "L40S",
+      "confirmation_queries": 0,
+      "new_training_processes": 1,
+      "gpu_actual_name": "NVIDIA L40S",
+      "versions": {
+        "torch": "2.6.0+cu124",
+        "mani_skill": "3.0.0b21",
+        "sapien": "3.0.0b1",
+        "numpy": "1.26.4",
+        "gymnasium": "0.29.1"
+      },
+      "subprocess_started_at": 1793187753.920726,
+      "trainer_process_seconds": 2108.697150856,
+      "return_code": 0,
+      "nonfinite_diagnostic_scalars": {},
+      "actual_steps": 49971200,
+      "completed_rollouts": 976,
+      "optimizer_step_upper_bound": 249856,
+      "built_in_evaluation_calls": 40,
+      "built_in_evaluation_transitions": 16000,
+      "built_in_evaluation_episodes": 320,
+      "stopped_early": false,
+      "optimizer_step_count": 72352,
+      "final_logstd_per_dimension": [
+        -1.7774044275283813,
+        -1.61854887008667,
+        -1.8092490434646606,
+        -1.8553407192230225,
+        -0.3743028938770294,
+        -1.2412703037261963,
+        -0.03921045735478401,
+        -1.245700716972351
+      ],
+      "audit_trace_rows": 976,
+      "wrapper_seconds": 2113.0645973240003,
+      "completed_at": 1793189863.867598,
+      "files": [
+        {
+          "path": "attempt.json",
+          "bytes": 148,
+          "sha256": "4bd1fafd30006eeb22947541c773434688ae229243c24a7a2a508a5d8355b86b",
+          "trainer_seconds": 0.0
+        },
+        {
+          "path": "scalars.json",
+          "bytes": 4704969,
+          "sha256": "6e578e3e79c30904c2791b0a27121e46ceb2443885b01f8fc5218da3c3e61513",
+          "trainer_seconds": 2109.7007579803467
+        },
+        {
+          "path": "trainer.py",
+          "bytes": 26381,
+          "sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+          "trainer_seconds": 0.0
+        },
+        {
+          "path": "work/train.log",
+          "bytes": 56152,
+          "sha256": "bc551ef1ccdc7eb74b7e5b028eb5db720364365cf5ed7c025ec95cf16e32e9e4",
+          "trainer_seconds": 2106.917563199997
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_1.pt",
+          "bytes": 1167438,
+          "sha256": "0e91025a96fdc123b5d7670e967d193d0e51b77dd459b4b4325bd80c15dc4d3e",
+          "trainer_seconds": 20.539499759674072
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_101.pt",
+          "bytes": 1168376,
+          "sha256": "4c8bee0867faf951e229d2ae39363a0d04c5b3a58315975b059bea440a7cef67",
+          "trainer_seconds": 304.5314610004425
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_126.pt",
+          "bytes": 1168376,
+          "sha256": "d9c3f12067b0395c83f00a81f116d9be1c0a42103d97b147954b92c3fd9ec12a",
+          "trainer_seconds": 360.63741397857666
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_151.pt",
+          "bytes": 1168376,
+          "sha256": "d9906f02d079dadf8b0d4355916ac6d2726a25879df11fc1b6ba2beaadc0fa05",
+          "trainer_seconds": 411.85902285575867
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_176.pt",
+          "bytes": 1168376,
+          "sha256": "a6ad8cda7cb84e811ebf27f3796585ed343c44ea518d1ec795e996de84a9335b",
+          "trainer_seconds": 462.5175919532776
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_201.pt",
+          "bytes": 1168376,
+          "sha256": "a261edd11b37db11c1e2b6a8b608527c0d2b46b44e13d7c93e1a4c0610aff335",
+          "trainer_seconds": 516.8554203510284
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_226.pt",
+          "bytes": 1168376,
+          "sha256": "fe348cb415330b78b233b6adb595e5362eb7a9ca6318d7ce0d929f5e3532d5eb",
+          "trainer_seconds": 572.4043340682983
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_251.pt",
+          "bytes": 1168376,
+          "sha256": "4b85414f9d48445da92b1039109f0b6b2f8612b92846ba7bcab10ddda967cfc6",
+          "trainer_seconds": 622.2778477668762
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_26.pt",
+          "bytes": 1167971,
+          "sha256": "fdb1039cb234c083ad2c793b510ba93c274d274d3b4b2441bb5d121458540cb4",
+          "trainer_seconds": 92.13679051399231
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_276.pt",
+          "bytes": 1168376,
+          "sha256": "d04058d1e941bd49a2dea84e07d00900b983ce9ea0e3ef61fafd5d57ff5e0ff9",
+          "trainer_seconds": 671.1162886619568
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_301.pt",
+          "bytes": 1168376,
+          "sha256": "0dcb625c07cd40814dc70adb769c52811d58375a4a3fdccaf03a9a0873e2f4f5",
+          "trainer_seconds": 719.5417006015778
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_326.pt",
+          "bytes": 1168376,
+          "sha256": "2b59cdd06780aa191dfa4ef0ac575b28a3e3a6a4e368511c45a11ed7b8e2de22",
+          "trainer_seconds": 768.0271165370941
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_351.pt",
+          "bytes": 1168376,
+          "sha256": "b76b551c62b70c4e906213bfe3d549ea3c6c588da48637b19f70e81a51cab768",
+          "trainer_seconds": 816.8895592689514
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_376.pt",
+          "bytes": 1168376,
+          "sha256": "81e47f75dbe5a02d92b7ef69b02402741b0582a98b209d85623cd3cc6dd42788",
+          "trainer_seconds": 864.903933763504
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_401.pt",
+          "bytes": 1168376,
+          "sha256": "7668013a9470f8e53a780e2dddfad7957fb3e1c644aa23b86f44dbfe4fd4cb4a",
+          "trainer_seconds": 912.9972853660583
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_426.pt",
+          "bytes": 1168376,
+          "sha256": "f2a536304cc58e31ae80ebf747f88bf50a6eed761620b87f651212d1eba0769a",
+          "trainer_seconds": 959.9265558719635
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_451.pt",
+          "bytes": 1168376,
+          "sha256": "d2342197064dac54a0a0fe3fdf3d3846a89072f52dceee9a1468eada1a843209",
+          "trainer_seconds": 1009.1449859142303
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_476.pt",
+          "bytes": 1168376,
+          "sha256": "727da8fe30a640256181ddab5ac860d0f3fd9db1f133903c1bfd3eb5d2faf5a5",
+          "trainer_seconds": 1058.6874384880066
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_501.pt",
+          "bytes": 1168376,
+          "sha256": "be34e14f7de7ac3d664309c2ac34b6f9af0f84371f3de3441040e3a911c6a295",
+          "trainer_seconds": 1108.492909669876
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_51.pt",
+          "bytes": 1167971,
+          "sha256": "e0a9819fdbb72f81c128543c9901060ca1cf6d1f7517c4ed7023a883b978497d",
+          "trainer_seconds": 164.33258318901062
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_526.pt",
+          "bytes": 1168376,
+          "sha256": "ab1f76a5acf1835ad99846d05a31a9ff00faba1e4e0372ba358e8c21144adcfd",
+          "trainer_seconds": 1155.3431746959686
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_551.pt",
+          "bytes": 1168376,
+          "sha256": "5e865c2d40061ab4b2f48e35f0a08ca99fd45ad6a0e2796bccf33e595b26d1fa",
+          "trainer_seconds": 1202.9274907112122
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_576.pt",
+          "bytes": 1168376,
+          "sha256": "2b9f0046d441a288067e8cca43b949322d27fdce034ee736c1d75d66dd9e4232",
+          "trainer_seconds": 1252.2179260253906
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_601.pt",
+          "bytes": 1168376,
+          "sha256": "4112e73b52ffb6cfd13f1b78dd26a8f7fc93ae7bd493a9f04a576c1d15e9abb4",
+          "trainer_seconds": 1302.728446006775
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_626.pt",
+          "bytes": 1168376,
+          "sha256": "e62387aeaba5edb27e3e4eed73d34bda4c5c4c0c4b7408a290f6cabccd198ab5",
+          "trainer_seconds": 1352.7349309921265
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_651.pt",
+          "bytes": 1168376,
+          "sha256": "cb242652dad4f86d8613047ea024a76a1ed332539f07e713d9bbe231ee6015f3",
+          "trainer_seconds": 1403.8984966278076
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_676.pt",
+          "bytes": 1168376,
+          "sha256": "89f5e471378efed6da21b591097612a2537e7e7a307cf66478bb7d5c7155c12f",
+          "trainer_seconds": 1456.0451307296753
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_701.pt",
+          "bytes": 1168376,
+          "sha256": "e059129487f559ef15f0f5b0aa4ad16a804d54847a0fdb58388e367d657b3ae2",
+          "trainer_seconds": 1507.944747686386
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_726.pt",
+          "bytes": 1168376,
+          "sha256": "26e7a1ecf53dffdec13b706730a4043e30a00a936af8807a9491de654f7bdebe",
+          "trainer_seconds": 1559.8453648090363
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_751.pt",
+          "bytes": 1168376,
+          "sha256": "2925620d9a5954144ec4e5138b3d0cc1def4f0712d0d14918fd3e5079338f849",
+          "trainer_seconds": 1610.9909291267395
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_76.pt",
+          "bytes": 1167971,
+          "sha256": "cc0032b78209b45e4d7173681822c668497d4a9cd10256cb3e1ba0194cf0bfed",
+          "trainer_seconds": 236.94369912147522
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_776.pt",
+          "bytes": 1168376,
+          "sha256": "1ee4e64630a9978c1cef88c1a91198103bbf9fadae40fbb04cb1f256e67acadd",
+          "trainer_seconds": 1663.4115824699402
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_801.pt",
+          "bytes": 1168376,
+          "sha256": "2520ea32be0be484e38d1a411636bc63d4a1861c7d5476b676e435dafa96e898",
+          "trainer_seconds": 1716.59028840065
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_826.pt",
+          "bytes": 1168376,
+          "sha256": "a2029c7a1dc702069baaf7ba8d7d5e3e2c0b90ffa71f161706f769b189cd575c",
+          "trainer_seconds": 1766.71378159523
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_851.pt",
+          "bytes": 1168376,
+          "sha256": "a80cad3d260d7d51c8b6b46c84f90eeb336880a42bb8c72888ba5c33c1b40111",
+          "trainer_seconds": 1818.8524153232574
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_876.pt",
+          "bytes": 1168376,
+          "sha256": "928c8f479dfb883f2e3a1d5e80c670687f7ba36f21ac08add75d1b19c1bd5fcb",
+          "trainer_seconds": 1876.0714027881622
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_901.pt",
+          "bytes": 1168376,
+          "sha256": "d0a26ab0c1161463e3874c4e37e270af51518462e075f5a5ddddf0d9d44ca65c",
+          "trainer_seconds": 1932.5383529663086
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_926.pt",
+          "bytes": 1168376,
+          "sha256": "87d0f77bb15011f3e49f74b252fc014b21bbf4f4b9445156624f34c56a781d22",
+          "trainer_seconds": 1985.3610515594482
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_951.pt",
+          "bytes": 1168376,
+          "sha256": "e1498623b4f564e9d2454377acb3e8c1e37fbf1c2c271b757a7859158cae2447",
+          "trainer_seconds": 2040.2938981056213
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_976.pt",
+          "bytes": 1168376,
+          "sha256": "c80fb4978c605118926e812bec6f5e35fad3deae2b9cf5fdcd9f3887317c03d1",
+          "trainer_seconds": 2104.327381849289
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/events.out.tfevents.1793187771.modal.8.0",
+          "bytes": 2373522,
+          "sha256": "666d8401fd0d70749935036ddaf9087374dacfd2c483d68eec81f53b1df9e373",
+          "trainer_seconds": 2106.2925193309784
+        },
+        {
+          "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/final_ckpt.pt",
+          "bytes": 1168418,
+          "sha256": "73ecfabd74124e1fb1fdd31b1eaa2b800a6bc5deab89547b9ffe8b365b237116",
+          "trainer_seconds": 2106.609541654587
+        }
+      ],
+      "output_bytes": 55062477,
+      "prespecified_censored_steps": []
+    }
+  ],
+  "development_curves": {
+    "stackcube-precision-replication-20261027-precision-constant-seed-2": [
+      {
+        "steps": 25600000,
+        "successes": 126,
+        "episodes": 128,
+        "trainer_seconds": 1105.68630027771,
+        "point": "prespecified",
+        "weights_sha256": "b564d38f44e1ccf0dd67b5a06fe89cd96c88a929b57d2c3d2ce1059745bf98ab",
+        "native_checkpoint_sha256": "4c8e9052565ef713e3a6d5987bdd52a89c6392ab39de408bc6416e96734b3705",
+        "evaluation_seconds": 41.545301721,
+        "evaluation_queue_seconds": 35.15551042556763,
+        "gpu_actual_name": "NVIDIA L40S",
+        "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/b564d38f44e1ccf0dd67b5a06fe89cd96c88a929b57d2c3d2ce1059745bf98ab/development/result.json"
+      },
+      {
+        "steps": 38400000,
+        "successes": 124,
+        "episodes": 128,
+        "trainer_seconds": 1643.0842967033386,
+        "point": "prespecified",
+        "weights_sha256": "8985972953388dcfe1d9db72e5b88533dacb6f549c1788ba0d6d45e290cf4822",
+        "native_checkpoint_sha256": "17297444e1bff86456701998b499e7980f0bbc1c70023bddf4993bbdd2bb6359",
+        "evaluation_seconds": 32.930444583,
+        "evaluation_queue_seconds": 5.301926136016846,
+        "gpu_actual_name": "NVIDIA L40S",
+        "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/8985972953388dcfe1d9db72e5b88533dacb6f549c1788ba0d6d45e290cf4822/development/result.json"
+      },
+      {
+        "steps": 49971200,
+        "successes": 126,
+        "episodes": 128,
+        "trainer_seconds": 2226.3163011074066,
+        "point": "final",
+        "weights_sha256": "c3abf0e70973e39c3616f0a217f75583aeff56aea86ad253370e501a24472959",
+        "native_checkpoint_sha256": "70d6f16a4a285b8be76c775d340650211987d5824ab491ff88478972067de810",
+        "evaluation_seconds": 34.009594678,
+        "evaluation_queue_seconds": 2.010796308517456,
+        "gpu_actual_name": "NVIDIA L40S",
+        "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/c3abf0e70973e39c3616f0a217f75583aeff56aea86ad253370e501a24472959/development/result.json"
+      }
+    ],
+    "stackcube-precision-replication-20261027-precision-constant-seed-3": [
+      {
+        "steps": 25600000,
+        "successes": 121,
+        "episodes": 128,
+        "trainer_seconds": 1108.492909669876,
+        "point": "prespecified",
+        "weights_sha256": "78d9736ddaf6453a947c1d6b825a80d188badc6bd7e4af73c39252c00d2cc712",
+        "native_checkpoint_sha256": "be34e14f7de7ac3d664309c2ac34b6f9af0f84371f3de3441040e3a911c6a295",
+        "evaluation_seconds": 32.98880077,
+        "evaluation_queue_seconds": 141.13104152679443,
+        "gpu_actual_name": "NVIDIA L40S",
+        "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/78d9736ddaf6453a947c1d6b825a80d188badc6bd7e4af73c39252c00d2cc712/development/result.json"
+      },
+      {
+        "steps": 38400000,
+        "successes": 120,
+        "episodes": 128,
+        "trainer_seconds": 1610.9909291267395,
+        "point": "prespecified",
+        "weights_sha256": "d56ac01ee3a718a7dfa1a774be6e135f74a276639e15ca13045c71e6b7d21a7a",
+        "native_checkpoint_sha256": "2925620d9a5954144ec4e5138b3d0cc1def4f0712d0d14918fd3e5079338f849",
+        "evaluation_seconds": 27.343462175000003,
+        "evaluation_queue_seconds": 4.496550798416138,
+        "gpu_actual_name": "NVIDIA L40S",
+        "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/d56ac01ee3a718a7dfa1a774be6e135f74a276639e15ca13045c71e6b7d21a7a/development/result.json"
+      },
+      {
+        "steps": 49971200,
+        "successes": 126,
+        "episodes": 128,
+        "trainer_seconds": 2106.609541654587,
+        "point": "final",
+        "weights_sha256": "ec3202403c8cb7c705c1591ce61d61a242d4d9ab957241b4b98d8697bef5cb10",
+        "native_checkpoint_sha256": "73ecfabd74124e1fb1fdd31b1eaa2b800a6bc5deab89547b9ffe8b365b237116",
+        "evaluation_seconds": 30.572022849,
+        "evaluation_queue_seconds": 3.346670389175415,
+        "gpu_actual_name": "NVIDIA L40S",
+        "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/ec3202403c8cb7c705c1591ce61d61a242d4d9ab957241b4b98d8697bef5cb10/development/result.json"
+      }
+    ]
+  },
+  "evaluations": [
+    {
+      "steps": 25600000,
+      "successes": 126,
+      "episodes": 128,
+      "trainer_seconds": 1105.68630027771,
+      "point": "prespecified",
+      "weights_sha256": "b564d38f44e1ccf0dd67b5a06fe89cd96c88a929b57d2c3d2ce1059745bf98ab",
+      "native_checkpoint_sha256": "4c8e9052565ef713e3a6d5987bdd52a89c6392ab39de408bc6416e96734b3705",
+      "evaluation_seconds": 41.545301721,
+      "evaluation_queue_seconds": 35.15551042556763,
+      "gpu_actual_name": "NVIDIA L40S",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/b564d38f44e1ccf0dd67b5a06fe89cd96c88a929b57d2c3d2ce1059745bf98ab/development/result.json"
+    },
+    {
+      "steps": 25600000,
+      "successes": 121,
+      "episodes": 128,
+      "trainer_seconds": 1108.492909669876,
+      "point": "prespecified",
+      "weights_sha256": "78d9736ddaf6453a947c1d6b825a80d188badc6bd7e4af73c39252c00d2cc712",
+      "native_checkpoint_sha256": "be34e14f7de7ac3d664309c2ac34b6f9af0f84371f3de3441040e3a911c6a295",
+      "evaluation_seconds": 32.98880077,
+      "evaluation_queue_seconds": 141.13104152679443,
+      "gpu_actual_name": "NVIDIA L40S",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/78d9736ddaf6453a947c1d6b825a80d188badc6bd7e4af73c39252c00d2cc712/development/result.json"
+    },
+    {
+      "steps": 38400000,
+      "successes": 124,
+      "episodes": 128,
+      "trainer_seconds": 1643.0842967033386,
+      "point": "prespecified",
+      "weights_sha256": "8985972953388dcfe1d9db72e5b88533dacb6f549c1788ba0d6d45e290cf4822",
+      "native_checkpoint_sha256": "17297444e1bff86456701998b499e7980f0bbc1c70023bddf4993bbdd2bb6359",
+      "evaluation_seconds": 32.930444583,
+      "evaluation_queue_seconds": 5.301926136016846,
+      "gpu_actual_name": "NVIDIA L40S",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/8985972953388dcfe1d9db72e5b88533dacb6f549c1788ba0d6d45e290cf4822/development/result.json"
+    },
+    {
+      "steps": 38400000,
+      "successes": 120,
+      "episodes": 128,
+      "trainer_seconds": 1610.9909291267395,
+      "point": "prespecified",
+      "weights_sha256": "d56ac01ee3a718a7dfa1a774be6e135f74a276639e15ca13045c71e6b7d21a7a",
+      "native_checkpoint_sha256": "2925620d9a5954144ec4e5138b3d0cc1def4f0712d0d14918fd3e5079338f849",
+      "evaluation_seconds": 27.343462175000003,
+      "evaluation_queue_seconds": 4.496550798416138,
+      "gpu_actual_name": "NVIDIA L40S",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/d56ac01ee3a718a7dfa1a774be6e135f74a276639e15ca13045c71e6b7d21a7a/development/result.json"
+    },
+    {
+      "steps": 49971200,
+      "successes": 126,
+      "episodes": 128,
+      "trainer_seconds": 2226.3163011074066,
+      "point": "final",
+      "weights_sha256": "c3abf0e70973e39c3616f0a217f75583aeff56aea86ad253370e501a24472959",
+      "native_checkpoint_sha256": "70d6f16a4a285b8be76c775d340650211987d5824ab491ff88478972067de810",
+      "evaluation_seconds": 34.009594678,
+      "evaluation_queue_seconds": 2.010796308517456,
+      "gpu_actual_name": "NVIDIA L40S",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/c3abf0e70973e39c3616f0a217f75583aeff56aea86ad253370e501a24472959/development/result.json"
+    },
+    {
+      "steps": 49971200,
+      "successes": 126,
+      "episodes": 128,
+      "trainer_seconds": 2106.609541654587,
+      "point": "final",
+      "weights_sha256": "ec3202403c8cb7c705c1591ce61d61a242d4d9ab957241b4b98d8697bef5cb10",
+      "native_checkpoint_sha256": "73ecfabd74124e1fb1fdd31b1eaa2b800a6bc5deab89547b9ffe8b365b237116",
+      "evaluation_seconds": 30.572022849,
+      "evaluation_queue_seconds": 3.346670389175415,
+      "gpu_actual_name": "NVIDIA L40S",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/ec3202403c8cb7c705c1591ce61d61a242d4d9ab957241b4b98d8697bef5cb10/development/result.json"
+    }
+  ],
+  "cost_plan": {
+    "job_count": 2,
+    "gpu_container_seconds_bound": 6480,
+    "gpu_cpu_ram_usd": 4.0818816,
+    "conversion_cpu_usd": 0.012628799999999999,
+    "coordinator_usd": 0.019782,
+    "subtotal_usd": 4.1142924,
+    "branch_cap_usd": 4.5,
+    "reserve_usd": 0.38570759999999993
+  },
+  "started_at": 1793187735.3899586,
+  "completed_at": 1793190367.823048
+}

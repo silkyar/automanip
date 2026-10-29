@@ -1,0 +1,49 @@
+{
+  "binding": {
+    "bound_at": "2026-10-28T14:49:31.067330+00:00",
+    "new_experiment_id": "stackcube-env-count-pilot-20261028",
+    "reference_campaign": "stackcube-kl-value-screen-20261028",
+    "reference_app_id": "ap-1EVyFxgga0JHgUxU70mYgg",
+    "reference_coordinator_call_id": "fc-01M61F8GAKT8WH4DYJ8W4EV74T",
+    "reference_job": {
+      "job_id": "stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1",
+      "method": "scratch-kl-stop-control",
+      "seed": 1,
+      "trainer_sha256": "de067415f6895f7b4fcc534cff20fe9cd628fef6faae3846c3b49687ff526632",
+      "gpu": "L40S",
+      "trainer_seconds_cap": 600,
+      "requested_steps": 10240000,
+      "actual_steps_ceiling": 10240000
+    },
+    "reference_function_call_id": "fc-01M61F8MPMY14SC3QBAPWRZJYF",
+    "reference_dispatched_at": 1793198411.528895,
+    "reference_plan_sha256": "ca78ba1537582330dcfaddcd0586f0b2ee37cf732b87d1702aafe88a57db40a9",
+    "reference_launch_sha256": "f8d0d4c82389522360e863b415ace62c7e4526ddeea00e5b9a0ce41a39857543",
+    "reference_num_envs": 1024,
+    "num_steps": 50,
+    "num_minibatches": 32,
+    "update_epochs": 8,
+    "reference_batch_steps": 51200,
+    "reference_minibatch_size": 1600,
+    "training_seed": 1,
+    "selection": "Fixed existing1024-env control by exact job/call/source before reading its score curves; never select by outcome.",
+    "new_reference_queries": 0,
+    "reference_scores_read_for_selection": false
+  },
+  "native_record_sha256": "97aa1d6c6f2460cc16e0906b3c96d7910f2d03c240feaa7c59c86c78c7b74308",
+  "initial_checkpoint_sha256": "fe0b2ad4d99fc88f0c408a1da3ccfbf80fdf51e0d643f7ad977ad4604aa8f753",
+  "actual_steps": 10240000,
+  "trainer_process_seconds": 572.611207391,
+  "points": [
+    {
+      "steps": 5120000,
+      "weights_sha256": "a95c61401ddcb446c4eb50d871b0832ffc868f343556e67004191561ae17458c",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/a95c61401ddcb446c4eb50d871b0832ffc868f343556e67004191561ae17458c/development/result.json"
+    },
+    {
+      "steps": 10240000,
+      "weights_sha256": "5790c94cc54f14ba60f3887f535e2a98fff182cf58a67b98a48d354fd2e3f33f",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/5790c94cc54f14ba60f3887f535e2a98fff182cf58a67b98a48d354fd2e3f33f/development/result.json"
+    }
+  ]
+}

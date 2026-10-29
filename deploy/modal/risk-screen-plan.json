@@ -1,0 +1,120 @@
+{
+  "experiment_id": "stackcube-risk-continuation-20261028",
+  "launch_enabled": true,
+  "root_review_required_before_launch": true,
+  "scientific_plan": "docs/stackcube-risk-pilot-plan-20261027.md",
+  "scientific_plan_sha256": "229ac10a532fd0b95529d6f4f67f398b5468893bef04d540aaf1b95ae42b6f86",
+  "jobs": [
+    {
+      "job_id": "stackcube-risk-continuation-20261028-risk-ppo-control-seed-1",
+      "method": "risk-ppo-control",
+      "seed": 1,
+      "trainer_sha256": "5f802501efb026560774d795f16bacb0b8fc7767a17822f5c191b1431fc7988b",
+      "reference_sha256": "307a2bc5996d5def9f696ab35b27a9cf96a5cf7401c678ecc981b78170d1084b",
+      "gpu": "L40S",
+      "trainer_seconds_cap": 300,
+      "requested_steps": 2048000,
+      "actual_steps_ceiling": 2048000
+    },
+    {
+      "job_id": "stackcube-risk-continuation-20261028-risk-episode-mean-seed-1",
+      "method": "risk-episode-mean",
+      "seed": 1,
+      "trainer_sha256": "3c5fbf9334a16a1cdb584000ff74c49e05f645e9177488f079ca2e917142c2f0",
+      "reference_sha256": "307a2bc5996d5def9f696ab35b27a9cf96a5cf7401c678ecc981b78170d1084b",
+      "gpu": "L40S",
+      "trainer_seconds_cap": 300,
+      "requested_steps": 2048000,
+      "actual_steps_ceiling": 2048000
+    },
+    {
+      "job_id": "stackcube-risk-continuation-20261028-risk-episode-cvar10-seed-1",
+      "method": "risk-episode-cvar10",
+      "seed": 1,
+      "trainer_sha256": "ebf5469003849787e5d8469a48a76f94eb232f0554b8c8f0a07e0c5b85f3495c",
+      "reference_sha256": "307a2bc5996d5def9f696ab35b27a9cf96a5cf7401c678ecc981b78170d1084b",
+      "gpu": "L40S",
+      "trainer_seconds_cap": 300,
+      "requested_steps": 2048000,
+      "actual_steps_ceiling": 2048000
+    }
+  ],
+  "arms": [
+    "risk-ppo-control",
+    "risk-episode-mean",
+    "risk-episode-cvar10"
+  ],
+  "training_seeds": [
+    1
+  ],
+  "gpu_requested": "L40S",
+  "max_parallel_trainers": 1,
+  "training_dispatch": "Sequential blocking calls: each original300-second lease is created only after prior trainer completed. Receipt failure stops further dispatch.",
+  "max_parallel_evaluators": 3,
+  "development_episodes": 128,
+  "selected_steps": [
+    "final_actual_continuation_steps"
+  ],
+  "max_development_evaluations": 3,
+  "confirmation_queries": 0,
+  "trainer_hard_seconds": 300,
+  "trainer_save_reserve_seconds": 20,
+  "trainer_wrapper_timeout_seconds": 330,
+  "gpu_startup_timeout_seconds": 30,
+  "native_evaluator_timeout_seconds": 100,
+  "gpu_evaluator_timeout_seconds": 120,
+  "coordinator_timeout_seconds": 1800,
+  "training_prefix": {
+    "training_steps": 24985600,
+    "trainer_seconds": 1088.7667,
+    "training_seed": 1,
+    "native_checkpoint_sha256": "307a2bc5996d5def9f696ab35b27a9cf96a5cf7401c678ecc981b78170d1084b",
+    "actor_weights_sha256": "39ba198d0c98af14a3d2965ef9a3be859f31aa3c4889db3da311da910c2da153",
+    "optimizer_state_restarted": true,
+    "initialization": "continuation from own confirmed PPO policy; not fresh random initialization"
+  },
+  "reference_path": ".runtime/continuation-reference-seed1/final_ckpt.pt",
+  "reference_sha256": "307a2bc5996d5def9f696ab35b27a9cf96a5cf7401c678ecc981b78170d1084b",
+  "reference_bytes": 1168418,
+  "combined_program_checkpoint_bytes_bound_exclusive": 2097152,
+  "optimizer_state_restarted": true,
+  "fresh_from_scratch": false,
+  "cost": {
+    "gpu_container_seconds_bound": 1530,
+    "gpu_cpu_ram_usd": 0.9637775999999999,
+    "conversion_cpu_usd": 0.0063143999999999995,
+    "coordinator_usd": 0.0049455,
+    "subtotal_usd": 0.9750375,
+    "pilot_cap_usd": 1.0,
+    "reserve_usd": 0.0249625
+  },
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "source_status": "Learning-code source review passed by root and six CPU tests; awaiting final wrapper review/paid admission.",
+  "source_directory": "research/discovery/risk-pilot-v1",
+  "audit_scope": {
+    "common": "Exact optimizer steps/per-dimension logstd/constant entropy and LR at every rollout",
+    "required_risk_tags": [
+      "actor_alpha",
+      "actor_var_baseline",
+      "actor_raw_weight_rms",
+      "mean_discounted_return",
+      "training_failures",
+      "score_weight_rms"
+    ],
+    "optional_risk_tags": [
+      "inclusive_tail_failure_rate",
+      "failure_capture_fraction",
+      "failure_enrichment"
+    ],
+    "actor_mode": "String retained in raw diagnostic logs; static method identity binds expected objective."
+  },
+  "root_review": {
+    "approved_at": "2026-10-28T01:26:50.806984+00:00",
+    "checks": "Root inspected all training patches and complete isolated wrapper/contract;6 learning tests and5 wrapper tests passed; exact native reference reproduced confirmed safe actor.",
+    "scope": "Exactly3 reviewed continuation arms, sequential training,2.048M new steps/300s each, final128development only, no retries/confirmation.",
+    "explicit_user_upload_authorization": "it's okay to upload",
+    "destination": "User Modal workspace silkyarora-2188",
+    "shared_modal_tonight_cap_usd": 100,
+    "pilot_cap_usd": 1
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "runs": [
+    {
+      "training_seed": 1,
+      "control_steps": 6400,
+      "active_reward_branch_steps": {
+        "reach": 997,
+        "grasped_placement": 3184,
+        "on_top_release_static": 1431,
+        "success_override": 788
+      },
+      "mean_normalized_reward_by_active_branch": {
+        "reach": 0.14815835133120192,
+        "grasped_placement": 0.5636189760799384,
+        "on_top_release_static": 0.8004494124071986,
+        "success_override": 1.0
+      },
+      "held_placement_steps": 945,
+      "mean_normalized_gripper_command_during_held_placement": -0.46533044829588,
+      "strong_open_command_fraction_during_held_placement": 0.0,
+      "released_placement_steps": 1274,
+      "released_steps_exceeding_stock_velocity_threshold": 486,
+      "first_stage_times": {
+        "grasp": {
+          "episodes_reaching": 128,
+          "median_first_step_if_reached": 7.0
+        },
+        "lift": {
+          "episodes_reaching": 71,
+          "median_first_step_if_reached": 11
+        },
+        "placement": {
+          "episodes_reaching": 68,
+          "median_first_step_if_reached": 17.0
+        },
+        "release": {
+          "episodes_reaching": 49,
+          "median_first_step_if_reached": 23
+        },
+        "stock_success": {
+          "episodes_reaching": 47,
+          "median_first_step_if_reached": 24
+        }
+      }
+    },
+    {
+      "training_seed": 2,
+      "control_steps": 6400,
+      "active_reward_branch_steps": {
+        "reach": 1072,
+        "grasped_placement": 2423,
+        "on_top_release_static": 870,
+        "success_override": 2035
+      },
+      "mean_normalized_reward_by_active_branch": {
+        "reach": 0.15313713301195583,
+        "grasped_placement": 0.5522189412882541,
+        "on_top_release_static": 0.8223231927416791,
+        "success_override": 1.0
+      },
+      "held_placement_steps": 209,
+      "mean_normalized_gripper_command_during_held_placement": 0.013489098864639693,
+      "strong_open_command_fraction_during_held_placement": 0.014354066985645933,
+      "released_placement_steps": 2696,
+      "released_steps_exceeding_stock_velocity_threshold": 661,
+      "first_stage_times": {
+        "grasp": {
+          "episodes_reaching": 128,
+          "median_first_step_if_reached": 7.0
+        },
+        "lift": {
+          "episodes_reaching": 82,
+          "median_first_step_if_reached": 10.0
+        },
+        "placement": {
+          "episodes_reaching": 81,
+          "median_first_step_if_reached": 14
+        },
+        "release": {
+          "episodes_reaching": 79,
+          "median_first_step_if_reached": 15
+        },
+        "stock_success": {
+          "episodes_reaching": 77,
+          "median_first_step_if_reached": 18
+        }
+      }
+    },
+    {
+      "training_seed": 3,
+      "control_steps": 6400,
+      "active_reward_branch_steps": {
+        "reach": 1026,
+        "grasped_placement": 2662,
+        "on_top_release_static": 1505,
+        "success_override": 1207
+      },
+      "mean_normalized_reward_by_active_branch": {
+        "reach": 0.15099391329590572,
+        "grasped_placement": 0.5551169739908781,
+        "on_top_release_static": 0.812407711811636,
+        "success_override": 1.0
+      },
+      "held_placement_steps": 790,
+      "mean_normalized_gripper_command_during_held_placement": 0.08926539150756221,
+      "strong_open_command_fraction_during_held_placement": 0.0,
+      "released_placement_steps": 1922,
+      "released_steps_exceeding_stock_velocity_threshold": 715,
+      "first_stage_times": {
+        "grasp": {
+          "episodes_reaching": 128,
+          "median_first_step_if_reached": 7.0
+        },
+        "lift": {
+          "episodes_reaching": 78,
+          "median_first_step_if_reached": 10.0
+        },
+        "placement": {
+          "episodes_reaching": 77,
+          "median_first_step_if_reached": 14
+        },
+        "release": {
+          "episodes_reaching": 69,
+          "median_first_step_if_reached": 16
+        },
+        "stock_success": {
+          "episodes_reaching": 60,
+          "median_first_step_if_reached": 19.0
+        }
+      }
+    }
+  ],
+  "replay_matches": 384,
+  "replay_episodes": 384,
+  "video_cases": 7,
+  "development_final_frame_groups": {
+    "geometry_not_on_top": 165,
+    "success": 121,
+    "on_top_released_velocity_failure": 50,
+    "still_grasped": 48
+  },
+  "lost_stock_success_final_frame_groups": {
+    "on_top_released_velocity_failure": 29,
+    "still_grasped": 4
+  },
+  "released_on_top_velocity_failures": {
+    "linear_threshold_exceeded": 45,
+    "angular_threshold_exceeded": 29
+  },
+  "video_reference_matches": 7,
+  "note": "Descriptive development replay statistics. Step-weighted quantities are not episode success rates or causal explanations."
+}

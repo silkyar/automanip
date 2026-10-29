@@ -1,0 +1,28 @@
+{
+  "state": "passed",
+  "seconds": 2.0602496250066906,
+  "source_sha256": "fef61c3ffcfc57f8f1921ac819b3b707ed54e7f84f42796916856af057f83949",
+  "fixed_mean_logprob": -1.0,
+  "target_entropy": -8.0,
+  "records": [
+    {
+      "initial_alpha": 1.0,
+      "final_alpha": 0.23407636373404797,
+      "log_alpha_displacement": -1.4521078761181994,
+      "scalar_adam_steps": 2029
+    },
+    {
+      "initial_alpha": 0.005,
+      "final_alpha": 0.0011703822445905685,
+      "log_alpha_displacement": -1.4521075122025575,
+      "scalar_adam_steps": 2029
+    }
+  ],
+  "final_alpha_ratio": 0.005000001819578542,
+  "scalar_optimizer_calls": 4058,
+  "neural_optimizer_calls": 0,
+  "actor_updates": 0,
+  "robot_transitions": 0,
+  "conclusion": "With fixed entropy, Adam approximately preserves the initial alpha scale across the fast recipe update count. This exposes an interaction-relative warmup, not an actual actor learning prediction.",
+  "limits": "Policy entropy/critic feedback held fixed; cannot predict grasping, final temperature, loss stability or sample efficiency."
+}

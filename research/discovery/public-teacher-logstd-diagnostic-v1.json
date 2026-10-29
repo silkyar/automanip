@@ -1,0 +1,29 @@
+{
+  "purpose": "public teacher training diagnostic, not protected scoring data",
+  "source": "50M own-project constantteacher trainingaudit scalars",
+  "source_sha256": "d1697a70e0b9f61ea73bddc47fbac650c301c3b89dedc977f35d7c38b8e6901e",
+  "steps": 49971200,
+  "logstd": [
+    -1.7230753898620605,
+    -1.6399749517440796,
+    -1.7657711505889893,
+    -1.7780853509902954,
+    -0.202223539352417,
+    -1.239534854888916,
+    0.27132412791252136,
+    -0.9787721037864685
+  ],
+  "std": [
+    0.17851629563400412,
+    0.19398490121348816,
+    0.17105482658073423,
+    0.1689613394313069,
+    0.8169122954847123,
+    0.2895188549036853,
+    1.3117001601238962,
+    0.3757722249781502
+  ],
+  "default_logstd": -0.5,
+  "default_std": 0.6065306597126334,
+  "interpretation": "Descriptive only. Some teacher dimensions have higher, others lower variance than default; not an optimal student initialization or residual calibration target."
+}

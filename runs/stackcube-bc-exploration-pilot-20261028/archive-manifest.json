@@ -1,0 +1,424 @@
+{
+  "experiment_id": "stackcube-bc-exploration-pilot-20261028",
+  "state": "complete",
+  "files": [
+    {
+      "path": "summary.json",
+      "bytes": 47546,
+      "sha256": "dfc60d3f4843bd2448a6ed485930f523aa1a8b95cc2d12ea223ae24427f56ba0",
+      "volume": "automanip-modal-validation",
+      "remote_path": "stackcube-bc-exploration-pilot-20261028/summary.json"
+    },
+    {
+      "path": "collect/native/record.json",
+      "bytes": 4891,
+      "sha256": "73643555653018948268cc8884ba61b383ce1bd028fb0db9939d9222021daa1b",
+      "volume": "automanip-modal-bcexplore-collect-20261028",
+      "remote_path": "trial/record.json"
+    },
+    {
+      "path": "collect/native/attempt.json",
+      "bytes": 88,
+      "sha256": "4f03f1848342975cb0b15c57d2610ef9c8ebf2af8f5393f80311de841ccedcb0",
+      "volume": "automanip-modal-bcexplore-collect-20261028",
+      "remote_path": "trial/attempt.json"
+    },
+    {
+      "path": "collect/native/source.py",
+      "bytes": 8058,
+      "sha256": "523459ce91a59200970d66a7dd83fa8dc06c7c96879e72ab541f2f263403ef3b",
+      "volume": "automanip-modal-bcexplore-collect-20261028",
+      "remote_path": "trial/source.py"
+    },
+    {
+      "path": "collect/native/train.log",
+      "bytes": 2739,
+      "sha256": "ad0d69aa9466cb5fde7b221ccfd737cd401a9a8bc3caab91f64f8c872c107eba",
+      "volume": "automanip-modal-bcexplore-collect-20261028",
+      "remote_path": "trial/train.log"
+    },
+    {
+      "path": "collect/native/dataset/dataset.json",
+      "bytes": 1671,
+      "sha256": "dbb3c1c4b21adf24c2d600de576807c458487b3eeeae07aded85cc517f661c1b",
+      "volume": "automanip-modal-bcexplore-collect-20261028",
+      "remote_path": "trial/dataset/dataset.json"
+    },
+    {
+      "path": "collect/native/dataset/trajectories.npz",
+      "bytes": 4746820,
+      "sha256": "495a392364926211397222bfa77e79ff4a6c2c87564f226dc1212f333ebec782",
+      "volume": "automanip-modal-bcexplore-collect-20261028",
+      "remote_path": "trial/dataset/trajectories.npz"
+    },
+    {
+      "path": "collect/native/run/dataset.json",
+      "bytes": 1671,
+      "sha256": "dbb3c1c4b21adf24c2d600de576807c458487b3eeeae07aded85cc517f661c1b",
+      "volume": "automanip-modal-bcexplore-collect-20261028",
+      "remote_path": "trial/run/dataset.json"
+    },
+    {
+      "path": "collect/native/run/trajectories.npz",
+      "bytes": 4746820,
+      "sha256": "495a392364926211397222bfa77e79ff4a6c2c87564f226dc1212f333ebec782",
+      "volume": "automanip-modal-bcexplore-collect-20261028",
+      "remote_path": "trial/run/trajectories.npz"
+    },
+    {
+      "path": "collect/native/teacher/manifest.json",
+      "bytes": 337,
+      "sha256": "7907d391c032c9b83a3fdc16348a8cecb63bc3f529ebaeb5338d997a7bde1421",
+      "volume": "automanip-modal-bcexplore-collect-20261028",
+      "remote_path": "trial/teacher/manifest.json"
+    },
+    {
+      "path": "collect/native/teacher/weights.json",
+      "bytes": 3007902,
+      "sha256": "ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16",
+      "volume": "automanip-modal-bcexplore-collect-20261028",
+      "remote_path": "trial/teacher/weights.json"
+    },
+    {
+      "path": "bc/native/record.json",
+      "bytes": 11303,
+      "sha256": "7e6a377490196069a21add442f517607a1df6294b70f548657e0920bc5221ddf",
+      "volume": "automanip-modal-bcexplore-bc-20261028",
+      "remote_path": "trial/record.json"
+    },
+    {
+      "path": "bc/native/attempt.json",
+      "bytes": 84,
+      "sha256": "ba8d0e0d67f005d02d7cd8d79e7c3038964797dbffc2f0b2906a5c3c3f67de3c",
+      "volume": "automanip-modal-bcexplore-bc-20261028",
+      "remote_path": "trial/attempt.json"
+    },
+    {
+      "path": "bc/native/source.py",
+      "bytes": 5179,
+      "sha256": "1e8b1a6ea1e2007bf43adb24fc0d96008c54d01d3af5d6650548c35f6392f7f6",
+      "volume": "automanip-modal-bcexplore-bc-20261028",
+      "remote_path": "trial/source.py"
+    },
+    {
+      "path": "bc/native/train.log",
+      "bytes": 4258,
+      "sha256": "6994d9e1504ae9fa7bbf5ae85b570a431b69390ea72d353ee997d87dc4d85618",
+      "volume": "automanip-modal-bcexplore-bc-20261028",
+      "remote_path": "trial/train.log"
+    },
+    {
+      "path": "bc/native/published/bc-report.json",
+      "bytes": 6027,
+      "sha256": "a9718a30ad8a149de08d7672c959c03af0cddf3afbdccafb207323e67dc687c2",
+      "volume": "automanip-modal-bcexplore-bc-20261028",
+      "remote_path": "trial/published/bc-report.json"
+    },
+    {
+      "path": "bc/native/published/final-actor/manifest.json",
+      "bytes": 289,
+      "sha256": "d2ea7ec00b2f5b4d21028d52c18dc66ef00a18a7695f4675fe8a4f5a065c9da9",
+      "volume": "automanip-modal-bcexplore-bc-20261028",
+      "remote_path": "trial/published/final-actor/manifest.json"
+    },
+    {
+      "path": "bc/native/published/final-actor/weights.json",
+      "bytes": 3046635,
+      "sha256": "4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2",
+      "volume": "automanip-modal-bcexplore-bc-20261028",
+      "remote_path": "trial/published/final-actor/weights.json"
+    },
+    {
+      "path": "bc/native/run/bc-report.json",
+      "bytes": 6027,
+      "sha256": "a9718a30ad8a149de08d7672c959c03af0cddf3afbdccafb207323e67dc687c2",
+      "volume": "automanip-modal-bcexplore-bc-20261028",
+      "remote_path": "trial/run/bc-report.json"
+    },
+    {
+      "path": "bc/native/run/final-actor/manifest.json",
+      "bytes": 289,
+      "sha256": "d2ea7ec00b2f5b4d21028d52c18dc66ef00a18a7695f4675fe8a4f5a065c9da9",
+      "volume": "automanip-modal-bcexplore-bc-20261028",
+      "remote_path": "trial/run/final-actor/manifest.json"
+    },
+    {
+      "path": "bc/native/run/final-actor/weights.json",
+      "bytes": 3046635,
+      "sha256": "4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2",
+      "volume": "automanip-modal-bcexplore-bc-20261028",
+      "remote_path": "trial/run/final-actor/weights.json"
+    },
+    {
+      "path": "bc/native/run/initial-actor/manifest.json",
+      "bytes": 289,
+      "sha256": "36b0cfcc92b8feb87620ccb879c9e00526ccd97b068e6ec6d1814902345bbe88",
+      "volume": "automanip-modal-bcexplore-bc-20261028",
+      "remote_path": "trial/run/initial-actor/manifest.json"
+    },
+    {
+      "path": "bc/native/run/initial-actor/weights.json",
+      "bytes": 3071218,
+      "sha256": "b82b0dd646858e91f991cbfe8b7258d0d124a5df7c1512c40cc4782e5faa85cc",
+      "volume": "automanip-modal-bcexplore-bc-20261028",
+      "remote_path": "trial/run/initial-actor/weights.json"
+    },
+    {
+      "path": "assist-bc-ppo/native/record.json",
+      "bytes": 7455,
+      "sha256": "70579c38eab5f76427b91dc40a600c119551dba28424e268ffcf4b34181883c2",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-20261028",
+      "remote_path": "trial/record.json"
+    },
+    {
+      "path": "assist-bc-ppo/native/attempt.json",
+      "bytes": 94,
+      "sha256": "ed2732b4968067b869e674a67acd41721078762aa23926449f9123f56fba92da",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-20261028",
+      "remote_path": "trial/attempt.json"
+    },
+    {
+      "path": "assist-bc-ppo/native/scalars.json",
+      "bytes": 478561,
+      "sha256": "e63229e66126988b3e3a553681d1ab4681cda755a312bbe036ca8e4c6cb091a6",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-20261028",
+      "remote_path": "trial/scalars.json"
+    },
+    {
+      "path": "assist-bc-ppo/native/source.py",
+      "bytes": 43426,
+      "sha256": "7a4de8deecf0adc15d9f8beaef1bf6b9874ca9eb7b0122efbab5d9b1bc80d427",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-20261028",
+      "remote_path": "trial/source.py"
+    },
+    {
+      "path": "assist-bc-ppo/native/train.log",
+      "bytes": 7566,
+      "sha256": "7815cd6613df62f4faf941c25101de93852185a493df92e8e3e036e12dc69e9d",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-20261028",
+      "remote_path": "trial/train.log"
+    },
+    {
+      "path": "assist-bc-ppo/native/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "322e585b5a84ce27b56d63ec131510678c644e02907e14e9f0e23e86d61151bb",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-20261028",
+      "remote_path": "trial/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/ckpt_1.pt"
+    },
+    {
+      "path": "assist-bc-ppo/native/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "158598e95224b21a0a3607dba006f38d072a948dcbde9cb70558c7d3f084a548",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-20261028",
+      "remote_path": "trial/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/ckpt_26.pt"
+    },
+    {
+      "path": "assist-bc-ppo/native/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/ckpt_51.pt",
+      "bytes": 1167971,
+      "sha256": "f3df3d673129261f3ad15209cb671b0ced6cdc64a469e36dbc5865a886511621",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-20261028",
+      "remote_path": "trial/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/ckpt_51.pt"
+    },
+    {
+      "path": "assist-bc-ppo/native/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/ckpt_76.pt",
+      "bytes": 1167971,
+      "sha256": "12ad9be64b17335c3339db97e69ba95fa7569c38d69eca527888c1090a61b79f",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-20261028",
+      "remote_path": "trial/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/ckpt_76.pt"
+    },
+    {
+      "path": "assist-bc-ppo/native/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/events.out.tfevents.1793196839.modal.8.0",
+      "bytes": 242770,
+      "sha256": "7142f89eb102623819e0f2e8ad89b2d5c87a2f30d693dfb6cc0a7cf723359f25",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-20261028",
+      "remote_path": "trial/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/events.out.tfevents.1793196839.modal.8.0"
+    },
+    {
+      "path": "assist-bc-ppo/native/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "3ac29feb5efc10136c547e1b35a82025a64d2a2a24804e8f69129934d55e75d9",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-20261028",
+      "remote_path": "trial/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/final_ckpt.pt"
+    },
+    {
+      "path": "assist-bc-ppo-residual-std/native/record.json",
+      "bytes": 14082,
+      "sha256": "a3f6dd661b796650428959e957b2593e19391484c5b584364f2a4773179609b9",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-residual-std-20261028",
+      "remote_path": "trial/record.json"
+    },
+    {
+      "path": "assist-bc-ppo-residual-std/native/attempt.json",
+      "bytes": 108,
+      "sha256": "50419ea7f46d413658eed3ad6481d5e73c4f8d012974b73313bad26cd615bf06",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-residual-std-20261028",
+      "remote_path": "trial/attempt.json"
+    },
+    {
+      "path": "assist-bc-ppo-residual-std/native/scalars.json",
+      "bytes": 479900,
+      "sha256": "02fad908520e6bf9bea9af65e19c525c952c2f42e55957c06929d06e4e621615",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-residual-std-20261028",
+      "remote_path": "trial/scalars.json"
+    },
+    {
+      "path": "assist-bc-ppo-residual-std/native/source.py",
+      "bytes": 47373,
+      "sha256": "c5ca37a6ff22ddd2e89288f5697e3041507e834adf8f8731a49a17d1423fd200",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-residual-std-20261028",
+      "remote_path": "trial/source.py"
+    },
+    {
+      "path": "assist-bc-ppo-residual-std/native/train.log",
+      "bytes": 11538,
+      "sha256": "df91778967ac4ea2e6b5c79b49f01e976b936b79065db1cb46798dfc0204fc4d",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-residual-std-20261028",
+      "remote_path": "trial/train.log"
+    },
+    {
+      "path": "assist-bc-ppo-residual-std/native/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "f41f449b6b8c9f655698c8d36fd8e808f0dc1dc1b31eef5aaea96e0b51453d58",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-residual-std-20261028",
+      "remote_path": "trial/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/ckpt_1.pt"
+    },
+    {
+      "path": "assist-bc-ppo-residual-std/native/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "74bdd38c3b9b8f7d7d5d5df130e537993778827ec68375ff9d4d0d2ad6059594",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-residual-std-20261028",
+      "remote_path": "trial/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/ckpt_26.pt"
+    },
+    {
+      "path": "assist-bc-ppo-residual-std/native/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/ckpt_51.pt",
+      "bytes": 1167971,
+      "sha256": "83665c5156b6290289bf056b3672eb190503d2971771b0553f8c2339072c4170",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-residual-std-20261028",
+      "remote_path": "trial/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/ckpt_51.pt"
+    },
+    {
+      "path": "assist-bc-ppo-residual-std/native/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/ckpt_76.pt",
+      "bytes": 1167971,
+      "sha256": "0d38a0d9efadc5338daaa2b2e37054cc69e0eb00c52600e7d81526c70cf2f7bf",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-residual-std-20261028",
+      "remote_path": "trial/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/ckpt_76.pt"
+    },
+    {
+      "path": "assist-bc-ppo-residual-std/native/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/events.out.tfevents.1793196853.modal.8.0",
+      "bytes": 244091,
+      "sha256": "2d0a6bf3daefdcf507ec74fa6fc24a461275c1abc549855a296722cf50092ff7",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-residual-std-20261028",
+      "remote_path": "trial/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/events.out.tfevents.1793196853.modal.8.0"
+    },
+    {
+      "path": "assist-bc-ppo-residual-std/native/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "0fc85d0b2e8598965985e90434bba2b6130aec8e621848c96186a58b97760482",
+      "volume": "automanip-modal-bcexplore-assist-bc-ppo-residual-std-20261028",
+      "remote_path": "trial/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/final_ckpt.pt"
+    },
+    {
+      "path": "assist-bc-ppo/export.json",
+      "bytes": 377,
+      "sha256": "dcfc49a5fc18d84f8ce74b51c5a4ff61be2b5062bdc434ab3548c0b40443db59",
+      "volume": "automanip-modal-validation",
+      "remote_path": "stackcube-bc-exploration-pilot-20261028/assist-bc-ppo/export.json"
+    },
+    {
+      "path": "assist-bc-ppo/manifest.json",
+      "bytes": 337,
+      "sha256": "dd5ed70e7fe2f8d796f7cad4397e2907aea139faf92de71c515ceedf1c26df5b",
+      "volume": "automanip-modal-validation",
+      "remote_path": "stackcube-bc-exploration-pilot-20261028/assist-bc-ppo/manifest.json"
+    },
+    {
+      "path": "assist-bc-ppo/weights.json",
+      "bytes": 3036570,
+      "sha256": "c93b3f28f70360b091fa2b578e770e813ddf088f429e443eefcbc7b8d37d61b2",
+      "volume": "automanip-modal-validation",
+      "remote_path": "stackcube-bc-exploration-pilot-20261028/assist-bc-ppo/weights.json"
+    },
+    {
+      "path": "assist-bc-ppo-residual-std/export.json",
+      "bytes": 377,
+      "sha256": "ed3928f11ae1c0006897c91c27317f4a07dbe6cb6867a2a86ff51445e80a292f",
+      "volume": "automanip-modal-validation",
+      "remote_path": "stackcube-bc-exploration-pilot-20261028/assist-bc-ppo-residual-std/export.json"
+    },
+    {
+      "path": "assist-bc-ppo-residual-std/manifest.json",
+      "bytes": 337,
+      "sha256": "d1c3baf619d16f8f2226fd7c9b8ca7a4e97aa2c9b0e13648067d479d84b6b2ee",
+      "volume": "automanip-modal-validation",
+      "remote_path": "stackcube-bc-exploration-pilot-20261028/assist-bc-ppo-residual-std/manifest.json"
+    },
+    {
+      "path": "assist-bc-ppo-residual-std/weights.json",
+      "bytes": 3047243,
+      "sha256": "d381e2f8ae675ec79ae8d52f1a28475961a33fa308e2e8ff6004a2c20d5829df",
+      "volume": "automanip-modal-validation",
+      "remote_path": "stackcube-bc-exploration-pilot-20261028/assist-bc-ppo-residual-std/weights.json"
+    },
+    {
+      "path": "bc-only/manifest.json",
+      "bytes": 289,
+      "sha256": "d2ea7ec00b2f5b4d21028d52c18dc66ef00a18a7695f4675fe8a4f5a065c9da9",
+      "volume": "automanip-modal-validation",
+      "remote_path": "stackcube-bc-exploration-pilot-20261028/bc-only/manifest.json"
+    },
+    {
+      "path": "bc-only/weights.json",
+      "bytes": 3046635,
+      "sha256": "4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2",
+      "volume": "automanip-modal-validation",
+      "remote_path": "stackcube-bc-exploration-pilot-20261028/bc-only/weights.json"
+    },
+    {
+      "path": "teacher-input/manifest.json",
+      "bytes": 337,
+      "sha256": "7907d391c032c9b83a3fdc16348a8cecb63bc3f529ebaeb5338d997a7bde1421",
+      "volume": "automanip-modal-validation",
+      "remote_path": "stackcube-bc-exploration-pilot-20261028/teacher-input/manifest.json"
+    },
+    {
+      "path": "teacher-input/weights.json",
+      "bytes": 3007902,
+      "sha256": "ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16",
+      "volume": "automanip-modal-validation",
+      "remote_path": "stackcube-bc-exploration-pilot-20261028/teacher-input/weights.json"
+    },
+    {
+      "path": "development/4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2.json",
+      "bytes": 82009,
+      "sha256": "73751a7eedd530313465b49413b823085acc474f160949b63bfd39cbaaa97ae5",
+      "volume": "automanip-modal-validation",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2/development/result.json"
+    },
+    {
+      "path": "development/c93b3f28f70360b091fa2b578e770e813ddf088f429e443eefcbc7b8d37d61b2.json",
+      "bytes": 82429,
+      "sha256": "6ffe7536941bf64e1579f55ad31b97939d0f46fae47ed46ce344f69024199f0d",
+      "volume": "automanip-modal-validation",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/c93b3f28f70360b091fa2b578e770e813ddf088f429e443eefcbc7b8d37d61b2/development/result.json"
+    },
+    {
+      "path": "development/d381e2f8ae675ec79ae8d52f1a28475961a33fa308e2e8ff6004a2c20d5829df.json",
+      "bytes": 82459,
+      "sha256": "de5e372ea7fdbdc8f20dbbe6a387b9240785da03580d646404e4867f5516c958",
+      "volume": "automanip-modal-validation",
+      "remote_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/d381e2f8ae675ec79ae8d52f1a28475961a33fa308e2e8ff6004a2c20d5829df/development/result.json"
+    },
+    {
+      "path": "original-stage-call-receipts.json",
+      "bytes": 475,
+      "sha256": "0d40ae88fd82212346488078b6c5bd4be19d84c97b5c4985cff97aed8e326e64",
+      "volume": null,
+      "remote_path": null
+    }
+  ],
+  "total_bytes": 47411054,
+  "unique_development_reports": 3,
+  "new_training_jobs": 0,
+  "new_evaluations": 0,
+  "confirmation_queries": 0
+}

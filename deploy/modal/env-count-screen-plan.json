@@ -1,0 +1,72 @@
+{
+  "experiment_id": "stackcube-env-count-pilot-20261028",
+  "launch_enabled": false,
+  "paid_launch_authorized": false,
+  "root_review": null,
+  "jobs": [
+    {
+      "job_id": "stackcube-env-count-pilot-20261028-ppo-env512-seed-1",
+      "method": "ppo-env512",
+      "source_method": "scratch-kl-stop-control",
+      "num_envs": 512,
+      "batch_steps": 25600,
+      "minibatch_size": 800,
+      "seed": 1,
+      "trainer_sha256": "de067415f6895f7b4fcc534cff20fe9cd628fef6faae3846c3b49687ff526632",
+      "gpu": "L40S",
+      "trainer_seconds_cap": 600,
+      "requested_steps": 10240000,
+      "actual_steps_ceiling": 10240000
+    },
+    {
+      "job_id": "stackcube-env-count-pilot-20261028-ppo-env256-seed-1",
+      "method": "ppo-env256",
+      "source_method": "scratch-kl-stop-control",
+      "num_envs": 256,
+      "batch_steps": 12800,
+      "minibatch_size": 400,
+      "seed": 1,
+      "trainer_sha256": "de067415f6895f7b4fcc534cff20fe9cd628fef6faae3846c3b49687ff526632",
+      "gpu": "L40S",
+      "trainer_seconds_cap": 600,
+      "requested_steps": 10240000,
+      "actual_steps_ceiling": 10240000
+    }
+  ],
+  "budget_cap_usd": 3.0,
+  "cost": {
+    "gpu_container_seconds_bound": 1980,
+    "gpu_cpu_ram_usd": 1.2472416,
+    "conversion_cpu_usd": 0.008419199999999998,
+    "coordinator_usd": 0.009891,
+    "subtotal_usd": 1.2655518000000001,
+    "pair_cap_usd": 3.0,
+    "reserve_usd": 1.7344481999999999
+  },
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "selected_steps": [
+    5120000,
+    "final_actual_steps"
+  ],
+  "reference_binding_sha256": "0e35e9fb3e4f40a1231c1e24ffa02fd19242924d89011e8ea1d49ff364a7f53e",
+  "max_development_evaluations": 4,
+  "development_episodes": 128,
+  "confirmation_queries": 0,
+  "training_seeds": [
+    1
+  ],
+  "outcome_rule": {
+    "common_5120000_minimum_gain": 3,
+    "maximum_final_regression": 3,
+    "alternative_final_gain": 3,
+    "pareto_screen_only_unless_equal_steps": true,
+    "censoring_reported": true,
+    "interpolation": false,
+    "automatic_retry": false,
+    "automatic_expansion": false,
+    "confirmation_queries": 0
+  },
+  "scientific_plan": "docs/stackcube-env-count-plan-20261028.md",
+  "scientific_plan_sha256": "efe5c661c070050c40e67951d77ea880f4bc1444beda3022586bd4dd094905c3",
+  "reference_provenance_sha256": "da54212e66847688b2981ef6a29e9295dd9e555b969a386f6e3936e0a9b7af24"
+}

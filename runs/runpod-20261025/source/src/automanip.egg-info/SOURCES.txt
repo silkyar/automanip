@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/automanip/__init__.py
+src/automanip/evaluator.py
+src/automanip/inference.py
+src/automanip/maniskill_adapter.py
+src/automanip/metrics.py
+src/automanip/policy_io.py
+src/automanip/task_spec.py
+src/automanip.egg-info/PKG-INFO
+src/automanip.egg-info/SOURCES.txt
+src/automanip.egg-info/dependency_links.txt
+src/automanip.egg-info/requires.txt
+src/automanip.egg-info/top_level.txt
+tests/test_core.py
+tests/test_rollout.py

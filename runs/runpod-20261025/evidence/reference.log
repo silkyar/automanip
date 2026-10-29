@@ -1,0 +1,272 @@
+Sun Oct 25 16:29:12 UTC 2026
+STAGE_GPU_ENVIRONMENT_CHECK
+/opt/automanip-venv/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+Downloading PhysX GPU library to /root/.sapien/physx/105.1-physx-5.3.1.patch0 from Github. This can take several minutes. If it fails to download, please manually download fhttps://github.com/sapien-sim/physx-precompiled/releases/download/105.1-physx-5.3.1.patch0/linux-so.zip and unzip at /root/.sapien/physx/105.1-physx-5.3.1.patch0.
+Download complete.
+{"wrapper_check": "passed", "num_envs": 8, "observation_dim": 42}
+STAGE_SMOKE_TRAINING
+/opt/automanip-venv/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+{
+  "config": {
+    "seed": 1,
+    "num_envs": 8,
+    "num_steps": 50,
+    "total_timesteps": 800,
+    "max_seconds": 120,
+    "learning_rate": 0.0003,
+    "gamma": 0.8,
+    "gae_lambda": 0.9,
+    "num_minibatches": 2,
+    "update_epochs": 1,
+    "clip_coef": 0.2,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": 0.1,
+    "hidden_sizes": [
+      16
+    ],
+    "bootstrap_on_termination": true,
+    "partial_reset": false,
+    "anneal_lr": false
+  },
+  "hypothesis": "Random-init PPO reference with frozen end-effector control",
+  "task_fingerprint": "aa34b8495725f90c42e151cfa42c59698bc89e02712cce302db253568661ea79",
+  "git_commit": "unavailable",
+  "git_diff": "unavailable",
+  "train_source_sha256": "b64658434caf26e681143c40966ac1a169b498957b077cb49df8051c4d8e64b6",
+  "backend": "physx_cuda",
+  "device": "cuda",
+  "training_seconds": 7.405736960936338,
+  "environment_transitions": 800,
+  "learner_updates": 4,
+  "rollout_iterations": 2,
+  "status": "step_budget",
+  "decision": "unevaluated",
+  "errors": [],
+  "evaluation": null,
+  "versions": {
+    "mani_skill": "3.0.0b21",
+    "torch": "2.6.0",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1",
+    "sapien": "3.0.0b1"
+  },
+  "checkpoint_sha256": "359da19f484480b3fc82634ecff1b335dc9795e0b7f6620cedcddcc3b6617045",
+  "trained": true
+}
+STAGE_SMOKE_EVALUATION
+/opt/automanip-venv/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+SMOKE_PASSED
+STAGE_REFERENCE_TRAINING_SEED_1
+/opt/automanip-venv/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+{
+  "config": {
+    "seed": 1,
+    "num_envs": 512,
+    "num_steps": 50,
+    "total_timesteps": 9984000,
+    "max_seconds": 600,
+    "learning_rate": 0.0003,
+    "gamma": 0.8,
+    "gae_lambda": 0.9,
+    "num_minibatches": 32,
+    "update_epochs": 4,
+    "clip_coef": 0.2,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": 0.1,
+    "hidden_sizes": [
+      256,
+      256,
+      256
+    ],
+    "bootstrap_on_termination": true,
+    "partial_reset": true,
+    "anneal_lr": false
+  },
+  "hypothesis": "Random-init PPO reference with frozen end-effector control",
+  "task_fingerprint": "aa34b8495725f90c42e151cfa42c59698bc89e02712cce302db253568661ea79",
+  "git_commit": "unavailable",
+  "git_diff": "unavailable",
+  "train_source_sha256": "b64658434caf26e681143c40966ac1a169b498957b077cb49df8051c4d8e64b6",
+  "backend": "physx_cuda",
+  "device": "cuda",
+  "training_seconds": 600.0429382460425,
+  "environment_transitions": 5853696,
+  "learner_updates": 15060,
+  "rollout_iterations": 229,
+  "status": "time_budget",
+  "decision": "unevaluated",
+  "errors": [],
+  "evaluation": null,
+  "versions": {
+    "mani_skill": "3.0.0b21",
+    "torch": "2.6.0",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1",
+    "sapien": "3.0.0b1"
+  },
+  "checkpoint_sha256": "fec1691e39ed4104f4a9c7ecc36284ec1e5c22a4d72197bf7c7fbb78d48d1d47",
+  "trained": true
+}
+STAGE_REFERENCE_EVALUATION_SEED_1
+/opt/automanip-venv/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+STAGE_REFERENCE_TRAINING_SEED_2
+/opt/automanip-venv/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+{
+  "config": {
+    "seed": 2,
+    "num_envs": 512,
+    "num_steps": 50,
+    "total_timesteps": 9984000,
+    "max_seconds": 600,
+    "learning_rate": 0.0003,
+    "gamma": 0.8,
+    "gae_lambda": 0.9,
+    "num_minibatches": 32,
+    "update_epochs": 4,
+    "clip_coef": 0.2,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": 0.1,
+    "hidden_sizes": [
+      256,
+      256,
+      256
+    ],
+    "bootstrap_on_termination": true,
+    "partial_reset": true,
+    "anneal_lr": false
+  },
+  "hypothesis": "Random-init PPO reference with frozen end-effector control",
+  "task_fingerprint": "aa34b8495725f90c42e151cfa42c59698bc89e02712cce302db253568661ea79",
+  "git_commit": "unavailable",
+  "git_diff": "unavailable",
+  "train_source_sha256": "b64658434caf26e681143c40966ac1a169b498957b077cb49df8051c4d8e64b6",
+  "backend": "physx_cuda",
+  "device": "cuda",
+  "training_seconds": 600.0195033190539,
+  "environment_transitions": 5657600,
+  "learner_updates": 15939,
+  "rollout_iterations": 221,
+  "status": "time_budget",
+  "decision": "unevaluated",
+  "errors": [],
+  "evaluation": null,
+  "versions": {
+    "mani_skill": "3.0.0b21",
+    "torch": "2.6.0",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1",
+    "sapien": "3.0.0b1"
+  },
+  "checkpoint_sha256": "44bf86e51d92dec007656e1ca8bc320815145da1f32b5730cde04c22dec41c4c",
+  "trained": true
+}
+STAGE_REFERENCE_EVALUATION_SEED_2
+/opt/automanip-venv/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+STAGE_REFERENCE_TRAINING_SEED_3
+/opt/automanip-venv/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+{
+  "config": {
+    "seed": 3,
+    "num_envs": 512,
+    "num_steps": 50,
+    "total_timesteps": 9984000,
+    "max_seconds": 600,
+    "learning_rate": 0.0003,
+    "gamma": 0.8,
+    "gae_lambda": 0.9,
+    "num_minibatches": 32,
+    "update_epochs": 4,
+    "clip_coef": 0.2,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": 0.1,
+    "hidden_sizes": [
+      256,
+      256,
+      256
+    ],
+    "bootstrap_on_termination": true,
+    "partial_reset": true,
+    "anneal_lr": false
+  },
+  "hypothesis": "Random-init PPO reference with frozen end-effector control",
+  "task_fingerprint": "aa34b8495725f90c42e151cfa42c59698bc89e02712cce302db253568661ea79",
+  "git_commit": "unavailable",
+  "git_diff": "unavailable",
+  "train_source_sha256": "b64658434caf26e681143c40966ac1a169b498957b077cb49df8051c4d8e64b6",
+  "backend": "physx_cuda",
+  "device": "cuda",
+  "training_seconds": 600.0429898779839,
+  "environment_transitions": 5621760,
+  "learner_updates": 15090,
+  "rollout_iterations": 220,
+  "status": "time_budget",
+  "decision": "unevaluated",
+  "errors": [],
+  "evaluation": null,
+  "versions": {
+    "mani_skill": "3.0.0b21",
+    "torch": "2.6.0",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1",
+    "sapien": "3.0.0b1"
+  },
+  "checkpoint_sha256": "7234ac96abb37a510cfff27927121cf510717772384f9e10b7a7b5a919e99b1b",
+  "trained": true
+}
+STAGE_REFERENCE_EVALUATION_SEED_3
+/opt/automanip-venv/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/automanip-venv/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+Sun Oct 25 17:03:28 UTC 2026
+REFERENCE_BATCH_FINISHED

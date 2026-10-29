@@ -1,0 +1,51 @@
+{
+  "config": {
+    "seed": 3,
+    "num_envs": 512,
+    "num_steps": 50,
+    "total_timesteps": 9984000,
+    "max_seconds": 600,
+    "learning_rate": 0.0003,
+    "gamma": 0.8,
+    "gae_lambda": 0.9,
+    "num_minibatches": 32,
+    "update_epochs": 4,
+    "clip_coef": 0.2,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": 0.1,
+    "hidden_sizes": [
+      256,
+      256,
+      256
+    ],
+    "bootstrap_on_termination": true,
+    "partial_reset": true,
+    "anneal_lr": false
+  },
+  "hypothesis": "Random-init PPO reference with frozen end-effector control",
+  "task_fingerprint": "aa34b8495725f90c42e151cfa42c59698bc89e02712cce302db253568661ea79",
+  "git_commit": "unavailable",
+  "git_diff": "unavailable",
+  "train_source_sha256": "b64658434caf26e681143c40966ac1a169b498957b077cb49df8051c4d8e64b6",
+  "backend": "physx_cuda",
+  "device": "cuda",
+  "training_seconds": 600.0429898779839,
+  "environment_transitions": 5621760,
+  "learner_updates": 15090,
+  "rollout_iterations": 220,
+  "status": "time_budget",
+  "decision": "unevaluated",
+  "errors": [],
+  "evaluation": null,
+  "versions": {
+    "mani_skill": "3.0.0b21",
+    "torch": "2.6.0",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1",
+    "sapien": "3.0.0b1"
+  },
+  "checkpoint_sha256": "7234ac96abb37a510cfff27927121cf510717772384f9e10b7a7b5a919e99b1b",
+  "trained": true
+}

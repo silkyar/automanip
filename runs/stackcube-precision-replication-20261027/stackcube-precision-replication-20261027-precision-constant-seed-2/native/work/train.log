@@ -1,0 +1,2284 @@
+/opt/conda/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/conda/lib/python3.11/site-packages/sapien/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/conda/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+Running training
+####
+args.num_iterations=976 args.num_envs=1024 args.num_eval_envs=8
+args.minibatch_size=1600 args.batch_size=51200 args.update_epochs=8
+####
+Epoch: 1, global_step=0
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=3.9960250854492188
+eval_episode_len_mean=50.0
+eval_reward_mean=0.07992050051689148
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_1.pt
+SPS: 11275
+Epoch: 2, global_step=51200
+SPS: 14775
+Epoch: 3, global_step=102400
+SPS: 16351
+Epoch: 4, global_step=153600
+SPS: 17120
+Epoch: 5, global_step=204800
+SPS: 17544
+Epoch: 6, global_step=256000
+SPS: 17799
+Epoch: 7, global_step=307200
+SPS: 17975
+Epoch: 8, global_step=358400
+SPS: 18061
+Epoch: 9, global_step=409600
+SPS: 18131
+Epoch: 10, global_step=460800
+SPS: 18140
+Epoch: 11, global_step=512000
+SPS: 18107
+Epoch: 12, global_step=563200
+SPS: 18146
+Epoch: 13, global_step=614400
+SPS: 18189
+Epoch: 14, global_step=665600
+SPS: 18222
+Epoch: 15, global_step=716800
+SPS: 18243
+Epoch: 16, global_step=768000
+SPS: 18264
+Epoch: 17, global_step=819200
+SPS: 18290
+Epoch: 18, global_step=870400
+SPS: 18243
+Epoch: 19, global_step=921600
+SPS: 18227
+Epoch: 20, global_step=972800
+SPS: 18225
+Epoch: 21, global_step=1024000
+SPS: 18244
+Epoch: 22, global_step=1075200
+SPS: 18251
+Epoch: 23, global_step=1126400
+SPS: 18275
+Epoch: 24, global_step=1177600
+SPS: 18289
+Epoch: 25, global_step=1228800
+SPS: 18299
+Epoch: 26, global_step=1280000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=23.74602508544922
+eval_episode_len_mean=50.0
+eval_reward_mean=0.47492051124572754
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_26.pt
+SPS: 17831
+Epoch: 27, global_step=1331200
+SPS: 17849
+Epoch: 28, global_step=1382400
+SPS: 17874
+Epoch: 29, global_step=1433600
+SPS: 17904
+Epoch: 30, global_step=1484800
+SPS: 17930
+Epoch: 31, global_step=1536000
+SPS: 17959
+Epoch: 32, global_step=1587200
+SPS: 17954
+Epoch: 33, global_step=1638400
+SPS: 17979
+Epoch: 34, global_step=1689600
+SPS: 18003
+Epoch: 35, global_step=1740800
+SPS: 18017
+Epoch: 36, global_step=1792000
+SPS: 18024
+Epoch: 37, global_step=1843200
+SPS: 18043
+Epoch: 38, global_step=1894400
+SPS: 18065
+Epoch: 39, global_step=1945600
+SPS: 18083
+Epoch: 40, global_step=1996800
+SPS: 18068
+Epoch: 41, global_step=2048000
+SPS: 18083
+Epoch: 42, global_step=2099200
+SPS: 18096
+Epoch: 43, global_step=2150400
+SPS: 18111
+Epoch: 44, global_step=2201600
+SPS: 18125
+Epoch: 45, global_step=2252800
+SPS: 18102
+Epoch: 46, global_step=2304000
+SPS: 18107
+Epoch: 47, global_step=2355200
+SPS: 18123
+Epoch: 48, global_step=2406400
+SPS: 18133
+Epoch: 49, global_step=2457600
+SPS: 18146
+Epoch: 50, global_step=2508800
+SPS: 18155
+Epoch: 51, global_step=2560000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=26.564125061035156
+eval_episode_len_mean=50.0
+eval_reward_mean=0.5312825441360474
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_51.pt
+SPS: 17849
+Epoch: 52, global_step=2611200
+SPS: 17857
+Epoch: 53, global_step=2662400
+SPS: 17860
+Epoch: 54, global_step=2713600
+SPS: 17857
+Epoch: 55, global_step=2764800
+SPS: 17868
+Epoch: 56, global_step=2816000
+SPS: 17884
+Epoch: 57, global_step=2867200
+SPS: 17898
+Epoch: 58, global_step=2918400
+SPS: 17914
+Epoch: 59, global_step=2969600
+SPS: 17929
+Epoch: 60, global_step=3020800
+SPS: 17943
+Epoch: 61, global_step=3072000
+SPS: 17954
+Epoch: 62, global_step=3123200
+SPS: 17965
+Epoch: 63, global_step=3174400
+SPS: 17976
+Epoch: 64, global_step=3225600
+SPS: 17989
+Epoch: 65, global_step=3276800
+SPS: 18002
+Epoch: 66, global_step=3328000
+SPS: 18016
+Epoch: 67, global_step=3379200
+SPS: 18026
+Epoch: 68, global_step=3430400
+SPS: 18022
+Epoch: 69, global_step=3481600
+SPS: 18028
+Epoch: 70, global_step=3532800
+SPS: 18033
+Epoch: 71, global_step=3584000
+SPS: 18039
+Epoch: 72, global_step=3635200
+SPS: 18046
+Epoch: 73, global_step=3686400
+SPS: 18050
+Epoch: 74, global_step=3737600
+SPS: 18051
+Epoch: 75, global_step=3788800
+SPS: 18049
+Epoch: 76, global_step=3840000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=31.626815795898438
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6325362920761108
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_76.pt
+SPS: 17908
+Epoch: 77, global_step=3891200
+SPS: 17920
+Epoch: 78, global_step=3942400
+SPS: 17928
+Epoch: 79, global_step=3993600
+SPS: 17923
+Epoch: 80, global_step=4044800
+SPS: 17933
+Epoch: 81, global_step=4096000
+SPS: 17942
+Epoch: 82, global_step=4147200
+SPS: 17953
+Epoch: 83, global_step=4198400
+SPS: 17964
+Epoch: 84, global_step=4249600
+SPS: 17949
+Epoch: 85, global_step=4300800
+SPS: 17955
+Epoch: 86, global_step=4352000
+SPS: 18007
+Epoch: 87, global_step=4403200
+SPS: 18043
+Epoch: 88, global_step=4454400
+SPS: 18082
+Epoch: 89, global_step=4505600
+SPS: 18091
+Epoch: 90, global_step=4556800
+SPS: 18133
+Epoch: 91, global_step=4608000
+SPS: 18129
+Epoch: 92, global_step=4659200
+SPS: 18152
+Epoch: 93, global_step=4710400
+SPS: 18210
+Epoch: 94, global_step=4761600
+SPS: 18279
+Epoch: 95, global_step=4812800
+SPS: 18334
+Epoch: 96, global_step=4864000
+SPS: 18374
+Epoch: 97, global_step=4915200
+SPS: 18378
+Epoch: 98, global_step=4966400
+SPS: 18389
+Epoch: 99, global_step=5017600
+SPS: 18428
+Epoch: 100, global_step=5068800
+SPS: 18489
+Epoch: 101, global_step=5120000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=31.50560760498047
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6301121711730957
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_101.pt
+SPS: 18419
+Epoch: 102, global_step=5171200
+SPS: 18480
+Epoch: 103, global_step=5222400
+SPS: 18528
+Epoch: 104, global_step=5273600
+SPS: 18590
+Epoch: 105, global_step=5324800
+SPS: 18616
+Epoch: 106, global_step=5376000
+SPS: 18670
+Epoch: 107, global_step=5427200
+SPS: 18690
+Epoch: 108, global_step=5478400
+SPS: 18736
+Epoch: 109, global_step=5529600
+SPS: 18737
+Epoch: 110, global_step=5580800
+SPS: 18794
+Epoch: 111, global_step=5632000
+SPS: 18852
+Epoch: 112, global_step=5683200
+SPS: 18902
+Epoch: 113, global_step=5734400
+SPS: 18938
+Epoch: 114, global_step=5785600
+SPS: 18971
+Epoch: 115, global_step=5836800
+SPS: 19015
+Epoch: 116, global_step=5888000
+SPS: 19063
+Epoch: 117, global_step=5939200
+SPS: 19108
+Epoch: 118, global_step=5990400
+SPS: 19164
+Epoch: 119, global_step=6041600
+SPS: 19211
+Epoch: 120, global_step=6092800
+SPS: 19261
+Epoch: 121, global_step=6144000
+SPS: 19307
+Epoch: 122, global_step=6195200
+SPS: 19350
+Epoch: 123, global_step=6246400
+SPS: 19390
+Epoch: 124, global_step=6297600
+SPS: 19439
+Epoch: 125, global_step=6348800
+SPS: 19487
+Epoch: 126, global_step=6400000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=32.05402374267578
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6410804986953735
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_126.pt
+SPS: 19407
+Epoch: 127, global_step=6451200
+SPS: 19446
+Epoch: 128, global_step=6502400
+SPS: 19490
+Epoch: 129, global_step=6553600
+SPS: 19535
+Epoch: 130, global_step=6604800
+SPS: 19580
+Epoch: 131, global_step=6656000
+SPS: 19619
+Epoch: 132, global_step=6707200
+SPS: 19666
+Epoch: 133, global_step=6758400
+SPS: 19709
+Epoch: 134, global_step=6809600
+SPS: 19738
+Epoch: 135, global_step=6860800
+SPS: 19777
+Epoch: 136, global_step=6912000
+SPS: 19818
+Epoch: 137, global_step=6963200
+SPS: 19852
+Epoch: 138, global_step=7014400
+SPS: 19892
+Epoch: 139, global_step=7065600
+SPS: 19934
+Epoch: 140, global_step=7116800
+SPS: 19970
+Epoch: 141, global_step=7168000
+SPS: 20013
+Epoch: 142, global_step=7219200
+SPS: 20052
+Epoch: 143, global_step=7270400
+SPS: 20093
+Epoch: 144, global_step=7321600
+SPS: 20131
+Epoch: 145, global_step=7372800
+SPS: 20164
+Epoch: 146, global_step=7424000
+SPS: 20198
+Epoch: 147, global_step=7475200
+SPS: 20231
+Epoch: 148, global_step=7526400
+SPS: 20262
+Epoch: 149, global_step=7577600
+SPS: 20294
+Epoch: 150, global_step=7628800
+SPS: 20327
+Epoch: 151, global_step=7680000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=31.529268264770508
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6305853128433228
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_151.pt
+SPS: 20260
+Epoch: 152, global_step=7731200
+SPS: 20295
+Epoch: 153, global_step=7782400
+SPS: 20329
+Epoch: 154, global_step=7833600
+SPS: 20366
+Epoch: 155, global_step=7884800
+SPS: 20401
+Epoch: 156, global_step=7936000
+SPS: 20437
+Epoch: 157, global_step=7987200
+SPS: 20465
+Epoch: 158, global_step=8038400
+SPS: 20499
+Epoch: 159, global_step=8089600
+SPS: 20528
+Epoch: 160, global_step=8140800
+SPS: 20557
+Epoch: 161, global_step=8192000
+SPS: 20594
+Epoch: 162, global_step=8243200
+SPS: 20624
+Epoch: 163, global_step=8294400
+SPS: 20654
+Epoch: 164, global_step=8345600
+SPS: 20681
+Epoch: 165, global_step=8396800
+SPS: 20711
+Epoch: 166, global_step=8448000
+SPS: 20741
+Epoch: 167, global_step=8499200
+SPS: 20770
+Epoch: 168, global_step=8550400
+SPS: 20794
+Epoch: 169, global_step=8601600
+SPS: 20823
+Epoch: 170, global_step=8652800
+SPS: 20851
+Epoch: 171, global_step=8704000
+SPS: 20876
+Epoch: 172, global_step=8755200
+SPS: 20908
+Epoch: 173, global_step=8806400
+SPS: 20935
+Epoch: 174, global_step=8857600
+SPS: 20968
+Epoch: 175, global_step=8908800
+SPS: 20996
+Epoch: 176, global_step=8960000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=32.609397888183594
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6521879434585571
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_176.pt
+SPS: 20940
+Epoch: 177, global_step=9011200
+SPS: 20969
+Epoch: 178, global_step=9062400
+SPS: 21000
+Epoch: 179, global_step=9113600
+SPS: 21020
+Epoch: 180, global_step=9164800
+SPS: 21051
+Epoch: 181, global_step=9216000
+SPS: 21073
+Epoch: 182, global_step=9267200
+SPS: 21100
+Epoch: 183, global_step=9318400
+SPS: 21130
+Epoch: 184, global_step=9369600
+SPS: 21155
+Epoch: 185, global_step=9420800
+SPS: 21181
+Epoch: 186, global_step=9472000
+SPS: 21209
+Epoch: 187, global_step=9523200
+SPS: 21235
+Epoch: 188, global_step=9574400
+SPS: 21261
+Epoch: 189, global_step=9625600
+SPS: 21291
+Epoch: 190, global_step=9676800
+SPS: 21313
+Epoch: 191, global_step=9728000
+SPS: 21339
+Epoch: 192, global_step=9779200
+SPS: 21367
+Epoch: 193, global_step=9830400
+SPS: 21388
+Epoch: 194, global_step=9881600
+SPS: 21414
+Epoch: 195, global_step=9932800
+SPS: 21440
+Epoch: 196, global_step=9984000
+SPS: 21460
+Epoch: 197, global_step=10035200
+SPS: 21484
+Epoch: 198, global_step=10086400
+SPS: 21504
+Epoch: 199, global_step=10137600
+SPS: 21521
+Epoch: 200, global_step=10188800
+SPS: 21539
+Epoch: 201, global_step=10240000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.125
+eval_return_mean=33.36421203613281
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6672841906547546
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_201.pt
+SPS: 21481
+Epoch: 202, global_step=10291200
+SPS: 21501
+Epoch: 203, global_step=10342400
+SPS: 21520
+Epoch: 204, global_step=10393600
+SPS: 21540
+Epoch: 205, global_step=10444800
+SPS: 21556
+Epoch: 206, global_step=10496000
+SPS: 21568
+Epoch: 207, global_step=10547200
+SPS: 21585
+Epoch: 208, global_step=10598400
+SPS: 21602
+Epoch: 209, global_step=10649600
+SPS: 21622
+Epoch: 210, global_step=10700800
+SPS: 21641
+Epoch: 211, global_step=10752000
+SPS: 21660
+Epoch: 212, global_step=10803200
+SPS: 21672
+Epoch: 213, global_step=10854400
+SPS: 21682
+Epoch: 214, global_step=10905600
+SPS: 21697
+Epoch: 215, global_step=10956800
+SPS: 21685
+Epoch: 216, global_step=11008000
+SPS: 21668
+Epoch: 217, global_step=11059200
+SPS: 21685
+Epoch: 218, global_step=11110400
+SPS: 21680
+Epoch: 219, global_step=11161600
+SPS: 21702
+Epoch: 220, global_step=11212800
+SPS: 21714
+Epoch: 221, global_step=11264000
+SPS: 21723
+Epoch: 222, global_step=11315200
+SPS: 21741
+Epoch: 223, global_step=11366400
+SPS: 21754
+Epoch: 224, global_step=11417600
+SPS: 21772
+Epoch: 225, global_step=11468800
+SPS: 21791
+Epoch: 226, global_step=11520000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.25
+eval_return_mean=33.672908782958984
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6734582185745239
+eval_success_at_end_mean=0.125
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_226.pt
+SPS: 21733
+Epoch: 227, global_step=11571200
+SPS: 21744
+Epoch: 228, global_step=11622400
+SPS: 21761
+Epoch: 229, global_step=11673600
+SPS: 21779
+Epoch: 230, global_step=11724800
+SPS: 21792
+Epoch: 231, global_step=11776000
+SPS: 21803
+Epoch: 232, global_step=11827200
+SPS: 21804
+Epoch: 233, global_step=11878400
+SPS: 21815
+Epoch: 234, global_step=11929600
+SPS: 21834
+Epoch: 235, global_step=11980800
+SPS: 21852
+Epoch: 236, global_step=12032000
+SPS: 21862
+Epoch: 237, global_step=12083200
+SPS: 21880
+Epoch: 238, global_step=12134400
+SPS: 21896
+Epoch: 239, global_step=12185600
+SPS: 21880
+Epoch: 240, global_step=12236800
+SPS: 21883
+Epoch: 241, global_step=12288000
+SPS: 21902
+Epoch: 242, global_step=12339200
+SPS: 21912
+Epoch: 243, global_step=12390400
+SPS: 21927
+Epoch: 244, global_step=12441600
+SPS: 21934
+Epoch: 245, global_step=12492800
+SPS: 21949
+Epoch: 246, global_step=12544000
+SPS: 21966
+Epoch: 247, global_step=12595200
+SPS: 21979
+Epoch: 248, global_step=12646400
+SPS: 21996
+Epoch: 249, global_step=12697600
+SPS: 22006
+Epoch: 250, global_step=12748800
+SPS: 22004
+Epoch: 251, global_step=12800000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.637901306152344
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7927579879760742
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_251.pt
+SPS: 21946
+Epoch: 252, global_step=12851200
+SPS: 21963
+Epoch: 253, global_step=12902400
+SPS: 21980
+Epoch: 254, global_step=12953600
+SPS: 21997
+Epoch: 255, global_step=13004800
+SPS: 22015
+Epoch: 256, global_step=13056000
+SPS: 22028
+Epoch: 257, global_step=13107200
+SPS: 22045
+Epoch: 258, global_step=13158400
+SPS: 22060
+Epoch: 259, global_step=13209600
+SPS: 22065
+Epoch: 260, global_step=13260800
+SPS: 22085
+Epoch: 261, global_step=13312000
+SPS: 22102
+Epoch: 262, global_step=13363200
+SPS: 22086
+Epoch: 263, global_step=13414400
+SPS: 22071
+Epoch: 264, global_step=13465600
+SPS: 22056
+Epoch: 265, global_step=13516800
+SPS: 22057
+Epoch: 266, global_step=13568000
+SPS: 22060
+Epoch: 267, global_step=13619200
+SPS: 22046
+Epoch: 268, global_step=13670400
+SPS: 22031
+Epoch: 269, global_step=13721600
+SPS: 22030
+Epoch: 270, global_step=13772800
+SPS: 21998
+Epoch: 271, global_step=13824000
+SPS: 21998
+Epoch: 272, global_step=13875200
+SPS: 22004
+Epoch: 273, global_step=13926400
+SPS: 21997
+Epoch: 274, global_step=13977600
+SPS: 21978
+Epoch: 275, global_step=14028800
+SPS: 21992
+Epoch: 276, global_step=14080000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.875
+eval_return_mean=37.799285888671875
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7559857368469238
+eval_success_at_end_mean=0.75
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_276.pt
+SPS: 21929
+Epoch: 277, global_step=14131200
+SPS: 21909
+Epoch: 278, global_step=14182400
+SPS: 21917
+Epoch: 279, global_step=14233600
+SPS: 21891
+Epoch: 280, global_step=14284800
+SPS: 21897
+Epoch: 281, global_step=14336000
+SPS: 21907
+Epoch: 282, global_step=14387200
+SPS: 21914
+Epoch: 283, global_step=14438400
+SPS: 21923
+Epoch: 284, global_step=14489600
+SPS: 21935
+Epoch: 285, global_step=14540800
+SPS: 21952
+Epoch: 286, global_step=14592000
+SPS: 21967
+Epoch: 287, global_step=14643200
+SPS: 21980
+Epoch: 288, global_step=14694400
+SPS: 21996
+Epoch: 289, global_step=14745600
+SPS: 22013
+Epoch: 290, global_step=14796800
+SPS: 22027
+Epoch: 291, global_step=14848000
+SPS: 22044
+Epoch: 292, global_step=14899200
+SPS: 22060
+Epoch: 293, global_step=14950400
+SPS: 22073
+Epoch: 294, global_step=15001600
+SPS: 22087
+Epoch: 295, global_step=15052800
+SPS: 22100
+Epoch: 296, global_step=15104000
+SPS: 22112
+Epoch: 297, global_step=15155200
+SPS: 22108
+Epoch: 298, global_step=15206400
+SPS: 22088
+Epoch: 299, global_step=15257600
+SPS: 22072
+Epoch: 300, global_step=15308800
+SPS: 22084
+Epoch: 301, global_step=15360000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.875
+eval_return_mean=40.808013916015625
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8161603212356567
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_301.pt
+SPS: 22043
+Epoch: 302, global_step=15411200
+SPS: 22060
+Epoch: 303, global_step=15462400
+SPS: 22075
+Epoch: 304, global_step=15513600
+SPS: 22089
+Epoch: 305, global_step=15564800
+SPS: 22103
+Epoch: 306, global_step=15616000
+SPS: 22109
+Epoch: 307, global_step=15667200
+SPS: 22114
+Epoch: 308, global_step=15718400
+SPS: 22125
+Epoch: 309, global_step=15769600
+SPS: 22124
+Epoch: 310, global_step=15820800
+SPS: 22123
+Epoch: 311, global_step=15872000
+SPS: 22136
+Epoch: 312, global_step=15923200
+SPS: 22150
+Epoch: 313, global_step=15974400
+SPS: 22163
+Epoch: 314, global_step=16025600
+SPS: 22179
+Epoch: 315, global_step=16076800
+SPS: 22192
+Epoch: 316, global_step=16128000
+SPS: 22207
+Epoch: 317, global_step=16179200
+SPS: 22220
+Epoch: 318, global_step=16230400
+SPS: 22234
+Epoch: 319, global_step=16281600
+SPS: 22250
+Epoch: 320, global_step=16332800
+SPS: 22265
+Epoch: 321, global_step=16384000
+SPS: 22283
+Epoch: 322, global_step=16435200
+SPS: 22294
+Epoch: 323, global_step=16486400
+SPS: 22307
+Epoch: 324, global_step=16537600
+SPS: 22323
+Epoch: 325, global_step=16588800
+SPS: 22338
+Epoch: 326, global_step=16640000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=37.80304718017578
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7560609579086304
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_326.pt
+SPS: 22297
+Epoch: 327, global_step=16691200
+SPS: 22279
+Epoch: 328, global_step=16742400
+SPS: 22285
+Epoch: 329, global_step=16793600
+SPS: 22295
+Epoch: 330, global_step=16844800
+SPS: 22307
+Epoch: 331, global_step=16896000
+SPS: 22320
+Epoch: 332, global_step=16947200
+SPS: 22334
+Epoch: 333, global_step=16998400
+SPS: 22347
+Epoch: 334, global_step=17049600
+SPS: 22357
+Epoch: 335, global_step=17100800
+SPS: 22371
+Epoch: 336, global_step=17152000
+SPS: 22383
+Epoch: 337, global_step=17203200
+SPS: 22396
+Epoch: 338, global_step=17254400
+SPS: 22409
+Epoch: 339, global_step=17305600
+SPS: 22419
+Epoch: 340, global_step=17356800
+SPS: 22426
+Epoch: 341, global_step=17408000
+SPS: 22437
+Epoch: 342, global_step=17459200
+SPS: 22447
+Epoch: 343, global_step=17510400
+SPS: 22459
+Epoch: 344, global_step=17561600
+SPS: 22473
+Epoch: 345, global_step=17612800
+SPS: 22486
+Epoch: 346, global_step=17664000
+SPS: 22499
+Epoch: 347, global_step=17715200
+SPS: 22510
+Epoch: 348, global_step=17766400
+SPS: 22522
+Epoch: 349, global_step=17817600
+SPS: 22533
+Epoch: 350, global_step=17868800
+SPS: 22547
+Epoch: 351, global_step=17920000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.625
+eval_return_mean=37.79412078857422
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7558823823928833
+eval_success_at_end_mean=0.625
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_351.pt
+SPS: 22506
+Epoch: 352, global_step=17971200
+SPS: 22517
+Epoch: 353, global_step=18022400
+SPS: 22503
+Epoch: 354, global_step=18073600
+SPS: 22513
+Epoch: 355, global_step=18124800
+SPS: 22522
+Epoch: 356, global_step=18176000
+SPS: 22530
+Epoch: 357, global_step=18227200
+SPS: 22540
+Epoch: 358, global_step=18278400
+SPS: 22545
+Epoch: 359, global_step=18329600
+SPS: 22555
+Epoch: 360, global_step=18380800
+SPS: 22567
+Epoch: 361, global_step=18432000
+SPS: 22569
+Epoch: 362, global_step=18483200
+SPS: 22575
+Epoch: 363, global_step=18534400
+SPS: 22587
+Epoch: 364, global_step=18585600
+SPS: 22592
+Epoch: 365, global_step=18636800
+SPS: 22602
+Epoch: 366, global_step=18688000
+SPS: 22613
+Epoch: 367, global_step=18739200
+SPS: 22623
+Epoch: 368, global_step=18790400
+SPS: 22632
+Epoch: 369, global_step=18841600
+SPS: 22639
+Epoch: 370, global_step=18892800
+SPS: 22651
+Epoch: 371, global_step=18944000
+SPS: 22658
+Epoch: 372, global_step=18995200
+SPS: 22668
+Epoch: 373, global_step=19046400
+SPS: 22680
+Epoch: 374, global_step=19097600
+SPS: 22689
+Epoch: 375, global_step=19148800
+SPS: 22697
+Epoch: 376, global_step=19200000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=41.76691818237305
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8353383541107178
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_376.pt
+SPS: 22666
+Epoch: 377, global_step=19251200
+SPS: 22671
+Epoch: 378, global_step=19302400
+SPS: 22681
+Epoch: 379, global_step=19353600
+SPS: 22693
+Epoch: 380, global_step=19404800
+SPS: 22705
+Epoch: 381, global_step=19456000
+SPS: 22716
+Epoch: 382, global_step=19507200
+SPS: 22729
+Epoch: 383, global_step=19558400
+SPS: 22741
+Epoch: 384, global_step=19609600
+SPS: 22752
+Epoch: 385, global_step=19660800
+SPS: 22764
+Epoch: 386, global_step=19712000
+SPS: 22776
+Epoch: 387, global_step=19763200
+SPS: 22788
+Epoch: 388, global_step=19814400
+SPS: 22801
+Epoch: 389, global_step=19865600
+SPS: 22815
+Epoch: 390, global_step=19916800
+SPS: 22827
+Epoch: 391, global_step=19968000
+SPS: 22840
+Epoch: 392, global_step=20019200
+SPS: 22853
+Epoch: 393, global_step=20070400
+SPS: 22865
+Epoch: 394, global_step=20121600
+SPS: 22877
+Epoch: 395, global_step=20172800
+SPS: 22889
+Epoch: 396, global_step=20224000
+SPS: 22901
+Epoch: 397, global_step=20275200
+SPS: 22911
+Epoch: 398, global_step=20326400
+SPS: 22922
+Epoch: 399, global_step=20377600
+SPS: 22933
+Epoch: 400, global_step=20428800
+SPS: 22945
+Epoch: 401, global_step=20480000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.01929473876953
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8003858327865601
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_401.pt
+SPS: 22912
+Epoch: 402, global_step=20531200
+SPS: 22924
+Epoch: 403, global_step=20582400
+SPS: 22936
+Epoch: 404, global_step=20633600
+SPS: 22944
+Epoch: 405, global_step=20684800
+SPS: 22956
+Epoch: 406, global_step=20736000
+SPS: 22970
+Epoch: 407, global_step=20787200
+SPS: 22981
+Epoch: 408, global_step=20838400
+SPS: 22992
+Epoch: 409, global_step=20889600
+SPS: 23003
+Epoch: 410, global_step=20940800
+SPS: 23013
+Epoch: 411, global_step=20992000
+SPS: 23020
+Epoch: 412, global_step=21043200
+SPS: 23032
+Epoch: 413, global_step=21094400
+SPS: 23043
+Epoch: 414, global_step=21145600
+SPS: 23054
+Epoch: 415, global_step=21196800
+SPS: 23062
+Epoch: 416, global_step=21248000
+SPS: 23072
+Epoch: 417, global_step=21299200
+SPS: 23082
+Epoch: 418, global_step=21350400
+SPS: 23088
+Epoch: 419, global_step=21401600
+SPS: 23097
+Epoch: 420, global_step=21452800
+SPS: 23105
+Epoch: 421, global_step=21504000
+SPS: 23117
+Epoch: 422, global_step=21555200
+SPS: 23126
+Epoch: 423, global_step=21606400
+SPS: 23135
+Epoch: 424, global_step=21657600
+SPS: 23146
+Epoch: 425, global_step=21708800
+SPS: 23153
+Epoch: 426, global_step=21760000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.875
+eval_return_mean=40.433189392089844
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8086638450622559
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_426.pt
+SPS: 23121
+Epoch: 427, global_step=21811200
+SPS: 23131
+Epoch: 428, global_step=21862400
+SPS: 23140
+Epoch: 429, global_step=21913600
+SPS: 23147
+Epoch: 430, global_step=21964800
+SPS: 23155
+Epoch: 431, global_step=22016000
+SPS: 23159
+Epoch: 432, global_step=22067200
+SPS: 23167
+Epoch: 433, global_step=22118400
+SPS: 23167
+Epoch: 434, global_step=22169600
+SPS: 23174
+Epoch: 435, global_step=22220800
+SPS: 23183
+Epoch: 436, global_step=22272000
+SPS: 23192
+Epoch: 437, global_step=22323200
+SPS: 23179
+Epoch: 438, global_step=22374400
+SPS: 23183
+Epoch: 439, global_step=22425600
+SPS: 23191
+Epoch: 440, global_step=22476800
+SPS: 23201
+Epoch: 441, global_step=22528000
+SPS: 23210
+Epoch: 442, global_step=22579200
+SPS: 23217
+Epoch: 443, global_step=22630400
+SPS: 23225
+Epoch: 444, global_step=22681600
+SPS: 23234
+Epoch: 445, global_step=22732800
+SPS: 23244
+Epoch: 446, global_step=22784000
+SPS: 23253
+Epoch: 447, global_step=22835200
+SPS: 23263
+Epoch: 448, global_step=22886400
+SPS: 23273
+Epoch: 449, global_step=22937600
+SPS: 23281
+Epoch: 450, global_step=22988800
+SPS: 23285
+Epoch: 451, global_step=23040000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.875
+eval_return_mean=38.87803268432617
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7775606513023376
+eval_success_at_end_mean=0.75
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_451.pt
+SPS: 23253
+Epoch: 452, global_step=23091200
+SPS: 23242
+Epoch: 453, global_step=23142400
+SPS: 23250
+Epoch: 454, global_step=23193600
+SPS: 23259
+Epoch: 455, global_step=23244800
+SPS: 23266
+Epoch: 456, global_step=23296000
+SPS: 23274
+Epoch: 457, global_step=23347200
+SPS: 23283
+Epoch: 458, global_step=23398400
+SPS: 23292
+Epoch: 459, global_step=23449600
+SPS: 23302
+Epoch: 460, global_step=23500800
+SPS: 23310
+Epoch: 461, global_step=23552000
+SPS: 23318
+Epoch: 462, global_step=23603200
+SPS: 23326
+Epoch: 463, global_step=23654400
+SPS: 23331
+Epoch: 464, global_step=23705600
+SPS: 23340
+Epoch: 465, global_step=23756800
+SPS: 23348
+Epoch: 466, global_step=23808000
+SPS: 23356
+Epoch: 467, global_step=23859200
+SPS: 23367
+Epoch: 468, global_step=23910400
+SPS: 23376
+Epoch: 469, global_step=23961600
+SPS: 23386
+Epoch: 470, global_step=24012800
+SPS: 23394
+Epoch: 471, global_step=24064000
+SPS: 23405
+Epoch: 472, global_step=24115200
+SPS: 23412
+Epoch: 473, global_step=24166400
+SPS: 23418
+Epoch: 474, global_step=24217600
+SPS: 23426
+Epoch: 475, global_step=24268800
+SPS: 23434
+Epoch: 476, global_step=24320000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=41.46802520751953
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8293604850769043
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_476.pt
+SPS: 23406
+Epoch: 477, global_step=24371200
+SPS: 23414
+Epoch: 478, global_step=24422400
+SPS: 23420
+Epoch: 479, global_step=24473600
+SPS: 23429
+Epoch: 480, global_step=24524800
+SPS: 23437
+Epoch: 481, global_step=24576000
+SPS: 23443
+Epoch: 482, global_step=24627200
+SPS: 23450
+Epoch: 483, global_step=24678400
+SPS: 23459
+Epoch: 484, global_step=24729600
+SPS: 23466
+Epoch: 485, global_step=24780800
+SPS: 23475
+Epoch: 486, global_step=24832000
+SPS: 23482
+Epoch: 487, global_step=24883200
+SPS: 23492
+Epoch: 488, global_step=24934400
+SPS: 23501
+Epoch: 489, global_step=24985600
+SPS: 23510
+Epoch: 490, global_step=25036800
+SPS: 23518
+Epoch: 491, global_step=25088000
+SPS: 23527
+Epoch: 492, global_step=25139200
+SPS: 23533
+Epoch: 493, global_step=25190400
+SPS: 23534
+Epoch: 494, global_step=25241600
+SPS: 23540
+Epoch: 495, global_step=25292800
+SPS: 23548
+Epoch: 496, global_step=25344000
+SPS: 23558
+Epoch: 497, global_step=25395200
+SPS: 23567
+Epoch: 498, global_step=25446400
+SPS: 23574
+Epoch: 499, global_step=25497600
+SPS: 23576
+Epoch: 500, global_step=25548800
+SPS: 23585
+Epoch: 501, global_step=25600000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.96717834472656
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8193435668945312
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_501.pt
+SPS: 23558
+Epoch: 502, global_step=25651200
+SPS: 23567
+Epoch: 503, global_step=25702400
+SPS: 23574
+Epoch: 504, global_step=25753600
+SPS: 23581
+Epoch: 505, global_step=25804800
+SPS: 23589
+Epoch: 506, global_step=25856000
+SPS: 23598
+Epoch: 507, global_step=25907200
+SPS: 23602
+Epoch: 508, global_step=25958400
+SPS: 23608
+Epoch: 509, global_step=26009600
+SPS: 23614
+Epoch: 510, global_step=26060800
+SPS: 23622
+Epoch: 511, global_step=26112000
+SPS: 23627
+Epoch: 512, global_step=26163200
+SPS: 23635
+Epoch: 513, global_step=26214400
+SPS: 23642
+Epoch: 514, global_step=26265600
+SPS: 23650
+Epoch: 515, global_step=26316800
+SPS: 23657
+Epoch: 516, global_step=26368000
+SPS: 23659
+Epoch: 517, global_step=26419200
+SPS: 23661
+Epoch: 518, global_step=26470400
+SPS: 23670
+Epoch: 519, global_step=26521600
+SPS: 23677
+Epoch: 520, global_step=26572800
+SPS: 23684
+Epoch: 521, global_step=26624000
+SPS: 23690
+Epoch: 522, global_step=26675200
+SPS: 23689
+Epoch: 523, global_step=26726400
+SPS: 23694
+Epoch: 524, global_step=26777600
+SPS: 23696
+Epoch: 525, global_step=26828800
+SPS: 23703
+Epoch: 526, global_step=26880000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.875
+eval_return_mean=38.211219787597656
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7642244100570679
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_526.pt
+SPS: 23675
+Epoch: 527, global_step=26931200
+SPS: 23680
+Epoch: 528, global_step=26982400
+SPS: 23686
+Epoch: 529, global_step=27033600
+SPS: 23691
+Epoch: 530, global_step=27084800
+SPS: 23695
+Epoch: 531, global_step=27136000
+SPS: 23701
+Epoch: 532, global_step=27187200
+SPS: 23709
+Epoch: 533, global_step=27238400
+SPS: 23717
+Epoch: 534, global_step=27289600
+SPS: 23707
+Epoch: 535, global_step=27340800
+SPS: 23697
+Epoch: 536, global_step=27392000
+SPS: 23696
+Epoch: 537, global_step=27443200
+SPS: 23702
+Epoch: 538, global_step=27494400
+SPS: 23709
+Epoch: 539, global_step=27545600
+SPS: 23716
+Epoch: 540, global_step=27596800
+SPS: 23724
+Epoch: 541, global_step=27648000
+SPS: 23731
+Epoch: 542, global_step=27699200
+SPS: 23726
+Epoch: 543, global_step=27750400
+SPS: 23729
+Epoch: 544, global_step=27801600
+SPS: 23736
+Epoch: 545, global_step=27852800
+SPS: 23743
+Epoch: 546, global_step=27904000
+SPS: 23749
+Epoch: 547, global_step=27955200
+SPS: 23752
+Epoch: 548, global_step=28006400
+SPS: 23758
+Epoch: 549, global_step=28057600
+SPS: 23765
+Epoch: 550, global_step=28108800
+SPS: 23772
+Epoch: 551, global_step=28160000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.38170623779297
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7876341342926025
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_551.pt
+SPS: 23728
+Epoch: 552, global_step=28211200
+SPS: 23735
+Epoch: 553, global_step=28262400
+SPS: 23740
+Epoch: 554, global_step=28313600
+SPS: 23745
+Epoch: 555, global_step=28364800
+SPS: 23748
+Epoch: 556, global_step=28416000
+SPS: 23753
+Epoch: 557, global_step=28467200
+SPS: 23760
+Epoch: 558, global_step=28518400
+SPS: 23762
+Epoch: 559, global_step=28569600
+SPS: 23760
+Epoch: 560, global_step=28620800
+SPS: 23767
+Epoch: 561, global_step=28672000
+SPS: 23773
+Epoch: 562, global_step=28723200
+SPS: 23763
+Epoch: 563, global_step=28774400
+SPS: 23768
+Epoch: 564, global_step=28825600
+SPS: 23774
+Epoch: 565, global_step=28876800
+SPS: 23781
+Epoch: 566, global_step=28928000
+SPS: 23786
+Epoch: 567, global_step=28979200
+SPS: 23793
+Epoch: 568, global_step=29030400
+SPS: 23799
+Epoch: 569, global_step=29081600
+SPS: 23805
+Epoch: 570, global_step=29132800
+SPS: 23811
+Epoch: 571, global_step=29184000
+SPS: 23809
+Epoch: 572, global_step=29235200
+SPS: 23814
+Epoch: 573, global_step=29286400
+SPS: 23803
+Epoch: 574, global_step=29337600
+SPS: 23806
+Epoch: 575, global_step=29388800
+SPS: 23797
+Epoch: 576, global_step=29440000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=41.27723693847656
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8255446553230286
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_576.pt
+SPS: 23755
+Epoch: 577, global_step=29491200
+SPS: 23760
+Epoch: 578, global_step=29542400
+SPS: 23761
+Epoch: 579, global_step=29593600
+SPS: 23752
+Epoch: 580, global_step=29644800
+SPS: 23755
+Epoch: 581, global_step=29696000
+SPS: 23760
+Epoch: 582, global_step=29747200
+SPS: 23750
+Epoch: 583, global_step=29798400
+SPS: 23756
+Epoch: 584, global_step=29849600
+SPS: 23761
+Epoch: 585, global_step=29900800
+SPS: 23765
+Epoch: 586, global_step=29952000
+SPS: 23766
+Epoch: 587, global_step=30003200
+SPS: 23755
+Epoch: 588, global_step=30054400
+SPS: 23759
+Epoch: 589, global_step=30105600
+SPS: 23766
+Epoch: 590, global_step=30156800
+SPS: 23768
+Epoch: 591, global_step=30208000
+SPS: 23773
+Epoch: 592, global_step=30259200
+SPS: 23773
+Epoch: 593, global_step=30310400
+SPS: 23779
+Epoch: 594, global_step=30361600
+SPS: 23769
+Epoch: 595, global_step=30412800
+SPS: 23771
+Epoch: 596, global_step=30464000
+SPS: 23778
+Epoch: 597, global_step=30515200
+SPS: 23767
+Epoch: 598, global_step=30566400
+SPS: 23769
+Epoch: 599, global_step=30617600
+SPS: 23775
+Epoch: 600, global_step=30668800
+SPS: 23780
+Epoch: 601, global_step=30720000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=36.25691223144531
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7251383066177368
+eval_success_at_end_mean=0.75
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_601.pt
+SPS: 23751
+Epoch: 602, global_step=30771200
+SPS: 23741
+Epoch: 603, global_step=30822400
+SPS: 23732
+Epoch: 604, global_step=30873600
+SPS: 23739
+Epoch: 605, global_step=30924800
+SPS: 23744
+Epoch: 606, global_step=30976000
+SPS: 23733
+Epoch: 607, global_step=31027200
+SPS: 23737
+Epoch: 608, global_step=31078400
+SPS: 23727
+Epoch: 609, global_step=31129600
+SPS: 23734
+Epoch: 610, global_step=31180800
+SPS: 23738
+Epoch: 611, global_step=31232000
+SPS: 23730
+Epoch: 612, global_step=31283200
+SPS: 23735
+Epoch: 613, global_step=31334400
+SPS: 23740
+Epoch: 614, global_step=31385600
+SPS: 23745
+Epoch: 615, global_step=31436800
+SPS: 23751
+Epoch: 616, global_step=31488000
+SPS: 23757
+Epoch: 617, global_step=31539200
+SPS: 23764
+Epoch: 618, global_step=31590400
+SPS: 23766
+Epoch: 619, global_step=31641600
+SPS: 23771
+Epoch: 620, global_step=31692800
+SPS: 23777
+Epoch: 621, global_step=31744000
+SPS: 23767
+Epoch: 622, global_step=31795200
+SPS: 23760
+Epoch: 623, global_step=31846400
+SPS: 23765
+Epoch: 624, global_step=31897600
+SPS: 23755
+Epoch: 625, global_step=31948800
+SPS: 23757
+Epoch: 626, global_step=32000000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.53153991699219
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8106308579444885
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_626.pt
+SPS: 23730
+Epoch: 627, global_step=32051200
+SPS: 23734
+Epoch: 628, global_step=32102400
+SPS: 23739
+Epoch: 629, global_step=32153600
+SPS: 23746
+Epoch: 630, global_step=32204800
+SPS: 23744
+Epoch: 631, global_step=32256000
+SPS: 23745
+Epoch: 632, global_step=32307200
+SPS: 23745
+Epoch: 633, global_step=32358400
+SPS: 23748
+Epoch: 634, global_step=32409600
+SPS: 23747
+Epoch: 635, global_step=32460800
+SPS: 23747
+Epoch: 636, global_step=32512000
+SPS: 23750
+Epoch: 637, global_step=32563200
+SPS: 23754
+Epoch: 638, global_step=32614400
+SPS: 23759
+Epoch: 639, global_step=32665600
+SPS: 23763
+Epoch: 640, global_step=32716800
+SPS: 23767
+Epoch: 641, global_step=32768000
+SPS: 23766
+Epoch: 642, global_step=32819200
+SPS: 23769
+Epoch: 643, global_step=32870400
+SPS: 23774
+Epoch: 644, global_step=32921600
+SPS: 23779
+Epoch: 645, global_step=32972800
+SPS: 23783
+Epoch: 646, global_step=33024000
+SPS: 23787
+Epoch: 647, global_step=33075200
+SPS: 23787
+Epoch: 648, global_step=33126400
+SPS: 23791
+Epoch: 649, global_step=33177600
+SPS: 23796
+Epoch: 650, global_step=33228800
+SPS: 23802
+Epoch: 651, global_step=33280000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.92288589477539
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8184577226638794
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_651.pt
+SPS: 23759
+Epoch: 652, global_step=33331200
+SPS: 23750
+Epoch: 653, global_step=33382400
+SPS: 23740
+Epoch: 654, global_step=33433600
+SPS: 23745
+Epoch: 655, global_step=33484800
+SPS: 23749
+Epoch: 656, global_step=33536000
+SPS: 23740
+Epoch: 657, global_step=33587200
+SPS: 23744
+Epoch: 658, global_step=33638400
+SPS: 23734
+Epoch: 659, global_step=33689600
+SPS: 23737
+Epoch: 660, global_step=33740800
+SPS: 23742
+Epoch: 661, global_step=33792000
+SPS: 23747
+Epoch: 662, global_step=33843200
+SPS: 23748
+Epoch: 663, global_step=33894400
+SPS: 23738
+Epoch: 664, global_step=33945600
+SPS: 23740
+Epoch: 665, global_step=33996800
+SPS: 23743
+Epoch: 666, global_step=34048000
+SPS: 23733
+Epoch: 667, global_step=34099200
+SPS: 23735
+Epoch: 668, global_step=34150400
+SPS: 23739
+Epoch: 669, global_step=34201600
+SPS: 23743
+Epoch: 670, global_step=34252800
+SPS: 23744
+Epoch: 671, global_step=34304000
+SPS: 23750
+Epoch: 672, global_step=34355200
+SPS: 23750
+Epoch: 673, global_step=34406400
+SPS: 23752
+Epoch: 674, global_step=34457600
+SPS: 23755
+Epoch: 675, global_step=34508800
+SPS: 23759
+Epoch: 676, global_step=34560000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.8553466796875
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8171069622039795
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_676.pt
+SPS: 23732
+Epoch: 677, global_step=34611200
+SPS: 23736
+Epoch: 678, global_step=34662400
+SPS: 23727
+Epoch: 679, global_step=34713600
+SPS: 23730
+Epoch: 680, global_step=34764800
+SPS: 23733
+Epoch: 681, global_step=34816000
+SPS: 23734
+Epoch: 682, global_step=34867200
+SPS: 23739
+Epoch: 683, global_step=34918400
+SPS: 23743
+Epoch: 684, global_step=34969600
+SPS: 23749
+Epoch: 685, global_step=35020800
+SPS: 23754
+Epoch: 686, global_step=35072000
+SPS: 23759
+Epoch: 687, global_step=35123200
+SPS: 23760
+Epoch: 688, global_step=35174400
+SPS: 23751
+Epoch: 689, global_step=35225600
+SPS: 23751
+Epoch: 690, global_step=35276800
+SPS: 23742
+Epoch: 691, global_step=35328000
+SPS: 23737
+Epoch: 692, global_step=35379200
+SPS: 23741
+Epoch: 693, global_step=35430400
+SPS: 23745
+Epoch: 694, global_step=35481600
+SPS: 23750
+Epoch: 695, global_step=35532800
+SPS: 23741
+Epoch: 696, global_step=35584000
+SPS: 23744
+Epoch: 697, global_step=35635200
+SPS: 23746
+Epoch: 698, global_step=35686400
+SPS: 23749
+Epoch: 699, global_step=35737600
+SPS: 23754
+Epoch: 700, global_step=35788800
+SPS: 23745
+Epoch: 701, global_step=35840000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.75385284423828
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8150770664215088
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_701.pt
+SPS: 23715
+Epoch: 702, global_step=35891200
+SPS: 23720
+Epoch: 703, global_step=35942400
+SPS: 23723
+Epoch: 704, global_step=35993600
+SPS: 23726
+Epoch: 705, global_step=36044800
+SPS: 23729
+Epoch: 706, global_step=36096000
+SPS: 23732
+Epoch: 707, global_step=36147200
+SPS: 23733
+Epoch: 708, global_step=36198400
+SPS: 23736
+Epoch: 709, global_step=36249600
+SPS: 23728
+Epoch: 710, global_step=36300800
+SPS: 23731
+Epoch: 711, global_step=36352000
+SPS: 23734
+Epoch: 712, global_step=36403200
+SPS: 23736
+Epoch: 713, global_step=36454400
+SPS: 23739
+Epoch: 714, global_step=36505600
+SPS: 23741
+Epoch: 715, global_step=36556800
+SPS: 23745
+Epoch: 716, global_step=36608000
+SPS: 23749
+Epoch: 717, global_step=36659200
+SPS: 23741
+Epoch: 718, global_step=36710400
+SPS: 23745
+Epoch: 719, global_step=36761600
+SPS: 23748
+Epoch: 720, global_step=36812800
+SPS: 23753
+Epoch: 721, global_step=36864000
+SPS: 23758
+Epoch: 722, global_step=36915200
+SPS: 23758
+Epoch: 723, global_step=36966400
+SPS: 23759
+Epoch: 724, global_step=37017600
+SPS: 23765
+Epoch: 725, global_step=37068800
+SPS: 23769
+Epoch: 726, global_step=37120000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.96324157714844
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8192648887634277
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_726.pt
+SPS: 23732
+Epoch: 727, global_step=37171200
+SPS: 23724
+Epoch: 728, global_step=37222400
+SPS: 23727
+Epoch: 729, global_step=37273600
+SPS: 23719
+Epoch: 730, global_step=37324800
+SPS: 23719
+Epoch: 731, global_step=37376000
+SPS: 23710
+Epoch: 732, global_step=37427200
+SPS: 23714
+Epoch: 733, global_step=37478400
+SPS: 23712
+Epoch: 734, global_step=37529600
+SPS: 23713
+Epoch: 735, global_step=37580800
+SPS: 23704
+Epoch: 736, global_step=37632000
+SPS: 23696
+Epoch: 737, global_step=37683200
+SPS: 23689
+Epoch: 738, global_step=37734400
+SPS: 23680
+Epoch: 739, global_step=37785600
+SPS: 23668
+Epoch: 740, global_step=37836800
+SPS: 23673
+Epoch: 741, global_step=37888000
+SPS: 23673
+Epoch: 742, global_step=37939200
+SPS: 23665
+Epoch: 743, global_step=37990400
+SPS: 23665
+Epoch: 744, global_step=38041600
+SPS: 23656
+Epoch: 745, global_step=38092800
+SPS: 23661
+Epoch: 746, global_step=38144000
+SPS: 23651
+Epoch: 747, global_step=38195200
+SPS: 23653
+Epoch: 748, global_step=38246400
+SPS: 23656
+Epoch: 749, global_step=38297600
+SPS: 23661
+Epoch: 750, global_step=38348800
+SPS: 23665
+Epoch: 751, global_step=38400000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.269859313964844
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8053971529006958
+eval_success_at_end_mean=0.75
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_751.pt
+SPS: 23631
+Epoch: 752, global_step=38451200
+SPS: 23634
+Epoch: 753, global_step=38502400
+SPS: 23637
+Epoch: 754, global_step=38553600
+SPS: 23640
+Epoch: 755, global_step=38604800
+SPS: 23643
+Epoch: 756, global_step=38656000
+SPS: 23648
+Epoch: 757, global_step=38707200
+SPS: 23639
+Epoch: 758, global_step=38758400
+SPS: 23631
+Epoch: 759, global_step=38809600
+SPS: 23634
+Epoch: 760, global_step=38860800
+SPS: 23638
+Epoch: 761, global_step=38912000
+SPS: 23641
+Epoch: 762, global_step=38963200
+SPS: 23632
+Epoch: 763, global_step=39014400
+SPS: 23630
+Epoch: 764, global_step=39065600
+SPS: 23635
+Epoch: 765, global_step=39116800
+SPS: 23638
+Epoch: 766, global_step=39168000
+SPS: 23640
+Epoch: 767, global_step=39219200
+SPS: 23632
+Epoch: 768, global_step=39270400
+SPS: 23632
+Epoch: 769, global_step=39321600
+SPS: 23636
+Epoch: 770, global_step=39372800
+SPS: 23628
+Epoch: 771, global_step=39424000
+SPS: 23621
+Epoch: 772, global_step=39475200
+SPS: 23614
+Epoch: 773, global_step=39526400
+SPS: 23614
+Epoch: 774, global_step=39577600
+SPS: 23617
+Epoch: 775, global_step=39628800
+SPS: 23620
+Epoch: 776, global_step=39680000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.6495361328125
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7929906845092773
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_776.pt
+SPS: 23597
+Epoch: 777, global_step=39731200
+SPS: 23598
+Epoch: 778, global_step=39782400
+SPS: 23589
+Epoch: 779, global_step=39833600
+SPS: 23591
+Epoch: 780, global_step=39884800
+SPS: 23594
+Epoch: 781, global_step=39936000
+SPS: 23586
+Epoch: 782, global_step=39987200
+SPS: 23578
+Epoch: 783, global_step=40038400
+SPS: 23583
+Epoch: 784, global_step=40089600
+SPS: 23587
+Epoch: 785, global_step=40140800
+SPS: 23579
+Epoch: 786, global_step=40192000
+SPS: 23572
+Epoch: 787, global_step=40243200
+SPS: 23576
+Epoch: 788, global_step=40294400
+SPS: 23577
+Epoch: 789, global_step=40345600
+SPS: 23570
+Epoch: 790, global_step=40396800
+SPS: 23574
+Epoch: 791, global_step=40448000
+SPS: 23577
+Epoch: 792, global_step=40499200
+SPS: 23569
+Epoch: 793, global_step=40550400
+SPS: 23573
+Epoch: 794, global_step=40601600
+SPS: 23577
+Epoch: 795, global_step=40652800
+SPS: 23580
+Epoch: 796, global_step=40704000
+SPS: 23572
+Epoch: 797, global_step=40755200
+SPS: 23565
+Epoch: 798, global_step=40806400
+SPS: 23568
+Epoch: 799, global_step=40857600
+SPS: 23567
+Epoch: 800, global_step=40908800
+SPS: 23559
+Epoch: 801, global_step=40960000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=41.11576843261719
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8223153948783875
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_801.pt
+SPS: 23525
+Epoch: 802, global_step=41011200
+SPS: 23527
+Epoch: 803, global_step=41062400
+SPS: 23526
+Epoch: 804, global_step=41113600
+SPS: 23522
+Epoch: 805, global_step=41164800
+SPS: 23526
+Epoch: 806, global_step=41216000
+SPS: 23518
+Epoch: 807, global_step=41267200
+SPS: 23511
+Epoch: 808, global_step=41318400
+SPS: 23504
+Epoch: 809, global_step=41369600
+SPS: 23496
+Epoch: 810, global_step=41420800
+SPS: 23500
+Epoch: 811, global_step=41472000
+SPS: 23493
+Epoch: 812, global_step=41523200
+SPS: 23497
+Epoch: 813, global_step=41574400
+SPS: 23490
+Epoch: 814, global_step=41625600
+SPS: 23482
+Epoch: 815, global_step=41676800
+SPS: 23483
+Epoch: 816, global_step=41728000
+SPS: 23484
+Epoch: 817, global_step=41779200
+SPS: 23477
+Epoch: 818, global_step=41830400
+SPS: 23471
+Epoch: 819, global_step=41881600
+SPS: 23463
+Epoch: 820, global_step=41932800
+SPS: 23456
+Epoch: 821, global_step=41984000
+SPS: 23461
+Epoch: 822, global_step=42035200
+SPS: 23453
+Epoch: 823, global_step=42086400
+SPS: 23443
+Epoch: 824, global_step=42137600
+SPS: 23444
+Epoch: 825, global_step=42188800
+SPS: 23447
+Epoch: 826, global_step=42240000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=41.75861358642578
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8351722359657288
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_826.pt
+SPS: 23415
+Epoch: 827, global_step=42291200
+SPS: 23406
+Epoch: 828, global_step=42342400
+SPS: 23399
+Epoch: 829, global_step=42393600
+SPS: 23392
+Epoch: 830, global_step=42444800
+SPS: 23395
+Epoch: 831, global_step=42496000
+SPS: 23398
+Epoch: 832, global_step=42547200
+SPS: 23388
+Epoch: 833, global_step=42598400
+SPS: 23389
+Epoch: 834, global_step=42649600
+SPS: 23393
+Epoch: 835, global_step=42700800
+SPS: 23396
+Epoch: 836, global_step=42752000
+SPS: 23400
+Epoch: 837, global_step=42803200
+SPS: 23392
+Epoch: 838, global_step=42854400
+SPS: 23385
+Epoch: 839, global_step=42905600
+SPS: 23388
+Epoch: 840, global_step=42956800
+SPS: 23384
+Epoch: 841, global_step=43008000
+SPS: 23377
+Epoch: 842, global_step=43059200
+SPS: 23369
+Epoch: 843, global_step=43110400
+SPS: 23369
+Epoch: 844, global_step=43161600
+SPS: 23373
+Epoch: 845, global_step=43212800
+SPS: 23374
+Epoch: 846, global_step=43264000
+SPS: 23367
+Epoch: 847, global_step=43315200
+SPS: 23370
+Epoch: 848, global_step=43366400
+SPS: 23366
+Epoch: 849, global_step=43417600
+SPS: 23359
+Epoch: 850, global_step=43468800
+SPS: 23352
+Epoch: 851, global_step=43520000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.03166198730469
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8006331920623779
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_851.pt
+SPS: 23331
+Epoch: 852, global_step=43571200
+SPS: 23324
+Epoch: 853, global_step=43622400
+SPS: 23327
+Epoch: 854, global_step=43673600
+SPS: 23319
+Epoch: 855, global_step=43724800
+SPS: 23313
+Epoch: 856, global_step=43776000
+SPS: 23312
+Epoch: 857, global_step=43827200
+SPS: 23315
+Epoch: 858, global_step=43878400
+SPS: 23319
+Epoch: 859, global_step=43929600
+SPS: 23311
+Epoch: 860, global_step=43980800
+SPS: 23303
+Epoch: 861, global_step=44032000
+SPS: 23296
+Epoch: 862, global_step=44083200
+SPS: 23289
+Epoch: 863, global_step=44134400
+SPS: 23282
+Epoch: 864, global_step=44185600
+SPS: 23273
+Epoch: 865, global_step=44236800
+SPS: 23266
+Epoch: 866, global_step=44288000
+SPS: 23259
+Epoch: 867, global_step=44339200
+SPS: 23253
+Epoch: 868, global_step=44390400
+SPS: 23246
+Epoch: 869, global_step=44441600
+SPS: 23239
+Epoch: 870, global_step=44492800
+SPS: 23233
+Epoch: 871, global_step=44544000
+SPS: 23226
+Epoch: 872, global_step=44595200
+SPS: 23229
+Epoch: 873, global_step=44646400
+SPS: 23234
+Epoch: 874, global_step=44697600
+SPS: 23225
+Epoch: 875, global_step=44748800
+SPS: 23218
+Epoch: 876, global_step=44800000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=41.2171630859375
+eval_episode_len_mean=50.0
+eval_reward_mean=0.824343204498291
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_876.pt
+SPS: 23188
+Epoch: 877, global_step=44851200
+SPS: 23182
+Epoch: 878, global_step=44902400
+SPS: 23175
+Epoch: 879, global_step=44953600
+SPS: 23169
+Epoch: 880, global_step=45004800
+SPS: 23162
+Epoch: 881, global_step=45056000
+SPS: 23156
+Epoch: 882, global_step=45107200
+SPS: 23149
+Epoch: 883, global_step=45158400
+SPS: 23142
+Epoch: 884, global_step=45209600
+SPS: 23135
+Epoch: 885, global_step=45260800
+SPS: 23128
+Epoch: 886, global_step=45312000
+SPS: 23121
+Epoch: 887, global_step=45363200
+SPS: 23113
+Epoch: 888, global_step=45414400
+SPS: 23106
+Epoch: 889, global_step=45465600
+SPS: 23100
+Epoch: 890, global_step=45516800
+SPS: 23093
+Epoch: 891, global_step=45568000
+SPS: 23087
+Epoch: 892, global_step=45619200
+SPS: 23081
+Epoch: 893, global_step=45670400
+SPS: 23076
+Epoch: 894, global_step=45721600
+SPS: 23069
+Epoch: 895, global_step=45772800
+SPS: 23061
+Epoch: 896, global_step=45824000
+SPS: 23054
+Epoch: 897, global_step=45875200
+SPS: 23048
+Epoch: 898, global_step=45926400
+SPS: 23041
+Epoch: 899, global_step=45977600
+SPS: 23035
+Epoch: 900, global_step=46028800
+SPS: 23029
+Epoch: 901, global_step=46080000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=42.43326950073242
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8486654162406921
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_901.pt
+SPS: 23009
+Epoch: 902, global_step=46131200
+SPS: 23002
+Epoch: 903, global_step=46182400
+SPS: 22996
+Epoch: 904, global_step=46233600
+SPS: 23000
+Epoch: 905, global_step=46284800
+SPS: 23002
+Epoch: 906, global_step=46336000
+SPS: 22995
+Epoch: 907, global_step=46387200
+SPS: 22989
+Epoch: 908, global_step=46438400
+SPS: 22983
+Epoch: 909, global_step=46489600
+SPS: 22977
+Epoch: 910, global_step=46540800
+SPS: 22971
+Epoch: 911, global_step=46592000
+SPS: 22965
+Epoch: 912, global_step=46643200
+SPS: 22968
+Epoch: 913, global_step=46694400
+SPS: 22962
+Epoch: 914, global_step=46745600
+SPS: 22956
+Epoch: 915, global_step=46796800
+SPS: 22950
+Epoch: 916, global_step=46848000
+SPS: 22943
+Epoch: 917, global_step=46899200
+SPS: 22938
+Epoch: 918, global_step=46950400
+SPS: 22933
+Epoch: 919, global_step=47001600
+SPS: 22935
+Epoch: 920, global_step=47052800
+SPS: 22930
+Epoch: 921, global_step=47104000
+SPS: 22924
+Epoch: 922, global_step=47155200
+SPS: 22917
+Epoch: 923, global_step=47206400
+SPS: 22911
+Epoch: 924, global_step=47257600
+SPS: 22903
+Epoch: 925, global_step=47308800
+SPS: 22898
+Epoch: 926, global_step=47360000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=43.18617248535156
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8637233972549438
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_926.pt
+SPS: 22880
+Epoch: 927, global_step=47411200
+SPS: 22875
+Epoch: 928, global_step=47462400
+SPS: 22868
+Epoch: 929, global_step=47513600
+SPS: 22862
+Epoch: 930, global_step=47564800
+SPS: 22857
+Epoch: 931, global_step=47616000
+SPS: 22860
+Epoch: 932, global_step=47667200
+SPS: 22854
+Epoch: 933, global_step=47718400
+SPS: 22849
+Epoch: 934, global_step=47769600
+SPS: 22843
+Epoch: 935, global_step=47820800
+SPS: 22838
+Epoch: 936, global_step=47872000
+SPS: 22833
+Epoch: 937, global_step=47923200
+SPS: 22826
+Epoch: 938, global_step=47974400
+SPS: 22821
+Epoch: 939, global_step=48025600
+SPS: 22816
+Epoch: 940, global_step=48076800
+SPS: 22811
+Epoch: 941, global_step=48128000
+SPS: 22814
+Epoch: 942, global_step=48179200
+SPS: 22809
+Epoch: 943, global_step=48230400
+SPS: 22803
+Epoch: 944, global_step=48281600
+SPS: 22797
+Epoch: 945, global_step=48332800
+SPS: 22791
+Epoch: 946, global_step=48384000
+SPS: 22786
+Epoch: 947, global_step=48435200
+SPS: 22782
+Epoch: 948, global_step=48486400
+SPS: 22777
+Epoch: 949, global_step=48537600
+SPS: 22772
+Epoch: 950, global_step=48588800
+SPS: 22767
+Epoch: 951, global_step=48640000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=42.153236389160156
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8430647850036621
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_951.pt
+SPS: 22740
+Epoch: 952, global_step=48691200
+SPS: 22735
+Epoch: 953, global_step=48742400
+SPS: 22730
+Epoch: 954, global_step=48793600
+SPS: 22723
+Epoch: 955, global_step=48844800
+SPS: 22718
+Epoch: 956, global_step=48896000
+SPS: 22714
+Epoch: 957, global_step=48947200
+SPS: 22707
+Epoch: 958, global_step=48998400
+SPS: 22702
+Epoch: 959, global_step=49049600
+SPS: 22705
+Epoch: 960, global_step=49100800
+SPS: 22699
+Epoch: 961, global_step=49152000
+SPS: 22694
+Epoch: 962, global_step=49203200
+SPS: 22690
+Epoch: 963, global_step=49254400
+SPS: 22685
+Epoch: 964, global_step=49305600
+SPS: 22680
+Epoch: 965, global_step=49356800
+SPS: 22675
+Epoch: 966, global_step=49408000
+SPS: 22680
+Epoch: 967, global_step=49459200
+SPS: 22674
+Epoch: 968, global_step=49510400
+SPS: 22670
+Epoch: 969, global_step=49561600
+SPS: 22673
+Epoch: 970, global_step=49612800
+SPS: 22677
+Epoch: 971, global_step=49664000
+SPS: 22681
+Epoch: 972, global_step=49715200
+SPS: 22676
+Epoch: 973, global_step=49766400
+SPS: 22671
+Epoch: 974, global_step=49817600
+SPS: 22666
+Epoch: 975, global_step=49868800
+SPS: 22661
+Epoch: 976, global_step=49920000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.875
+eval_return_mean=35.854156494140625
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7170830965042114
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/ckpt_976.pt
+SPS: 22636
+model saved to runs/stackcube-precision-replication-20261027-precision-constant-seed-2/final_ckpt.pt

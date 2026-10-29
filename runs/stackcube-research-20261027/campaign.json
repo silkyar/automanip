@@ -1,0 +1,38 @@
+{
+  "campaign": {
+    "campaign_id": "stackcube-credit-20261026",
+    "hypothesis": "Longer PPO credit assignment improves the grasp-to-release-to-stability sequence at the same transition budget.",
+    "requested_transitions": 25000000,
+    "training_seeds": [
+      1,
+      2,
+      3
+    ],
+    "candidates": [
+      {
+        "id": "gamma090",
+        "gamma": 0.9
+      },
+      {
+        "id": "gamma095",
+        "gamma": 0.95
+      }
+    ]
+  },
+  "configuration_sha256": "065393ac0e695d7fc5af2f2035cd7765995c722386c528511c4e60782f6a7280",
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "official_ppo_sha256": "3fa4818861d428480244aae889bc679b2c8e89b59d6289014003c266a84dbab0",
+  "mode": "research",
+  "runner_sha256": "a241240710e941ca6c165984ce431e853cce911359ce4039df136f63e759733a",
+  "evaluation_split": "development",
+  "confirmation_queries": 0,
+  "versions": {
+    "mani_skill": "3.0.0b21",
+    "torch": "2.6.0",
+    "sapien": "3.0.0b1",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1",
+    "tensorboard": "2.20.0"
+  },
+  "runs": []
+}

@@ -1,0 +1,87 @@
+{
+  "state": "passed",
+  "seconds": 0.08639395795762539,
+  "samples_per_condition": 262144,
+  "synthetic_normal_draws": 524288,
+  "synthetic_reward_evaluations": 786432,
+  "optimizer_calls": 0,
+  "robot_transitions": 0,
+  "source_sha256": "8291174ec0eef8d3f2aca212d816a251c2222a3d1d09310ceee85022a186c2f5",
+  "records": [
+    {
+      "rho": 0.0,
+      "true_gradient": [
+        -1.0,
+        2.0
+      ],
+      "correct_score_sample_gradient": [
+        -1.002747598881087,
+        2.0010683657699606
+      ],
+      "naive_marginal_expected_gradient": [
+        -1.0,
+        2.0
+      ],
+      "naive_marginal_sample_gradient": [
+        -1.002747598881087,
+        2.0010683657699606
+      ],
+      "correct_estimator_coordinate_variance": [
+        7.553328071443284,
+        12.432453157065803
+      ],
+      "naive_expected_first_coordinate_wrong_sign": false
+    },
+    {
+      "rho": 0.5,
+      "true_gradient": [
+        -1.0,
+        2.0
+      ],
+      "correct_score_sample_gradient": [
+        -0.9998602316051459,
+        1.99919973657491
+      ],
+      "naive_marginal_expected_gradient": [
+        0.0,
+        1.5
+      ],
+      "naive_marginal_sample_gradient": [
+        -0.00026036331769510547,
+        1.4992696207723442
+      ],
+      "correct_estimator_coordinate_variance": [
+        5.818008594761504,
+        9.892649934122769
+      ],
+      "naive_expected_first_coordinate_wrong_sign": false
+    },
+    {
+      "rho": 0.9,
+      "true_gradient": [
+        -1.0,
+        2.0
+      ],
+      "correct_score_sample_gradient": [
+        -0.998134915835548,
+        1.9985300393947913
+      ],
+      "naive_marginal_expected_gradient": [
+        0.8,
+        1.1
+      ],
+      "naive_marginal_sample_gradient": [
+        0.8005421196197592,
+        1.1002086151427801
+      ],
+      "correct_estimator_coordinate_variance": [
+        8.820733555231412,
+        12.301264326242586
+      ],
+      "naive_expected_first_coordinate_wrong_sign": true
+    }
+  ],
+  "conclusion": "Keeping stationary Gaussian marginals does not preserve an independent-action likelihood; at rho.9 the naive score reverses one true gradient component.",
+  "limits": "Two-decision unbounded Gaussian reward toy; no robot/policy update, PPO clipping, shared-network dynamics, critic or learning comparison.",
+  "method_promotion": false
+}

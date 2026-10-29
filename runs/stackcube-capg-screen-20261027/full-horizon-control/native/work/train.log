@@ -1,0 +1,1148 @@
+/opt/conda/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/conda/lib/python3.11/site-packages/sapien/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/conda/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+Running training
+####
+args.num_iterations=488 args.num_envs=1024 args.num_eval_envs=8
+args.minibatch_size=1600 args.batch_size=51200 args.update_epochs=8
+####
+Epoch: 1, global_step=0
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=2.4053964614868164
+eval_episode_len_mean=50.0
+eval_reward_mean=0.048107922077178955
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_1.pt
+SPS: 10846
+Epoch: 2, global_step=51200
+SPS: 14095
+Epoch: 3, global_step=102400
+SPS: 15262
+Epoch: 4, global_step=153600
+SPS: 16080
+Epoch: 5, global_step=204800
+SPS: 16484
+Epoch: 6, global_step=256000
+SPS: 16756
+Epoch: 7, global_step=307200
+SPS: 16909
+Epoch: 8, global_step=358400
+SPS: 16978
+Epoch: 9, global_step=409600
+SPS: 17064
+Epoch: 10, global_step=460800
+SPS: 17156
+Epoch: 11, global_step=512000
+SPS: 17215
+Epoch: 12, global_step=563200
+SPS: 17238
+Epoch: 13, global_step=614400
+SPS: 17273
+Epoch: 14, global_step=665600
+SPS: 17272
+Epoch: 15, global_step=716800
+SPS: 17277
+Epoch: 16, global_step=768000
+SPS: 17276
+Epoch: 17, global_step=819200
+SPS: 17309
+Epoch: 18, global_step=870400
+SPS: 17326
+Epoch: 19, global_step=921600
+SPS: 17327
+Epoch: 20, global_step=972800
+SPS: 17322
+Epoch: 21, global_step=1024000
+SPS: 17314
+Epoch: 22, global_step=1075200
+SPS: 17179
+Epoch: 23, global_step=1126400
+SPS: 16995
+Epoch: 24, global_step=1177600
+SPS: 16965
+Epoch: 25, global_step=1228800
+SPS: 16900
+Epoch: 26, global_step=1280000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=23.843852996826172
+eval_episode_len_mean=50.0
+eval_reward_mean=0.4768770933151245
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_26.pt
+SPS: 16442
+Epoch: 27, global_step=1331200
+SPS: 16425
+Epoch: 28, global_step=1382400
+SPS: 16404
+Epoch: 29, global_step=1433600
+SPS: 16388
+Epoch: 30, global_step=1484800
+SPS: 16393
+Epoch: 31, global_step=1536000
+SPS: 16352
+Epoch: 32, global_step=1587200
+SPS: 16349
+Epoch: 33, global_step=1638400
+SPS: 16339
+Epoch: 34, global_step=1689600
+SPS: 16348
+Epoch: 35, global_step=1740800
+SPS: 16349
+Epoch: 36, global_step=1792000
+SPS: 16339
+Epoch: 37, global_step=1843200
+SPS: 16381
+Epoch: 38, global_step=1894400
+SPS: 16410
+Epoch: 39, global_step=1945600
+SPS: 16420
+Epoch: 40, global_step=1996800
+SPS: 16458
+Epoch: 41, global_step=2048000
+SPS: 16491
+Epoch: 42, global_step=2099200
+SPS: 16521
+Epoch: 43, global_step=2150400
+SPS: 16558
+Epoch: 44, global_step=2201600
+SPS: 16581
+Epoch: 45, global_step=2252800
+SPS: 16615
+Epoch: 46, global_step=2304000
+SPS: 16631
+Epoch: 47, global_step=2355200
+SPS: 16633
+Epoch: 48, global_step=2406400
+SPS: 16661
+Epoch: 49, global_step=2457600
+SPS: 16688
+Epoch: 50, global_step=2508800
+SPS: 16709
+Epoch: 51, global_step=2560000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=26.464204788208008
+eval_episode_len_mean=50.0
+eval_reward_mean=0.5292841196060181
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_51.pt
+SPS: 16540
+Epoch: 52, global_step=2611200
+SPS: 16562
+Epoch: 53, global_step=2662400
+SPS: 16595
+Epoch: 54, global_step=2713600
+SPS: 16616
+Epoch: 55, global_step=2764800
+SPS: 16625
+Epoch: 56, global_step=2816000
+SPS: 16641
+Epoch: 57, global_step=2867200
+SPS: 16657
+Epoch: 58, global_step=2918400
+SPS: 16566
+Epoch: 59, global_step=2969600
+SPS: 16555
+Epoch: 60, global_step=3020800
+SPS: 16546
+Epoch: 61, global_step=3072000
+SPS: 16567
+Epoch: 62, global_step=3123200
+SPS: 16581
+Epoch: 63, global_step=3174400
+SPS: 16587
+Epoch: 64, global_step=3225600
+SPS: 16602
+Epoch: 65, global_step=3276800
+SPS: 16615
+Epoch: 66, global_step=3328000
+SPS: 16616
+Epoch: 67, global_step=3379200
+SPS: 16624
+Epoch: 68, global_step=3430400
+SPS: 16648
+Epoch: 69, global_step=3481600
+SPS: 16665
+Epoch: 70, global_step=3532800
+SPS: 16680
+Epoch: 71, global_step=3584000
+SPS: 16691
+Epoch: 72, global_step=3635200
+SPS: 16702
+Epoch: 73, global_step=3686400
+SPS: 16713
+Epoch: 74, global_step=3737600
+SPS: 16726
+Epoch: 75, global_step=3788800
+SPS: 16744
+Epoch: 76, global_step=3840000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=33.414695739746094
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6682939529418945
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_76.pt
+SPS: 16618
+Epoch: 77, global_step=3891200
+SPS: 16629
+Epoch: 78, global_step=3942400
+SPS: 16644
+Epoch: 79, global_step=3993600
+SPS: 16655
+Epoch: 80, global_step=4044800
+SPS: 16670
+Epoch: 81, global_step=4096000
+SPS: 16684
+Epoch: 82, global_step=4147200
+SPS: 16698
+Epoch: 83, global_step=4198400
+SPS: 16714
+Epoch: 84, global_step=4249600
+SPS: 16660
+Epoch: 85, global_step=4300800
+SPS: 16639
+Epoch: 86, global_step=4352000
+SPS: 16655
+Epoch: 87, global_step=4403200
+SPS: 16673
+Epoch: 88, global_step=4454400
+SPS: 16674
+Epoch: 89, global_step=4505600
+SPS: 16677
+Epoch: 90, global_step=4556800
+SPS: 16679
+Epoch: 91, global_step=4608000
+SPS: 16683
+Epoch: 92, global_step=4659200
+SPS: 16732
+Epoch: 93, global_step=4710400
+SPS: 16798
+Epoch: 94, global_step=4761600
+SPS: 16813
+Epoch: 95, global_step=4812800
+SPS: 16828
+Epoch: 96, global_step=4864000
+SPS: 16843
+Epoch: 97, global_step=4915200
+SPS: 16858
+Epoch: 98, global_step=4966400
+SPS: 16911
+Epoch: 99, global_step=5017600
+SPS: 16973
+Epoch: 100, global_step=5068800
+SPS: 17037
+Epoch: 101, global_step=5120000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=31.735591888427734
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6347118616104126
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_101.pt
+SPS: 16920
+Epoch: 102, global_step=5171200
+SPS: 16964
+Epoch: 103, global_step=5222400
+SPS: 16943
+Epoch: 104, global_step=5273600
+SPS: 16993
+Epoch: 105, global_step=5324800
+SPS: 17006
+Epoch: 106, global_step=5376000
+SPS: 17023
+Epoch: 107, global_step=5427200
+SPS: 17078
+Epoch: 108, global_step=5478400
+SPS: 17092
+Epoch: 109, global_step=5529600
+SPS: 17150
+Epoch: 110, global_step=5580800
+SPS: 17190
+Epoch: 111, global_step=5632000
+SPS: 17218
+Epoch: 112, global_step=5683200
+SPS: 17226
+Epoch: 113, global_step=5734400
+SPS: 17270
+Epoch: 114, global_step=5785600
+SPS: 17312
+Epoch: 115, global_step=5836800
+SPS: 17363
+Epoch: 116, global_step=5888000
+SPS: 17415
+Epoch: 117, global_step=5939200
+SPS: 17456
+Epoch: 118, global_step=5990400
+SPS: 17513
+Epoch: 119, global_step=6041600
+SPS: 17555
+Epoch: 120, global_step=6092800
+SPS: 17595
+Epoch: 121, global_step=6144000
+SPS: 17631
+Epoch: 122, global_step=6195200
+SPS: 17669
+Epoch: 123, global_step=6246400
+SPS: 17711
+Epoch: 124, global_step=6297600
+SPS: 17757
+Epoch: 125, global_step=6348800
+SPS: 17805
+Epoch: 126, global_step=6400000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=33.120819091796875
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6624163389205933
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_126.pt
+SPS: 17747
+Epoch: 127, global_step=6451200
+SPS: 17790
+Epoch: 128, global_step=6502400
+SPS: 17833
+Epoch: 129, global_step=6553600
+SPS: 17860
+Epoch: 130, global_step=6604800
+SPS: 17881
+Epoch: 131, global_step=6656000
+SPS: 17914
+Epoch: 132, global_step=6707200
+SPS: 17957
+Epoch: 133, global_step=6758400
+SPS: 17997
+Epoch: 134, global_step=6809600
+SPS: 18039
+Epoch: 135, global_step=6860800
+SPS: 18082
+Epoch: 136, global_step=6912000
+SPS: 18125
+Epoch: 137, global_step=6963200
+SPS: 18169
+Epoch: 138, global_step=7014400
+SPS: 18214
+Epoch: 139, global_step=7065600
+SPS: 18252
+Epoch: 140, global_step=7116800
+SPS: 18288
+Epoch: 141, global_step=7168000
+SPS: 18327
+Epoch: 142, global_step=7219200
+SPS: 18372
+Epoch: 143, global_step=7270400
+SPS: 18410
+Epoch: 144, global_step=7321600
+SPS: 18424
+Epoch: 145, global_step=7372800
+SPS: 18438
+Epoch: 146, global_step=7424000
+SPS: 18465
+Epoch: 147, global_step=7475200
+SPS: 18503
+Epoch: 148, global_step=7526400
+SPS: 18540
+Epoch: 149, global_step=7577600
+SPS: 18576
+Epoch: 150, global_step=7628800
+SPS: 18604
+Epoch: 151, global_step=7680000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.375
+eval_return_mean=31.366220474243164
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6273244619369507
+eval_success_at_end_mean=0.125
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_151.pt
+SPS: 18553
+Epoch: 152, global_step=7731200
+SPS: 18580
+Epoch: 153, global_step=7782400
+SPS: 18615
+Epoch: 154, global_step=7833600
+SPS: 18655
+Epoch: 155, global_step=7884800
+SPS: 18693
+Epoch: 156, global_step=7936000
+SPS: 18731
+Epoch: 157, global_step=7987200
+SPS: 18770
+Epoch: 158, global_step=8038400
+SPS: 18800
+Epoch: 159, global_step=8089600
+SPS: 18830
+Epoch: 160, global_step=8140800
+SPS: 18868
+Epoch: 161, global_step=8192000
+SPS: 18901
+Epoch: 162, global_step=8243200
+SPS: 18929
+Epoch: 163, global_step=8294400
+SPS: 18960
+Epoch: 164, global_step=8345600
+SPS: 18987
+Epoch: 165, global_step=8396800
+SPS: 19014
+Epoch: 166, global_step=8448000
+SPS: 19040
+Epoch: 167, global_step=8499200
+SPS: 19071
+Epoch: 168, global_step=8550400
+SPS: 19106
+Epoch: 169, global_step=8601600
+SPS: 19138
+Epoch: 170, global_step=8652800
+SPS: 19166
+Epoch: 171, global_step=8704000
+SPS: 19199
+Epoch: 172, global_step=8755200
+SPS: 19228
+Epoch: 173, global_step=8806400
+SPS: 19247
+Epoch: 174, global_step=8857600
+SPS: 19273
+Epoch: 175, global_step=8908800
+SPS: 19305
+Epoch: 176, global_step=8960000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.25
+eval_return_mean=34.94203186035156
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6988406181335449
+eval_success_at_end_mean=0.0
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_176.pt
+SPS: 19251
+Epoch: 177, global_step=9011200
+SPS: 19281
+Epoch: 178, global_step=9062400
+SPS: 19311
+Epoch: 179, global_step=9113600
+SPS: 19326
+Epoch: 180, global_step=9164800
+SPS: 19335
+Epoch: 181, global_step=9216000
+SPS: 19346
+Epoch: 182, global_step=9267200
+SPS: 19361
+Epoch: 183, global_step=9318400
+SPS: 19366
+Epoch: 184, global_step=9369600
+SPS: 19388
+Epoch: 185, global_step=9420800
+SPS: 19417
+Epoch: 186, global_step=9472000
+SPS: 19445
+Epoch: 187, global_step=9523200
+SPS: 19471
+Epoch: 188, global_step=9574400
+SPS: 19493
+Epoch: 189, global_step=9625600
+SPS: 19516
+Epoch: 190, global_step=9676800
+SPS: 19545
+Epoch: 191, global_step=9728000
+SPS: 19573
+Epoch: 192, global_step=9779200
+SPS: 19563
+Epoch: 193, global_step=9830400
+SPS: 19587
+Epoch: 194, global_step=9881600
+SPS: 19578
+Epoch: 195, global_step=9932800
+SPS: 19594
+Epoch: 196, global_step=9984000
+SPS: 19565
+Epoch: 197, global_step=10035200
+SPS: 19560
+Epoch: 198, global_step=10086400
+SPS: 19555
+Epoch: 199, global_step=10137600
+SPS: 19573
+Epoch: 200, global_step=10188800
+SPS: 19563
+Epoch: 201, global_step=10240000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.75
+eval_return_mean=38.31184768676758
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7662369608879089
+eval_success_at_end_mean=0.5
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_201.pt
+SPS: 19477
+Epoch: 202, global_step=10291200
+SPS: 19478
+Epoch: 203, global_step=10342400
+SPS: 19491
+Epoch: 204, global_step=10393600
+SPS: 19487
+Epoch: 205, global_step=10444800
+SPS: 19506
+Epoch: 206, global_step=10496000
+SPS: 19527
+Epoch: 207, global_step=10547200
+SPS: 19550
+Epoch: 208, global_step=10598400
+SPS: 19561
+Epoch: 209, global_step=10649600
+SPS: 19585
+Epoch: 210, global_step=10700800
+SPS: 19602
+Epoch: 211, global_step=10752000
+SPS: 19602
+Epoch: 212, global_step=10803200
+SPS: 19621
+Epoch: 213, global_step=10854400
+SPS: 19642
+Epoch: 214, global_step=10905600
+SPS: 19664
+Epoch: 215, global_step=10956800
+SPS: 19683
+Epoch: 216, global_step=11008000
+SPS: 19707
+Epoch: 217, global_step=11059200
+SPS: 19725
+Epoch: 218, global_step=11110400
+SPS: 19747
+Epoch: 219, global_step=11161600
+SPS: 19770
+Epoch: 220, global_step=11212800
+SPS: 19793
+Epoch: 221, global_step=11264000
+SPS: 19814
+Epoch: 222, global_step=11315200
+SPS: 19827
+Epoch: 223, global_step=11366400
+SPS: 19847
+Epoch: 224, global_step=11417600
+SPS: 19855
+Epoch: 225, global_step=11468800
+SPS: 19873
+Epoch: 226, global_step=11520000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.875
+eval_return_mean=40.912864685058594
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8182573318481445
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_226.pt
+SPS: 19823
+Epoch: 227, global_step=11571200
+SPS: 19847
+Epoch: 228, global_step=11622400
+SPS: 19870
+Epoch: 229, global_step=11673600
+SPS: 19891
+Epoch: 230, global_step=11724800
+SPS: 19912
+Epoch: 231, global_step=11776000
+SPS: 19934
+Epoch: 232, global_step=11827200
+SPS: 19933
+Epoch: 233, global_step=11878400
+SPS: 19926
+Epoch: 234, global_step=11929600
+SPS: 19950
+Epoch: 235, global_step=11980800
+SPS: 19945
+Epoch: 236, global_step=12032000
+SPS: 19968
+Epoch: 237, global_step=12083200
+SPS: 19984
+Epoch: 238, global_step=12134400
+SPS: 20008
+Epoch: 239, global_step=12185600
+SPS: 20030
+Epoch: 240, global_step=12236800
+SPS: 20045
+Epoch: 241, global_step=12288000
+SPS: 20060
+Epoch: 242, global_step=12339200
+SPS: 20083
+Epoch: 243, global_step=12390400
+SPS: 20105
+Epoch: 244, global_step=12441600
+SPS: 20106
+Epoch: 245, global_step=12492800
+SPS: 20127
+Epoch: 246, global_step=12544000
+SPS: 20145
+Epoch: 247, global_step=12595200
+SPS: 20144
+Epoch: 248, global_step=12646400
+SPS: 20150
+Epoch: 249, global_step=12697600
+SPS: 20156
+Epoch: 250, global_step=12748800
+SPS: 20151
+Epoch: 251, global_step=12800000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.0842170715332
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7816843390464783
+eval_success_at_end_mean=0.75
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_251.pt
+SPS: 20079
+Epoch: 252, global_step=12851200
+SPS: 20098
+Epoch: 253, global_step=12902400
+SPS: 20119
+Epoch: 254, global_step=12953600
+SPS: 20141
+Epoch: 255, global_step=13004800
+SPS: 20145
+Epoch: 256, global_step=13056000
+SPS: 20165
+Epoch: 257, global_step=13107200
+SPS: 20178
+Epoch: 258, global_step=13158400
+SPS: 20197
+Epoch: 259, global_step=13209600
+SPS: 20221
+Epoch: 260, global_step=13260800
+SPS: 20244
+Epoch: 261, global_step=13312000
+SPS: 20260
+Epoch: 262, global_step=13363200
+SPS: 20278
+Epoch: 263, global_step=13414400
+SPS: 20292
+Epoch: 264, global_step=13465600
+SPS: 20302
+Epoch: 265, global_step=13516800
+SPS: 20314
+Epoch: 266, global_step=13568000
+SPS: 20324
+Epoch: 267, global_step=13619200
+SPS: 20339
+Epoch: 268, global_step=13670400
+SPS: 20358
+Epoch: 269, global_step=13721600
+SPS: 20379
+Epoch: 270, global_step=13772800
+SPS: 20392
+Epoch: 271, global_step=13824000
+SPS: 20405
+Epoch: 272, global_step=13875200
+SPS: 20425
+Epoch: 273, global_step=13926400
+SPS: 20418
+Epoch: 274, global_step=13977600
+SPS: 20426
+Epoch: 275, global_step=14028800
+SPS: 20438
+Epoch: 276, global_step=14080000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.582191467285156
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7916438579559326
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_276.pt
+SPS: 20397
+Epoch: 277, global_step=14131200
+SPS: 20412
+Epoch: 278, global_step=14182400
+SPS: 20411
+Epoch: 279, global_step=14233600
+SPS: 20415
+Epoch: 280, global_step=14284800
+SPS: 20419
+Epoch: 281, global_step=14336000
+SPS: 20436
+Epoch: 282, global_step=14387200
+SPS: 20455
+Epoch: 283, global_step=14438400
+SPS: 20467
+Epoch: 284, global_step=14489600
+SPS: 20483
+Epoch: 285, global_step=14540800
+SPS: 20500
+Epoch: 286, global_step=14592000
+SPS: 20511
+Epoch: 287, global_step=14643200
+SPS: 20527
+Epoch: 288, global_step=14694400
+SPS: 20543
+Epoch: 289, global_step=14745600
+SPS: 20557
+Epoch: 290, global_step=14796800
+SPS: 20574
+Epoch: 291, global_step=14848000
+SPS: 20593
+Epoch: 292, global_step=14899200
+SPS: 20610
+Epoch: 293, global_step=14950400
+SPS: 20630
+Epoch: 294, global_step=15001600
+SPS: 20646
+Epoch: 295, global_step=15052800
+SPS: 20660
+Epoch: 296, global_step=15104000
+SPS: 20676
+Epoch: 297, global_step=15155200
+SPS: 20685
+Epoch: 298, global_step=15206400
+SPS: 20701
+Epoch: 299, global_step=15257600
+SPS: 20720
+Epoch: 300, global_step=15308800
+SPS: 20738
+Epoch: 301, global_step=15360000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.95848083496094
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8191696405410767
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_301.pt
+SPS: 20697
+Epoch: 302, global_step=15411200
+SPS: 20701
+Epoch: 303, global_step=15462400
+SPS: 20716
+Epoch: 304, global_step=15513600
+SPS: 20731
+Epoch: 305, global_step=15564800
+SPS: 20749
+Epoch: 306, global_step=15616000
+SPS: 20756
+Epoch: 307, global_step=15667200
+SPS: 20775
+Epoch: 308, global_step=15718400
+SPS: 20793
+Epoch: 309, global_step=15769600
+SPS: 20795
+Epoch: 310, global_step=15820800
+SPS: 20813
+Epoch: 311, global_step=15872000
+SPS: 20823
+Epoch: 312, global_step=15923200
+SPS: 20841
+Epoch: 313, global_step=15974400
+SPS: 20860
+Epoch: 314, global_step=16025600
+SPS: 20874
+Epoch: 315, global_step=16076800
+SPS: 20888
+Epoch: 316, global_step=16128000
+SPS: 20896
+Epoch: 317, global_step=16179200
+SPS: 20910
+Epoch: 318, global_step=16230400
+SPS: 20925
+Epoch: 319, global_step=16281600
+SPS: 20928
+Epoch: 320, global_step=16332800
+SPS: 20925
+Epoch: 321, global_step=16384000
+SPS: 20941
+Epoch: 322, global_step=16435200
+SPS: 20958
+Epoch: 323, global_step=16486400
+SPS: 20975
+Epoch: 324, global_step=16537600
+SPS: 20989
+Epoch: 325, global_step=16588800
+SPS: 21003
+Epoch: 326, global_step=16640000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=41.59405517578125
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8318811655044556
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_326.pt
+SPS: 20973
+Epoch: 327, global_step=16691200
+SPS: 20965
+Epoch: 328, global_step=16742400
+SPS: 20982
+Epoch: 329, global_step=16793600
+SPS: 20998
+Epoch: 330, global_step=16844800
+SPS: 21014
+Epoch: 331, global_step=16896000
+SPS: 21024
+Epoch: 332, global_step=16947200
+SPS: 21039
+Epoch: 333, global_step=16998400
+SPS: 21055
+Epoch: 334, global_step=17049600
+SPS: 21072
+Epoch: 335, global_step=17100800
+SPS: 21082
+Epoch: 336, global_step=17152000
+SPS: 21098
+Epoch: 337, global_step=17203200
+SPS: 21115
+Epoch: 338, global_step=17254400
+SPS: 21129
+Epoch: 339, global_step=17305600
+SPS: 21143
+Epoch: 340, global_step=17356800
+SPS: 21156
+Epoch: 341, global_step=17408000
+SPS: 21170
+Epoch: 342, global_step=17459200
+SPS: 21186
+Epoch: 343, global_step=17510400
+SPS: 21186
+Epoch: 344, global_step=17561600
+SPS: 21201
+Epoch: 345, global_step=17612800
+SPS: 21195
+Epoch: 346, global_step=17664000
+SPS: 21212
+Epoch: 347, global_step=17715200
+SPS: 21215
+Epoch: 348, global_step=17766400
+SPS: 21229
+Epoch: 349, global_step=17817600
+SPS: 21244
+Epoch: 350, global_step=17868800
+SPS: 21259
+Epoch: 351, global_step=17920000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.00635528564453
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7801270484924316
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_351.pt
+SPS: 21224
+Epoch: 352, global_step=17971200
+SPS: 21238
+Epoch: 353, global_step=18022400
+SPS: 21245
+Epoch: 354, global_step=18073600
+SPS: 21258
+Epoch: 355, global_step=18124800
+SPS: 21250
+Epoch: 356, global_step=18176000
+SPS: 21260
+Epoch: 357, global_step=18227200
+SPS: 21253
+Epoch: 358, global_step=18278400
+SPS: 21267
+Epoch: 359, global_step=18329600
+SPS: 21274
+Epoch: 360, global_step=18380800
+SPS: 21288
+Epoch: 361, global_step=18432000
+SPS: 21300
+Epoch: 362, global_step=18483200
+SPS: 21312
+Epoch: 363, global_step=18534400
+SPS: 21322
+Epoch: 364, global_step=18585600
+SPS: 21315
+Epoch: 365, global_step=18636800
+SPS: 21307
+Epoch: 366, global_step=18688000
+SPS: 21310
+Epoch: 367, global_step=18739200
+SPS: 21318
+Epoch: 368, global_step=18790400
+SPS: 21331
+Epoch: 369, global_step=18841600
+SPS: 21343
+Epoch: 370, global_step=18892800
+SPS: 21335
+Epoch: 371, global_step=18944000
+SPS: 21341
+Epoch: 372, global_step=18995200
+SPS: 21344
+Epoch: 373, global_step=19046400
+SPS: 21352
+Epoch: 374, global_step=19097600
+SPS: 21349
+Epoch: 375, global_step=19148800
+SPS: 21360
+Epoch: 376, global_step=19200000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.875
+eval_return_mean=34.923919677734375
+eval_episode_len_mean=50.0
+eval_reward_mean=0.6984783411026001
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_376.pt
+SPS: 21321
+Epoch: 377, global_step=19251200
+SPS: 21334
+Epoch: 378, global_step=19302400
+SPS: 21324
+Epoch: 379, global_step=19353600
+SPS: 21337
+Epoch: 380, global_step=19404800
+SPS: 21348
+Epoch: 381, global_step=19456000
+SPS: 21357
+Epoch: 382, global_step=19507200
+SPS: 21366
+Epoch: 383, global_step=19558400
+SPS: 21359
+Epoch: 384, global_step=19609600
+SPS: 21370
+Epoch: 385, global_step=19660800
+SPS: 21378
+Epoch: 386, global_step=19712000
+SPS: 21390
+Epoch: 387, global_step=19763200
+SPS: 21402
+Epoch: 388, global_step=19814400
+SPS: 21412
+Epoch: 389, global_step=19865600
+SPS: 21424
+Epoch: 390, global_step=19916800
+SPS: 21434
+Epoch: 391, global_step=19968000
+SPS: 21443
+Epoch: 392, global_step=20019200
+SPS: 21452
+Epoch: 393, global_step=20070400
+SPS: 21463
+Epoch: 394, global_step=20121600
+SPS: 21473
+Epoch: 395, global_step=20172800
+SPS: 21482
+Epoch: 396, global_step=20224000
+SPS: 21492
+Epoch: 397, global_step=20275200
+SPS: 21504
+Epoch: 398, global_step=20326400
+SPS: 21515
+Epoch: 399, global_step=20377600
+SPS: 21521
+Epoch: 400, global_step=20428800
+SPS: 21514
+Epoch: 401, global_step=20480000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.412166595458984
+eval_episode_len_mean=50.0
+eval_reward_mean=0.788243293762207
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_401.pt
+SPS: 21487
+Epoch: 402, global_step=20531200
+SPS: 21499
+Epoch: 403, global_step=20582400
+SPS: 21511
+Epoch: 404, global_step=20633600
+SPS: 21522
+Epoch: 405, global_step=20684800
+SPS: 21535
+Epoch: 406, global_step=20736000
+SPS: 21546
+Epoch: 407, global_step=20787200
+SPS: 21537
+Epoch: 408, global_step=20838400
+SPS: 21550
+Epoch: 409, global_step=20889600
+SPS: 21558
+Epoch: 410, global_step=20940800
+SPS: 21571
+Epoch: 411, global_step=20992000
+SPS: 21584
+Epoch: 412, global_step=21043200
+SPS: 21596
+Epoch: 413, global_step=21094400
+SPS: 21608
+Epoch: 414, global_step=21145600
+SPS: 21620
+Epoch: 415, global_step=21196800
+SPS: 21631
+Epoch: 416, global_step=21248000
+SPS: 21638
+Epoch: 417, global_step=21299200
+SPS: 21651
+Epoch: 418, global_step=21350400
+SPS: 21652
+Epoch: 419, global_step=21401600
+SPS: 21663
+Epoch: 420, global_step=21452800
+SPS: 21671
+Epoch: 421, global_step=21504000
+SPS: 21679
+Epoch: 422, global_step=21555200
+SPS: 21692
+Epoch: 423, global_step=21606400
+SPS: 21703
+Epoch: 424, global_step=21657600
+SPS: 21713
+Epoch: 425, global_step=21708800
+SPS: 21720
+Epoch: 426, global_step=21760000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=38.18592834472656
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7637185454368591
+eval_success_at_end_mean=0.875
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_426.pt
+SPS: 21687
+Epoch: 427, global_step=21811200
+SPS: 21681
+Epoch: 428, global_step=21862400
+SPS: 21691
+Epoch: 429, global_step=21913600
+SPS: 21701
+Epoch: 430, global_step=21964800
+SPS: 21713
+Epoch: 431, global_step=22016000
+SPS: 21723
+Epoch: 432, global_step=22067200
+SPS: 21734
+Epoch: 433, global_step=22118400
+SPS: 21746
+Epoch: 434, global_step=22169600
+SPS: 21756
+Epoch: 435, global_step=22220800
+SPS: 21767
+Epoch: 436, global_step=22272000
+SPS: 21778
+Epoch: 437, global_step=22323200
+SPS: 21787
+Epoch: 438, global_step=22374400
+SPS: 21796
+Epoch: 439, global_step=22425600
+SPS: 21801
+Epoch: 440, global_step=22476800
+SPS: 21811
+Epoch: 441, global_step=22528000
+SPS: 21818
+Epoch: 442, global_step=22579200
+SPS: 21829
+Epoch: 443, global_step=22630400
+SPS: 21840
+Epoch: 444, global_step=22681600
+SPS: 21852
+Epoch: 445, global_step=22732800
+SPS: 21861
+Epoch: 446, global_step=22784000
+SPS: 21871
+Epoch: 447, global_step=22835200
+SPS: 21882
+Epoch: 448, global_step=22886400
+SPS: 21889
+Epoch: 449, global_step=22937600
+SPS: 21891
+Epoch: 450, global_step=22988800
+SPS: 21903
+Epoch: 451, global_step=23040000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.872352600097656
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7974470853805542
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_451.pt
+SPS: 21874
+Epoch: 452, global_step=23091200
+SPS: 21885
+Epoch: 453, global_step=23142400
+SPS: 21895
+Epoch: 454, global_step=23193600
+SPS: 21897
+Epoch: 455, global_step=23244800
+SPS: 21908
+Epoch: 456, global_step=23296000
+SPS: 21910
+Epoch: 457, global_step=23347200
+SPS: 21919
+Epoch: 458, global_step=23398400
+SPS: 21925
+Epoch: 459, global_step=23449600
+SPS: 21931
+Epoch: 460, global_step=23500800
+SPS: 21940
+Epoch: 461, global_step=23552000
+SPS: 21950
+Epoch: 462, global_step=23603200
+SPS: 21958
+Epoch: 463, global_step=23654400
+SPS: 21959
+Epoch: 464, global_step=23705600
+SPS: 21966
+Epoch: 465, global_step=23756800
+SPS: 21976
+Epoch: 466, global_step=23808000
+SPS: 21985
+Epoch: 467, global_step=23859200
+SPS: 21996
+Epoch: 468, global_step=23910400
+SPS: 22004
+Epoch: 469, global_step=23961600
+SPS: 22014
+Epoch: 470, global_step=24012800
+SPS: 22024
+Epoch: 471, global_step=24064000
+SPS: 22033
+Epoch: 472, global_step=24115200
+SPS: 22039
+Epoch: 473, global_step=24166400
+SPS: 22044
+Epoch: 474, global_step=24217600
+SPS: 22050
+Epoch: 475, global_step=24268800
+SPS: 22058
+Epoch: 476, global_step=24320000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=1.0
+eval_return_mean=42.1144905090332
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8422898054122925
+eval_success_at_end_mean=1.0
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/ckpt_476.pt
+SPS: 22013
+Epoch: 477, global_step=24371200
+SPS: 22022
+Epoch: 478, global_step=24422400
+SPS: 22031
+Epoch: 479, global_step=24473600
+SPS: 22041
+Epoch: 480, global_step=24524800
+SPS: 22052
+Epoch: 481, global_step=24576000
+SPS: 22062
+Epoch: 482, global_step=24627200
+SPS: 22070
+Epoch: 483, global_step=24678400
+SPS: 22075
+Epoch: 484, global_step=24729600
+SPS: 22084
+Epoch: 485, global_step=24780800
+SPS: 22094
+Epoch: 486, global_step=24832000
+SPS: 22100
+Epoch: 487, global_step=24883200
+SPS: 22110
+Epoch: 488, global_step=24934400
+SPS: 22120
+model saved to runs/stackcube-capg-screen-20261027-full-horizon-control-seed-1/final_ckpt.pt

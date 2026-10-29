@@ -1,0 +1,8 @@
+{
+  "state": "complete",
+  "plan_sha256": "d3649e765f113357b77712e7facb0be6ae70060f9ee5ae2d8a915d085b350d53",
+  "new_training_runs": 0,
+  "protected_evaluations": 0,
+  "actual_public_transitions": 6400,
+  "wrapper_seconds": 17.366211246
+}

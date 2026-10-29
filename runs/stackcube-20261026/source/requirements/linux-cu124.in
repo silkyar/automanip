@@ -1,0 +1,9 @@
+# Linux x86_64 / Python 3.11. Keep benchmark pins aligned with pyproject.toml.
+# The digest-pinned PyTorch base supplies torch 2.6.0 with CUDA 12.4.
+mani_skill==3.0.0b21
+torch==2.6.0
+numpy==1.26.4
+gymnasium==0.29.1
+sapien==3.0.0b1
+opencv-python==4.11.0.86
+setuptools==80.9.0

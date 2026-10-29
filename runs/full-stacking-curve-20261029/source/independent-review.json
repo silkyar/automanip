@@ -1,0 +1,12 @@
+{
+  "state": "passed",
+  "reviewer": "/root/modal_integration_recovery",
+  "scope": "Exact training/supervisor adapter, source pins, CPU gate, newseed2 init, originallease, isolation,3USD envelope",
+  "reviewed_at": 1793285404.945368,
+  "score_handoff_pending": false,
+  "score_handoff_reviewed_at": 1793285546.679981,
+  "score_handoff_sha256": "338c832ee16000646bb768165f88483bf32ebfed38c20afec38c4c4c8061c28d",
+  "score_handoff": "PASS; validates outer/nested report provenance,<=8 declared devpoints,onceclaim,transportdurableread,noqueryrepeat; finalscoremanifest required",
+  "actual_archive_review": "PASS:58files/51,332,712bytes; allinitial33models/alpha+CPU/CUDARNG identical, finite35arraysallpoints, onlineQ=targetQinitial, full512kwork, terminalupdatecensored",
+  "actual_archive_reviewer": "/root/modal_integration_recovery"
+}

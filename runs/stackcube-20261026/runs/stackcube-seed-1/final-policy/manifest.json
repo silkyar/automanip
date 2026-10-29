@@ -1,0 +1,13 @@
+{
+  "format": "automanip-json-f32-v1",
+  "task_fingerprint": "b524435b1d25e915ff9cbdc1cc18f129ded8257d12129f5a426bad9fa6e22d4f",
+  "observation_dim": 48,
+  "action_dim": 8,
+  "hidden_sizes": [
+    256,
+    256,
+    256
+  ],
+  "activation": "tanh",
+  "weights_sha256": "fbd931840353ab30f725637f76bcf289deb59c7d564b8d4823fafcc5be91ae4e"
+}

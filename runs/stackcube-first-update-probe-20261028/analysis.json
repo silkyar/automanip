@@ -1,0 +1,96 @@
+{
+  "decision": "Inconclusive; preregistered H1 gate not met",
+  "H1_gate_passed": false,
+  "per_collection": [
+    {
+      "collection_seed": 90282001,
+      "full_success_loss": 0.28125,
+      "bounded_success_recovery": 0.21875,
+      "small_forward_minus_reverse_return": 0.0005106832832098007,
+      "return_difference_paired_95": [
+        -1.5863788687624036,
+        1.5430422807577986
+      ],
+      "full_loss_paired_95": [
+        0.15625,
+        0.421875
+      ],
+      "bounded_recovery_paired_95": [
+        0.078125,
+        0.359375
+      ],
+      "success_counts": {
+        "no_update": 27,
+        "full": 9,
+        "bounded": 23,
+        "tiny_forward": 25,
+        "tiny_reverse": 26
+      }
+    },
+    {
+      "collection_seed": 90282002,
+      "full_success_loss": 0.1875,
+      "bounded_success_recovery": 0.109375,
+      "small_forward_minus_reverse_return": -0.49833024106919765,
+      "return_difference_paired_95": [
+        -1.9775138566736132,
+        0.6865810852963476
+      ],
+      "full_loss_paired_95": [
+        0.078125,
+        0.296875
+      ],
+      "bounded_recovery_paired_95": [
+        0.0,
+        0.21875
+      ],
+      "success_counts": {
+        "no_update": 23,
+        "full": 11,
+        "bounded": 18,
+        "tiny_forward": 21,
+        "tiny_reverse": 23
+      }
+    },
+    {
+      "collection_seed": 90282003,
+      "full_success_loss": 0.109375,
+      "bounded_success_recovery": 0.203125,
+      "small_forward_minus_reverse_return": 0.3211332894861698,
+      "return_difference_paired_95": [
+        -0.02350191324949264,
+        0.7208696835674345
+      ],
+      "full_loss_paired_95": [
+        -0.015625,
+        0.234375
+      ],
+      "bounded_recovery_paired_95": [
+        0.078125,
+        0.328125
+      ],
+      "success_counts": {
+        "no_update": 25,
+        "full": 18,
+        "bounded": 31,
+        "tiny_forward": 26,
+        "tiny_reverse": 24
+      }
+    }
+  ],
+  "equal_collection_mean_full_success_loss": 0.19270833333333334,
+  "equal_collection_mean_bounded_recovery": 0.17708333333333334,
+  "small_forward_minus_reverse_return_cluster_95": [
+    -0.9230285738129168,
+    0.6382345896059025
+  ],
+  "agreeing_collections": 2,
+  "uncertainty_limit": "Three collection data draws from one assisted actor; not three training seeds. Bootstrap intervals are exploratory.",
+  "progress": {
+    "new_simulator_transitions": 201600,
+    "vector_step_calls": 900
+  },
+  "automatic_followups": false,
+  "from_scratch_gain_established": false,
+  "scope": "Actor movement response with fixed original critic/std, not complete alternative PPO procedures."
+}

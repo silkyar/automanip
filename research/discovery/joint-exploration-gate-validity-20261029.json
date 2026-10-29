@@ -1,0 +1,720 @@
+{
+  "state": "complete",
+  "original_point_gate_passed": true,
+  "positive_coordinate_point_median": true,
+  "vector_lower_median": 0.01707530921969836,
+  "coordinate_upper_median": 0.0028434620665882056,
+  "working_bound_median_ratio": 6.005112366484484,
+  "working_MC_validity_passed": true,
+  "candidate_handoff_allowed_by_both_gates": true,
+  "states": [
+    {
+      "lane": 0,
+      "vector_lower": 0.01780929410994382,
+      "coordinate_upper": 0.002843462058252399,
+      "coordinate_up_MC_Wilson95": [
+        0.033289430544156826,
+        0.07108655145578816
+      ]
+    },
+    {
+      "lane": 1,
+      "vector_lower": 0.017345447364457187,
+      "coordinate_upper": 0.001620632881826367,
+      "coordinate_up_MC_Wilson95": [
+        0.013457118668315029,
+        0.040515780067557586
+      ]
+    },
+    {
+      "lane": 2,
+      "vector_lower": 0.017499958178146913,
+      "coordinate_upper": 0.0038323110480054045,
+      "coordinate_up_MC_Wilson95": [
+        0.05121802443585988,
+        0.0958067203259925
+      ]
+    },
+    {
+      "lane": 4,
+      "vector_lower": 0.019284354619011224,
+      "coordinate_upper": 0.0019109907849285852,
+      "coordinate_up_MC_Wilson95": [
+        0.017833270017133897,
+        0.047771109471986185
+      ]
+    },
+    {
+      "lane": 5,
+      "vector_lower": 0.016882544850551212,
+      "coordinate_upper": 0.00219630018070578,
+      "coordinate_up_MC_Wilson95": [
+        0.022351806085305896,
+        0.05488405415706165
+      ]
+    },
+    {
+      "lane": 7,
+      "vector_lower": 0.015729449020093562,
+      "coordinate_upper": 0.002781438158090128,
+      "coordinate_up_MC_Wilson95": [
+        0.016356725239303357,
+        0.04537049399873423
+      ]
+    },
+    {
+      "lane": 10,
+      "vector_lower": 0.017113877872777326,
+      "coordinate_upper": 0.0035658676532445235,
+      "coordinate_up_MC_Wilson95": [
+        0.046259166467464766,
+        0.08913409754114011
+      ]
+    },
+    {
+      "lane": 11,
+      "vector_lower": 0.016805486481468696,
+      "coordinate_upper": 0.0016206349541665963,
+      "coordinate_up_MC_Wilson95": [
+        0.013457118668315029,
+        0.040515780067557586
+      ]
+    },
+    {
+      "lane": 12,
+      "vector_lower": 0.01657446960086884,
+      "coordinate_upper": 0.07109971691057529,
+      "coordinate_up_MC_Wilson95": [
+        0.036492305788731,
+        0.07563799671337895
+      ]
+    },
+    {
+      "lane": 13,
+      "vector_lower": 0.01796411907562795,
+      "coordinate_upper": 0.0025908285064647017,
+      "coordinate_up_MC_Wilson95": [
+        0.019325484326306944,
+        0.05015605541389563
+      ]
+    },
+    {
+      "lane": 14,
+      "vector_lower": 0.018973030579967572,
+      "coordinate_upper": 0.0020062531020036732,
+      "coordinate_up_MC_Wilson95": [
+        0.019325484326306944,
+        0.05015605541389563
+      ]
+    },
+    {
+      "lane": 17,
+      "vector_lower": 0.017323784216583128,
+      "coordinate_upper": 0.032305137655720496,
+      "coordinate_up_MC_Wilson95": [
+        0.7290817018650534,
+        0.8020892525332476
+      ]
+    },
+    {
+      "lane": 19,
+      "vector_lower": 0.015422970243273887,
+      "coordinate_upper": 0.03891463220211551,
+      "coordinate_up_MC_Wilson95": [
+        0.02083204403601035,
+        0.05252665595527472
+      ]
+    },
+    {
+      "lane": 20,
+      "vector_lower": 0.0170367405666194,
+      "coordinate_upper": 0.07299762052259662,
+      "coordinate_up_MC_Wilson95": [
+        0.03810443399268586,
+        0.07790302876050659
+      ]
+    },
+    {
+      "lane": 22,
+      "vector_lower": 0.24173941506924634,
+      "coordinate_upper": 0.2629417026512297,
+      "coordinate_up_MC_Wilson95": [
+        0.776410178392972,
+        0.8439354617802264
+      ]
+    },
+    {
+      "lane": 23,
+      "vector_lower": 0.0169596295526106,
+      "coordinate_upper": 0.0014246871923906117,
+      "coordinate_up_MC_Wilson95": [
+        0.010642921854633284,
+        0.03557565637907435
+      ]
+    },
+    {
+      "lane": 24,
+      "vector_lower": 0.015882849377363485,
+      "coordinate_upper": 0.04548251880229484,
+      "coordinate_up_MC_Wilson95": [
+        0.031699460685993844,
+        0.06879936106286864
+      ]
+    },
+    {
+      "lane": 26,
+      "vector_lower": 0.016805486481468696,
+      "coordinate_upper": 0.037915353820873146,
+      "coordinate_up_MC_Wilson95": [
+        0.013457118668315029,
+        0.040515780067557586
+      ]
+    },
+    {
+      "lane": 27,
+      "vector_lower": 0.016343690592936534,
+      "coordinate_upper": 0.0023826206098624403,
+      "coordinate_up_MC_Wilson95": [
+        0.0254270798652394,
+        0.05956310087929313
+      ]
+    },
+    {
+      "lane": 28,
+      "vector_lower": 0.0169596295526106,
+      "coordinate_upper": 0.0029346387046617116,
+      "coordinate_up_MC_Wilson95": [
+        0.03488718106757214,
+        0.07336596118345534
+      ]
+    },
+    {
+      "lane": 29,
+      "vector_lower": 0.016343690592936534,
+      "coordinate_upper": 0.04935678298434484,
+      "coordinate_up_MC_Wilson95": [
+        0.02083204403601035,
+        0.05252665595527472
+      ]
+    },
+    {
+      "lane": 31,
+      "vector_lower": 0.01773192086500114,
+      "coordinate_upper": 0.00275197470473456,
+      "coordinate_up_MC_Wilson95": [
+        0.031699460685993844,
+        0.06879936106286864
+      ]
+    },
+    {
+      "lane": 32,
+      "vector_lower": 0.017113877872777326,
+      "coordinate_upper": 0.0023825623854506796,
+      "coordinate_up_MC_Wilson95": [
+        0.0254270798652394,
+        0.05956310087929313
+      ]
+    },
+    {
+      "lane": 33,
+      "vector_lower": 0.015882849377363485,
+      "coordinate_upper": 0.0017181233963883132,
+      "coordinate_up_MC_Wilson95": [
+        0.014897398253755443,
+        0.04295266073319966
+      ]
+    },
+    {
+      "lane": 34,
+      "vector_lower": 0.01780929410994382,
+      "coordinate_upper": 0.002101067289832226,
+      "coordinate_up_MC_Wilson95": [
+        0.02083204403601035,
+        0.05252665595527472
+      ]
+    },
+    {
+      "lane": 35,
+      "vector_lower": 0.018351639043457112,
+      "coordinate_upper": 0.002195370040873807,
+      "coordinate_up_MC_Wilson95": [
+        0.022351806085305896,
+        0.05488405415706165
+      ]
+    },
+    {
+      "lane": 36,
+      "vector_lower": 0.017113877872777326,
+      "coordinate_upper": 0.046451611597382314,
+      "coordinate_up_MC_Wilson95": [
+        0.031699460685993844,
+        0.06879936106286864
+      ]
+    },
+    {
+      "lane": 37,
+      "vector_lower": 0.015729449020093562,
+      "coordinate_upper": 0.04346242846467239,
+      "coordinate_up_MC_Wilson95": [
+        0.031699460685993844,
+        0.06879936106286864
+      ]
+    },
+    {
+      "lane": 38,
+      "vector_lower": 0.01796411907562795,
+      "coordinate_upper": 0.0028434625037100053,
+      "coordinate_up_MC_Wilson95": [
+        0.033289430544156826,
+        0.07108655145578816
+      ]
+    },
+    {
+      "lane": 39,
+      "vector_lower": 0.01811904863806622,
+      "coordinate_upper": 0.002383947013393348,
+      "coordinate_up_MC_Wilson95": [
+        0.0254270798652394,
+        0.05956310087929313
+      ]
+    },
+    {
+      "lane": 40,
+      "vector_lower": 0.017345447364457187,
+      "coordinate_upper": 0.003026231574884126,
+      "coordinate_up_MC_Wilson95": [
+        0.036492305788731,
+        0.07563799671337895
+      ]
+    },
+    {
+      "lane": 41,
+      "vector_lower": 0.01780929410994382,
+      "coordinate_upper": 0.002843462074924012,
+      "coordinate_up_MC_Wilson95": [
+        0.033289430544156826,
+        0.07108655145578816
+      ]
+    },
+    {
+      "lane": 42,
+      "vector_lower": 0.016113150227428985,
+      "coordinate_upper": 0.0026601640618689466,
+      "coordinate_up_MC_Wilson95": [
+        0.030117718759024466,
+        0.06650394273875553
+      ]
+    },
+    {
+      "lane": 43,
+      "vector_lower": 0.01811904863806622,
+      "coordinate_upper": 0.08588155664361961,
+      "coordinate_up_MC_Wilson95": [
+        0.04790706612817715,
+        0.09136335813151024
+      ]
+    },
+    {
+      "lane": 44,
+      "vector_lower": 0.01873981257020362,
+      "coordinate_upper": 0.020053535289208335,
+      "coordinate_up_MC_Wilson95": [
+        0.03488718106757214,
+        0.07336596118345534
+      ]
+    },
+    {
+      "lane": 47,
+      "vector_lower": 0.0170367405666194,
+      "coordinate_upper": 0.0022077495550495018,
+      "coordinate_up_MC_Wilson95": [
+        0.022351806085305896,
+        0.05488405415706165
+      ]
+    },
+    {
+      "lane": 49,
+      "vector_lower": 0.01811904863806622,
+      "coordinate_upper": 0.06415566999834454,
+      "coordinate_up_MC_Wilson95": [
+        0.03488718106757214,
+        0.07336596118345534
+      ]
+    },
+    {
+      "lane": 50,
+      "vector_lower": 0.017191041452506734,
+      "coordinate_upper": 0.00200986724000329,
+      "coordinate_up_MC_Wilson95": [
+        0.019325484326306944,
+        0.05015605541389563
+      ]
+    },
+    {
+      "lane": 51,
+      "vector_lower": 0.015959589656364816,
+      "coordinate_upper": 0.07109971691057,
+      "coordinate_up_MC_Wilson95": [
+        0.036492305788731,
+        0.07563799671337895
+      ]
+    },
+    {
+      "lane": 53,
+      "vector_lower": 0.0170367405666194,
+      "coordinate_upper": 0.05377272662391057,
+      "coordinate_up_MC_Wilson95": [
+        0.023883775518617995,
+        0.05722924497483205
+      ]
+    },
+    {
+      "lane": 56,
+      "vector_lower": 0.03331817430136686,
+      "coordinate_upper": 0.11682193954779753,
+      "coordinate_up_MC_Wilson95": [
+        0.0731491689139741,
+        0.12427865911195063
+      ]
+    },
+    {
+      "lane": 58,
+      "vector_lower": 0.01657446960086884,
+      "coordinate_upper": 0.012082947730841165,
+      "coordinate_up_MC_Wilson95": [
+        0.0285446988298758,
+        0.06419980241682172
+      ]
+    },
+    {
+      "lane": 59,
+      "vector_lower": 0.016651448832509505,
+      "coordinate_upper": 0.0020062973942845423,
+      "coordinate_up_MC_Wilson95": [
+        0.019325484326306944,
+        0.05015605541389563
+      ]
+    },
+    {
+      "lane": 63,
+      "vector_lower": 0.0169596295526106,
+      "coordinate_upper": 0.0028434629207592633,
+      "coordinate_up_MC_Wilson95": [
+        0.033289430544156826,
+        0.07108655145578816
+      ]
+    },
+    {
+      "lane": 64,
+      "vector_lower": 0.017191041452506734,
+      "coordinate_upper": 0.07720374732892933,
+      "coordinate_up_MC_Wilson95": [
+        0.04134837176993725,
+        0.08241341148542018
+      ]
+    },
+    {
+      "lane": 66,
+      "vector_lower": 0.018351639043457112,
+      "coordinate_upper": 0.0023830138255563627,
+      "coordinate_up_MC_Wilson95": [
+        0.0254270798652394,
+        0.05956310087929313
+      ]
+    },
+    {
+      "lane": 67,
+      "vector_lower": 0.015499549588895626,
+      "coordinate_upper": 0.002382524115444616,
+      "coordinate_up_MC_Wilson95": [
+        0.0254270798652394,
+        0.05956310087929313
+      ]
+    },
+    {
+      "lane": 69,
+      "vector_lower": 0.015729449020093562,
+      "coordinate_upper": 0.004351791853179618,
+      "coordinate_up_MC_Wilson95": [
+        0.036492305788731,
+        0.07563799671337895
+      ]
+    },
+    {
+      "lane": 70,
+      "vector_lower": 0.0170367405666194,
+      "coordinate_upper": 0.055802977370329056,
+      "coordinate_up_MC_Wilson95": [
+        0.0254270798652394,
+        0.05956310087929313
+      ]
+    },
+    {
+      "lane": 71,
+      "vector_lower": 0.01618997044836057,
+      "coordinate_upper": 0.0021011003693919457,
+      "coordinate_up_MC_Wilson95": [
+        0.02083204403601035,
+        0.05252665595527472
+      ]
+    },
+    {
+      "lane": 72,
+      "vector_lower": 0.01642059045320987,
+      "coordinate_upper": 0.002475455681583705,
+      "coordinate_up_MC_Wilson95": [
+        0.02698094895608158,
+        0.061886392039533444
+      ]
+    },
+    {
+      "lane": 74,
+      "vector_lower": 0.017191041452506734,
+      "coordinate_upper": 0.0020084472209973584,
+      "coordinate_up_MC_Wilson95": [
+        0.019325484326306944,
+        0.05015605541389563
+      ]
+    },
+    {
+      "lane": 76,
+      "vector_lower": 0.017499958178146913,
+      "coordinate_upper": 0.0014235212157221841,
+      "coordinate_up_MC_Wilson95": [
+        0.010642921854633284,
+        0.03557565637907435
+      ]
+    },
+    {
+      "lane": 79,
+      "vector_lower": 0.015959589656364816,
+      "coordinate_upper": 0.026755643989061738,
+      "coordinate_up_MC_Wilson95": [
+        0.04134837176993725,
+        0.08241341148542018
+      ]
+    },
+    {
+      "lane": 81,
+      "vector_lower": 0.015576155862841728,
+      "coordinate_upper": 0.0690057685183977,
+      "coordinate_up_MC_Wilson95": [
+        0.039723226447529306,
+        0.08016139655674563
+      ]
+    },
+    {
+      "lane": 82,
+      "vector_lower": 0.015806135818987904,
+      "coordinate_upper": 0.03808483321316192,
+      "coordinate_up_MC_Wilson95": [
+        0.013457118668315029,
+        0.040515780067557586
+      ]
+    },
+    {
+      "lane": 83,
+      "vector_lower": 0.015959589656364816,
+      "coordinate_upper": 0.040167218739070504,
+      "coordinate_up_MC_Wilson95": [
+        0.02698094895608158,
+        0.061886392039533444
+      ]
+    },
+    {
+      "lane": 86,
+      "vector_lower": 0.017499958178146913,
+      "coordinate_upper": 0.0025680226936236096,
+      "coordinate_up_MC_Wilson95": [
+        0.0285446988298758,
+        0.06419980241682172
+      ]
+    },
+    {
+      "lane": 89,
+      "vector_lower": 0.015499549588895626,
+      "coordinate_upper": 0.0020062896851847827,
+      "coordinate_up_MC_Wilson95": [
+        0.019325484326306944,
+        0.05015605541389563
+      ]
+    },
+    {
+      "lane": 91,
+      "vector_lower": 0.01842922145815282,
+      "coordinate_upper": 0.0039847383969496995,
+      "coordinate_up_MC_Wilson95": [
+        0.033289430544156826,
+        0.07108655145578816
+      ]
+    },
+    {
+      "lane": 92,
+      "vector_lower": 0.017499958178146913,
+      "coordinate_upper": 0.002289170983576767,
+      "coordinate_up_MC_Wilson95": [
+        0.023883775518617995,
+        0.05722924497483205
+      ]
+    },
+    {
+      "lane": 93,
+      "vector_lower": 0.01618997044836057,
+      "coordinate_upper": 0.0025681845736200705,
+      "coordinate_up_MC_Wilson95": [
+        0.0285446988298758,
+        0.06419980241682172
+      ]
+    },
+    {
+      "lane": 96,
+      "vector_lower": 0.03759914374169071,
+      "coordinate_upper": 0.11668579426900917,
+      "coordinate_up_MC_Wilson95": [
+        0.0991166386113686,
+        0.15646859318079348
+      ]
+    },
+    {
+      "lane": 98,
+      "vector_lower": 0.015882849377363485,
+      "coordinate_upper": 0.002475517772665868,
+      "coordinate_up_MC_Wilson95": [
+        0.02698094895608158,
+        0.061886392039533444
+      ]
+    },
+    {
+      "lane": 99,
+      "vector_lower": 0.015422970243273887,
+      "coordinate_upper": 0.0025680449001356234,
+      "coordinate_up_MC_Wilson95": [
+        0.0285446988298758,
+        0.06419980241682172
+      ]
+    },
+    {
+      "lane": 102,
+      "vector_lower": 0.017191041452506734,
+      "coordinate_upper": 0.002936195357145013,
+      "coordinate_up_MC_Wilson95": [
+        0.03488718106757214,
+        0.07336596118345534
+      ]
+    },
+    {
+      "lane": 105,
+      "vector_lower": 0.01881752573530424,
+      "coordinate_upper": 0.002195362340339403,
+      "coordinate_up_MC_Wilson95": [
+        0.022351806085305896,
+        0.05488405415706165
+      ]
+    },
+    {
+      "lane": 107,
+      "vector_lower": 0.01827408276874206,
+      "coordinate_upper": 0.0023845947089120123,
+      "coordinate_up_MC_Wilson95": [
+        0.0254270798652394,
+        0.05956310087929313
+      ]
+    },
+    {
+      "lane": 109,
+      "vector_lower": 0.015652789020868262,
+      "coordinate_upper": 0.0016206312029434097,
+      "coordinate_up_MC_Wilson95": [
+        0.013457118668315029,
+        0.040515780067557586
+      ]
+    },
+    {
+      "lane": 110,
+      "vector_lower": 0.018196552633413812,
+      "coordinate_upper": 0.0034759901844747623,
+      "coordinate_up_MC_Wilson95": [
+        0.04461659649349124,
+        0.08689950726403116
+      ]
+    },
+    {
+      "lane": 112,
+      "vector_lower": 0.01657446960086884,
+      "coordinate_upper": 0.002006242216816549,
+      "coordinate_up_MC_Wilson95": [
+        0.019325484326306944,
+        0.05015605541389563
+      ]
+    },
+    {
+      "lane": 114,
+      "vector_lower": 0.017191041452506734,
+      "coordinate_upper": 0.0689640035124469,
+      "coordinate_up_MC_Wilson95": [
+        0.03488718106757214,
+        0.07336596118345534
+      ]
+    },
+    {
+      "lane": 119,
+      "vector_lower": 0.017655406131788804,
+      "coordinate_upper": 0.002945985626880132,
+      "coordinate_up_MC_Wilson95": [
+        0.03488718106757214,
+        0.07336596118345534
+      ]
+    },
+    {
+      "lane": 121,
+      "vector_lower": 0.017345447364457187,
+      "coordinate_upper": 0.00447841483323094,
+      "coordinate_up_MC_Wilson95": [
+        0.039723226447529306,
+        0.08016139655674563
+      ]
+    },
+    {
+      "lane": 123,
+      "vector_lower": 0.016882544850551212,
+      "coordinate_upper": 0.0024754557172022096,
+      "coordinate_up_MC_Wilson95": [
+        0.02698094895608158,
+        0.061886392039533444
+      ]
+    },
+    {
+      "lane": 124,
+      "vector_lower": 0.016651448832509505,
+      "coordinate_upper": 0.0016206867223664892,
+      "coordinate_up_MC_Wilson95": [
+        0.013457118668315029,
+        0.040515780067557586
+      ]
+    },
+    {
+      "lane": 125,
+      "vector_lower": 0.01804157078448096,
+      "coordinate_upper": 0.0314338685240266,
+      "coordinate_up_MC_Wilson95": [
+        0.033289430544156826,
+        0.07108655145578816
+      ]
+    },
+    {
+      "lane": 127,
+      "vector_lower": 0.016805486481468696,
+      "coordinate_upper": 0.0021953621966800028,
+      "coordinate_up_MC_Wilson95": [
+        0.022351806085305896,
+        0.05488405415706165
+      ]
+    }
+  ],
+  "new_inference_rows": 0,
+  "new_FK_queries": 0,
+  "new_simulator_transitions": 0,
+  "optimizer_calls": 0,
+  "elapsed_seconds": 0.08425233402522281,
+  "original_receipt_sha256": "90c28bb71b14d281ef038c2cb078aa766025b1c91428a77a0457c8a7c6cfaadd"
+}

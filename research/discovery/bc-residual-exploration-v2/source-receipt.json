@@ -1,0 +1,15 @@
+{
+  "method": "assist-bc-ppo-residual-std",
+  "payload_sha256": "c5ca37a6ff22ddd2e89288f5697e3041507e834adf8f8731a49a17d1423fd200",
+  "frozen_v1_base_sha256": "7a4de8deecf0adc15d9f8beaef1bf6b9874ca9eb7b0122efbab5d9b1bc80d427",
+  "patch_source_sha256": "32475453cf5080e0cfdd0c0ed11170f785a27e947c3ca7eb7e744faa8f51692a",
+  "probe_source_snapshot_sha256": "d7f7c92788ef0f65f35a80833d350ed8705990ced59d150e7ae40e1ebf5b0e0a",
+  "probe_result": "research/discovery/bc-residual-exploration-probe-v2.json",
+  "contract_tests_passed": 5,
+  "production_constants_from_cpu_probe": false,
+  "calibration_partition": "BC successful training episodes only; validation episodes excluded",
+  "extra_environment_transitions": 0,
+  "gpu_launched": false,
+  "dollars_spent": 0,
+  "scope": "Future matched experiment proposal only; current AMP/v1 pilot unchanged."
+}

@@ -1,0 +1,598 @@
+{
+  "state": "complete",
+  "post_hoc": true,
+  "cpu_process_seconds": 1.506420292018447,
+  "source_sha256": "81d6169b18e25c6f83d436a8c6124a93b11e8d63b03b172b0ac9b3e33ae38c38",
+  "snapshot_sources_sha256": {
+    "runs/stackcube-replay-moments-screen-20261028/target-sac/target-sac/run/actor-step-51200-trajectory.npz": "8071716d66a7c4376cab3821471b2a7bc5fa7945bfdf9292846d615ef45026cb",
+    "runs/stackcube-replay-moments-screen-20261028/target-sac/target-sac/run/actor-step-51200-state.npz": "a3c584e6bd333ee9ce182ca069e4c409425321fec068d5a92ceacc5fed12d377",
+    "runs/stackcube-replay-moments-screen-20261028/target-sac/target-sac/run/actor-step-102400-trajectory.npz": "7377c954ed0658a5915b655f347adb873a6d3e39dd7100d2cad6ed3fa677e776",
+    "runs/stackcube-replay-moments-screen-20261028/target-sac/target-sac/run/actor-step-102400-state.npz": "f72b9cb8d25488c96f2243fc8eb447f660df345cde5935e8db037110d27a384a",
+    "runs/stackcube-replay-moments-screen-20261028/target-sac/target-sac/run/actor-step-256000-trajectory.npz": "fbe0d83457522b63aa8f1a16a91c0fa0a7961dcd8bbfabfca9bf97234cbaeb8c",
+    "runs/stackcube-replay-moments-screen-20261028/target-sac/target-sac/run/actor-step-256000-state.npz": "91d535661269323321705e8313f8843d534239e857eae5a5a8692f8ef2b669f6",
+    "runs/stackcube-replay-moments-screen-20261028/target-sac/target-sac/run/actor-step-512000-trajectory.npz": "5f416ea6bef7c3bf593d899bfdf9aba53361610bb0ca987a17103b8f9d66187f",
+    "runs/stackcube-replay-moments-screen-20261028/target-sac/target-sac/run/actor-step-512000-state.npz": "d4074e9347ffc55658d4b2d0b25ce425bf4ba84ea4df5d484584f5ad27c41860",
+    "runs/stackcube-replay-moments-screen-20261028/target-sac/target-sac/run/actor-final-trajectory.npz": "90e48f9471c16f9c8bf9b9262dd3f4450aee12e9eb86f13ef3701f74e3392d92",
+    "runs/stackcube-replay-moments-screen-20261028/target-sac/target-sac/run/actor-final-state.npz": "f63f8c7446b6ba0ee50fe81cf646cec138bf48ba6f5e2ee7ee158765c643374a",
+    "runs/stackcube-replay-moments-screen-20261028/joint-moments/joint-moments/run/actor-step-51200-trajectory.npz": "d3c45e1b11d760c33423c40dbb07f76e760136e532dae33534f9eb15aca2c760",
+    "runs/stackcube-replay-moments-screen-20261028/joint-moments/joint-moments/run/actor-step-51200-state.npz": "87e9e2c694cc63e7b1a17c93419f08401f51a6e6db0ae7d9640003fa766c8a15",
+    "runs/stackcube-replay-moments-screen-20261028/joint-moments/joint-moments/run/actor-step-102400-trajectory.npz": "f870dc26a9031dfece6f183a2e279200ad6fe764a18d4d03fc393d9d04f612fe",
+    "runs/stackcube-replay-moments-screen-20261028/joint-moments/joint-moments/run/actor-step-102400-state.npz": "82d41b243fcd31051f66b393610afa87295aae75424f6efae31c5c7bb727d84f",
+    "runs/stackcube-replay-moments-screen-20261028/joint-moments/joint-moments/run/actor-step-256000-trajectory.npz": "71cd32abc41c361f4f43f1072f143efb8d2f74cde8893eadc402f79f113e8294",
+    "runs/stackcube-replay-moments-screen-20261028/joint-moments/joint-moments/run/actor-step-256000-state.npz": "e657f3dc1d81c1e83f8920daae854a46d35a3835d296427dc633495a7f74b74d",
+    "runs/stackcube-replay-moments-screen-20261028/joint-moments/joint-moments/run/actor-step-512000-trajectory.npz": "0e6fcd3f5592faeabb9c8d8626f5690b09b0f04fbb94750d84a8f535a589e6cd",
+    "runs/stackcube-replay-moments-screen-20261028/joint-moments/joint-moments/run/actor-step-512000-state.npz": "459897cb8376dc5b22e5e094a230abae95d453e64745ab4ab2d868e34d4328b4",
+    "runs/stackcube-replay-moments-screen-20261028/joint-moments/joint-moments/run/actor-final-trajectory.npz": "a279d4b291121fa34f0a72518ab0a5899507c5ccf53cb3940c46b1c3c9200f45",
+    "runs/stackcube-replay-moments-screen-20261028/joint-moments/joint-moments/run/actor-final-state.npz": "f40eee629848e20428550c250a447588dd8fcf1463ba137cf818ed9fef78ce30",
+    "runs/stackcube-replay-moments-screen-20261028/split-moments/split-moments/run/actor-step-51200-trajectory.npz": "97b18b8e23c6856166ea6057333c1e22982eee5acd248d8ae503e963a473075d",
+    "runs/stackcube-replay-moments-screen-20261028/split-moments/split-moments/run/actor-step-51200-state.npz": "24c0e7406582cd32410394cccf1fbceb5348c70c7caae27bcb0eaaf2a6378b7e",
+    "runs/stackcube-replay-moments-screen-20261028/split-moments/split-moments/run/actor-step-102400-trajectory.npz": "9aa59948f3d07c66f5327b01aef97c605338780755e80e73eca29a143e07c78d",
+    "runs/stackcube-replay-moments-screen-20261028/split-moments/split-moments/run/actor-step-102400-state.npz": "e30c90c7f1819301af5ae3213370701925b22e5fcb14d1b9607c3c3679967ede",
+    "runs/stackcube-replay-moments-screen-20261028/split-moments/split-moments/run/actor-step-256000-trajectory.npz": "caa118b44c80c1a87a8798314f56b732bc65c82a1228e6b0a349dc330cd0fb17",
+    "runs/stackcube-replay-moments-screen-20261028/split-moments/split-moments/run/actor-step-256000-state.npz": "ad1bee98a416833ae9a0b85ebea31e934ac726edd91bfd800e3634ced58d908b",
+    "runs/stackcube-replay-moments-screen-20261028/split-moments/split-moments/run/actor-final-trajectory.npz": "5bc443184c8c2f2d811ca5c3b3de6c9773de738ce037b511ca4fa9ee435df68b",
+    "runs/stackcube-replay-moments-screen-20261028/split-moments/split-moments/run/actor-final-state.npz": "4f26b8a4706493acd2d918a617b5bb5d8913321326b099711d9227dbdd3b71ef"
+  },
+  "robot_transitions": 0,
+  "optimizer_calls": 0,
+  "protected_evaluations": 0,
+  "existing_transition_rows_inspected": 44800,
+  "records": [
+    {
+      "method": "target-sac",
+      "label": "actor-step-51200",
+      "transitions": 51200,
+      "critic_updates": 2888,
+      "alpha": 0.4508390426635742,
+      "sample_rows": 3200,
+      "complete_50_step_episode_batch": true,
+      "recent_reward_mean": 0.061750274151563644,
+      "behavior_action_abs_gt_095_fraction": 0.03812500089406967,
+      "any_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "final_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "current_actor_sample_entropy_estimate": 5.430452346801758,
+      "actor_logstd_exp_mean": 0.9246488213539124,
+      "q_running_behavior_mean": 45.27177810668945,
+      "q_running_policy_mean": 45.1928825378418,
+      "q_training_context_behavior_mean": 45.27177810668945,
+      "q_training_vs_running_rmse": 0.0,
+      "per_head_training_current_next_mean_gaps": [
+        -0.00750732421875,
+        -0.007572174072265625
+      ],
+      "min_q_training_current_next_mean_gap": -0.00750732421875,
+      "fixed_present_alpha_exact_soft_q_upper_bound": 347.498266556412,
+      "fraction_running_behavior_min_q_above_bound": 0.0,
+      "fraction_running_policy_min_q_above_bound": 0.0,
+      "running_policy_action_gradient_mean_l2": 0.11543916910886765,
+      "running_policy_action_gradient_max_l2": 0.26908454298973083
+    },
+    {
+      "method": "target-sac",
+      "label": "actor-step-102400",
+      "transitions": 102400,
+      "critic_updates": 6088,
+      "alpha": 0.23360873758792877,
+      "sample_rows": 3200,
+      "complete_50_step_episode_batch": true,
+      "recent_reward_mean": 0.07367564737796783,
+      "behavior_action_abs_gt_095_fraction": 0.04011718928813934,
+      "any_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "final_stage_counts_64_windows": [
+        0,
+        0,
+        62,
+        0
+      ],
+      "current_actor_sample_entropy_estimate": 5.378223896026611,
+      "actor_logstd_exp_mean": 0.8817397356033325,
+      "q_running_behavior_mean": 64.47866821289062,
+      "q_running_policy_mean": 64.45977783203125,
+      "q_training_context_behavior_mean": 64.47866821289062,
+      "q_training_vs_running_rmse": 0.0,
+      "per_head_training_current_next_mean_gaps": [
+        -0.0184783935546875,
+        -0.01688385009765625
+      ],
+      "min_q_training_current_next_mean_gap": -0.0169830322265625,
+      "fixed_present_alpha_exact_soft_q_upper_bound": 228.24478834808664,
+      "fraction_running_behavior_min_q_above_bound": 0.0,
+      "fraction_running_policy_min_q_above_bound": 0.0,
+      "running_policy_action_gradient_mean_l2": 0.1790694296360016,
+      "running_policy_action_gradient_max_l2": 0.32765138149261475
+    },
+    {
+      "method": "target-sac",
+      "label": "actor-step-256000",
+      "transitions": 256000,
+      "critic_updates": 15688,
+      "alpha": 0.0521729402244091,
+      "sample_rows": 3200,
+      "complete_50_step_episode_batch": true,
+      "recent_reward_mean": 0.05217932164669037,
+      "behavior_action_abs_gt_095_fraction": 0.2218359410762787,
+      "any_stage_counts_64_windows": [
+        1,
+        0,
+        64,
+        0
+      ],
+      "final_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "current_actor_sample_entropy_estimate": -1.4832665920257568,
+      "actor_logstd_exp_mean": 0.772132396697998,
+      "q_running_behavior_mean": 85.43476867675781,
+      "q_running_policy_mean": 85.52116394042969,
+      "q_training_context_behavior_mean": 85.43476867675781,
+      "q_training_vs_running_rmse": 0.0,
+      "per_head_training_current_next_mean_gaps": [
+        -0.7000503540039062,
+        -0.7040176391601562
+      ],
+      "min_q_training_current_next_mean_gap": -0.7036285400390625,
+      "fixed_present_alpha_exact_soft_q_upper_bound": 128.6415129231127,
+      "fraction_running_behavior_min_q_above_bound": 0.0,
+      "fraction_running_policy_min_q_above_bound": 0.0,
+      "running_policy_action_gradient_mean_l2": 1.468438982963562,
+      "running_policy_action_gradient_max_l2": 3.0907044410705566
+    },
+    {
+      "method": "target-sac",
+      "label": "actor-step-512000",
+      "transitions": 512000,
+      "critic_updates": 31688,
+      "alpha": 0.01902286894619465,
+      "sample_rows": 3200,
+      "complete_50_step_episode_batch": true,
+      "recent_reward_mean": 0.08728878200054169,
+      "behavior_action_abs_gt_095_fraction": 0.15324218571186066,
+      "any_stage_counts_64_windows": [
+        1,
+        0,
+        64,
+        0
+      ],
+      "final_stage_counts_64_windows": [
+        0,
+        0,
+        60,
+        0
+      ],
+      "current_actor_sample_entropy_estimate": -0.6135720610618591,
+      "actor_logstd_exp_mean": 0.6670525074005127,
+      "q_running_behavior_mean": 92.40892791748047,
+      "q_running_policy_mean": 92.51220703125,
+      "q_training_context_behavior_mean": 92.40892791748047,
+      "q_training_vs_running_rmse": 0.0,
+      "per_head_training_current_next_mean_gaps": [
+        -0.18680572509765625,
+        -0.1390228271484375
+      ],
+      "min_q_training_current_next_mean_gap": -0.17314910888671875,
+      "fixed_present_alpha_exact_soft_q_upper_bound": 110.4430331971631,
+      "fraction_running_behavior_min_q_above_bound": 0.1459375023841858,
+      "fraction_running_policy_min_q_above_bound": 0.14562499523162842,
+      "running_policy_action_gradient_mean_l2": 0.8029000163078308,
+      "running_policy_action_gradient_max_l2": 5.991042613983154
+    },
+    {
+      "method": "target-sac",
+      "label": "actor-final",
+      "transitions": 874880,
+      "critic_updates": 54363,
+      "alpha": 0.4235425889492035,
+      "sample_rows": 3200,
+      "complete_50_step_episode_batch": false,
+      "recent_reward_mean": 0.0401158481836319,
+      "behavior_action_abs_gt_095_fraction": 0.23046875,
+      "any_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "final_stage_counts_64_windows": [
+        0,
+        0,
+        59,
+        0
+      ],
+      "current_actor_sample_entropy_estimate": -5.157442569732666,
+      "actor_logstd_exp_mean": 0.5859414935112,
+      "q_running_behavior_mean": 905.55517578125,
+      "q_running_policy_mean": 915.3629150390625,
+      "q_training_context_behavior_mean": 905.55517578125,
+      "q_training_vs_running_rmse": 0.0,
+      "per_head_training_current_next_mean_gaps": [
+        -9.4713134765625,
+        -15.73626708984375
+      ],
+      "min_q_training_current_next_mean_gap": -12.421142578125,
+      "fixed_present_alpha_exact_soft_q_upper_bound": 332.51326229074226,
+      "fraction_running_behavior_min_q_above_bound": 0.3009375035762787,
+      "fraction_running_policy_min_q_above_bound": 0.30000001192092896,
+      "running_policy_action_gradient_mean_l2": 58.484779357910156,
+      "running_policy_action_gradient_max_l2": 1012.3381958007812
+    },
+    {
+      "method": "joint-moments",
+      "label": "actor-step-51200",
+      "transitions": 51200,
+      "critic_updates": 2888,
+      "alpha": 0.4497179090976715,
+      "sample_rows": 3200,
+      "complete_50_step_episode_batch": true,
+      "recent_reward_mean": 0.05572521314024925,
+      "behavior_action_abs_gt_095_fraction": 0.029609374701976776,
+      "any_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "final_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "current_actor_sample_entropy_estimate": 5.342083930969238,
+      "actor_logstd_exp_mean": 0.8512365221977234,
+      "q_running_behavior_mean": 211.7773895263672,
+      "q_running_policy_mean": 212.02037048339844,
+      "q_training_context_behavior_mean": 211.1396484375,
+      "q_training_vs_running_rmse": 3.620746374130249,
+      "per_head_training_current_next_mean_gaps": [
+        -0.0489501953125,
+        -0.0167388916015625
+      ],
+      "min_q_training_current_next_mean_gap": -0.0148773193359375,
+      "fixed_present_alpha_exact_soft_q_upper_bound": 346.8827949847846,
+      "fraction_running_behavior_min_q_above_bound": 0.0,
+      "fraction_running_policy_min_q_above_bound": 0.0,
+      "running_policy_action_gradient_mean_l2": 0.7884398102760315,
+      "running_policy_action_gradient_max_l2": 6.933818340301514
+    },
+    {
+      "method": "joint-moments",
+      "label": "actor-step-102400",
+      "transitions": 102400,
+      "critic_updates": 6088,
+      "alpha": 0.23282672464847565,
+      "sample_rows": 3200,
+      "complete_50_step_episode_batch": true,
+      "recent_reward_mean": 0.05588795617222786,
+      "behavior_action_abs_gt_095_fraction": 0.030937500298023224,
+      "any_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "final_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "current_actor_sample_entropy_estimate": 5.329113960266113,
+      "actor_logstd_exp_mean": 0.8452437520027161,
+      "q_running_behavior_mean": 101.81660461425781,
+      "q_running_policy_mean": 101.92166137695312,
+      "q_training_context_behavior_mean": 100.7899398803711,
+      "q_training_vs_running_rmse": 4.080927848815918,
+      "per_head_training_current_next_mean_gaps": [
+        -0.01280975341796875,
+        -0.03766632080078125
+      ],
+      "min_q_training_current_next_mean_gap": -0.0274658203125,
+      "fixed_present_alpha_exact_soft_q_upper_bound": 227.81548469728511,
+      "fraction_running_behavior_min_q_above_bound": 0.0,
+      "fraction_running_policy_min_q_above_bound": 0.0,
+      "running_policy_action_gradient_mean_l2": 0.4807221591472626,
+      "running_policy_action_gradient_max_l2": 1.734959363937378
+    },
+    {
+      "method": "joint-moments",
+      "label": "actor-step-256000",
+      "transitions": 256000,
+      "critic_updates": 15688,
+      "alpha": 0.05117729306221008,
+      "sample_rows": 3200,
+      "complete_50_step_episode_batch": true,
+      "recent_reward_mean": 0.06755334883928299,
+      "behavior_action_abs_gt_095_fraction": 0.02933593839406967,
+      "any_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "final_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "current_actor_sample_entropy_estimate": 5.1110405921936035,
+      "actor_logstd_exp_mean": 0.7960442900657654,
+      "q_running_behavior_mean": 19.424482345581055,
+      "q_running_policy_mean": 19.4768123626709,
+      "q_training_context_behavior_mean": 19.790145874023438,
+      "q_training_vs_running_rmse": 1.6552335023880005,
+      "per_head_training_current_next_mean_gaps": [
+        -0.0130615234375,
+        -0.01241302490234375
+      ],
+      "min_q_training_current_next_mean_gap": -0.008892059326171875,
+      "fixed_present_alpha_exact_soft_q_upper_bound": 128.09492994465057,
+      "fraction_running_behavior_min_q_above_bound": 0.0,
+      "fraction_running_policy_min_q_above_bound": 0.0,
+      "running_policy_action_gradient_mean_l2": 0.22154629230499268,
+      "running_policy_action_gradient_max_l2": 1.4607985019683838
+    },
+    {
+      "method": "joint-moments",
+      "label": "actor-step-512000",
+      "transitions": 512000,
+      "critic_updates": 31688,
+      "alpha": 0.008294474333524704,
+      "sample_rows": 3200,
+      "complete_50_step_episode_batch": true,
+      "recent_reward_mean": 0.07612383365631104,
+      "behavior_action_abs_gt_095_fraction": 0.021171875298023224,
+      "any_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "final_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "current_actor_sample_entropy_estimate": 1.8871465921401978,
+      "actor_logstd_exp_mean": 0.4997069537639618,
+      "q_running_behavior_mean": 3.200308322906494,
+      "q_running_policy_mean": 3.280811071395874,
+      "q_training_context_behavior_mean": 0.5222423672676086,
+      "q_training_vs_running_rmse": 5.485426902770996,
+      "per_head_training_current_next_mean_gaps": [
+        -0.055164217948913574,
+        -0.07989752292633057
+      ],
+      "min_q_training_current_next_mean_gap": -0.10970401763916016,
+      "fixed_present_alpha_exact_soft_q_upper_bound": 104.5534388668194,
+      "fraction_running_behavior_min_q_above_bound": 0.0,
+      "fraction_running_policy_min_q_above_bound": 0.0,
+      "running_policy_action_gradient_mean_l2": 0.24467428028583527,
+      "running_policy_action_gradient_max_l2": 0.6625964045524597
+    },
+    {
+      "method": "joint-moments",
+      "label": "actor-final",
+      "transitions": 596544,
+      "critic_updates": 36968,
+      "alpha": 0.005135983694344759,
+      "sample_rows": 3200,
+      "complete_50_step_episode_batch": false,
+      "recent_reward_mean": 0.0580906979739666,
+      "behavior_action_abs_gt_095_fraction": 0.03121093660593033,
+      "any_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "final_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "current_actor_sample_entropy_estimate": -2.1951215267181396,
+      "actor_logstd_exp_mean": 0.4525308907032013,
+      "q_running_behavior_mean": 9.017998695373535,
+      "q_running_policy_mean": 9.245721817016602,
+      "q_training_context_behavior_mean": -0.8992828130722046,
+      "q_training_vs_running_rmse": 13.053489685058594,
+      "per_head_training_current_next_mean_gaps": [
+        -0.302190899848938,
+        -0.07617271691560745
+      ],
+      "min_q_training_current_next_mean_gap": -0.22384178638458252,
+      "fixed_present_alpha_exact_soft_q_upper_bound": 102.81951415277234,
+      "fraction_running_behavior_min_q_above_bound": 0.0,
+      "fraction_running_policy_min_q_above_bound": 0.0,
+      "running_policy_action_gradient_mean_l2": 0.39837703108787537,
+      "running_policy_action_gradient_max_l2": 8.628173828125
+    },
+    {
+      "method": "split-moments",
+      "label": "actor-step-51200",
+      "transitions": 51200,
+      "critic_updates": 2888,
+      "alpha": 0.4652774930000305,
+      "sample_rows": 3200,
+      "complete_50_step_episode_batch": true,
+      "recent_reward_mean": 0.023622822016477585,
+      "behavior_action_abs_gt_095_fraction": 0.03046875074505806,
+      "any_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "final_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "current_actor_sample_entropy_estimate": 4.674107551574707,
+      "actor_logstd_exp_mean": 0.8259649872779846,
+      "q_running_behavior_mean": 19.039409637451172,
+      "q_running_policy_mean": 20.14163589477539,
+      "q_training_context_behavior_mean": 30.63599395751953,
+      "q_training_vs_running_rmse": 24.489761352539062,
+      "per_head_training_current_next_mean_gaps": [
+        -3.814697265625e-06,
+        3.814697265625e-06
+      ],
+      "min_q_training_current_next_mean_gap": 0.02264404296875,
+      "fixed_present_alpha_exact_soft_q_upper_bound": 355.4245797011686,
+      "fraction_running_behavior_min_q_above_bound": 0.0,
+      "fraction_running_policy_min_q_above_bound": 0.0,
+      "running_policy_action_gradient_mean_l2": 2.043464183807373,
+      "running_policy_action_gradient_max_l2": 9.175951957702637
+    },
+    {
+      "method": "split-moments",
+      "label": "actor-step-102400",
+      "transitions": 102400,
+      "critic_updates": 6088,
+      "alpha": 0.24040468037128448,
+      "sample_rows": 3200,
+      "complete_50_step_episode_batch": true,
+      "recent_reward_mean": 0.057447291910648346,
+      "behavior_action_abs_gt_095_fraction": 0.03316406160593033,
+      "any_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "final_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "current_actor_sample_entropy_estimate": 5.258723258972168,
+      "actor_logstd_exp_mean": 0.8505186438560486,
+      "q_running_behavior_mean": 73.3603744506836,
+      "q_running_policy_mean": 73.48009490966797,
+      "q_training_context_behavior_mean": 69.885986328125,
+      "q_training_vs_running_rmse": 22.16602325439453,
+      "per_head_training_current_next_mean_gaps": [
+        -7.62939453125e-06,
+        0.0
+      ],
+      "min_q_training_current_next_mean_gap": 0.01598358154296875,
+      "fixed_present_alpha_exact_soft_q_upper_bound": 231.9755745030741,
+      "fraction_running_behavior_min_q_above_bound": 0.0,
+      "fraction_running_policy_min_q_above_bound": 0.0,
+      "running_policy_action_gradient_mean_l2": 0.7615885138511658,
+      "running_policy_action_gradient_max_l2": 103.33402252197266
+    },
+    {
+      "method": "split-moments",
+      "label": "actor-step-256000",
+      "transitions": 256000,
+      "critic_updates": 15688,
+      "alpha": 0.0774536281824112,
+      "sample_rows": 3200,
+      "complete_50_step_episode_batch": true,
+      "recent_reward_mean": 0.04274406284093857,
+      "behavior_action_abs_gt_095_fraction": 0.058906249701976776,
+      "any_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "final_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "current_actor_sample_entropy_estimate": 2.979433059692383,
+      "actor_logstd_exp_mean": 0.7813456654548645,
+      "q_running_behavior_mean": -91.39195251464844,
+      "q_running_policy_mean": -90.95787811279297,
+      "q_training_context_behavior_mean": -96.76956176757812,
+      "q_training_vs_running_rmse": 49.26382827758789,
+      "per_head_training_current_next_mean_gaps": [
+        7.62939453125e-06,
+        0.0
+      ],
+      "min_q_training_current_next_mean_gap": 0.0237579345703125,
+      "fixed_present_alpha_exact_soft_q_upper_bound": 142.519917087031,
+      "fraction_running_behavior_min_q_above_bound": 0.0,
+      "fraction_running_policy_min_q_above_bound": 0.0,
+      "running_policy_action_gradient_mean_l2": 1.462357759475708,
+      "running_policy_action_gradient_max_l2": 21.85275650024414
+    },
+    {
+      "method": "split-moments",
+      "label": "actor-final",
+      "transitions": 409600,
+      "critic_updates": 25283,
+      "alpha": 1.1637959480285645,
+      "sample_rows": 3200,
+      "complete_50_step_episode_batch": true,
+      "recent_reward_mean": 0.02524382993578911,
+      "behavior_action_abs_gt_095_fraction": 0.27128905057907104,
+      "any_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "final_stage_counts_64_windows": [
+        0,
+        0,
+        64,
+        0
+      ],
+      "current_actor_sample_entropy_estimate": -13.187877655029297,
+      "actor_logstd_exp_mean": 0.4988226294517517,
+      "q_running_behavior_mean": -6795.9638671875,
+      "q_running_policy_mean": -6718.95166015625,
+      "q_training_context_behavior_mean": -8250.47265625,
+      "q_training_vs_running_rmse": 3370.996826171875,
+      "per_head_training_current_next_mean_gaps": [
+        -0.00048828125,
+        0.0
+      ],
+      "min_q_training_current_next_mean_gap": -3.349609375,
+      "fixed_present_alpha_exact_soft_q_upper_bound": 738.8920490574851,
+      "fraction_running_behavior_min_q_above_bound": 0.0,
+      "fraction_running_policy_min_q_above_bound": 0.0,
+      "running_policy_action_gradient_mean_l2": 112.22611999511719,
+      "running_policy_action_gradient_max_l2": 797.310546875
+    }
+  ],
+  "caveats": [
+    "Recent behavior changes during collection; not frozen-policy trajectories.",
+    "Final target/joint snapshots cross resets: no complete-episode return claim.",
+    "Context is the saved recent3200 transitions, not the historical uniform replay minibatch.",
+    "Running-versus-training discrepancy is not true-Q error; no robot value oracle exists.",
+    "No target1/target2/optimizer/full replay archive: exact historical target-SAC step cannot be reconstructed.",
+    "Entropy estimate is one current-policy sample per saved state with declared CPU RNG, not historical behavior entropy.",
+    "Soft-Q bound is a necessary fixed-present-alpha consistency condition, not a historical-target reconstruction.",
+    "Action gradients are measured scales, not measured correctness or causal explanation."
+  ]
+}

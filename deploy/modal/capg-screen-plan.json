@@ -1,0 +1,70 @@
+{
+  "experiment_id": "stackcube-capg-screen-20261027",
+  "launch_enabled": true,
+  "root_review_required_before_launch": false,
+  "scientific_plan": "docs/stackcube-capg-screen-20261027.md",
+  "scientific_plan_sha256": "aeb8e3a1932f5c18d7ac27476810fe3211a20432aa135e8d0eca8e3a4d48609d",
+  "jobs": [
+    {
+      "job_id": "stackcube-capg-screen-20261027-full-horizon-control-seed-1",
+      "method": "full-horizon-control",
+      "seed": 1,
+      "trainer_sha256": "68e09965db1378616f380eb763862149d8c28232075e06741426caba3dfb5064",
+      "gpu": "L40S",
+      "trainer_seconds_cap": 1320,
+      "requested_steps": 25000000,
+      "actual_steps_ceiling": 24985600
+    },
+    {
+      "job_id": "stackcube-capg-screen-20261027-full-horizon-capg-seed-1",
+      "method": "full-horizon-capg",
+      "seed": 1,
+      "trainer_sha256": "8a95fca4ac08a8118ecb361fb9a458e137578673a1b4fcfe2c94fdbd3033b971",
+      "gpu": "L40S",
+      "trainer_seconds_cap": 1320,
+      "requested_steps": 25000000,
+      "actual_steps_ceiling": 24985600
+    }
+  ],
+  "max_parallel_trainers": 2,
+  "gpu_requested": "L40S",
+  "packing": false,
+  "confirmation_queries": 0,
+  "development_episodes": 128,
+  "selected_steps": [
+    5120000,
+    10240000,
+    15360000,
+    20480000,
+    "final_actual_steps"
+  ],
+  "max_development_evaluations": 10,
+  "native_evaluator_timeout_seconds": 100,
+  "gpu_evaluator_timeout_seconds": 120,
+  "gpu_startup_timeout_seconds": 30,
+  "trainer_wrapper_timeout_seconds": 1380,
+  "trainer_hard_seconds": 1320,
+  "trainer_save_reserve_seconds": 20,
+  "lease_policy": "absolute1320-second lease at trusted CPU dispatch, queue consumes lease, no refresh on preemption/retry",
+  "interruption_policy": "durable attempt marker before subprocess; no restart when marker exists; record failure",
+  "cost": {
+    "gpu_container_seconds_bound": 4320,
+    "gpu_cpu_ram_usd": 2.7212544,
+    "conversion_cpu_usd": 0.021047999999999997,
+    "coordinator_usd": 0.014836499999999999,
+    "subtotal_usd": 2.7571388999999997,
+    "pair_cap_usd": 3.0,
+    "reserve_usd": 0.24286110000000014
+  },
+  "optimizer_step_count": "unavailable; configured8*32*completed_rollouts is only upper bound",
+  "no_silent_checkpoint_dropping": true,
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "root_review": {
+    "approved_at": "2026-10-27T20:20:25.503410+00:00",
+    "scope": "Only full-horizon-control and full-horizon-capg training seed1, dedicatedL40S,1320trainerseconds,25Mrequested,developmentonly,$3totalcap",
+    "checks": "Root independently passed9Modaltests,checkedprotocolandreference-preservationmanifests,reviewedfullcoordinator/contracts/timeouts/budget",
+    "confirmation_queries": 0,
+    "additional_training_seeds": false,
+    "automatic_fresh_retries": false
+  }
+}

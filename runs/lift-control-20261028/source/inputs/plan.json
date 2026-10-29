@@ -1,0 +1,36 @@
+{
+  "admitted": true,
+  "experiment": "lift-control-20261028",
+  "public_initial_seeds": [
+    93284000,
+    93284001,
+    93284002,
+    93284003,
+    93284004,
+    93284005,
+    93284006,
+    93284007
+  ],
+  "max_public_transitions": 1600,
+  "source_sha256": {
+    "lift_control_robot.py": "91a7a7743851ff307b2927f7366c62c71a30216b4f60e90e2a095aaa74d69707",
+    "panda_kinematics.py": "f6fb65177962cc9740038152da287f2c5f40ed1ef746a05eed2c86e0975ed929",
+    "lift_probe_control.py": "1ec14193442df4ff38ec4456743e53d06a6b22f318442fd729a997223b9a286e"
+  },
+  "safe_policy_source_sha256": {
+    "__init__.py": "69006206eb1d61cbba2fbe9cda4126c42f2d9ac85b70e09fe64e3ab3c016747e",
+    "policy_io.py": "9f352999f20811ce9f245ceedce4528da4552e8a85d6d27ba1d514bb69d69477",
+    "numpy_inference.py": "d674c0a64240ee5e474c470294b4946c57478d9b8949e547019b89ee547abfe8"
+  },
+  "policy_files_sha256": {
+    "manifest.json": "099a9503c6ef0f0dfa7dde1e92b05d0b99d98a1fe9c266dad0ce6eb87fc7f8e6",
+    "weights.json": "98c1be7b10ad8048a3cc56ad11307ee554d44d7b8920cff02563d40428796a0a"
+  },
+  "plan_path": "docs/lift-control-probe-plan-20261028.md",
+  "scientific_plan_sha256": "99894b02952c03002dab70777d0c21d0ef38d47c8445a484f19aa4a49f496a2f",
+  "adapter_sha256": "053d31f20d680c4f79b24b142cceb3b0703d98bbc92634978a99129a1dd3f912",
+  "budget_cap_usd": 1,
+  "admission_note": "Explicit user yes to bounded Modal resumption; exact-source/CPU gates and independent review passed; fresh billing and1USDreservation; no training/protected evaluations admitted",
+  "review": "Passed after own-contact and incremental archival fixes; final exact-AST CPU edge cases passed.",
+  "root_admitted_epoch": 1793275108.08714
+}

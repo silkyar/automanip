@@ -1,0 +1,9 @@
+{
+  "state": "failed",
+  "plan_sha256": "2f7ed28b6e8df63106adbb4073bd8377bb78bc0e89b9549661e0680098e16564",
+  "new_training_runs": 0,
+  "protected_evaluations": 0,
+  "error": "RuntimeError: Diagnostic child failed; preserve report/log",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/silkyarora/Work/automanip/deploy/modal/continuation_noise.py\", line 47, in probe\nRuntimeError: Diagnostic child failed; preserve report/log\n",
+  "wrapper_seconds": 21.508176729
+}

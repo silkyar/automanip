@@ -1,0 +1,172 @@
+{
+  "gate_passed": true,
+  "gate": "Each of6 seeds: BC heldout MSE below.02 and half initial, heldout expert style exceeds opposite-transition policy by.1.",
+  "records": [
+    {
+      "seed": 0,
+      "initial_validation_bc_mse": 0.10572213679552078,
+      "final_validation_bc_mse": 0.0016013109125196934,
+      "bc_stats": {
+        "initial_training_probe_mse": 0.10953107476234436,
+        "last_training_batch_mse": 0.0016812793910503387,
+        "optimizer_updates": 400,
+        "demonstration_minibatch_rows": 51200
+      },
+      "heldout_expert_style": 0.9655870199203491,
+      "heldout_policy_style": 0.30324697494506836,
+      "discriminator_stats": {
+        "loss": 1.3283313432335848,
+        "least_squares": 1.2034766712039713,
+        "gradient_penalty": 0.024970933217555287,
+        "expert_score": 0.253706766339019,
+        "policy_score": -0.26903551974450235,
+        "discriminator_updates": 200,
+        "discriminator_sample_rows": 51200,
+        "learner_transition_rows": 2048,
+        "replay_rows": 2048
+      }
+    },
+    {
+      "seed": 1,
+      "initial_validation_bc_mse": 0.10397413372993469,
+      "final_validation_bc_mse": 0.0016335827531293035,
+      "bc_stats": {
+        "initial_training_probe_mse": 0.10135611891746521,
+        "last_training_batch_mse": 0.0014209504006430507,
+        "optimizer_updates": 400,
+        "demonstration_minibatch_rows": 51200
+      },
+      "heldout_expert_style": 0.9675753712654114,
+      "heldout_policy_style": 0.2555468678474426,
+      "discriminator_stats": {
+        "loss": 1.3080317646265036,
+        "least_squares": 1.179171267226339,
+        "gradient_penalty": 0.025772099250461922,
+        "expert_score": 0.2570187807950424,
+        "policy_score": -0.28804630969883893,
+        "discriminator_updates": 200,
+        "discriminator_sample_rows": 51200,
+        "learner_transition_rows": 2048,
+        "replay_rows": 2048
+      }
+    },
+    {
+      "seed": 2,
+      "initial_validation_bc_mse": 0.11224931478500366,
+      "final_validation_bc_mse": 0.0017403626115992665,
+      "bc_stats": {
+        "initial_training_probe_mse": 0.11338578909635544,
+        "last_training_batch_mse": 0.0015591878909617662,
+        "optimizer_updates": 400,
+        "demonstration_minibatch_rows": 51200
+      },
+      "heldout_expert_style": 0.9672871232032776,
+      "heldout_policy_style": 0.24444597959518433,
+      "discriminator_stats": {
+        "loss": 1.3151615139842037,
+        "least_squares": 1.1848142996430397,
+        "gradient_penalty": 0.02606944342842327,
+        "expert_score": 0.2571481622121062,
+        "policy_score": -0.283107955333544,
+        "discriminator_updates": 200,
+        "discriminator_sample_rows": 51200,
+        "learner_transition_rows": 2048,
+        "replay_rows": 2048
+      }
+    },
+    {
+      "seed": 3,
+      "initial_validation_bc_mse": 0.10431618988513947,
+      "final_validation_bc_mse": 0.0019027355592697859,
+      "bc_stats": {
+        "initial_training_probe_mse": 0.10208401083946228,
+        "last_training_batch_mse": 0.0020071668550372124,
+        "optimizer_updates": 400,
+        "demonstration_minibatch_rows": 51200
+      },
+      "heldout_expert_style": 0.9673779010772705,
+      "heldout_policy_style": 0.2762098014354706,
+      "discriminator_stats": {
+        "loss": 1.3008368468284615,
+        "least_squares": 1.1653212825208903,
+        "gradient_penalty": 0.027103112479671832,
+        "expert_score": 0.2738020243868231,
+        "policy_score": -0.2819765130663291,
+        "discriminator_updates": 200,
+        "discriminator_sample_rows": 51200,
+        "learner_transition_rows": 2048,
+        "replay_rows": 2048
+      }
+    },
+    {
+      "seed": 4,
+      "initial_validation_bc_mse": 0.09592173248529434,
+      "final_validation_bc_mse": 0.001684440765529871,
+      "bc_stats": {
+        "initial_training_probe_mse": 0.09403635561466217,
+        "last_training_batch_mse": 0.0013366977218538523,
+        "optimizer_updates": 400,
+        "demonstration_minibatch_rows": 51200
+      },
+      "heldout_expert_style": 0.9684414267539978,
+      "heldout_policy_style": 0.2511979639530182,
+      "discriminator_stats": {
+        "loss": 1.2650297504663468,
+        "least_squares": 1.121937057524919,
+        "gradient_penalty": 0.02861853925976901,
+        "expert_score": 0.28933648674748846,
+        "policy_score": -0.305667060179985,
+        "discriminator_updates": 200,
+        "discriminator_sample_rows": 51200,
+        "learner_transition_rows": 2048,
+        "replay_rows": 2048
+      }
+    },
+    {
+      "seed": 5,
+      "initial_validation_bc_mse": 0.10436329990625381,
+      "final_validation_bc_mse": 0.001764775370247662,
+      "bc_stats": {
+        "initial_training_probe_mse": 0.10192625969648361,
+        "last_training_batch_mse": 0.0016568824648857117,
+        "optimizer_updates": 400,
+        "demonstration_minibatch_rows": 51200
+      },
+      "heldout_expert_style": 0.9674285054206848,
+      "heldout_policy_style": 0.24226468801498413,
+      "discriminator_stats": {
+        "loss": 1.2859837481379517,
+        "least_squares": 1.1443912936747076,
+        "gradient_penalty": 0.028318490851670496,
+        "expert_score": 0.28444571681786335,
+        "policy_score": -0.2909979111381108,
+        "discriminator_updates": 200,
+        "discriminator_sample_rows": 51200,
+        "learner_transition_rows": 2048,
+        "replay_rows": 2048
+      }
+    }
+  ],
+  "wall_seconds": 1.6425695409998298,
+  "source_sha256": "559c7bbbe316c2a63abe184b7b43ecd33b231c788af9b8de75d8f1e7e7500fe7",
+  "core_sha256": "463303be5809392e7ea9597eb47c0e45ccd256438750d4a0b219c2abd9dee5bd",
+  "bc_source_sha256": "1e8b1a6ea1e2007bf43adb24fc0d96008c54d01d3af5d6650548c35f6392f7f6",
+  "accounting": {
+    "synthetic_action_label_rows": 12288,
+    "bc_updates": 2400,
+    "bc_minibatch_rows": 307200,
+    "synthetic_expert_transitions": 12288,
+    "synthetic_policy_transitions": 12288,
+    "discriminator_updates": 1200,
+    "discriminator_sample_rows": 307200,
+    "robot_transitions": 0,
+    "simulator_queries": 0,
+    "gpu_seconds": 0,
+    "dollars_spent": 0
+  },
+  "limitations": [
+    "Synthetic supervised action labels are disclosed toy demonstrations, not robot teacher data.",
+    "Discriminator classification and BC regression do not test closed-loop imitation or robotic sample efficiency.",
+    "No GPU or protected evaluator test was run."
+  ]
+}

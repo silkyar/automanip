@@ -1,0 +1,1267 @@
+{
+  "experiment_id": "stackcube-precision-screen-20261027",
+  "state": "complete",
+  "confirmation_queries": 0,
+  "training": [
+    {
+      "job": {
+        "job_id": "stackcube-precision-screen-20261027-precision-constant-seed-1",
+        "method": "precision-constant",
+        "seed": 1,
+        "trainer_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+        "gpu": "L40S",
+        "trainer_seconds_cap": 2700,
+        "requested_steps": 50000000,
+        "actual_steps_ceiling": 49971200
+      },
+      "state": "complete",
+      "dispatched_at": 1793148035.7666817,
+      "expires_at": 1793150735.7666817,
+      "function_call_id": "fc-01M5ZZ7B1FM8FRR5J2WHP9D5VD",
+      "admitted_at": 1793148043.4905925,
+      "queue_seconds": 7.723910808563232,
+      "trainer_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+      "gpu_requested": "L40S",
+      "confirmation_queries": 0,
+      "new_training_processes": 1,
+      "gpu_actual_name": "NVIDIA L40S",
+      "versions": {
+        "torch": "2.6.0+cu124",
+        "mani_skill": "3.0.0b21",
+        "sapien": "3.0.0b1",
+        "numpy": "1.26.4",
+        "gymnasium": "0.29.1"
+      },
+      "subprocess_started_at": 1793148046.3256447,
+      "trainer_process_seconds": 2295.408300588,
+      "return_code": 0,
+      "nonfinite_diagnostic_scalars": {},
+      "actual_steps": 49971200,
+      "completed_rollouts": 976,
+      "optimizer_step_upper_bound": 249856,
+      "built_in_evaluation_calls": 40,
+      "built_in_evaluation_transitions": 16000,
+      "built_in_evaluation_episodes": 320,
+      "stopped_early": false,
+      "optimizer_step_count": 110572,
+      "final_logstd_per_dimension": [
+        -1.7230753898620605,
+        -1.6399749517440796,
+        -1.7657711505889893,
+        -1.7780853509902954,
+        -0.202223539352417,
+        -1.239534854888916,
+        0.27132412791252136,
+        -0.9787721037864685
+      ],
+      "audit_trace_rows": 976,
+      "wrapper_seconds": 2299.298024449,
+      "completed_at": 1793150342.788639,
+      "files": [
+        {
+          "path": "attempt.json",
+          "bytes": 144,
+          "sha256": "06dafec07d0bb69879913090aa6082b3e29f52af79f68265ef8efa94bd9e988f",
+          "trainer_seconds": 0.0
+        },
+        {
+          "path": "scalars.json",
+          "bytes": 4705203,
+          "sha256": "d1697a70e0b9f61ea73bddc47fbac650c301c3b89dedc977f35d7c38b8e6901e",
+          "trainer_seconds": 2296.4487109184265
+        },
+        {
+          "path": "trainer.py",
+          "bytes": 26381,
+          "sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+          "trainer_seconds": 0.0
+        },
+        {
+          "path": "work/train.log",
+          "bytes": 55941,
+          "sha256": "97767a3510c2dccb9792382036de3cc4a19b7fa1d3d2a1490d8a7a1a44439bde",
+          "trainer_seconds": 2293.7126026153564
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_1.pt",
+          "bytes": 1167438,
+          "sha256": "fe0b2ad4d99fc88f0c408a1da3ccfbf80fdf51e0d643f7ad977ad4604aa8f753",
+          "trainer_seconds": 20.842971086502075
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_101.pt",
+          "bytes": 1168376,
+          "sha256": "69fde942fd7587b7fad59886c1585f18abb9d7371474acf8d63a68d163adc00e",
+          "trainer_seconds": 309.83951473236084
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_126.pt",
+          "bytes": 1168376,
+          "sha256": "f17467ffe4a24f61d11fd8adffaaa50049d64fc2846b0e3c90478699e86732f0",
+          "trainer_seconds": 367.77782917022705
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_151.pt",
+          "bytes": 1168376,
+          "sha256": "0f638d23e2ba71a86eb67fdda373a019bfe533b28e5f61038b3f81799a9e5dbf",
+          "trainer_seconds": 418.9968750476837
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_176.pt",
+          "bytes": 1168376,
+          "sha256": "603e4596cfec96ff49c99d1365c59df7c599f573e14bd96e0f7c23f13d293857",
+          "trainer_seconds": 470.86894702911377
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_201.pt",
+          "bytes": 1168376,
+          "sha256": "af8d69b5eb2f1149ed3f9426b6450118371802f4371f10fa123bb0fdf1b8b4e0",
+          "trainer_seconds": 530.5803320407867
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_226.pt",
+          "bytes": 1168376,
+          "sha256": "c24400afbbdf5bbafd446d4d3d9afba1443a6afcf6a8f7607404450b4a682930",
+          "trainer_seconds": 585.9205424785614
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_251.pt",
+          "bytes": 1168376,
+          "sha256": "311111d52e90602778138e4c45d890a1b8ee7e26d64e8720dcf168716f11dd31",
+          "trainer_seconds": 638.9376602172852
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_26.pt",
+          "bytes": 1167971,
+          "sha256": "292c8eeeacd22efe8d9547e99ed04c06fefed90e8ce7286c1df7c1962f7180d9",
+          "trainer_seconds": 92.7608437538147
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_276.pt",
+          "bytes": 1168376,
+          "sha256": "bc03afd86cef0a4730f14c7a02b0918fd4374d5c715a55db8ba4688694af11de",
+          "trainer_seconds": 691.2967517375946
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_301.pt",
+          "bytes": 1168376,
+          "sha256": "7fae4e62222e77c39dc4f8615a905a6cd7191cc490cf98db1f7b7cd760d9f3a0",
+          "trainer_seconds": 744.2148654460907
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_326.pt",
+          "bytes": 1168376,
+          "sha256": "5603cc8830f5e913e0921e876c32c4dee9d7cf882f5a70a103c9f41843ce26fb",
+          "trainer_seconds": 795.6019179821014
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_351.pt",
+          "bytes": 1168376,
+          "sha256": "65d41a975c657a0dbefedae6b6f531636e25fa77e6770530b829120f6803273c",
+          "trainer_seconds": 847.5869953632355
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_376.pt",
+          "bytes": 1168376,
+          "sha256": "34454d5fb949c24a14f9a74cbbd35f6a75deac2342d5bc166224618eb2ab32d5",
+          "trainer_seconds": 903.5512318611145
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_401.pt",
+          "bytes": 1168376,
+          "sha256": "39fe6feb6fe5d1df085d7c72b92815be8a6338e9393565f671074d3f2f5d96ae",
+          "trainer_seconds": 957.1913757324219
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_426.pt",
+          "bytes": 1168376,
+          "sha256": "8a9e818bc81d799c26886e2edb0f6101ad8cb8403c683a4f4321e67e3be64dfb",
+          "trainer_seconds": 1008.8654408454895
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_451.pt",
+          "bytes": 1168376,
+          "sha256": "c112c51d865699f751cf8324c66c9baf5b0129888fd9786ce3c1cfde0a7b9cb1",
+          "trainer_seconds": 1060.2944960594177
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_476.pt",
+          "bytes": 1168376,
+          "sha256": "1fff53a4dd4f93936b85789304c1b293c6bba919a71b2e43df341ae2ca919b72",
+          "trainer_seconds": 1110.591506242752
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_501.pt",
+          "bytes": 1168376,
+          "sha256": "41c6e60c5ba7866e7fd2aaff7de985dd47b0f69d1122e3b16b0f632760ebfd05",
+          "trainer_seconds": 1161.8075528144836
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_51.pt",
+          "bytes": 1167971,
+          "sha256": "ebe73770a97f3de5ba40e9731cd9968c4d87d20c9c1d037f14e09a50bf00ceec",
+          "trainer_seconds": 166.10277342796326
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_526.pt",
+          "bytes": 1168376,
+          "sha256": "722b550241dd77e34e8d7908536b4badeb82a3ba5c7b923e7f626cda5eb0aa61",
+          "trainer_seconds": 1215.5697014331818
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_551.pt",
+          "bytes": 1168376,
+          "sha256": "ac3d0514eef9d1168e8b0baac17786db796b77dcd427ac8d94b179a46c870f45",
+          "trainer_seconds": 1271.2189254760742
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_576.pt",
+          "bytes": 1168376,
+          "sha256": "5156eb17de0287babe5a47f612e89f8adb2629b9939d417286fac0659e131929",
+          "trainer_seconds": 1324.9460725784302
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_601.pt",
+          "bytes": 1168376,
+          "sha256": "c81b15e629e60c53578b0aff5c0ac47c229b1e4814ddcdf5ea9ad3f9bb6702d7",
+          "trainer_seconds": 1380.449290752411
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_626.pt",
+          "bytes": 1168376,
+          "sha256": "a75f122891c3b1302f702a736a3ad7b4b7e6e15e14c36f82c6985695b3ea5b6b",
+          "trainer_seconds": 1432.942388534546
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_651.pt",
+          "bytes": 1168376,
+          "sha256": "d6959f2d1dc06562b6cb9f092d7ead7430965865b899c7d9b4e855857cd1ae33",
+          "trainer_seconds": 1489.4556469917297
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_676.pt",
+          "bytes": 1168376,
+          "sha256": "2d3041cd5b75f5607c1ad20bf83872d2bb255ba3d9ebd4db0267f6e0ec48658e",
+          "trainer_seconds": 1550.3700814247131
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_701.pt",
+          "bytes": 1168376,
+          "sha256": "8072aa1290772411294eae61726a106db76e9ea05f8a1b09966e4edeeabfa739",
+          "trainer_seconds": 1608.1303896903992
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_726.pt",
+          "bytes": 1168376,
+          "sha256": "d601823c6aa978473fcdb72fc1eecdbe35aa658a5b56d1dc435eed57fc1f5dea",
+          "trainer_seconds": 1669.3138349056244
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_751.pt",
+          "bytes": 1168376,
+          "sha256": "4b14fd27a01a2ef412f3cf8242faaa37f1963a31856e2aa72a0b579e4f28f3fa",
+          "trainer_seconds": 1729.415236711502
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_76.pt",
+          "bytes": 1167971,
+          "sha256": "98e88d62db7bab3a5921d59c36bdf2930b835a05a85b2c73e45d09af094bc502",
+          "trainer_seconds": 240.33073830604553
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_776.pt",
+          "bytes": 1168376,
+          "sha256": "e8069284133710dda9b794f8575b5d149e2c61740273459c6f776a75c3b199d8",
+          "trainer_seconds": 1784.908454656601
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_801.pt",
+          "bytes": 1168376,
+          "sha256": "549d02ab063edf94a6efcf4c93eb89d38438ff8737737ce1299594697db76db3",
+          "trainer_seconds": 1842.4697513580322
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_826.pt",
+          "bytes": 1168376,
+          "sha256": "421a7ba3c806e801d2ddd4f874a9fd7fe93b9bbf925371b32f34b652c1556ab7",
+          "trainer_seconds": 1901.0300681591034
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_851.pt",
+          "bytes": 1168376,
+          "sha256": "98e3de40dad6e117c569d8844e1ce9a2ca8d9d0b71cdabbc440ed6070d166242",
+          "trainer_seconds": 1963.019520521164
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_876.pt",
+          "bytes": 1168376,
+          "sha256": "dd4c3462ad7135a7bdea1922d4c7b36447cca5c03d15c6c48ec516e4513475fd",
+          "trainer_seconds": 2028.667117357254
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_901.pt",
+          "bytes": 1168376,
+          "sha256": "fbfec4efb38f582dad9f9c97967c7dd9d236ca4438754079b0d0c9375207d648",
+          "trainer_seconds": 2092.9336597919464
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_926.pt",
+          "bytes": 1168376,
+          "sha256": "2d35135b2b67f7ac085605eafc7a6b2c1987f62623ffd8a5219c64bf9733f86b",
+          "trainer_seconds": 2157.047196149826
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_951.pt",
+          "bytes": 1168376,
+          "sha256": "c7b39db361e6b0bf1dd54554edbae52ce606a9dbdd80ba9de1efc9ce9bee888d",
+          "trainer_seconds": 2224.7628750801086
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_976.pt",
+          "bytes": 1168376,
+          "sha256": "4d45cfce65ce0bd462eecd1f5bc32947bf832610a3af87f1a17ea5b51904d17a",
+          "trainer_seconds": 2290.649481534958
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/events.out.tfevents.1793148063.modal.8.0",
+          "bytes": 2373517,
+          "sha256": "99558e873ee57fbe712ec8bee438302eeb622577e670046420d1eaba485da050",
+          "trainer_seconds": 2293.432591676712
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/final_ckpt.pt",
+          "bytes": 1168418,
+          "sha256": "27e6655e122244b6777c9c388b52a87bab91ffa861bf39bfa0cbfec72f755791",
+          "trainer_seconds": 2293.4295914173126
+        }
+      ],
+      "output_bytes": 55062491,
+      "prespecified_censored_steps": []
+    },
+    {
+      "job": {
+        "job_id": "stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1",
+        "method": "precision-entropy-anneal",
+        "seed": 1,
+        "trainer_sha256": "4618b428c35838417b95996a4245530f3b24fd5011b674ef9666a1ae6319c761",
+        "gpu": "L40S",
+        "trainer_seconds_cap": 2700,
+        "requested_steps": 50000000,
+        "actual_steps_ceiling": 49971200
+      },
+      "state": "complete",
+      "dispatched_at": 1793148039.2065341,
+      "expires_at": 1793150739.2065341,
+      "function_call_id": "fc-01M5ZZ7EEKX6X3EFMWGVB6B0J7",
+      "admitted_at": 1793148050.084282,
+      "queue_seconds": 10.877747774124146,
+      "trainer_sha256": "4618b428c35838417b95996a4245530f3b24fd5011b674ef9666a1ae6319c761",
+      "gpu_requested": "L40S",
+      "confirmation_queries": 0,
+      "new_training_processes": 1,
+      "gpu_actual_name": "NVIDIA L40S",
+      "versions": {
+        "torch": "2.6.0+cu124",
+        "mani_skill": "3.0.0b21",
+        "sapien": "3.0.0b1",
+        "numpy": "1.26.4",
+        "gymnasium": "0.29.1"
+      },
+      "subprocess_started_at": 1793148053.2947526,
+      "trainer_process_seconds": 2172.979352031,
+      "return_code": 0,
+      "nonfinite_diagnostic_scalars": {},
+      "actual_steps": 49971200,
+      "completed_rollouts": 976,
+      "optimizer_step_upper_bound": 249856,
+      "built_in_evaluation_calls": 40,
+      "built_in_evaluation_transitions": 16000,
+      "built_in_evaluation_episodes": 320,
+      "stopped_early": false,
+      "optimizer_step_count": 84080,
+      "final_logstd_per_dimension": [
+        -1.925020456314087,
+        -1.7652066946029663,
+        -1.9451723098754883,
+        -2.0167438983917236,
+        -0.637283444404602,
+        -1.4840611219406128,
+        -0.07785614579916,
+        -1.2532105445861816
+      ],
+      "audit_trace_rows": 976,
+      "wrapper_seconds": 2177.527993893,
+      "completed_at": 1793150227.6122837,
+      "files": [
+        {
+          "path": "attempt.json",
+          "bytes": 149,
+          "sha256": "74f97759dcc65dc0567e83056dc6d8bf1580a14a0dbb1f21668407962c40636e",
+          "trainer_seconds": 0.0
+        },
+        {
+          "path": "scalars.json",
+          "bytes": 4705408,
+          "sha256": "e23bebc1ac5ef2e330e0880b5cc85d0198a761739e17b1eddd3bdbeec35b281a",
+          "trainer_seconds": 2173.994495153427
+        },
+        {
+          "path": "trainer.py",
+          "bytes": 26387,
+          "sha256": "4618b428c35838417b95996a4245530f3b24fd5011b674ef9666a1ae6319c761",
+          "trainer_seconds": 0.0
+        },
+        {
+          "path": "work/train.log",
+          "bytes": 56186,
+          "sha256": "d89bfb9e6145b8bf0159cabb76e66851a9f0720333b53c3ef0dbc07922af2d5e",
+          "trainer_seconds": 2170.9634313583374
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_1.pt",
+          "bytes": 1167438,
+          "sha256": "fe0b2ad4d99fc88f0c408a1da3ccfbf80fdf51e0d643f7ad977ad4604aa8f753",
+          "trainer_seconds": 21.5590660572052
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_101.pt",
+          "bytes": 1168376,
+          "sha256": "69fde942fd7587b7fad59886c1585f18abb9d7371474acf8d63a68d163adc00e",
+          "trainer_seconds": 314.2052743434906
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_126.pt",
+          "bytes": 1168376,
+          "sha256": "f17467ffe4a24f61d11fd8adffaaa50049d64fc2846b0e3c90478699e86732f0",
+          "trainer_seconds": 373.96954226493835
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_151.pt",
+          "bytes": 1168376,
+          "sha256": "0f638d23e2ba71a86eb67fdda373a019bfe533b28e5f61038b3f81799a9e5dbf",
+          "trainer_seconds": 427.66668128967285
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_176.pt",
+          "bytes": 1168376,
+          "sha256": "603e4596cfec96ff49c99d1365c59df7c599f573e14bd96e0f7c23f13d293857",
+          "trainer_seconds": 479.1377680301666
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_201.pt",
+          "bytes": 1168376,
+          "sha256": "af8d69b5eb2f1149ed3f9426b6450118371802f4371f10fa123bb0fdf1b8b4e0",
+          "trainer_seconds": 538.5180191993713
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_226.pt",
+          "bytes": 1168376,
+          "sha256": "c24400afbbdf5bbafd446d4d3d9afba1443a6afcf6a8f7607404450b4a682930",
+          "trainer_seconds": 593.7641830444336
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_251.pt",
+          "bytes": 1168376,
+          "sha256": "311111d52e90602778138e4c45d890a1b8ee7e26d64e8720dcf168716f11dd31",
+          "trainer_seconds": 647.1833086013794
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_26.pt",
+          "bytes": 1167971,
+          "sha256": "292c8eeeacd22efe8d9547e99ed04c06fefed90e8ce7286c1df7c1962f7180d9",
+          "trainer_seconds": 94.83462047576904
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_276.pt",
+          "bytes": 1168376,
+          "sha256": "bc03afd86cef0a4730f14c7a02b0918fd4374d5c715a55db8ba4688694af11de",
+          "trainer_seconds": 699.7354159355164
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_301.pt",
+          "bytes": 1168376,
+          "sha256": "7fae4e62222e77c39dc4f8615a905a6cd7191cc490cf98db1f7b7cd760d9f3a0",
+          "trainer_seconds": 752.5225279331207
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_326.pt",
+          "bytes": 1168376,
+          "sha256": "5603cc8830f5e913e0921e876c32c4dee9d7cf882f5a70a103c9f41843ce26fb",
+          "trainer_seconds": 804.4886229038239
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_351.pt",
+          "bytes": 1168376,
+          "sha256": "65d41a975c657a0dbefedae6b6f531636e25fa77e6770530b829120f6803273c",
+          "trainer_seconds": 857.1527326107025
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_376.pt",
+          "bytes": 1168376,
+          "sha256": "34454d5fb949c24a14f9a74cbbd35f6a75deac2342d5bc166224618eb2ab32d5",
+          "trainer_seconds": 914.0209307670593
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_401.pt",
+          "bytes": 1168376,
+          "sha256": "39fe6feb6fe5d1df085d7c72b92815be8a6338e9393565f671074d3f2f5d96ae",
+          "trainer_seconds": 967.8380644321442
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_426.pt",
+          "bytes": 1168376,
+          "sha256": "8a9e818bc81d799c26886e2edb0f6101ad8cb8403c683a4f4321e67e3be64dfb",
+          "trainer_seconds": 1019.6521561145782
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_451.pt",
+          "bytes": 1168376,
+          "sha256": "c112c51d865699f751cf8324c66c9baf5b0129888fd9786ce3c1cfde0a7b9cb1",
+          "trainer_seconds": 1072.0472600460052
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_476.pt",
+          "bytes": 1168376,
+          "sha256": "1fff53a4dd4f93936b85789304c1b293c6bba919a71b2e43df341ae2ca919b72",
+          "trainer_seconds": 1123.4533431529999
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_501.pt",
+          "bytes": 1168376,
+          "sha256": "41c6e60c5ba7866e7fd2aaff7de985dd47b0f69d1122e3b16b0f632760ebfd05",
+          "trainer_seconds": 1173.9014060497284
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_51.pt",
+          "bytes": 1167971,
+          "sha256": "ebe73770a97f3de5ba40e9731cd9968c4d87d20c9c1d037f14e09a50bf00ceec",
+          "trainer_seconds": 167.8861701488495
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_526.pt",
+          "bytes": 1168376,
+          "sha256": "fd54eaa2f3fca1b7b82d3d5feecec3176d5e792a4cd395392bfa776db9c411f4",
+          "trainer_seconds": 1226.8665220737457
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_551.pt",
+          "bytes": 1168376,
+          "sha256": "f3942620f8d3d5397018b949eda7375e7bb95852d407e1542735b8da545662b4",
+          "trainer_seconds": 1278.7376148700714
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_576.pt",
+          "bytes": 1168376,
+          "sha256": "4f2ba791154aba1044cde997eb70972e14e310029f5458b5a15764e5963fd7d6",
+          "trainer_seconds": 1332.1087393760681
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_601.pt",
+          "bytes": 1168376,
+          "sha256": "8c5fe3222f479a28293300e10f5158663badb619067d6099173efa940f366940",
+          "trainer_seconds": 1386.469884634018
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_626.pt",
+          "bytes": 1168376,
+          "sha256": "2c9f104fd9abf8c3cadd742e89a77e3fa0fc8fca3ed2a1b2a01bafb7b8bb8195",
+          "trainer_seconds": 1438.4699802398682
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_651.pt",
+          "bytes": 1168376,
+          "sha256": "91ad199a555bc368ee4271dd3e0a25867e7d7c9fd9d7c46c4498381ee256875a",
+          "trainer_seconds": 1493.2351343631744
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_676.pt",
+          "bytes": 1168376,
+          "sha256": "67f2c9c9666a749d7f96ec3351cefd5137754b9db0a2d6415dabc45a56238ca8",
+          "trainer_seconds": 1550.436341047287
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_701.pt",
+          "bytes": 1168376,
+          "sha256": "56f0246ef8dd30e7d018634d9933d62c3efdf9f04f72a7227cfd044f19a49daa",
+          "trainer_seconds": 1604.342478275299
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_726.pt",
+          "bytes": 1168376,
+          "sha256": "b017f2a8403ceb2183226b6c04d130de0a93d705520ae513b05c94758409a1ab",
+          "trainer_seconds": 1658.626623392105
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_751.pt",
+          "bytes": 1168376,
+          "sha256": "81222c281be24552fe1b8918b51b82960cfa972fa9beb397e565b65a6022b7df",
+          "trainer_seconds": 1711.0637295246124
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_76.pt",
+          "bytes": 1167971,
+          "sha256": "98e88d62db7bab3a5921d59c36bdf2930b835a05a85b2c73e45d09af094bc502",
+          "trainer_seconds": 243.0567648410797
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_776.pt",
+          "bytes": 1168376,
+          "sha256": "6a69f4106b589b011a742e2da796428f09fbb75ab89821ddba6376e8dbb64930",
+          "trainer_seconds": 1762.3808121681213
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_801.pt",
+          "bytes": 1168376,
+          "sha256": "be65006a7372dfaaa706b7768fdcff34c61dde039ce2cbecd7b4b0beafc2053f",
+          "trainer_seconds": 1814.610913991928
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_826.pt",
+          "bytes": 1168376,
+          "sha256": "0bc1f119868fc136682d4737f8c10eff4b190c9d4ce9038a43eab0d021463ef8",
+          "trainer_seconds": 1865.8889956474304
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_851.pt",
+          "bytes": 1168376,
+          "sha256": "19fe8f338c4a19be22007c53112c893b4b245ed06b4743ae918521b2c2584dd2",
+          "trainer_seconds": 1914.8190279006958
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_876.pt",
+          "bytes": 1168376,
+          "sha256": "b836e8c4a7f684119c2c617074f3fd2ca84775150ca4c390850d53a029bee1d6",
+          "trainer_seconds": 1966.4231164455414
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_901.pt",
+          "bytes": 1168376,
+          "sha256": "3f9a675d89d593c65c8ba97171dad48c7b9d4afa397d5675c8aee1e509f9576d",
+          "trainer_seconds": 2016.979182958603
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_926.pt",
+          "bytes": 1168376,
+          "sha256": "c312048710e56d3b6f7a4d10939628969068254d4fc25e6ad21af2bff6e5269e",
+          "trainer_seconds": 2069.975301027298
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_951.pt",
+          "bytes": 1168376,
+          "sha256": "454e46f09c8a98d340cdc2ca03fdbc65f84c5ffab892d8a0788850d7a5eda893",
+          "trainer_seconds": 2119.7043499946594
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/ckpt_976.pt",
+          "bytes": 1168376,
+          "sha256": "90f6df06639a8c557f98bef4f6bf244e2ff286a7880aefb833dad9195b559c0f",
+          "trainer_seconds": 2168.428377866745
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/events.out.tfevents.1793148070.modal.8.0",
+          "bytes": 2373523,
+          "sha256": "0db5e9d8444bfb9b52f545fd766d0971052961dfea8cd36267e60d3a1760846d",
+          "trainer_seconds": 2170.4774210453033
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1/final_ckpt.pt",
+          "bytes": 1168418,
+          "sha256": "b59f8bbc83d954b4bc9a173a3c341a51af99f78eaf060452bd589bb8ed392dfd",
+          "trainer_seconds": 2170.669425010681
+        }
+      ],
+      "output_bytes": 55062958,
+      "prespecified_censored_steps": []
+    },
+    {
+      "job": {
+        "job_id": "stackcube-precision-screen-20261027-precision-lr-anneal-seed-1",
+        "method": "precision-lr-anneal",
+        "seed": 1,
+        "trainer_sha256": "878c99d186f2bd554d36999e437302c52c768204246c5d4c35ecb68a34116a24",
+        "gpu": "L40S",
+        "trainer_seconds_cap": 2700,
+        "requested_steps": 50000000,
+        "actual_steps_ceiling": 49971200
+      },
+      "state": "complete",
+      "dispatched_at": 1793148042.8604603,
+      "expires_at": 1793150742.8604603,
+      "function_call_id": "fc-01M5ZZ7H8DT5Q7PZX734AHGREM",
+      "admitted_at": 1793148112.2627325,
+      "queue_seconds": 69.40227222442627,
+      "trainer_sha256": "878c99d186f2bd554d36999e437302c52c768204246c5d4c35ecb68a34116a24",
+      "gpu_requested": "L40S",
+      "confirmation_queries": 0,
+      "new_training_processes": 1,
+      "gpu_actual_name": "NVIDIA L40S",
+      "versions": {
+        "torch": "2.6.0+cu124",
+        "mani_skill": "3.0.0b21",
+        "sapien": "3.0.0b1",
+        "numpy": "1.26.4",
+        "gymnasium": "0.29.1"
+      },
+      "subprocess_started_at": 1793148115.3083131,
+      "trainer_process_seconds": 2466.69422551,
+      "return_code": 0,
+      "nonfinite_diagnostic_scalars": {},
+      "actual_steps": 49971200,
+      "completed_rollouts": 976,
+      "optimizer_step_upper_bound": 249856,
+      "built_in_evaluation_calls": 40,
+      "built_in_evaluation_transitions": 16000,
+      "built_in_evaluation_episodes": 320,
+      "stopped_early": false,
+      "optimizer_step_count": 156882,
+      "final_logstd_per_dimension": [
+        -2.0179426670074463,
+        -1.8726810216903687,
+        -2.072035074234009,
+        -2.096815347671509,
+        -0.29998934268951416,
+        -1.4893628358840942,
+        0.33901622891426086,
+        -1.3832871913909912
+      ],
+      "audit_trace_rows": 976,
+      "wrapper_seconds": 2470.7567577229997,
+      "completed_at": 1793150583.0195007,
+      "files": [
+        {
+          "path": "attempt.json",
+          "bytes": 145,
+          "sha256": "5cf7f5ebbb2c2a34ceede40f98635e33318fb76ecd68fb8cdd2063cdb4801f5f",
+          "trainer_seconds": 0.0
+        },
+        {
+          "path": "scalars.json",
+          "bytes": 4705004,
+          "sha256": "1145acb6e156f707d2496a157670ec0cfd04da3c8b95349880ce193b990475d7",
+          "trainer_seconds": 2467.6989357471466
+        },
+        {
+          "path": "trainer.py",
+          "bytes": 26382,
+          "sha256": "878c99d186f2bd554d36999e437302c52c768204246c5d4c35ecb68a34116a24",
+          "trainer_seconds": 0.0
+        },
+        {
+          "path": "work/train.log",
+          "bytes": 55985,
+          "sha256": "26d65f2700a9dd6dc1e3c56819b29b4eb654ee8a9a27fd75b13140553f774d7e",
+          "trainer_seconds": 2464.9418840408325
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_1.pt",
+          "bytes": 1167438,
+          "sha256": "fe0b2ad4d99fc88f0c408a1da3ccfbf80fdf51e0d643f7ad977ad4604aa8f753",
+          "trainer_seconds": 20.659879446029663
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_101.pt",
+          "bytes": 1168376,
+          "sha256": "69fde942fd7587b7fad59886c1585f18abb9d7371474acf8d63a68d163adc00e",
+          "trainer_seconds": 302.5332067012787
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_126.pt",
+          "bytes": 1168376,
+          "sha256": "f17467ffe4a24f61d11fd8adffaaa50049d64fc2846b0e3c90478699e86732f0",
+          "trainer_seconds": 358.0432560443878
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_151.pt",
+          "bytes": 1168376,
+          "sha256": "0f638d23e2ba71a86eb67fdda373a019bfe533b28e5f61038b3f81799a9e5dbf",
+          "trainer_seconds": 407.2201852798462
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_176.pt",
+          "bytes": 1168376,
+          "sha256": "603e4596cfec96ff49c99d1365c59df7c599f573e14bd96e0f7c23f13d293857",
+          "trainer_seconds": 457.3251323699951
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_201.pt",
+          "bytes": 1168376,
+          "sha256": "af8d69b5eb2f1149ed3f9426b6450118371802f4371f10fa123bb0fdf1b8b4e0",
+          "trainer_seconds": 514.7942185401917
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_226.pt",
+          "bytes": 1168376,
+          "sha256": "c24400afbbdf5bbafd446d4d3d9afba1443a6afcf6a8f7607404450b4a682930",
+          "trainer_seconds": 569.7532572746277
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_251.pt",
+          "bytes": 1168376,
+          "sha256": "311111d52e90602778138e4c45d890a1b8ee7e26d64e8720dcf168716f11dd31",
+          "trainer_seconds": 622.7042579650879
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_26.pt",
+          "bytes": 1167971,
+          "sha256": "292c8eeeacd22efe8d9547e99ed04c06fefed90e8ce7286c1df7c1962f7180d9",
+          "trainer_seconds": 90.70020318031311
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_276.pt",
+          "bytes": 1168376,
+          "sha256": "bc03afd86cef0a4730f14c7a02b0918fd4374d5c715a55db8ba4688694af11de",
+          "trainer_seconds": 674.8802442550659
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_301.pt",
+          "bytes": 1168376,
+          "sha256": "7fae4e62222e77c39dc4f8615a905a6cd7191cc490cf98db1f7b7cd760d9f3a0",
+          "trainer_seconds": 728.2122521400452
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_326.pt",
+          "bytes": 1168376,
+          "sha256": "5603cc8830f5e913e0921e876c32c4dee9d7cf882f5a70a103c9f41843ce26fb",
+          "trainer_seconds": 781.4172549247742
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_351.pt",
+          "bytes": 1168376,
+          "sha256": "65d41a975c657a0dbefedae6b6f531636e25fa77e6770530b829120f6803273c",
+          "trainer_seconds": 838.7273333072662
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_376.pt",
+          "bytes": 1168376,
+          "sha256": "34454d5fb949c24a14f9a74cbbd35f6a75deac2342d5bc166224618eb2ab32d5",
+          "trainer_seconds": 895.4684011936188
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_401.pt",
+          "bytes": 1168376,
+          "sha256": "39fe6feb6fe5d1df085d7c72b92815be8a6338e9393565f671074d3f2f5d96ae",
+          "trainer_seconds": 949.402416229248
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_426.pt",
+          "bytes": 1168376,
+          "sha256": "8a9e818bc81d799c26886e2edb0f6101ad8cb8403c683a4f4321e67e3be64dfb",
+          "trainer_seconds": 1001.7424013614655
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_451.pt",
+          "bytes": 1168376,
+          "sha256": "c112c51d865699f751cf8324c66c9baf5b0129888fd9786ce3c1cfde0a7b9cb1",
+          "trainer_seconds": 1053.53937625885
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_476.pt",
+          "bytes": 1168376,
+          "sha256": "1fff53a4dd4f93936b85789304c1b293c6bba919a71b2e43df341ae2ca919b72",
+          "trainer_seconds": 1105.1133468151093
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_501.pt",
+          "bytes": 1168376,
+          "sha256": "41c6e60c5ba7866e7fd2aaff7de985dd47b0f69d1122e3b16b0f632760ebfd05",
+          "trainer_seconds": 1157.121325492859
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_51.pt",
+          "bytes": 1167971,
+          "sha256": "ebe73770a97f3de5ba40e9731cd9968c4d87d20c9c1d037f14e09a50bf00ceec",
+          "trainer_seconds": 162.52056050300598
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_526.pt",
+          "bytes": 1168376,
+          "sha256": "173cf7cf1a0017f6a6ef59f220433a2c5bd0a617ded9ecd326c743b8d0283070",
+          "trainer_seconds": 1211.1633427143097
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_551.pt",
+          "bytes": 1168376,
+          "sha256": "8d27ebeb8a7f2bb645c4851d6c5186cd3e87679f3f8de3b395297b5d6cac33d7",
+          "trainer_seconds": 1269.1014330387115
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_576.pt",
+          "bytes": 1168376,
+          "sha256": "2409ab54de1f88ae62ddb586d48ea1f1431e965e19605f6920f2ecf59d529e8a",
+          "trainer_seconds": 1331.9846165180206
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_601.pt",
+          "bytes": 1168376,
+          "sha256": "0dac9d6b3bc17d48190136901c26ca8980132f841c67264f28644767835833d0",
+          "trainer_seconds": 1399.6378898620605
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_626.pt",
+          "bytes": 1168376,
+          "sha256": "0d99c1639266c9c6cf24b18a93e83b95318479daf46d4743af67d1013a3056c6",
+          "trainer_seconds": 1468.9661946296692
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_651.pt",
+          "bytes": 1168376,
+          "sha256": "3a17643c3f1402bfb5fb867d39e2c32d5bf34f76926ea89bc488be01ad4f4f67",
+          "trainer_seconds": 1538.3655006885529
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_676.pt",
+          "bytes": 1168376,
+          "sha256": "63cd7f74a6ec3e4e5df4aff525355a7d2336d37e192442bec370476f585d39c0",
+          "trainer_seconds": 1609.6198415756226
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_701.pt",
+          "bytes": 1168376,
+          "sha256": "69800ad2349c93084ce4fdefcef295875e32e88c71b9f52ea50aa54bb5a3f7f9",
+          "trainer_seconds": 1681.5291950702667
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_726.pt",
+          "bytes": 1168376,
+          "sha256": "25d4f58e15277cd802f3bd8efbb579e3607f499685d24dd73eeed30530aee0e0",
+          "trainer_seconds": 1753.0945417881012
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_751.pt",
+          "bytes": 1168376,
+          "sha256": "5946f8b0fe501de9e79be4bd8bf3ed09ffcef24dec5718f55da99caf5a14aa36",
+          "trainer_seconds": 1825.7889065742493
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_76.pt",
+          "bytes": 1167971,
+          "sha256": "98e88d62db7bab3a5921d59c36bdf2930b835a05a85b2c73e45d09af094bc502",
+          "trainer_seconds": 235.08493208885193
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_776.pt",
+          "bytes": 1168376,
+          "sha256": "3ae55cde55a048aff3adb74ae335e4d19e011da3c56e186693657e3c04aa5388",
+          "trainer_seconds": 1897.2912466526031
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_801.pt",
+          "bytes": 1168376,
+          "sha256": "e2289f43cad0537f9009b06ca55640f3c865c66215498bcc8bd7975dee338874",
+          "trainer_seconds": 1968.8705878257751
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_826.pt",
+          "bytes": 1168376,
+          "sha256": "20ce29a227de0eb1370d6b45ecfc68b33bbf6161ac76cbbefdd395ef09c2d90d",
+          "trainer_seconds": 2039.194905757904
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_851.pt",
+          "bytes": 1168376,
+          "sha256": "d117aa1da3c09a70ff59608ae1abbebd647a197a9db7a5a605aa0636b69d6ad8",
+          "trainer_seconds": 2110.0542335510254
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_876.pt",
+          "bytes": 1168376,
+          "sha256": "b4c3533c101e470f16a859cf830756f9aabaa7bb3a826fa4bcd311c675f49c69",
+          "trainer_seconds": 2180.479553461075
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_901.pt",
+          "bytes": 1168376,
+          "sha256": "eda7bc89ab334d238d9400f20c9c8412835bc69083bed09d64c200f41059b3c3",
+          "trainer_seconds": 2250.2968616485596
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_926.pt",
+          "bytes": 1168376,
+          "sha256": "606eac0dd8a464bff40618dd88df01b76b2d283029ae09c2bfd8f3fec6a0f9f9",
+          "trainer_seconds": 2320.8191833496094
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_951.pt",
+          "bytes": 1168376,
+          "sha256": "dacefdd54037199820ad405dc4e5339943bc29599891cf7d98966f84e1856118",
+          "trainer_seconds": 2392.4095249176025
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/ckpt_976.pt",
+          "bytes": 1168376,
+          "sha256": "c4d5c741aefe7c272a25068441487ca99255855c50cf3cf5fff79bc65c8f03dd",
+          "trainer_seconds": 2461.754824399948
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/events.out.tfevents.1793148132.modal.8.0",
+          "bytes": 2373518,
+          "sha256": "3c385f65039bc8adef4da98dbdb25c42f9db080b7ce8b955d87b62f072747509",
+          "trainer_seconds": 2464.6238780021667
+        },
+        {
+          "path": "work/runs/stackcube-precision-screen-20261027-precision-lr-anneal-seed-1/final_ckpt.pt",
+          "bytes": 1168418,
+          "sha256": "0bc3fb0663866a74a043f63252f22d5a8775e34441de35e65b731fe047e1d745",
+          "trainer_seconds": 2464.620877981186
+        }
+      ],
+      "output_bytes": 55062339,
+      "prespecified_censored_steps": []
+    }
+  ],
+  "development_curves": {
+    "precision-constant": [
+      {
+        "steps": 25600000,
+        "successes": 117,
+        "episodes": 128,
+        "trainer_seconds": 1161.8075528144836,
+        "point": "prespecified",
+        "weights_sha256": "42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd",
+        "native_checkpoint_sha256": "41c6e60c5ba7866e7fd2aaff7de985dd47b0f69d1122e3b16b0f632760ebfd05",
+        "evaluation_seconds": 61.676709117,
+        "evaluation_queue_seconds": 5.9771575927734375,
+        "gpu_actual_name": "NVIDIA L40S",
+        "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd/development/result.json"
+      },
+      {
+        "steps": 38400000,
+        "successes": 126,
+        "episodes": 128,
+        "trainer_seconds": 1729.415236711502,
+        "point": "prespecified",
+        "weights_sha256": "96e3c7b0461506568370937bdfdbc4d29d4047054c5edee1533161eb603b55cd",
+        "native_checkpoint_sha256": "4b14fd27a01a2ef412f3cf8242faaa37f1963a31856e2aa72a0b579e4f28f3fa",
+        "evaluation_seconds": 28.127343363999998,
+        "evaluation_queue_seconds": 2.6614060401916504,
+        "gpu_actual_name": "NVIDIA L40S",
+        "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/96e3c7b0461506568370937bdfdbc4d29d4047054c5edee1533161eb603b55cd/development/result.json"
+      },
+      {
+        "steps": 49971200,
+        "successes": 127,
+        "episodes": 128,
+        "trainer_seconds": 2293.4295914173126,
+        "point": "final",
+        "weights_sha256": "ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16",
+        "native_checkpoint_sha256": "27e6655e122244b6777c9c388b52a87bab91ffa861bf39bfa0cbfec72f755791",
+        "evaluation_seconds": 28.455743604,
+        "evaluation_queue_seconds": 1.3114013671875,
+        "gpu_actual_name": "NVIDIA L40S",
+        "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16/development/result.json"
+      }
+    ],
+    "precision-entropy-anneal": [
+      {
+        "steps": 25600000,
+        "successes": 117,
+        "episodes": 128,
+        "trainer_seconds": 1173.9014060497284,
+        "point": "prespecified",
+        "weights_sha256": "42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd",
+        "native_checkpoint_sha256": "41c6e60c5ba7866e7fd2aaff7de985dd47b0f69d1122e3b16b0f632760ebfd05",
+        "evaluation_seconds": 61.676709117,
+        "evaluation_queue_seconds": 5.9771575927734375,
+        "gpu_actual_name": "NVIDIA L40S",
+        "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd/development/result.json"
+      },
+      {
+        "steps": 38400000,
+        "successes": 116,
+        "episodes": 128,
+        "trainer_seconds": 1711.0637295246124,
+        "point": "prespecified",
+        "weights_sha256": "057ee809557304d21b8a595896a28ce63e9e54608fefa1dc1cfcb68442ea00a0",
+        "native_checkpoint_sha256": "81222c281be24552fe1b8918b51b82960cfa972fa9beb397e565b65a6022b7df",
+        "evaluation_seconds": 30.19840571,
+        "evaluation_queue_seconds": 4.4692182540893555,
+        "gpu_actual_name": "NVIDIA L40S",
+        "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/057ee809557304d21b8a595896a28ce63e9e54608fefa1dc1cfcb68442ea00a0/development/result.json"
+      },
+      {
+        "steps": 49971200,
+        "successes": 121,
+        "episodes": 128,
+        "trainer_seconds": 2170.669425010681,
+        "point": "final",
+        "weights_sha256": "2b5e3a683a599817447486fb51f356b681ed8ebdc15e0d75de0c9c5c019a9afa",
+        "native_checkpoint_sha256": "b59f8bbc83d954b4bc9a173a3c341a51af99f78eaf060452bd589bb8ed392dfd",
+        "evaluation_seconds": 26.032142645,
+        "evaluation_queue_seconds": 1.761544942855835,
+        "gpu_actual_name": "NVIDIA L40S",
+        "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/2b5e3a683a599817447486fb51f356b681ed8ebdc15e0d75de0c9c5c019a9afa/development/result.json"
+      }
+    ],
+    "precision-lr-anneal": [
+      {
+        "steps": 25600000,
+        "successes": 117,
+        "episodes": 128,
+        "trainer_seconds": 1157.121325492859,
+        "point": "prespecified",
+        "weights_sha256": "42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd",
+        "native_checkpoint_sha256": "41c6e60c5ba7866e7fd2aaff7de985dd47b0f69d1122e3b16b0f632760ebfd05",
+        "evaluation_seconds": 61.676709117,
+        "evaluation_queue_seconds": 5.9771575927734375,
+        "gpu_actual_name": "NVIDIA L40S",
+        "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd/development/result.json"
+      },
+      {
+        "steps": 38400000,
+        "successes": 123,
+        "episodes": 128,
+        "trainer_seconds": 1825.7889065742493,
+        "point": "prespecified",
+        "weights_sha256": "e8ef1ccc6ec0f0a3f16a0c9ecb62cec5709d95fb4645b8f16531b27f635bdfb8",
+        "native_checkpoint_sha256": "5946f8b0fe501de9e79be4bd8bf3ed09ffcef24dec5718f55da99caf5a14aa36",
+        "evaluation_seconds": 26.730713183000002,
+        "evaluation_queue_seconds": 7.885710954666138,
+        "gpu_actual_name": "NVIDIA L40S",
+        "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/e8ef1ccc6ec0f0a3f16a0c9ecb62cec5709d95fb4645b8f16531b27f635bdfb8/development/result.json"
+      },
+      {
+        "steps": 49971200,
+        "successes": 127,
+        "episodes": 128,
+        "trainer_seconds": 2464.620877981186,
+        "point": "final",
+        "weights_sha256": "06cf7efb0535193b96193d21a46269667274570b3adf2984763da80f981a1e42",
+        "native_checkpoint_sha256": "0bc3fb0663866a74a043f63252f22d5a8775e34441de35e65b731fe047e1d745",
+        "evaluation_seconds": 24.965432836,
+        "evaluation_queue_seconds": 4.494362115859985,
+        "gpu_actual_name": "NVIDIA L40S",
+        "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/06cf7efb0535193b96193d21a46269667274570b3adf2984763da80f981a1e42/development/result.json"
+      }
+    ]
+  },
+  "evaluations": [
+    {
+      "steps": 25600000,
+      "successes": 117,
+      "episodes": 128,
+      "trainer_seconds": 1161.8075528144836,
+      "point": "prespecified",
+      "weights_sha256": "42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd",
+      "native_checkpoint_sha256": "41c6e60c5ba7866e7fd2aaff7de985dd47b0f69d1122e3b16b0f632760ebfd05",
+      "evaluation_seconds": 61.676709117,
+      "evaluation_queue_seconds": 5.9771575927734375,
+      "gpu_actual_name": "NVIDIA L40S",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd/development/result.json"
+    },
+    {
+      "steps": 25600000,
+      "successes": 117,
+      "episodes": 128,
+      "trainer_seconds": 1173.9014060497284,
+      "point": "prespecified",
+      "weights_sha256": "42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd",
+      "native_checkpoint_sha256": "41c6e60c5ba7866e7fd2aaff7de985dd47b0f69d1122e3b16b0f632760ebfd05",
+      "evaluation_seconds": 61.676709117,
+      "evaluation_queue_seconds": 5.9771575927734375,
+      "gpu_actual_name": "NVIDIA L40S",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd/development/result.json"
+    },
+    {
+      "steps": 25600000,
+      "successes": 117,
+      "episodes": 128,
+      "trainer_seconds": 1157.121325492859,
+      "point": "prespecified",
+      "weights_sha256": "42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd",
+      "native_checkpoint_sha256": "41c6e60c5ba7866e7fd2aaff7de985dd47b0f69d1122e3b16b0f632760ebfd05",
+      "evaluation_seconds": 61.676709117,
+      "evaluation_queue_seconds": 5.9771575927734375,
+      "gpu_actual_name": "NVIDIA L40S",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/42069546825f5a74d6f3cccd1a84b7d0200f284aa7c34e3ce7c50f4b72a522fd/development/result.json"
+    },
+    {
+      "steps": 38400000,
+      "successes": 126,
+      "episodes": 128,
+      "trainer_seconds": 1729.415236711502,
+      "point": "prespecified",
+      "weights_sha256": "96e3c7b0461506568370937bdfdbc4d29d4047054c5edee1533161eb603b55cd",
+      "native_checkpoint_sha256": "4b14fd27a01a2ef412f3cf8242faaa37f1963a31856e2aa72a0b579e4f28f3fa",
+      "evaluation_seconds": 28.127343363999998,
+      "evaluation_queue_seconds": 2.6614060401916504,
+      "gpu_actual_name": "NVIDIA L40S",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/96e3c7b0461506568370937bdfdbc4d29d4047054c5edee1533161eb603b55cd/development/result.json"
+    },
+    {
+      "steps": 38400000,
+      "successes": 116,
+      "episodes": 128,
+      "trainer_seconds": 1711.0637295246124,
+      "point": "prespecified",
+      "weights_sha256": "057ee809557304d21b8a595896a28ce63e9e54608fefa1dc1cfcb68442ea00a0",
+      "native_checkpoint_sha256": "81222c281be24552fe1b8918b51b82960cfa972fa9beb397e565b65a6022b7df",
+      "evaluation_seconds": 30.19840571,
+      "evaluation_queue_seconds": 4.4692182540893555,
+      "gpu_actual_name": "NVIDIA L40S",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/057ee809557304d21b8a595896a28ce63e9e54608fefa1dc1cfcb68442ea00a0/development/result.json"
+    },
+    {
+      "steps": 38400000,
+      "successes": 123,
+      "episodes": 128,
+      "trainer_seconds": 1825.7889065742493,
+      "point": "prespecified",
+      "weights_sha256": "e8ef1ccc6ec0f0a3f16a0c9ecb62cec5709d95fb4645b8f16531b27f635bdfb8",
+      "native_checkpoint_sha256": "5946f8b0fe501de9e79be4bd8bf3ed09ffcef24dec5718f55da99caf5a14aa36",
+      "evaluation_seconds": 26.730713183000002,
+      "evaluation_queue_seconds": 7.885710954666138,
+      "gpu_actual_name": "NVIDIA L40S",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/e8ef1ccc6ec0f0a3f16a0c9ecb62cec5709d95fb4645b8f16531b27f635bdfb8/development/result.json"
+    },
+    {
+      "steps": 49971200,
+      "successes": 127,
+      "episodes": 128,
+      "trainer_seconds": 2293.4295914173126,
+      "point": "final",
+      "weights_sha256": "ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16",
+      "native_checkpoint_sha256": "27e6655e122244b6777c9c388b52a87bab91ffa861bf39bfa0cbfec72f755791",
+      "evaluation_seconds": 28.455743604,
+      "evaluation_queue_seconds": 1.3114013671875,
+      "gpu_actual_name": "NVIDIA L40S",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16/development/result.json"
+    },
+    {
+      "steps": 49971200,
+      "successes": 121,
+      "episodes": 128,
+      "trainer_seconds": 2170.669425010681,
+      "point": "final",
+      "weights_sha256": "2b5e3a683a599817447486fb51f356b681ed8ebdc15e0d75de0c9c5c019a9afa",
+      "native_checkpoint_sha256": "b59f8bbc83d954b4bc9a173a3c341a51af99f78eaf060452bd589bb8ed392dfd",
+      "evaluation_seconds": 26.032142645,
+      "evaluation_queue_seconds": 1.761544942855835,
+      "gpu_actual_name": "NVIDIA L40S",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/2b5e3a683a599817447486fb51f356b681ed8ebdc15e0d75de0c9c5c019a9afa/development/result.json"
+    },
+    {
+      "steps": 49971200,
+      "successes": 127,
+      "episodes": 128,
+      "trainer_seconds": 2464.620877981186,
+      "point": "final",
+      "weights_sha256": "06cf7efb0535193b96193d21a46269667274570b3adf2984763da80f981a1e42",
+      "native_checkpoint_sha256": "0bc3fb0663866a74a043f63252f22d5a8775e34441de35e65b731fe047e1d745",
+      "evaluation_seconds": 24.965432836,
+      "evaluation_queue_seconds": 4.494362115859985,
+      "gpu_actual_name": "NVIDIA L40S",
+      "durable_report_path": "frozen-evaluation-attempts/fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764/06cf7efb0535193b96193d21a46269667274570b3adf2984763da80f981a1e42/development/result.json"
+    }
+  ],
+  "cost_plan": {
+    "gpu_container_seconds_bound": 9720,
+    "gpu_cpu_ram_usd": 6.1228223999999996,
+    "conversion_cpu_usd": 0.018943199999999997,
+    "coordinator_usd": 0.019782,
+    "subtotal_usd": 6.1615476,
+    "batch_cap_usd": 7.0,
+    "reserve_usd": 0.8384524000000004
+  },
+  "started_at": 1793148035.7665296,
+  "completed_at": 1793150775.5775962
+}

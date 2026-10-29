@@ -1,0 +1,127 @@
+[
+  {
+    "path": "attempt.json",
+    "bytes": 117,
+    "sha256": "035da9f1bf06bc549e9e7efba32f4d43751e99bfb450eed8335bed479575fd0e"
+  },
+  {
+    "path": "receipt.json",
+    "bytes": 4625,
+    "sha256": "06f4af3c2efe6e18a71eac13d9c77ad8f62033e98db73aff000c70c6be40a5f2"
+  },
+  {
+    "path": "run/actor-final/manifest.json",
+    "bytes": 287,
+    "sha256": "a04abee6e8a32ba3cd35f1a915fb46e435ecdc342c7d4bb71819963107bc0286"
+  },
+  {
+    "path": "run/actor-final/weights.json",
+    "bytes": 1687702,
+    "sha256": "bf75897ad4bc910ec02b22a73f583118bf767f57f8108f4948b57c4e47adef53"
+  },
+  {
+    "path": "run/actor-final-state.npz",
+    "bytes": 913015,
+    "sha256": "41fccc68dae17631a558aeeb158d00602b756961a9c04d41231f3295d2783ae8"
+  },
+  {
+    "path": "run/actor-final-trajectory.npz",
+    "bytes": 1143879,
+    "sha256": "d80739d6faf41cb959852cfb1a13c263cc78cddc7549a393ee7fe361f0a2f84e"
+  },
+  {
+    "path": "run/actor-step-0/manifest.json",
+    "bytes": 287,
+    "sha256": "8f658f26c2aa0d026d8bb385410c273f7c8efe8fc8f3f4c19b852247320f8e26"
+  },
+  {
+    "path": "run/actor-step-0/weights.json",
+    "bytes": 1687178,
+    "sha256": "6f768e630c4751d41ed3bd032a21078ea44d12c219c00bf6e606caae0e4c149f"
+  },
+  {
+    "path": "run/actor-step-0-state.npz",
+    "bytes": 899760,
+    "sha256": "457eb9f6024091f0d308d5452610c42ed434a449df83835f53c3287dba4baf90"
+  },
+  {
+    "path": "run/actor-step-102400/manifest.json",
+    "bytes": 287,
+    "sha256": "c51e9354e71fb7afac880b0621e83cb51fb64c90b7c26d39b93624daedc66d8e"
+  },
+  {
+    "path": "run/actor-step-102400/weights.json",
+    "bytes": 1687770,
+    "sha256": "d0457466b1d2a2c92c513c68cfe1c560189eeb80d51862a987de7b48fd8bc7a5"
+  },
+  {
+    "path": "run/actor-step-102400-state.npz",
+    "bytes": 910891,
+    "sha256": "feff4f6b48071aa3554b224e3920c6a043759a85f1ade36685c2da05f299a45a"
+  },
+  {
+    "path": "run/actor-step-102400-trajectory.npz",
+    "bytes": 1116020,
+    "sha256": "8049ad3156d37714d8184144db3a9e048a4d13c2453c97767367ce258080ffc1"
+  },
+  {
+    "path": "run/actor-step-256000/manifest.json",
+    "bytes": 287,
+    "sha256": "a04abee6e8a32ba3cd35f1a915fb46e435ecdc342c7d4bb71819963107bc0286"
+  },
+  {
+    "path": "run/actor-step-256000/weights.json",
+    "bytes": 1687702,
+    "sha256": "bf75897ad4bc910ec02b22a73f583118bf767f57f8108f4948b57c4e47adef53"
+  },
+  {
+    "path": "run/actor-step-256000-state.npz",
+    "bytes": 913015,
+    "sha256": "41fccc68dae17631a558aeeb158d00602b756961a9c04d41231f3295d2783ae8"
+  },
+  {
+    "path": "run/actor-step-256000-trajectory.npz",
+    "bytes": 1143879,
+    "sha256": "d80739d6faf41cb959852cfb1a13c263cc78cddc7549a393ee7fe361f0a2f84e"
+  },
+  {
+    "path": "run/actor-step-51200/manifest.json",
+    "bytes": 287,
+    "sha256": "a800551cf5abea6bbaf60f4dfb58560b300eed53cf7fc23a8bdcd376f97d68c5"
+  },
+  {
+    "path": "run/actor-step-51200/weights.json",
+    "bytes": 1687549,
+    "sha256": "98e380c5c1b85b08cf860d80426d1f94da4648650eccf9364762dd828531bed1"
+  },
+  {
+    "path": "run/actor-step-51200-state.npz",
+    "bytes": 910305,
+    "sha256": "68aaf201a1a10094029849d8b981a2a2e074804f6bece43c2de776d4581e59fb"
+  },
+  {
+    "path": "run/actor-step-51200-trajectory.npz",
+    "bytes": 1113789,
+    "sha256": "7b419b23d16664af8794c03e35985831f4ba55e068404708614be095ef7cff6c"
+  },
+  {
+    "path": "run/learning.jsonl",
+    "bytes": 35105,
+    "sha256": "4f79535fc04e4c27f77ae8d34a90cb55238600bde646f93ef4087afdaf3b5d4f"
+  },
+  {
+    "path": "run/metadata.json",
+    "bytes": 2138,
+    "sha256": "d7ba1923fe4e73d992facb69207f94354c22cf72e435a7bad4fb04036da19f84"
+  },
+  {
+    "path": "run/report.json",
+    "bytes": 4171,
+    "sha256": "96b53fe6e20c8b5079348be59963cfcf85997782b48a86fe8ad46531a5a6c7fb"
+  },
+  {
+    "path": "training.log",
+    "bytes": 920,
+    "sha256": "c90e9e2e92225ee24f43623fb41608c357567835f745abcb6cb33cec6559d684"
+  }
+]

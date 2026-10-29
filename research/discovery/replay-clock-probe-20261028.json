@@ -1,0 +1,132 @@
+{
+  "state": "passed",
+  "seconds": 0.12563604197930545,
+  "source_sha256": "4a2e18eb33bc2a6a2ef189f7ac44b4e4dd4bae56f10aba443ed3725dc98f68da",
+  "scalar_assignments": 640000,
+  "neural_optimizer_calls": 0,
+  "robot_transitions": 0,
+  "records": [
+    {
+      "name": "historical-recipe-clock",
+      "gamma": 0.9,
+      "tau": 0.01,
+      "critic_updates_per_transition": 0.5,
+      "policy_delay": 1,
+      "learning_rate": 0.0003,
+      "relaxation_eigenvalue_per_critic_update": 0.999,
+      "target_half_life_critic_updates": 692.8005491785002,
+      "target_half_life_transitions": 1385.6010983570004,
+      "actor_or_temperature_lr_times_updates_per_transition": 0.00015,
+      "checkpoints": {
+        "51200": {
+          "target": 0.4999999999962331,
+          "true_fixed_point": 0.5000000000000001,
+          "target_fraction_of_fixed_point": 0.999999999992466
+        },
+        "102400": {
+          "target": 0.49999999999994177,
+          "true_fixed_point": 0.5000000000000001,
+          "target_fraction_of_fixed_point": 0.9999999999998833
+        },
+        "256000": {
+          "target": 0.49999999999994177,
+          "true_fixed_point": 0.5000000000000001,
+          "target_fraction_of_fixed_point": 0.9999999999998833
+        },
+        "512000": {
+          "target": 0.49999999999994177,
+          "true_fixed_point": 0.5000000000000001,
+          "target_fraction_of_fixed_point": 0.9999999999998833
+        },
+        "1024000": {
+          "target": 0.49999999999994177,
+          "true_fixed_point": 0.5000000000000001,
+          "target_fraction_of_fixed_point": 0.9999999999998833
+        }
+      }
+    },
+    {
+      "name": "fast-recipe-clock",
+      "gamma": 0.99,
+      "tau": 0.005,
+      "critic_updates_per_transition": 0.0625,
+      "policy_delay": 3,
+      "learning_rate": 0.001,
+      "relaxation_eigenvalue_per_critic_update": 0.99995,
+      "target_half_life_critic_updates": 13862.597034721968,
+      "target_half_life_transitions": 221801.5525555515,
+      "actor_or_temperature_lr_times_updates_per_transition": 2.0833333333333333e-05,
+      "checkpoints": {
+        "51200": {
+          "target": 0.7392980985787447,
+          "true_fixed_point": 4.999999999999996,
+          "target_fraction_of_fixed_point": 0.14785961971574907
+        },
+        "102400": {
+          "target": 1.3692838614450495,
+          "true_fixed_point": 4.999999999999996,
+          "target_fraction_of_fixed_point": 0.2738567722890102
+        },
+        "256000": {
+          "target": 2.7534001133586696,
+          "true_fixed_point": 4.999999999999996,
+          "target_fraction_of_fixed_point": 0.5506800226717344
+        },
+        "512000": {
+          "target": 3.9905577898685456,
+          "true_fixed_point": 4.999999999999996,
+          "target_fraction_of_fixed_point": 0.7981115579737098
+        },
+        "1024000": {
+          "target": 4.796205284880733,
+          "true_fixed_point": 4.999999999999996,
+          "target_fraction_of_fixed_point": 0.9592410569761474
+        }
+      }
+    },
+    {
+      "name": "fast-with-only-discount-restored",
+      "gamma": 0.9,
+      "tau": 0.005,
+      "critic_updates_per_transition": 0.0625,
+      "policy_delay": 3,
+      "learning_rate": 0.001,
+      "relaxation_eigenvalue_per_critic_update": 0.9995,
+      "target_half_life_critic_updates": 1385.947758641408,
+      "target_half_life_transitions": 22175.164138262528,
+      "actor_or_temperature_lr_times_updates_per_transition": 2.0833333333333333e-05,
+      "checkpoints": {
+        "51200": {
+          "target": 0.3990921256909158,
+          "true_fixed_point": 0.5000000000000001,
+          "target_fraction_of_fixed_point": 0.7981842513818314
+        },
+        "102400": {
+          "target": 0.47963520180484187,
+          "true_fixed_point": 0.5000000000000001,
+          "target_fraction_of_fixed_point": 0.9592704036096835
+        },
+        "256000": {
+          "target": 0.49983260392507256,
+          "true_fixed_point": 0.5000000000000001,
+          "target_fraction_of_fixed_point": 0.9996652078501449
+        },
+        "512000": {
+          "target": 0.4999999439571052,
+          "true_fixed_point": 0.5000000000000001,
+          "target_fraction_of_fixed_point": 0.9999998879142101
+        },
+        "1024000": {
+          "target": 0.4999999999998946,
+          "true_fixed_point": 0.5000000000000001,
+          "target_fraction_of_fixed_point": 0.999999999999789
+        }
+      }
+    }
+  ],
+  "fast_vs_historical_backup_half_life_ratio": 160.07605133869797,
+  "discount_restored_vs_historical_half_life_ratio": 16.004003002420465,
+  "historical_vs_fast_actor_lr_clock_ratio": 7.199999999999999,
+  "limits": "Instantaneously fitted scalar critic, fixed reward/policy, no entropy, features, Adam, replay or actor improvement. Clock plausibility only; cannot identify the robot regression cause.",
+  "conclusion": "Changing update cadence, discount and target EMA together changes bootstrap relaxation in interaction units by about160x; restoring discount alone leaves about16x difference. No robot causal or efficiency claim."
+}

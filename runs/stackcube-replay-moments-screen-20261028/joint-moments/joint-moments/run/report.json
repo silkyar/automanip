@@ -1,0 +1,128 @@
+{
+  "state": "complete",
+  "config": {
+    "method": "joint-moments",
+    "seed": 1,
+    "num_envs": 64,
+    "total_transitions": 1024000,
+    "max_seconds": 600.0,
+    "batch_size": 2048,
+    "collection_block": 128,
+    "critic_updates_per_block": 8,
+    "learning_starts": 5000,
+    "replay_capacity": 1048576,
+    "critic_width": 256,
+    "gamma": 0.99,
+    "learning_rate": 0.001,
+    "policy_delay": 3
+  },
+  "versions": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "gpu": "NVIDIA L40S",
+  "source_sha256": "e753b684f97b475dcadd7bdf1736395a79485ea4f431fa8f04083ffb89945d7f",
+  "counts": {
+    "transitions": 596544,
+    "vector_step_calls": 9321,
+    "completed_episodes": 11904,
+    "explicit_reset_episodes": 64,
+    "inference_seconds": 6.364650139001853,
+    "simulator_seconds": 163.33761894199762,
+    "replay_seconds": 6.464686259999807,
+    "learner_seconds": 396.44192502699906,
+    "export_seconds": 0.8961820810000791,
+    "training_success_at_end_sum": 0,
+    "initial_random_transitions": 5056
+  },
+  "source_files_sha256": {
+    "replay_robot.py": "e753b684f97b475dcadd7bdf1736395a79485ea4f431fa8f04083ffb89945d7f",
+    "replay_learner.py": "009b4662a3b248e8e677905e2e7cafe2a69611a9259ab5fe91ec0cbe3b2efdfc",
+    "sac_baseline.py": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca"
+  },
+  "checkpoint_exports": [
+    {
+      "label": "actor-step-0",
+      "transitions": 0,
+      "elapsed_seconds": 7.551294822,
+      "weights_sha256": "6f768e630c4751d41ed3bd032a21078ea44d12c219c00bf6e606caae0e4c149f",
+      "critic_updates": 0,
+      "actor_updates": 0
+    },
+    {
+      "label": "actor-step-51200",
+      "transitions": 51200,
+      "elapsed_seconds": 54.35758587,
+      "weights_sha256": "a0961334b9d39891c704e6905ae9ced0194c618938b8fc6c7af098686dafd859",
+      "critic_updates": 2888,
+      "actor_updates": 962
+    },
+    {
+      "label": "actor-step-102400",
+      "transitions": 102400,
+      "elapsed_seconds": 103.920943059,
+      "weights_sha256": "a03d80f62eeb875297f6771fa663f712d1c5f28dea42891b789a90de9835f3fb",
+      "critic_updates": 6088,
+      "actor_updates": 2029
+    },
+    {
+      "label": "actor-step-256000",
+      "transitions": 256000,
+      "elapsed_seconds": 252.73882093300003,
+      "weights_sha256": "26c90e6d717e82da825db2abef7d8c953bc3feee9e20ac229aafbaec3dc824ac",
+      "critic_updates": 15688,
+      "actor_updates": 5229
+    },
+    {
+      "label": "actor-step-512000",
+      "transitions": 512000,
+      "elapsed_seconds": 501.186171135,
+      "weights_sha256": "2665a598bd913e097a3b858bdf3f4597befbcbb411ba0183db50960ea227e520",
+      "critic_updates": 31688,
+      "actor_updates": 10562
+    },
+    {
+      "label": "actor-final",
+      "transitions": 596544,
+      "elapsed_seconds": 583.514073985,
+      "weights_sha256": "582137a17b33c0f6841dee86e84a05fbe34159524caca85dabf97ad1dd4e459c",
+      "critic_updates": 36968,
+      "actor_updates": 12322
+    }
+  ],
+  "optimizer_work": {
+    "critic_forward_rows": 353312768,
+    "actor_forward_rows": 100945920,
+    "critic_sampled_rows": 75710464,
+    "actor_sampled_rows": 25235456,
+    "critic_optimizer_calls": 36968,
+    "actor_optimizer_calls": 12322,
+    "alpha_optimizer_calls": 12322
+  },
+  "new_teacher_transitions": 0,
+  "demonstrations": 0,
+  "pretrained_weights": false,
+  "planning_queries": 0,
+  "extra_simulator_queries": 0,
+  "evaluation_transitions": 0,
+  "observation_dim": 48,
+  "action_dim": 8,
+  "horizon": 50,
+  "task_source_sha256": "ff76ae608f79ba3ea13334e61ccb72f291660f9461895c70e3c30f8390694440",
+  "algorithm": "Matched vectorized SAC/CrossQ-inspired moment study; not an official CrossQ reproduction",
+  "warmup_note": "BRN100000 critic updates; <=64000 updates here, so normalized arms remain in BN warmup.",
+  "elapsed_seconds": 583.51625735,
+  "stopped_by": "deadline",
+  "replay_size": 596544,
+  "critic_updates": 36968,
+  "actor_updates": 12322,
+  "expected_critic_updates_without_deadline": 36972,
+  "normalization_steps": [
+    36968,
+    36968,
+    36968
+  ]
+}

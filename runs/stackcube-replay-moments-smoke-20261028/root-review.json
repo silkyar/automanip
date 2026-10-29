@@ -1,0 +1,15 @@
+{
+  "state": "passed",
+  "trials": 3,
+  "new_training_transitions": 15360,
+  "critic_optimizer_calls": 24,
+  "actor_optimizer_calls": 6,
+  "critic_sampled_rows": 49152,
+  "initial_actor_hashes_identical": true,
+  "safe_policy_validation_count": 6,
+  "files": 36,
+  "bytes": 18961916,
+  "plan_sha256": "3d16e6e1eca537ba1396087590e74cfa94106c24fc3c3dced0ed5a34fb69553b",
+  "wrapper_seconds": 40.284164018999995,
+  "protected_evaluations": 0
+}

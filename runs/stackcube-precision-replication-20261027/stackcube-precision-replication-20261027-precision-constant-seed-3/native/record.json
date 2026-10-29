@@ -1,0 +1,333 @@
+{
+  "job": {
+    "job_id": "stackcube-precision-replication-20261027-precision-constant-seed-3",
+    "method": "precision-constant",
+    "seed": 3,
+    "trainer_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+    "gpu": "L40S",
+    "trainer_seconds_cap": 2700,
+    "requested_steps": 50000000,
+    "actual_steps_ceiling": 49971200
+  },
+  "state": "complete",
+  "dispatched_at": 1793187742.4424553,
+  "admitted_at": 1793187750.802999,
+  "queue_seconds": 8.360543727874756,
+  "expires_at": 1793190442.4424553,
+  "trainer_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+  "gpu_requested": "L40S",
+  "confirmation_queries": 0,
+  "new_training_processes": 1,
+  "gpu_actual_name": "NVIDIA L40S",
+  "versions": {
+    "torch": "2.6.0+cu124",
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "subprocess_started_at": 1793187753.920726,
+  "trainer_process_seconds": 2108.697150856,
+  "return_code": 0,
+  "nonfinite_diagnostic_scalars": {},
+  "actual_steps": 49971200,
+  "completed_rollouts": 976,
+  "optimizer_step_upper_bound": 249856,
+  "built_in_evaluation_calls": 40,
+  "built_in_evaluation_transitions": 16000,
+  "built_in_evaluation_episodes": 320,
+  "stopped_early": false,
+  "optimizer_step_count": 72352,
+  "final_logstd_per_dimension": [
+    -1.7774044275283813,
+    -1.61854887008667,
+    -1.8092490434646606,
+    -1.8553407192230225,
+    -0.3743028938770294,
+    -1.2412703037261963,
+    -0.03921045735478401,
+    -1.245700716972351
+  ],
+  "audit_trace_rows": 976,
+  "wrapper_seconds": 2113.0645973240003,
+  "completed_at": 1793189863.867598,
+  "files": [
+    {
+      "path": "attempt.json",
+      "bytes": 148,
+      "sha256": "4bd1fafd30006eeb22947541c773434688ae229243c24a7a2a508a5d8355b86b",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "scalars.json",
+      "bytes": 4704969,
+      "sha256": "6e578e3e79c30904c2791b0a27121e46ceb2443885b01f8fc5218da3c3e61513",
+      "trainer_seconds": 2109.7007579803467
+    },
+    {
+      "path": "trainer.py",
+      "bytes": 26381,
+      "sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "work/train.log",
+      "bytes": 56152,
+      "sha256": "bc551ef1ccdc7eb74b7e5b028eb5db720364365cf5ed7c025ec95cf16e32e9e4",
+      "trainer_seconds": 2106.917563199997
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "0e91025a96fdc123b5d7670e967d193d0e51b77dd459b4b4325bd80c15dc4d3e",
+      "trainer_seconds": 20.539499759674072
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_101.pt",
+      "bytes": 1168376,
+      "sha256": "4c8bee0867faf951e229d2ae39363a0d04c5b3a58315975b059bea440a7cef67",
+      "trainer_seconds": 304.5314610004425
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_126.pt",
+      "bytes": 1168376,
+      "sha256": "d9c3f12067b0395c83f00a81f116d9be1c0a42103d97b147954b92c3fd9ec12a",
+      "trainer_seconds": 360.63741397857666
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_151.pt",
+      "bytes": 1168376,
+      "sha256": "d9906f02d079dadf8b0d4355916ac6d2726a25879df11fc1b6ba2beaadc0fa05",
+      "trainer_seconds": 411.85902285575867
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_176.pt",
+      "bytes": 1168376,
+      "sha256": "a6ad8cda7cb84e811ebf27f3796585ed343c44ea518d1ec795e996de84a9335b",
+      "trainer_seconds": 462.5175919532776
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_201.pt",
+      "bytes": 1168376,
+      "sha256": "a261edd11b37db11c1e2b6a8b608527c0d2b46b44e13d7c93e1a4c0610aff335",
+      "trainer_seconds": 516.8554203510284
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_226.pt",
+      "bytes": 1168376,
+      "sha256": "fe348cb415330b78b233b6adb595e5362eb7a9ca6318d7ce0d929f5e3532d5eb",
+      "trainer_seconds": 572.4043340682983
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_251.pt",
+      "bytes": 1168376,
+      "sha256": "4b85414f9d48445da92b1039109f0b6b2f8612b92846ba7bcab10ddda967cfc6",
+      "trainer_seconds": 622.2778477668762
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "fdb1039cb234c083ad2c793b510ba93c274d274d3b4b2441bb5d121458540cb4",
+      "trainer_seconds": 92.13679051399231
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_276.pt",
+      "bytes": 1168376,
+      "sha256": "d04058d1e941bd49a2dea84e07d00900b983ce9ea0e3ef61fafd5d57ff5e0ff9",
+      "trainer_seconds": 671.1162886619568
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_301.pt",
+      "bytes": 1168376,
+      "sha256": "0dcb625c07cd40814dc70adb769c52811d58375a4a3fdccaf03a9a0873e2f4f5",
+      "trainer_seconds": 719.5417006015778
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_326.pt",
+      "bytes": 1168376,
+      "sha256": "2b59cdd06780aa191dfa4ef0ac575b28a3e3a6a4e368511c45a11ed7b8e2de22",
+      "trainer_seconds": 768.0271165370941
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_351.pt",
+      "bytes": 1168376,
+      "sha256": "b76b551c62b70c4e906213bfe3d549ea3c6c588da48637b19f70e81a51cab768",
+      "trainer_seconds": 816.8895592689514
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_376.pt",
+      "bytes": 1168376,
+      "sha256": "81e47f75dbe5a02d92b7ef69b02402741b0582a98b209d85623cd3cc6dd42788",
+      "trainer_seconds": 864.903933763504
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_401.pt",
+      "bytes": 1168376,
+      "sha256": "7668013a9470f8e53a780e2dddfad7957fb3e1c644aa23b86f44dbfe4fd4cb4a",
+      "trainer_seconds": 912.9972853660583
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_426.pt",
+      "bytes": 1168376,
+      "sha256": "f2a536304cc58e31ae80ebf747f88bf50a6eed761620b87f651212d1eba0769a",
+      "trainer_seconds": 959.9265558719635
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_451.pt",
+      "bytes": 1168376,
+      "sha256": "d2342197064dac54a0a0fe3fdf3d3846a89072f52dceee9a1468eada1a843209",
+      "trainer_seconds": 1009.1449859142303
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_476.pt",
+      "bytes": 1168376,
+      "sha256": "727da8fe30a640256181ddab5ac860d0f3fd9db1f133903c1bfd3eb5d2faf5a5",
+      "trainer_seconds": 1058.6874384880066
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_501.pt",
+      "bytes": 1168376,
+      "sha256": "be34e14f7de7ac3d664309c2ac34b6f9af0f84371f3de3441040e3a911c6a295",
+      "trainer_seconds": 1108.492909669876
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_51.pt",
+      "bytes": 1167971,
+      "sha256": "e0a9819fdbb72f81c128543c9901060ca1cf6d1f7517c4ed7023a883b978497d",
+      "trainer_seconds": 164.33258318901062
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_526.pt",
+      "bytes": 1168376,
+      "sha256": "ab1f76a5acf1835ad99846d05a31a9ff00faba1e4e0372ba358e8c21144adcfd",
+      "trainer_seconds": 1155.3431746959686
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_551.pt",
+      "bytes": 1168376,
+      "sha256": "5e865c2d40061ab4b2f48e35f0a08ca99fd45ad6a0e2796bccf33e595b26d1fa",
+      "trainer_seconds": 1202.9274907112122
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_576.pt",
+      "bytes": 1168376,
+      "sha256": "2b9f0046d441a288067e8cca43b949322d27fdce034ee736c1d75d66dd9e4232",
+      "trainer_seconds": 1252.2179260253906
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_601.pt",
+      "bytes": 1168376,
+      "sha256": "4112e73b52ffb6cfd13f1b78dd26a8f7fc93ae7bd493a9f04a576c1d15e9abb4",
+      "trainer_seconds": 1302.728446006775
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_626.pt",
+      "bytes": 1168376,
+      "sha256": "e62387aeaba5edb27e3e4eed73d34bda4c5c4c0c4b7408a290f6cabccd198ab5",
+      "trainer_seconds": 1352.7349309921265
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_651.pt",
+      "bytes": 1168376,
+      "sha256": "cb242652dad4f86d8613047ea024a76a1ed332539f07e713d9bbe231ee6015f3",
+      "trainer_seconds": 1403.8984966278076
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_676.pt",
+      "bytes": 1168376,
+      "sha256": "89f5e471378efed6da21b591097612a2537e7e7a307cf66478bb7d5c7155c12f",
+      "trainer_seconds": 1456.0451307296753
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_701.pt",
+      "bytes": 1168376,
+      "sha256": "e059129487f559ef15f0f5b0aa4ad16a804d54847a0fdb58388e367d657b3ae2",
+      "trainer_seconds": 1507.944747686386
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_726.pt",
+      "bytes": 1168376,
+      "sha256": "26e7a1ecf53dffdec13b706730a4043e30a00a936af8807a9491de654f7bdebe",
+      "trainer_seconds": 1559.8453648090363
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_751.pt",
+      "bytes": 1168376,
+      "sha256": "2925620d9a5954144ec4e5138b3d0cc1def4f0712d0d14918fd3e5079338f849",
+      "trainer_seconds": 1610.9909291267395
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_76.pt",
+      "bytes": 1167971,
+      "sha256": "cc0032b78209b45e4d7173681822c668497d4a9cd10256cb3e1ba0194cf0bfed",
+      "trainer_seconds": 236.94369912147522
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_776.pt",
+      "bytes": 1168376,
+      "sha256": "1ee4e64630a9978c1cef88c1a91198103bbf9fadae40fbb04cb1f256e67acadd",
+      "trainer_seconds": 1663.4115824699402
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_801.pt",
+      "bytes": 1168376,
+      "sha256": "2520ea32be0be484e38d1a411636bc63d4a1861c7d5476b676e435dafa96e898",
+      "trainer_seconds": 1716.59028840065
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_826.pt",
+      "bytes": 1168376,
+      "sha256": "a2029c7a1dc702069baaf7ba8d7d5e3e2c0b90ffa71f161706f769b189cd575c",
+      "trainer_seconds": 1766.71378159523
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_851.pt",
+      "bytes": 1168376,
+      "sha256": "a80cad3d260d7d51c8b6b46c84f90eeb336880a42bb8c72888ba5c33c1b40111",
+      "trainer_seconds": 1818.8524153232574
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_876.pt",
+      "bytes": 1168376,
+      "sha256": "928c8f479dfb883f2e3a1d5e80c670687f7ba36f21ac08add75d1b19c1bd5fcb",
+      "trainer_seconds": 1876.0714027881622
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_901.pt",
+      "bytes": 1168376,
+      "sha256": "d0a26ab0c1161463e3874c4e37e270af51518462e075f5a5ddddf0d9d44ca65c",
+      "trainer_seconds": 1932.5383529663086
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_926.pt",
+      "bytes": 1168376,
+      "sha256": "87d0f77bb15011f3e49f74b252fc014b21bbf4f4b9445156624f34c56a781d22",
+      "trainer_seconds": 1985.3610515594482
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_951.pt",
+      "bytes": 1168376,
+      "sha256": "e1498623b4f564e9d2454377acb3e8c1e37fbf1c2c271b757a7859158cae2447",
+      "trainer_seconds": 2040.2938981056213
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/ckpt_976.pt",
+      "bytes": 1168376,
+      "sha256": "c80fb4978c605118926e812bec6f5e35fad3deae2b9cf5fdcd9f3887317c03d1",
+      "trainer_seconds": 2104.327381849289
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/events.out.tfevents.1793187771.modal.8.0",
+      "bytes": 2373522,
+      "sha256": "666d8401fd0d70749935036ddaf9087374dacfd2c483d68eec81f53b1df9e373",
+      "trainer_seconds": 2106.2925193309784
+    },
+    {
+      "path": "work/runs/stackcube-precision-replication-20261027-precision-constant-seed-3/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "73ecfabd74124e1fb1fdd31b1eaa2b800a6bc5deab89547b9ffe8b365b237116",
+      "trainer_seconds": 2106.609541654587
+    }
+  ],
+  "output_bytes": 55062477
+}

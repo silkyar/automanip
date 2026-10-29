@@ -1,0 +1,48 @@
+{
+  "admitted": true,
+  "experiment": "full-stacking-curve-20261029",
+  "routes": [
+    "baseline",
+    "coordinate"
+  ],
+  "source_mapping": {
+    "full_stacking_curve.py": "full_stacking_curve.py",
+    "replay_robot.py": "replay_robot_full_curve.py",
+    "replay_learner.py": "replay_learner_lowalpha.py",
+    "sac_baseline.py": "sac_baseline.py",
+    "joint_exploration.py": "joint_exploration.py"
+  },
+  "source_sha256": {
+    "full_stacking_curve.py": "8382d98bf694b073eb92483930f43e69a0b0c5f53ba34d5d0470ac8163a41f2f",
+    "replay_robot.py": "0fe24f20f776ace26ecb0cfccd04835895c4319d4d36af5f0823888038964e42",
+    "replay_learner.py": "aeea61b2a55458a207f1dccb6c996a411acda67bc3238dc9c9c33fec7bd965bf",
+    "sac_baseline.py": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca",
+    "joint_exploration.py": "895010dca8affe6bc3361ce0adf39863158433d2ca980dffded58df85afe43a7"
+  },
+  "scientific_plan": "docs/full-stacking-curve-plan-20261029.md",
+  "scientific_plan_sha256": "48267804798dede808cf91a420f9a63caa67a8f10bd7e9557cc881c53064b1b2",
+  "adapter_sha256": "8d40aee31db9e9124e7f12bda75566de5b5976ccbed7f7c5324783c57a71a1d4",
+  "cpu_gate_sha256": "b361f7aa3d7d51cc8b3b7731cb4493692a2a542581faf55922a04fe2c72208e3",
+  "initial_actor_sha256": "6f778277f0b7025acb49c1c51c79e400c150e0ecfe8e538935c7170ffe66b5b7",
+  "training_seed": 2,
+  "total_transitions_per_arm": 1024000,
+  "max_child_seconds_per_arm": 600,
+  "development_points": [
+    102400,
+    256000,
+    512000,
+    "terminal_unique"
+  ],
+  "max_development_queries": 8,
+  "confirmation_queries": 0,
+  "budget_cap_usd": 3,
+  "primary": {
+    "transitions": 512000,
+    "min_coordinate_stacks": 64,
+    "min_stack_lead": 20,
+    "weakens_at_or_below": 8
+  },
+  "update_censoring": "Record actual counters; at512k full work31688critic/10562actor. Short work is update-censored; no compensating updates or deadline refresh.",
+  "root_admission_note": "Independent exact source/CPU/init/isolation/originallease/envelope review PASS; $3 reserved within unchanged100USD total. Freshseed2 only two workers1.024M/600s. External scoring separately reviewed beforemax8 once-only dev queries; no autoextension/promotion.",
+  "root_admitted_epoch": 1793285404.945195
+}

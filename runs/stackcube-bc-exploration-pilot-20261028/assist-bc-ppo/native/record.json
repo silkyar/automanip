@@ -1,0 +1,206 @@
+{
+  "stage": "assist-bc-ppo",
+  "job": {
+    "stage": "assist-bc-ppo",
+    "job_id": "stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1",
+    "seed": 1,
+    "source_path": "research/discovery/amp-prior-assisted-v1/assist-bc-ppo.py",
+    "source_sha256": "7a4de8deecf0adc15d9f8beaef1bf6b9874ca9eb7b0122efbab5d9b1bc80d427",
+    "lease_seconds": 600,
+    "wrapper_seconds": 660,
+    "requested_rl_steps": 5120000,
+    "gpu": "L40S"
+  },
+  "state": "complete",
+  "source_sha256": "7a4de8deecf0adc15d9f8beaef1bf6b9874ca9eb7b0122efbab5d9b1bc80d427",
+  "core_source_sha256": "463303be5809392e7ea9597eb47c0e45ccd256438750d4a0b219c2abd9dee5bd",
+  "dispatched_at": 1793196806.133451,
+  "admitted_at": 1793196817.8628986,
+  "expires_at": 1793197406.133451,
+  "queue_seconds": 11.729447603225708,
+  "gpu_requested": "L40S",
+  "teacher_prefix": {
+    "training_steps": 49971200,
+    "trainer_seconds": 2295.408300588,
+    "training_seed": 1,
+    "actor_weights_sha256": "ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16",
+    "dollars": null,
+    "dollar_attribution": "Teacher belongs to completed three-arm quality app; separate exact per-teacher dollar allocation unavailable, not assumed free."
+  },
+  "input_bindings": {
+    "demo": {
+      "dataset.json": "dbb3c1c4b21adf24c2d600de576807c458487b3eeeae07aded85cc517f661c1b",
+      "trajectories.npz": "495a392364926211397222bfa77e79ff4a6c2c87564f226dc1212f333ebec782"
+    },
+    "bc": {
+      "bc-report.json": "a9718a30ad8a149de08d7672c959c03af0cddf3afbdccafb207323e67dc687c2",
+      "final-actor/manifest.json": "d2ea7ec00b2f5b4d21028d52c18dc66ef00a18a7695f4675fe8a4f5a065c9da9",
+      "final-actor/weights.json": "4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2"
+    }
+  },
+  "producer_receipts": {
+    "collection": {
+      "state": "complete",
+      "versions": {
+        "mani_skill": "3.0.0b21",
+        "sapien": "3.0.0b1",
+        "torch": "2.6.0+cu124",
+        "numpy": "1.26.4",
+        "gymnasium": "0.29.1"
+      },
+      "gpu_actual_name": "NVIDIA L40S",
+      "source_sha256": "523459ce91a59200970d66a7dd83fa8dc06c7c96879e72ab541f2f263403ef3b",
+      "core_source_sha256": "463303be5809392e7ea9597eb47c0e45ccd256438750d4a0b219c2abd9dee5bd",
+      "trainer_process_seconds": 29.36977253
+    },
+    "bc": {
+      "state": "complete",
+      "versions": {
+        "mani_skill": "3.0.0b21",
+        "sapien": "3.0.0b1",
+        "torch": "2.6.0+cu124",
+        "numpy": "1.26.4",
+        "gymnasium": "0.29.1"
+      },
+      "gpu_actual_name": "NVIDIA L40S",
+      "source_sha256": "1e8b1a6ea1e2007bf43adb24fc0d96008c54d01d3af5d6650548c35f6392f7f6",
+      "core_source_sha256": "463303be5809392e7ea9597eb47c0e45ccd256438750d4a0b219c2abd9dee5bd",
+      "trainer_process_seconds": 10.868263793999999
+    }
+  },
+  "new_training_processes": 1,
+  "confirmation_queries": 0,
+  "gpu_actual_name": "NVIDIA L40S",
+  "versions": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "subprocess_started_at": 1793196821.8519106,
+  "return_code": 0,
+  "trainer_process_seconds": 307.64881969,
+  "optimizer_step_count": 22782,
+  "final_logstd_per_dimension": [
+    -1.2604315280914307,
+    -1.5741167068481445,
+    -1.3485883474349976,
+    -1.3592069149017334,
+    -0.6552534103393555,
+    -0.9016544222831726,
+    -0.699851930141449,
+    -0.9476330280303955
+  ],
+  "audit_trace_rows": 100,
+  "exploration_initialization": {
+    "mode": "frozen control constructor",
+    "declared_initial_logstd": [
+      -0.5,
+      -0.5,
+      -0.5,
+      -0.5,
+      -0.5,
+      -0.5,
+      -0.5,
+      -0.5
+    ],
+    "declared_initial_std": [
+      0.6065306597126334,
+      0.6065306597126334,
+      0.6065306597126334,
+      0.6065306597126334,
+      0.6065306597126334,
+      0.6065306597126334,
+      0.6065306597126334,
+      0.6065306597126334
+    ],
+    "calibration_forward_rows": 0,
+    "calibration_wall_seconds": 0.0,
+    "initial_std_evidence": "Declared by reviewed unchanged Agent constructor, not a new runtime measurement."
+  },
+  "actual_steps": 5120000,
+  "completed_rollouts": 100,
+  "assistance": {
+    "all_teacher_episodes": 512,
+    "amp_enabled": false,
+    "amp_style_weight": 0.0,
+    "bc_prefix_demonstration_minibatch_rows": 5120000,
+    "bc_prefix_optimizer_updates": 5000,
+    "bc_prefix_wall_seconds": 8.754884399000002,
+    "bc_report_sha256": "a9718a30ad8a149de08d7672c959c03af0cddf3afbdccafb207323e67dc687c2",
+    "bc_student_weights_sha256": "4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2",
+    "dataset_sha256": "495a392364926211397222bfa77e79ff4a6c2c87564f226dc1212f333ebec782",
+    "discriminator_input": "existing state48 followed by actual successor state48",
+    "discriminator_models_in_agent_serialization": false,
+    "failed_teacher_episodes_preserved": 15,
+    "task_reward_weight": 1.0,
+    "teacher_generation_transitions": 25600,
+    "teacher_prefix_dollars": null,
+    "teacher_prefix_trainer_seconds": 2295.408300588,
+    "teacher_prefix_transitions": 49971200,
+    "teacher_weights_loaded": false,
+    "track": "prior-assisted random student: BC then PPO",
+    "training_demo_episodes": 448,
+    "validation_demo_episodes": 49
+  },
+  "stopped_early": false,
+  "built_in_evaluation_calls": 4,
+  "built_in_evaluation_transitions": 1600,
+  "built_in_evaluation_episodes": 32,
+  "wrapper_seconds": 311.83168935099997,
+  "completed_at": 1793197129.6945896,
+  "files": [
+    {
+      "path": "attempt.json",
+      "bytes": 94,
+      "sha256": "ed2732b4968067b869e674a67acd41721078762aa23926449f9123f56fba92da"
+    },
+    {
+      "path": "scalars.json",
+      "bytes": 478561,
+      "sha256": "e63229e66126988b3e3a553681d1ab4681cda755a312bbe036ca8e4c6cb091a6"
+    },
+    {
+      "path": "source.py",
+      "bytes": 43426,
+      "sha256": "7a4de8deecf0adc15d9f8beaef1bf6b9874ca9eb7b0122efbab5d9b1bc80d427"
+    },
+    {
+      "path": "train.log",
+      "bytes": 7566,
+      "sha256": "7815cd6613df62f4faf941c25101de93852185a493df92e8e3e036e12dc69e9d"
+    },
+    {
+      "path": "work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "322e585b5a84ce27b56d63ec131510678c644e02907e14e9f0e23e86d61151bb"
+    },
+    {
+      "path": "work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "158598e95224b21a0a3607dba006f38d072a948dcbde9cb70558c7d3f084a548"
+    },
+    {
+      "path": "work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/ckpt_51.pt",
+      "bytes": 1167971,
+      "sha256": "f3df3d673129261f3ad15209cb671b0ced6cdc64a469e36dbc5865a886511621"
+    },
+    {
+      "path": "work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/ckpt_76.pt",
+      "bytes": 1167971,
+      "sha256": "12ad9be64b17335c3339db97e69ba95fa7569c38d69eca527888c1090a61b79f"
+    },
+    {
+      "path": "work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/events.out.tfevents.1793196839.modal.8.0",
+      "bytes": 242770,
+      "sha256": "7142f89eb102623819e0f2e8ad89b2d5c87a2f30d693dfb6cc0a7cf723359f25"
+    },
+    {
+      "path": "work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "3ac29feb5efc10136c547e1b35a82025a64d2a2a24804e8f69129934d55e75d9"
+    }
+  ],
+  "output_bytes": 6612186
+}

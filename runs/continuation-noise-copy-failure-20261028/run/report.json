@@ -1,0 +1,55 @@
+{
+  "state": "failed",
+  "kind": "Public first-decision continuation-noise probe, not training or benchmark",
+  "started_epoch": 1793211700.9276035,
+  "actual_public_transitions": 0,
+  "attempted_public_transitions": 0,
+  "vector_step_calls": 0,
+  "explicit_vector_reset_calls": 1,
+  "state_read_calls": 2,
+  "state_write_calls": 1,
+  "controller_reset_calls": 1,
+  "extra_observation_read_calls": 1,
+  "optimizer_calls": 0,
+  "new_training_runs": 0,
+  "protected_evaluations": 0,
+  "policies": [
+    {
+      "name": "initial",
+      "filename": "initial.json",
+      "sha256": "5a39ef90abb7e12b08e08590bad160cf61b005d79291d9f5d5989b2aab9982e1",
+      "source": "runs/stackcube-replay-moments-screen-20261028/joint-moments/joint-moments/run/actor-step-0-state.npz",
+      "source_sha256": "0d4529b598e8d21c0872bd4d4bebb166777dd8d22f7a757e95526b48cbdf7165"
+    },
+    {
+      "name": "joint-256k",
+      "filename": "joint-256k.json",
+      "sha256": "e28ca8e4ac18620877bd380bf765cdc78100a0e143d40f93df5ba53369810d69",
+      "source": "runs/stackcube-replay-moments-screen-20261028/joint-moments/joint-moments/run/actor-step-256000-state.npz",
+      "source_sha256": "e657f3dc1d81c1e83f8920daae854a46d35a3835d296427dc633495a7f74b74d"
+    }
+  ],
+  "public_initial_seeds": [
+    93274000,
+    93274001,
+    93274002,
+    93274003
+  ],
+  "results": [],
+  "source_sha256": "9be36dca2c8245c46aa4495df61344234ea5cd0f5ea04d1e60eb1d6ac3e424f9",
+  "versions": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "current_batch": {
+    "policy": "initial",
+    "seed": 93274000,
+    "initial_observation_max_difference": 1.9073486328125e-05,
+    "physical_state_copy_max_difference": 1.1920928955078125e-07
+  },
+  "error": "RuntimeError: Replicated initial observations differ; no branching claim",
+  "elapsed_seconds": 14.285487557
+}

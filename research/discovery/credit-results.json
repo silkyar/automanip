@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "experiment": "credit-order-and-bias-falsification",
+  "scope": "analytical/tabular toy only; not StackCube evidence",
+  "source_sha256": "abbd3e1cc2f57186eed2cfc79e56bb8de914d8a4a7b8863035f8a4862f95b928",
+  "python": "3.13.7",
+  "replay": {
+    "online_forward": {
+      "independent_toy_seeds": 256,
+      "bellman_updates_mean": 2500,
+      "bellman_updates_min": 2500,
+      "bellman_updates_max": 2500,
+      "bellman_updates_sd": 0.0,
+      "first_sweep_fraction_of_truth_mean": 0.0,
+      "toy_environment_transitions_per_seed": 50,
+      "robot_environment_transitions": 0
+    },
+    "online_shuffle": {
+      "independent_toy_seeds": 256,
+      "bellman_updates_mean": 1463.8671875,
+      "bellman_updates_min": 1150,
+      "bellman_updates_max": 1900,
+      "bellman_updates_sd": 136.88798174627541,
+      "first_sweep_fraction_of_truth_mean": 0.0,
+      "toy_environment_transitions_per_seed": 50,
+      "robot_environment_transitions": 0
+    },
+    "online_reverse": {
+      "independent_toy_seeds": 256,
+      "bellman_updates_mean": 50,
+      "bellman_updates_min": 50,
+      "bellman_updates_max": 50,
+      "bellman_updates_sd": 0.0,
+      "first_sweep_fraction_of_truth_mean": 1.0,
+      "toy_environment_transitions_per_seed": 50,
+      "robot_environment_transitions": 0
+    },
+    "frozen_forward": {
+      "independent_toy_seeds": 256,
+      "bellman_updates_mean": 2500,
+      "bellman_updates_min": 2500,
+      "bellman_updates_max": 2500,
+      "bellman_updates_sd": 0.0,
+      "first_sweep_fraction_of_truth_mean": 0.0,
+      "toy_environment_transitions_per_seed": 50,
+      "robot_environment_transitions": 0
+    },
+    "frozen_shuffle": {
+      "independent_toy_seeds": 256,
+      "bellman_updates_mean": 2500,
+      "bellman_updates_min": 2500,
+      "bellman_updates_max": 2500,
+      "bellman_updates_sd": 0.0,
+      "first_sweep_fraction_of_truth_mean": 0.0,
+      "toy_environment_transitions_per_seed": 50,
+      "robot_environment_transitions": 0
+    },
+    "frozen_reverse": {
+      "independent_toy_seeds": 256,
+      "bellman_updates_mean": 2500,
+      "bellman_updates_min": 2500,
+      "bellman_updates_max": 2500,
+      "bellman_updates_sd": 0.0,
+      "first_sweep_fraction_of_truth_mean": 0.0,
+      "toy_environment_transitions_per_seed": 50,
+      "robot_environment_transitions": 0
+    }
+  },
+  "gae": {
+    "horizon": 50,
+    "gamma": 0.9,
+    "lambda": 0.9,
+    "true_action_value_gap": 0.0034358501382134128,
+    "exact_critic_expected_gae_gap": 0.0034358501382134136,
+    "zero_critic_expected_gae_gap": 1.9675110287101897e-05,
+    "exact_critic_gap_fraction": 1.0000000000000002,
+    "zero_critic_gap_fraction": 0.00572641689702236,
+    "toy_environment_transitions": 0,
+    "enumerated_branch_outcomes": 4
+  },
+  "selection_bias": {
+    "true_probability": 0.2,
+    "independent_toy_seeds": 256,
+    "toy_episodes_per_seed": 64,
+    "uniform_estimate_mean": 0.20013427734375,
+    "uniform_estimate_sd_across_seeds": 0.04915435596325105,
+    "success_only_estimate_mean": 1.0,
+    "seeds_with_no_success": 0,
+    "toy_bernoulli_draws": 16384,
+    "robot_environment_transitions": 0
+  },
+  "accounting": {
+    "robot_environment_transitions": 0,
+    "robot_resets": 0,
+    "simulator_queries": 0,
+    "neural_gradient_steps": 0,
+    "extra_teacher_demonstration_or_planning_data": 0,
+    "gpu_seconds": 0,
+    "paid_api_calls": 0,
+    "dollars_spent": 0,
+    "process_cpu_seconds": 0.245867,
+    "wall_seconds": 0.24868779099779204
+  }
+}

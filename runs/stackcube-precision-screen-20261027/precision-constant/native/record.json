@@ -1,0 +1,333 @@
+{
+  "job": {
+    "job_id": "stackcube-precision-screen-20261027-precision-constant-seed-1",
+    "method": "precision-constant",
+    "seed": 1,
+    "trainer_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+    "gpu": "L40S",
+    "trainer_seconds_cap": 2700,
+    "requested_steps": 50000000,
+    "actual_steps_ceiling": 49971200
+  },
+  "state": "complete",
+  "dispatched_at": 1793148035.7666817,
+  "admitted_at": 1793148043.4905925,
+  "queue_seconds": 7.723910808563232,
+  "expires_at": 1793150735.7666817,
+  "trainer_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+  "gpu_requested": "L40S",
+  "confirmation_queries": 0,
+  "new_training_processes": 1,
+  "gpu_actual_name": "NVIDIA L40S",
+  "versions": {
+    "torch": "2.6.0+cu124",
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "subprocess_started_at": 1793148046.3256447,
+  "trainer_process_seconds": 2295.408300588,
+  "return_code": 0,
+  "nonfinite_diagnostic_scalars": {},
+  "actual_steps": 49971200,
+  "completed_rollouts": 976,
+  "optimizer_step_upper_bound": 249856,
+  "built_in_evaluation_calls": 40,
+  "built_in_evaluation_transitions": 16000,
+  "built_in_evaluation_episodes": 320,
+  "stopped_early": false,
+  "optimizer_step_count": 110572,
+  "final_logstd_per_dimension": [
+    -1.7230753898620605,
+    -1.6399749517440796,
+    -1.7657711505889893,
+    -1.7780853509902954,
+    -0.202223539352417,
+    -1.239534854888916,
+    0.27132412791252136,
+    -0.9787721037864685
+  ],
+  "audit_trace_rows": 976,
+  "wrapper_seconds": 2299.298024449,
+  "completed_at": 1793150342.788639,
+  "files": [
+    {
+      "path": "attempt.json",
+      "bytes": 144,
+      "sha256": "06dafec07d0bb69879913090aa6082b3e29f52af79f68265ef8efa94bd9e988f",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "scalars.json",
+      "bytes": 4705203,
+      "sha256": "d1697a70e0b9f61ea73bddc47fbac650c301c3b89dedc977f35d7c38b8e6901e",
+      "trainer_seconds": 2296.4487109184265
+    },
+    {
+      "path": "trainer.py",
+      "bytes": 26381,
+      "sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+      "trainer_seconds": 0.0
+    },
+    {
+      "path": "work/train.log",
+      "bytes": 55941,
+      "sha256": "97767a3510c2dccb9792382036de3cc4a19b7fa1d3d2a1490d8a7a1a44439bde",
+      "trainer_seconds": 2293.7126026153564
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_1.pt",
+      "bytes": 1167438,
+      "sha256": "fe0b2ad4d99fc88f0c408a1da3ccfbf80fdf51e0d643f7ad977ad4604aa8f753",
+      "trainer_seconds": 20.842971086502075
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_101.pt",
+      "bytes": 1168376,
+      "sha256": "69fde942fd7587b7fad59886c1585f18abb9d7371474acf8d63a68d163adc00e",
+      "trainer_seconds": 309.83951473236084
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_126.pt",
+      "bytes": 1168376,
+      "sha256": "f17467ffe4a24f61d11fd8adffaaa50049d64fc2846b0e3c90478699e86732f0",
+      "trainer_seconds": 367.77782917022705
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_151.pt",
+      "bytes": 1168376,
+      "sha256": "0f638d23e2ba71a86eb67fdda373a019bfe533b28e5f61038b3f81799a9e5dbf",
+      "trainer_seconds": 418.9968750476837
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_176.pt",
+      "bytes": 1168376,
+      "sha256": "603e4596cfec96ff49c99d1365c59df7c599f573e14bd96e0f7c23f13d293857",
+      "trainer_seconds": 470.86894702911377
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_201.pt",
+      "bytes": 1168376,
+      "sha256": "af8d69b5eb2f1149ed3f9426b6450118371802f4371f10fa123bb0fdf1b8b4e0",
+      "trainer_seconds": 530.5803320407867
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_226.pt",
+      "bytes": 1168376,
+      "sha256": "c24400afbbdf5bbafd446d4d3d9afba1443a6afcf6a8f7607404450b4a682930",
+      "trainer_seconds": 585.9205424785614
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_251.pt",
+      "bytes": 1168376,
+      "sha256": "311111d52e90602778138e4c45d890a1b8ee7e26d64e8720dcf168716f11dd31",
+      "trainer_seconds": 638.9376602172852
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_26.pt",
+      "bytes": 1167971,
+      "sha256": "292c8eeeacd22efe8d9547e99ed04c06fefed90e8ce7286c1df7c1962f7180d9",
+      "trainer_seconds": 92.7608437538147
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_276.pt",
+      "bytes": 1168376,
+      "sha256": "bc03afd86cef0a4730f14c7a02b0918fd4374d5c715a55db8ba4688694af11de",
+      "trainer_seconds": 691.2967517375946
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_301.pt",
+      "bytes": 1168376,
+      "sha256": "7fae4e62222e77c39dc4f8615a905a6cd7191cc490cf98db1f7b7cd760d9f3a0",
+      "trainer_seconds": 744.2148654460907
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_326.pt",
+      "bytes": 1168376,
+      "sha256": "5603cc8830f5e913e0921e876c32c4dee9d7cf882f5a70a103c9f41843ce26fb",
+      "trainer_seconds": 795.6019179821014
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_351.pt",
+      "bytes": 1168376,
+      "sha256": "65d41a975c657a0dbefedae6b6f531636e25fa77e6770530b829120f6803273c",
+      "trainer_seconds": 847.5869953632355
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_376.pt",
+      "bytes": 1168376,
+      "sha256": "34454d5fb949c24a14f9a74cbbd35f6a75deac2342d5bc166224618eb2ab32d5",
+      "trainer_seconds": 903.5512318611145
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_401.pt",
+      "bytes": 1168376,
+      "sha256": "39fe6feb6fe5d1df085d7c72b92815be8a6338e9393565f671074d3f2f5d96ae",
+      "trainer_seconds": 957.1913757324219
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_426.pt",
+      "bytes": 1168376,
+      "sha256": "8a9e818bc81d799c26886e2edb0f6101ad8cb8403c683a4f4321e67e3be64dfb",
+      "trainer_seconds": 1008.8654408454895
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_451.pt",
+      "bytes": 1168376,
+      "sha256": "c112c51d865699f751cf8324c66c9baf5b0129888fd9786ce3c1cfde0a7b9cb1",
+      "trainer_seconds": 1060.2944960594177
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_476.pt",
+      "bytes": 1168376,
+      "sha256": "1fff53a4dd4f93936b85789304c1b293c6bba919a71b2e43df341ae2ca919b72",
+      "trainer_seconds": 1110.591506242752
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_501.pt",
+      "bytes": 1168376,
+      "sha256": "41c6e60c5ba7866e7fd2aaff7de985dd47b0f69d1122e3b16b0f632760ebfd05",
+      "trainer_seconds": 1161.8075528144836
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_51.pt",
+      "bytes": 1167971,
+      "sha256": "ebe73770a97f3de5ba40e9731cd9968c4d87d20c9c1d037f14e09a50bf00ceec",
+      "trainer_seconds": 166.10277342796326
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_526.pt",
+      "bytes": 1168376,
+      "sha256": "722b550241dd77e34e8d7908536b4badeb82a3ba5c7b923e7f626cda5eb0aa61",
+      "trainer_seconds": 1215.5697014331818
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_551.pt",
+      "bytes": 1168376,
+      "sha256": "ac3d0514eef9d1168e8b0baac17786db796b77dcd427ac8d94b179a46c870f45",
+      "trainer_seconds": 1271.2189254760742
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_576.pt",
+      "bytes": 1168376,
+      "sha256": "5156eb17de0287babe5a47f612e89f8adb2629b9939d417286fac0659e131929",
+      "trainer_seconds": 1324.9460725784302
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_601.pt",
+      "bytes": 1168376,
+      "sha256": "c81b15e629e60c53578b0aff5c0ac47c229b1e4814ddcdf5ea9ad3f9bb6702d7",
+      "trainer_seconds": 1380.449290752411
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_626.pt",
+      "bytes": 1168376,
+      "sha256": "a75f122891c3b1302f702a736a3ad7b4b7e6e15e14c36f82c6985695b3ea5b6b",
+      "trainer_seconds": 1432.942388534546
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_651.pt",
+      "bytes": 1168376,
+      "sha256": "d6959f2d1dc06562b6cb9f092d7ead7430965865b899c7d9b4e855857cd1ae33",
+      "trainer_seconds": 1489.4556469917297
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_676.pt",
+      "bytes": 1168376,
+      "sha256": "2d3041cd5b75f5607c1ad20bf83872d2bb255ba3d9ebd4db0267f6e0ec48658e",
+      "trainer_seconds": 1550.3700814247131
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_701.pt",
+      "bytes": 1168376,
+      "sha256": "8072aa1290772411294eae61726a106db76e9ea05f8a1b09966e4edeeabfa739",
+      "trainer_seconds": 1608.1303896903992
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_726.pt",
+      "bytes": 1168376,
+      "sha256": "d601823c6aa978473fcdb72fc1eecdbe35aa658a5b56d1dc435eed57fc1f5dea",
+      "trainer_seconds": 1669.3138349056244
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_751.pt",
+      "bytes": 1168376,
+      "sha256": "4b14fd27a01a2ef412f3cf8242faaa37f1963a31856e2aa72a0b579e4f28f3fa",
+      "trainer_seconds": 1729.415236711502
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_76.pt",
+      "bytes": 1167971,
+      "sha256": "98e88d62db7bab3a5921d59c36bdf2930b835a05a85b2c73e45d09af094bc502",
+      "trainer_seconds": 240.33073830604553
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_776.pt",
+      "bytes": 1168376,
+      "sha256": "e8069284133710dda9b794f8575b5d149e2c61740273459c6f776a75c3b199d8",
+      "trainer_seconds": 1784.908454656601
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_801.pt",
+      "bytes": 1168376,
+      "sha256": "549d02ab063edf94a6efcf4c93eb89d38438ff8737737ce1299594697db76db3",
+      "trainer_seconds": 1842.4697513580322
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_826.pt",
+      "bytes": 1168376,
+      "sha256": "421a7ba3c806e801d2ddd4f874a9fd7fe93b9bbf925371b32f34b652c1556ab7",
+      "trainer_seconds": 1901.0300681591034
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_851.pt",
+      "bytes": 1168376,
+      "sha256": "98e3de40dad6e117c569d8844e1ce9a2ca8d9d0b71cdabbc440ed6070d166242",
+      "trainer_seconds": 1963.019520521164
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_876.pt",
+      "bytes": 1168376,
+      "sha256": "dd4c3462ad7135a7bdea1922d4c7b36447cca5c03d15c6c48ec516e4513475fd",
+      "trainer_seconds": 2028.667117357254
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_901.pt",
+      "bytes": 1168376,
+      "sha256": "fbfec4efb38f582dad9f9c97967c7dd9d236ca4438754079b0d0c9375207d648",
+      "trainer_seconds": 2092.9336597919464
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_926.pt",
+      "bytes": 1168376,
+      "sha256": "2d35135b2b67f7ac085605eafc7a6b2c1987f62623ffd8a5219c64bf9733f86b",
+      "trainer_seconds": 2157.047196149826
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_951.pt",
+      "bytes": 1168376,
+      "sha256": "c7b39db361e6b0bf1dd54554edbae52ce606a9dbdd80ba9de1efc9ce9bee888d",
+      "trainer_seconds": 2224.7628750801086
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/ckpt_976.pt",
+      "bytes": 1168376,
+      "sha256": "4d45cfce65ce0bd462eecd1f5bc32947bf832610a3af87f1a17ea5b51904d17a",
+      "trainer_seconds": 2290.649481534958
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/events.out.tfevents.1793148063.modal.8.0",
+      "bytes": 2373517,
+      "sha256": "99558e873ee57fbe712ec8bee438302eeb622577e670046420d1eaba485da050",
+      "trainer_seconds": 2293.432591676712
+    },
+    {
+      "path": "work/runs/stackcube-precision-screen-20261027-precision-constant-seed-1/final_ckpt.pt",
+      "bytes": 1168418,
+      "sha256": "27e6655e122244b6777c9c388b52a87bab91ffa861bf39bfa0cbfec72f755791",
+      "trainer_seconds": 2293.4295914173126
+    }
+  ],
+  "output_bytes": 55062491
+}

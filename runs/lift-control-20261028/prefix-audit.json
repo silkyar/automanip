@@ -1,0 +1,156 @@
+{
+  "state": "complete",
+  "initial_all48_observations_bit_equal": true,
+  "all_preintervention_float32_actions_bit_equal": true,
+  "paired_prefix_vector_steps": 14,
+  "paired_prefix_transition_pairs": 112,
+  "first_exceeds": {
+    "qpos_max": 10,
+    "qvel_max": 6,
+    "tcp_position_max_m": 10,
+    "cubeA_position_max_m": 10,
+    "cubeB_position_max_m": 1,
+    "cubeA_rotation_max_rad": 10
+  },
+  "per_step_max_residuals": [
+    {
+      "elapsed_steps": 0,
+      "qpos_max": 0.0,
+      "qvel_max": 0.0,
+      "tcp_position_max_m": 0.0,
+      "cubeA_position_max_m": 0.0,
+      "cubeB_position_max_m": 0.0,
+      "cubeA_rotation_max_rad": 0.0
+    },
+    {
+      "elapsed_steps": 1,
+      "qpos_max": 0.0,
+      "qvel_max": 0.0,
+      "tcp_position_max_m": 0.0,
+      "cubeA_position_max_m": 0.0,
+      "cubeB_position_max_m": 0.00031099840998649597,
+      "cubeA_rotation_max_rad": 0.0
+    },
+    {
+      "elapsed_steps": 2,
+      "qpos_max": 0.0,
+      "qvel_max": 0.0,
+      "tcp_position_max_m": 0.0,
+      "cubeA_position_max_m": 0.0,
+      "cubeB_position_max_m": 0.00031099840998649597,
+      "cubeA_rotation_max_rad": 0.0
+    },
+    {
+      "elapsed_steps": 3,
+      "qpos_max": 0.0,
+      "qvel_max": 0.0,
+      "tcp_position_max_m": 0.0,
+      "cubeA_position_max_m": 0.0,
+      "cubeB_position_max_m": 0.0003110002726316452,
+      "cubeA_rotation_max_rad": 0.0
+    },
+    {
+      "elapsed_steps": 4,
+      "qpos_max": 0.0,
+      "qvel_max": 0.0,
+      "tcp_position_max_m": 0.0,
+      "cubeA_position_max_m": 0.0,
+      "cubeB_position_max_m": 0.00031100399792194366,
+      "cubeA_rotation_max_rad": 0.0
+    },
+    {
+      "elapsed_steps": 5,
+      "qpos_max": 0.0,
+      "qvel_max": 0.0,
+      "tcp_position_max_m": 0.0,
+      "cubeA_position_max_m": 0.0,
+      "cubeB_position_max_m": 0.00031100399792194366,
+      "cubeA_rotation_max_rad": 0.0
+    },
+    {
+      "elapsed_steps": 6,
+      "qpos_max": 1.5616416931152344e-05,
+      "qvel_max": 0.017024308443069458,
+      "tcp_position_max_m": 1.3552606105804443e-05,
+      "cubeA_position_max_m": 0.0,
+      "cubeB_position_max_m": 0.00013930164277553558,
+      "cubeA_rotation_max_rad": 0.0
+    },
+    {
+      "elapsed_steps": 7,
+      "qpos_max": 2.7894973754882812e-05,
+      "qvel_max": 5.0067901611328125e-05,
+      "tcp_position_max_m": 2.279132604598999e-05,
+      "cubeA_position_max_m": 0.0,
+      "cubeB_position_max_m": 0.00012759491801261902,
+      "cubeA_rotation_max_rad": 0.0
+    },
+    {
+      "elapsed_steps": 8,
+      "qpos_max": 7.206201553344727e-05,
+      "qvel_max": 0.006331384181976318,
+      "tcp_position_max_m": 5.208700895309448e-05,
+      "cubeA_position_max_m": 0.0,
+      "cubeB_position_max_m": 0.00014076754450798035,
+      "cubeA_rotation_max_rad": 0.0
+    },
+    {
+      "elapsed_steps": 9,
+      "qpos_max": 6.306171417236328e-05,
+      "qvel_max": 0.007023818790912628,
+      "tcp_position_max_m": 4.6506524085998535e-05,
+      "cubeA_position_max_m": 2.8051435947418213e-05,
+      "cubeB_position_max_m": 0.00012336671352386475,
+      "cubeA_rotation_max_rad": 0.0009143731440417469
+    },
+    {
+      "elapsed_steps": 10,
+      "qpos_max": 0.0007783714681863785,
+      "qvel_max": 0.5146911144256592,
+      "tcp_position_max_m": 0.0003233402967453003,
+      "cubeA_position_max_m": 0.000593971461057663,
+      "cubeB_position_max_m": 0.002080421894788742,
+      "cubeA_rotation_max_rad": 0.0037326044403016567
+    },
+    {
+      "elapsed_steps": 11,
+      "qpos_max": 0.0013089179992675781,
+      "qvel_max": 0.3430130183696747,
+      "tcp_position_max_m": 0.0006005093455314636,
+      "cubeA_position_max_m": 0.0005251951515674591,
+      "cubeB_position_max_m": 0.0015257038176059723,
+      "cubeA_rotation_max_rad": 0.029538888484239578
+    },
+    {
+      "elapsed_steps": 12,
+      "qpos_max": 0.0026955604553222656,
+      "qvel_max": 0.34875255823135376,
+      "tcp_position_max_m": 0.001889549195766449,
+      "cubeA_position_max_m": 0.0015096981078386307,
+      "cubeB_position_max_m": 0.00409960001707077,
+      "cubeA_rotation_max_rad": 0.04774065688252449
+    },
+    {
+      "elapsed_steps": 13,
+      "qpos_max": 0.0029938220977783203,
+      "qvel_max": 0.7041910290718079,
+      "tcp_position_max_m": 0.002120029181241989,
+      "cubeA_position_max_m": 0.0008193980902433395,
+      "cubeB_position_max_m": 0.002071879804134369,
+      "cubeA_rotation_max_rad": 0.05975529924035072
+    },
+    {
+      "elapsed_steps": 14,
+      "qpos_max": 0.0037975311279296875,
+      "qvel_max": 1.151429295539856,
+      "tcp_position_max_m": 0.002919241786003113,
+      "cubeA_position_max_m": 0.005472749471664429,
+      "cubeB_position_max_m": 0.006559185683727264,
+      "cubeA_rotation_max_rad": 0.04778598994016647
+    }
+  ],
+  "new_simulator_transitions": 0,
+  "optimizer_calls": 0,
+  "elapsed_seconds": 0.009184999973513186,
+  "conclusion": "Replay-prefix physical matching failed despite exact initial observation/action agreement; cause not identified; no grip/command intervention executed"
+}

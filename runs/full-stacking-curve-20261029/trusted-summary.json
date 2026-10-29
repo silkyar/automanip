@@ -1,0 +1,27 @@
+{
+  "state": "complete",
+  "experiment": "full-stacking-curve-20261029",
+  "plan_sha256": "f267df14cdaf1009bd42576d7adb43ea9853c7646c3e9ebb0a0041df5b994223",
+  "arms": {
+    "baseline": {
+      "state": "complete",
+      "worker_call_id": "fc-01M6428RWMAD09R6S4NHGT9HDE",
+      "outcome": {
+        "state": "complete",
+        "route": "baseline",
+        "error": null
+      }
+    },
+    "coordinate": {
+      "state": "complete",
+      "worker_call_id": "fc-01M6428SCNP2FMRRAJBE7GA6G8",
+      "outcome": {
+        "state": "complete",
+        "route": "coordinate",
+        "error": null
+      }
+    }
+  },
+  "confirmation_queries": 0,
+  "note": "Scalar worker outcomes only. External archive validation precedes local frozen evaluation."
+}

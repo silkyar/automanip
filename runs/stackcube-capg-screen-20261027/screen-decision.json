@@ -1,0 +1,75 @@
+{
+  "common_measured_steps": [
+    5120000,
+    10240000,
+    15360000,
+    20480000,
+    24985600
+  ],
+  "auc_domain_steps": [
+    5120000,
+    24985600
+  ],
+  "auc_integration": "trapezoidal over exact common measured points; normalized by domain length",
+  "control_normalized_auc": 0.7494764819587629,
+  "candidate_normalized_auc": 0.5653592139175257,
+  "candidate_auc_gain": -0.18411726804123718,
+  "final_steps_match": true,
+  "candidate_minus_control_final_successes": -3,
+  "final_guard_passed": true,
+  "candidate_85_at_least_one_common_checkpoint_earlier": false,
+  "follow_up_training_seeds_warranted": false,
+  "control_thresholds": {
+    "0.8": {
+      "reached_at_sample": true,
+      "previous_sample_steps": 10240000,
+      "first_passing_sample_steps": 15360000,
+      "trainer_seconds_at_sample": 763.1318204402924,
+      "all_later_samples_pass": true,
+      "continuous_crossing_measured": false
+    },
+    "0.85": {
+      "reached_at_sample": true,
+      "previous_sample_steps": 10240000,
+      "first_passing_sample_steps": 15360000,
+      "trainer_seconds_at_sample": 763.1318204402924,
+      "all_later_samples_pass": true,
+      "continuous_crossing_measured": false
+    },
+    "0.9": {
+      "reached_at_sample": true,
+      "previous_sample_steps": 15360000,
+      "first_passing_sample_steps": 20480000,
+      "trainer_seconds_at_sample": 974.1355319023132,
+      "all_later_samples_pass": true,
+      "continuous_crossing_measured": false
+    }
+  },
+  "candidate_thresholds": {
+    "0.8": {
+      "reached_at_sample": true,
+      "previous_sample_steps": 10240000,
+      "first_passing_sample_steps": 15360000,
+      "trainer_seconds_at_sample": 754.2187156677246,
+      "all_later_samples_pass": true,
+      "continuous_crossing_measured": false
+    },
+    "0.85": {
+      "reached_at_sample": true,
+      "previous_sample_steps": 10240000,
+      "first_passing_sample_steps": 15360000,
+      "trainer_seconds_at_sample": 754.2187156677246,
+      "all_later_samples_pass": true,
+      "continuous_crossing_measured": false
+    },
+    "0.9": {
+      "reached_at_sample": true,
+      "previous_sample_steps": 10240000,
+      "first_passing_sample_steps": 15360000,
+      "trainer_seconds_at_sample": 754.2187156677246,
+      "all_later_samples_pass": true,
+      "continuous_crossing_measured": false
+    }
+  },
+  "claim": "single-seed development screen, not confirmation or a reliable sample-efficiency result"
+}
