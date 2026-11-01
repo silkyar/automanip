@@ -1,0 +1,66 @@
+{
+  "admitted": true,
+  "experiment": "soft-value-envelope-audit-20261029",
+  "cases": [
+    {
+      "name": "baseline/actor-step-512000",
+      "state": "runs/full-stacking-curve-20261029/baseline/run/actor-step-512000-state.npz",
+      "state_sha256": "fae0f05c5fe853894097085be2372278ecdba8f6b16ab840b282a2ba970e6a5b",
+      "trajectory": "runs/full-stacking-curve-20261029/baseline/run/actor-step-512000-trajectory.npz",
+      "trajectory_sha256": "adbb36b9cb6d328caf05856216ea536ed29c71d2308eb4de4dc607aef0e9931f"
+    },
+    {
+      "name": "baseline/actor-final",
+      "state": "runs/full-stacking-curve-20261029/baseline/run/actor-final-state.npz",
+      "state_sha256": "18e3e5fa42ffce0ccb4f5ff2bcd82fa4faaa13291d338c1e609716aa0f6b8735",
+      "trajectory": "runs/full-stacking-curve-20261029/baseline/run/actor-final-trajectory.npz",
+      "trajectory_sha256": "8a9e1e1947665f1ffbd0ba1317adb9379ce865c9a500244977e04f5a57be442d"
+    },
+    {
+      "name": "coordinate/actor-step-512000",
+      "state": "runs/full-stacking-curve-20261029/coordinate/run/actor-step-512000-state.npz",
+      "state_sha256": "c457e9f53a7d997b995890a8550319115a5a13309e37993524342b57b9092e8c",
+      "trajectory": "runs/full-stacking-curve-20261029/coordinate/run/actor-step-512000-trajectory.npz",
+      "trajectory_sha256": "7f1b86d55198cf14e44d3d05c16c0e06130505d62fd48afb50bf18f95dc9fe1a"
+    },
+    {
+      "name": "coordinate/actor-final",
+      "state": "runs/full-stacking-curve-20261029/coordinate/run/actor-final-state.npz",
+      "state_sha256": "aff6b8d63bde627c16d092a555b7175e31d1cbb4d4083feef0042d88ba72217b",
+      "trajectory": "runs/full-stacking-curve-20261029/coordinate/run/actor-final-trajectory.npz",
+      "trajectory_sha256": "5ddeed9ef776c71b9ea7999a38d40f60fcffaebaf7b07e65cfea8f76c3fcc5f4"
+    }
+  ],
+  "sampling": "Each50x64 observedbuffer temporalindices0,4,...48;832rows/pool. All4poolx4snapshotcells;8 common standardizedGaussian draws seed93502100; no adaptivepool/sample expansion.",
+  "gamma": 0.99,
+  "noise_draws": 8,
+  "noise_seed": 93502100,
+  "max_child_seconds": 90,
+  "optimizer_calls": 0,
+  "new_environment_transitions": 0,
+  "GPU_work": 0,
+  "scope": "Conditional fixed-policy/alpha expected-value consistency and algebraic target decomposition, not historicalminibatch reconstruction or critictruth/regressioncause",
+  "parity": "First64observedrows: originalActor.sample vs same-noise stablelatentformula and originalLearner.critic_target vs decomposedtarget, atol2e-5/rtol2e-5. Stop on mismatch. CPU FP32 only, not GPUbitparity.",
+  "reward_assumption": "r\u2208[0,1] frompinnedorderedrewardbranches underlegalPanda fingerjointpositions; source does notclipgripperwidth. Verifyobservedrewardrange/fingerpositions, preserveconditionalnature; no global arbitrary-physics proof.",
+  "entropy_math": "Bj=L1norm(mean.weight_j)+abs(mean.bias_j); Hmin=sum_j[min over ell\u2208{-5,2}(.5log(2pi e)+ell\u22122exp(ell)sqrt(2/pi))\u22122Bj]; Hmax=8log2. Qexpectedlower=gammaalphaHmin/(1\u2212gamma), upper=(1+gammaalphaHmax)/(1\u2212gamma). Only stationaryfrozenpolicy/constantalpha andboundedreward. Not sampletargetbounds, laggedtarget/adaptivealpha guarantees or implementationbug test.",
+  "metrics": "Everycell signedquantiles/means/extrema ofr,gamma*minQt,\u2212gammaalpha logpi,Y,currentQ\u2212Y, alltwins; expectedQ-outside-screen fractions, per-dimLP/mu/std andcontext forfixedtop8absYrows. Same storedbehaviorobs/actions foronline/targetcritic-onlycontrol acrosssnapshots; noactoractionchange incontrol.",
+  "decision": "Ifnoextremesrecovered, reportunrecoveredonthispool. Ifboundsloose/informative onlyonlaggedtarget, preserveit. Noautomaticmethod/GPU admission. Decomposition continuous, no post-hoc threshold winner.",
+  "source_pins": {
+    "replay_learner_lowalpha.py": "aeea61b2a55458a207f1dccb6c996a411acda67bc3238dc9c9c33fec7bd965bf",
+    "sac_baseline.py": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca",
+    "upstream/stack_cube_pinned.py": "ff76ae608f79ba3ea13334e61ccb72f291660f9461895c70e3c30f8390694440"
+  },
+  "audit_source_sha256": "de6cb9344b25f8faf2f9f6895da215314c5df15977d788fb9b15bff43f52bad2",
+  "bound_arithmetic": "Mean L1 bounds reduced inFP64 over exactstoredFP32weights. CompareFP32Q outputs withmargin1e-3+1e-5*maxabsbound; stationary/physical reward assumptions remain conditional.",
+  "external_hard_cap_wrapper": ".runtime/run-soft-value-envelope-audit.py",
+  "reward_state_check": "Rewardafteraction:recordnext_obsfingerperjointmin/max andoutsidelegal0..04 withraw/1e-5tolerances; pre-step sum isseparate, no unconditionalphysicalvalue certificate.",
+  "work_expected": {
+    "actor_forward_rows": 13824,
+    "critic_head_forward_rows": 267776,
+    "Gaussian_sample_rows": 107008,
+    "optimizer_calls": 0
+  },
+  "external_wrapper_sha256": "a9f647546d809a0a229b8a78b7de5cc12a17d68493ef90c784da9c1d431b2e58",
+  "root_admitted_at": 1793294784.206478,
+  "admission_scope": "One originalfrozenCPUforwardaudit hard90s; nooptimizer/newenv/GPU; no adaptivepool/seed extension"
+}

@@ -1,0 +1,163 @@
+{
+  "format": "automanip-gripper-hold-analysis-v1",
+  "state": "complete",
+  "training_seed": 41,
+  "common_steps": [
+    0,
+    512000,
+    1024000,
+    2048000,
+    4096000
+  ],
+  "methods": {
+    "full": {
+      "success_curve": [
+        [
+          0,
+          0.0
+        ],
+        [
+          512000,
+          0.0
+        ],
+        [
+          1024000,
+          0.0
+        ],
+        [
+          2048000,
+          0.0
+        ],
+        [
+          4096000,
+          0.0
+        ]
+      ],
+      "normalized_success_auc": 0.0,
+      "T80": {
+        "observed_first_step": null,
+        "confirmed_at": null,
+        "censored": true,
+        "last_observed_step": 4096000,
+        "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+      },
+      "T90": {
+        "observed_first_step": null,
+        "confirmed_at": null,
+        "censored": true,
+        "last_observed_step": 4096000,
+        "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+      },
+      "actual_training_transitions": 4096000,
+      "optimizer_calls": 20281,
+      "trainer_process_seconds": 250.304843007,
+      "wrapper_seconds": 257.646156018,
+      "scorer_seconds": 20.306843216
+    },
+    "masked": {
+      "success_curve": [
+        [
+          0,
+          0.0
+        ],
+        [
+          512000,
+          0.0
+        ],
+        [
+          1024000,
+          0.0
+        ],
+        [
+          2048000,
+          0.0
+        ],
+        [
+          4096000,
+          0.0
+        ]
+      ],
+      "normalized_success_auc": 0.0,
+      "T80": {
+        "observed_first_step": null,
+        "confirmed_at": null,
+        "censored": true,
+        "last_observed_step": 4096000,
+        "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+      },
+      "T90": {
+        "observed_first_step": null,
+        "confirmed_at": null,
+        "censored": true,
+        "last_observed_step": 4096000,
+        "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+      },
+      "actual_training_transitions": 4096000,
+      "optimizer_calls": 20480,
+      "trainer_process_seconds": 237.649944165,
+      "wrapper_seconds": 243.70013043900002,
+      "scorer_seconds": 24.810889087
+    },
+    "hold": {
+      "success_curve": [
+        [
+          0,
+          0.0
+        ],
+        [
+          512000,
+          0.0
+        ],
+        [
+          1024000,
+          0.0
+        ],
+        [
+          2048000,
+          0.0
+        ],
+        [
+          4096000,
+          0.0
+        ]
+      ],
+      "normalized_success_auc": 0.0,
+      "T80": {
+        "observed_first_step": null,
+        "confirmed_at": null,
+        "censored": true,
+        "last_observed_step": 4096000,
+        "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+      },
+      "T90": {
+        "observed_first_step": null,
+        "confirmed_at": null,
+        "censored": true,
+        "last_observed_step": 4096000,
+        "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+      },
+      "actual_training_transitions": 4096000,
+      "optimizer_calls": 20480,
+      "trainer_process_seconds": 212.975658149,
+      "wrapper_seconds": 218.882400605,
+      "scorer_seconds": 25.488520217
+    }
+  },
+  "hold_minus_controls": {
+    "full": {
+      "auc_gain": 0.0,
+      "final_success_gain": 0.0
+    },
+    "masked": {
+      "auc_gain": 0.0,
+      "final_success_gain": 0.0
+    }
+  },
+  "single_seed_material_screen_passed": false,
+  "new_training_transitions": 12288000,
+  "new_public_transitions": 96000,
+  "confirmation_queries": 0,
+  "final_queries": 0,
+  "decision": "Reject this bounded hold-prior screen; no automatic variant or extension",
+  "scope": "One fresh training seed and one task with explicit analytic actuator prior. Not replicated sample-efficiency evidence; report compute separately."
+}

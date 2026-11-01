@@ -1,0 +1,69 @@
+{
+  "format": "automanip-randomized-release-analysis-v1",
+  "new_simulator_transitions": 204800,
+  "optimizer_calls": 0,
+  "successes": {
+    "no_update": [
+      2,
+      0
+    ],
+    "scheduled_open": [
+      6,
+      6
+    ],
+    "targeted_open": [
+      16,
+      11
+    ],
+    "targeted_open_zero_arm": [
+      25,
+      15
+    ]
+  },
+  "comparisons": {
+    "targeted_open-minus-no_update": {
+      "mean_difference": 0.0244140625,
+      "interval_98_75": [
+        0.0126953125,
+        0.0380859375
+      ],
+      "scope": "Randomized16episodes per arm within64lane blocks; resample32whole blocks within each of2fixed policies, not training-seed inference"
+    },
+    "targeted_open_zero_arm-minus-no_update": {
+      "mean_difference": 0.037109375,
+      "interval_98_75": [
+        0.0205078125,
+        0.0556640625
+      ],
+      "scope": "Randomized16episodes per arm within64lane blocks; resample32whole blocks within each of2fixed policies, not training-seed inference"
+    },
+    "targeted_open-minus-scheduled_open": {
+      "mean_difference": 0.0146484375,
+      "interval_98_75": [
+        -0.001953125,
+        0.031744384765625355
+      ],
+      "scope": "Randomized16episodes per arm within64lane blocks; resample32whole blocks within each of2fixed policies, not training-seed inference"
+    },
+    "targeted_open_zero_arm-minus-targeted_open": {
+      "mean_difference": 0.0126953125,
+      "interval_98_75": [
+        -0.005859375,
+        0.0322265625
+      ],
+      "scope": "Randomized16episodes per arm within64lane blocks; resample32whole blocks within each of2fixed policies, not training-seed inference"
+    }
+  },
+  "material_release_screen": {
+    "targeted_open": false,
+    "targeted_open_zero_arm": false
+  },
+  "timing_screen": false,
+  "worker_seconds": [
+    73.779697406,
+    84.69036997399999
+  ],
+  "scope": "Manually specified interventions on two frozen failed policies; randomized group effects, not paired episode effects, learned skill, training-seed generalization or sample-efficiency gain",
+  "action_audit": "artifacts/cumulative/release-randomized-20261030/action-audit-v1.json",
+  "decision": "Five-step repair is insufficient for final success. Strong transient success followed by static/contact failures motivates one post-window2x2maintenance probe, not policy promotion or training."
+}

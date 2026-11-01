@@ -1,0 +1,30 @@
+{
+  "base_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+  "patch_source_sha256": "b817a73a8c39d506ab8cf37970b64685488986e6e5a0ed62738f2b160568768a",
+  "payloads": {
+    "scratch-kl-stop-control": {
+      "path": "research/discovery/from-scratch-kl-value-v2/scratch-kl-stop-control.py",
+      "sha256": "de067415f6895f7b4fcc534cff20fe9cd628fef6faae3846c3b49687ff526632"
+    },
+    "scratch-kl-stop-critic": {
+      "path": "research/discovery/from-scratch-kl-value-v2/scratch-kl-stop-critic.py",
+      "sha256": "8784f4d7aeb268a4794a59c509b761f740fffdd5932b0e6dd364ec4157c9228b"
+    }
+  },
+  "contract_tests_passed": 5,
+  "contract_test_source_sha256": "832afd23b1e286e8f57b4b883504175d62dcc17112ac8bfa38d16b86a813205d",
+  "cpu_contract_evidence": {
+    "forced_kl_stop_control_joint_calls": 1,
+    "forced_kl_stop_candidate_joint_calls": 1,
+    "forced_kl_stop_candidate_critic_only_calls": 15,
+    "forced_kl_stop_candidate_reached_epochs": 8,
+    "actor_logstd_weights_moments_step_counters_ratios_entropy_numpy_torch_rng_match": true,
+    "no_kl_stop_all16_joint_calls_and_parameters_bitwise_match": true,
+    "adam_zero_tensor_gradient_drift_counterexample_passed": true
+  },
+  "teacher_or_demo_inputs": false,
+  "checkpoint_initialization_forbidden": true,
+  "GPU_launched": false,
+  "dollars_spent": 0,
+  "scope": "Two from-scratch source proposals only; no launch authorization or performance claim."
+}

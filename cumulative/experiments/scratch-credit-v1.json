@@ -1,0 +1,73 @@
+{
+  "format": "automanip-scratch-credit-experiment-v1",
+  "created_at": 1793383218.6167092,
+  "execution_authorized": true,
+  "hypothesis": "Full sampled future-reward targets may improve early from-scratch PPO learning versus the tuned GAE baseline; test transfer of the assisted one-step target signal to actual learning, not assume it.",
+  "comparison": "Same strong precision-constant recipe; shared safe export, blind first64lane trace sampling and work accounting. Only target block changes: GAE(lambda.9,original bootstrap) versus finite50-step MC(gamma.9,zero terminal tail). This is a combined target intervention, not lambda-only or tail-only attribution.",
+  "initialization": "Fresh independent random initialization seed1/2/3; no teacher, BC policy, demonstrations or old experience",
+  "training_plan": {
+    "format": "automanip-scratch-credit-training-v1",
+    "execution_authorized": true,
+    "programs": {
+      "ppo-gae": "0644e90ed2f65659766be872cee0e8864affd12f8e8ea8880f412357b9bd6dc8",
+      "ppo-finite-mc": "a1f69f4b207bb756d561bee3e1ff21145beaffe5ebe7103e6bacc36fb746d669"
+    },
+    "helper_sha256": "549f3d7e69a68e81b38fa627ffadeed9caf6af1d9bcb6b8278026cd85367d5bb",
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "max_training_transitions_per_trial": 10240000,
+    "trainer_seconds": 600,
+    "checkpoints": [
+      0,
+      512000,
+      1024000,
+      2048000,
+      4096000,
+      6144000,
+      8192000,
+      10240000
+    ],
+    "source_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+    "source_acquisition_transitions": 0,
+    "teacher_data": false,
+    "observation_dim": 48,
+    "action_dim": 8,
+    "gamma": 0.9,
+    "gae_lambda": 0.9,
+    "entropy": 0.003,
+    "num_envs": 1024,
+    "num_steps": 50,
+    "num_minibatches": 32,
+    "update_epochs": 8,
+    "learning_rate": 0.0003,
+    "partial_reset": false,
+    "checkpoint": null,
+    "production_pins": {
+      "mani_skill": "3.0.0b21",
+      "sapien": "3.0.0b1",
+      "torch": "2.6.0+cu124",
+      "numpy": "1.26.4",
+      "gymnasium": "0.29.1"
+    }
+  },
+  "max_training_transitions": 61440000,
+  "max_public_development_transitions": 307200,
+  "scorer": "Separate image, unchanged physical StackCube evaluator, safe actor JSON only, candidate volume mounted read-only. No trainer feedback during this registered experiment.",
+  "development_seed_bases": [
+    94100000,
+    94101000,
+    94102000
+  ],
+  "episodes_per_checkpoint": 128,
+  "primary": "Paired per-seed success AUC over common completed prespecified transition checkpoints; report all3seeds and point curves. T80/T90 require two consecutive checkpoints over threshold; no interpolation and censor unreached crossings.",
+  "material_result": "At least2x earlier T80 across all3seed pairs without reduced final success, with no greater measured total learner compute, would justify replication. 10x remains the original objective; lesser gains must be labeled accurately. If crossings censored or seeds disagree, do not assert resolved efficiency gain.",
+  "wall_time": "Same600s trainer process cap and10.24M interaction ceiling. Report achieved work, optimizer updates, collection/learner/export overhead separately; equal ceilings do not guarantee equal consumed compute.",
+  "final_queries": 0,
+  "confirmation_queries": 0,
+  "followup": "Reassess after learning curves. No automatic optimizer/architecture sweep or extension of ceilings.",
+  "adapter_sha256": "c6eea567c914e360d80a711db201ecfbdc6e99f98716a3a265aaddd4329398b5",
+  "analysis_preparation_source_sha256": "528cdfaa65a08a27c317c51735755fac051aa934ba9dda258dce6c640eb1af7e"
+}

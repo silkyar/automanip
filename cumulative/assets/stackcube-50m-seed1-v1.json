@@ -1,0 +1,63 @@
+{
+  "format": "automanip-cumulative-asset-v1",
+  "version": 1,
+  "capability": "whole StackCube policy; not an independently validated grasp skill",
+  "source_task": {
+    "goal": "source",
+    "interface": {
+      "robot": "panda_wristcam",
+      "controller": "pd_joint_delta_pos",
+      "observation_dim": 48,
+      "action_dim": 8,
+      "control_hz": 20,
+      "simulation_hz": 100,
+      "horizon": 50,
+      "action_semantics": "clip[-1,1]; arm7:q_target=q_current+0.1*a radians; gripper:absolute_mimic_target=0.015+0.025*a meters; use_target=False",
+      "observation_semantics": "qpos arm[0:7]rad fingers[7:9]m; qvel arm[9:16]rad/s fingers[16:18]m/s; TCPpose[18:25],cubeApose[25:32],cubeBpose[32:39] per-environment scene coordinates(m,wxyz; GPU scene offsets removed); A-TCP[39:42],B-TCP[42:45],B-A[45:48] per-environment scene meters",
+      "goal_encoding": "cubeB per-environment scene pose and relative vectors; stack center 0.04m above cubeB; no extra goal dimensions",
+      "boundaries": "full50 control steps; success does not reset; true termination and time truncation distinct; restart at explicit episode boundary",
+      "information": "state48 only; no object velocities/contact-force inputs, simulator lookahead, demonstrations or evaluator signals unless separately declared",
+      "runtime": "stateless tanh-hidden MLP,linear output clipped[-1,1];automanip-json-f32-v1"
+    },
+    "native_fingerprint": "b524435b1d25e915ff9cbdc1cc18f129ded8257d12129f5a426bad9fa6e22d4f"
+  },
+  "interface_id": "eb43792de240b9f7b1556233643280d50fbccedad750e6ad991b3cd9b38f3f90",
+  "policy_path": "runs/stackcube-bc-exploration-pilot-20261028/teacher-input",
+  "weights_sha256": "ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16",
+  "policy_manifest_sha256": "7907d391c032c9b83a3fdc16348a8cecb63bc3f529ebaeb5338d997a7bde1421",
+  "parents": [],
+  "acquisition": {
+    "environment_transitions": 49971200,
+    "wall_seconds": 2295.408300588,
+    "dollars": null
+  },
+  "applicability": [
+    {
+      "task_id": "stackcube-source-7a1aa4969ed2a6c5",
+      "partition": "historical_confirmation_not_new_feedback",
+      "successes": 497,
+      "episodes": 512,
+      "report": "runs/private-confirmation/stackcube-precision-20261028/summary.json",
+      "note": "Whole stacking policy applicability only; target north variation unassessed"
+    }
+  ],
+  "data_assets": [
+    {
+      "format": "automanip-public-training-demos-v1",
+      "path": "runs/stackcube-bc-exploration-pilot-20261028/collect/native/run",
+      "sha256": "495a392364926211397222bfa77e79ff4a6c2c87564f226dc1212f333ebec782",
+      "partition": "training",
+      "task_id": "stackcube-source-7a1aa4969ed2a6c5",
+      "episodes": 512,
+      "failures": 15,
+      "used_by_this_PPO_strategy": false,
+      "acquisition": {
+        "environment_transitions": 25600,
+        "wall_seconds": 29.36977253,
+        "dollars": null
+      },
+      "note": "Available prior experience; no source reward/critic/replay used for the new goal"
+    }
+  ],
+  "asset_id": "b65f852efc6f8a84c7f71df48ae5f2c1a538bcad0337eb504463f9c7e1e79d5b"
+}

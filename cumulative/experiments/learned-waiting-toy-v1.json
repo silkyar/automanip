@@ -1,0 +1,17 @@
+{
+  "format": "automanip-learned-waiting-essential-toy-v1",
+  "created_at": 1793395517.8856618,
+  "question": "Can learningcontinuationvalueratherthanusinganabsolutestopconfidencechoosecorrectiontimingwithoutfuturepeek?",
+  "motivation": "Robotprototype: supportedselector39.1%vsrandom42.2%. Itintervened158/256episodes;100/158triggeredepisodesfinishedsuccessful. Theseconditionalratesaredescriptive,notcausalsubgroups. A goodopportunitynowmustbecomparedwithfutureopportunities,notonlytheuncorrectedpolicy.",
+  "toy": "2decisiondates. Initialobservedsignalzuniform{0,1};P(favorablefuture|z)=.2or.8. Stopnowpayoff.4; nextdatepayoff.9ifgood,.1ifbad; waitingpastlastdatepayoff0. Payoffmapknownforthismechanismprobe,notlearnedrobottruth.",
+  "analytical": "Optimalvalue.5*(.4+.74)=.57. Time-onlycontinuation.50; fixed.8stopthreshold.45; stopifbetterthanbaseforever.40. Clairvoyantfuturemax.65isnotavalidpolicy.",
+  "method": "Backwardleast-squaresregressofrealizedfuturecashflowoncurrentfeatures, thenexercisewhenknowncurrentpayoff>estimatedcontinuation+.01. Ridge.001trace/d. Fitonly512trainingpaths; evaluate32768independentpathsperseed. Statefeatures[1,z,currentfuturestate]; time-onlycontrolconstant1.",
+  "seeds": [
+    96010001,
+    96010002,
+    96010003
+  ],
+  "screen": "Eachseedstatepolicywithin.02ofanalytic.57; >=.05aboveconstantcontinuationand>=.08abovefixedthreshold. Noearlierdecisiondependsonunobservedfuture. Clairvoyantcontrolmustexceedanalyticoptimalvalue,demonstratingitsinvalidity.",
+  "counting": "3*(512+32768)*2=199680generatedtoytransitions;12smallregressions;0robotsteps. Knownpayoffisexplicitassistanceinthisessentialtest.",
+  "scope": "Knownoptimalstoppingprinciple,notnovelalgorithmorrobotlearningimprovement. Robotrequiresanestimatedoptionpayoffandpartial-observationhandling; literatureguaranteesnotinherited."
+}

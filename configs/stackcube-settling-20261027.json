@@ -1,0 +1,39 @@
+{
+  "campaign_id": "stackcube-settling-20261027",
+  "hypothesis": "Test full-horizon training, late entropy decay, and discount/entropy interaction against the 83.6% development reference.",
+  "requested_transitions": 25000000,
+  "training_seeds": [
+    1,
+    2,
+    3
+  ],
+  "candidates": [
+    {
+      "id": "settle-full-horizon",
+      "gamma": 0.9,
+      "partial_reset": false,
+      "entropy_schedule": "constant",
+      "ent_coef": 0.003,
+      "learning_rate": 0.0003,
+      "update_epochs": 8
+    },
+    {
+      "id": "settle-entropy-decay",
+      "gamma": 0.9,
+      "partial_reset": true,
+      "entropy_schedule": "decay-after-15m",
+      "ent_coef": 0.003,
+      "learning_rate": 0.0003,
+      "update_epochs": 8
+    },
+    {
+      "id": "settle-gamma0925-entropy003",
+      "gamma": 0.925,
+      "partial_reset": true,
+      "entropy_schedule": "constant",
+      "ent_coef": 0.003,
+      "learning_rate": 0.0003,
+      "update_epochs": 8
+    }
+  ]
+}

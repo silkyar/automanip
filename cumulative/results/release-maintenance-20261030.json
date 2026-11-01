@@ -1,0 +1,68 @@
+{
+  "format": "automanip-release-maintenance-analysis-v1",
+  "new_simulator_transitions": 204800,
+  "optimizer_calls": 0,
+  "successes": {
+    "resume_actor": [
+      24,
+      8
+    ],
+    "keep_open": [
+      252,
+      84
+    ],
+    "zero_arm": [
+      94,
+      68
+    ],
+    "keep_open_zero_arm": [
+      310,
+      286
+    ]
+  },
+  "comparisons": {
+    "keep_open-minus-resume_actor": {
+      "mean_difference": 0.296875,
+      "interval_98_75": [
+        0.2587890625,
+        0.3330078125
+      ],
+      "scope": "Randomized16episodes per arm within64lane blocks; resample32whole blocks within each of2fixed policies, not training-seed inference"
+    },
+    "zero_arm-minus-resume_actor": {
+      "mean_difference": 0.126953125,
+      "interval_98_75": [
+        0.0986328125,
+        0.15625
+      ],
+      "scope": "Randomized16episodes per arm within64lane blocks; resample32whole blocks within each of2fixed policies, not training-seed inference"
+    },
+    "keep_open_zero_arm-minus-resume_actor": {
+      "mean_difference": 0.55078125,
+      "interval_98_75": [
+        0.5126953125,
+        0.587890625
+      ],
+      "scope": "Randomized16episodes per arm within64lane blocks; resample32whole blocks within each of2fixed policies, not training-seed inference"
+    },
+    "factorial_interaction": {
+      "mean_difference": 0.126953125,
+      "interval_98_75": [
+        0.0703125,
+        0.185546875
+      ],
+      "scope": "Randomized16episodes per arm within64lane blocks; resample32whole blocks within each of2fixed policies, not training-seed inference"
+    }
+  },
+  "material_maintenance_screen": {
+    "keep_open": true,
+    "zero_arm": false,
+    "keep_open_zero_arm": true
+  },
+  "worker_seconds": [
+    88.081710235,
+    75.544824447
+  ],
+  "scope": "Hand-specified post-opening2x2control intervention on2fixedfailedpolicies. No training, new learned skill, population-of-training-seeds or sample-efficiency claim.",
+  "decision": "Manual maintenance materially repairs these two policies: combined final596/1024 versus32/1024 resumed actor, gain55.08pp. Investigate a learned persistent correction; no trained-policy promotion and no automatic further controller tuning."
+}

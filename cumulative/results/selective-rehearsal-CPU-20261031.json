@@ -1,0 +1,65 @@
+{
+  "state": "complete",
+  "passed": false,
+  "parents": [
+    {
+      "parent": 2,
+      "methods": {
+        "original": {
+          "finger_target_RMSE_metres": 0.013230500918934233,
+          "non_on_top_memory_executed_RMS_change": 0.0888850046559073,
+          "all_memory_executed_RMS_change": 0.10880732977898884,
+          "arm_delta_max_change": 0.0
+        },
+        "stage_selective": {
+          "finger_target_RMSE_metres": 0.0059626293007957925,
+          "non_on_top_memory_executed_RMS_change": 0.0921209980053291,
+          "all_memory_executed_RMS_change": 0.21880455086556685,
+          "arm_delta_max_change": 0.0
+        },
+        "time_matched_random": {
+          "finger_target_RMSE_metres": 0.008162275718933359,
+          "non_on_top_memory_executed_RMS_change": 0.10200605426931704,
+          "all_memory_executed_RMS_change": 0.16731977983100274,
+          "arm_delta_max_change": 0.0
+        }
+      },
+      "passed": false,
+      "removed_gripper_rows": 445,
+      "per_time_counts_match": true
+    },
+    {
+      "parent": 3,
+      "methods": {
+        "original": {
+          "finger_target_RMSE_metres": 0.01029054536476863,
+          "non_on_top_memory_executed_RMS_change": 0.10205125857759248,
+          "all_memory_executed_RMS_change": 0.11902840387533681,
+          "arm_delta_max_change": 0.0
+        },
+        "stage_selective": {
+          "finger_target_RMSE_metres": 0.004910555553957906,
+          "non_on_top_memory_executed_RMS_change": 0.09928560330505945,
+          "all_memory_executed_RMS_change": 0.20028782272202914,
+          "arm_delta_max_change": 0.0
+        },
+        "time_matched_random": {
+          "finger_target_RMSE_metres": 0.005241662437953758,
+          "non_on_top_memory_executed_RMS_change": 0.10311072862755578,
+          "all_memory_executed_RMS_change": 0.17673648497435063,
+          "arm_delta_max_change": 0.0
+        }
+      },
+      "passed": false,
+      "removed_gripper_rows": 502,
+      "per_time_counts_match": true
+    }
+  ],
+  "linear_solves": 4,
+  "CPU_seconds": 0.16096100000000002,
+  "new_environment_transitions": 0,
+  "optimizer_calls": 0,
+  "policy_exports": 0,
+  "robot_assessments": 0,
+  "scope": "Fixed assisted-data interference probe; heldoutcorpusadaptivelyreused, nolearningorpolicyperformanceclaim"
+}

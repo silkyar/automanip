@@ -1,0 +1,88 @@
+{
+  "format": "automanip-readout-score-analysis-v1",
+  "state": "complete",
+  "new_public_transitions": 153600,
+  "optimizer_calls": 0,
+  "worker_seconds": [
+    22.864234232999998,
+    24.546566691,
+    19.840683966,
+    22.896718123,
+    20.333040692000004,
+    22.183615818
+  ],
+  "policies": {
+    "base": [
+      {
+        "parent": 2,
+        "successes": 1,
+        "episodes": 512,
+        "ever_grasp": 512,
+        "weights_sha256": "d17c38edc1797b7766685dac257fe9eeb22fe5e04f1f1b21200fbf79092c7ce1"
+      },
+      {
+        "parent": 3,
+        "successes": 0,
+        "episodes": 512,
+        "ever_grasp": 512,
+        "weights_sha256": "7f550fa77a6258c7f2baa66e5ba2356c94bb4f7816c06822d22e80b8eb845257"
+      }
+    ],
+    "search": [
+      {
+        "parent": 2,
+        "successes": 9,
+        "episodes": 512,
+        "ever_grasp": 508,
+        "weights_sha256": "6af1c48f45a81fa03691a7928269712e68ed2947c1f1cf6f4a152f34db26b19c"
+      },
+      {
+        "parent": 3,
+        "successes": 25,
+        "episodes": 512,
+        "ever_grasp": 502,
+        "weights_sha256": "cf0d0fc8a3b1ba82a14a7ba6dd1d04c39d98d912db12033dae88c6976b66ebed"
+      }
+    ],
+    "unbranched": [
+      {
+        "parent": 2,
+        "successes": 5,
+        "episodes": 512,
+        "ever_grasp": 504,
+        "weights_sha256": "4999994154b66149cef8ff3db128130c5eec9d5ad5451bf82717e51f04b69955"
+      },
+      {
+        "parent": 3,
+        "successes": 9,
+        "episodes": 512,
+        "ever_grasp": 508,
+        "weights_sha256": "3f6218d5e62b137cb5214f0a275eb5a8e30103cf5acd8d25a1eda7f82f2afab9"
+      }
+    ]
+  },
+  "pooled_success": {
+    "base": 0.0009765625,
+    "search": 0.033203125,
+    "unbranched": 0.013671875
+  },
+  "search_minus_base": {
+    "mean_gain": 0.0322265625,
+    "interval_97_5": [
+      0.0224609375,
+      0.04296875
+    ]
+  },
+  "search_minus_unbranched": {
+    "mean_gain": 0.01953125,
+    "interval_97_5": [
+      0.005859375,
+      0.0341796875
+    ]
+  },
+  "search_grasp_retention_passed": true,
+  "learning_screen_passed": false,
+  "search_specific_screen_passed": false,
+  "decision": "Fixed readout distillation failed its learning/retention screen; preserve failure, no score-driven refit",
+  "scope": "Two acquired fixed parent policies, one fixed readout fit per method, fresh public policy-only episodes; not from-scratch or held-task validation"
+}

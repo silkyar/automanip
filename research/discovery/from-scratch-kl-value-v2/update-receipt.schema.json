@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AUTOMANIP_KL_VALUE_UPDATES per-rollout inner JSON object",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "method": {
+      "enum": [
+        "scratch-kl-stop-control",
+        "scratch-kl-stop-critic"
+      ]
+    },
+    "base_source_sha256": {
+      "const": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082"
+    },
+    "patch_source_sha256": {
+      "const": "b817a73a8c39d506ab8cf37970b64685488986e6e5a0ed62738f2b160568768a"
+    },
+    "new_environment_transitions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "configured_epochs": {
+      "const": 8
+    },
+    "reached_epoch_count": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 8
+    },
+    "kl_stopped": {
+      "type": "boolean"
+    },
+    "kl_stop_epoch_0based": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "kl_stop_minibatch_0based": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "observed_kl": {
+      "type": "number"
+    },
+    "joint_actor_critic_optimizer_calls": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "actor_optimizer_calls": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "critic_only_optimizer_calls": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "critic_optimizer_calls": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "optimizer_calls_total": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "cumulative_joint_actor_critic_calls": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "cumulative_actor_optimizer_calls": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "cumulative_critic_only_optimizer_calls": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "cumulative_critic_optimizer_calls": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "cumulative_optimizer_calls_total": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "critic_only_training_rows": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "cumulative_critic_only_training_rows": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "critic_only_seconds": {
+      "type": "number",
+      "minimum": 0
+    },
+    "full_optimizer_loop_seconds": {
+      "type": "number",
+      "minimum": 0
+    },
+    "critic_only_deadline_skips": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "critic_only_mean_value_loss": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "actor_updates_after_kl_stop": {
+      "const": 0
+    },
+    "critic_only_actor_gradients_none": {
+      "const": true
+    },
+    "target_refreshes_in_critic_only_phase": {
+      "const": 0
+    },
+    "new_models_or_teacher_data": {
+      "const": false
+    }
+  },
+  "required": [
+    "method",
+    "base_source_sha256",
+    "patch_source_sha256",
+    "new_environment_transitions",
+    "configured_epochs",
+    "reached_epoch_count",
+    "kl_stopped",
+    "kl_stop_epoch_0based",
+    "kl_stop_minibatch_0based",
+    "observed_kl",
+    "joint_actor_critic_optimizer_calls",
+    "actor_optimizer_calls",
+    "critic_only_optimizer_calls",
+    "critic_optimizer_calls",
+    "optimizer_calls_total",
+    "cumulative_joint_actor_critic_calls",
+    "cumulative_actor_optimizer_calls",
+    "cumulative_critic_only_optimizer_calls",
+    "cumulative_critic_optimizer_calls",
+    "cumulative_optimizer_calls_total",
+    "critic_only_training_rows",
+    "cumulative_critic_only_training_rows",
+    "critic_only_seconds",
+    "full_optimizer_loop_seconds",
+    "critic_only_deadline_skips",
+    "critic_only_mean_value_loss",
+    "actor_updates_after_kl_stop",
+    "critic_only_actor_gradients_none",
+    "target_refreshes_in_critic_only_phase",
+    "new_models_or_teacher_data"
+  ]
+}

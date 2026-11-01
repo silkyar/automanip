@@ -1,0 +1,53 @@
+{
+  "format": "automanip-affine-conditioning-results-v1",
+  "state": "complete",
+  "parents": [
+    {
+      "parent": 2,
+      "passed": false,
+      "raw_metrics": {
+        "validation_teacher_mse": 0.057315196841955185,
+        "validation_finger_target_RMSE_metres": 0.014162513613700868,
+        "validation_coordinate_RMSE_metres": 0.0037706088274717334,
+        "validation_positive_increment_fraction": 0.06153846153846154,
+        "validation_rehearsal_clipped_RMS_change": 0.10765870006156478
+      },
+      "normalized_metrics": {
+        "validation_teacher_mse": 0.056886013597249985,
+        "validation_finger_target_RMSE_metres": 0.014252258837223053,
+        "validation_coordinate_RMSE_metres": 0.0031541433185338975,
+        "validation_positive_increment_fraction": 0.07692307692307693,
+        "validation_rehearsal_clipped_RMS_change": 0.10464045799191767
+      },
+      "initial_raw_output_max_error": 8.991300968208549e-07,
+      "CPU_seconds": 1.2319580829935148
+    },
+    {
+      "parent": 3,
+      "passed": false,
+      "raw_metrics": {
+        "validation_teacher_mse": 0.03987157344818115,
+        "validation_finger_target_RMSE_metres": 0.010117632150650025,
+        "validation_coordinate_RMSE_metres": 0.004092979803681374,
+        "validation_positive_increment_fraction": 0.041666666666666664,
+        "validation_rehearsal_clipped_RMS_change": 0.1010394225838812
+      },
+      "normalized_metrics": {
+        "validation_teacher_mse": 0.03419174998998642,
+        "validation_finger_target_RMSE_metres": 0.008560802787542343,
+        "validation_coordinate_RMSE_metres": 0.0033588141202926637,
+        "validation_positive_increment_fraction": 0.016666666666666666,
+        "validation_rehearsal_clipped_RMS_change": 0.11401882921299367
+      },
+      "initial_raw_output_max_error": 8.196623966227889e-07,
+      "CPU_seconds": 1.2266685839858837
+    }
+  ],
+  "CPU_gate_passed": false,
+  "new_physics": 0,
+  "adam_steps": 512,
+  "linear_solves": 2,
+  "training_forward_rows": 131072,
+  "total_CPU_seconds": 2.4586266669793986,
+  "decision": "Withhold GPU assessment; fixed input conditioning did not produce the specified precision improvement."
+}

@@ -1,0 +1,967 @@
+{
+  "hypothesis": "A lower-tail return objective can trade expected reward for reduced stochastic failure using ordinary scalar-reward data.",
+  "gate": "CVaR mean success at least99%, at least2pp paired gain over mean in4/6 seeds, and within1pp of conventional mean-minus-std risk control.",
+  "gate_passed": true,
+  "summary": {
+    "quantile-mean": {
+      "analytic_mean_success_probability": 0.9429594377676646,
+      "analytic_expected_reward": 0.9314926564693451,
+      "analytic_conditional_cvar10": 0.42391179005304974
+    },
+    "moment-mean-minus-std": {
+      "analytic_mean_success_probability": 0.9808585047721863,
+      "analytic_expected_reward": 0.9152337809403738,
+      "analytic_conditional_cvar10": 0.7496533493200938
+    },
+    "quantile-cvar10": {
+      "analytic_mean_success_probability": 0.9926696618398031,
+      "analytic_expected_reward": 0.909434030453364,
+      "analytic_conditional_cvar10": 0.848164310057958
+    }
+  },
+  "paired_two_point_wins": 6,
+  "records": [
+    {
+      "seed": 0,
+      "method": "quantile-mean",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9689605236053467,
+          "analytic_expected_reward": 0.9205549955368042,
+          "analytic_conditional_cvar10": 0.6551544070243835,
+          "mean_absolute_action": 0.000794597843196243
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.9423367977142334,
+          "analytic_expected_reward": 0.9318137764930725,
+          "analytic_conditional_cvar10": 0.4183332324028015,
+          "mean_absolute_action": 0.9950363636016846
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9423511028289795,
+          "analytic_expected_reward": 0.9318094253540039,
+          "analytic_conditional_cvar10": 0.4184606671333313,
+          "mean_absolute_action": 0.9940674901008606
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9423429369926453,
+          "analytic_expected_reward": 0.9318118095397949,
+          "analytic_conditional_cvar10": 0.41838759183883667,
+          "mean_absolute_action": 0.9946190714836121
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.9423429369926453,
+          "analytic_expected_reward": 0.9318116903305054,
+          "analytic_conditional_cvar10": 0.41838762164115906,
+          "mean_absolute_action": 0.9946163296699524
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9423478841781616,
+          "analytic_expected_reward": 0.9318101406097412,
+          "analytic_conditional_cvar10": 0.41843241453170776,
+          "mean_absolute_action": 0.9942730665206909
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.4603203535079956,
+      "training_mean_quantile_coverage_error": 0.25887489318847656,
+      "observed_training_failures": 534
+    },
+    {
+      "seed": 0,
+      "method": "moment-mean-minus-std",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9689605236053467,
+          "analytic_expected_reward": 0.9205549955368042,
+          "analytic_conditional_cvar10": 0.6551544070243835,
+          "mean_absolute_action": 0.000794597843196243
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.968999981880188,
+          "analytic_expected_reward": 0.9194786548614502,
+          "analytic_conditional_cvar10": 0.6447868347167969,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.968999981880188,
+          "analytic_expected_reward": 0.9194786548614502,
+          "analytic_conditional_cvar10": 0.6447868347167969,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.968999981880188,
+          "analytic_expected_reward": 0.9194786548614502,
+          "analytic_conditional_cvar10": 0.6447868347167969,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.968999981880188,
+          "analytic_expected_reward": 0.9194786548614502,
+          "analytic_conditional_cvar10": 0.6447868347167969,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.968999981880188,
+          "analytic_expected_reward": 0.9194786548614502,
+          "analytic_conditional_cvar10": 0.6447868347167969,
+          "mean_absolute_action": 1.0
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.4603203535079956,
+      "training_mean_quantile_coverage_error": 0.25887489318847656,
+      "observed_training_failures": 534
+    },
+    {
+      "seed": 0,
+      "method": "quantile-cvar10",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9689605236053467,
+          "analytic_expected_reward": 0.9205549955368042,
+          "analytic_conditional_cvar10": 0.6551544070243835,
+          "mean_absolute_action": 0.000794597843196243
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.9957325458526611,
+          "analytic_expected_reward": 0.9071224927902222,
+          "analytic_conditional_cvar10": 0.871863842010498,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9957325458526611,
+          "analytic_expected_reward": 0.9071224927902222,
+          "analytic_conditional_cvar10": 0.871863842010498,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9957325458526611,
+          "analytic_expected_reward": 0.9071224927902222,
+          "analytic_conditional_cvar10": 0.871863842010498,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.9957325458526611,
+          "analytic_expected_reward": 0.9071224927902222,
+          "analytic_conditional_cvar10": 0.871863842010498,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9957325458526611,
+          "analytic_expected_reward": 0.9071224927902222,
+          "analytic_conditional_cvar10": 0.871863842010498,
+          "mean_absolute_action": 1.0
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.4603203535079956,
+      "training_mean_quantile_coverage_error": 0.25887489318847656,
+      "observed_training_failures": 534
+    },
+    {
+      "seed": 1,
+      "method": "quantile-mean",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9689784049987793,
+          "analytic_expected_reward": 0.9205527305603027,
+          "analytic_conditional_cvar10": 0.6553113460540771,
+          "mean_absolute_action": 0.0016279979608953
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.9430421590805054,
+          "analytic_expected_reward": 0.9315524101257324,
+          "analytic_conditional_cvar10": 0.4246671199798584,
+          "mean_absolute_action": 0.9483557939529419
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9440677165985107,
+          "analytic_expected_reward": 0.9310431480407715,
+          "analytic_conditional_cvar10": 0.4338567852973938,
+          "mean_absolute_action": 0.8830990195274353
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9440996646881104,
+          "analytic_expected_reward": 0.9310118556022644,
+          "analytic_conditional_cvar10": 0.43414223194122314,
+          "mean_absolute_action": 0.8803282976150513
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.944096565246582,
+          "analytic_expected_reward": 0.9309896230697632,
+          "analytic_conditional_cvar10": 0.43411076068878174,
+          "mean_absolute_action": 0.8796011209487915
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9442291855812073,
+          "analytic_expected_reward": 0.9308239221572876,
+          "analytic_conditional_cvar10": 0.4352867007255554,
+          "mean_absolute_action": 0.8658368587493896
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.4393291175365448,
+      "training_mean_quantile_coverage_error": 0.24350261688232422,
+      "observed_training_failures": 509
+    },
+    {
+      "seed": 1,
+      "method": "moment-mean-minus-std",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9689784049987793,
+          "analytic_expected_reward": 0.9205527305603027,
+          "analytic_conditional_cvar10": 0.6553113460540771,
+          "mean_absolute_action": 0.0016279979608953
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.9947139024734497,
+          "analytic_expected_reward": 0.9076235890388489,
+          "analytic_conditional_cvar10": 0.8636686205863953,
+          "mean_absolute_action": 0.9352278709411621
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9946946501731873,
+          "analytic_expected_reward": 0.908023476600647,
+          "analytic_conditional_cvar10": 0.8639827370643616,
+          "mean_absolute_action": 0.9102551937103271
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.994827151298523,
+          "analytic_expected_reward": 0.9080064296722412,
+          "analytic_conditional_cvar10": 0.8651034235954285,
+          "mean_absolute_action": 0.915453314781189
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.9948408007621765,
+          "analytic_expected_reward": 0.9079988598823547,
+          "analytic_conditional_cvar10": 0.8652147650718689,
+          "mean_absolute_action": 0.9172559976577759
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9948514103889465,
+          "analytic_expected_reward": 0.9079930782318115,
+          "analytic_conditional_cvar10": 0.8653016090393066,
+          "mean_absolute_action": 0.9187420606613159
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.4393291175365448,
+      "training_mean_quantile_coverage_error": 0.24350261688232422,
+      "observed_training_failures": 509
+    },
+    {
+      "seed": 1,
+      "method": "quantile-cvar10",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9689784049987793,
+          "analytic_expected_reward": 0.9205527305603027,
+          "analytic_conditional_cvar10": 0.6553113460540771,
+          "mean_absolute_action": 0.0016279979608953
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.9910429120063782,
+          "analytic_expected_reward": 0.9106158018112183,
+          "analytic_conditional_cvar10": 0.8355346918106079,
+          "mean_absolute_action": 0.6740018725395203
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9909639954566956,
+          "analytic_expected_reward": 0.9106683135032654,
+          "analytic_conditional_cvar10": 0.834913969039917,
+          "mean_absolute_action": 0.6697425842285156
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9909464120864868,
+          "analytic_expected_reward": 0.9106720685958862,
+          "analytic_conditional_cvar10": 0.834766685962677,
+          "mean_absolute_action": 0.6693464517593384
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.9909428954124451,
+          "analytic_expected_reward": 0.9106687903404236,
+          "analytic_conditional_cvar10": 0.8347327709197998,
+          "mean_absolute_action": 0.6695610284805298
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9909389019012451,
+          "analytic_expected_reward": 0.9106703996658325,
+          "analytic_conditional_cvar10": 0.8347008228302002,
+          "mean_absolute_action": 0.6694363355636597
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.4393291175365448,
+      "training_mean_quantile_coverage_error": 0.24350261688232422,
+      "observed_training_failures": 509
+    },
+    {
+      "seed": 2,
+      "method": "quantile-mean",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9688827991485596,
+          "analytic_expected_reward": 0.9205648303031921,
+          "analytic_conditional_cvar10": 0.6544755697250366,
+          "mean_absolute_action": 0.0021874220110476017
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.9426849484443665,
+          "analytic_expected_reward": 0.9316965341567993,
+          "analytic_conditional_cvar10": 0.4214567244052887,
+          "mean_absolute_action": 0.9727467894554138
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9436719417572021,
+          "analytic_expected_reward": 0.9312520027160645,
+          "analytic_conditional_cvar10": 0.4303135871887207,
+          "mean_absolute_action": 0.9082342982292175
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9435290098190308,
+          "analytic_expected_reward": 0.9313188791275024,
+          "analytic_conditional_cvar10": 0.42903316020965576,
+          "mean_absolute_action": 0.9169480800628662
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.9435896277427673,
+          "analytic_expected_reward": 0.9312711954116821,
+          "analytic_conditional_cvar10": 0.4295750558376312,
+          "mean_absolute_action": 0.9123315811157227
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9437605738639832,
+          "analytic_expected_reward": 0.9310630559921265,
+          "analytic_conditional_cvar10": 0.4310859441757202,
+          "mean_absolute_action": 0.8954014778137207
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.43791463971138,
+      "training_mean_quantile_coverage_error": 0.2620668411254883,
+      "observed_training_failures": 501
+    },
+    {
+      "seed": 2,
+      "method": "moment-mean-minus-std",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9688827991485596,
+          "analytic_expected_reward": 0.9205648303031921,
+          "analytic_conditional_cvar10": 0.6544755697250366,
+          "mean_absolute_action": 0.0021874220110476017
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.9865816235542297,
+          "analytic_expected_reward": 0.9147032499313354,
+          "analytic_conditional_cvar10": 0.801798939704895,
+          "mean_absolute_action": 0.4035571217536926
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9848203659057617,
+          "analytic_expected_reward": 0.9157000780105591,
+          "analytic_conditional_cvar10": 0.7877418994903564,
+          "mean_absolute_action": 0.3422607183456421
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9836259484291077,
+          "analytic_expected_reward": 0.9159764051437378,
+          "analytic_conditional_cvar10": 0.7776325345039368,
+          "mean_absolute_action": 0.34812086820602417
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.9821779727935791,
+          "analytic_expected_reward": 0.9165604710578918,
+          "analytic_conditional_cvar10": 0.7656561136245728,
+          "mean_absolute_action": 0.332994669675827
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9809055328369141,
+          "analytic_expected_reward": 0.9169129729270935,
+          "analytic_conditional_cvar10": 0.7550605535507202,
+          "mean_absolute_action": 0.295677125453949
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.43791463971138,
+      "training_mean_quantile_coverage_error": 0.2620668411254883,
+      "observed_training_failures": 501
+    },
+    {
+      "seed": 2,
+      "method": "quantile-cvar10",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9688827991485596,
+          "analytic_expected_reward": 0.9205648303031921,
+          "analytic_conditional_cvar10": 0.6544755697250366,
+          "mean_absolute_action": 0.0021874220110476017
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.9912259578704834,
+          "analytic_expected_reward": 0.9105133414268494,
+          "analytic_conditional_cvar10": 0.8369940519332886,
+          "mean_absolute_action": 0.6825829744338989
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9914259910583496,
+          "analytic_expected_reward": 0.9104623794555664,
+          "analytic_conditional_cvar10": 0.8386597633361816,
+          "mean_absolute_action": 0.6875737905502319
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9915770292282104,
+          "analytic_expected_reward": 0.9104283452033997,
+          "analytic_conditional_cvar10": 0.8399226665496826,
+          "mean_absolute_action": 0.6912791728973389
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.9916298389434814,
+          "analytic_expected_reward": 0.9104138612747192,
+          "analytic_conditional_cvar10": 0.8403612971305847,
+          "mean_absolute_action": 0.6929545402526855
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9916433095932007,
+          "analytic_expected_reward": 0.9104034304618835,
+          "analytic_conditional_cvar10": 0.8404654860496521,
+          "mean_absolute_action": 0.6937911510467529
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.43791463971138,
+      "training_mean_quantile_coverage_error": 0.2620668411254883,
+      "observed_training_failures": 501
+    },
+    {
+      "seed": 3,
+      "method": "quantile-mean",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9689449071884155,
+          "analytic_expected_reward": 0.9205569624900818,
+          "analytic_conditional_cvar10": 0.6550183296203613,
+          "mean_absolute_action": 0.001029565348289907
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.9424980878829956,
+          "analytic_expected_reward": 0.9317630529403687,
+          "analytic_conditional_cvar10": 0.41978031396865845,
+          "mean_absolute_action": 0.9844464063644409
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9425452351570129,
+          "analytic_expected_reward": 0.9317461848258972,
+          "analytic_conditional_cvar10": 0.4202035665512085,
+          "mean_absolute_action": 0.9814257025718689
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9426010251045227,
+          "analytic_expected_reward": 0.9317221641540527,
+          "analytic_conditional_cvar10": 0.4207044541835785,
+          "mean_absolute_action": 0.977780818939209
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.9427607655525208,
+          "analytic_expected_reward": 0.9316545128822327,
+          "analytic_conditional_cvar10": 0.4221396744251251,
+          "mean_absolute_action": 0.9668310880661011
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9428841471672058,
+          "analytic_expected_reward": 0.9315893054008484,
+          "analytic_conditional_cvar10": 0.4232461452484131,
+          "mean_absolute_action": 0.9588038921356201
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.4375242292881012,
+      "training_mean_quantile_coverage_error": 0.20166397094726562,
+      "observed_training_failures": 514
+    },
+    {
+      "seed": 3,
+      "method": "moment-mean-minus-std",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9689449071884155,
+          "analytic_expected_reward": 0.9205569624900818,
+          "analytic_conditional_cvar10": 0.6550183296203613,
+          "mean_absolute_action": 0.001029565348289907
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.988131046295166,
+          "analytic_expected_reward": 0.9138681888580322,
+          "analytic_conditional_cvar10": 0.8142649531364441,
+          "mean_absolute_action": 0.4974719285964966
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9881566762924194,
+          "analytic_expected_reward": 0.9142327308654785,
+          "analytic_conditional_cvar10": 0.8149776458740234,
+          "mean_absolute_action": 0.5057742595672607
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9883037805557251,
+          "analytic_expected_reward": 0.9138612747192383,
+          "analytic_conditional_cvar10": 0.8158453702926636,
+          "mean_absolute_action": 0.5444610118865967
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.988178551197052,
+          "analytic_expected_reward": 0.914095401763916,
+          "analytic_conditional_cvar10": 0.815039336681366,
+          "mean_absolute_action": 0.5240447521209717
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9871024489402771,
+          "analytic_expected_reward": 0.9144634008407593,
+          "analytic_conditional_cvar10": 0.8061531782150269,
+          "mean_absolute_action": 0.5020613074302673
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.4375242292881012,
+      "training_mean_quantile_coverage_error": 0.20166397094726562,
+      "observed_training_failures": 514
+    },
+    {
+      "seed": 3,
+      "method": "quantile-cvar10",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9689449071884155,
+          "analytic_expected_reward": 0.9205569624900818,
+          "analytic_conditional_cvar10": 0.6550183296203613,
+          "mean_absolute_action": 0.001029565348289907
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.9889354705810547,
+          "analytic_expected_reward": 0.91270911693573,
+          "analytic_conditional_cvar10": 0.8197684288024902,
+          "mean_absolute_action": 0.5234085321426392
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9888591766357422,
+          "analytic_expected_reward": 0.9126666784286499,
+          "analytic_conditional_cvar10": 0.8190568685531616,
+          "mean_absolute_action": 0.5238993167877197
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9887688159942627,
+          "analytic_expected_reward": 0.9126759767532349,
+          "analytic_conditional_cvar10": 0.8182846903800964,
+          "mean_absolute_action": 0.5220279693603516
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.9887175559997559,
+          "analytic_expected_reward": 0.9126784801483154,
+          "analytic_conditional_cvar10": 0.8178439736366272,
+          "mean_absolute_action": 0.5211355686187744
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9886769652366638,
+          "analytic_expected_reward": 0.9126936197280884,
+          "analytic_conditional_cvar10": 0.8175109624862671,
+          "mean_absolute_action": 0.519791305065155
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.4375242292881012,
+      "training_mean_quantile_coverage_error": 0.20166397094726562,
+      "observed_training_failures": 514
+    },
+    {
+      "seed": 4,
+      "method": "quantile-mean",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9690268039703369,
+          "analytic_expected_reward": 0.9205465912818909,
+          "analytic_conditional_cvar10": 0.6557337641716003,
+          "mean_absolute_action": 0.0004364779160823673
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.9422674179077148,
+          "analytic_expected_reward": 0.9318347573280334,
+          "analytic_conditional_cvar10": 0.4177097678184509,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9422674179077148,
+          "analytic_expected_reward": 0.9318347573280334,
+          "analytic_conditional_cvar10": 0.4177097678184509,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9422674179077148,
+          "analytic_expected_reward": 0.9318347573280334,
+          "analytic_conditional_cvar10": 0.4177097678184509,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.9422674179077148,
+          "analytic_expected_reward": 0.9318347573280334,
+          "analytic_conditional_cvar10": 0.4177097678184509,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9422674179077148,
+          "analytic_expected_reward": 0.9318347573280334,
+          "analytic_conditional_cvar10": 0.4177097678184509,
+          "mean_absolute_action": 1.0
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.4572356641292572,
+      "training_mean_quantile_coverage_error": 0.23510360717773438,
+      "observed_training_failures": 534
+    },
+    {
+      "seed": 4,
+      "method": "moment-mean-minus-std",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9690268039703369,
+          "analytic_expected_reward": 0.9205465912818909,
+          "analytic_conditional_cvar10": 0.6557337641716003,
+          "mean_absolute_action": 0.0004364779160823673
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.969947099685669,
+          "analytic_expected_reward": 0.9183818697929382,
+          "analytic_conditional_cvar10": 0.6543577909469604,
+          "mean_absolute_action": 0.7491547465324402
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9699214696884155,
+          "analytic_expected_reward": 0.9184088110923767,
+          "analytic_conditional_cvar10": 0.6541184782981873,
+          "mean_absolute_action": 0.7519299387931824
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9699218273162842,
+          "analytic_expected_reward": 0.918411374092102,
+          "analytic_conditional_cvar10": 0.6541251540184021,
+          "mean_absolute_action": 0.7515854835510254
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.9699159264564514,
+          "analytic_expected_reward": 0.9184127449989319,
+          "analytic_conditional_cvar10": 0.6540537476539612,
+          "mean_absolute_action": 0.753733217716217
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9699097871780396,
+          "analytic_expected_reward": 0.9184198379516602,
+          "analytic_conditional_cvar10": 0.6540031433105469,
+          "mean_absolute_action": 0.75377357006073
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.4572356641292572,
+      "training_mean_quantile_coverage_error": 0.23510360717773438,
+      "observed_training_failures": 534
+    },
+    {
+      "seed": 4,
+      "method": "quantile-cvar10",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9690268039703369,
+          "analytic_expected_reward": 0.9205465912818909,
+          "analytic_conditional_cvar10": 0.6557337641716003,
+          "mean_absolute_action": 0.0004364779160823673
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.99439537525177,
+          "analytic_expected_reward": 0.9077406525611877,
+          "analytic_conditional_cvar10": 0.861040472984314,
+          "mean_absolute_action": 0.9197103977203369
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9933547973632812,
+          "analytic_expected_reward": 0.9085089564323425,
+          "analytic_conditional_cvar10": 0.8530116081237793,
+          "mean_absolute_action": 0.8451645970344543
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9932529926300049,
+          "analytic_expected_reward": 0.9085898399353027,
+          "analytic_conditional_cvar10": 0.8522295355796814,
+          "mean_absolute_action": 0.8381874561309814
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.9932867288589478,
+          "analytic_expected_reward": 0.9085736274719238,
+          "analytic_conditional_cvar10": 0.8524993658065796,
+          "mean_absolute_action": 0.8399145007133484
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9932937026023865,
+          "analytic_expected_reward": 0.9085917472839355,
+          "analytic_conditional_cvar10": 0.8525809049606323,
+          "mean_absolute_action": 0.8391051292419434
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.4572356641292572,
+      "training_mean_quantile_coverage_error": 0.23510360717773438,
+      "observed_training_failures": 534
+    },
+    {
+      "seed": 5,
+      "method": "quantile-mean",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9690959453582764,
+          "analytic_expected_reward": 0.9205377697944641,
+          "analytic_conditional_cvar10": 0.6563379764556885,
+          "mean_absolute_action": 0.0015777824446558952
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.9422674179077148,
+          "analytic_expected_reward": 0.9318347573280334,
+          "analytic_conditional_cvar10": 0.4177097678184509,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9422674179077148,
+          "analytic_expected_reward": 0.9318347573280334,
+          "analytic_conditional_cvar10": 0.4177097678184509,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9422674179077148,
+          "analytic_expected_reward": 0.9318347573280334,
+          "analytic_conditional_cvar10": 0.4177097678184509,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.9422674179077148,
+          "analytic_expected_reward": 0.9318347573280334,
+          "analytic_conditional_cvar10": 0.4177097678184509,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9422674179077148,
+          "analytic_expected_reward": 0.9318347573280334,
+          "analytic_conditional_cvar10": 0.4177097678184509,
+          "mean_absolute_action": 1.0
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.4598689079284668,
+      "training_mean_quantile_coverage_error": 0.2285594940185547,
+      "observed_training_failures": 503
+    },
+    {
+      "seed": 5,
+      "method": "moment-mean-minus-std",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9690959453582764,
+          "analytic_expected_reward": 0.9205377697944641,
+          "analytic_conditional_cvar10": 0.6563379764556885,
+          "mean_absolute_action": 0.0015777824446558952
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.9847213625907898,
+          "analytic_expected_reward": 0.9132850170135498,
+          "analytic_conditional_cvar10": 0.7834864854812622,
+          "mean_absolute_action": 0.570970356464386
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9838278293609619,
+          "analytic_expected_reward": 0.9134319424629211,
+          "analytic_conditional_cvar10": 0.7757095098495483,
+          "mean_absolute_action": 0.582222580909729
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9838768839836121,
+          "analytic_expected_reward": 0.9135493040084839,
+          "analytic_conditional_cvar10": 0.7763016819953918,
+          "mean_absolute_action": 0.5678120851516724
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.9835102558135986,
+          "analytic_expected_reward": 0.913977861404419,
+          "analytic_conditional_cvar10": 0.7735741138458252,
+          "mean_absolute_action": 0.5388325452804565
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9833818674087524,
+          "analytic_expected_reward": 0.9141347408294678,
+          "analytic_conditional_cvar10": 0.7726147770881653,
+          "mean_absolute_action": 0.5327864289283752
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.4598689079284668,
+      "training_mean_quantile_coverage_error": 0.2285594940185547,
+      "observed_training_failures": 503
+    },
+    {
+      "seed": 5,
+      "method": "quantile-cvar10",
+      "curve": [
+        {
+          "update": 0,
+          "analytic_mean_success_probability": 0.9690959453582764,
+          "analytic_expected_reward": 0.9205377697944641,
+          "analytic_conditional_cvar10": 0.6563379764556885,
+          "mean_absolute_action": 0.0015777824446558952
+        },
+        {
+          "update": 100,
+          "analytic_mean_success_probability": 0.9957325458526611,
+          "analytic_expected_reward": 0.9071224927902222,
+          "analytic_conditional_cvar10": 0.871863842010498,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 200,
+          "analytic_mean_success_probability": 0.9957325458526611,
+          "analytic_expected_reward": 0.9071224927902222,
+          "analytic_conditional_cvar10": 0.871863842010498,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 300,
+          "analytic_mean_success_probability": 0.9957325458526611,
+          "analytic_expected_reward": 0.9071224927902222,
+          "analytic_conditional_cvar10": 0.871863842010498,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 400,
+          "analytic_mean_success_probability": 0.9957325458526611,
+          "analytic_expected_reward": 0.9071224927902222,
+          "analytic_conditional_cvar10": 0.871863842010498,
+          "mean_absolute_action": 1.0
+        },
+        {
+          "update": 500,
+          "analytic_mean_success_probability": 0.9957325458526611,
+          "analytic_expected_reward": 0.9071224927902222,
+          "analytic_conditional_cvar10": 0.871863842010498,
+          "mean_absolute_action": 1.0
+        }
+      ],
+      "training_quantile_crossing_fraction": 0.4598689079284668,
+      "training_mean_quantile_coverage_error": 0.2285594940185547,
+      "observed_training_failures": 503
+    }
+  ],
+  "wall_seconds": 10.345723917009309,
+  "source_sha256": "d792fcd460b9086d275e1c6b9c3d25b3d6197492895c31e1874b53e8fd71c484",
+  "kernel_source_sha256": "fe4807df9d29519b4e6ac7ee3e69d11e7e5452a6409eea1e4f2582ee31ae37f1",
+  "accounting": {
+    "toy_terminal_transitions": 98304,
+    "quantile_critic_updates": 12000,
+    "moment_critic_updates": 12000,
+    "actor_updates": 9000,
+    "critic_minibatch_rows": 3072000,
+    "actor_minibatch_rows": 2304000,
+    "analytic_toy_diagnostic_contexts": 110592,
+    "robot_transitions": 0,
+    "simulator_queries": 0,
+    "gpu_seconds": 0,
+    "dollars_spent": 0
+  },
+  "limitations": [
+    "Constructed reward/reliability conflict; no evidence StackCube has this particular tradeoff.",
+    "Conditional one-step CVaR, not an exact static episodic-CVaR algorithm.",
+    "Risk parameters .1 and .5 are fixed prespecified conventional choices, not claimed equivalent objectives.",
+    "Both critic training diagnostics use training data; no held-out calibration guarantee.",
+    "Different critic parameter counts/computation; common transitions and update counts are reported.",
+    "Analytic success/probabilities are diagnostic only, never learner losses or labels."
+  ]
+}

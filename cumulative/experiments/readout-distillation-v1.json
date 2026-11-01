@@ -1,0 +1,148 @@
+{
+  "format": "automanip-unbranched-relative-v1",
+  "created_at": 1793456057.320859,
+  "execution_authorized": true,
+  "user_authorization": "Continue autonomously until asked to stop; controlled coordinate diagnosis following failed search coverage; <=1M cumulative branching transitions",
+  "production_pins": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "api_pins": {
+    "mani_skill.envs.sapien_env": "996d1aaff9cfed36e4753ab271206aeeb8c42dc585835342d88a2457d2fb5334",
+    "mani_skill.envs.scene": "fc4de7f3a4a61a5a02ef14861c5dfb3db73ee36442e788525d8963e2cf05e160",
+    "mani_skill.agents.base_agent": "ae704c600b448637d51de614c76f32594f58d6d2315d511306fd88a928b2b7cc",
+    "mani_skill.agents.controllers.base_controller": "43e1c18b0791caabd4c261d5f163c9c3de812ab9a7947f61e64494848c32e1e4",
+    "mani_skill.agents.controllers.pd_joint_pos": "474d3ce4bac54cc3b006899070795956135a595b5573b5afb84aa3e732a103d5",
+    "mani_skill.utils.structs.articulation": "ed23e5720212507bb7c5008c11e4e224527f52c0e6092d2b391c3aaa982dd187",
+    "mani_skill.envs.utils.randomization.batched_rng": "f2e12db177372a79c40a7db7311b0d4be0a2ce82bf6bb74456a011854e87854b",
+    "mani_skill.agents.robots.panda.panda": "6ae7c2f5eb7b4cae4e8e6b34dc84d3ddc6fb8ec54295c6ea2eab8659a5f3107e"
+  },
+  "physx_sha256": "4c582a16509a71faf5592fe9708586dfcc7ab61ae932eabc1ddd81f290818706",
+  "parents": [
+    2,
+    3
+  ],
+  "policies": {
+    "2": "policies/2",
+    "3": "policies/3"
+  },
+  "policy_files": {
+    "policies/2/manifest.json": "2b5a9d68ce79bd89e080aeab58dda9579c63136d20ebf867e974489a3844ea9f",
+    "policies/2/weights.json": "d17c38edc1797b7766685dac257fe9eeb22fe5e04f1f1b21200fbf79092c7ce1",
+    "policies/3/manifest.json": "666be4aa90d18b83c8e0f7d39a3bd9946a58fb368246d83b3f272d5ec25c3a7b",
+    "policies/3/weights.json": "7f550fa77a6258c7f2baa66e5ba2356c94bb4f7816c06822d22e80b8eb845257"
+  },
+  "source_prefixes": [
+    {
+      "training_seed": 2,
+      "environment_transitions": 8192000,
+      "checkpoint_trainer_seconds": 465.05150610299995,
+      "weights_sha256": "d17c38edc1797b7766685dac257fe9eeb22fe5e04f1f1b21200fbf79092c7ce1",
+      "source_acquisition": "Already counted completed from-scratch training run; not new probe training"
+    },
+    {
+      "training_seed": 3,
+      "environment_transitions": 8192000,
+      "checkpoint_trainer_seconds": 457.51907834099995,
+      "weights_sha256": "7f550fa77a6258c7f2baa66e5ba2356c94bb4f7816c06822d22e80b8eb845257",
+      "source_acquisition": "Already counted completed from-scratch training run; not new probe training"
+    }
+  ],
+  "gaussian_std": {
+    "2": [
+      0.21376303066542743,
+      0.11388461260367895,
+      0.19321162693340854,
+      0.136129309131641,
+      0.5618684109040332,
+      0.26014139714134854,
+      0.6159403813031987,
+      0.3304149007024842
+    ],
+    "3": [
+      0.21703058421595622,
+      0.12067180582042904,
+      0.1968961596991939,
+      0.14177268532901366,
+      0.5704647419570243,
+      0.26284216801211935,
+      0.6245933831025609,
+      0.3328807184633203
+    ]
+  },
+  "anchor": 30,
+  "candidates": 16,
+  "quiet_scale": 0.05,
+  "offset_scale": 0.25,
+  "num_envs": 64,
+  "horizon": 50,
+  "episode_seed_bases": [
+    96000000,
+    96001000
+  ],
+  "noise_seed_bases": [
+    96010000,
+    96011000
+  ],
+  "proposal_seed_bases": [
+    96020000,
+    96021000
+  ],
+  "tie_seed": 96030000,
+  "random_control_seed": 96031000,
+  "tolerances": {
+    "position": 0.0001,
+    "rotation": 0.001,
+    "qpos": 0.0001,
+    "qvel": 0.01,
+    "linear_velocity": 0.01,
+    "angular_velocity": 0.05
+  },
+  "repeated_candidates": [
+    1
+  ],
+  "max_transitions_per_child": 3200,
+  "max_transitions_per_collection": 57600,
+  "max_transitions": 115200,
+  "optimizer_calls": 0,
+  "confirmation_queries": 0,
+  "final_queries": 0,
+  "partition": "training-only-mechanism-corpus",
+  "hypothesis": "A student must improve without planner; equal-total-physics unbranched outcomes test whether branching contributes beyond the proposal prior and success-filtered imitation.",
+  "fidelity": "Numerical prefix matches preserved absolute bank with identical commands/flags; arm commands exactly identical; anchor/current first action identical; full repeated candidates identical commands and within unchanged tolerances.",
+  "coverage": "Current-relative bank covers>=64/128states and gains>=.15pooled over preserved absolute bank, nonnegative perparent. Anchor-relative is diagnostic, not posthoc selection.",
+  "controls": "Originalstochasticparent; pre-fixedquietcandidate1; outcome-independentrandomcandidate1..15perlane. Genericquiet-actionpriorfullydisclosed; nosuppliedzeroarm/opengripperoption.",
+  "compute": "2parents x(8anchor+8current+2repeatchecks) x64lanes x50steps=115200. Cumulativebranching344320of1M,remaining655680.",
+  "followup": "Nohyperparameterrefitafterpublicassessment. Ifonlybothlearnersimprove, creditreusingoutcomesnotbranching. Preserveallfailures.",
+  "modes": [
+    "anchor",
+    "current"
+  ],
+  "primary_mode": "current",
+  "absolute_archive": "artifacts/cumulative/prefix-search-20261030/remote",
+  "absolute_analysis_sha256": "4108f7b0fc53d51bb4b87b142c642f55cd9678d15d8c0c73ae7687a4fe55bb60",
+  "control_episode_seed_bases": [
+    96100000,
+    96110000
+  ],
+  "control_noise_seed_bases": [
+    96120000,
+    96121000
+  ],
+  "control_proposal_seed_bases": [
+    96130000,
+    96131000
+  ],
+  "control_batches": 18,
+  "fit_teacher_rows": 384,
+  "fit_rehearsal_rows": 1024,
+  "fit_episode_fraction": 0.75,
+  "fit_seed": 96140000,
+  "validation_teacher_rows": 64,
+  "validation_rehearsal_rows": 256,
+  "comparison": "Same115200newphysics as coordinate study; independent1152episodes/source givescontrolmore distinctstates. All preceding344320branchingphysics andparentacquisition additionallyreported. Thisisassistedlearning,not10xspeedup.",
+  "assessment": "3deterministicMLPs x512freshpublicepisodes x2parents=153600transitions; nolearnerdata in scoringworker; fresh962series seeds; primarysearchgain>=.10vsbase and>=.05vsunbranchedwithpositive97.5%pairedblockbootstraplowerbounds; evergrasp>=.95ineachparent."
+}

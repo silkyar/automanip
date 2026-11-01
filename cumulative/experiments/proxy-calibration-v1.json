@@ -1,0 +1,198 @@
+{
+  "format": "automanip-proxy-calibration-public-probe-v1",
+  "created_at": 1793378559.0648682,
+  "execution_authorized": true,
+  "user_authorization": "2026-10-30 continue autoresearch until stopped; explicitly useGPUs without undue cost hesitation",
+  "purpose": "Calibrate an unvalidated proxy screen against actual behavior, not promotion through a failed screen. Prior failed gate results remain unchanged.",
+  "previous_screen_state": "Both MC methods failed the registered CPU screen; this distinct study tests that screen and actual behavior.",
+  "production_pins": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "policies": {
+    "no_update": "policies/no_update",
+    "90282001/constant_forward": "policies/90282001/constant_forward",
+    "90282001/constant_reverse": "policies/90282001/constant_reverse",
+    "90282001/state_forward": "policies/90282001/state_forward",
+    "90282001/state_reverse": "policies/90282001/state_reverse",
+    "90282001/known_harmful": "policies/90282001/known_harmful",
+    "90282002/constant_forward": "policies/90282002/constant_forward",
+    "90282002/constant_reverse": "policies/90282002/constant_reverse",
+    "90282002/state_forward": "policies/90282002/state_forward",
+    "90282002/state_reverse": "policies/90282002/state_reverse",
+    "90282002/known_harmful": "policies/90282002/known_harmful",
+    "90282003/constant_forward": "policies/90282003/constant_forward",
+    "90282003/constant_reverse": "policies/90282003/constant_reverse",
+    "90282003/state_forward": "policies/90282003/state_forward",
+    "90282003/state_reverse": "policies/90282003/state_reverse",
+    "90282003/known_harmful": "policies/90282003/known_harmful"
+  },
+  "policy_files": {
+    "policies/90282001/constant_forward/manifest.json": "1b37adea85c157cfce9c1ad10d5ac0e1016e487af3beb978d8c12251406cc66e",
+    "policies/90282001/constant_forward/weights.json": "b10c9476a35597bdc2bafc7fd0f1555bde1f6071c9c3ec870fe09b4e77c41be7",
+    "policies/90282001/constant_reverse/manifest.json": "0a9823c85002683c256fe1f39f2beb4f52235076cac6011e3a7fad2a80b026de",
+    "policies/90282001/constant_reverse/weights.json": "d51ffbb54d4adba456d27f445c3c21753f298ed958ab38cd48d1d41cbb09b770",
+    "policies/90282001/known_harmful/manifest.json": "fbc75461f2f8b2adb2a1d87ca35fc5b99da1c1bb02c970f9f82623f99bc2c125",
+    "policies/90282001/known_harmful/weights.json": "41fd9d0ddd992e3f669483cf1c138b09dad32bea0ee680d075575a57e9ab3558",
+    "policies/90282001/state_forward/manifest.json": "5dd1b3dad31f44411bf385019dbc6efd31c1b00723b4ae1d0f22527701667bc6",
+    "policies/90282001/state_forward/weights.json": "c80958504d8cf2791cc525062deb6c45639bbe4d0dbd4fe7e17257d448a15230",
+    "policies/90282001/state_reverse/manifest.json": "d7bf89a9d81438f23648ce75627ff4de4660eee45d791066430e97dc86eac61a",
+    "policies/90282001/state_reverse/weights.json": "2a0435d4ca96626907e2b1b192e8361226afd1d9e2abfced32fcee709247ec9a",
+    "policies/90282002/constant_forward/manifest.json": "3b09499d749ad8f9adeec21bf9ae908b91b014348ffdfc918614c5dd5e7ccf2e",
+    "policies/90282002/constant_forward/weights.json": "0b5ba6ced0a2f3a02aa82938db0a090edf8bbb667e0d47827e98c15a476b07d4",
+    "policies/90282002/constant_reverse/manifest.json": "3868c67149eac37f1bd33b84e75723ed38b31a3e9104c559a00cfcd84dc82910",
+    "policies/90282002/constant_reverse/weights.json": "11a9ed782f9ad448965b08de5915347b723826a1b75bb132fd50454820b404a3",
+    "policies/90282002/known_harmful/manifest.json": "3f140af5d3c3507fa3f6e43650baa620eba0dec131573eddab6e5a9f59ac1197",
+    "policies/90282002/known_harmful/weights.json": "eb4bc9b6807567f9fb7f56d4331bcc9997a8cfeb48005556154ccabe2f848e58",
+    "policies/90282002/state_forward/manifest.json": "fc6773da5b966f6e90d8d12d7323cbe5dc16c9c123d2df4c9b018b35ae68c252",
+    "policies/90282002/state_forward/weights.json": "cfec154a5f43a0f740efb565e72f6987d2ea7b60ea0340155d48cf2d6bc0a80f",
+    "policies/90282002/state_reverse/manifest.json": "9bbdb775b412be02080778e6ed4a9873e8e0b12a5c3b00590982d229e2c62832",
+    "policies/90282002/state_reverse/weights.json": "519e96327764e67d4b5b7a7ef96b0e2f4b9d4c20330fea1bb4c7ba5c333d0bf3",
+    "policies/90282003/constant_forward/manifest.json": "faa544a53a1ac129781ab162b3678cdbee3072e27f4b719230175ca948176963",
+    "policies/90282003/constant_forward/weights.json": "689e67fcbcaa83d64fed493481968a7f6fe03c2a2e0f6e4adf0c61f4a5c81afe",
+    "policies/90282003/constant_reverse/manifest.json": "695dc14e8251ef2ee4fc5fcadaf35ead19736ecd15c562bf711d8641a9ab2e32",
+    "policies/90282003/constant_reverse/weights.json": "ba193f6a4de4a0ffc21fed127dc90f869585c3d2ad80b8657649b076767cd041",
+    "policies/90282003/known_harmful/manifest.json": "74a9379914a3a3eef129be41f5fedd647ecc1b37d79385be747c9266f8d36679",
+    "policies/90282003/known_harmful/weights.json": "dd5160a4ddb10b8cfd854be4a04f546bd34098a72c1cd7c92b293d64a223e4de",
+    "policies/90282003/state_forward/manifest.json": "ce5475ad4f09f23dab7983f4158c0074b9669d3fcdab5922fb17c5537344c9a4",
+    "policies/90282003/state_forward/weights.json": "a4642185ebbd4c0b3d1b07d128b43a506c79a2b6416a949709c13dec9a9030f3",
+    "policies/90282003/state_reverse/manifest.json": "0afe64f2aca77dffc211dc4e45fdf8e2b2d04e353c7e0bbb8ef93a606bee00f5",
+    "policies/90282003/state_reverse/weights.json": "f400cd632cfc8b63f0df196791bb727eecbd002f5e6daf3bcf3e60165ed2abfd",
+    "policies/no_update/manifest.json": "d2ea7ec00b2f5b4d21028d52c18dc66ef00a18a7695f4675fe8a4f5a065c9da9",
+    "policies/no_update/weights.json": "4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2"
+  },
+  "safe_export_parity": [
+    {
+      "policy": "90282001/constant_forward",
+      "max_action_error": 6.607916860357221e-07,
+      "weights_sha256": "b10c9476a35597bdc2bafc7fd0f1555bde1f6071c9c3ec870fe09b4e77c41be7"
+    },
+    {
+      "policy": "90282001/constant_reverse",
+      "max_action_error": 7.371816332923942e-07,
+      "weights_sha256": "d51ffbb54d4adba456d27f445c3c21753f298ed958ab38cd48d1d41cbb09b770"
+    },
+    {
+      "policy": "90282001/state_forward",
+      "max_action_error": 7.511102683155357e-07,
+      "weights_sha256": "c80958504d8cf2791cc525062deb6c45639bbe4d0dbd4fe7e17257d448a15230"
+    },
+    {
+      "policy": "90282001/state_reverse",
+      "max_action_error": 5.823427798867797e-07,
+      "weights_sha256": "2a0435d4ca96626907e2b1b192e8361226afd1d9e2abfced32fcee709247ec9a"
+    },
+    {
+      "policy": "90282002/constant_forward",
+      "max_action_error": 8.81980688371975e-07,
+      "weights_sha256": "0b5ba6ced0a2f3a02aa82938db0a090edf8bbb667e0d47827e98c15a476b07d4"
+    },
+    {
+      "policy": "90282002/constant_reverse",
+      "max_action_error": 6.177737725820975e-07,
+      "weights_sha256": "11a9ed782f9ad448965b08de5915347b723826a1b75bb132fd50454820b404a3"
+    },
+    {
+      "policy": "90282002/state_forward",
+      "max_action_error": 8.689786165083646e-07,
+      "weights_sha256": "cfec154a5f43a0f740efb565e72f6987d2ea7b60ea0340155d48cf2d6bc0a80f"
+    },
+    {
+      "policy": "90282002/state_reverse",
+      "max_action_error": 6.463296927661233e-07,
+      "weights_sha256": "519e96327764e67d4b5b7a7ef96b0e2f4b9d4c20330fea1bb4c7ba5c333d0bf3"
+    },
+    {
+      "policy": "90282003/constant_forward",
+      "max_action_error": 5.182453272079002e-07,
+      "weights_sha256": "689e67fcbcaa83d64fed493481968a7f6fe03c2a2e0f6e4adf0c61f4a5c81afe"
+    },
+    {
+      "policy": "90282003/constant_reverse",
+      "max_action_error": 5.52348716986728e-07,
+      "weights_sha256": "ba193f6a4de4a0ffc21fed127dc90f869585c3d2ad80b8657649b076767cd041"
+    },
+    {
+      "policy": "90282003/state_forward",
+      "max_action_error": 8.209304713790999e-07,
+      "weights_sha256": "a4642185ebbd4c0b3d1b07d128b43a506c79a2b6416a949709c13dec9a9030f3"
+    },
+    {
+      "policy": "90282003/state_reverse",
+      "max_action_error": 1.066941994642967e-06,
+      "weights_sha256": "f400cd632cfc8b63f0df196791bb727eecbd002f5e6daf3bcf3e60165ed2abfd"
+    }
+  ],
+  "source_actor_weights_sha256": "4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2",
+  "collection_seeds": [
+    90282001,
+    90282002,
+    90282003
+  ],
+  "diagnostic_seed_bases": [
+    93600000,
+    93601000,
+    93602000
+  ],
+  "noise_seed_bases": [
+    93610000,
+    93611000,
+    93612000
+  ],
+  "gaussian_std": [
+    0.07161122560501099,
+    0.07851020991802216,
+    0.07931241393089294,
+    0.08390970528125763,
+    0.11644907295703888,
+    0.09796664118766785,
+    0.11457139998674393,
+    0.09181715548038483
+  ],
+  "modes": [
+    "deterministic",
+    "stochastic"
+  ],
+  "branch_order": [
+    "no_update",
+    "known_harmful",
+    "constant_forward",
+    "constant_reverse",
+    "state_forward",
+    "state_reverse"
+  ],
+  "vector_environments": 64,
+  "batches_per_branch": 8,
+  "episodes_per_branch": 512,
+  "horizon": 50,
+  "max_public_transitions": 921600,
+  "max_public_transitions_per_collection": 307200,
+  "optimizer_calls": 0,
+  "protected_benchmark_queries": 0,
+  "confirmation_queries": 0,
+  "final_queries": 0,
+  "reward": "Enable unchanged official normalized_dense in this new diagnostic only; original frozen scoring adapter stays reward_mode=none.",
+  "primary": "Stochastic-mode paired discounted return(gamma.9): forward-minus-reverse and forward-minus-unchanged for each MC method; deterministic mode and final success also recorded.",
+  "controls": "Original Gaussian scale fixed. Noise added to RAW mean before clipping; same innovations per resetbatch/step/lane across branches. Deterministic negative-control damage assesses instrumentation.",
+  "intervals": "10000 fixed-seed bootstrap draws over8 vector batches within each of3 fitted directions; conditional reset/noise uncertainty, not independent training-seed uncertainty",
+  "bootstrap_seed": 93609999,
+  "calibration_rule": "Expected harmful mean step must reduce deterministic pooled success by>=.05. A proxy false-negative requires positive98.75%bootstrap lower bounds for stochastic forward-minus-reverse AND forward-minus-unchanged, plus mean final-success loss<=.05. Otherwise calibration is inconclusive; do not call proxy universally validated.",
+  "comparison": "Constant versus state baseline uses identicalMCtargets/data/features/curvature/KL; preserve earlier differing fitting ratios and do not select new step sizes from these outcomes.",
+  "interpretation": "One-step actor-direction/proxy calibration of an assisted BC policy. No complete PPO procedures, training-curve comparison or sample-efficiency claim.",
+  "assistance": {
+    "teacher_transitions": 49971200,
+    "teacher_trainer_seconds": 2295.408300588,
+    "demo_transitions": 25600,
+    "bc_optimizer_updates": 5000
+  },
+  "timeout_seconds": 360,
+  "startup_timeout_seconds": 60,
+  "internal_seconds": 320,
+  "budget_reservation_usd": 1,
+  "cpu_result_sha256": "004d785ce2bd47c6bcdf0303cd36e9ce554342457dc606e6149be83b73bdbbd2",
+  "worker_sha256": "5464a11911dd2e525994da3301aeb91eb267f6eef9865d1b743cf6a52f72dfdf",
+  "followup": "Reassess screen and learning hypothesis; no automatic full training, retries or holdout query."
+}

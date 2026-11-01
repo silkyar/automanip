@@ -1,0 +1,28 @@
+{
+  "format": "automanip-selective-rehearsal-CPU-v1",
+  "registered_at": 1793464400.9128268,
+  "execution_authorized": true,
+  "hypothesis": "Indiscriminate behavior preservation may constrain the desired correction because nearlyhalf memory labels close the gripper in on-top/stillgrasped states. Remove onlythese gripperlabels to test objectiveinterference before another robot query.",
+  "basis": "Exploratory rehearsal-stage audit; not a fresh causal result",
+  "parents": [
+    2,
+    3
+  ],
+  "data": "Original384teacher/1024memory rows and fixed held-outsourceepisodes. Samephi,rho4,lambda.001 andsum8-perrow loss.",
+  "methods": [
+    "original archived readout",
+    "stage-selective gripper-memory mask",
+    "time-matched random gripper-memory mask"
+  ],
+  "intervention": "Keep all7arm-output losses. Set gripper rehearsal weight0 only for saved preaction on_top ANDgrasped states. Preserve original1024denominator. Per-timestep randomcontrol masks exactsame count usingfixedseed97010000+parent; noinputstageflag orclock inactor.",
+  "CPU_gate": "Bothparents: stage-selective heldoutfingerRMSE<half original and<.75random; non-on-top heldoutmemory executedRMS<=original. Report alloutputs and fullold-memorychange. No threshold relaxation.",
+  "budget": {
+    "new_environment_transitions": 0,
+    "max_linear_solves": 4,
+    "optimizer_calls": 0,
+    "policy_exports": 0,
+    "robot_assessments": 0
+  },
+  "scope": "Assisted fixeddata mechanism gate. Stageflagsfromsavedtrainingphysics; no protecteddata, newteacher, fromscratch orlearningclaim. Coarsestagenot proofactionwrong because objectcanstillbemoving.",
+  "decision": "Failure ends this intervention before robot tests. Passing only motivates implementation review and separately registered controls; no automaticGPU."
+}

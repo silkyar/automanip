@@ -1,0 +1,17 @@
+{
+  "format": "automanip-local-experience-reference-v1",
+  "partition": "training",
+  "task_id": "stackcube-source-7a1aa4969ed2a6c5",
+  "interface_id": "eb43792de240b9f7b1556233643280d50fbccedad750e6ad991b3cd9b38f3f90",
+  "store": "artifacts/cumulative/source-episodes-v1",
+  "receipt": "artifacts/cumulative/source-episodes-v1-import-receipt.json",
+  "source_policy_asset": "cumulative/assets/stackcube-50m-seed1-v1.json",
+  "old_dataset_sha256": "495a392364926211397222bfa77e79ff4a6c2c87564f226dc1212f333ebec782",
+  "episodes": 512,
+  "transitions": 25600,
+  "successes": 497,
+  "failures": 15,
+  "used_by_current_PPO_strategy": false,
+  "new_environment_transitions": 0,
+  "note": "Local conversion of existing training data; not a new collection or BC step. Bulk store deliberately ignored by git."
+}

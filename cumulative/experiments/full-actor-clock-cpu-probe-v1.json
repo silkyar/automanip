@@ -1,0 +1,134 @@
+{
+  "format": "automanip-full-actor-clock-CPU-probe-v1",
+  "created_at": 1793387050.054864,
+  "execution_authorized": true,
+  "purpose": "Check the clock effect on full146192parameter actor/noise trajectory-gradient covariance, including hidden layers; lower per-step/head noise alone is insufficient.",
+  "inputs": {
+    "artifacts/cumulative/scratch-credit-20261030/learner-compute.json": "7e5607067d9c33176425215012e3f99d961bed5881e350b4c08870c2ce8542fa",
+    "research/crossfit_value_probe.py": "5de84dc18946bff69ce499862d3a41d44d511b46fd7393ee0d670aa74ef2956c",
+    "src/automanip/policy_io.py": "9f352999f20811ce9f245ceedce4528da4552e8a85d6d27ba1d514bb69d69477",
+    "src/automanip/numpy_inference.py": "d674c0a64240ee5e474c470294b4946c57478d9b8949e547019b89ee547abfe8",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-0/work/runs/scratch-credit-ppo-gae-seed-1/trace-4147200.npz": "19f82a5867c37891ddea532f3a97131e658fbe890ff5dde47b323f5baba3a97f",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-0/work/runs/scratch-credit-ppo-gae-seed-1/actors/4096000/manifest.json": "5a025eab8d65c11ba674c6208e1688a5ce6e0cbc1413db5ad5c7c27d98251a59",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-0/work/runs/scratch-credit-ppo-gae-seed-1/actors/4096000/weights.json": "af4858380135c9e91b03a9762373e2ffdff3b3613a8af04bb96d5e80cc1d1448",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-0/work/runs/scratch-credit-ppo-gae-seed-1/trace-8243200.npz": "c1a56e93ebc080975502ef853a4be2789590858f1f67b9ee3171b9185fa4a150",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-0/work/runs/scratch-credit-ppo-gae-seed-1/actors/8192000/manifest.json": "f0267ab690032a11d8557af843465c28d141099133165588ad074a47bad2d295",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-0/work/runs/scratch-credit-ppo-gae-seed-1/actors/8192000/weights.json": "533c7eadee9be145fc5eb234247ac104277e33587bd9b97100e2b7aefa854cec",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-1/work/runs/scratch-credit-ppo-finite-mc-seed-1/trace-4147200.npz": "241f46e2fa6bd0f40e6839c9c5289df7f7669aac362525fde9028a0612d3d807",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-1/work/runs/scratch-credit-ppo-finite-mc-seed-1/actors/4096000/manifest.json": "7667ed7f6f94ae927daed3ff1775a124c6b9a5637717c55c63478e95612860f0",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-1/work/runs/scratch-credit-ppo-finite-mc-seed-1/actors/4096000/weights.json": "b4b033ffb0a6aec7b685ce810f91a595fe1f27b840c54f57c853f86d726a0799",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-1/work/runs/scratch-credit-ppo-finite-mc-seed-1/trace-8243200.npz": "766fef972aff21901ebfb6a157883a92d4045deefbd10a237a56bd0f52974d68",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-1/work/runs/scratch-credit-ppo-finite-mc-seed-1/actors/8192000/manifest.json": "4d2a4455bbfd01cde892b3762a775d21d31e59ad17a2cde14845b3592dcdaaa7",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-1/work/runs/scratch-credit-ppo-finite-mc-seed-1/actors/8192000/weights.json": "f7f168ec979c026aa7c2ec7469b5aa5b127567664428a349c4715287878567d5",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-2/work/runs/scratch-credit-ppo-gae-seed-2/trace-4147200.npz": "1d483c6c6dc861c0c4d3a5294429a3790decc3db7d301057943e4790d1d44715",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-2/work/runs/scratch-credit-ppo-gae-seed-2/actors/4096000/manifest.json": "61b70b6fd1a97114131cdac63fd136690b1ec3afcd65297418d005bf57544737",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-2/work/runs/scratch-credit-ppo-gae-seed-2/actors/4096000/weights.json": "0e23c3e48503b0e8e9ec1f17073fee41a27323d7565b846c748da67773b7e891",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-2/work/runs/scratch-credit-ppo-gae-seed-2/trace-8243200.npz": "ad710752eca80583b9f2bbad46307c6ffbe861e42c019fe6247ecd4e69b6d261",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-2/work/runs/scratch-credit-ppo-gae-seed-2/actors/8192000/manifest.json": "2b5a9d68ce79bd89e080aeab58dda9579c63136d20ebf867e974489a3844ea9f",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-2/work/runs/scratch-credit-ppo-gae-seed-2/actors/8192000/weights.json": "d17c38edc1797b7766685dac257fe9eeb22fe5e04f1f1b21200fbf79092c7ce1",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-3/work/runs/scratch-credit-ppo-finite-mc-seed-2/trace-4147200.npz": "1dad279b6f923151efac2d75859bcf4df8ad5a32cfc756535cecc5ec8007aca7",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-3/work/runs/scratch-credit-ppo-finite-mc-seed-2/actors/4096000/manifest.json": "ea69cbdf5ebef293f07521440b43bb0fa9d98dc169fa08187258dceb903df653",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-3/work/runs/scratch-credit-ppo-finite-mc-seed-2/actors/4096000/weights.json": "09374a53f981e40024ac9c747cf26dd1f3b1c9fc882b7475435dc060c7897ada",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-3/work/runs/scratch-credit-ppo-finite-mc-seed-2/trace-8243200.npz": "001d76a9c9971ddf8a86dd51c292027789aa538bf790f1d4cc3b1cf4d7950513",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-3/work/runs/scratch-credit-ppo-finite-mc-seed-2/actors/8192000/manifest.json": "628aad8b7db16da92850d933f111471aa822a1086f7254f96d2d176688af50a0",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-3/work/runs/scratch-credit-ppo-finite-mc-seed-2/actors/8192000/weights.json": "92197f60e96a41bcb7c6eb8131ca556c7737a0f8cf7f1aef5835ca0915a7f606",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-4/work/runs/scratch-credit-ppo-gae-seed-3/trace-4147200.npz": "25a9ad0ab419644562a51fe423e3b046b65db1200fcd6f4b5ebbfc089607147b",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-4/work/runs/scratch-credit-ppo-gae-seed-3/actors/4096000/manifest.json": "ff3a212d62bd52c74adfcf9967df020756402010561e4890c0cef24ea09387c9",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-4/work/runs/scratch-credit-ppo-gae-seed-3/actors/4096000/weights.json": "f595f1a96e077b6f20e5468705ed7d0f968e21dbea2bdf44ae157bf8ca1d0b9d",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-4/work/runs/scratch-credit-ppo-gae-seed-3/trace-8243200.npz": "7b3967b802c3a14c8360a0f3e30d98d32ccc34971c57130091ac91c07e38052f",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-4/work/runs/scratch-credit-ppo-gae-seed-3/actors/8192000/manifest.json": "666be4aa90d18b83c8e0f7d39a3bd9946a58fb368246d83b3f272d5ec25c3a7b",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-4/work/runs/scratch-credit-ppo-gae-seed-3/actors/8192000/weights.json": "7f550fa77a6258c7f2baa66e5ba2356c94bb4f7816c06822d22e80b8eb845257",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-5/work/runs/scratch-credit-ppo-finite-mc-seed-3/trace-4147200.npz": "e80e5de0e03cb708c68aa93253fd13e513506bcc66f727e5e10129b4a3b05f6a",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-5/work/runs/scratch-credit-ppo-finite-mc-seed-3/actors/4096000/manifest.json": "8b676b18258a4128e7058eafe915dee18f0d99d3db36bc6adb0c1c59d2954c21",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-5/work/runs/scratch-credit-ppo-finite-mc-seed-3/actors/4096000/weights.json": "c0f52bc079b39e2e6e4f6080442f8351141428caff7248794afea459ac6d40e2",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-5/work/runs/scratch-credit-ppo-finite-mc-seed-3/trace-8243200.npz": "b0de27373995250dd6adc8fa081500b208c86ee0bae0a21534ff4f9e1e580b09",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-5/work/runs/scratch-credit-ppo-finite-mc-seed-3/actors/8192000/manifest.json": "4e8bce48dae1a3b8beaa469082124f0f915b389144227ffa453e0ed5b9f2f1f5",
+    "artifacts/cumulative/scratch-credit-20261030/training/trial-5/work/runs/scratch-credit-ppo-finite-mc-seed-3/actors/8192000/weights.json": "33f3e48bbb0476d9ded912f5a406fb259c52d7fea1f5989fa34bd13ceb60bfe4",
+    "research/full_actor_clock_probe.py": "3f7cdc932a3d5f196d1e95aff165bc13de2ed1d98117674150e98c570c51323d",
+    "research/discovery/amp_v1.py": "463303be5809392e7ea9597eb47c0e45ccd256438750d4a0b219c2abd9dee5bd",
+    "artifacts/cumulative/finite-clock-cpu-v3/report.json": "ebb009da30d112fa2f579b39acd134bc48318bc51994d230d12f7c138d64bd45",
+    "artifacts/cumulative/finite-clock-cpu-v3/cell-0-4096000.npz": "bc98f3d9f7300eff8281863a76520efac96955c03e7ef165ced04fb22ab24b3e",
+    "artifacts/cumulative/finite-clock-cpu-v3/cell-0-8192000.npz": "203c76b430f6d631bd32e3974474f94894ad63eff0185e5a488d4fe4de36e870",
+    "artifacts/cumulative/finite-clock-cpu-v3/cell-1-4096000.npz": "5c5f8565a1f3be1234b27f8f25ad02c2f362a1ce61384e3b50ab9f06ee18ea1b",
+    "artifacts/cumulative/finite-clock-cpu-v3/cell-1-8192000.npz": "7bc971958c0675f7f9b2671459e6c8ad1b1264e3e3839810c19385ebc52b3a1d",
+    "artifacts/cumulative/finite-clock-cpu-v3/cell-2-4096000.npz": "d7fe5c2f050aef21b45482a16f456ce7ac4453d3a20b121aa4415b34ffe86126",
+    "artifacts/cumulative/finite-clock-cpu-v3/cell-2-8192000.npz": "b44eb4e36fc31244724e8be70608ad04001cd78bbe37fbe4172227d789ace21b",
+    "artifacts/cumulative/finite-clock-cpu-v3/cell-3-4096000.npz": "7bd5d03b306f97f0ce7d7e9c0b2ee4fffd667a9cef5f85ff7eb969b163125a55",
+    "artifacts/cumulative/finite-clock-cpu-v3/cell-3-8192000.npz": "75f5052930fda69615836eec8d4aebfe1b14bd8a2700afc6bae05329db60025d",
+    "artifacts/cumulative/finite-clock-cpu-v3/cell-4-4096000.npz": "b4db400fce4b8d1401d344475e8a6249c66071ca61745b512a3daf0302bb2a6c",
+    "artifacts/cumulative/finite-clock-cpu-v3/cell-4-8192000.npz": "18e4d424abfa9d04205860fa8ad90d389686af2fb8dc96395bd6d13abe6bc507",
+    "artifacts/cumulative/finite-clock-cpu-v3/cell-5-4096000.npz": "f170dbe18d843df33574adf99856449d5fb2b81614b2c841bfe52221e9346455",
+    "artifacts/cumulative/finite-clock-cpu-v3/cell-5-8192000.npz": "8f19b2344091bcdf4032ad77653ddaa3b633214f5b4f1d34ccb44bf56dc120cb"
+  },
+  "cells": [
+    {
+      "index": 0,
+      "checkpoint": 4096000
+    },
+    {
+      "index": 0,
+      "checkpoint": 8192000
+    },
+    {
+      "index": 1,
+      "checkpoint": 4096000
+    },
+    {
+      "index": 1,
+      "checkpoint": 8192000
+    },
+    {
+      "index": 2,
+      "checkpoint": 4096000
+    },
+    {
+      "index": 2,
+      "checkpoint": 8192000
+    },
+    {
+      "index": 3,
+      "checkpoint": 4096000
+    },
+    {
+      "index": 3,
+      "checkpoint": 8192000
+    },
+    {
+      "index": 4,
+      "checkpoint": 4096000
+    },
+    {
+      "index": 4,
+      "checkpoint": 8192000
+    },
+    {
+      "index": 5,
+      "checkpoint": 4096000
+    },
+    {
+      "index": 5,
+      "checkpoint": 8192000
+    }
+  ],
+  "training_root": "artifacts/cumulative/scratch-credit-20261030/training",
+  "compute": "artifacts/cumulative/scratch-credit-20261030/learner-compute.json",
+  "clock_report": "artifacts/cumulative/finite-clock-cpu-v3/report.json",
+  "clock_predictions": "artifacts/cumulative/finite-clock-cpu-v3",
+  "models": [
+    "raw_value",
+    "actor_state",
+    "clock_actor_state",
+    "permuted_clock_actor_state",
+    "calibrated_value",
+    "clock_calibrated_value",
+    "permuted_clock_calibrated_value"
+  ],
+  "primary": "Correct clock versus both state and fixed shuffled clock:>=25% conditional full-gradient covariance trace reduction in>=9of12cells. Additionally beat actualMCneuralvalue by>=25%in>=4of6MCcells.",
+  "uncertainty": "Conditional on each oppositefold fitted model; covariance within32held episodes averaged2folds;12cells from6policies at2times, not12independenttrainingseeds.",
+  "scope": "Raw Gaussian likelihood before physical action clipping, baseline detached, sum50time contributions before covariance. DoubleprecisionCPU diagnostic, not production PPO/Adam reconstruction.",
+  "new_environment_transitions": 0,
+  "optimizer_calls": 0,
+  "maximum_actor_forward_rows": 38400,
+  "maximum_backward_calls": 5376,
+  "followup": "Refine hypothesis from actual fullscore evidence; no GPU automatically launched by this script."
+}

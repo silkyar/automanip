@@ -1,0 +1,71 @@
+{
+  "state": "passed",
+  "kind": "synthetic estimator algebra/Monte Carlo check, not robot learning",
+  "seconds": 0.028428416000679135,
+  "source_sha256": "92a27755f6f344fc9d682d864bf740d4e5a01992a32886b616a9a7c928bff4cf",
+  "samples_per_condition": 262144,
+  "unique_synthetic_normal_draws": 786432,
+  "synthetic_reward_evaluations": 1048576,
+  "optimizer_calls": 0,
+  "robot_transitions": 0,
+  "records": [
+    {
+      "future_noise_scale": 0.0,
+      "true_gradient": 1.0,
+      "sample_plain_mean": 0.994032865692215,
+      "sample_linear_cv_mean": 0.9991031849578913,
+      "sample_plain_variance": 3.428045698566967,
+      "sample_linear_cv_variance": 1.4691596393297928,
+      "exact_plain_variance": 3.5,
+      "exact_linear_cv_variance": 1.5,
+      "irreducible_future_variance": 0.0,
+      "ideal_all_action_variance_removed_max_reduction": null,
+      "exact_linear_cv_reduction": 2.3333333333333335
+    },
+    {
+      "future_noise_scale": 0.1,
+      "true_gradient": 1.0,
+      "sample_plain_mean": 0.9943739053143714,
+      "sample_linear_cv_mean": 0.9994442245800481,
+      "sample_plain_variance": 3.4680633977209903,
+      "sample_linear_cv_variance": 1.5081843829681805,
+      "exact_plain_variance": 3.54,
+      "exact_linear_cv_variance": 1.54,
+      "irreducible_future_variance": 0.04000000000000001,
+      "ideal_all_action_variance_removed_max_reduction": 88.49999999999999,
+      "exact_linear_cv_reduction": 2.2987012987012987
+    },
+    {
+      "future_noise_scale": 1.0,
+      "true_gradient": 1.0,
+      "sample_plain_mean": 0.9974432619137816,
+      "sample_linear_cv_mean": 1.002513581179458,
+      "sample_plain_variance": 7.394660941756157,
+      "sample_linear_cv_variance": 5.425845327362633,
+      "exact_plain_variance": 7.5,
+      "exact_linear_cv_variance": 5.5,
+      "irreducible_future_variance": 4.0,
+      "ideal_all_action_variance_removed_max_reduction": 1.875,
+      "exact_linear_cv_reduction": 1.3636363636363635
+    },
+    {
+      "future_noise_scale": 3.0,
+      "true_gradient": 1.0,
+      "sample_plain_mean": 1.004264054356915,
+      "sample_linear_cv_mean": 1.009334373622592,
+      "sample_plain_variance": 39.10414643912762,
+      "sample_linear_cv_variance": 37.11547171442139,
+      "exact_plain_variance": 39.5,
+      "exact_linear_cv_variance": 37.5,
+      "irreducible_future_variance": 36.0,
+      "ideal_all_action_variance_removed_max_reduction": 1.0972222222222223,
+      "exact_linear_cv_reduction": 1.0533333333333332
+    }
+  ],
+  "same_sample_gate_exact_gradient_bias": -0.48394144903828673,
+  "same_sample_gate_sample_gradient_bias": -0.47880359153491514,
+  "independent_gate_sample_residual": -0.0011553272003502878,
+  "conclusion": "Even perfect removal of current-action variance cannot remove continuation noise; unbiasedness is not automatic under same-sample adaptive gating.",
+  "novelty_claim": false,
+  "robot_method_promotion": false
+}

@@ -1,0 +1,16 @@
+{
+  "uniform_value_error_bound": 0.01,
+  "error_function": ".01*sin(100*a)",
+  "evaluation_action": 0.0,
+  "exact_cvar_action_gradient": -0.786,
+  "approximate_cvar_action_gradient": 0.21400000000000002,
+  "action_gradient_direction_reversed": true,
+  "conclusion": "Small bounded value error alone does not certify a lower-tail actor gradient.",
+  "limitation": "Analytic counterexample, not a measured error or failure prevalence in the neural toy or StackCube.",
+  "source_sha256": "3bbf7921cc78669b55c38f8a99af50117adbf3f4122db272456eaef8e9cf0941",
+  "robot_transitions": 0,
+  "simulator_queries": 0,
+  "optimizer_updates": 0,
+  "gpu_seconds": 0,
+  "dollars_spent": 0
+}

@@ -1,0 +1,97 @@
+{
+  "format": "automanip-readout-residual-diagnosis-results-v1",
+  "state": "complete",
+  "parents": [
+    {
+      "parent": 2,
+      "heldout_teacher_rows": 260,
+      "heldout_early_rows": 480,
+      "feature_rows": 2148,
+      "teacher_positive_increment_fraction": 0.7692307692307693,
+      "teacher_median_finger_increment_metres": 0.00027636997401714325,
+      "hold_coordinate_RMSE_metres": 0.003879401172918936,
+      "predictions": {
+        "registered_rehearsal": {
+          "heldout_action_mse_per_axis": [
+            0.023042551085425935,
+            0.01900257427826689,
+            0.02443471867881667,
+            0.02279959049494293,
+            0.017652286628138624,
+            0.01991972409052318,
+            0.03059141225929148,
+            0.28007384730547125
+          ],
+          "heldout_finger_target_RMSE_metres": 0.013230500918934233,
+          "heldout_positive_finger_increment_fraction": 0.07307692307692308,
+          "heldout_median_finger_increment_metres": -0.011671653059685932,
+          "early_clipped_action_RMS_change": 0.10880732977898885
+        },
+        "teacher_only_diagnostic": {
+          "heldout_action_mse_per_axis": [
+            0.0016932304335693588,
+            0.0013977498898484625,
+            0.002422184284527549,
+            0.0018696208367057414,
+            0.003941766753476531,
+            0.0072491289535053455,
+            0.005885460658254341,
+            0.035946676189193096
+          ],
+          "heldout_finger_target_RMSE_metres": 0.004739902173910944,
+          "heldout_positive_finger_increment_fraction": 0.5653846153846154,
+          "heldout_median_finger_increment_metres": 0.00030751094972888623,
+          "early_clipped_action_RMS_change": 0.6229290320057431
+        }
+      }
+    },
+    {
+      "parent": 3,
+      "heldout_teacher_rows": 120,
+      "heldout_early_rows": 480,
+      "feature_rows": 2008,
+      "teacher_positive_increment_fraction": 0.6666666666666666,
+      "teacher_median_finger_increment_metres": 0.0004954878240823746,
+      "hold_coordinate_RMSE_metres": 0.0036383988252184744,
+      "predictions": {
+        "registered_rehearsal": {
+          "heldout_action_mse_per_axis": [
+            0.007339056730685778,
+            0.009764598107896224,
+            0.03218935337628455,
+            0.017439652874888134,
+            0.005956411331627709,
+            0.03265620738812011,
+            0.0602295390227654,
+            0.16943251824697772
+          ],
+          "heldout_finger_target_RMSE_metres": 0.010290545364768628,
+          "heldout_positive_finger_increment_fraction": 0.016666666666666666,
+          "heldout_median_finger_increment_metres": -0.009828487563601124,
+          "early_clipped_action_RMS_change": 0.1190284038753368
+        },
+        "teacher_only_diagnostic": {
+          "heldout_action_mse_per_axis": [
+            0.001508159900650113,
+            0.002846671832363427,
+            0.004753717370598084,
+            0.005130185126982756,
+            0.004425702697424125,
+            0.0025833896438155137,
+            0.0063738495698965215,
+            0.06533864126897641
+          ],
+          "heldout_finger_target_RMSE_metres": 0.006390356077176785,
+          "heldout_positive_finger_increment_fraction": 0.7416666666666667,
+          "heldout_median_finger_increment_metres": 0.004777137775510067,
+          "early_clipped_action_RMS_change": 0.5859911432903776
+        }
+      }
+    }
+  ],
+  "new_physics": 0,
+  "linear_solves": 4,
+  "exported_candidates": 0,
+  "CPU_seconds": 0.1406458750134334,
+  "scope": "Offline analytic readout/actuator-error diagnosis only; no new robot policy result or optimized hyperparameter"
+}

@@ -1,0 +1,12 @@
+{
+  "format": "automanip-correction-support-cpu-v1",
+  "created_at": 1793394213.392819,
+  "question": "Do action-conditional ridge leverage scores distinguish unsupportedresetstates from collectedrandomdecisionstates, withoutnewoutcomelabels?",
+  "data": "Onlynewtrainingcorpus956; no publicdiagnostic or benchmark input. Useexistingfittingpartitiontreatment1features; calibrationpartitiontreatment1sets95thpercentileleverage cutoff. Inspectallrecordedresetstateswithoriginalheadscore>=.8andgain>=.1.",
+  "method": "A=Phi_fit^T Phi_fit+(.001trace(A)/257)I;leveragephi^T A^-1phi. One257dimfactor/solvepersource. Calibrationcutofffixed95thpercentile, nottunedagainstresetlabels. Thisissupportheuristic,notguaranteedconfidencebound.",
+  "scope": "DescriptiveCPUprobe,0newphysics,0labels,0policyupdates. Mayinformaboundedfreshclosedlooptest; doesnotcertifyactionsorrecovercounterfactualoutcomes.",
+  "seeds": [
+    2,
+    3
+  ]
+}

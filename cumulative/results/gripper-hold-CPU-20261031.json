@@ -1,0 +1,33 @@
+{
+  "state": "complete",
+  "passed": true,
+  "production_source_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+  "hold_target_max_error_metres": 2.2649764730431343e-07,
+  "non_gripper_difference": 0.0,
+  "fixed_coordinate_drift_after_64_Adam_steps": 0.0,
+  "critic_identical": true,
+  "logstd_identical": true,
+  "matched_masks": true,
+  "synthetic_optimizer_steps": 64,
+  "CPU_seconds": 0.441546,
+  "new_environment_transitions": 0,
+  "training_seed": 41,
+  "stochastic_actuator_check": [
+    {
+      "q": -0.01,
+      "zero_mean_expected_target": 0.014999999664723873,
+      "hold_mean_expected_target": -0.003952680621296167
+    },
+    {
+      "q": 0.015,
+      "zero_mean_expected_target": 0.014999999664723873,
+      "hold_mean_expected_target": 0.014999999664723873
+    },
+    {
+      "q": 0.04,
+      "zero_mean_expected_target": 0.014999999664723873,
+      "hold_mean_expected_target": 0.033952679485082626
+    }
+  ],
+  "limitation": "Known mean hold map only; clipping makes noisy commands drift near limits. CPU gate does not establish learning or exploration benefit."
+}

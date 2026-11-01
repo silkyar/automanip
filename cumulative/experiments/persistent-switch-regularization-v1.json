@@ -1,0 +1,18 @@
+{
+  "format": "automanip-persistent-switch-regularization-probe-v1",
+  "created_at": 1793392771.865825,
+  "question": "Did outcome-model coefficient regularization cause the failed switch toy by suppressing confidence, rather than missing representation?",
+  "evidence": "Originalmodelmaxholdprobability.596,.523,.599 over broadreachableposition/speedgrid; no gate states. Hold success in this toy depends onlyon|position|<=.2. A logit C*(.04-position^2) is in the original polynomial feature span, so representation can express thisregion. This analytic witness is never supplied to the learner.",
+  "intervention": "Set logisticmodelL2.001to0only. Same2048recorded-seed trainingepisodes/features/scaling/LBFGSbudget/thresholds. Compare oldpreservedfit without refitting. Three originaltoydata seeds. Usefreshcalibration/testdraws from seed+100000,not old test outcomes.",
+  "seeds": [
+    94700001,
+    94700002,
+    94700003
+  ],
+  "calibration": 512,
+  "test": 16384,
+  "admission": "Unchanged95%Wilsonlowerbound>=.8 on512wholeclosedloopepisodes. No confidence threshold relaxation.",
+  "screen": "All3seeds: admittedunregularizedcandidate learns>=.40overbase, within.05oracle,>=99%base-successretention; shuffledlabelmodelnotadmitted. Originalpenalizedfitmuststillfailadmission onfreshcalibration. Failure narrowsremaininghypotheses, not automaticnewparametersweep.",
+  "counting": "Analytically reconstruct oldtoyepisodesandverifyoriginaloutcomecounts;307200replayedtoytransitions. Perseed3calibrationcontrollers(old,new,shuffle)*512 +4testcontrollers*16384, all50steps:10060800newtoytransitions. Countfitclosures/backwards andCPUtime.0robotsteps.",
+  "scope": "One-factor causal check in an assistedtoy, not proofaboutrobotcriticregularization, policygradientbias or sampleefficiency."
+}

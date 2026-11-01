@@ -1,0 +1,22 @@
+{
+  "format": "automanip-readout-residual-diagnosis-v1",
+  "created_at": 1793456728.639296,
+  "execution_authorized": true,
+  "scope": "CPU-only mechanism diagnosis on existing training/internal-validation data. No candidate export, model selection or new policy scoring.",
+  "hypotheses": [
+    "Last-hidden-feature class cannot predict the required late actions precisely",
+    "Rehearsal objective trades late accuracy for preserving early outputs",
+    "Offline action predictions are adequate but closed-loop drift prevents useful release"
+  ],
+  "data": "Same registered search student datasets, fitting-row indices and validation episodes only. Fresh public962score traces supply stage counts but never fitting targets.",
+  "probes": [
+    "Compare registered rehearsal-weight4 readout to teacher-only weight0 analytic diagnostic, with identical ridge.001, same384teacher rows and no exports",
+    "Fit measured-finger hold-target inverse mapping from same fitting features to test whether actuator coordinate is represented linearly",
+    "Measure heldout physical finger-target error and opening direction versus teacher positive increments, per-coordinate rather than averaging8actions"
+  ],
+  "new_transitions": 0,
+  "new_linear_solves": 4,
+  "optimizer_steps": 0,
+  "exported_candidates": 0,
+  "followup": "Use diagnosis to choose one mechanism test; do not select a new rehearsal weight by querying public assessment again. Literature/CPU tests before any next robot run."
+}

@@ -1,0 +1,14 @@
+{
+  "state": "failed_validity_no_scientific_comparison",
+  "confirmed_transitions": 71104,
+  "reserved_transition_upper_bound": 71168,
+  "unconfirmed_inflight_transitions": 64,
+  "optimizer_calls": 0,
+  "comparison_valid": false,
+  "archive": "artifacts/cumulative/release-control-20261030",
+  "known_failure": "Run0 ended with an incomplete target batch and command-budget guard. The underlying rollout ValueError was sanitized by the frozen evaluator; exact cause cannot be established from retained failed-batch assets. Replay matching is suspect and this assumption had failed an earlier probe.",
+  "peer": "Run1 cancelled after peer failure; durable journal counts supersede stale snapshot. Inflight64transitions cannot be resolved.",
+  "mistake": "Repeated a reset-and-replay design despite prior evidence against exact hidden-state matching; no automatic replay or relaxed threshold.",
+  "next_design": "cumulative/experiments/randomized-release-probe-v1.json",
+  "closeout": ".runtime/release-control-20261030/closeout.json"
+}

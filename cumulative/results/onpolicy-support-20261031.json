@@ -1,0 +1,483 @@
+{
+  "format": "automanip-onpolicy-support-results-v1",
+  "state": "complete",
+  "new_training_transitions": 64000,
+  "optimizer_calls": 0,
+  "worker_seconds": [
+    12.915239653,
+    7.808750422999999,
+    7.958271925999998,
+    7.817906522999998,
+    9.812400460999996,
+    8.410671352999998,
+    8.051094679000002,
+    8.127971420999998,
+    8.558769054999999,
+    9.383107662,
+    11.304920549,
+    7.7150858169999985,
+    7.680069919000001,
+    7.718497137,
+    7.870515179999998,
+    7.978335566999995,
+    7.929543504000009,
+    7.995174394999992,
+    7.885755010000011,
+    7.56347272699999
+  ],
+  "fidelity_passed": true,
+  "fitting_data_sufficient": true,
+  "screen_passed": true,
+  "parents": [
+    {
+      "parent": 2,
+      "banks": {
+        "original": {
+          "covered_states": 27,
+          "candidate_successes": [
+            0,
+            12,
+            11,
+            12
+          ],
+          "fitting_teacher_rows": 400,
+          "baseline_final_successes": 0,
+          "baseline_anchor_grasp": 64,
+          "baseline_anchor_placement": 61,
+          "prefix_checks": [
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 0,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 1,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 2,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 3,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 1,
+              "repeat": 1,
+              "actions_identical": true
+            }
+          ],
+          "repeat_check": {
+            "maximum_errors": {
+              "position": 0.0,
+              "qpos": 0.0,
+              "qvel": 0.0,
+              "linear_velocity": 0.0,
+              "angular_velocity": 0.0,
+              "rotation": 0.0
+            },
+            "grasp_or_success_changed_lanes": 0,
+            "final_success_changed_lanes": 0,
+            "passed": true,
+            "actions_identical": true
+          }
+        },
+        "student": {
+          "covered_states": 24,
+          "candidate_successes": [
+            1,
+            12,
+            12,
+            10
+          ],
+          "fitting_teacher_rows": 300,
+          "baseline_final_successes": 1,
+          "baseline_anchor_grasp": 62,
+          "baseline_anchor_placement": 55,
+          "prefix_checks": [
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 0,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 1,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 2,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 3,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 1,
+              "repeat": 1,
+              "actions_identical": true
+            }
+          ],
+          "repeat_check": {
+            "maximum_errors": {
+              "position": 0.0,
+              "qpos": 0.0,
+              "qvel": 0.0,
+              "linear_velocity": 0.0,
+              "angular_velocity": 0.0,
+              "rotation": 0.0
+            },
+            "grasp_or_success_changed_lanes": 0,
+            "final_success_changed_lanes": 0,
+            "passed": true,
+            "actions_identical": true
+          }
+        }
+      },
+      "paired_anchor_position_RMS_difference_metres": 0.048972319811582565
+    },
+    {
+      "parent": 3,
+      "banks": {
+        "original": {
+          "covered_states": 16,
+          "candidate_successes": [
+            0,
+            8,
+            5,
+            7
+          ],
+          "fitting_teacher_rows": 240,
+          "baseline_final_successes": 0,
+          "baseline_anchor_grasp": 63,
+          "baseline_anchor_placement": 60,
+          "prefix_checks": [
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 0,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 1,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 2,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 3,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 1,
+              "repeat": 1,
+              "actions_identical": true
+            }
+          ],
+          "repeat_check": {
+            "maximum_errors": {
+              "position": 0.0,
+              "qpos": 0.0,
+              "qvel": 0.0,
+              "linear_velocity": 0.0,
+              "angular_velocity": 0.0,
+              "rotation": 0.0
+            },
+            "grasp_or_success_changed_lanes": 0,
+            "final_success_changed_lanes": 0,
+            "passed": true,
+            "actions_identical": true
+          }
+        },
+        "student": {
+          "covered_states": 19,
+          "candidate_successes": [
+            2,
+            7,
+            5,
+            9
+          ],
+          "fitting_teacher_rows": 280,
+          "baseline_final_successes": 2,
+          "baseline_anchor_grasp": 56,
+          "baseline_anchor_placement": 55,
+          "prefix_checks": [
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 0,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 1,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 2,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 3,
+              "repeat": 0,
+              "actions_identical": true
+            },
+            {
+              "maximum_errors": {
+                "position": 0.0,
+                "qpos": 0.0,
+                "qvel": 0.0,
+                "linear_velocity": 0.0,
+                "angular_velocity": 0.0,
+                "rotation": 0.0
+              },
+              "grasp_or_success_changed_lanes": 0,
+              "final_success_changed_lanes": 0,
+              "passed": true,
+              "candidate": 1,
+              "repeat": 1,
+              "actions_identical": true
+            }
+          ],
+          "repeat_check": {
+            "maximum_errors": {
+              "position": 0.0,
+              "qpos": 0.0,
+              "qvel": 0.0,
+              "linear_velocity": 0.0,
+              "angular_velocity": 0.0,
+              "rotation": 0.0
+            },
+            "grasp_or_success_changed_lanes": 0,
+            "final_success_changed_lanes": 0,
+            "passed": true,
+            "actions_identical": true
+          }
+        }
+      },
+      "paired_anchor_position_RMS_difference_metres": 0.05420819669961929
+    }
+  ],
+  "decision": "Fit fixed matched aggregation students and assess",
+  "scope": "One limited data-aggregation step with an imperfect sampled supervisor; not full DAgger or a learned-policy score"
+}

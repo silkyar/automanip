@@ -1,0 +1,135 @@
+{
+  "format": "automanip-executed-rehearsal-results-v1",
+  "state": "complete",
+  "new_public_transitions": 153600,
+  "optimizer_calls": 0,
+  "worker_seconds": [
+    21.629354445,
+    26.963061261,
+    20.127557723,
+    23.770929321000004,
+    20.48164639000001,
+    23.292873049
+  ],
+  "policies": {
+    "closed_form": [
+      {
+        "parent": 2,
+        "successes": 3,
+        "episodes": 512,
+        "ever_grasp": 506,
+        "stages": {
+          "grasp": 506,
+          "lift": 488,
+          "transport": 487,
+          "placement": 474,
+          "release": 18,
+          "stable_stack_10_steps": 3
+        },
+        "weights_sha256": "6af1c48f45a81fa03691a7928269712e68ed2947c1f1cf6f4a152f34db26b19c"
+      },
+      {
+        "parent": 3,
+        "successes": 15,
+        "episodes": 512,
+        "ever_grasp": 506,
+        "stages": {
+          "grasp": 506,
+          "lift": 483,
+          "transport": 481,
+          "placement": 475,
+          "release": 36,
+          "stable_stack_10_steps": 3
+        },
+        "weights_sha256": "cf0d0fc8a3b1ba82a14a7ba6dd1d04c39d98d912db12033dae88c6976b66ebed"
+      }
+    ],
+    "raw_refinement": [
+      {
+        "parent": 2,
+        "successes": 5,
+        "episodes": 512,
+        "ever_grasp": 505,
+        "stages": {
+          "grasp": 505,
+          "lift": 486,
+          "transport": 483,
+          "placement": 472,
+          "release": 16,
+          "stable_stack_10_steps": 3
+        },
+        "weights_sha256": "245176704a5dc4350ce3afebcfe31072ccdad219ba3ec48f9929947cca6a1566"
+      },
+      {
+        "parent": 3,
+        "successes": 12,
+        "episodes": 512,
+        "ever_grasp": 506,
+        "stages": {
+          "grasp": 506,
+          "lift": 484,
+          "transport": 483,
+          "placement": 474,
+          "release": 29,
+          "stable_stack_10_steps": 4
+        },
+        "weights_sha256": "19030ca98e80ce8006930a23952594794b6ccdff0e97bbf19f4e095438bda402"
+      }
+    ],
+    "executed_refinement": [
+      {
+        "parent": 2,
+        "successes": 7,
+        "episodes": 512,
+        "ever_grasp": 509,
+        "stages": {
+          "grasp": 509,
+          "lift": 488,
+          "transport": 486,
+          "placement": 473,
+          "release": 25,
+          "stable_stack_10_steps": 4
+        },
+        "weights_sha256": "caddf1eb78ca2544f7b08f3d739dcb4f382b87283dbd8da0d7fed9bb11ee404f"
+      },
+      {
+        "parent": 3,
+        "successes": 30,
+        "episodes": 512,
+        "ever_grasp": 505,
+        "stages": {
+          "grasp": 505,
+          "lift": 474,
+          "transport": 473,
+          "placement": 467,
+          "release": 75,
+          "stable_stack_10_steps": 15
+        },
+        "weights_sha256": "720b072357a4ce035736bd93893958c911739b080717a600f76546fe6739428d"
+      }
+    ]
+  },
+  "pooled_success": {
+    "closed_form": 0.017578125,
+    "raw_refinement": 0.0166015625,
+    "executed_refinement": 0.0361328125
+  },
+  "executed_minus_closed_form": {
+    "mean_gain": 0.0185546875,
+    "interval_97_5": [
+      0.005859375,
+      0.0322265625
+    ]
+  },
+  "executed_minus_raw_refinement": {
+    "mean_gain": 0.01953125,
+    "interval_97_5": [
+      0.0087890625,
+      0.03125
+    ]
+  },
+  "ever_grasp_retained": true,
+  "primary_screen_passed": false,
+  "decision": "Reject material improvement for this fixed objective/learner; retain evidence without score-driven refit",
+  "scope": "Deterministic bounded-action rehearsal on two acquired actors; not a stochastic-policy or from-scratch learning claim"
+}

@@ -1,0 +1,156 @@
+{
+  "experiment_id": "stackcube-bc-exploration-pilot-20261028",
+  "launch_enabled": true,
+  "paid_launch_authorized": true,
+  "root_review": {
+    "at": "2026-10-28T14:10:37.727120+00:00",
+    "status": "passed",
+    "checks": "RootreadfullbaseAMPadapter+BCdelta/contracts/plans/v2source; independentlypassed5BCcontract+5residualsource tests; pinnedSDKregistrationproofreviewed. Samefrozenprotocol, readonlyproducerboundaries, sharedBCactor, calibrationtrainingonly, time/step/source audits.",
+    "user_authorization": "Explicityes to reviewedAutoManipcode/checkpoint/demo upload+run insideexisting100totalcap; useraccepted96targetandleftAMPoptional. RootdefersAMPandselectsBCexplorationmechanism."
+  },
+  "scientific_plan": "docs/stackcube-bc-exploration-plan-20261028.md",
+  "scientific_plan_sha256": "79228979efaedf07ae94aaa5548e96908a191323c21375784b55af25af55f0b7",
+  "jobs": [
+    {
+      "stage": "collect",
+      "job_id": "stackcube-bc-exploration-pilot-20261028-collect-seed-1",
+      "seed": 1,
+      "source_path": "research/discovery/amp_collect_v1.py",
+      "source_sha256": "523459ce91a59200970d66a7dd83fa8dc06c7c96879e72ab541f2f263403ef3b",
+      "lease_seconds": 120,
+      "wrapper_seconds": 180,
+      "requested_rl_steps": 0,
+      "gpu": "L40S"
+    },
+    {
+      "stage": "bc",
+      "job_id": "stackcube-bc-exploration-pilot-20261028-bc-seed-1",
+      "seed": 1,
+      "source_path": "research/discovery/amp_bc_v1.py",
+      "source_sha256": "1e8b1a6ea1e2007bf43adb24fc0d96008c54d01d3af5d6650548c35f6392f7f6",
+      "lease_seconds": 120,
+      "wrapper_seconds": 180,
+      "requested_rl_steps": 0,
+      "gpu": "L40S"
+    },
+    {
+      "stage": "assist-bc-ppo",
+      "job_id": "stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-seed-1",
+      "seed": 1,
+      "source_path": "research/discovery/amp-prior-assisted-v1/assist-bc-ppo.py",
+      "source_sha256": "7a4de8deecf0adc15d9f8beaef1bf6b9874ca9eb7b0122efbab5d9b1bc80d427",
+      "lease_seconds": 600,
+      "wrapper_seconds": 660,
+      "requested_rl_steps": 5120000,
+      "gpu": "L40S"
+    },
+    {
+      "stage": "assist-bc-ppo-residual-std",
+      "job_id": "stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1",
+      "seed": 1,
+      "source_path": "research/discovery/bc-residual-exploration-v2/assist-bc-ppo-residual-std.py",
+      "source_sha256": "c5ca37a6ff22ddd2e89288f5697e3041507e834adf8f8731a49a17d1423fd200",
+      "lease_seconds": 600,
+      "wrapper_seconds": 660,
+      "requested_rl_steps": 5120000,
+      "gpu": "L40S"
+    }
+  ],
+  "helper_allowlist": {
+    "research/discovery/amp_v1.py": "463303be5809392e7ea9597eb47c0e45ccd256438750d4a0b219c2abd9dee5bd",
+    "research/discovery/amp_collect_v1.py": "523459ce91a59200970d66a7dd83fa8dc06c7c96879e72ab541f2f263403ef3b",
+    "research/discovery/amp_bc_v1.py": "1e8b1a6ea1e2007bf43adb24fc0d96008c54d01d3af5d6650548c35f6392f7f6"
+  },
+  "training_reset_seeds": [
+    90281000,
+    90281001,
+    90281002,
+    90281003,
+    90281004,
+    90281005,
+    90281006,
+    90281007
+  ],
+  "teacher_prefix": {
+    "training_steps": 49971200,
+    "trainer_seconds": 2295.408300588,
+    "training_seed": 1,
+    "actor_weights_sha256": "ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16",
+    "dollars": null,
+    "dollar_attribution": "Teacher belongs to completed three-arm quality app; separate exact per-teacher dollar allocation unavailable, not assumed free."
+  },
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "budget_cap_usd": 3.0,
+  "shared_modal_tonight_cap_usd": 100.0,
+  "cost": {
+    "gpu_container_seconds_bound": 2250,
+    "gpu_cpu_ram_usd": 1.41732,
+    "conversion_cpu_usd": 0.004209599999999999,
+    "coordinator_usd": 0.009891,
+    "subtotal_usd": 1.4314206,
+    "pilot_cap_usd": 3.0,
+    "reserve_usd": 1.5685794
+  },
+  "confirmation_queries": 0,
+  "development_episodes": 128,
+  "maximum_unique_development_evaluations": 3,
+  "student_training_seeds": [
+    1
+  ],
+  "maximum_parallel_students": 2,
+  "outcome_rule": {
+    "matching_new_rl_steps_required": 5120000,
+    "minimum_residual_paired_success_gain": 3,
+    "residual_must_not_regress_vs_bc_only": true,
+    "censored_runs_no_sample_efficiency_claim": true,
+    "automatic_expansion": false,
+    "confirmation_queries": 0,
+    "promotion_requires_fresh_training_seeds_and_independent_confirmation": true
+  },
+  "published_inputs": {
+    "demo": "collect Volume /trial/dataset: only dataset.json and trajectories.npz",
+    "bc": "BC Volume /trial/published: only bc-report.json and final-actor manifest/weights",
+    "teacher": "Compressed numeric actor argument to collector only; never BC/students"
+  },
+  "stage_timing": {
+    "collect": {
+      "lease": 120,
+      "wrapper": 180
+    },
+    "bc": {
+      "lease": 120,
+      "wrapper": 180
+    },
+    "students": {
+      "lease": 600,
+      "wrapper": 660
+    },
+    "startup": 30,
+    "save_reserve": 20,
+    "evaluator": 120,
+    "coordinator": 3600
+  },
+  "replacing_reserved_campaign": "stackcube-amp-pilot-20261028",
+  "fresh_budget_allocation_usd": 0,
+  "exploration": {
+    "control_initial_logstd": [
+      -0.5,
+      -0.5,
+      -0.5,
+      -0.5,
+      -0.5,
+      -0.5,
+      -0.5,
+      -0.5
+    ],
+    "residual_source_patch_sha256": "32475453cf5080e0cfdd0c0ed11170f785a27e947c3ca7eb7e744faa8f51692a",
+    "frozen_assisted_base_sha256": "7a4de8deecf0adc15d9f8beaef1bf6b9874ca9eb7b0122efbab5d9b1bc80d427",
+    "receipt_schema": "research/discovery/bc-residual-exploration-v2/calibration-receipt.schema.json",
+    "calibration_partition": "successful BC training episode indices only; validation excluded",
+    "floor": 0.05,
+    "ceiling": 0.6065306597126334,
+    "std_remains_trainable": true,
+    "reward_shaping": false,
+    "discriminator": false
+  }
+}

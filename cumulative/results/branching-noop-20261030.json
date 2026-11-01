@@ -1,0 +1,385 @@
+{
+  "format": "automanip-branching-noop-analysis-v1",
+  "state": "complete",
+  "new_transitions": 19200,
+  "optimizer_calls": 0,
+  "worker_seconds": [
+    9.513050341,
+    6.664133138,
+    6.122600986999998,
+    5.757877074,
+    5.665868797000002,
+    6.025454791000001
+  ],
+  "no_write_controls": {
+    "maximum_errors": {
+      "position": 0.0,
+      "qpos": 0.0,
+      "qvel": 0.0,
+      "linear_velocity": 0.0,
+      "angular_velocity": 0.0,
+      "rotation": 0.0
+    },
+    "grasp_or_success_changed_lanes": 0,
+    "final_success_changed_lanes": 0,
+    "passed": true
+  },
+  "prefixes_match": true,
+  "comparisons": [
+    {
+      "condition": "physical",
+      "repeat": 0,
+      "control_repeat": 0,
+      "prefix": {
+        "maximum_errors": {
+          "position": 0.0,
+          "qpos": 0.0,
+          "qvel": 0.0,
+          "linear_velocity": 0.0,
+          "angular_velocity": 0.0,
+          "rotation": 0.0
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": true
+      },
+      "first_action_after_write": {
+        "maximum_errors": {
+          "position": 0.00034618377685546875,
+          "qpos": 0.00011214613914489746,
+          "qvel": 0.1048998311161995,
+          "linear_velocity": 0.047560468316078186,
+          "angular_velocity": 1.4375383853912354,
+          "rotation": 0.004083821212309816
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      },
+      "full_trajectory": {
+        "maximum_errors": {
+          "position": 0.03211355209350586,
+          "qpos": 0.045104652643203735,
+          "qvel": 0.7559325695037842,
+          "linear_velocity": 0.5060356259346008,
+          "angular_velocity": 42.47072219848633,
+          "rotation": 1.8449840477596218
+        },
+        "grasp_or_success_changed_lanes": 3,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      }
+    },
+    {
+      "condition": "physical",
+      "repeat": 0,
+      "control_repeat": 1,
+      "prefix": {
+        "maximum_errors": {
+          "position": 0.0,
+          "qpos": 0.0,
+          "qvel": 0.0,
+          "linear_velocity": 0.0,
+          "angular_velocity": 0.0,
+          "rotation": 0.0
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": true
+      },
+      "first_action_after_write": {
+        "maximum_errors": {
+          "position": 0.00034618377685546875,
+          "qpos": 0.00011214613914489746,
+          "qvel": 0.1048998311161995,
+          "linear_velocity": 0.047560468316078186,
+          "angular_velocity": 1.4375383853912354,
+          "rotation": 0.004083821212309816
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      },
+      "full_trajectory": {
+        "maximum_errors": {
+          "position": 0.03211355209350586,
+          "qpos": 0.045104652643203735,
+          "qvel": 0.7559325695037842,
+          "linear_velocity": 0.5060356259346008,
+          "angular_velocity": 42.47072219848633,
+          "rotation": 1.8449840477596218
+        },
+        "grasp_or_success_changed_lanes": 3,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      }
+    },
+    {
+      "condition": "physical",
+      "repeat": 1,
+      "control_repeat": 0,
+      "prefix": {
+        "maximum_errors": {
+          "position": 0.0,
+          "qpos": 0.0,
+          "qvel": 0.0,
+          "linear_velocity": 0.0,
+          "angular_velocity": 0.0,
+          "rotation": 0.0
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": true
+      },
+      "first_action_after_write": {
+        "maximum_errors": {
+          "position": 0.00034618377685546875,
+          "qpos": 0.00011214613914489746,
+          "qvel": 0.1048998311161995,
+          "linear_velocity": 0.047560468316078186,
+          "angular_velocity": 1.4375383853912354,
+          "rotation": 0.004083821212309816
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      },
+      "full_trajectory": {
+        "maximum_errors": {
+          "position": 0.03211355209350586,
+          "qpos": 0.045104652643203735,
+          "qvel": 0.7559325695037842,
+          "linear_velocity": 0.5060356259346008,
+          "angular_velocity": 42.47072219848633,
+          "rotation": 1.8449840477596218
+        },
+        "grasp_or_success_changed_lanes": 3,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      }
+    },
+    {
+      "condition": "physical",
+      "repeat": 1,
+      "control_repeat": 1,
+      "prefix": {
+        "maximum_errors": {
+          "position": 0.0,
+          "qpos": 0.0,
+          "qvel": 0.0,
+          "linear_velocity": 0.0,
+          "angular_velocity": 0.0,
+          "rotation": 0.0
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": true
+      },
+      "first_action_after_write": {
+        "maximum_errors": {
+          "position": 0.00034618377685546875,
+          "qpos": 0.00011214613914489746,
+          "qvel": 0.1048998311161995,
+          "linear_velocity": 0.047560468316078186,
+          "angular_velocity": 1.4375383853912354,
+          "rotation": 0.004083821212309816
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      },
+      "full_trajectory": {
+        "maximum_errors": {
+          "position": 0.03211355209350586,
+          "qpos": 0.045104652643203735,
+          "qvel": 0.7559325695037842,
+          "linear_velocity": 0.5060356259346008,
+          "angular_velocity": 42.47072219848633,
+          "rotation": 1.8449840477596218
+        },
+        "grasp_or_success_changed_lanes": 3,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      }
+    },
+    {
+      "condition": "augmented",
+      "repeat": 0,
+      "control_repeat": 0,
+      "prefix": {
+        "maximum_errors": {
+          "position": 0.0,
+          "qpos": 0.0,
+          "qvel": 0.0,
+          "linear_velocity": 0.0,
+          "angular_velocity": 0.0,
+          "rotation": 0.0
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": true
+      },
+      "first_action_after_write": {
+        "maximum_errors": {
+          "position": 0.00034618377685546875,
+          "qpos": 0.00011214613914489746,
+          "qvel": 0.104925736784935,
+          "linear_velocity": 0.04755452275276184,
+          "angular_velocity": 1.4370107650756836,
+          "rotation": 0.004083914354096106
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      },
+      "full_trajectory": {
+        "maximum_errors": {
+          "position": 0.08578483015298843,
+          "qpos": 0.0317474901676178,
+          "qvel": 0.5215328335762024,
+          "linear_velocity": 0.6458771228790283,
+          "angular_velocity": 29.97894859313965,
+          "rotation": 0.843893977275862
+        },
+        "grasp_or_success_changed_lanes": 2,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      }
+    },
+    {
+      "condition": "augmented",
+      "repeat": 0,
+      "control_repeat": 1,
+      "prefix": {
+        "maximum_errors": {
+          "position": 0.0,
+          "qpos": 0.0,
+          "qvel": 0.0,
+          "linear_velocity": 0.0,
+          "angular_velocity": 0.0,
+          "rotation": 0.0
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": true
+      },
+      "first_action_after_write": {
+        "maximum_errors": {
+          "position": 0.00034618377685546875,
+          "qpos": 0.00011214613914489746,
+          "qvel": 0.104925736784935,
+          "linear_velocity": 0.04755452275276184,
+          "angular_velocity": 1.4370107650756836,
+          "rotation": 0.004083914354096106
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      },
+      "full_trajectory": {
+        "maximum_errors": {
+          "position": 0.08578483015298843,
+          "qpos": 0.0317474901676178,
+          "qvel": 0.5215328335762024,
+          "linear_velocity": 0.6458771228790283,
+          "angular_velocity": 29.97894859313965,
+          "rotation": 0.843893977275862
+        },
+        "grasp_or_success_changed_lanes": 2,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      }
+    },
+    {
+      "condition": "augmented",
+      "repeat": 1,
+      "control_repeat": 0,
+      "prefix": {
+        "maximum_errors": {
+          "position": 0.0,
+          "qpos": 0.0,
+          "qvel": 0.0,
+          "linear_velocity": 0.0,
+          "angular_velocity": 0.0,
+          "rotation": 0.0
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": true
+      },
+      "first_action_after_write": {
+        "maximum_errors": {
+          "position": 0.00034618377685546875,
+          "qpos": 0.00011214613914489746,
+          "qvel": 0.104925736784935,
+          "linear_velocity": 0.04755452275276184,
+          "angular_velocity": 1.4370107650756836,
+          "rotation": 0.004083914354096106
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      },
+      "full_trajectory": {
+        "maximum_errors": {
+          "position": 0.08578483015298843,
+          "qpos": 0.0317474901676178,
+          "qvel": 0.5215328335762024,
+          "linear_velocity": 0.6458771228790283,
+          "angular_velocity": 29.97894859313965,
+          "rotation": 0.843893977275862
+        },
+        "grasp_or_success_changed_lanes": 2,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      }
+    },
+    {
+      "condition": "augmented",
+      "repeat": 1,
+      "control_repeat": 1,
+      "prefix": {
+        "maximum_errors": {
+          "position": 0.0,
+          "qpos": 0.0,
+          "qvel": 0.0,
+          "linear_velocity": 0.0,
+          "angular_velocity": 0.0,
+          "rotation": 0.0
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": true
+      },
+      "first_action_after_write": {
+        "maximum_errors": {
+          "position": 0.00034618377685546875,
+          "qpos": 0.00011214613914489746,
+          "qvel": 0.104925736784935,
+          "linear_velocity": 0.04755452275276184,
+          "angular_velocity": 1.4370107650756836,
+          "rotation": 0.004083914354096106
+        },
+        "grasp_or_success_changed_lanes": 0,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      },
+      "full_trajectory": {
+        "maximum_errors": {
+          "position": 0.08578483015298843,
+          "qpos": 0.0317474901676178,
+          "qvel": 0.5215328335762024,
+          "linear_velocity": 0.6458771228790283,
+          "angular_velocity": 29.97894859313965,
+          "rotation": 0.843893977275862
+        },
+        "grasp_or_success_changed_lanes": 2,
+        "final_success_changed_lanes": 0,
+        "passed": false
+      }
+    }
+  ],
+  "conclusion": "No-op state writing perturbed next-action dynamics in both tested restoration variants; hidden cause unresolved",
+  "benchmark_comparison": false,
+  "scope": "One acquired parent action tape,64fixed initial states,two fresh-process repetitions; no learned-policy result"
+}

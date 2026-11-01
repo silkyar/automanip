@@ -1,0 +1,51 @@
+{
+  "format": "automanip-gradient-aggregation-CPU-gate-v1",
+  "created_at": 1793375969.0469382,
+  "execution_authorized": true,
+  "production": "research/discovery/bc-residual-exploration-v2/assist-bc-ppo-residual-std.py",
+  "metric_report": "artifacts/cumulative/old-state-metric-cpu-v1/report.json",
+  "collection_seeds": [
+    90282001,
+    90282002,
+    90282003
+  ],
+  "inputs": {
+    "research/discovery/bc-residual-exploration-v2/assist-bc-ppo-residual-std.py": "c5ca37a6ff22ddd2e89288f5697e3041507e834adf8f8731a49a17d1423fd200",
+    "runs/stackcube-bc-exploration-pilot-20261028/bc/native/run/bc-report.json": "a9718a30ad8a149de08d7672c959c03af0cddf3afbdccafb207323e67dc687c2",
+    "runs/stackcube-bc-exploration-pilot-20261028/collect/native/run/trajectories.npz": "495a392364926211397222bfa77e79ff4a6c2c87564f226dc1212f333ebec782",
+    "research/readout_locality_probe.py": "33f8915821b5df960ad078f6fb1caa24881145e43d6af602f257b9a2709bcb3b",
+    "research/readout_reuse.py": "a28214e57b0979856e5611af9ecf462d57bd23e4e257753c78780c41377f6a8a",
+    "research/discovery/first_update_probe.py": "06d36f5fdfe66669cc18f4e47cc755fbdc65eb3eed50ba252fceaf81c8f2fca2",
+    "runs/stackcube-first-update-probe-20261028/run/90282001/collection.npz": "bc108daad42475af31ff3fc1651d40887fe392ac23573d577729e4caa69b5171",
+    "runs/stackcube-first-update-probe-20261028/run/90282001/update-state.npz": "73f0fa57f92a8c9d23f10b1ddb209b3b89dffa396601465eaeaac9cc3c11555c",
+    "runs/stackcube-first-update-probe-20261028/run/90282001/rng-before-update.npz": "04e287fc0a0a21ea53f390b0b1fef71272146ee65137a61230c55185fe3f675b",
+    "runs/stackcube-first-update-probe-20261028/run/90282002/collection.npz": "91ed1a0392780a1eb921b5dd31f82b44c6f357fc3e2502a7e2882ed151113c97",
+    "runs/stackcube-first-update-probe-20261028/run/90282002/update-state.npz": "af26033f0170e827ea70bcd4328bc93f622a8d35bf7c758aef10c43c53b639fa",
+    "runs/stackcube-first-update-probe-20261028/run/90282002/rng-before-update.npz": "036b27f00592ef03d8ba883af177e701ad5dbd2e6016f5ff09bea6099a7f07ec",
+    "runs/stackcube-first-update-probe-20261028/run/90282003/collection.npz": "9c8a948e03f67fe8fa7cf8591e72aa3217ab6f334690cfecba93a02c18f7cbd1",
+    "runs/stackcube-first-update-probe-20261028/run/90282003/update-state.npz": "7ad3abb01c8da2ba16614352f1a2970498451f0ba7d7f3f1e45c3d79b0d84569",
+    "runs/stackcube-first-update-probe-20261028/run/90282003/rng-before-update.npz": "b15532430fa388ab3b6623b97e0e9f9e1f1c68552dd4f9411262d894c7516f00",
+    "research/old_state_metric_probe.py": "9f3d555b5e7bba7d7514286ab1f47e93397276cbefd4ac523378a7a24b8a34fc",
+    "artifacts/cumulative/readout-locality-cpu-v1/report.json": "11c95431295e6a766e74823841e38865935496ab3ff9dff38aedaf97d7d7a812",
+    "research/cross_draw_direction_probe.py": "a827c12bb51df339d17875825895516e2eb30475b711fab1fc6ea0e08dd5c6a5",
+    "artifacts/cumulative/old-state-metric-cpu-v1/report.json": "d0e7df1ef8a44a35d62da7b56a55af026934d4dd14bb54292db806a90bd9bc6b",
+    "artifacts/cumulative/old-state-metric-cpu-v1/90282001-branches.npz": "c680881457e1dbade77c41e0a61903ade5b72bafdbc16490f17adea272fb7ed6",
+    "artifacts/cumulative/old-state-metric-cpu-v1/90282002-branches.npz": "a084fb718575dd33540655cc099389f77f6d446d9c276f77d61692938f525724",
+    "artifacts/cumulative/old-state-metric-cpu-v1/90282003-branches.npz": "522f2050180b5cda18220ab7516a3a763b32563b542a66d2cce981ee433eb6d9",
+    "research/gradient_aggregation_probe.py": "0b9fe372ac1b277347744d30a5b3f3588ccdaef3284e1aaf39daf008628390b9",
+    "artifacts/cumulative/cross-draw-direction-cpu-v1/report.json": "43bb64361711358d571bef1eeb83cb2ddc8c9b997d19e124709a9cfbe52384a1"
+  },
+  "hypothesis": "Averaging the same score estimator over the full already-collected rollout improves out-of-draw directional alignment over its original1600-row minibatch.",
+  "controls": "Same source actor/features/critic, original minibatch advantage normalization constants, curvature matrix, ridge and .01 currentKL; only gradient aggregation changes.",
+  "gate": ">=5/6 independent gains positive; full mean crossgain>=2x positive minibatch mean; full cross/fitting gain ratio>=.1",
+  "accounting": "Full direction processes51200 score rows versus1600. No new environment data, but32x direction-estimation row work is explicit; this is not a fair complete-algorithm benchmark.",
+  "budget": {
+    "max_wall_seconds": 120,
+    "new_environment_transitions": 0,
+    "optimizer_calls": 0,
+    "linear_solves": 6,
+    "gpu_work": 0,
+    "dollars": 0
+  },
+  "followup": "Only pass permits designing new paired direction probes; if failed, diagnose phase/correlation/estimator targets before new training"
+}

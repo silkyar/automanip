@@ -1,0 +1,53 @@
+{
+  "state": "passed",
+  "seconds": 0.24131016700994223,
+  "synthetic_independent_experiments": 2000,
+  "synthetic_continuation_returns": 2048000,
+  "optimizer_calls": 0,
+  "robot_transitions": 0,
+  "source_sha256": "c187faf5cfe432b372b6a26a4f2e8768d84f30a89b6aac89c1174a823bbbc452",
+  "estimator_sha256": "058fc4e2a3dd49792939f1075b5fef0f71a26ba0cd8f925b3121505e4cbeffbb",
+  "records": [
+    {
+      "action_coefficient": 0.1,
+      "future_noise": 1.0,
+      "exact_continuation_trace": 8.0,
+      "mean_estimated_continuation_trace": 7.980118885065502,
+      "exact_zero_baseline_action_trace": 0.09000000000000002,
+      "exact_zero_baseline_ideal_max_reduction": 1.01125,
+      "mean_estimated_action_trace": 0.1354219007149333,
+      "mean_estimated_first_gradient": 0.09968189553166437,
+      "true_first_gradient": 0.1,
+      "first_replica_interval": {
+        "kind": "approximate percentile bootstrap across action clusters; no confidence guarantee",
+        "action_cluster_resamples": 1000,
+        "seed": 20261028,
+        "reduction_95_percentile_interval": [
+          0.9740871244003644,
+          1.1415833182804151
+        ]
+      }
+    },
+    {
+      "action_coefficient": 1.0,
+      "future_noise": 0.1,
+      "exact_continuation_trace": 0.08000000000000002,
+      "mean_estimated_continuation_trace": 0.0800285547258548,
+      "exact_zero_baseline_action_trace": 9.0,
+      "exact_zero_baseline_ideal_max_reduction": 113.49999999999999,
+      "mean_estimated_action_trace": 9.900476195927812,
+      "mean_estimated_first_gradient": 0.9963707080230398,
+      "true_first_gradient": 1.0,
+      "first_replica_interval": {
+        "kind": "approximate percentile bootstrap across action clusters; no confidence guarantee",
+        "action_cluster_resamples": 1000,
+        "seed": 20261028,
+        "reduction_95_percentile_interval": [
+          73.36406353480805,
+          327.37705911963957
+        ]
+      }
+    }
+  ],
+  "interpretation": "Identifies continuation variance independently of baseline; finite16-future groups require noise correction; intervals are approximate and not global-policy bounds."
+}

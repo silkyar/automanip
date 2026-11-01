@@ -1,0 +1,31 @@
+{
+  "recovery_id": "fullhorizon-l40s-20261027",
+  "root_authorized": true,
+  "previous_app_id": "ap-8A3U3Ee2io7IMxOwzgmDTK",
+  "gpu_requested": "L40S",
+  "split": "confirmation",
+  "episodes_per_policy": 512,
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "maximum_parallel_evaluators": 2,
+  "shared_additional_spend_cap_usd": 2,
+  "purpose": "Only original never-started policies; infrastructure recovery, no scientific protocol change",
+  "evidence": {
+    "apps-final.json": "d55b709f71488648e31f078ad4cb0911bc706600f5bc5a3123bee42645ded493",
+    "containers-final.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "claims-final.json": "4d84bc28ecafdc5b26dae1a4f57d7a9f6042cb19d727b29e6dcd49f87e957063"
+  },
+  "policies": [
+    {
+      "seed": 1,
+      "weights_sha256": "39ba198d0c98af14a3d2965ef9a3be859f31aa3c4889db3da311da910c2da153",
+      "policy_dir": "checkpoints/stackcube-full-horizon-20261027/seed-1/policy"
+    },
+    {
+      "seed": 2,
+      "weights_sha256": "117e2be0c0dffd8dd91f5d5093cbd69cb80f5579505b4ed04203a9f57b75299b",
+      "policy_dir": "checkpoints/stackcube-full-horizon-20261027/seed-2/policy"
+    }
+  ],
+  "excluded_completed_seed": 3,
+  "excluded_completed_weights_sha256": "69064ec80d1649e82d3083838236209848f49fbac154332e64dfd6020edda0a6"
+}

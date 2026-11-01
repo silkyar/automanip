@@ -1,0 +1,80 @@
+{
+  "experiment_id": "stackcube-kl-value-screen-20261028",
+  "launch_enabled": true,
+  "paid_launch_authorized": true,
+  "root_review": {
+    "at": "2026-10-28T14:39:54.652466+00:00",
+    "status": "passed",
+    "evidence": "Rootreadentirev2source/schema/5sourceCPUtests+fullwrapperdelta/contract/scientificplan;6adaptertests independentlypassed. Fixedimagehelperdependencyverifiedisolatedwithnegativecontrol; pinnedSDKregistrationandCLIproof. Actualtotaloptimizeraccountingseparatefromactor/joint. Frozeninterface/evaluatorunchanged,randominit,no teacher/data.",
+    "user_authorization": "StandingexplicitapprovalforreviewedAutoManipcode+training/evaluationwithinshared100cap; usertargetsabout96withfewerstepsandpermitsindependentautoresresearchchoices."
+  },
+  "scientific_plan": "docs/stackcube-kl-value-plan-20261028.md",
+  "scientific_plan_sha256": "94507cdfb8db45deb8ad4149e08116d251ce483f7d598f4b0511cd7b00064d41",
+  "jobs": [
+    {
+      "job_id": "stackcube-kl-value-screen-20261028-scratch-kl-stop-control-seed-1",
+      "method": "scratch-kl-stop-control",
+      "seed": 1,
+      "trainer_sha256": "de067415f6895f7b4fcc534cff20fe9cd628fef6faae3846c3b49687ff526632",
+      "gpu": "L40S",
+      "trainer_seconds_cap": 600,
+      "requested_steps": 10240000,
+      "actual_steps_ceiling": 10240000
+    },
+    {
+      "job_id": "stackcube-kl-value-screen-20261028-scratch-kl-stop-critic-seed-1",
+      "method": "scratch-kl-stop-critic",
+      "seed": 1,
+      "trainer_sha256": "8784f4d7aeb268a4794a59c509b761f740fffdd5932b0e6dd364ec4157c9228b",
+      "gpu": "L40S",
+      "trainer_seconds_cap": 600,
+      "requested_steps": 10240000,
+      "actual_steps_ceiling": 10240000
+    }
+  ],
+  "budget_cap_usd": 3.0,
+  "shared_modal_cap_usd": 100.0,
+  "cost": {
+    "gpu_container_seconds_bound": 1980,
+    "gpu_cpu_ram_usd": 1.2472416,
+    "conversion_cpu_usd": 0.008419199999999998,
+    "coordinator_usd": 0.009891,
+    "subtotal_usd": 1.2655518000000001,
+    "pair_cap_usd": 3.0,
+    "reserve_usd": 1.7344481999999999
+  },
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "selected_steps": [
+    5120000,
+    "final_actual_steps"
+  ],
+  "max_development_evaluations": 4,
+  "development_episodes": 128,
+  "confirmation_queries": 0,
+  "training_seeds": [
+    1
+  ],
+  "outcome_rule": {
+    "equal_final_actual_steps_required": true,
+    "minimum_candidate_final_success_gain": 3,
+    "maximum_candidate_5120000_success_regression": 3,
+    "censoring_reported": true,
+    "automatic_retry": false,
+    "automatic_expansion": false,
+    "confirmation_queries": 0
+  },
+  "max_parallel_trainers": 2,
+  "trainer_hard_seconds": 600,
+  "trainer_save_reserve_seconds": 20,
+  "trainer_wrapper_seconds": 660,
+  "startup_seconds": 30,
+  "evaluator_seconds": 120,
+  "coordinator_seconds": 3600,
+  "initialization": "random from scratch; no teacher/checkpoint/demonstration inputs",
+  "counter_schema": "research/discovery/from-scratch-kl-value-v2/update-receipt.schema.json",
+  "legacy_counter_semantics": "audit/optimizer_steps is joint/actor only; optimizer_step_count is measured total joint+critic-only",
+  "candidate_parameter_mounts": [
+    "own output Volume",
+    "reviewed readonly PhysX cache only"
+  ]
+}

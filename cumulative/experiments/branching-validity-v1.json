@@ -1,0 +1,113 @@
+{
+  "format": "automanip-branching-validity-v1",
+  "created_at": 1793400512.5823529,
+  "execution_authorized": true,
+  "user_authorization": "User approved branching diagnostic then bounded planning/distillation test; autonomous research and Modal GPU authorized",
+  "production_pins": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "api_pins": {
+    "mani_skill.envs.sapien_env": "996d1aaff9cfed36e4753ab271206aeeb8c42dc585835342d88a2457d2fb5334",
+    "mani_skill.envs.scene": "fc4de7f3a4a61a5a02ef14861c5dfb3db73ee36442e788525d8963e2cf05e160",
+    "mani_skill.agents.base_agent": "ae704c600b448637d51de614c76f32594f58d6d2315d511306fd88a928b2b7cc",
+    "mani_skill.agents.controllers.base_controller": "43e1c18b0791caabd4c261d5f163c9c3de812ab9a7947f61e64494848c32e1e4",
+    "mani_skill.agents.controllers.pd_joint_pos": "474d3ce4bac54cc3b006899070795956135a595b5573b5afb84aa3e732a103d5",
+    "mani_skill.utils.structs.articulation": "ed23e5720212507bb7c5008c11e4e224527f52c0e6092d2b391c3aaa982dd187"
+  },
+  "physx_sha256": "4c582a16509a71faf5592fe9708586dfcc7ab61ae932eabc1ddd81f290818706",
+  "parents": [
+    2,
+    3
+  ],
+  "policies": {
+    "2": "policies/2",
+    "3": "policies/3"
+  },
+  "policy_files": {
+    "policies/2/manifest.json": "2b5a9d68ce79bd89e080aeab58dda9579c63136d20ebf867e974489a3844ea9f",
+    "policies/2/weights.json": "d17c38edc1797b7766685dac257fe9eeb22fe5e04f1f1b21200fbf79092c7ce1",
+    "policies/3/manifest.json": "666be4aa90d18b83c8e0f7d39a3bd9946a58fb368246d83b3f272d5ec25c3a7b",
+    "policies/3/weights.json": "7f550fa77a6258c7f2baa66e5ba2356c94bb4f7816c06822d22e80b8eb845257"
+  },
+  "source_prefixes": [
+    {
+      "training_seed": 2,
+      "environment_transitions": 8192000,
+      "checkpoint_trainer_seconds": 465.05150610299995,
+      "weights_sha256": "d17c38edc1797b7766685dac257fe9eeb22fe5e04f1f1b21200fbf79092c7ce1",
+      "source_acquisition": "Already counted completed from-scratch training run; not new probe training"
+    },
+    {
+      "training_seed": 3,
+      "environment_transitions": 8192000,
+      "checkpoint_trainer_seconds": 457.51907834099995,
+      "weights_sha256": "7f550fa77a6258c7f2baa66e5ba2356c94bb4f7816c06822d22e80b8eb845257",
+      "source_acquisition": "Already counted completed from-scratch training run; not new probe training"
+    }
+  ],
+  "gaussian_std": {
+    "2": [
+      0.21376303066542743,
+      0.11388461260367895,
+      0.19321162693340854,
+      0.136129309131641,
+      0.5618684109040332,
+      0.26014139714134854,
+      0.6159403813031987,
+      0.3304149007024842
+    ],
+    "3": [
+      0.21703058421595622,
+      0.12067180582042904,
+      0.1968961596991939,
+      0.14177268532901366,
+      0.5704647419570243,
+      0.26284216801211935,
+      0.6245933831025609,
+      0.3328807184633203
+    ]
+  },
+  "num_envs": 64,
+  "horizon": 50,
+  "anchor_steps": [
+    0,
+    15,
+    30,
+    40
+  ],
+  "repeats": 3,
+  "episode_seed_bases": [
+    95900000,
+    95901000
+  ],
+  "noise_seed_bases": [
+    95910000,
+    95911000
+  ],
+  "modes": [
+    "physical",
+    "augmented"
+  ],
+  "tolerances": {
+    "position": 0.0001,
+    "rotation": 0.001,
+    "qpos": 0.0001,
+    "qvel": 0.01,
+    "linear_velocity": 0.01,
+    "angular_velocity": 0.05
+  },
+  "max_transitions": 94720,
+  "optimizer_calls": 0,
+  "confirmation_queries": 0,
+  "final_queries": 0,
+  "partition": "training-only diagnostic; never private or confirmation seeds",
+  "hypothesis": "Exposed controller/drive/clock/RNG restoration may explain physical replay divergence; hidden PhysX solver state remains unobserved",
+  "primary": "All augmented replays must match original uninterrupted futures within preregistered physical tolerances, with identical grasp/success flags at every control step. No tolerance relaxation after seeing results.",
+  "accounting": "2 parents x 64 lanes x (50 original + 3 repeats x 2 restore modes x (50+35+20+10) replay steps)=94720 transitions; zero updates. Resets/capture/restore/extra state reads separately counted.",
+  "limitation": "Finite diagnostic, not an exact-cloning theorem, learned-policy benchmark, or from-scratch efficiency result. Contacts/solver internal state cannot be captured by these APIs.",
+  "followup": "If augmented gate fails, stop before distillation and diagnose mismatch. If it passes, register Plan-to-Distill with total new physics <=1M including this diagnostic and equal-cost rollout-learning control."
+}

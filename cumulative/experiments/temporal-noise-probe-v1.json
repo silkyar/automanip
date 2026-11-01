@@ -1,0 +1,90 @@
+{
+  "format": "automanip-temporal-noise-public-probe-v1",
+  "created_at": 1793381693.887721,
+  "execution_authorized": true,
+  "user_authorization": "2026-10-30 parallel distinct autoresearch experiments; GPU cost not an issue",
+  "actor_ids": [
+    "teacher50M",
+    "bcclone"
+  ],
+  "policies_by_actor": [
+    {
+      "no_update": "policies/teacher50M",
+      "teacher50M/iid": "policies/teacher50M",
+      "teacher50M/ar1": "policies/teacher50M",
+      "teacher50M/iid_sum_matched": "policies/teacher50M"
+    },
+    {
+      "no_update": "policies/bcclone",
+      "bcclone/iid": "policies/bcclone",
+      "bcclone/ar1": "policies/bcclone",
+      "bcclone/iid_sum_matched": "policies/bcclone"
+    }
+  ],
+  "policy_files": {
+    "policies/teacher50M/weights.json": "ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16",
+    "policies/teacher50M/manifest.json": "7907d391c032c9b83a3fdc16348a8cecb63bc3f529ebaeb5338d997a7bde1421",
+    "policies/bcclone/weights.json": "4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2",
+    "policies/bcclone/manifest.json": "d2ea7ec00b2f5b4d21028d52c18dc66ef00a18a7695f4675fe8a4f5a065c9da9"
+  },
+  "production_pins": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "gaussian_std": [
+    0.07161122560501099,
+    0.07851020991802216,
+    0.07931241393089294,
+    0.08390970528125763,
+    0.11644907295703888,
+    0.09796664118766785,
+    0.11457139998674393,
+    0.09181715548038483
+  ],
+  "diagnostic_seed_bases": [
+    93800000,
+    93800000
+  ],
+  "noise_seed_bases": [
+    93810000,
+    93810000
+  ],
+  "modes": [
+    "exploration"
+  ],
+  "branch_order": [
+    "no_update",
+    "iid",
+    "ar1",
+    "iid_sum_matched"
+  ],
+  "rho": 0.9,
+  "latent_noise": "Stationary first innovation; eta_t=rho*eta_(t-1)+sqrt(1-rho^2)*xi_t. Samexi innovations across stochastic conditions.",
+  "noise_controls": "iid and ar1 have identical latent marginal sigma. Additional iid control scales sigma by exact50-step integrated latent-sum variance ratio; does NOT assert equal executed-state excursions after feedback/clipping.",
+  "scale_scope": "Common intervention sigma is the ownedBC calibration vector for BOTH actors; not a claim of restoring teacher native exploration.",
+  "horizon": 50,
+  "vector_environments": 64,
+  "batches_per_branch": 8,
+  "episodes_per_branch": 512,
+  "max_public_transitions": 204800,
+  "max_public_transitions_per_actor": 102400,
+  "primary": "BC final stocksuccess: AR minus IID marginal, with >=.05 point gain and positive97.5% paired-bootstrap lower bound; check derived integrated-noise control, retain teacher performance within5pp of iid for generality.",
+  "calibration_rule": "AR/IID empirical latent mean-square ratio must lie .9..1.1. Report clipping, latent autocorrelation, action smoothness and phase trajectories. No rescaling or rho changes after outcomes.",
+  "bootstrap_seed": 93809999,
+  "interpretation": "Frozen-policy exploration/coverage mechanism only. Correlated noise requires history-correct likelihood before any PPO learning; no sample-efficiency or novelty claim.",
+  "optimizer_calls": 0,
+  "protected_benchmark_queries": 0,
+  "final_queries": 0,
+  "worker_sha256": "0ddda3ab89f05664bc22437abfeba1e50bef0265f9a0069984c0236df01627b2",
+  "timeout_seconds": 240,
+  "internal_seconds": 200,
+  "assistance": {
+    "teacher_transitions": 49971200,
+    "teacher_trainer_seconds": 2295.408300588,
+    "demo_transitions": 25600,
+    "bc_optimizer_updates": 5000
+  }
+}

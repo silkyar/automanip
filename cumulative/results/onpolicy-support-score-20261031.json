@@ -1,0 +1,140 @@
+{
+  "format": "automanip-onpolicy-support-score-v1",
+  "state": "complete",
+  "role_map": {
+    "baseline": "base",
+    "original_states": "rehearsal",
+    "student_states": "teacher_only"
+  },
+  "new_public_transitions": 76800,
+  "optimizer_calls": 0,
+  "worker_seconds": [
+    16.348554756000002,
+    17.735477661999997,
+    13.289186564999998,
+    13.459826051,
+    13.417614286000003,
+    13.546283874000004
+  ],
+  "policies": {
+    "baseline": [
+      {
+        "parent": 2,
+        "episodes": 256,
+        "successes": 4,
+        "ever_grasp": 255,
+        "weights_sha256": "6af1c48f45a81fa03691a7928269712e68ed2947c1f1cf6f4a152f34db26b19c",
+        "stages": {
+          "grasp": 255,
+          "lift": 244,
+          "transport": 243,
+          "placement": 234,
+          "release": 14,
+          "stable_stack_10_steps": 2
+        }
+      },
+      {
+        "parent": 3,
+        "episodes": 256,
+        "successes": 8,
+        "ever_grasp": 253,
+        "weights_sha256": "cf0d0fc8a3b1ba82a14a7ba6dd1d04c39d98d912db12033dae88c6976b66ebed",
+        "stages": {
+          "grasp": 253,
+          "lift": 240,
+          "transport": 240,
+          "placement": 238,
+          "release": 29,
+          "stable_stack_10_steps": 5
+        }
+      }
+    ],
+    "original_states": [
+      {
+        "parent": 2,
+        "episodes": 256,
+        "successes": 1,
+        "ever_grasp": 254,
+        "weights_sha256": "4ad49bdea55eb89f67a9f197ab44b67f2fba5667f6f525f5140c680fe1b9e4c4",
+        "stages": {
+          "grasp": 254,
+          "lift": 245,
+          "transport": 243,
+          "placement": 236,
+          "release": 7,
+          "stable_stack_10_steps": 0
+        }
+      },
+      {
+        "parent": 3,
+        "episodes": 256,
+        "successes": 5,
+        "ever_grasp": 255,
+        "weights_sha256": "f6b6e3b01adf80469226a88d8df4133e7587bff4091be58803118e286775d1e6",
+        "stages": {
+          "grasp": 255,
+          "lift": 244,
+          "transport": 244,
+          "placement": 242,
+          "release": 19,
+          "stable_stack_10_steps": 5
+        }
+      }
+    ],
+    "student_states": [
+      {
+        "parent": 2,
+        "episodes": 256,
+        "successes": 0,
+        "ever_grasp": 255,
+        "weights_sha256": "9fa250757fdc54083d422d0cee239d362a410f75ce232b48501c5e9fc2f82dac",
+        "stages": {
+          "grasp": 255,
+          "lift": 242,
+          "transport": 242,
+          "placement": 230,
+          "release": 5,
+          "stable_stack_10_steps": 0
+        }
+      },
+      {
+        "parent": 3,
+        "episodes": 256,
+        "successes": 6,
+        "ever_grasp": 255,
+        "weights_sha256": "e087f47bda8dae608a3f2242857082d2a2c463a77bc7b6d0a110ed51133e5c05",
+        "stages": {
+          "grasp": 255,
+          "lift": 244,
+          "transport": 243,
+          "placement": 242,
+          "release": 18,
+          "stable_stack_10_steps": 5
+        }
+      }
+    ]
+  },
+  "pooled_success": {
+    "baseline": 0.0234375,
+    "original_states": 0.01171875,
+    "student_states": 0.01171875
+  },
+  "student_minus_baseline": {
+    "mean_gain": -0.01171875,
+    "interval_97_5": [
+      -0.02734375,
+      0.001953125
+    ]
+  },
+  "student_minus_original_states": {
+    "mean_gain": 0.0,
+    "interval_97_5": [
+      -0.01171875,
+      0.01171875
+    ]
+  },
+  "ever_grasp_retained": true,
+  "primary_screen_passed": false,
+  "decision": "Close bounded pilot: fixed student-state aggregation failed material screen; no score-driven refit",
+  "scope": "One fixed aggregation step on two acquired actors; not full DAgger or from-scratch learning"
+}

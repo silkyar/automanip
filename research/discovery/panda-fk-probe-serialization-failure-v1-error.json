@@ -1,0 +1,13 @@
+{
+  "state": "serialization_failure_preserved",
+  "error": "TypeError: Object of type bool_ is not JSON serializable",
+  "failing_source_sha256": "fff7cf0f39cc95cfa8ebded085150c1fec4598de624f08e1b16ef87b93a5983b",
+  "started_receipt_sha256": "369bd275f2829067e195341144c230e2f1be1b922f9a8cdf55add17ed3310ffe",
+  "tool_command_wall_seconds": 0.312832625,
+  "numeric_outcomes_durably_retained": false,
+  "analytic_fk_pose_evaluations_upper_bound": 8416,
+  "geometric_jacobian_pose_evaluations_upper_bound": 6400,
+  "simulator_queries": 0,
+  "training_optimizer_calls": 0,
+  "correction": "Python bool cast only; no geometry/config/tolerance changes"
+}

@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/haosulab/ManiSkill",
+  "tag": "v3.0.0b21",
+  "commit": "6226567ce326625fa6eacf9aeb3f4008e4339f7e",
+  "files": {
+    "sac.py": {
+      "sha256": "27e5d7b90a431ed9af1a6a05e593d6404a67a8cce96f8ae066ddf95f0ab6c51a",
+      "upstream_path": "examples/baselines/sac/sac.py"
+    },
+    "README.md": {
+      "sha256": "14f7f6aa5a3d5a188592afef50492e0611ad41aaf8539614a0f5dbfaa169a7e5",
+      "upstream_path": "examples/baselines/sac/README.md"
+    }
+  }
+}

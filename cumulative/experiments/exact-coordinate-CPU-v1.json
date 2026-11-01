@@ -1,0 +1,23 @@
+{
+  "format": "automanip-exact-coordinate-CPU-v1",
+  "registered_at": 1793464041.1778529,
+  "execution_authorized": true,
+  "hypothesis": "Fixed actor features may discard finger-position precision needed to express current-relative successful labels. Adding the exact observed coordinate to readout residual features tests whether that omission is a sufficient explanation, before any new architecture or robot query.",
+  "parents": [
+    2,
+    3
+  ],
+  "inputs": "Same384teacher/1024rehearsal rows and held-out source episodes from original readout audit; no new data or split selection",
+  "control": "Original frozen-feature readout, original source actor raw means, rho4/ridge.001 sum8-perrow objective",
+  "intervention": "Append exact (q7-.015)/.025 to residual fit features only; sametargets, rowcounts, originalrawreference andregularization. Diagnostic extra feature, not safe exportedpolicy.",
+  "gate": "In BOTHparents held-out finger-targetRMSE<1mm and<half original; old executed-actionRMSchange<=original. This tests sufficiency of coordinate availability, not generalized learning.",
+  "budget": {
+    "new_environment_transitions": 0,
+    "max_linear_solves": 2,
+    "optimizer_steps": 0,
+    "policy_exports": 0,
+    "robot_assessments": 0
+  },
+  "falsification": "If exactfeature fails, reject missing-finger-coordinate-alone as sufficient underthisfixedobjective; do not launch another robotdistiller. If passes, onlyjustify representational implementation/review, noautomaticGPU.",
+  "limitations": "Adaptively reused held-out diagnostic corpus; source actors/dataset acquired previously, not fromscratch. Onefeaturechangeslinearfunctionclass; nolearningefficiencyclaim."
+}

@@ -1,0 +1,7 @@
+{
+  "state": "complete",
+  "scientific_training_runs_completed_in_this_study": 6,
+  "result": "cumulative/results/feature-value-20261030.json",
+  "training_transitions": 60313600,
+  "scoring_transitions": 307200
+}

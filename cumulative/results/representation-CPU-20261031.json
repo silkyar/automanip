@@ -1,0 +1,363 @@
+{
+  "format": "automanip-representation-CPU-results-v1",
+  "state": "complete",
+  "CPU_fits": 6,
+  "successful_adam_steps": 1536,
+  "failed_adam_steps": 1024,
+  "total_adam_steps": 2560,
+  "training_forward_rows": 655360,
+  "new_physics": 0,
+  "new_policy_assessments": 0,
+  "total_successful_fit_CPU_seconds": 7.174900999991223,
+  "failed_fit_elapsed_time": "See timestamp estimates in preserved attempts; no measured CPU seconds available",
+  "reports": [
+    {
+      "state": "complete",
+      "parent": 3,
+      "method": "frozen_mlp",
+      "adam_steps": 256,
+      "batch_teacher": 128,
+      "batch_rehearsal": 128,
+      "training_forward_rows": 65536,
+      "old_reference_rows": 1024,
+      "ridge_feature_rows": 1408,
+      "linear_solves": 1,
+      "validation_rows": 600,
+      "old_validation_feature_rows": 480,
+      "parity_forward_rows": 128,
+      "backward_passes": 256,
+      "auxiliary_weight": 0.0,
+      "acting_trainable_parameters": 2056,
+      "auxiliary_in_exported_artifact": false,
+      "weights_sha256": "0e10b46cf24968a5e6513114ed6301879abe1fb71d278222e37fb99314063647",
+      "data_sha256": "528ee831a59a7fd287cae6a83e3a5f0cc8f8b597b696cc188adda38d964eafde",
+      "fit_row_audit_sha256": "35f729fcb8bdeeb48815d67edd30c2c06b4f3e901731f69044ab49df5338ec47",
+      "new_physics": 0,
+      "losses": [
+        {
+          "step": 1,
+          "teacher": 0.25695279240608215,
+          "rehearsal": 0.0,
+          "auxiliary": 0.010433385148644447
+        },
+        {
+          "step": 64,
+          "teacher": 0.13370919227600098,
+          "rehearsal": 0.009236675687134266,
+          "auxiliary": 0.01219702884554863
+        },
+        {
+          "step": 128,
+          "teacher": 0.11386283487081528,
+          "rehearsal": 0.008921647444367409,
+          "auxiliary": 0.011137379333376884
+        },
+        {
+          "step": 256,
+          "teacher": 0.08867263793945312,
+          "rehearsal": 0.00879740808159113,
+          "auxiliary": 0.015351303853094578
+        }
+      ],
+      "metrics": {
+        "validation_teacher_mse": 0.06559578329324722,
+        "validation_finger_target_RMSE_metres": 0.014841800928115845,
+        "validation_coordinate_RMSE_metres": 0.0036383990198373796,
+        "validation_positive_increment_fraction": 0.016666666666666666,
+        "validation_rehearsal_clipped_RMS_change": 0.09149559030307877
+      },
+      "export_parity_max_error": 8.612772575133931e-07,
+      "CPU_seconds": 1.1657241670181975
+    },
+    {
+      "state": "complete",
+      "parent": 2,
+      "method": "frozen_mlp",
+      "adam_steps": 256,
+      "batch_teacher": 128,
+      "batch_rehearsal": 128,
+      "training_forward_rows": 65536,
+      "old_reference_rows": 1024,
+      "ridge_feature_rows": 1408,
+      "linear_solves": 1,
+      "validation_rows": 740,
+      "old_validation_feature_rows": 480,
+      "parity_forward_rows": 128,
+      "backward_passes": 256,
+      "auxiliary_weight": 0.0,
+      "acting_trainable_parameters": 2056,
+      "auxiliary_in_exported_artifact": false,
+      "weights_sha256": "87f3e046b437f8322538298b2720599f937a701f37a1719fc39e183144afe2e4",
+      "data_sha256": "e300ea3ee3cc57c64dc9dee7b87e115fd504114b9ab24f8444b7a8b624befbf2",
+      "fit_row_audit_sha256": "719fd94758f0753fbae60bccb7d6aedf3c0cd70420aa53a552dbf0bc42963d28",
+      "new_physics": 0,
+      "losses": [
+        {
+          "step": 1,
+          "teacher": 0.2777009606361389,
+          "rehearsal": 0.0,
+          "auxiliary": 0.010826698504388332
+        },
+        {
+          "step": 64,
+          "teacher": 0.14775943756103516,
+          "rehearsal": 0.009500821121037006,
+          "auxiliary": 0.013818138279020786
+        },
+        {
+          "step": 128,
+          "teacher": 0.13122428953647614,
+          "rehearsal": 0.011139915324747562,
+          "auxiliary": 0.009663896635174751
+        },
+        {
+          "step": 256,
+          "teacher": 0.11185514181852341,
+          "rehearsal": 0.008808065205812454,
+          "auxiliary": 0.009363560937345028
+        }
+      ],
+      "metrics": {
+        "validation_teacher_mse": 0.12317465245723724,
+        "validation_finger_target_RMSE_metres": 0.020186278223991397,
+        "validation_coordinate_RMSE_metres": 0.0038794010877609255,
+        "validation_positive_increment_fraction": 0.10384615384615385,
+        "validation_rehearsal_clipped_RMS_change": 0.088512372545219
+      },
+      "export_parity_max_error": 6.397399310298368e-07,
+      "CPU_seconds": 1.1709670830168761
+    },
+    {
+      "state": "complete",
+      "parent": 3,
+      "method": "whole_mlp_aux",
+      "adam_steps": 256,
+      "batch_teacher": 128,
+      "batch_rehearsal": 128,
+      "training_forward_rows": 65536,
+      "old_reference_rows": 1024,
+      "ridge_feature_rows": 1408,
+      "linear_solves": 1,
+      "validation_rows": 600,
+      "old_validation_feature_rows": 480,
+      "parity_forward_rows": 128,
+      "backward_passes": 256,
+      "auxiliary_weight": 1.0,
+      "auxiliary_in_exported_artifact": false,
+      "weights_sha256": "73f6cb2d9dfd5ce366bf4beaa1ed3a8107861ddb02fdc3a07a915edba2a5e7d9",
+      "data_sha256": "528ee831a59a7fd287cae6a83e3a5f0cc8f8b597b696cc188adda38d964eafde",
+      "fit_row_audit_sha256": "35f729fcb8bdeeb48815d67edd30c2c06b4f3e901731f69044ab49df5338ec47",
+      "new_physics": 0,
+      "losses": [
+        {
+          "step": 1,
+          "teacher": 0.25695279240608215,
+          "rehearsal": 0.0,
+          "auxiliary": 0.010433385148644447
+        },
+        {
+          "step": 64,
+          "teacher": 0.05975492298603058,
+          "rehearsal": 0.011634862050414085,
+          "auxiliary": 0.011249291710555553
+        },
+        {
+          "step": 128,
+          "teacher": 0.046096693724393845,
+          "rehearsal": 0.008390852250158787,
+          "auxiliary": 0.008440920151770115
+        },
+        {
+          "step": 256,
+          "teacher": 0.038516901433467865,
+          "rehearsal": 0.006687438581138849,
+          "auxiliary": 0.009180549532175064
+        }
+      ],
+      "metrics": {
+        "validation_teacher_mse": 0.03987157344818115,
+        "validation_finger_target_RMSE_metres": 0.010117632150650025,
+        "validation_coordinate_RMSE_metres": 0.004092979803681374,
+        "validation_positive_increment_fraction": 0.041666666666666664,
+        "validation_rehearsal_clipped_RMS_change": 0.1010394225838812
+      },
+      "export_parity_max_error": 6.596018694571271e-07,
+      "CPU_seconds": 1.2134310000110418
+    },
+    {
+      "state": "complete",
+      "parent": 2,
+      "method": "whole_mlp_aux",
+      "adam_steps": 256,
+      "batch_teacher": 128,
+      "batch_rehearsal": 128,
+      "training_forward_rows": 65536,
+      "old_reference_rows": 1024,
+      "ridge_feature_rows": 1408,
+      "linear_solves": 1,
+      "validation_rows": 740,
+      "old_validation_feature_rows": 480,
+      "parity_forward_rows": 128,
+      "backward_passes": 256,
+      "auxiliary_weight": 1.0,
+      "auxiliary_in_exported_artifact": false,
+      "weights_sha256": "da210a5aca155100d81791280d8c038ea62e337c8a5d9f4955053ad1177c6497",
+      "data_sha256": "e300ea3ee3cc57c64dc9dee7b87e115fd504114b9ab24f8444b7a8b624befbf2",
+      "fit_row_audit_sha256": "719fd94758f0753fbae60bccb7d6aedf3c0cd70420aa53a552dbf0bc42963d28",
+      "new_physics": 0,
+      "losses": [
+        {
+          "step": 1,
+          "teacher": 0.2777009606361389,
+          "rehearsal": 0.0,
+          "auxiliary": 0.010826698504388332
+        },
+        {
+          "step": 64,
+          "teacher": 0.10101652145385742,
+          "rehearsal": 0.010321577079594135,
+          "auxiliary": 0.011365151032805443
+        },
+        {
+          "step": 128,
+          "teacher": 0.07314270734786987,
+          "rehearsal": 0.013880430720746517,
+          "auxiliary": 0.008317111060023308
+        },
+        {
+          "step": 256,
+          "teacher": 0.04741513356566429,
+          "rehearsal": 0.009984691627323627,
+          "auxiliary": 0.007245079148560762
+        }
+      ],
+      "metrics": {
+        "validation_teacher_mse": 0.057315196841955185,
+        "validation_finger_target_RMSE_metres": 0.014162513613700868,
+        "validation_coordinate_RMSE_metres": 0.0037706088274717334,
+        "validation_positive_increment_fraction": 0.06153846153846154,
+        "validation_rehearsal_clipped_RMS_change": 0.10765870006156478
+      },
+      "export_parity_max_error": 5.166137444501118e-07,
+      "CPU_seconds": 1.212078999960795
+    },
+    {
+      "state": "complete",
+      "parent": 3,
+      "method": "whole_mlp",
+      "adam_steps": 256,
+      "batch_teacher": 128,
+      "batch_rehearsal": 128,
+      "training_forward_rows": 65536,
+      "old_reference_rows": 1024,
+      "ridge_feature_rows": 1408,
+      "linear_solves": 1,
+      "validation_rows": 600,
+      "old_validation_feature_rows": 480,
+      "parity_forward_rows": 128,
+      "backward_passes": 256,
+      "auxiliary_weight": 0.0,
+      "auxiliary_in_exported_artifact": false,
+      "weights_sha256": "c23a9ac530f495fbb94dff46f2194eaa281a50c0295d398baa255025787b3475",
+      "data_sha256": "528ee831a59a7fd287cae6a83e3a5f0cc8f8b597b696cc188adda38d964eafde",
+      "fit_row_audit_sha256": "35f729fcb8bdeeb48815d67edd30c2c06b4f3e901731f69044ab49df5338ec47",
+      "new_physics": 0,
+      "losses": [
+        {
+          "step": 1,
+          "teacher": 0.25695279240608215,
+          "rehearsal": 0.0,
+          "auxiliary": 0.010433385148644447
+        },
+        {
+          "step": 64,
+          "teacher": 0.05263497307896614,
+          "rehearsal": 0.011926783248782158,
+          "auxiliary": 0.016896961256861687
+        },
+        {
+          "step": 128,
+          "teacher": 0.04262927174568176,
+          "rehearsal": 0.008498885668814182,
+          "auxiliary": 0.027957193553447723
+        },
+        {
+          "step": 256,
+          "teacher": 0.036219704896211624,
+          "rehearsal": 0.006551152095198631,
+          "auxiliary": 0.05926070362329483
+        }
+      ],
+      "metrics": {
+        "validation_teacher_mse": 0.038800135254859924,
+        "validation_finger_target_RMSE_metres": 0.009930498898029327,
+        "validation_coordinate_RMSE_metres": 0.0055937360972166065,
+        "validation_positive_increment_fraction": 0.058333333333333334,
+        "validation_rehearsal_clipped_RMS_change": 0.1026122133958547
+      },
+      "export_parity_max_error": 8.220476745979255e-07,
+      "CPU_seconds": 1.2054835419985466
+    },
+    {
+      "state": "complete",
+      "parent": 2,
+      "method": "whole_mlp",
+      "adam_steps": 256,
+      "batch_teacher": 128,
+      "batch_rehearsal": 128,
+      "training_forward_rows": 65536,
+      "old_reference_rows": 1024,
+      "ridge_feature_rows": 1408,
+      "linear_solves": 1,
+      "validation_rows": 740,
+      "old_validation_feature_rows": 480,
+      "parity_forward_rows": 128,
+      "backward_passes": 256,
+      "auxiliary_weight": 0.0,
+      "auxiliary_in_exported_artifact": false,
+      "weights_sha256": "189c1924c4237d2c4d079f6a4f85fa2344a0da3bc7b57caacb1f92d5dedc3ea4",
+      "data_sha256": "e300ea3ee3cc57c64dc9dee7b87e115fd504114b9ab24f8444b7a8b624befbf2",
+      "fit_row_audit_sha256": "719fd94758f0753fbae60bccb7d6aedf3c0cd70420aa53a552dbf0bc42963d28",
+      "new_physics": 0,
+      "losses": [
+        {
+          "step": 1,
+          "teacher": 0.2777009606361389,
+          "rehearsal": 0.0,
+          "auxiliary": 0.010826698504388332
+        },
+        {
+          "step": 64,
+          "teacher": 0.08669015020132065,
+          "rehearsal": 0.01214897446334362,
+          "auxiliary": 0.017515812069177628
+        },
+        {
+          "step": 128,
+          "teacher": 0.062101300805807114,
+          "rehearsal": 0.014819818548858166,
+          "auxiliary": 0.03531927242875099
+        },
+        {
+          "step": 256,
+          "teacher": 0.041352733969688416,
+          "rehearsal": 0.00988125428557396,
+          "auxiliary": 0.07091700285673141
+        }
+      ],
+      "metrics": {
+        "validation_teacher_mse": 0.057899028062820435,
+        "validation_finger_target_RMSE_metres": 0.014188142120838167,
+        "validation_coordinate_RMSE_metres": 0.00711619108915329,
+        "validation_positive_increment_fraction": 0.07307692307692308,
+        "validation_rehearsal_clipped_RMS_change": 0.10376657900529707
+      },
+      "export_parity_max_error": 7.990975362526243e-07,
+      "CPU_seconds": 1.2072162079857662
+    }
+  ],
+  "decision": "Withhold GPU assessment: auxiliary coordinate error remains millimetres, and teacher-target precision remains insufficient; diagnose conditioning before more robot queries.",
+  "scope": "CPU-only fitting/internal-validation diagnosis; no robot performance gain",
+  "linear_solves": 10,
+  "linear_solve_accounting": "6 successful auxiliary-head initializations plus4 failed post-training validation attempts"
+}

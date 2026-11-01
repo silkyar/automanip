@@ -1,0 +1,1 @@
+{"format":"automanip-json-f32-v1","task_fingerprint":"b524435b1d25e915ff9cbdc1cc18f129ded8257d12129f5a426bad9fa6e22d4f","observation_dim":48,"action_dim":8,"hidden_sizes":[256,256,256],"activation":"tanh","weights_sha256":"b82b0dd646858e91f991cbfe8b7258d0d124a5df7c1512c40cc4782e5faa85cc"}

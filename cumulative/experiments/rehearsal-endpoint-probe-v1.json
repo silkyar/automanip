@@ -1,0 +1,21 @@
+{
+  "format": "automanip-rehearsal-endpoint-probe-v1",
+  "created_at": 1793460053.426125,
+  "execution_authorized": true,
+  "authorization": "Continue autonomous research until stopped; fixed causal endpoint probe following failed representation/conditioning gates",
+  "hypotheses": [
+    "Preserving late weak-parent actions conflicts with learning valid release; action preservation overstates needed skill retention",
+    "The rehearsal penalty prevents actual loss of early reaching/grasping behavior",
+    "Both endpoints lack adequate closed-loop correction fidelity"
+  ],
+  "methods": [
+    "base",
+    "rehearsal4",
+    "teacher_only"
+  ],
+  "fit": "Same original search teacher fitting rows, frozen hidden features, ridge.001; compare retained registered readout to a fresh teacher-only closed-form fit. Two new linear solves, no optimizer steps, no new fitting data. No intermediate weights, step-size tuning or model selection.",
+  "assessment": "256fresh965-seriespublicepisodes perparent/method; safe MLPs act alone fromreset; same frozen rollout/success kernel;76800totaltransitions. No confirmation/final queries.",
+  "primary": "Overconstraint supported only ifteacher_only evergrasp>=.95perparent andteacher_only minusrehearsal4 finalsuccess>=.10withpositive97.5%pairedblockCI. Harmfulforgetting supported only ifevergraspdrops>=.20withnegative97.5%CI andthereisnotpositivefinalsuccessgain. Otherwiseinconclusive; allstagesreported.",
+  "compute": "613120priorbranchingphysics+76800probe=689920of1M. PreserveallpreviousCPUfailuresandnumericalnegativeevidence. No algorithm/benchmark promotion from this probe.",
+  "followup": "Use result tochooseonecausalmechanism, notanotherloss-weightgrid. Do not infer from early action RMS alone that grasping is lost."
+}

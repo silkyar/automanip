@@ -1,0 +1,21 @@
+{
+  "repository": "adityab/CrossQ",
+  "commit": "a318a266679bec3f9d93c44e029860a6da077c89",
+  "files": {
+    "LICENSE": "c335190466d393ff09ef2c9df4fafa442895de2edbde9b498c7322a990b18e00",
+    "NOTICE": "ba840c2911a9f0ab545e5a30694df6b8b09298ee206c364a21d8b0f4bfb7a1b0",
+    "train.py": "1c4ea95b04bd9947fdfd2fc79c97a8dedbed6ca5dd7cd43ded41403f90e79247",
+    "sbx/__init__.py": "e153fe69779117bf45e92adda7366773f0e74dcb14c756ca7a19e235668a67cc",
+    "sbx/common/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sbx/common/distributions.py": "b02597ff558b3e409321ef3ff0a06ebb24e8bda70381699ef4ed599f16098f0f",
+    "sbx/common/off_policy_algorithm.py": "3046b5c638daadb4acc59ac883c625478c6ecaa9292bdb3184f6aba7736cd012",
+    "sbx/common/on_policy_algorithm.py": "69d31069507d3c79ab567cefbba1e914f63f8f596106ab555dba0d2da6e294c0",
+    "sbx/common/policies.py": "1db5db8b5f10c5012dcb525e02b0322f6a0fbb0a9f49b608bd06a947fb47969d",
+    "sbx/common/type_aliases.py": "fc61e5991bb2888ae42dd3177752ec671e51384c215d53320e023d6e50eb66a5",
+    "sbx/sac/__init__.py": "daf9cdac82d951572e9d5f351aa76c4984b9a48b4fefdd8645ad1f49da82cae1",
+    "sbx/sac/actor_critic_evaluation_callback.py": "c2bb89e975beac8747a4c4f8753411feebaf19206171082699517fc62a38f846",
+    "sbx/sac/policies.py": "985a4e76bcaacc055b9be312d6ce813260f72792235e6d7d50fbcebf10b8e3af",
+    "sbx/sac/sac.py": "ea6497a8fe49549de757ccc1531b619295fd012188afbb86f03ffe56014af30c",
+    "sbx/sac/utils.py": "ba3827ca5d3da227c732e4f0d79ed9f92009ed8e667dcd49afd8071b5f9bb563"
+  }
+}

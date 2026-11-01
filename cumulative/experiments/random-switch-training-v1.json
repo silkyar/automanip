@@ -1,0 +1,85 @@
+{
+  "format": "automanip-random-switch-training-corpus-v1",
+  "created_at": 1793393580.095198,
+  "execution_authorized": true,
+  "user_authorization": "Continueautonomousresearchuntilstopped; GPUcostexplicitlynotanissue",
+  "production_pins": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "sources": [
+    {
+      "training_seed": 2,
+      "policy": "policies/2",
+      "gaussian_std": [
+        0.21376303066542743,
+        0.11388461260367895,
+        0.19321162693340854,
+        0.136129309131641,
+        0.5618684109040332,
+        0.26014139714134854,
+        0.6159403813031987,
+        0.3304149007024842
+      ],
+      "reset_seed": 95600000,
+      "noise_seed": 95610000,
+      "assignment_seed": 95620000,
+      "parent": {
+        "training_seed": 2,
+        "environment_transitions": 8192000,
+        "checkpoint_trainer_seconds": 465.05150610299995,
+        "weights_sha256": "d17c38edc1797b7766685dac257fe9eeb22fe5e04f1f1b21200fbf79092c7ce1",
+        "source_acquisition": "Already counted completed from-scratch training run; not new probe training"
+      }
+    },
+    {
+      "training_seed": 3,
+      "policy": "policies/3",
+      "gaussian_std": [
+        0.21703058421595622,
+        0.12067180582042904,
+        0.1968961596991939,
+        0.14177268532901366,
+        0.5704647419570243,
+        0.26284216801211935,
+        0.6245933831025609,
+        0.3328807184633203
+      ],
+      "reset_seed": 95603000,
+      "noise_seed": 95611000,
+      "assignment_seed": 95621000,
+      "parent": {
+        "training_seed": 3,
+        "environment_transitions": 8192000,
+        "checkpoint_trainer_seconds": 457.51907834099995,
+        "weights_sha256": "7f550fa77a6258c7f2baa66e5ba2356c94bb4f7816c06822d22e80b8eb845257",
+        "source_acquisition": "Already counted completed from-scratch training run; not new probe training"
+      }
+    }
+  ],
+  "policy_files": {
+    "policies/2/manifest.json": "2b5a9d68ce79bd89e080aeab58dda9579c63136d20ebf867e974489a3844ea9f",
+    "policies/2/weights.json": "d17c38edc1797b7766685dac257fe9eeb22fe5e04f1f1b21200fbf79092c7ce1",
+    "policies/3/manifest.json": "666be4aa90d18b83c8e0f7d39a3bd9946a58fb368246d83b3f272d5ec25c3a7b",
+    "policies/3/weights.json": "7f550fa77a6258c7f2baa66e5ba2356c94bb4f7816c06822d22e80b8eb845257"
+  },
+  "task_fingerprint": "b524435b1d25e915ff9cbdc1cc18f129ded8257d12129f5a426bad9fa6e22d4f",
+  "task_source_sha256": "ff76ae608f79ba3ea13334e61ccb72f291660f9461895c70e3c30f8390694440",
+  "physx_sha256": "4c582a16509a71faf5592fe9708586dfcc7ab61ae932eabc1ddd81f290818706",
+  "partition": "training",
+  "purpose": "Testwhetheroriginal48observations/actorfeaturespredictwhereapersistentcorrectionworks,usingrandomizedratherthangeometrictriggers. Preservecompleteexperienceforlaterresearch.",
+  "assistance": "Own8.192Msourcepolicyforeachfixedseed plusfixedzero-arm/open-gripperactionprior. Nohand-specifiedstate-trigger, demonstratorlabels, oldpublicdiagnosticdataorunaccountedsimulatorqueries. Thisisassistedcorrective-learningdata, notfromscratchlearning.",
+  "collector": "32batchesof64episodespersource, full50steps. Balanced32treatment/32baseandrandomdecisiontime10..44assignedbeforeeachrollout. BeforedecisionfolloworiginalGaussianactor; treatmentthenzero7armdeltasandgrip+1untilhorizon; basecontinues. Outcomesfromunchangedofficialtaskinfo; notindependentbenchmarkscoring.",
+  "max_new_training_transitions": 204800,
+  "max_transitions_per_source": 102400,
+  "optimizer_calls": 0,
+  "source_acquisition_transitions_new": 0,
+  "diagnostic_queries": "Twoexplicitcubevelocityvectorreadspoststepperenvironment:409600vectorrows/6400vectorizedgettercalls total. Velocitiesareprivilegeddiagnosticcolumns, excludedfrommodelandpolicyfeatures. Noextrastep, pose-setting, branchingorstatecloning.",
+  "primary_analysis": "Separateoutcomemodelsforeachoptionandfixedsource:ridge.001trace-scaledlinearheadsontheexisting257actorfeatures. Briercomparedwithperoptionconstantand7timebins; shuffledwholeepisodeoutcomesnegativecontrol. Batchmod4:0test,1calibration,2/3fit. Report2sources*2contrast98.75%wholebatchbootstrapintervals(10000draws,seed95609999). MaterialpredictivescreenrequiresBriergain>=.02vsbothcontrolsineachsource; descriptivegateonly,notautomaticrobot-learningadmission.",
+  "boundaries": "Noevaluator,benchmarkseeds,nativepickleorlearnercheckpointintrainerimage. OnlysafeJSONparentactors,productionpinsandcollector. No policyexportorclaimedbenchmarkresult. Freshclosedloopcalibration/retentionandsafeMLPcompilationrequiredbeforelaterdeployment. Diagnosticcorpora955/954remainexcludedfromlearning.",
+  "failure": "Noautoretry; preservepartialwork/unknowninflightreservations. Do not convertcollectionerrorsinto0success.",
+  "next": "CPUoutcomepredictionandnegativeevidence. Ifpredictive,designoneassistedlearnercomparisonwithsharedpriors; ifnot,diagnoseobservation/actionconsequenceproblemwithoutalgorithm-sweep."
+}

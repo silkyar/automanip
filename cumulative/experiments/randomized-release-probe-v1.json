@@ -1,0 +1,104 @@
+{
+  "format": "automanip-randomized-release-public-probe-v1",
+  "created_at": 1793391440.768909,
+  "execution_authorized": true,
+  "user_authorization": "Continue autonomous research until stopped; GPU cost explicitly not an issue",
+  "production_pins": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "collection_seeds": [
+    2,
+    3
+  ],
+  "diagnostic_seed_bases": [
+    95400000,
+    95403000
+  ],
+  "noise_seed_bases": [
+    95410000,
+    95411000
+  ],
+  "policies": {
+    "2": "policies/2",
+    "3": "policies/3"
+  },
+  "policy_files": {
+    "policies/2/manifest.json": "2b5a9d68ce79bd89e080aeab58dda9579c63136d20ebf867e974489a3844ea9f",
+    "policies/2/weights.json": "d17c38edc1797b7766685dac257fe9eeb22fe5e04f1f1b21200fbf79092c7ce1",
+    "policies/3/manifest.json": "666be4aa90d18b83c8e0f7d39a3bd9946a58fb368246d83b3f272d5ec25c3a7b",
+    "policies/3/weights.json": "7f550fa77a6258c7f2baa66e5ba2356c94bb4f7816c06822d22e80b8eb845257"
+  },
+  "gaussian_std": {
+    "2": [
+      0.21376303066542743,
+      0.11388461260367895,
+      0.19321162693340854,
+      0.136129309131641,
+      0.5618684109040332,
+      0.26014139714134854,
+      0.6159403813031987,
+      0.3304149007024842
+    ],
+    "3": [
+      0.21703058421595622,
+      0.12067180582042904,
+      0.1968961596991939,
+      0.14177268532901366,
+      0.5704647419570243,
+      0.26284216801211935,
+      0.6245933831025609,
+      0.3328807184633203
+    ]
+  },
+  "source_prefixes": [
+    {
+      "training_seed": 2,
+      "environment_transitions": 8192000,
+      "checkpoint_trainer_seconds": 465.05150610299995,
+      "weights_sha256": "d17c38edc1797b7766685dac257fe9eeb22fe5e04f1f1b21200fbf79092c7ce1",
+      "source_acquisition": "Already counted completed from-scratch training run; not new probe training"
+    },
+    {
+      "training_seed": 3,
+      "environment_transitions": 8192000,
+      "checkpoint_trainer_seconds": 457.51907834099995,
+      "weights_sha256": "7f550fa77a6258c7f2baa66e5ba2356c94bb4f7816c06822d22e80b8eb845257",
+      "source_acquisition": "Already counted completed from-scratch training run; not new probe training"
+    }
+  ],
+  "modes": [
+    "stochastic"
+  ],
+  "branch_order": [
+    "no_update",
+    "scheduled_open",
+    "targeted_open",
+    "targeted_open_zero_arm"
+  ],
+  "max_public_transitions_per_collection": 102400,
+  "max_public_transitions": 204800,
+  "optimizer_calls": 0,
+  "confirmation_queries": 0,
+  "final_queries": 0,
+  "partition": "public-diagnostic-not-learner-input",
+  "hypothesis": "In two failed8.192MGAE policies, adding a short release sequence improves final physical stacking. Randomized opening timing and zero-arm controls distinguish sufficient corrections.",
+  "intervention": "Exactly five+1gripper commands: fixedsteps25..29; first aligned/narrow-gripper observation; same target plus seven zero joint-delta commands. Target conditions fall back tosteps45..49 so allassigned episodes receive5commands. No resampling or episode exclusion.",
+  "eligibility": "Existing48observations only: cube XYdistance<=sqrt(2)*.02+.005, vertical difference.04+/-.005, qpos7+qpos8<=.042. This is a geometric/narrow-finger proxy, not a true grasp measurement.",
+  "primary": "Stochastic final physical success across all assigned episodes; material gain>=.20 over unchanged and positive98.75%whole-vector-block bootstrap lower bound. Conditional on these2fixed policies.",
+  "secondary": "Targeted-minus-scheduled timing gain requires>=.10 and positive98.75%lower bound. Zero-arm-minus-targeted isolates added arm action control. Deterministic scores and stage completion are diagnostic.",
+  "inference": "10000bootstrapdraws,seed95409999;32whole64lane randomized blocks per source,16episodes per arm per block. Four contrasts with98.75%intervals. No paired episode or exactreplay claim.",
+  "validity": "All arms assigned before rollout, balanced within each block; exact5opening commands in each intervention episode,0baseline; common Gaussian innovation generator consumes all64lanes at every step; unchanged frozen50stepmetric; independent seeds between episodes. No reset/replay matching assumption.",
+  "falsification": "If neither target intervention meets the primary material screen, the specified opening repair is insufficient. Do not infer absence of every possible release bottleneck. Hand-specified success cannot establish sample-efficient learning.",
+  "followup": "No controller promotion or automatic training. Positive results motivate a separately collected learning experiment with explicit manual-assistance accounting. Public diagnostic trajectories remain unavailable to the learner.",
+  "scope": "Manual causal intervention only; preserve all frozen benchmark artifacts and policy scores.",
+  "assignment_seed_bases": [
+    95420000,
+    95421000
+  ],
+  "randomization": "Before each reset, uniformly permute16copies of each of4arms over64lanes using independent fixed assignment seed.32batches per source;512episodes per arm per source. Never inspect eligibility or outcome to assign conditions.",
+  "repair_context": "Prior replay-based diagnostic stopped without a valid comparison. Repeated-reset hidden solver state was already known unresolved from the earlier lift probe; repeating that design was an avoidable mistake. New randomized group assignment removes that assumption; original partial evidence retained."
+}

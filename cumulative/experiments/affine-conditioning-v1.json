@@ -1,0 +1,13 @@
+{
+  "format": "automanip-affine-conditioning-v1",
+  "created_at": 1793459843.4827871,
+  "execution_authorized": true,
+  "scope": "CPU-only test of a function-preserving training reparameterization; no new robot queries yet",
+  "hypothesis": "Raw observation scales slow useful feature adaptation. Fixed diagonal normalization can improve actuator-coordinate precision at the same optimizer-step budget without changing the initial policy or exported architecture.",
+  "control": "Preserved whole_mlp_aux fits from representation-CPU study, same original actor, fitting rows, minibatches,256Adamsteps,LR.0003,auxweight1,teacher/rehearsal losses and original-coordinate weight penalty.",
+  "transformation": "mean/std of the exact384teacher+1024rehearsal fitting rows only; scale=max(std,.001). First layer Wz=Wx*scale, bz=bx+Wx*mean. For every penalty/export, recover Wx=Wz/scale, bx=bz-Wx*mean. No normalization state in safe exported MLP.",
+  "essential_tests": "Prove forward and raw-parameter equivalence on a known network, correct chain-rule penalty after an update, and plain safe artifact export. Actual parent initial raw-output difference<=5e-5. No score-driven scale/weight/step sweeps.",
+  "CPU_gate": "Both parents must have auxiliary coordinate RMSE<.001metre and<half their preserved raw-aux errors; actor finger-target RMSE must fall at least25% in each parent. This tests the proposed mechanism, not a general proxy for returns.",
+  "compute": "Two fixed256stepCPUfits, no new experience. Mean/std uses fitting rows only. Report all forward/gradient counts, failed attempts and CPU time.",
+  "followup": "Only if the specific conditioning/precision mechanism passes, register fresh policy-only normalized-aux vs raw-aux vs original parent assessment within remaining386880of1M. Otherwise withhold GPU and reassess interference/conditioning evidence. Do not claim general sample-efficiency improvement from a coordinate fix."
+}

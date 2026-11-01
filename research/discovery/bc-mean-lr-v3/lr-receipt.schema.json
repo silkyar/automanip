@@ -1,0 +1,234 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BC mean-LR v3 training-side stdout receipts",
+  "description": "Parse JSON after AUTOMANIP_MEAN_LR_INITIALIZATION or AUTOMANIP_MEAN_LR_ACTIVE. Initialization once; active once per rollout after scheduler resets. Cross-record numeric/identity checks are specified in the handoff.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/initialization"
+    },
+    {
+      "$ref": "#/$defs/active"
+    }
+  ],
+  "$defs": {
+    "initialization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "mechanism",
+        "ratio",
+        "ratio_power",
+        "mean_lr_multiplier",
+        "initial_std",
+        "initial_base_lr",
+        "initial_mean_lr",
+        "initial_critic_lr",
+        "initial_logstd_lr",
+        "source_sha256",
+        "patch_source_sha256",
+        "frozen_residual_base_sha256",
+        "dataset_sha256",
+        "bc_actor_weights_sha256",
+        "training_episode_indices",
+        "excluded_validation_episode_indices",
+        "residual_forward_rows",
+        "calibration_wall_seconds",
+        "additional_bc_forward_rows",
+        "new_environment_transitions",
+        "new_optimizer_updates",
+        "residual_patch_source_sha256",
+        "original_std",
+        "residual_rms",
+        "actor_mean_critic_weights_reward_schema_unchanged",
+        "note",
+        "initial_std_sha256",
+        "group_initialization_wall_seconds"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "mechanism": {
+          "const": "training-demo residual sigma ratio scales actor_mean Adam LR only"
+        },
+        "ratio": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1.000001
+        },
+        "ratio_power": {
+          "enum": [
+            1,
+            2
+          ]
+        },
+        "mean_lr_multiplier": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1.000002
+        },
+        "initial_std": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0.0499999,
+            "maximum": 0.606531
+          },
+          "minItems": 8,
+          "maxItems": 8
+        },
+        "initial_base_lr": {
+          "type": "number",
+          "minimum": 0
+        },
+        "initial_mean_lr": {
+          "type": "number",
+          "minimum": 0
+        },
+        "initial_critic_lr": {
+          "type": "number",
+          "minimum": 0
+        },
+        "initial_logstd_lr": {
+          "type": "number",
+          "minimum": 0
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "patch_source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "frozen_residual_base_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "dataset_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "bc_actor_weights_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "training_episode_indices": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "excluded_validation_episode_indices": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "residual_forward_rows": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "calibration_wall_seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "additional_bc_forward_rows": {
+          "const": 0
+        },
+        "new_environment_transitions": {
+          "const": 0
+        },
+        "new_optimizer_updates": {
+          "const": 0
+        },
+        "residual_patch_source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "original_std": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0
+          },
+          "minItems": 8,
+          "maxItems": 8
+        },
+        "residual_rms": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0
+          },
+          "minItems": 8,
+          "maxItems": 8
+        },
+        "actor_mean_critic_weights_reward_schema_unchanged": {
+          "const": true
+        },
+        "note": {
+          "type": "string"
+        },
+        "initial_std_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "group_initialization_wall_seconds": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "active": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "global_step",
+        "iteration",
+        "mean_lr",
+        "critic_lr",
+        "logstd_lr",
+        "mean_lr_multiplier"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "global_step": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "iteration": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "mean_lr": {
+          "type": "number",
+          "minimum": 0
+        },
+        "critic_lr": {
+          "type": "number",
+          "minimum": 0
+        },
+        "logstd_lr": {
+          "type": "number",
+          "minimum": 0
+        },
+        "mean_lr_multiplier": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1.000002
+        }
+      }
+    }
+  }
+}

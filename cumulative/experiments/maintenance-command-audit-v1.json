@@ -1,0 +1,19 @@
+{
+  "format": "automanip-maintenance-command-audit-v1",
+  "created_at": 1793392301.204584,
+  "execution": "CPU frozen-actor inference only; no fitting, parameter changes, robotcalls or policyexport",
+  "question": "In states where manual maintenance has achieved physical success, would the original policy still command motion/closing, or is stochastic variance the only plausible issue?",
+  "data": "Completedmaintenance diagnostic groups3only; pre-actionstates t1..49 whose previous postactionphysicalsuccess flag istrue and whose commonopeningwindow hasended. These are publicdiagnostic data, never learnerinput.",
+  "measurements": [
+    "Clipped-normal arm expected squared command decomposed into squared expectation and variance",
+    "Deterministic clipped-mean arm RMS",
+    "Mean original grippercommand and Gaussian probability rawcommand>.28"
+  ],
+  "scope": "Command support/energy description, not a physical intervention, next-state prediction or proof that changing variance suffices. No hard heuristic gate. If meancommands are substantial, reducingvariancealone cannot setthemtozero.",
+  "source_policies": [
+    2,
+    3
+  ],
+  "source_steps": 8192000,
+  "protocol": "cumulative/experiments/release-maintenance-probe-v1.json"
+}

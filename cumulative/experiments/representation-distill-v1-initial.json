@@ -1,0 +1,38 @@
+{
+  "format": "automanip-representation-distill-v1",
+  "created_at": 1793459098.9474308,
+  "execution_authorized": true,
+  "authorization": "Continue autonomous research until stopped; CPU representation followup to fixed readout failure",
+  "hypotheses": [
+    "The frozen trunk limits precision of the action decoder",
+    "Task-independent actuator-coordinate prediction improves the representation beyond ordinary full-network fitting"
+  ],
+  "data": "Exactly the original search-student teacher/rehearsal fitting rows and episode splits; no new experience or fresh public data enters fitting.",
+  "methods": [
+    "whole_mlp",
+    "whole_mlp_aux"
+  ],
+  "parents": [
+    2,
+    3
+  ],
+  "steps": 256,
+  "teacher_batch": 128,
+  "rehearsal_batch": 128,
+  "learning_rate": 0.0003,
+  "optimizer": "Adam",
+  "rehearsal_weight": 4.0,
+  "parent_weight_penalty": 0.001,
+  "auxiliary_weight": {
+    "whole_mlp": 0.0,
+    "whole_mlp_aux": 1.0
+  },
+  "auxiliary_target": "Training-only scalar inverse_target(obs[7])=(finger_q-.015)/.025, from original available proprioception. Same scalar head computed in both methods; no auxiliary head in exported policy.",
+  "initialization": "Same original acquired actor weights for both methods. Auxiliary scalar head initialized from a fixed ridge.001 fit on the same fitting rows, counted per model. Batch generators share fixed96340000+parent seeds.",
+  "matched_compute": "Same256optimizationsteps, observation batches, network/output interface and auxiliary-forward graph; report exact CPUtime/forwards, no optimizer/native checkpoints loaded.",
+  "essential_CPU_tests": "Synthetic known-coordinate multitask fit; verify old-policy outputs at initialization, deterministic shared batches, and safe export that excludes auxiliary head. Evaluate internal held-out physical target errors without choosing hyperparameters.",
+  "assessment": "Only after renewal of required Modal authentication and CPU numeric/export checks: unchanged safe MLP scoring worker, old readout vs whole_mlp vs whole_mlp_aux,512fresh963-seriesepisodes perparent/method,153600transitions. No new data-driven setting changes.",
+  "primary": "whole_mlp minus old_readout>=.10 and positive97.5%pairedblockCI for capacity contribution; whole_mlp_aux minus whole_mlp>=.05 withpositive97.5%CI for auxiliary contribution. Ever-grasp>=.95 perparent for a promoted local candidate. Report other stage retention. No historical benchmark promotion or10x claim.",
+  "budget": "Previous branching work613120; prospective assessment153600 gives766720of1M. New fittingphysics0, four CPUgradientfits, allcompute counted.",
+  "falsification": "If representation precision improves but robot performance does not, do not call it a learning gain; investigate closed-loop shift. If auxiliary does not beat matched learner, do not credit the auxiliary mechanism. No LR/steps/loss-weight sweep or score-driven refit."
+}

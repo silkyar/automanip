@@ -1,0 +1,1285 @@
+{
+  "format": "automanip-feature-value-results-v1",
+  "state": "complete",
+  "scientific_training_runs": 6,
+  "new_training_transitions": 60313600,
+  "new_scoring_transitions": 307200,
+  "source_acquisition_transitions": 0,
+  "trials": [
+    {
+      "index": 0,
+      "method": "ppo-feature-value",
+      "seed": 1,
+      "trainer_process_seconds": 595.585336469,
+      "wrapper_seconds": 602.5460982230001,
+      "training_transitions": 9676800,
+      "optimizer_calls": 48384,
+      "learner_seconds": 177.811865568161,
+      "PPO_seconds": 151.25894808769226,
+      "linear_fit_seconds": 26.55291748046875,
+      "linear_solves": 378,
+      "rollout_and_trace_seconds": 392.24699449539185,
+      "learning_curve": [
+        {
+          "steps": 0,
+          "trainer_seconds": 18.999618536,
+          "weights_sha256": "174e7c6618df978ccdf1ed63e9f1c408c58e155b22559cc7697cc12b8582aed5",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 512000,
+          "trainer_seconds": 45.952598323000004,
+          "weights_sha256": "0b91a3e8cf1e22021d03b970f407c470664eef5485cef6cb96af192cd85c283c",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 1024000,
+          "trainer_seconds": 74.604720451,
+          "weights_sha256": "a45bad01b97e91c70a39acc66024793bcc5c2f31861f4b62af0dd4a90c160934",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 2048000,
+          "trainer_seconds": 133.63784071999999,
+          "weights_sha256": "3474348b54c910ab686d74d350f2a50254c578bab2d31b95c855e4583f1fbfad",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 4096000,
+          "trainer_seconds": 254.100711409,
+          "weights_sha256": "7159b6b0b86f3657c559498681e3bd3b454c24117625aa5e33c9c5eb72d60548",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 6144000,
+          "trainer_seconds": 380.96512433000004,
+          "weights_sha256": "b5e2750f625884e81cad72aba9d6479dca02cf816d745e52422cfd387f1441b4",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 8192000,
+          "trainer_seconds": 504.228678471,
+          "weights_sha256": "8e8d77c9c761952e4d4e0202b53f935419888e8d0de6f1f9e661f79b78469c7c",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 9676800,
+          "trainer_seconds": 593.454033724,
+          "weights_sha256": "098950a2fa18ceb50d5fbcdb5b5f9a86f2122d2ff0395c6aa2513bb8a10eee16",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        }
+      ],
+      "source_acquisition_transitions": 0,
+      "confirmation_queries": 0,
+      "final_queries": 0,
+      "actual_critic_mlp_forward_rows": 0,
+      "actor_forward_rows": 87091200
+    },
+    {
+      "index": 1,
+      "method": "ppo-clock-feature-value",
+      "seed": 1,
+      "trainer_process_seconds": 596.4791947279999,
+      "wrapper_seconds": 603.4208913169999,
+      "training_transitions": 9932800,
+      "optimizer_calls": 49664,
+      "learner_seconds": 180.2772653400898,
+      "PPO_seconds": 151.37306451797485,
+      "linear_fit_seconds": 28.904200822114944,
+      "linear_solves": 388,
+      "rollout_and_trace_seconds": 390.65745997428894,
+      "learning_curve": [
+        {
+          "steps": 0,
+          "trainer_seconds": 19.001646503,
+          "weights_sha256": "174e7c6618df978ccdf1ed63e9f1c408c58e155b22559cc7697cc12b8582aed5",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 512000,
+          "trainer_seconds": 45.787189762000004,
+          "weights_sha256": "e8d5fc16a39bf1916093c1391e803ad958bbd3c5d53de97a6c404ebc993ddb94",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 1024000,
+          "trainer_seconds": 74.21915390599999,
+          "weights_sha256": "f8f776be24d1021e1be1dedb3d28bed4bd2145182b246e49a925a4b6eae20e1c",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 2048000,
+          "trainer_seconds": 131.13130565,
+          "weights_sha256": "730643fa6273701604f46fa11eb303c49dec41a2746731f87b6655acf2d18a9b",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 4096000,
+          "trainer_seconds": 248.566343266,
+          "weights_sha256": "e994e123ded8cd6815dce8951026b36635d559d7d27be96cde59f461d6b16a0b",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 6144000,
+          "trainer_seconds": 373.990934317,
+          "weights_sha256": "d1dcecaf326b4798e47eaa60331aadd4f66b972319e2cd53693788a3edd69a4b",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 8192000,
+          "trainer_seconds": 493.591992734,
+          "weights_sha256": "50f9d99ae8b14e22c29c4e9bab5ee15e42e0e975fe632413779270975cec427c",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 9932800,
+          "trainer_seconds": 594.450358528,
+          "weights_sha256": "9bf88a669d4608bb5d6e129e2a10a7e97be96762f93ec4c78e058cafa0c51817",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        }
+      ],
+      "source_acquisition_transitions": 0,
+      "confirmation_queries": 0,
+      "final_queries": 0,
+      "actual_critic_mlp_forward_rows": 0,
+      "actor_forward_rows": 89395200
+    },
+    {
+      "index": 2,
+      "method": "ppo-feature-value",
+      "seed": 2,
+      "trainer_process_seconds": 595.410164334,
+      "wrapper_seconds": 602.657270102,
+      "training_transitions": 10035200,
+      "optimizer_calls": 50176,
+      "learner_seconds": 178.09496869146824,
+      "PPO_seconds": 151.2549602985382,
+      "linear_fit_seconds": 26.84000839293003,
+      "linear_solves": 392,
+      "rollout_and_trace_seconds": 392.4576053619385,
+      "learning_curve": [
+        {
+          "steps": 0,
+          "trainer_seconds": 18.715850895,
+          "weights_sha256": "3062a304cf51a0e1b01f66e4d6391349d8d535821cfa1586cbb85a542ab53279",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 512000,
+          "trainer_seconds": 45.279138707,
+          "weights_sha256": "b66cdf48749eef8e3d9b087ea4945d097de26ff8746cc9e29b8b8015815205c2",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 1024000,
+          "trainer_seconds": 72.95224811700001,
+          "weights_sha256": "19ca9916c90880afb90a014e7ec2e9b2635ca33b032704661dbed9deb550ccbe",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 2048000,
+          "trainer_seconds": 130.681038038,
+          "weights_sha256": "b6aee3d33b2682e5b64276ff9f43dd395678b121dc9d9b567ada6b39959fea10",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 4096000,
+          "trainer_seconds": 245.80243177,
+          "weights_sha256": "f6232b9cdf6f890133c2a6f7cc84da8a995713b3d459cc980434dc51cc4530c3",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 6144000,
+          "trainer_seconds": 365.027450155,
+          "weights_sha256": "e6836f4aa2167aadc69b64b1e23c94da9fd9f5bf4c562315f3ab2943bf9ed1b6",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 8192000,
+          "trainer_seconds": 485.856709754,
+          "weights_sha256": "9befab98aa1c05f055f8a579f379035c601f4bbddf25c8cbf5a8bed9775fadf8",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 10035200,
+          "trainer_seconds": 593.5046090660001,
+          "weights_sha256": "a9c03baa30bbdfcf597f5f429ed81ecbe8f737dc550c224d1e24f310733b0402",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        }
+      ],
+      "source_acquisition_transitions": 0,
+      "confirmation_queries": 0,
+      "final_queries": 0,
+      "actual_critic_mlp_forward_rows": 0,
+      "actor_forward_rows": 90316800
+    },
+    {
+      "index": 3,
+      "method": "ppo-clock-feature-value",
+      "seed": 2,
+      "trainer_process_seconds": 594.519152528,
+      "wrapper_seconds": 601.7920432899999,
+      "training_transitions": 10188800,
+      "optimizer_calls": 50944,
+      "learner_seconds": 181.80427300930023,
+      "PPO_seconds": 153.13506603240967,
+      "linear_fit_seconds": 28.669206976890564,
+      "linear_solves": 398,
+      "rollout_and_trace_seconds": 388.2347447872162,
+      "learning_curve": [
+        {
+          "steps": 0,
+          "trainer_seconds": 18.734605385000002,
+          "weights_sha256": "3062a304cf51a0e1b01f66e4d6391349d8d535821cfa1586cbb85a542ab53279",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 512000,
+          "trainer_seconds": 45.229582679,
+          "weights_sha256": "f940edd51bdcbc512e8a46c8ee92eb96aa694a933defbb367dd817b1a88053f0",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 1024000,
+          "trainer_seconds": 73.156473288,
+          "weights_sha256": "59d03c9bf5564e07a5deeb7ac5d2d4c259af8992f0832316abdc40ba4cf3e341",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 2048000,
+          "trainer_seconds": 130.696561676,
+          "weights_sha256": "f34d76dc31f15927ba45822b43f7f57c78c39b64a799f09ba9b227b0f5fc5ec2",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 4096000,
+          "trainer_seconds": 245.680431688,
+          "weights_sha256": "5db1978d5a2be99df18ca8cc19bd6899170f34d3dc1b4483ac4db82d6ef5f812",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 6144000,
+          "trainer_seconds": 361.96607411400004,
+          "weights_sha256": "f78c73a42d9e5411e46707a6e1f515885f716a0b8e4519fd089f508af636dcb7",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 8192000,
+          "trainer_seconds": 478.60091797200005,
+          "weights_sha256": "fcd43f885fe10dd6a939ef57039641cae57a362c1615e6735487a74f5f091583",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 10188800,
+          "trainer_seconds": 592.577909244,
+          "weights_sha256": "d4b5f843d67a8840c4ea5cd432120189d3150d417a495f3edfa94867933b1ff1",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        }
+      ],
+      "source_acquisition_transitions": 0,
+      "confirmation_queries": 0,
+      "final_queries": 0,
+      "actual_critic_mlp_forward_rows": 0,
+      "actor_forward_rows": 91699200
+    },
+    {
+      "index": 4,
+      "method": "ppo-feature-value",
+      "seed": 3,
+      "trainer_process_seconds": 535.997626363,
+      "wrapper_seconds": 541.71237019,
+      "training_transitions": 10240000,
+      "optimizer_calls": 51200,
+      "learner_seconds": 141.68518345803022,
+      "PPO_seconds": 120.66701292991638,
+      "linear_fit_seconds": 21.018170528113842,
+      "linear_solves": 400,
+      "rollout_and_trace_seconds": 370.19382762908936,
+      "learning_curve": [
+        {
+          "steps": 0,
+          "trainer_seconds": 14.783362856,
+          "weights_sha256": "b0c3f6eb9aacf689aef37e90fc5a2971b503e971822c92fe69420eaa6f8d6451",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 512000,
+          "trainer_seconds": 37.651213574,
+          "weights_sha256": "7f345b1e4e2012cc83ad555521dfabe856b52fff7e09c6a2eb711b17f6df72e6",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 1024000,
+          "trainer_seconds": 62.130142956,
+          "weights_sha256": "b97aca19f0814cb4161a71795093dd14becec2e4fb6351b558c6599d711e5b09",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 2048000,
+          "trainer_seconds": 112.469209333,
+          "weights_sha256": "16c421d7cd393cc075d0f57ca5af622e626b5bb523a3ff13a9e0f2c06da4d673",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 4096000,
+          "trainer_seconds": 219.836239056,
+          "weights_sha256": "87f2287c4cb9f7a7c6a87a54ec7724863e4cf60ed925fd365ef1ee1fa47bc1a8",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 6144000,
+          "trainer_seconds": 323.218805313,
+          "weights_sha256": "ee667367a87052a49bc1a32e689ba124323782cec3875e9e7423bf0b1f97f0f3",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 8192000,
+          "trainer_seconds": 426.694830642,
+          "weights_sha256": "6f93ce4b21f7c04c326b85bca28803040d4843b24d6eb1dd9fd113733ced33a4",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 10240000,
+          "trainer_seconds": 533.775826035,
+          "weights_sha256": "d3e65c26be9c7096aa672989135d91aecfc9362cdc4656d054468f56f40ffd85",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        }
+      ],
+      "source_acquisition_transitions": 0,
+      "confirmation_queries": 0,
+      "final_queries": 0,
+      "actual_critic_mlp_forward_rows": 0,
+      "actor_forward_rows": 92160000
+    },
+    {
+      "index": 5,
+      "method": "ppo-clock-feature-value",
+      "seed": 3,
+      "trainer_process_seconds": 596.718235576,
+      "wrapper_seconds": 603.555722502,
+      "training_transitions": 10240000,
+      "optimizer_calls": 51200,
+      "learner_seconds": 179.45521815121174,
+      "PPO_seconds": 150.24105429649353,
+      "linear_fit_seconds": 29.21416385471821,
+      "linear_solves": 400,
+      "rollout_and_trace_seconds": 392.7069878578186,
+      "learning_curve": [
+        {
+          "steps": 0,
+          "trainer_seconds": 18.249973341,
+          "weights_sha256": "94f7d6409872caa6eee1f35c49f1e9b12f6ca6dc9c1518f874e2194b00f64f69",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 512000,
+          "trainer_seconds": 44.431312579,
+          "weights_sha256": "5a2b2d4b7c0ef5c7f893c12f0d6965f791f816f52c7232bccac726b729d5a0e8",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 1024000,
+          "trainer_seconds": 72.205363413,
+          "weights_sha256": "5892b674fd3726b0ee622321923a12bbcc7d7f5909d76e3629d1922dde66e82d",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 2048000,
+          "trainer_seconds": 129.676878574,
+          "weights_sha256": "ef9498e03b7e80159b037a161701fb06044f0df11b1216315123d7f77d00ce7a",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 4096000,
+          "trainer_seconds": 247.024703347,
+          "weights_sha256": "dc5ab7b6fea1771565c6550e59356cde0a7effc366f19933d83d88f1850834f5",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 6144000,
+          "trainer_seconds": 364.063838672,
+          "weights_sha256": "e50eae2745df077d3c333e0dc59150f8cf8395ddc579973b5cca0ad84a8b9965",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 8192000,
+          "trainer_seconds": 478.344321688,
+          "weights_sha256": "18c9e25ddc0f8b9e9e3b217e91f9778ad6c164006258ff947357f81fd72f4ae6",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 10240000,
+          "trainer_seconds": 594.820856785,
+          "weights_sha256": "3d687f571fe62e611d8c904516a289c35049e057ff31b47a838a5742bc16392a",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        }
+      ],
+      "source_acquisition_transitions": 0,
+      "confirmation_queries": 0,
+      "final_queries": 0,
+      "actual_critic_mlp_forward_rows": 0,
+      "actor_forward_rows": 92160000
+    }
+  ],
+  "analysis": {
+    "format": "automanip-feature-value-analysis-v1",
+    "paired_seeds": [
+      {
+        "seed": 1,
+        "common_steps": [
+          0,
+          512000,
+          1024000,
+          2048000,
+          4096000,
+          6144000,
+          8192000
+        ],
+        "methods": {
+          "ppo-feature-value": {
+            "success_curve": [
+              [
+                0,
+                0.0
+              ],
+              [
+                512000,
+                0.0
+              ],
+              [
+                1024000,
+                0.0
+              ],
+              [
+                2048000,
+                0.0
+              ],
+              [
+                4096000,
+                0.0
+              ],
+              [
+                6144000,
+                0.0
+              ],
+              [
+                8192000,
+                0.0
+              ]
+            ],
+            "success_auc": 0.0,
+            "T80": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "T90": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "actual_training_transitions": 9676800,
+            "optimizer_calls": 48384,
+            "trainer_process_seconds": 595.585336469,
+            "wrapper_seconds": 602.5460982230001
+          },
+          "ppo-clock-feature-value": {
+            "success_curve": [
+              [
+                0,
+                0.0
+              ],
+              [
+                512000,
+                0.0
+              ],
+              [
+                1024000,
+                0.0
+              ],
+              [
+                2048000,
+                0.0
+              ],
+              [
+                4096000,
+                0.0
+              ],
+              [
+                6144000,
+                0.0
+              ],
+              [
+                8192000,
+                0.0
+              ]
+            ],
+            "success_auc": 0.0,
+            "T80": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "T90": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "actual_training_transitions": 9932800,
+            "optimizer_calls": 49664,
+            "trainer_process_seconds": 596.4791947279999,
+            "wrapper_seconds": 603.4208913169999
+          }
+        },
+        "paired_auc_gain": 0.0,
+        "paired_final_success_gain": 0.0,
+        "observed_T80_speedup": null,
+        "candidate_uses_no_more_optimizer_calls": false
+      },
+      {
+        "seed": 2,
+        "common_steps": [
+          0,
+          512000,
+          1024000,
+          2048000,
+          4096000,
+          6144000,
+          8192000
+        ],
+        "methods": {
+          "ppo-feature-value": {
+            "success_curve": [
+              [
+                0,
+                0.0
+              ],
+              [
+                512000,
+                0.0
+              ],
+              [
+                1024000,
+                0.0
+              ],
+              [
+                2048000,
+                0.0
+              ],
+              [
+                4096000,
+                0.0
+              ],
+              [
+                6144000,
+                0.0
+              ],
+              [
+                8192000,
+                0.0
+              ]
+            ],
+            "success_auc": 0.0,
+            "T80": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "T90": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "actual_training_transitions": 10035200,
+            "optimizer_calls": 50176,
+            "trainer_process_seconds": 595.410164334,
+            "wrapper_seconds": 602.657270102
+          },
+          "ppo-clock-feature-value": {
+            "success_curve": [
+              [
+                0,
+                0.0
+              ],
+              [
+                512000,
+                0.0
+              ],
+              [
+                1024000,
+                0.0
+              ],
+              [
+                2048000,
+                0.0
+              ],
+              [
+                4096000,
+                0.0
+              ],
+              [
+                6144000,
+                0.0
+              ],
+              [
+                8192000,
+                0.0
+              ]
+            ],
+            "success_auc": 0.0,
+            "T80": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "T90": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "actual_training_transitions": 10188800,
+            "optimizer_calls": 50944,
+            "trainer_process_seconds": 594.519152528,
+            "wrapper_seconds": 601.7920432899999
+          }
+        },
+        "paired_auc_gain": 0.0,
+        "paired_final_success_gain": 0.0,
+        "observed_T80_speedup": null,
+        "candidate_uses_no_more_optimizer_calls": false
+      },
+      {
+        "seed": 3,
+        "common_steps": [
+          0,
+          512000,
+          1024000,
+          2048000,
+          4096000,
+          6144000,
+          8192000,
+          10240000
+        ],
+        "methods": {
+          "ppo-feature-value": {
+            "success_curve": [
+              [
+                0,
+                0.0
+              ],
+              [
+                512000,
+                0.0
+              ],
+              [
+                1024000,
+                0.0
+              ],
+              [
+                2048000,
+                0.0
+              ],
+              [
+                4096000,
+                0.0
+              ],
+              [
+                6144000,
+                0.0
+              ],
+              [
+                8192000,
+                0.0
+              ],
+              [
+                10240000,
+                0.0
+              ]
+            ],
+            "success_auc": 0.0,
+            "T80": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 10240000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "T90": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 10240000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "actual_training_transitions": 10240000,
+            "optimizer_calls": 51200,
+            "trainer_process_seconds": 535.997626363,
+            "wrapper_seconds": 541.71237019
+          },
+          "ppo-clock-feature-value": {
+            "success_curve": [
+              [
+                0,
+                0.0
+              ],
+              [
+                512000,
+                0.0
+              ],
+              [
+                1024000,
+                0.0
+              ],
+              [
+                2048000,
+                0.0
+              ],
+              [
+                4096000,
+                0.0
+              ],
+              [
+                6144000,
+                0.0
+              ],
+              [
+                8192000,
+                0.0
+              ],
+              [
+                10240000,
+                0.0
+              ]
+            ],
+            "success_auc": 0.0,
+            "T80": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 10240000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "T90": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 10240000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "actual_training_transitions": 10240000,
+            "optimizer_calls": 51200,
+            "trainer_process_seconds": 596.718235576,
+            "wrapper_seconds": 603.555722502
+          }
+        },
+        "paired_auc_gain": 0.0,
+        "paired_final_success_gain": 0.0,
+        "observed_T80_speedup": null,
+        "candidate_uses_no_more_optimizer_calls": true
+      }
+    ],
+    "mean_paired_auc_gain": 0.0,
+    "twofold_observed_T80_screen": false,
+    "final_success_point_preserved_all_seeds": true,
+    "no_more_optimizer_calls_all_seeds": false,
+    "material_compute_matched_result_established": false,
+    "compute_requirement": "Also compare measured learner time from retained TensorBoard events; equal ceilings and optimizer counts alone do not establish equal total compute.",
+    "scope": "Fresh random initialization,3paired training seeds on one frozen task. Public development curves, not independent confirmation or held-out task validation. Negative results and censored crossings retained.",
+    "versus_strong_gae": {
+      "format": "automanip-scratch-credit-analysis-v1",
+      "paired_seeds": [
+        {
+          "seed": 1,
+          "common_steps": [
+            0,
+            512000,
+            1024000,
+            2048000,
+            4096000,
+            6144000,
+            8192000
+          ],
+          "methods": {
+            "ppo-gae": {
+              "success_curve": [
+                [
+                  0,
+                  0.0
+                ],
+                [
+                  512000,
+                  0.0
+                ],
+                [
+                  1024000,
+                  0.0
+                ],
+                [
+                  2048000,
+                  0.0
+                ],
+                [
+                  4096000,
+                  0.0
+                ],
+                [
+                  6144000,
+                  0.0
+                ],
+                [
+                  8192000,
+                  0.0390625
+                ]
+              ],
+              "success_auc": 0.0048828125,
+              "T80": {
+                "observed_first_step": null,
+                "confirmed_at": null,
+                "censored": true,
+                "last_observed_step": 8192000,
+                "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+              },
+              "T90": {
+                "observed_first_step": null,
+                "confirmed_at": null,
+                "censored": true,
+                "last_observed_step": 8192000,
+                "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+              },
+              "actual_training_transitions": 10240000,
+              "optimizer_calls": 30090,
+              "trainer_process_seconds": 591.079144213,
+              "wrapper_seconds": 599.218816008
+            },
+            "ppo-clock-feature-value": {
+              "success_curve": [
+                [
+                  0,
+                  0.0
+                ],
+                [
+                  512000,
+                  0.0
+                ],
+                [
+                  1024000,
+                  0.0
+                ],
+                [
+                  2048000,
+                  0.0
+                ],
+                [
+                  4096000,
+                  0.0
+                ],
+                [
+                  6144000,
+                  0.0
+                ],
+                [
+                  8192000,
+                  0.0
+                ]
+              ],
+              "success_auc": 0.0,
+              "T80": {
+                "observed_first_step": null,
+                "confirmed_at": null,
+                "censored": true,
+                "last_observed_step": 8192000,
+                "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+              },
+              "T90": {
+                "observed_first_step": null,
+                "confirmed_at": null,
+                "censored": true,
+                "last_observed_step": 8192000,
+                "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+              },
+              "actual_training_transitions": 9932800,
+              "optimizer_calls": 49664,
+              "trainer_process_seconds": 596.4791947279999,
+              "wrapper_seconds": 603.4208913169999
+            }
+          },
+          "paired_auc_gain": -0.0048828125,
+          "paired_final_success_gain": -0.0390625,
+          "observed_T80_speedup": null,
+          "candidate_uses_no_more_optimizer_calls": false
+        },
+        {
+          "seed": 2,
+          "common_steps": [
+            0,
+            512000,
+            1024000,
+            2048000,
+            4096000,
+            6144000,
+            8192000
+          ],
+          "methods": {
+            "ppo-gae": {
+              "success_curve": [
+                [
+                  0,
+                  0.0
+                ],
+                [
+                  512000,
+                  0.0
+                ],
+                [
+                  1024000,
+                  0.0
+                ],
+                [
+                  2048000,
+                  0.0
+                ],
+                [
+                  4096000,
+                  0.0
+                ],
+                [
+                  6144000,
+                  0.0
+                ],
+                [
+                  8192000,
+                  0.0
+                ]
+              ],
+              "success_auc": 0.0,
+              "T80": {
+                "observed_first_step": null,
+                "confirmed_at": null,
+                "censored": true,
+                "last_observed_step": 8192000,
+                "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+              },
+              "T90": {
+                "observed_first_step": null,
+                "confirmed_at": null,
+                "censored": true,
+                "last_observed_step": 8192000,
+                "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+              },
+              "actual_training_transitions": 10240000,
+              "optimizer_calls": 27875,
+              "trainer_process_seconds": 553.243475632,
+              "wrapper_seconds": 562.096748219
+            },
+            "ppo-clock-feature-value": {
+              "success_curve": [
+                [
+                  0,
+                  0.0
+                ],
+                [
+                  512000,
+                  0.0
+                ],
+                [
+                  1024000,
+                  0.0
+                ],
+                [
+                  2048000,
+                  0.0
+                ],
+                [
+                  4096000,
+                  0.0
+                ],
+                [
+                  6144000,
+                  0.0
+                ],
+                [
+                  8192000,
+                  0.0
+                ]
+              ],
+              "success_auc": 0.0,
+              "T80": {
+                "observed_first_step": null,
+                "confirmed_at": null,
+                "censored": true,
+                "last_observed_step": 8192000,
+                "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+              },
+              "T90": {
+                "observed_first_step": null,
+                "confirmed_at": null,
+                "censored": true,
+                "last_observed_step": 8192000,
+                "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+              },
+              "actual_training_transitions": 10188800,
+              "optimizer_calls": 50944,
+              "trainer_process_seconds": 594.519152528,
+              "wrapper_seconds": 601.7920432899999
+            }
+          },
+          "paired_auc_gain": 0.0,
+          "paired_final_success_gain": 0.0,
+          "observed_T80_speedup": null,
+          "candidate_uses_no_more_optimizer_calls": false
+        },
+        {
+          "seed": 3,
+          "common_steps": [
+            0,
+            512000,
+            1024000,
+            2048000,
+            4096000,
+            6144000,
+            8192000,
+            10240000
+          ],
+          "methods": {
+            "ppo-gae": {
+              "success_curve": [
+                [
+                  0,
+                  0.0
+                ],
+                [
+                  512000,
+                  0.0
+                ],
+                [
+                  1024000,
+                  0.0
+                ],
+                [
+                  2048000,
+                  0.0
+                ],
+                [
+                  4096000,
+                  0.0
+                ],
+                [
+                  6144000,
+                  0.0
+                ],
+                [
+                  8192000,
+                  0.0
+                ],
+                [
+                  10240000,
+                  0.0
+                ]
+              ],
+              "success_auc": 0.0,
+              "T80": {
+                "observed_first_step": null,
+                "confirmed_at": null,
+                "censored": true,
+                "last_observed_step": 10240000,
+                "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+              },
+              "T90": {
+                "observed_first_step": null,
+                "confirmed_at": null,
+                "censored": true,
+                "last_observed_step": 10240000,
+                "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+              },
+              "actual_training_transitions": 10240000,
+              "optimizer_calls": 28076,
+              "trainer_process_seconds": 546.7570457249999,
+              "wrapper_seconds": 553.982493085
+            },
+            "ppo-clock-feature-value": {
+              "success_curve": [
+                [
+                  0,
+                  0.0
+                ],
+                [
+                  512000,
+                  0.0
+                ],
+                [
+                  1024000,
+                  0.0
+                ],
+                [
+                  2048000,
+                  0.0
+                ],
+                [
+                  4096000,
+                  0.0
+                ],
+                [
+                  6144000,
+                  0.0
+                ],
+                [
+                  8192000,
+                  0.0
+                ],
+                [
+                  10240000,
+                  0.0
+                ]
+              ],
+              "success_auc": 0.0,
+              "T80": {
+                "observed_first_step": null,
+                "confirmed_at": null,
+                "censored": true,
+                "last_observed_step": 10240000,
+                "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+              },
+              "T90": {
+                "observed_first_step": null,
+                "confirmed_at": null,
+                "censored": true,
+                "last_observed_step": 10240000,
+                "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+              },
+              "actual_training_transitions": 10240000,
+              "optimizer_calls": 51200,
+              "trainer_process_seconds": 596.718235576,
+              "wrapper_seconds": 603.555722502
+            }
+          },
+          "paired_auc_gain": 0.0,
+          "paired_final_success_gain": 0.0,
+          "observed_T80_speedup": null,
+          "candidate_uses_no_more_optimizer_calls": false
+        }
+      ],
+      "mean_paired_auc_gain": -0.0016276041666666667,
+      "twofold_observed_T80_screen": false,
+      "final_success_point_preserved_all_seeds": false,
+      "no_more_optimizer_calls_all_seeds": false,
+      "material_compute_matched_result_established": false,
+      "compute_requirement": "Also compare measured learner time from retained TensorBoard events; equal ceilings and optimizer counts alone do not establish equal total compute.",
+      "scope": "Fresh random initialization,3paired training seeds on one frozen task. Public development curves, not independent confirmation or held-out task validation. Negative results and censored crossings retained."
+    },
+    "registered_material_screen_passed": false
+  },
+  "decision": "Rejected within the registered budget. Both methods scored0/128 at every checkpoint in every seed. Offline covariance reduction did not establish a useful online learning mechanism.",
+  "protected_benchmark_replaced": false
+}

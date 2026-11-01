@@ -1,0 +1,18 @@
+{
+  "format": "automanip-continuation-value-training-cpu-v1",
+  "created_at": 1793395788.116837,
+  "inputs": {
+    "research/least_squares_stopping.py": "8f052b9e6121a88a8cfef501e0dc301c2e0a95db65420b582f2add8a4676dd8b",
+    "artifacts/cumulative/random-switch-training-20261030/archive-manifest.json": "a34e3b2158243a7b5a95d614e2d593de4f05e95c816b1dfdc71007035e71989d",
+    "artifacts/cumulative/random-switch-training-20261030/provenance/inputs/plan.json": "093606814fa0a5589a807f6a7ed4182ab01fbad75792493d555f65f07e2c55d7"
+  },
+  "question": "Canastoppingpolicyvaluefuturecorrectionopportunitiesratherthanuseafixed.8payoffthreshold?",
+  "training": "Existing956trainingcorpusonly. Originalwholebatchpartition:2/3fit,1internalcalibration,0previouslyusedmodeldevelopment. No954/955/957publicdiagnosticdatafit. Newcorrectionpayoffheadperparentuses512actualtreateddecisionstateswithcurrent257actorfeaturesplusremaining-timeanditssquare,259coefficients. Ridge.001trace/d,clipprediction0..1. Outcomeisfinalstocksuccessunderpersistentcorrection.",
+  "continuation": "512actualfullbaselinepathsperparentfitbackward50stepcontinuationregressionsusingrealizedfuturecashflowsunderfittedfuturestoppingrule. Compareconstantper-timeheadwith17dimensionalhead(16fixedorthonormalprojectionsofparentfeaturesplusbias). Bothsharepayoffhead,eligiblemask,margin.01andterminalactualbasefinalsuccess. No dense-rewarddiscount:objectiveisfinalsuccess.",
+  "projection_seed": 96119999,
+  "support": "259dimactionconditionalridgeprecisionfromholddecisionfittingstates; fixed95thpercentileunlabeledinternalcalibrationleveragecutoff. No uncertaintyguarantee. No geometryorstocksignalenterpolicyfeatures.",
+  "mechanism_gate": "Knownanalyticwaitingtoy3seedspassed. Robotmodel-impliedpayoffandBrieraredevelopmentdiagnosticsonly; neverreplaceactualfreshphysics. Do notadmitlargeGPUtrainingfromtheseproxies.",
+  "scope": "Assistedoptiontimingmodel,notfromscratchalgorithm,newlowlevelskillor10xgain. Parents/actionprior/corpusandCPUcostsaccounted. Estimatedpayoffandpartialobservationmeanfinancialtheorydoesnotcertifyrobotoptimality.",
+  "new_robot_transitions": 0,
+  "models": "2payoffsolves+2parents*2continuationmodels*50solves=202solves. Replaybaselineobservationsanddecisionstates;countfeatureforwardsandCPUtime. No policyoptimizer or evaluatorqueries."
+}

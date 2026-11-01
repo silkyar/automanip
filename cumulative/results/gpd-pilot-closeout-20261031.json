@@ -1,0 +1,29 @@
+{
+  "state": "closed_negative",
+  "environment_transitions": {
+    "branching_validity": 94720,
+    "noop_state_write": 19200,
+    "original_search": 115200,
+    "relative_coordinate": 115200,
+    "unbranched_control": 115200,
+    "first_student_score": 153600,
+    "rehearsal_endpoints": 76800,
+    "executed_rehearsal_score": 153600,
+    "support_collection": 64000,
+    "support_score": 76800
+  },
+  "total_transitions": 984320,
+  "budget": 1000000,
+  "remaining": 15680,
+  "protected_files_verified": 1684,
+  "protected_errors": [],
+  "closed_linear_solves": 26,
+  "SVDs": 4,
+  "Adam_steps_including_failed": 4096,
+  "confirmation_queries": 0,
+  "final_queries": 0,
+  "best_confirmation_unchanged": 0.958984375,
+  "final_result": "cumulative/results/onpolicy-support-score-20261031.json",
+  "cloud_closeout": ".runtime/onpolicy-support-score-20261031/closeout.json",
+  "scope": "Assisted local mechanism pilot; no from-scratch or sample-efficiency improvement established"
+}

@@ -1,0 +1,83 @@
+{
+  "format": "automanip-random-switch-training-results-v1",
+  "state": "complete",
+  "new_training_transitions": 204800,
+  "episodes": 4096,
+  "optimizer_calls": 0,
+  "source_parent_prefix_transitions": 16384000,
+  "actual_completed_parent_training_transitions": 20480000,
+  "diagnostic_velocity_vector_rows": 409600,
+  "actor_action_reconstruction_error": 0.0,
+  "worker_seconds": [
+    68.94439085,
+    64.73050682600001
+  ],
+  "models": [
+    {
+      "seed": 2,
+      "new_training_episodes": 2048,
+      "fit_episodes": 1024,
+      "calibration_episodes": 512,
+      "test_episodes": 512,
+      "test_brier": {
+        "feature": 0.08948491311149258,
+        "constant": 0.12557680897893989,
+        "time": 0.1178379001313141,
+        "shuffled": 0.1515878410538019
+      },
+      "contrasts": {
+        "versus_constant": {
+          "mean_gain": 0.03609189586744729,
+          "interval_98_75": [
+            0.02666084564710831,
+            0.045761459769474704
+          ]
+        },
+        "versus_time": {
+          "mean_gain": 0.028352987019821512,
+          "interval_98_75": [
+            0.00961426198509005,
+            0.0435021610814684
+          ]
+        }
+      },
+      "material_predictive_screen": true
+    },
+    {
+      "seed": 3,
+      "new_training_episodes": 2048,
+      "fit_episodes": 1024,
+      "calibration_episodes": 512,
+      "test_episodes": 512,
+      "test_brier": {
+        "feature": 0.09008345486256203,
+        "constant": 0.12024840814206122,
+        "time": 0.11293439647714389,
+        "shuffled": 0.14952291538067272
+      },
+      "contrasts": {
+        "versus_constant": {
+          "mean_gain": 0.030164953279499182,
+          "interval_98_75": [
+            0.012411364590479593,
+            0.04599858342211585
+          ]
+        },
+        "versus_time": {
+          "mean_gain": 0.022850941614581843,
+          "interval_98_75": [
+            0.004361647034428866,
+            0.038502686451742596
+          ]
+        }
+      },
+      "material_predictive_screen": true
+    }
+  ],
+  "model_CPU_seconds": 26.87552862497978,
+  "model_linear_solves": 8,
+  "behavior_audit_CPU_seconds": 39.55882562499028,
+  "behavior_audit_forward_rows": 204800,
+  "archive": "artifacts/cumulative/random-switch-training-20261030",
+  "decision": "Predictivescreenpassedbothsources. Rawheadextrapolatesunsupportedresetstates; supportheuristicseparatesallresetstates. Freshfrozenlearnedselectorprototypeisrequired;nosampleefficiencyclaimorpolicybenchmarkupdate."
+}

@@ -1,0 +1,19 @@
+{
+  "format": "automanip-invariant-support-essential-toy-v1",
+  "created_at": 1793393153.256255,
+  "question": "Can empirical support for a corrective action preserve an old policy where a confident parametric outcome model failed?",
+  "mechanism": "If zeroactionkeepsstatefixed and true successsetGisconvex, convexhullof observedstateswithsuccessfulheldoutcomes is a subsetofG. Switching only inside thisset preserves allbase-successfultrajectories: either no switch reproducesbase, orswitch enters an invariant successfulstate. This provespointwisedominance undertheseassumptions, not for robotics.",
+  "learner": "Given original2048randomizedtoyepisodes, interval min/max of position among hold-treatment successfulepisodes. No target location/boundary supplied. No confidence parameter or optimization. Shuffled wholetrainingoutcomes negativecontrol.",
+  "calibration": "512freshoriginaldistributionepisodes each forlearned,base,shuffled; wholeclosedloop95%Wilsonlower>=.8 admitslearned,shuffle mustfail. No parameter selection.",
+  "test": "16384freshinitialconditions perseed:half originalrange,half widerx0.5..2.5 andspeed.01..1. Baseline,latchedlearned,statelesslearned,oracle. Reportbothdistributionsseparately. Same50stephorizon. No fittedtestdata.",
+  "seeds": [
+    94700001,
+    94700002,
+    94700003
+  ],
+  "fresh_seed_offset": 200000,
+  "screen": "Eachseed: original-distributionlearnedgain>=.40, within.05oracle inbothdistributions,>=99%base-successretention; latched/statelessoutcomesidentical. Shuffledmodelnotadmitted.",
+  "negative_assumption_control": "Two successfulpoints-.15,+.15 in disconnected goalbands[-.2,-.1]union[.1,.2] haveconvexhullcontainingunsafe0.128episodesinitial0,speed.0021..0039:basefinishesingoal,intervalcorrectionhaltsoutsidegoal. Thismustdemonstrateharm, falsifyinggenericconvex-hullapplicationwithoutverifiedconvexity/invariance.",
+  "counting": "307200reconstructedtrainingtoytransitions;3*(3*512+4*16384)*50+2*128*50=10073600newtoytransitions,0robotsteps. Save reconstructeddata-onlytrainingassets. No handcontrollerorrobotdataused.",
+  "scope": "Proofandtestofstronglyassumedlinearholdtoy. Not anewalgorithm, roboticsguarantee or sample-efficiencyresult. Robotcontacts,stochasticity,unobservedcubevelocity andsafeMLPapproximationbreakassumptions; do not deployconvexhullin48dimstate."
+}

@@ -1,0 +1,85 @@
+{
+  "format": "automanip-continuation-correction-analysis-v1",
+  "state": "complete",
+  "successes": {
+    "learned_fixed_time": [
+      83,
+      63
+    ],
+    "fixed_threshold": [
+      63,
+      49
+    ],
+    "time_continuation": [
+      65,
+      45
+    ],
+    "state_continuation": [
+      71,
+      60
+    ]
+  },
+  "ever_grasp": {
+    "learned_fixed_time": [
+      127,
+      127
+    ],
+    "fixed_threshold": [
+      124,
+      128
+    ],
+    "time_continuation": [
+      125,
+      126
+    ],
+    "state_continuation": [
+      124,
+      123
+    ]
+  },
+  "contrasts": {
+    "state_continuation-minus-learned_fixed_time": {
+      "mean_gain": -0.05859375,
+      "interval_98_75": [
+        -0.12109375,
+        0.0078125
+      ]
+    },
+    "state_continuation-minus-fixed_threshold": {
+      "mean_gain": 0.07421875,
+      "interval_98_75": [
+        -0.03125,
+        0.17578125
+      ]
+    },
+    "state_continuation-minus-time_continuation": {
+      "mean_gain": 0.08203125,
+      "interval_98_75": [
+        0.01171875,
+        0.16015625
+      ]
+    },
+    "time_continuation-minus-learned_fixed_time": {
+      "mean_gain": -0.140625,
+      "interval_98_75": [
+        -0.20703125,
+        -0.078125
+      ]
+    }
+  },
+  "material_screens": {
+    "learned_fixed_time": false,
+    "fixed_threshold": false,
+    "time_continuation": true
+  },
+  "state_grasp_point_screen": true,
+  "registered_overall_screen_passed": false,
+  "new_public_transitions": 51200,
+  "optimizer_calls": 0,
+  "worker_seconds": [
+    26.25329832,
+    27.583431032
+  ],
+  "scope": "Assistedclosednumericstoppingprototype,twofixedparents. Samepayoffmodel/priors/supportforlearnedrules; learnedfixedtimefromtraininglabels. ClockawarecompositenotahistoricalMLPbenchmarkcandidate;nofromscratchor10xclaim.",
+  "decision": "Rejected: statewaiting51.17%versuslearnedfixedtime57.03%; didnotpassstrongcontroloroverallcriteria. Closeassistedselectorbranchwithoutparametertuningandreturntofromscratchmechanismdiagnosis."
+}

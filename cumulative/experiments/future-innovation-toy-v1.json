@@ -1,0 +1,34 @@
+{
+  "format": "automanip-future-innovation-essential-toy-v1",
+  "created_at": 1793391136.812746,
+  "execution": "CPU only; no robot/environment calls or policy training",
+  "question": "Can a correctly centered future-innovation control variate lower whole-trajectory Gaussian policy-gradient variance without bias?",
+  "generator": "T50 scalar additive state; terminal reward finalstate; iid Gaussian raw proposals; linear or clip(-1,+1) dynamics; theta0 sigma1.",
+  "training_trajectories": 4096,
+  "test_trajectories": 32768,
+  "seed": 94529999,
+  "gammas": [
+    1.0,
+    0.9
+  ],
+  "actor_parameters": [
+    "shared mean",
+    "shared logstd"
+  ],
+  "value": "Separate-training-data time-specific affine state baseline",
+  "control": "Time-specific regression of return residual onto current raw Gaussian innovation. Coefficients fitted on independent training trajectories and frozen for test. Subtract future controls only; current controls require analytic score expectation correction.",
+  "comparators": [
+    "state baseline MC",
+    "future only CV",
+    "current only CV with analytic correction",
+    "full CV with analytic correction",
+    "oracle linear positive control"
+  ],
+  "negative_controls": [
+    "full CV without current-action correction",
+    "future CV with coefficient depending on its own innovation and currentstate"
+  ],
+  "screen": "On each of4gamma/dynamics cells: variance trace for future-only learned CV <=.75 baseline, and both estimated gradient components within4standarderrors of analytic truth. Failure requires mechanism revision before robot tests. Report exact variance ratios and CIs; do not infer sample efficiency.",
+  "analytical_truth": "Mean gradient sum(gamma**remaining)*1 for linear or P(-1<epsilon<1) for clipped; logstd gradient0. For gamma1 linear exact baselines: MC covariance trace4275, future-only600, full analyticCV0.",
+  "scope": "Known control-variate mechanism, not novelty or robot efficacy. Data generation/fitting time and all toy rows counted. PPO clipping/minibatch normalization are absent; no claim about their bias."
+}

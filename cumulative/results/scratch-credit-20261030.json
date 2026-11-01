@@ -1,0 +1,888 @@
+{
+  "format": "automanip-scratch-credit-summary-v1",
+  "state": "complete",
+  "scientific_training_runs": 6,
+  "new_training_transitions": 58880000,
+  "new_scoring_transitions": 307200,
+  "source_acquisition_transitions": 0,
+  "trials": [
+    {
+      "index": 0,
+      "method": "ppo-gae",
+      "seed": 1,
+      "trainer_process_seconds": 591.079144213,
+      "wrapper_seconds": 599.218816008,
+      "training_transitions": 10240000,
+      "optimizer_calls": 30090,
+      "learner_seconds": 130.2813742160797,
+      "rollout_and_trace_seconds": 432.57518100738525,
+      "development_partition": "public-development",
+      "episodes_per_point": 128,
+      "learning_curve": [
+        {
+          "steps": 0,
+          "trainer_seconds": 20.743199398,
+          "weights_sha256": "174e7c6618df978ccdf1ed63e9f1c408c58e155b22559cc7697cc12b8582aed5",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 512000,
+          "trainer_seconds": 50.609435089,
+          "weights_sha256": "5abe1ed23c461b79aef0904a60caecaa263aad8de001b6aea2e3a967331c4143",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 1024000,
+          "trainer_seconds": 82.27668519,
+          "weights_sha256": "dc65a65b27109200baf506215a6d8d61877cef11f008704ccf36d92c43690668",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 2048000,
+          "trainer_seconds": 149.437126054,
+          "weights_sha256": "3a0ef6e758e8db2355d5610365fb41516d49f14839d4956ea83b6fa7a10f4b2c",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 4096000,
+          "trainer_seconds": 287.556748676,
+          "weights_sha256": "af4858380135c9e91b03a9762373e2ffdff3b3613a8af04bb96d5e80cc1d1448",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 6144000,
+          "trainer_seconds": 399.997316273,
+          "weights_sha256": "737025e65853830e806f80398a82f2851e7e82b3ddff160867d402a90bc9bdfe",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 8192000,
+          "trainer_seconds": 490.303890187,
+          "weights_sha256": "533c7eadee9be145fc5eb234247ac104277e33587bd9b97100e2b7aefa854cec",
+          "episodes": 128,
+          "successes": 5,
+          "failures": 0
+        },
+        {
+          "steps": 10240000,
+          "trainer_seconds": 588.8607911690001,
+          "weights_sha256": "69c9cafc5b647a142484ded593deef57ef388c15c15094a19ac1ed725bf4e9fa",
+          "episodes": 128,
+          "successes": 116,
+          "failures": 0
+        }
+      ],
+      "final_public_successes": 116,
+      "source_acquisition_transitions": 0,
+      "confirmation_queries": 0,
+      "final_queries": 0,
+      "scoring_transitions": 51200
+    },
+    {
+      "index": 1,
+      "method": "ppo-finite-mc",
+      "seed": 1,
+      "trainer_process_seconds": 596.6182137379999,
+      "wrapper_seconds": 606.144487551,
+      "training_transitions": 8960000,
+      "optimizer_calls": 44800,
+      "learner_seconds": 186.45404171943665,
+      "rollout_and_trace_seconds": 383.2308533191681,
+      "development_partition": "public-development",
+      "episodes_per_point": 128,
+      "learning_curve": [
+        {
+          "steps": 0,
+          "trainer_seconds": 21.004824874999997,
+          "weights_sha256": "174e7c6618df978ccdf1ed63e9f1c408c58e155b22559cc7697cc12b8582aed5",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 512000,
+          "trainer_seconds": 49.893167005,
+          "weights_sha256": "a2e14d5bf08f8b5035835d0522a469fac7417950c21d069d552e4487dad0c790",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 1024000,
+          "trainer_seconds": 80.891137973,
+          "weights_sha256": "de27d283ee91b94739c818958a2ff954db8fcceb77f25c1baadba80926fda1a9",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 2048000,
+          "trainer_seconds": 145.23121101499999,
+          "weights_sha256": "e6837d644676c35e47655ec52cc7e33dddcadfc0fe526acaaad145c40a77c3c2",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 4096000,
+          "trainer_seconds": 275.970308708,
+          "weights_sha256": "b4b033ffb0a6aec7b685ce810f91a595fe1f27b840c54f57c853f86d726a0799",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 6144000,
+          "trainer_seconds": 410.500814248,
+          "weights_sha256": "962003597dd9ae03140334b591a7c16624c4d87a67e6a44b3635aa391c380024",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 8192000,
+          "trainer_seconds": 544.5471862410001,
+          "weights_sha256": "f7f168ec979c026aa7c2ec7469b5aa5b127567664428a349c4715287878567d5",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 8960000,
+          "trainer_seconds": 594.5059424020001,
+          "weights_sha256": "23231c8752cad702edaa2165af82f676c9219ac6c38d207a0f18a499ee74cb1b",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        }
+      ],
+      "final_public_successes": 0,
+      "source_acquisition_transitions": 0,
+      "confirmation_queries": 0,
+      "final_queries": 0,
+      "scoring_transitions": 51200
+    },
+    {
+      "index": 2,
+      "method": "ppo-gae",
+      "seed": 2,
+      "trainer_process_seconds": 553.243475632,
+      "wrapper_seconds": 562.096748219,
+      "training_transitions": 10240000,
+      "optimizer_calls": 27875,
+      "learner_seconds": 114.10937786102295,
+      "rollout_and_trace_seconds": 411.01820826530457,
+      "development_partition": "public-development",
+      "episodes_per_point": 128,
+      "learning_curve": [
+        {
+          "steps": 0,
+          "trainer_seconds": 20.950426302,
+          "weights_sha256": "3062a304cf51a0e1b01f66e4d6391349d8d535821cfa1586cbb85a542ab53279",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 512000,
+          "trainer_seconds": 49.725141524,
+          "weights_sha256": "a88f900cd25f5a895635f4fc0e4c86f1bb785156eb1d9caf7480f5fa02e2b35c",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 1024000,
+          "trainer_seconds": 80.46450178399999,
+          "weights_sha256": "5bf42cc21c59f0efbdee2177874099ca75bd7c198ded48fe690218fd264d2bab",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 2048000,
+          "trainer_seconds": 144.558334005,
+          "weights_sha256": "079e0f191c6a65ac2d1b10ad12a9a55218a1b0f6f2aac1dffd4773c711d190ac",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 4096000,
+          "trainer_seconds": 273.962265975,
+          "weights_sha256": "0e23c3e48503b0e8e9ec1f17073fee41a27323d7565b846c748da67773b7e891",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 6144000,
+          "trainer_seconds": 377.353223931,
+          "weights_sha256": "d916cd930b5c9f71f220680aa6fce93f2b69da6504f4af1aca02fc333475eb4a",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 8192000,
+          "trainer_seconds": 465.05150610299995,
+          "weights_sha256": "d17c38edc1797b7766685dac257fe9eeb22fe5e04f1f1b21200fbf79092c7ce1",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 10240000,
+          "trainer_seconds": 551.118633359,
+          "weights_sha256": "05a76351a6213fa30cb7bf9da7bbe4de70e3196b0f206c50dc154849081b6f7f",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        }
+      ],
+      "final_public_successes": 0,
+      "source_acquisition_transitions": 0,
+      "confirmation_queries": 0,
+      "final_queries": 0,
+      "scoring_transitions": 51200
+    },
+    {
+      "index": 3,
+      "method": "ppo-finite-mc",
+      "seed": 2,
+      "trainer_process_seconds": 596.729609395,
+      "wrapper_seconds": 603.814156706,
+      "training_transitions": 9625600,
+      "optimizer_calls": 48128,
+      "learner_seconds": 184.2307641506195,
+      "rollout_and_trace_seconds": 388.6544988155365,
+      "development_partition": "public-development",
+      "episodes_per_point": 128,
+      "learning_curve": [
+        {
+          "steps": 0,
+          "trainer_seconds": 18.624797428,
+          "weights_sha256": "3062a304cf51a0e1b01f66e4d6391349d8d535821cfa1586cbb85a542ab53279",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 512000,
+          "trainer_seconds": 46.293761403,
+          "weights_sha256": "831c0928965e8d4ccb927826d6b51873aabdafad13bdd850fada8acefd087b9b",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 1024000,
+          "trainer_seconds": 76.487828171,
+          "weights_sha256": "4791eb7331268d3224edc68c29955522ba164ebb82d0c855ff85c0edcf78bc6e",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 2048000,
+          "trainer_seconds": 137.097315367,
+          "weights_sha256": "514157295b157c00f3298384ebc5657842c0353aa2e4157c4eb10e9188c60fb7",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 4096000,
+          "trainer_seconds": 256.75200807,
+          "weights_sha256": "09374a53f981e40024ac9c747cf26dd1f3b1c9fc882b7475435dc060c7897ada",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 6144000,
+          "trainer_seconds": 381.740031799,
+          "weights_sha256": "6fb8d51d0bcbadc94e4c83b8395065b5cfef7b05322b01115ac0a20dcf784e24",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 8192000,
+          "trainer_seconds": 508.84384735000003,
+          "weights_sha256": "92197f60e96a41bcb7c6eb8131ca556c7737a0f8cf7f1aef5835ca0915a7f606",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 9625600,
+          "trainer_seconds": 594.831850106,
+          "weights_sha256": "62ed2b9e850b73a25986eab42923f92f5ba9e042130d6035a1c7da0bbfa91d1f",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        }
+      ],
+      "final_public_successes": 0,
+      "source_acquisition_transitions": 0,
+      "confirmation_queries": 0,
+      "final_queries": 0,
+      "scoring_transitions": 51200
+    },
+    {
+      "index": 4,
+      "method": "ppo-gae",
+      "seed": 3,
+      "trainer_process_seconds": 546.7570457249999,
+      "wrapper_seconds": 553.982493085,
+      "training_transitions": 10240000,
+      "optimizer_calls": 28076,
+      "learner_seconds": 110.72198414802551,
+      "rollout_and_trace_seconds": 410.50896167755127,
+      "development_partition": "public-development",
+      "episodes_per_point": 128,
+      "learning_curve": [
+        {
+          "steps": 0,
+          "trainer_seconds": 19.421690915,
+          "weights_sha256": "94f7d6409872caa6eee1f35c49f1e9b12f6ca6dc9c1518f874e2194b00f64f69",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 512000,
+          "trainer_seconds": 48.211515410000004,
+          "weights_sha256": "dedde90f04da12b30f9b7bc94838f897a894582c83140d4905d68342f84bc63f",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 1024000,
+          "trainer_seconds": 78.792295394,
+          "weights_sha256": "8475f51cc2bd9c49cc9344158ab1a63b85764dd43b5910e954e32ce5a2bb851e",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 2048000,
+          "trainer_seconds": 141.764053092,
+          "weights_sha256": "426aafe057eaadc6d5dcf002aaf5bebe71eced36633845f1dcba60402b7059a5",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 4096000,
+          "trainer_seconds": 269.14645932499997,
+          "weights_sha256": "f595f1a96e077b6f20e5468705ed7d0f968e21dbea2bdf44ae157bf8ca1d0b9d",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 6144000,
+          "trainer_seconds": 373.19512938199995,
+          "weights_sha256": "3d0ab19882bfbd89ffcb00240eb7f3822e4e2109e90ef5aa0dd5cc357a675ee9",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 8192000,
+          "trainer_seconds": 457.51907834099995,
+          "weights_sha256": "7f550fa77a6258c7f2baa66e5ba2356c94bb4f7816c06822d22e80b8eb845257",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 10240000,
+          "trainer_seconds": 544.676219306,
+          "weights_sha256": "e84e38d6b6673405e7f928b1dbcd6aabfc6ee55b8c08437c9cbc21768625af47",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        }
+      ],
+      "final_public_successes": 0,
+      "source_acquisition_transitions": 0,
+      "confirmation_queries": 0,
+      "final_queries": 0,
+      "scoring_transitions": 51200
+    },
+    {
+      "index": 5,
+      "method": "ppo-finite-mc",
+      "seed": 3,
+      "trainer_process_seconds": 596.690855391,
+      "wrapper_seconds": 621.582896607,
+      "training_transitions": 9574400,
+      "optimizer_calls": 47872,
+      "learner_seconds": 182.56164360046387,
+      "rollout_and_trace_seconds": 379.4728515148163,
+      "development_partition": "public-development",
+      "episodes_per_point": 128,
+      "learning_curve": [
+        {
+          "steps": 0,
+          "trainer_seconds": 29.730521081,
+          "weights_sha256": "94f7d6409872caa6eee1f35c49f1e9b12f6ca6dc9c1518f874e2194b00f64f69",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 512000,
+          "trainer_seconds": 56.371146,
+          "weights_sha256": "35051b015249d8b6e54dcdff403be93d5a0e1700bc8b900f7a33ab01acbe0bea",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 1024000,
+          "trainer_seconds": 84.48761900400001,
+          "weights_sha256": "9b10e8b52db245924dfedcd4d2362a555a8d6aa2ce1e3fe2778f84cb7c1c739f",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 2048000,
+          "trainer_seconds": 141.528613928,
+          "weights_sha256": "10392abde991a8a6c3a1fd3076b095c0afddd412de144643974b43b56c0bd623",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 4096000,
+          "trainer_seconds": 266.091064462,
+          "weights_sha256": "c0f52bc079b39e2e6e4f6080442f8351141428caff7248794afea459ac6d40e2",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 6144000,
+          "trainer_seconds": 390.84840650900003,
+          "weights_sha256": "0b64b4f212d82d2a83acec455c5d8f8d9a1ee87424f0ac0d8b4673508c71646c",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 8192000,
+          "trainer_seconds": 512.543892178,
+          "weights_sha256": "33f3e48bbb0476d9ded912f5a406fb259c52d7fea1f5989fa34bd13ceb60bfe4",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        },
+        {
+          "steps": 9574400,
+          "trainer_seconds": 594.8294266439999,
+          "weights_sha256": "5eccb5e494d3914f8c933060aa98e5d6f4bf8b40d11d75be8ce229ef5b8183d7",
+          "episodes": 128,
+          "successes": 0,
+          "failures": 0
+        }
+      ],
+      "final_public_successes": 0,
+      "source_acquisition_transitions": 0,
+      "confirmation_queries": 0,
+      "final_queries": 0,
+      "scoring_transitions": 51200
+    }
+  ],
+  "analysis": {
+    "format": "automanip-scratch-credit-analysis-v1",
+    "paired_seeds": [
+      {
+        "seed": 1,
+        "common_steps": [
+          0,
+          512000,
+          1024000,
+          2048000,
+          4096000,
+          6144000,
+          8192000
+        ],
+        "methods": {
+          "ppo-gae": {
+            "success_curve": [
+              [
+                0,
+                0.0
+              ],
+              [
+                512000,
+                0.0
+              ],
+              [
+                1024000,
+                0.0
+              ],
+              [
+                2048000,
+                0.0
+              ],
+              [
+                4096000,
+                0.0
+              ],
+              [
+                6144000,
+                0.0
+              ],
+              [
+                8192000,
+                0.0390625
+              ]
+            ],
+            "success_auc": 0.0048828125,
+            "T80": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "T90": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "actual_training_transitions": 10240000,
+            "optimizer_calls": 30090,
+            "trainer_process_seconds": 591.079144213,
+            "wrapper_seconds": 599.218816008
+          },
+          "ppo-finite-mc": {
+            "success_curve": [
+              [
+                0,
+                0.0
+              ],
+              [
+                512000,
+                0.0
+              ],
+              [
+                1024000,
+                0.0
+              ],
+              [
+                2048000,
+                0.0
+              ],
+              [
+                4096000,
+                0.0
+              ],
+              [
+                6144000,
+                0.0
+              ],
+              [
+                8192000,
+                0.0
+              ]
+            ],
+            "success_auc": 0.0,
+            "T80": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "T90": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "actual_training_transitions": 8960000,
+            "optimizer_calls": 44800,
+            "trainer_process_seconds": 596.6182137379999,
+            "wrapper_seconds": 606.144487551
+          }
+        },
+        "paired_auc_gain": -0.0048828125,
+        "paired_final_success_gain": -0.0390625,
+        "observed_T80_speedup": null,
+        "candidate_uses_no_more_optimizer_calls": false
+      },
+      {
+        "seed": 2,
+        "common_steps": [
+          0,
+          512000,
+          1024000,
+          2048000,
+          4096000,
+          6144000,
+          8192000
+        ],
+        "methods": {
+          "ppo-gae": {
+            "success_curve": [
+              [
+                0,
+                0.0
+              ],
+              [
+                512000,
+                0.0
+              ],
+              [
+                1024000,
+                0.0
+              ],
+              [
+                2048000,
+                0.0
+              ],
+              [
+                4096000,
+                0.0
+              ],
+              [
+                6144000,
+                0.0
+              ],
+              [
+                8192000,
+                0.0
+              ]
+            ],
+            "success_auc": 0.0,
+            "T80": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "T90": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "actual_training_transitions": 10240000,
+            "optimizer_calls": 27875,
+            "trainer_process_seconds": 553.243475632,
+            "wrapper_seconds": 562.096748219
+          },
+          "ppo-finite-mc": {
+            "success_curve": [
+              [
+                0,
+                0.0
+              ],
+              [
+                512000,
+                0.0
+              ],
+              [
+                1024000,
+                0.0
+              ],
+              [
+                2048000,
+                0.0
+              ],
+              [
+                4096000,
+                0.0
+              ],
+              [
+                6144000,
+                0.0
+              ],
+              [
+                8192000,
+                0.0
+              ]
+            ],
+            "success_auc": 0.0,
+            "T80": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "T90": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "actual_training_transitions": 9625600,
+            "optimizer_calls": 48128,
+            "trainer_process_seconds": 596.729609395,
+            "wrapper_seconds": 603.814156706
+          }
+        },
+        "paired_auc_gain": 0.0,
+        "paired_final_success_gain": 0.0,
+        "observed_T80_speedup": null,
+        "candidate_uses_no_more_optimizer_calls": false
+      },
+      {
+        "seed": 3,
+        "common_steps": [
+          0,
+          512000,
+          1024000,
+          2048000,
+          4096000,
+          6144000,
+          8192000
+        ],
+        "methods": {
+          "ppo-gae": {
+            "success_curve": [
+              [
+                0,
+                0.0
+              ],
+              [
+                512000,
+                0.0
+              ],
+              [
+                1024000,
+                0.0
+              ],
+              [
+                2048000,
+                0.0
+              ],
+              [
+                4096000,
+                0.0
+              ],
+              [
+                6144000,
+                0.0
+              ],
+              [
+                8192000,
+                0.0
+              ]
+            ],
+            "success_auc": 0.0,
+            "T80": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "T90": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "actual_training_transitions": 10240000,
+            "optimizer_calls": 28076,
+            "trainer_process_seconds": 546.7570457249999,
+            "wrapper_seconds": 553.982493085
+          },
+          "ppo-finite-mc": {
+            "success_curve": [
+              [
+                0,
+                0.0
+              ],
+              [
+                512000,
+                0.0
+              ],
+              [
+                1024000,
+                0.0
+              ],
+              [
+                2048000,
+                0.0
+              ],
+              [
+                4096000,
+                0.0
+              ],
+              [
+                6144000,
+                0.0
+              ],
+              [
+                8192000,
+                0.0
+              ]
+            ],
+            "success_auc": 0.0,
+            "T80": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "T90": {
+              "observed_first_step": null,
+              "confirmed_at": null,
+              "censored": true,
+              "last_observed_step": 8192000,
+              "interpretation": "No two consecutive observed checkpoints crossed threshold; no interpolated crossing claim"
+            },
+            "actual_training_transitions": 9574400,
+            "optimizer_calls": 47872,
+            "trainer_process_seconds": 596.690855391,
+            "wrapper_seconds": 621.582896607
+          }
+        },
+        "paired_auc_gain": 0.0,
+        "paired_final_success_gain": 0.0,
+        "observed_T80_speedup": null,
+        "candidate_uses_no_more_optimizer_calls": false
+      }
+    ],
+    "mean_paired_auc_gain": -0.0016276041666666667,
+    "twofold_observed_T80_screen": false,
+    "final_success_point_preserved_all_seeds": false,
+    "no_more_optimizer_calls_all_seeds": false,
+    "material_compute_matched_result_established": false,
+    "compute_requirement": "Also compare measured learner time from retained TensorBoard events; equal ceilings and optimizer counts alone do not establish equal total compute.",
+    "scope": "Fresh random initialization,3paired training seeds on one frozen task. Public development curves, not independent confirmation or held-out task validation. Negative results and censored crossings retained."
+  },
+  "decision": "Finite MC fails this from-scratch10min screen; all3MCcurves0, greater learner work, no promotion or larger-budget rescue",
+  "protected_benchmark_replaced": false
+}

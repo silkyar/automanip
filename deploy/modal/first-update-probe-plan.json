@@ -1,0 +1,82 @@
+{
+  "experiment_id": "stackcube-first-update-probe-20261028",
+  "launch_enabled": true,
+  "approval_scope": "one first-update mechanism probe only; stop and reassess",
+  "user_authorization": "User explicitly approved this probe with production reconstruction, narrow assisted first-update conclusions and mandatory reassessment afterward.",
+  "scientific_plan": "docs/research-strategy-diagnosis-20261028.md",
+  "scientific_plan_sha256": "dd227382442e0beff6602f78a7c32261456b370be031c4f92bdc266c5af538e5",
+  "maximum_gpu_workers": 1,
+  "budget_cap_usd": 1,
+  "shared_budget_cap_usd": 100,
+  "maximum_new_transitions": 201600,
+  "function_timeout_seconds": 550,
+  "startup_timeout_seconds": 30,
+  "internal_subprocess_seconds": 510,
+  "submission_lease_seconds": 580,
+  "collection_seeds": [
+    90282001,
+    90282002,
+    90282003
+  ],
+  "probe_reset_seeds": [
+    90283001,
+    90283002,
+    90283003
+  ],
+  "cpu_preflight_sha256": "4ae681e4077b9e3d340afa02b78615baca76d598e3314223816e33a4401b8c06",
+  "historical_hyperparameter_receipt_sha256": "12f0a3f50d9c66a40b20cc719b59a255d051f4535becaaa3bedacd0499504d8d",
+  "actual_args": {
+    "num_steps": 50,
+    "num_envs": 1024,
+    "batch_size": 51200,
+    "minibatch_size": 1600,
+    "update_epochs": 8,
+    "gamma": 0.9,
+    "gae_lambda": 0.9,
+    "finite_horizon_gae": false,
+    "norm_adv": true,
+    "clip_coef": 0.2,
+    "clip_vloss": false,
+    "target_kl": 0.1,
+    "ent_coef": 0.003,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "learning_rate": 0.0003
+  },
+  "local_to_image": {
+    "research/discovery/first_update_probe.py": "/opt/probe/first_update_probe.py",
+    "research/discovery/run_first_update_probe.py": "/opt/probe/run_first_update_probe.py",
+    "research/discovery/bc-residual-exploration-v2/assist-bc-ppo-residual-std.py": "/opt/probe/production.py",
+    "runs/stackcube-bc-exploration-pilot-20261028/assist-bc-ppo-residual-std/native/work/runs/stackcube-bc-exploration-pilot-20261028-assist-bc-ppo-residual-std-seed-1/ckpt_1.pt": "/opt/probe/initial.pt",
+    "runs/stackcube-bc-exploration-pilot-20261028/bc-only/manifest.json": "/opt/probe/bc/manifest.json",
+    "runs/stackcube-bc-exploration-pilot-20261028/bc-only/weights.json": "/opt/probe/bc/weights.json"
+  },
+  "image_files": {
+    "/opt/probe/first_update_probe.py": "06d36f5fdfe66669cc18f4e47cc755fbdc65eb3eed50ba252fceaf81c8f2fca2",
+    "/opt/probe/run_first_update_probe.py": "113356bd7e543d4a056f7aa66a4b29f72518c7df688c659ddb5dff844086efef",
+    "/opt/probe/production.py": "c5ca37a6ff22ddd2e89288f5697e3041507e834adf8f8731a49a17d1423fd200",
+    "/opt/probe/initial.pt": "f41f449b6b8c9f655698c8d36fd8e808f0dc1dc1b31eef5aaea96e0b51453d58",
+    "/opt/probe/bc/manifest.json": "d2ea7ec00b2f5b4d21028d52c18dc66ef00a18a7695f4675fe8a4f5a065c9da9",
+    "/opt/probe/bc/weights.json": "4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2"
+  },
+  "adapter_sha256": "c44f2b8f7920f3219ca453d70871797d01759b21cd7829104b54117031c60dff",
+  "protected_benchmark_queries": 0,
+  "automatic_followups": false,
+  "cost_estimate": {
+    "source": "https://modal.com/pricing",
+    "verified_date": "2026-10-28",
+    "L40S_usd_per_second": 0.000542,
+    "cpu_core_usd_per_second": 1.31e-05,
+    "memory_gib_usd_per_second": 2.22e-06,
+    "max_600s_gpu_cpu4_ram16_usd": 0.37795199999999995,
+    "note": "Remaining envelope covers storage/egress and brief local submission overhead; no CPU cloud coordinator."
+  },
+  "implementation_notes": [
+    "Exact initial production full-Agent checkpoint, including critic/logstd, is reused; fresh optimizer.",
+    "Native own checkpoint read only by weights_only reader inside restricted candidate container; never trusted evaluator.",
+    "Fresh collection reset and sampling seeds; original400-step builtin eval omitted, so no historical RNG/trajectory reproduction claim.",
+    "Three data draws from one assisted actor, not three independent training seeds.",
+    "Actor movement response branches hold historical critic and noise fixed; not alternative PPO training procedures."
+  ],
+  "analysis_source_sha256": "17b2a81e55882f6ff7591e4b4471ad9f2abc55f12bc7ca98182de0b104783f38"
+}

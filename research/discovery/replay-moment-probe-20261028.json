@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "state": "passed",
+  "cpu_seconds": 0.079200167034287,
+  "source_sha256": "d5ef313a3eeabe8f9558f7ff30577f047362472d5587654ca6609d60924a4d4f",
+  "upstream_commit": "a318a266679bec3f9d93c44e029860a6da077c89",
+  "upstream_files": {
+    "sbx/sac/policies.py": "985a4e76bcaacc055b9be312d6ce813260f72792235e6d7d50fbcebf10b8e3af",
+    "sbx/sac/sac.py": "ea6497a8fe49549de757ccc1531b619295fd012188afbb86f03ffe56014af30c",
+    "train.py": "1c4ea95b04bd9947fdfd2fc79c97a8dedbed6ca5dd7cd43ded41403f90e79247"
+  },
+  "scope": "CPU scalar-feature algebra/autodiff; no Flax numerical parity or robot-learning claim",
+  "shifted_bn_aliasing": {
+    "current_feature_mean": -2.0,
+    "next_feature_mean": 2.0,
+    "within_half_variance": 5.0,
+    "pooled_variance": 9.0,
+    "joint_normalized_half_means": [
+      -0.6666666666666667,
+      0.6666666666666667
+    ],
+    "split_normalized_half_means": [
+      0.0,
+      0.0
+    ],
+    "split_halves_become_identical": true,
+    "no_shift_control_identical": true,
+    "interpretation": "Separate centering erases a between-group shift; this is not a target-error measurement."
+  },
+  "shared_ema": {
+    "momentum_old_weight": 0.99,
+    "correct_union_mean": 0.2475,
+    "correct_union_variance": 2.0700000000000003,
+    "wrong_average_half_variance": 2.0300000000000002,
+    "wrong_twice_updated_mean": 0.245225,
+    "updates_per_normalizer": 1
+  },
+  "textbook_unclipped_postwarm_forward": {
+    "0.0": {
+      "joint_split_maxabs": 2.220446049250313e-16,
+      "common_running_normalization_maxabs": 2.220446049250313e-16
+    },
+    "0.001": {
+      "joint_split_maxabs": 4.440892098500626e-16,
+      "common_running_normalization_maxabs": 4.440892098500626e-16
+    }
+  },
+  "stopped_correction_jacobians": {
+    "joint_current_output_wrt_next_half_jacobian_frobenius": 0.3725641663102725,
+    "split_current_output_wrt_next_half_jacobian_frobenius": 0.0,
+    "full_joint_split_jacobian_maxabs": 0.39660379731523354,
+    "jacobian_evaluations": 2,
+    "scalar_reverse_mode_backwards": 16,
+    "interpretation": "Stop-gradient corrections allow equal forward values but different training Jacobians."
+  },
+  "pinned_expression_negative_conditions": {
+    "ordinary_variance_zero_epsilon": {
+      "unclipped_joint_split_maxabs": 3.3306690738754696e-16,
+      "clipped_joint_split_maxabs": 3.3306690738754696e-16,
+      "unclipped_joint_vs_common_running_maxabs": 0.0,
+      "unclipped_split_vs_common_running_maxabs": 3.3306690738754696e-16
+    },
+    "ordinary_variance_pinned_epsilon": {
+      "unclipped_joint_split_maxabs": 0.00017274067830119755,
+      "clipped_joint_split_maxabs": 0.00017274067830119755,
+      "unclipped_joint_vs_common_running_maxabs": 0.0007308225861724083,
+      "unclipped_split_vs_common_running_maxabs": 0.0007152044775358135
+    },
+    "low_within_group_variance_pinned_epsilon": {
+      "unclipped_joint_split_maxabs": 0.6261391745841168,
+      "clipped_joint_split_maxabs": 0.8743264028388451,
+      "unclipped_joint_vs_common_running_maxabs": 0.00022077540572651433,
+      "unclipped_split_vs_common_running_maxabs": 0.6260068823619133
+    }
+  },
+  "new_environment_transitions": 0,
+  "optimizer_calls": 0,
+  "fitted_rows": 0,
+  "teacher_rows": 0,
+  "gpu_seconds": 0,
+  "dollars": 0,
+  "conclusion": "Joint moments preserve distribution differences during BN warmup; BRN values/Jacobians/epsilon must be distinguished. No claim of accurate Bellman targets or useful policy gradients."
+}

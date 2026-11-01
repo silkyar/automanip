@@ -1,0 +1,177 @@
+{
+  "format": "automanip-continuation-correction-public-probe-v1",
+  "created_at": 1793396347.9387589,
+  "execution_authorized": true,
+  "user_authorization": "Continueautonomousresearchuntilstopped; GPUcostnotanissue",
+  "production_pins": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "collection_seeds": [
+    2,
+    3
+  ],
+  "diagnostic_seed_bases": [
+    95800000,
+    95802000
+  ],
+  "noise_seed_bases": [
+    95810000,
+    95811000
+  ],
+  "assignment_seed_bases": [
+    95820000,
+    95821000
+  ],
+  "timing_seed_bases": [
+    95830000,
+    95831000
+  ],
+  "policies": {
+    "2": "policies/2",
+    "3": "policies/3"
+  },
+  "policy_files": {
+    "policies/2/manifest.json": "2b5a9d68ce79bd89e080aeab58dda9579c63136d20ebf867e974489a3844ea9f",
+    "policies/2/weights.json": "d17c38edc1797b7766685dac257fe9eeb22fe5e04f1f1b21200fbf79092c7ce1",
+    "policies/3/manifest.json": "666be4aa90d18b83c8e0f7d39a3bd9946a58fb368246d83b3f272d5ec25c3a7b",
+    "policies/3/weights.json": "7f550fa77a6258c7f2baa66e5ba2356c94bb4f7816c06822d22e80b8eb845257",
+    "heads/2.json": "1e1033b2b1baa90b5f346651652067efd1225284bc19d092b7c608226b66acfd",
+    "heads/3.json": "0b1415192cd4b11d57c6f59847fa1713c346ed2ffeed97358d0742a19627fc9f"
+  },
+  "heads": {
+    "2": "heads/2.json",
+    "3": "heads/3.json"
+  },
+  "gaussian_std": {
+    "2": [
+      0.21376303066542743,
+      0.11388461260367895,
+      0.19321162693340854,
+      0.136129309131641,
+      0.5618684109040332,
+      0.26014139714134854,
+      0.6159403813031987,
+      0.3304149007024842
+    ],
+    "3": [
+      0.21703058421595622,
+      0.12067180582042904,
+      0.1968961596991939,
+      0.14177268532901366,
+      0.5704647419570243,
+      0.26284216801211935,
+      0.6245933831025609,
+      0.3328807184633203
+    ]
+  },
+  "source_prefixes": [
+    {
+      "training_seed": 2,
+      "environment_transitions": 8192000,
+      "checkpoint_trainer_seconds": 465.05150610299995,
+      "weights_sha256": "d17c38edc1797b7766685dac257fe9eeb22fe5e04f1f1b21200fbf79092c7ce1",
+      "source_acquisition": "Already counted completed from-scratch training run; not new probe training"
+    },
+    {
+      "training_seed": 3,
+      "environment_transitions": 8192000,
+      "checkpoint_trainer_seconds": 457.51907834099995,
+      "weights_sha256": "7f550fa77a6258c7f2baa66e5ba2356c94bb4f7816c06822d22e80b8eb845257",
+      "source_acquisition": "Already counted completed from-scratch training run; not new probe training"
+    }
+  ],
+  "modes": [
+    "stochastic"
+  ],
+  "branch_order": [
+    "learned_fixed_time",
+    "fixed_threshold",
+    "time_continuation",
+    "state_continuation"
+  ],
+  "max_public_transitions_per_collection": 25600,
+  "max_public_transitions": 51200,
+  "optimizer_calls": 0,
+  "confirmation_queries": 0,
+  "final_queries": 0,
+  "partition": "public-diagnostic-not-learner-input",
+  "hypothesis": "Conditionalcontinuationvaluecanchoosewhenacquiredpartialskillshouldyieldtoafixedpersistentcorrection,betterthanabsoluteconfidenceorafixedlearnedclocktime.",
+  "training": "Existing956trainingcorpusonly. Payoffh:current257actorfeatures+remainingtime+square,512fitactualcorrectivedecisions/source; supportfromsamefitstates,95thpercentileunlabeledinternalcalibration. Continuation:512fitfullbasepaths/source,backwardregressionofrealizedfuturecashflows,terminalnaturalbasefinalsuccess. No954/955/957publicrolloutsfitanycomponent.",
+  "controls": "Stronglearnedfixedtime:7five-steptimebinsfrom512fitcorrectiveoutcomes,posterior(s+1)/(n+2),earliestbestbinmidpoint. Fixed.8payoffthreshold. Time-onlylearnedcontinuationand17featurestatecontinuationbothsharepayoff/support/margin.01. Allcorrectorsuseidenticalzero-arm/opengripperprior;randomized16lanes/arm/batch.",
+  "fixed_time_fits": [
+    {
+      "seed": 2,
+      "counts": [
+        67,
+        79,
+        63,
+        82,
+        71,
+        75,
+        75
+      ],
+      "successes": [
+        8,
+        36,
+        30,
+        46,
+        40,
+        43,
+        43
+      ],
+      "posterior_scores": [
+        0.13043478260869565,
+        0.4567901234567901,
+        0.47692307692307695,
+        0.5595238095238095,
+        0.5616438356164384,
+        0.5714285714285714,
+        0.5714285714285714
+      ],
+      "fixed_time": 37
+    },
+    {
+      "seed": 3,
+      "counts": [
+        79,
+        70,
+        80,
+        84,
+        62,
+        71,
+        66
+      ],
+      "successes": [
+        9,
+        27,
+        40,
+        45,
+        22,
+        31,
+        29
+      ],
+      "posterior_scores": [
+        0.12345679012345678,
+        0.3888888888888889,
+        0.5,
+        0.5348837209302325,
+        0.359375,
+        0.4383561643835616,
+        0.4411764705882353
+      ],
+      "fixed_time": 27
+    }
+  ],
+  "actor_interface": "Original48observationspluspolicy-internalcontrolstepfortime-conditionedpayoff/continuation. No geometry,privilegedvelocity,successflagorfuturestateaccess. Compositeclock-awareprototypeisoutsidehistoricalMLPartifactcontract.",
+  "primary": "Statecontinuationmustgain>=.10overlearnedfixedtime,>=.10overfixedthreshold,and>=.05overtime-onlycontinuation,withpositive98.75%blockbootstraplowerbounds. Fourthregisteredcontrasttimecontinuationminuslearnedfixedtimedescriptive. Stateevergrasp>=95%ineachfixedparent.",
+  "inference": "8whole64lane blocks/source,128episodes/arm/source;10000bootstrapdrawsseed95709999(reusedfixedanalysishelper),98.75%intervalsfourcontrasts. Conditionalon2fixedparents,nottrainingseedpopulation.",
+  "compute": "Payoff+continuation202regressionfitsplus2supportmetricinversions=204linearsystemsolves,104448parentfeatureforwards,1.976CPU seconds. No newtrainingphysics. Publicassessmentceiling51200transitions. Corpus204800andparentprefix/acquisitioncostsalreadyrecorded.",
+  "limitations": "Payoffisestimated,unlikeclassicalfinancialexercisevalue; observationsomitcubevelocity; learnedcontinuationmayexploitmodelerrors. Offlineimpliedpayoffsarenotactualreturns. Samefit-pathcashflowsandfunctionapproximationdonotgiveunbiasedoroptimalrobotpolicyguarantees.",
+  "followup": "Reassessafterthisonewaitingmechanismtest; noautomaticthreshold/projection/architecturegrid. Ifuseful,returntofromscratchsampleobjectivewithprospective<=5Mtotalinteractionsandmatchedpriors/compute;3seedsandheldtaskrequired. Ifnotuseful,preservefailureandstopthisassistedselectorbranchbeforeanotherfullmethod.",
+  "boundaries": "Trustedfixedprototypecodeacceptsonlyboundednumericheadsandsafeactors; rawtrainingtrajectoriesnotinscorer. Unchangedfrozenphysicalkernel/task; noarbitrarycandidatePython,nativepickleorevaluatorchange. CompositegateunsupportedbyhistoricalMLPartifactprotocol; resultsmustNOTenterbenchmarktableorpolicyregistry.",
+  "assistance": "Fixedzero-arm/open-gripperoptionplusown8.192Mparentcheckpoint. Parentsselectedfromalreadycompleted10.24Mtrainingruns; bothprefixrequirementandactualfullresearchcostremainaccounted. No fromscratch/speedupclaim."
+}

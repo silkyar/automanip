@@ -1,0 +1,85 @@
+{
+  "format": "automanip-learned-correction-prototype-analysis-v1",
+  "successes": {
+    "base": [
+      0,
+      0
+    ],
+    "random_switch": [
+      53,
+      55
+    ],
+    "learned_raw": [
+      26,
+      24
+    ],
+    "learned_supported": [
+      61,
+      39
+    ]
+  },
+  "ever_grasp": {
+    "base": [
+      128,
+      127
+    ],
+    "random_switch": [
+      124,
+      123
+    ],
+    "learned_raw": [
+      54,
+      59
+    ],
+    "learned_supported": [
+      127,
+      128
+    ]
+  },
+  "contrasts": {
+    "learned_supported-minus-base": {
+      "mean_gain": 0.390625,
+      "interval_98_75": [
+        0.33984375,
+        0.44140625
+      ]
+    },
+    "learned_supported-minus-learned_raw": {
+      "mean_gain": 0.1953125,
+      "interval_98_75": [
+        0.1171875,
+        0.26953125
+      ]
+    },
+    "learned_supported-minus-random_switch": {
+      "mean_gain": -0.03125,
+      "interval_98_75": [
+        -0.1328125,
+        0.06640625
+      ]
+    },
+    "learned_raw-minus-random_switch": {
+      "mean_gain": -0.2265625,
+      "interval_98_75": [
+        -0.296875,
+        -0.15234375
+      ]
+    }
+  },
+  "material_screens": {
+    "base": true,
+    "learned_raw": true,
+    "random_switch": false
+  },
+  "grasp_retention_point_screen": true,
+  "registered_all_screens_passed": false,
+  "new_public_transitions": 51200,
+  "optimizer_calls": 0,
+  "worker_seconds": [
+    33.535054259999995,
+    25.921818792
+  ],
+  "scope": "Assistedlearnedselectorprototypewithfixedcorrectiveactionprior; twofixed8.192Mparents. No fromscratch,fullretention,policyartifactpromotion,privateconfirmationor10xsamplereductionclaim.",
+  "state": "complete",
+  "decision": "Registeredoverallcomparisonfailed: supported39.06%versusrandom42.19%. Supportrescuedrawheadandpreservedgrasping,butlearnedusefultimingnotestablished. Nopromotion; investigatewaitingvaluewithno additionalrobotdatayet."
+}

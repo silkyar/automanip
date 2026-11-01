@@ -1,0 +1,2 @@
+# Operational dependency used by the unchanged official PPO logger.
+tensorboard==2.20.0

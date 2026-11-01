@@ -1,0 +1,20 @@
+{
+  "format": "automanip-executed-rehearsal-v1",
+  "created_at": 1793460756.979687,
+  "execution_authorized": true,
+  "hypothesis": "Raw preactivation rehearsal can penalize changes that leave deterministic clipped commands identical. Executed-action rehearsal may allow useful correction while retaining actual grasping.",
+  "data": "Exact same search teacher384rows/rehearsal1024rows, original actor features and internal validation episode splits. No new fitting data.",
+  "methods": [
+    "closed_form",
+    "raw_refinement",
+    "executed_refinement"
+  ],
+  "initialization": "Both refinements start at the retained registered closed-form raw-rehearsal optimum, delta relative to original actor. Trunk remains frozen.",
+  "fit": "256full-batch float64Adamsteps,LR.0003. Teacher squared error sums8coordinates and meansrows; rehearsal uses raw differences or clipped-action differences withweight4; ridge.001sumdelta\u00b2. This matches the closed-form raw-objective convention. Teacher loss remains raw to avoid zero gradient in wrong saturation. No weight/LR/steps grid.",
+  "essential_test": "Two-state saturation toy: raw optimum is stationary; another feasible readout improves teacher target and weight norm with exactly identical executed memory command. Verify teacher gradients survive wrong saturation. Measure raw stationary control and full physical/parameter metrics.",
+  "scope": "Only deterministic clipped MLP deployment. Raw Gaussian means are not behaviorally equivalent under added exploration noise; no claim about stochastic PPO preservation or CAPG improvement.",
+  "assessment": "Three safe MLPs512fresh966-seriesepisodes perparent,153600newtransitions. Closedform baseline is included so numerical raw-control drift cannot manufacture an advantage. Original task/evaluator/schema untouched.",
+  "primary": "Executed-refinement minusclosedform>=.10 andminusrawrefinement>=.10withpositive97.5%pairedblockCI; evergrasp>=.95ineachparent; reportallstages. Otherwise rejectmaterialimprovement. No score-drivenrefit.",
+  "budget": "Currentbranchingafterendpoint689920+153600=843520of1M; remaining156480. Newtrainingphysics0. Failed/negativeCPUworkandpriorparentacquisition separatelyaccounted.",
+  "followup": "Interpret only this behavioral preservation mechanism. Any gain must be replicated/compared against strong full-learning baselines and transfer before sample-efficiency/general claims."
+}

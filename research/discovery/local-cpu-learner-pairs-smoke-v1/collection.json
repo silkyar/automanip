@@ -1,0 +1,35 @@
+{
+  "purpose": "local-cpu-discriminator-dataflow-smoke",
+  "comparison_eligible": false,
+  "formal_benchmark_result": false,
+  "source_partition": "fresh-public-training",
+  "simulation_backend": "physx_cpu",
+  "seed_start": 90175000,
+  "episodes_per_arm": 64,
+  "arms": {
+    "random": {
+      "path": "research/discovery/local-cpu-learner-pairs-smoke-v1/random.npz",
+      "sha256": "ea68fa8958114922c763c9b1a1f05a8bcd94b67d31fe314b2511b997f6080fb9",
+      "weights_sha256": "b82b0dd646858e91f991cbfe8b7258d0d124a5df7c1512c40cc4782e5faa85cc",
+      "completed_episodes": 64,
+      "successes": 0,
+      "wall_seconds": 2.497487375017954,
+      "explicit_reset_calls": 64,
+      "explicit_reset_episodes": 64,
+      "vector_step_calls": 3200,
+      "environment_transitions": 3200
+    },
+    "bc": {
+      "path": "research/discovery/local-cpu-learner-pairs-smoke-v1/bc.npz",
+      "sha256": "de4e6f136ed946cd1c1cf50017221df56d5f0a72abe4b092f2b43a258544bda1",
+      "weights_sha256": "c13416787d05347ccc1e92ad95d48a1bb649b6d7a83e883823600db253b15a53",
+      "completed_episodes": 64,
+      "successes": 19,
+      "wall_seconds": 3.1061302079760935,
+      "explicit_reset_calls": 64,
+      "explicit_reset_episodes": 64,
+      "vector_step_calls": 3200,
+      "environment_transitions": 3200
+    }
+  }
+}

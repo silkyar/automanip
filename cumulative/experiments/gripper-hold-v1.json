@@ -1,0 +1,80 @@
+{
+  "format": "automanip-gripper-hold-experiment-v1",
+  "registered_at": 1793463308.432308,
+  "execution_authorized": true,
+  "authorization": "User continuous autonomous research and GPU authorization; separate bounded study after closed negative GPD pilot",
+  "hypothesis": "A known gripper hold mean reduces unintended closing under the existing absolute gripper controller and may improve early from-scratch PPO exploration; it may instead impair acquiring grasps.",
+  "competing_hypotheses": [
+    "Hold coordinate improves sequencing and release before sufficient early experience accumulates",
+    "Initial closing bias helps grasp discovery; removing it delays learning",
+    "Previous proposal benefit was only a local late-stage search effect and will not transfer to from-scratch learning"
+  ],
+  "intervention": "One fixed isolated unit per hidden layer approximates40*q7-.6; learned255-unit residual uses fresh production random initialization. Fixed gradient masks, no pretrained weights or data. Existing48obs/8actions/3x256tanh safe MLP.",
+  "controls": "Full original256-unit strong PPO; identical masked255-unit residual with fixed hold path output0; candidate uses same masked residual with output1/.003. Critic/logstd/random draws and original GAE/reward unchanged. All shared instrumentation identical.",
+  "initialization": "Fresh seed41, no source actors, demonstrations, search queries or prior simulator training data. Analytic actuator prior explicitly disclosed; not a newly learned control law.",
+  "training": {
+    "format": "automanip-gripper-hold-training-v1",
+    "execution_authorized": true,
+    "methods": [
+      "full",
+      "masked",
+      "hold"
+    ],
+    "seed": 41,
+    "files_sha256": {
+      "hold.py": "a85249684680d6dd4d67ec75f306515d6d6e127caa57eea9cdf00640721cd63f",
+      "gripper_hold_initialization.py": "2152bf126699059858be45a5a3974b45f17cabbe85886a59f37a283718003a93",
+      "full.py": "90416794aabb1b9abb6a02e8f09c1fbd41ae93c330d5be67d6bc5ae6714c9bc7",
+      "masked.py": "8e5950fce0695f502bf697878f4e6f681c2488d31dbd5a47a5f42ac1d79604c8",
+      "export_helper.py": "549f3d7e69a68e81b38fa627ffadeed9caf6af1d9bcb6b8278026cd85367d5bb"
+    },
+    "source_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+    "max_training_transitions_per_trial": 4096000,
+    "trainer_seconds": 300,
+    "checkpoints": [
+      0,
+      512000,
+      1024000,
+      2048000,
+      4096000
+    ],
+    "production_pins": {
+      "mani_skill": "3.0.0b21",
+      "sapien": "3.0.0b1",
+      "torch": "2.6.0+cu124",
+      "numpy": "1.26.4",
+      "gymnasium": "0.29.1"
+    }
+  },
+  "assessment": {
+    "format": "automanip-gripper-hold-score-v1",
+    "execution_authorized": true,
+    "development_seed_base": 96900000,
+    "episodes": 128,
+    "checkpoints": [
+      0,
+      512000,
+      1024000,
+      2048000,
+      4096000
+    ],
+    "max_public_transitions_per_trial": 32000,
+    "confirmation_queries": 0,
+    "final_queries": 0
+  },
+  "budget": {
+    "max_new_training_transitions": 12288000,
+    "max_new_public_transitions": 96000,
+    "max_trainer_seconds_per_trial": 300,
+    "GPU": "L40S",
+    "trials": 3,
+    "automatic_retries": 0
+  },
+  "primary": "Normalized success AUC over common completed registered checkpoints: hold must exceed BOTH full and masked controls by>=.10, with final success no lower. Report every curve, stage metric and compute; this is a single-training-seed screen only.",
+  "secondary": "T80/T90 require two consecutive registered checkpoints; unreached thresholds censored without interpolation. Stage rates diagnose grasp impairment or later release changes, not substitute primary success.",
+  "falsification": "If candidate fails primary screen, do not infer sample efficiency or launch automatic seeds/variants. Preserve negative and reassess. If material signal passes, replicate matched training seeds before promotion; no10x claim from this pilot.",
+  "compute": "Equal process/transition ceilings; report consumed transitions, optimizer calls, process/wrapper/learner time, exports/traces and scoring. Masking overhead counted; equal ceilings are not equal consumed compute.",
+  "limitations": "Actuator-specific prior on one task/seed. Gaussian noise plus clipping still induces inward drift near limits; hold is a mean map, not zero physical drift. Frozen wire may alter capacity; both masked and full controls required.",
+  "CPU_gate": "cumulative/results/gripper-hold-CPU-20261031.json",
+  "preserve": "All trusted evaluator/task/seeds/pins and historical artifacts unchanged; scoring accepts safe MLPs only in separate image."
+}

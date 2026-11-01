@@ -1,0 +1,79 @@
+{
+  "format": "automanip-feature-value-experiment-v1",
+  "created_at": 1793388026.410987,
+  "execution_authorized": true,
+  "user_authorization": "Continue autonomous research until stopped; GPU cost explicitly not an issue",
+  "hypothesis": "Cross-fitted current actor features with correct remaining-time structure can yield better finiteMC policy learning than identical state-only features, without a separate critic MLP.",
+  "evidence": "Clock effect passed analytical constant-state control,12cellwhole-episode crossfit, fixed shuffled-clock control, and full146192parameter trajectory-gradient covariance diagnostic. None is itself a task improvement.",
+  "training_plan": {
+    "format": "automanip-feature-value-training-v1",
+    "execution_authorized": true,
+    "programs": {
+      "ppo-feature-value": "dd965c7a41ec45d4d11ef8bc9d5f06c43c34ae632ac64dfbb8d72561535ccdb7",
+      "ppo-clock-feature-value": "3ebe380ee7f99f366028022df5aa5c9332e71acefc668dc2caf318df9206bc34"
+    },
+    "helper_sha256": "549f3d7e69a68e81b38fa627ffadeed9caf6af1d9bcb6b8278026cd85367d5bb",
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "max_training_transitions_per_trial": 10240000,
+    "trainer_seconds": 600,
+    "checkpoints": [
+      0,
+      512000,
+      1024000,
+      2048000,
+      4096000,
+      6144000,
+      8192000,
+      10240000
+    ],
+    "source_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+    "source_acquisition_transitions": 0,
+    "teacher_data": false,
+    "observation_dim": 48,
+    "action_dim": 8,
+    "gamma": 0.9,
+    "gae_lambda": 0.9,
+    "entropy": 0.003,
+    "num_envs": 1024,
+    "num_steps": 50,
+    "num_minibatches": 32,
+    "update_epochs": 8,
+    "learning_rate": 0.0003,
+    "partial_reset": false,
+    "checkpoint": null,
+    "production_pins": {
+      "mani_skill": "3.0.0b21",
+      "sapien": "3.0.0b1",
+      "torch": "2.6.0+cu124",
+      "numpy": "1.26.4",
+      "gymnasium": "0.29.1"
+    },
+    "value_helper_sha256": "c7c49955908fb3159130f453f117c27c89093c13170bcbedf4f4d60cb56f5cda",
+    "method_change": "Complete finiteMC target, PPO actor-only updates; critic is episode-crossfit257feature linear regression. Clock control uses same parameters/fits; h(t)=1-gamma^(50-t). Legacy inactive critic instantiated only to preserve paired actor/RNG initialization.",
+    "baseline_fit_compute": "Cache features in ordinary actor forward; two CPUfloat64solves per rollout. Time and covariance operation estimates explicitly recorded. Disabled critic MLP has no forward/backward/optimizer work."
+  },
+  "compared_existing_controls": "cumulative/results/scratch-credit-20261030.json: exact original GAE and neuralMC procedures/seeds. Their results remain unchanged; no unneeded reruns.",
+  "comparison": "Both NEWmethods remove the neural critic and use identical actor-only PPO/linear fitting. Their only difference is clock versus state-only value features. Gains over old neural baselines bundle critic fitting/objective changes; do not attribute those solely to clock.",
+  "development_seed_bases": [
+    94100000,
+    94101000,
+    94102000
+  ],
+  "episodes_per_checkpoint": 128,
+  "primary": "Per-seed paired successAUC on common prespecified transition prefixes versus new state-only control AND existing strongGAE; report complete curves and600sactualendpoints. T80/T90require2consecutiveobservedcrossings; censor rather than invent ratios.",
+  "material_screen": "Clock method must improve mean normalizedAUC by>=.10 against BOTH references, without worse common-endpoint mean success. Assess all3seedpairs. No10xclaim without measured crossings, fullcomputecomparison and laterheldtaskreplication.",
+  "compute": "Same600s/10.24Mceilings, sameL40S/4CPU/16GB. Report actual actorforward/backward rows, optimizercalls, linearfit time/solves/FLOPestimates, totalGPUworker time and blindtrace/export overhead. Extra linear fitting is counted; removed neuralcritic work is explicit.",
+  "actor_interface": "Unchanged48stateinputs/8rawjointdelta outputs,3x256tanh. Clock affects training value baseline only; no clock or learned value model enters exported actor/evaluator.",
+  "source_acquisition_transitions": 0,
+  "max_training_transitions": 61440000,
+  "max_public_scoring_transitions": 307200,
+  "final_queries": 0,
+  "confirmation_queries": 0,
+  "followup": "Reassess after this one mechanism study; no automatic larger budgets or parameter/architecture sweep.",
+  "adapter_sha256": "72ab195ca511f27d22e0271de8664a85dbb40b7d4b748e7849151b3e0d014813",
+  "preparation_source_sha256": "54bd1b3a25d3febdddf6cf56a503a76da4d715b1d49859b9f54f2124284eda37"
+}

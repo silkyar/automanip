@@ -1,0 +1,112 @@
+{
+  "format": "automanip-learned-correction-public-prototype-v1",
+  "created_at": 1793394479.1601422,
+  "execution_authorized": true,
+  "user_authorization": "Continueautonomousresearchuntilstopped; GPUcostnotanissue",
+  "production_pins": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "collection_seeds": [
+    2,
+    3
+  ],
+  "diagnostic_seed_bases": [
+    95700000,
+    95702000
+  ],
+  "noise_seed_bases": [
+    95710000,
+    95711000
+  ],
+  "assignment_seed_bases": [
+    95720000,
+    95721000
+  ],
+  "timing_seed_bases": [
+    95730000,
+    95731000
+  ],
+  "policies": {
+    "2": "policies/2",
+    "3": "policies/3"
+  },
+  "policy_files": {
+    "policies/2/manifest.json": "2b5a9d68ce79bd89e080aeab58dda9579c63136d20ebf867e974489a3844ea9f",
+    "policies/2/weights.json": "d17c38edc1797b7766685dac257fe9eeb22fe5e04f1f1b21200fbf79092c7ce1",
+    "policies/3/manifest.json": "666be4aa90d18b83c8e0f7d39a3bd9946a58fb368246d83b3f272d5ec25c3a7b",
+    "policies/3/weights.json": "7f550fa77a6258c7f2baa66e5ba2356c94bb4f7816c06822d22e80b8eb845257",
+    "heads/2.json": "89992eb16a371a3fd59c4f259c7f6d7da6a2d4f7806ce7ea7ccfd00bb309f478",
+    "heads/3.json": "23fd5b9643b249038c57bee396335ab2a99af90ebf88552852c45d75fc8e6eda"
+  },
+  "heads": {
+    "2": "heads/2.json",
+    "3": "heads/3.json"
+  },
+  "gaussian_std": {
+    "2": [
+      0.21376303066542743,
+      0.11388461260367895,
+      0.19321162693340854,
+      0.136129309131641,
+      0.5618684109040332,
+      0.26014139714134854,
+      0.6159403813031987,
+      0.3304149007024842
+    ],
+    "3": [
+      0.21703058421595622,
+      0.12067180582042904,
+      0.1968961596991939,
+      0.14177268532901366,
+      0.5704647419570243,
+      0.26284216801211935,
+      0.6245933831025609,
+      0.3328807184633203
+    ]
+  },
+  "source_prefixes": [
+    {
+      "training_seed": 2,
+      "environment_transitions": 8192000,
+      "checkpoint_trainer_seconds": 465.05150610299995,
+      "weights_sha256": "d17c38edc1797b7766685dac257fe9eeb22fe5e04f1f1b21200fbf79092c7ce1",
+      "source_acquisition": "Already counted completed from-scratch training run; not new probe training"
+    },
+    {
+      "training_seed": 3,
+      "environment_transitions": 8192000,
+      "checkpoint_trainer_seconds": 457.51907834099995,
+      "weights_sha256": "7f550fa77a6258c7f2baa66e5ba2356c94bb4f7816c06822d22e80b8eb845257",
+      "source_acquisition": "Already counted completed from-scratch training run; not new probe training"
+    }
+  ],
+  "modes": [
+    "stochastic"
+  ],
+  "branch_order": [
+    "base",
+    "random_switch",
+    "learned_raw",
+    "learned_supported"
+  ],
+  "max_public_transitions_per_collection": 25600,
+  "max_public_transitions": 51200,
+  "optimizer_calls": 0,
+  "confirmation_queries": 0,
+  "final_queries": 0,
+  "partition": "public-diagnostic-not-learner-input",
+  "hypothesis": "Outcomeheadstrainedonrandomizedtrainingchoicescanselectausefulpersistentcorrection; abstentionoutsideaction-conditionaldatasupportpreventsunsupportedearlyinterventions.",
+  "training": "Modelsfrozenfrom956trainingcorpus:102400transitionspersource,1024fit/512internalcal/512modeltestepisodespersource. Outcomeheadfitusesthefitpartitiononly; supportcutoffusesunlabeledinternalcalibrationtreatment1states. No954/955publicdiagnostictrajectoriesfitanymodel.",
+  "evidence": "HeldbatchBrierscreenspass2sources. Rawheadwouldtriggeron835/2048and587/2048recordedresetstates. Fixed95thpercentileleveragecutoffs4.00506and4.58633rejectalltheseresetswithoutnewlabels. Thisisheuristiccoverage,notastatisticalcertification.",
+  "intervention": "Four16lane armsrandomizedbeforeeach64lanerollout. BaseoriginalGaussianpolicy; randomtime10..44persistentcorrection; rawlearnedgate; samegateplusleveragecutoff. Bothlearnedgatesusecurrent48observation/actorfeaturesonly:boundedholdscore>=.8andhold-basescore>=.1. Oncechosen,zero7armdeltas/grip+1persistsuntil50. No geometrictrigger,stocksuccessflag,privilegedvelocityorclockenterslearnedgates.",
+  "primary": "Supportedminusbase>=.20; supportedminusraw>=.10; supportedminusrandom>=.10. Positive98.75%blockbootstraplowerboundforeach. Fourthregisteredcontrast rawminusrandomdescriptive. Requireearliergrasp-pointretention>=95%andnolossover5ppineachsource; thisisnotfullassetretention.",
+  "inference": "8whole64lane blocks/fixedsource;128assignedepisodesperarm/source.10000bootstrapdrawsseed95709999,98.75%intervalsfourcontrasts. Conditionalon2fixedparents;nottrainingseedpopulationgeneralization.",
+  "boundaries": "Trustedfixedprototypecodeacceptsonlyboundednumericheadsandsafeactors; rawtrainingtrajectoriesnotinscorer. Unchangedfrozenphysicalkernel/task; noarbitrarycandidatePython,nativepickleorevaluatorchange. CompositegateunsupportedbyhistoricalMLPartifactprotocol; resultsmustNOTenterbenchmarktableorpolicyregistry.",
+  "assistance": "Fixedzero-arm/open-gripperoptionplusown8.192Mparentcheckpoint. Parentsselectedfromalreadycompleted10.24Mtrainingruns; bothprefixrequirementandactualfullresearchcostremainaccounted. No fromscratch/speedupclaim.",
+  "followup": "Reassessoneclosedloopresult. No automaticthreshold/regularizationsweep. Anycandidateforofficialcomparisonneedsfrozen-safeMLPcompilation,fullclosedloopfidelity/retentionandlater3seed/heldtaskvalidation.",
+  "failure": "Noautoretry; retainincompletephysicsanderrors. Publicprototypeepisodesneverlearnerinput."
+}

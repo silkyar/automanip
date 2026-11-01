@@ -1,0 +1,31 @@
+{
+  "format": "automanip-feature-metric-CPU-gate-v1",
+  "created_at": 1793376353.301377,
+  "execution_authorized": true,
+  "collection_seeds": [
+    90282001,
+    90282002,
+    90282003
+  ],
+  "aggregation_report": "artifacts/cumulative/gradient-aggregation-cpu-v1/report.json",
+  "inputs": {
+    "research/feature_metric_probe.py": "0993b02732c2f835e76ef3c2b7905748ab68daec7a85a161e0c0a9e16ae0a618",
+    "artifacts/cumulative/gradient-aggregation-cpu-v1/report.json": "1c1d251b6c67a7d39ee4c5054c08080398a0021e2786af643285313d9f4bd46c",
+    "artifacts/cumulative/gradient-aggregation-cpu-v1/90282001-statistics.npz": "552adea80feb29624c0e51cc350f692222730151423cbca760c186827cb37962",
+    "artifacts/cumulative/gradient-aggregation-cpu-v1/90282002-statistics.npz": "b6a8e1a06400bfad533a692af9b9f79fc43d9704f3b02e29a294d813376222b0",
+    "artifacts/cumulative/gradient-aggregation-cpu-v1/90282003-statistics.npz": "0ea4e3033797933ec0cf091873a8224aee0e1a9c03542006854c2107166918d3"
+  },
+  "hypothesis": "Inverse feature covariance emphasizes weakly observed/noisy directions; an identity feature metric yields more reproducible directional gain from the same full gradient.",
+  "controls": "Same full51200-row score gradient, feature/whitened-mean coordinates, source policy, normalization and .01 current Gaussian KL; only preconditioning differs.",
+  "gate": "Identity positive in>=5/6 independent cross cells, cross/fitting gain>=.1, mean independent gain>=2x inverse metric. Otherwise no GPU direction probe.",
+  "eigen_diagnostic": "Split current-KL and independent projection at eigenvalue<=the already fixed ridge(.001*trace(C)/257); descriptive localization only.",
+  "budget": {
+    "max_wall_seconds": 120,
+    "new_environment_transitions": 0,
+    "optimizer_calls": 0,
+    "new_score_rows": 0,
+    "gpu_seconds": 0,
+    "dollars": 0
+  },
+  "scope": "Cached readout geometry of one assisted policy; not evidence that production PPO/Adam has this exact failure or that natural gradients are generally bad."
+}

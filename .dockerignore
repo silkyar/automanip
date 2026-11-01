@@ -1,0 +1,24 @@
+# Explicit build allowlist: no credentials, local environments, or artifacts.
+**
+!pyproject.toml
+!train.py
+!src/
+!src/**
+!scripts/
+!scripts/run_baseline.py
+!scripts/evaluate.py
+!scripts/smoke_simulator.py
+!tests/
+!tests/*.py
+!configs/
+!configs/*.json
+!requirements/
+!requirements/linux-cu124.txt
+!deploy/
+!deploy/runpod/
+!deploy/runpod/start.sh
+!THIRD_PARTY_NOTICES.md
+!third_party/
+!third_party/ManiSkill-LICENSE
+**/__pycache__/
+**/*.pyc

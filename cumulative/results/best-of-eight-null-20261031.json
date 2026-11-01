@@ -1,0 +1,17 @@
+{
+  "format": "automanip-best-of-eight-null-20261031",
+  "scope": "CPU arithmetic using existing training outcomes; homogeneous probability approximation, not a learned planner or policy score. Conditional-state heterogeneity changes coverage; no new physics.",
+  "parents": [
+    {
+      "parent": 2,
+      "unbranched_single_draw_success": 0.15711805555555555,
+      "homogeneous_independent_best8_coverage": 0.7452383772340407
+    },
+    {
+      "parent": 3,
+      "unbranched_single_draw_success": 0.11284722222222222,
+      "homogeneous_independent_best8_coverage": 0.6163039452630279
+    }
+  ],
+  "new_physics": 0
+}

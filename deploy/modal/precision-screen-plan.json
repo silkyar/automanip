@@ -1,0 +1,90 @@
+{
+  "experiment_id": "stackcube-precision-screen-20261027",
+  "launch_enabled": true,
+  "root_review_required_before_launch": false,
+  "scientific_plan": "docs/stackcube-precision-plan-20261027.md",
+  "scientific_plan_sha256": "9daf8f11c8ed3ac0b9e8f28a5c5eb2478834bfb8d8baa3cb6eed7686e6e5f714",
+  "jobs": [
+    {
+      "job_id": "stackcube-precision-screen-20261027-precision-constant-seed-1",
+      "method": "precision-constant",
+      "seed": 1,
+      "trainer_sha256": "cd7ee5704baa451c0fb616140be2b8efc1830ae1dd3d355fc7d83e435b411082",
+      "gpu": "L40S",
+      "trainer_seconds_cap": 2700,
+      "requested_steps": 50000000,
+      "actual_steps_ceiling": 49971200
+    },
+    {
+      "job_id": "stackcube-precision-screen-20261027-precision-entropy-anneal-seed-1",
+      "method": "precision-entropy-anneal",
+      "seed": 1,
+      "trainer_sha256": "4618b428c35838417b95996a4245530f3b24fd5011b674ef9666a1ae6319c761",
+      "gpu": "L40S",
+      "trainer_seconds_cap": 2700,
+      "requested_steps": 50000000,
+      "actual_steps_ceiling": 49971200
+    },
+    {
+      "job_id": "stackcube-precision-screen-20261027-precision-lr-anneal-seed-1",
+      "method": "precision-lr-anneal",
+      "seed": 1,
+      "trainer_sha256": "878c99d186f2bd554d36999e437302c52c768204246c5d4c35ecb68a34116a24",
+      "gpu": "L40S",
+      "trainer_seconds_cap": 2700,
+      "requested_steps": 50000000,
+      "actual_steps_ceiling": 49971200
+    }
+  ],
+  "arms": [
+    "precision-constant",
+    "precision-entropy-anneal",
+    "precision-lr-anneal"
+  ],
+  "training_seeds": [
+    1
+  ],
+  "gpu_requested": "L40S",
+  "max_parallel_trainers": 3,
+  "max_parallel_evaluators": 3,
+  "confirmation_queries": 0,
+  "development_episodes": 128,
+  "selected_steps": [
+    25600000,
+    38400000,
+    "final_actual_steps"
+  ],
+  "max_development_evaluations": 9,
+  "native_evaluator_timeout_seconds": 100,
+  "gpu_evaluator_timeout_seconds": 120,
+  "gpu_startup_timeout_seconds": 30,
+  "trainer_wrapper_timeout_seconds": 2760,
+  "trainer_hard_seconds": 2700,
+  "trainer_save_reserve_seconds": 20,
+  "coordinator_timeout_seconds": 7200,
+  "lease_policy": "absolute2700-second lease at trusted CPU dispatch; queue consumes lease; no refresh on preemption/retry",
+  "interruption_policy": "durable attempt marker before subprocess; no restart when marker exists; preserve failure",
+  "cost": {
+    "gpu_container_seconds_bound": 9720,
+    "gpu_cpu_ram_usd": 6.1228223999999996,
+    "conversion_cpu_usd": 0.018943199999999997,
+    "coordinator_usd": 0.019782,
+    "subtotal_usd": 6.1615476,
+    "batch_cap_usd": 7.0,
+    "reserve_usd": 0.8384524000000004
+  },
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "no_silent_checkpoint_dropping": true,
+  "optimizer_step_count": "exact cumulative optimizer steps measured after each actual optimizer.step; per-dimension logstd and actual entropy/LR traces validated",
+  "source_manifest": ".runtime/modal-precision-payloads/manifest.json",
+  "root_review": {
+    "approved_at": "2026-10-28T00:40:20.526926+00:00",
+    "scope": "Exactly three reviewed seed-1 precision arms; dedicated L40S; 50M requested / 49,971,200 actual ceiling; original2700-second leases; at most nine frozen-development evaluations; $7 total batch cap",
+    "checks": "Root read complete adapter/contracts and reviewed all three source generation/strip guarantees; independently passed five adapter tests and three precision tests; frozen protocol unchanged",
+    "additional_seeds": false,
+    "additional_smokes": false,
+    "confirmation_queries": 0,
+    "fresh_retries": false,
+    "replication_launch_authorized": false
+  }
+}

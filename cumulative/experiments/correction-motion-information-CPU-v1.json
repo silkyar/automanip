@@ -1,0 +1,34 @@
+{
+  "format": "automanip-correction-motion-information-CPU-v1",
+  "registered_at": 1793469752.063594,
+  "execution_authorized": true,
+  "question": "Does pre-intervention object motion add reproducible predictive information about correction success beyond current observation and decision time?",
+  "hypotheses": [
+    "Current48observation is sufficient for tested predictor; gate failures mainly involve objective/support/selection",
+    "Unobserved instantaneous cube motion matters; pastpose differences recover enough of it",
+    "Oracle motion helps but one-frame average motion does not; simple history is insufficient"
+  ],
+  "data": "Existing randomizedswitch training corpus956 only, sourceparents2/3. One assigneddecision per episode, treatment1 only. Preserve originalwholevectorbatch split: fitbatch%4in2,3; test%4==0; calibration%4==1unused.",
+  "models": [
+    "time7bins",
+    "current256RFF+time",
+    "current512RFF+time",
+    "current+oraclepreactionvelocity6,256RFF+time",
+    "current+oneframehistoryvelocity6,256RFF+time",
+    "current+time/batchmatchedshuffledoraclevelocity6,256RFF+time"
+  ],
+  "features": "Current48state plus normalizeddecisiontime. Oracle cubeAlinear/angular velocity from savedAFTER-step(t-1), notpostintervention(t). History uses observations(t) and(t-1) only,20Hzlinear/quaternionlogdifference. No taskflags, futureobservations/actions, rewards oroutcomes in features. Fit-only standardizationfloor1e-3.",
+  "fit": "Ridge probability regression, lambda=.001*trace(gram)/dimension. RFFexp(-||z-zprime||^2/(2*dimension)) approximatekernel, fixed2draws97110000/97120000, nohyperparametergrid. Clip predictions[0,1]. Timebasisincludedinallmodels.22solves total;512fit/256testcorrectionepisodes perparent.",
+  "primary": "Oraclevelocity must reduce heldbatchBrier by>=.02absolute AND>=20%relative vsBOTH widercurrent512 andshuffledvelocity inbothRFFdraws andbothparents, withpositive99.375%pairedbatchbootstrap lowerbounds.10000resamples,seed97109999. This is prioritization,notnecessarycondition for robotlearning.",
+  "secondary": "Report historygapclosure andallmodelBrier,per-batchdifferences,featuredraws andbase-rate. No thresholdselection ornewgate/controller is fitted frompublicrollouts.",
+  "safeguards": "Unit tests must establishpreactionvelocityindex andfeatureinvariance to changingpostdecisiontrajectory. Keepoutcomelabelsout ofextractor; fit-only scaling; entirebatchesnevercrossfit/test. Reusedtestcorpusnotfresh; predictiveassociationdoesnotidentifycausalvelocityeffect orclosedloopimprovement.",
+  "budget": {
+    "new_environment_transitions": 0,
+    "simulator_queries": 0,
+    "max_linear_solves": 22,
+    "optimizer_calls": 0,
+    "policy_exports": 0,
+    "robot_assessments": 0
+  },
+  "decision": "No automaticGPUlaunch regardless ofoutcome. Use resulttoacceptorrejectthespecificmotion-informationopportunitybeforedesigninglargerrepresentation/reusemethod. Preserve negativeevidence andunchangedhistoricalbenchmark."
+}

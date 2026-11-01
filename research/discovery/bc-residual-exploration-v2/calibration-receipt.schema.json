@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AUTOMANIP_EXPLORATION_INITIALIZATION inner JSON object",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "mechanism": {
+      "type": "string"
+    },
+    "dataset_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "training_episode_indices": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "bc_actor_weights_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "residual_patch_source_sha256": {
+      "const": "32475453cf5080e0cfdd0c0ed11170f785a27e947c3ca7eb7e744faa8f51692a"
+    },
+    "frozen_assisted_base_sha256": {
+      "const": "7a4de8deecf0adc15d9f8beaef1bf6b9874ca9eb7b0122efbab5d9b1bc80d427"
+    },
+    "excluded_validation_episode_indices": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "residual_forward_rows": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "residual_rms": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "number",
+        "minimum": 0
+      }
+    },
+    "original_std": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "number",
+        "minimum": 0.6065305,
+        "maximum": 0.6065308
+      }
+    },
+    "initial_std": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "number",
+        "minimum": 0.0499999,
+        "maximum": 0.6065308
+      }
+    },
+    "floor": {
+      "const": 0.05
+    },
+    "ceiling": {
+      "const": 0.6065306597126334
+    },
+    "trainable_after_initialization": {
+      "const": true
+    },
+    "new_environment_transitions": {
+      "const": 0
+    },
+    "new_optimizer_updates": {
+      "const": 0
+    },
+    "mean_critic_reward_architecture_unchanged": {
+      "const": true
+    },
+    "note": {
+      "type": "string"
+    },
+    "calibration_wall_seconds": {
+      "type": "number",
+      "minimum": 0
+    }
+  },
+  "required": [
+    "mechanism",
+    "dataset_sha256",
+    "training_episode_indices",
+    "bc_actor_weights_sha256",
+    "residual_patch_source_sha256",
+    "frozen_assisted_base_sha256",
+    "excluded_validation_episode_indices",
+    "residual_forward_rows",
+    "residual_rms",
+    "original_std",
+    "initial_std",
+    "floor",
+    "ceiling",
+    "trainable_after_initialization",
+    "new_environment_transitions",
+    "new_optimizer_updates",
+    "mean_critic_reward_architecture_unchanged",
+    "note",
+    "calibration_wall_seconds"
+  ]
+}

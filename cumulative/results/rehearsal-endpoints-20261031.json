@@ -1,0 +1,130 @@
+{
+  "format": "automanip-rehearsal-endpoint-analysis-v1",
+  "state": "complete",
+  "new_public_transitions": 76800,
+  "optimizer_calls": 0,
+  "worker_seconds": [
+    13.807065003000002,
+    16.926154386,
+    12.420793083000003,
+    13.713849046,
+    11.415659184000006,
+    13.846585339999997
+  ],
+  "policies": {
+    "base": [
+      {
+        "parent": 2,
+        "successes": 0,
+        "ever_grasp": 255,
+        "episodes": 256,
+        "stages": {
+          "grasp": 255,
+          "lift": 252,
+          "transport": 252,
+          "placement": 251,
+          "release": 1,
+          "stable_stack_10_steps": 0
+        }
+      },
+      {
+        "parent": 3,
+        "successes": 0,
+        "ever_grasp": 255,
+        "episodes": 256,
+        "stages": {
+          "grasp": 255,
+          "lift": 254,
+          "transport": 254,
+          "placement": 253,
+          "release": 0,
+          "stable_stack_10_steps": 0
+        }
+      }
+    ],
+    "rehearsal": [
+      {
+        "parent": 2,
+        "successes": 5,
+        "ever_grasp": 253,
+        "episodes": 256,
+        "stages": {
+          "grasp": 253,
+          "lift": 244,
+          "transport": 244,
+          "placement": 241,
+          "release": 14,
+          "stable_stack_10_steps": 2
+        }
+      },
+      {
+        "parent": 3,
+        "successes": 10,
+        "ever_grasp": 255,
+        "episodes": 256,
+        "stages": {
+          "grasp": 255,
+          "lift": 245,
+          "transport": 243,
+          "placement": 240,
+          "release": 24,
+          "stable_stack_10_steps": 6
+        }
+      }
+    ],
+    "teacher_only": [
+      {
+        "parent": 2,
+        "successes": 0,
+        "ever_grasp": 0,
+        "episodes": 256,
+        "stages": {
+          "grasp": 0,
+          "lift": 0,
+          "transport": 0,
+          "placement": 0,
+          "release": 0,
+          "stable_stack_10_steps": 0
+        }
+      },
+      {
+        "parent": 3,
+        "successes": 0,
+        "ever_grasp": 16,
+        "episodes": 256,
+        "stages": {
+          "grasp": 16,
+          "lift": 0,
+          "transport": 0,
+          "placement": 0,
+          "release": 0,
+          "stable_stack_10_steps": 0
+        }
+      }
+    ]
+  },
+  "pooled_success": {
+    "base": 0.0,
+    "rehearsal": 0.029296875,
+    "teacher_only": 0.0
+  },
+  "teacher_only_minus_rehearsal_success": {
+    "mean_gain": -0.029296875,
+    "interval_97_5": [
+      -0.04296875,
+      -0.015625
+    ]
+  },
+  "teacher_only_minus_rehearsal_grasp": {
+    "mean_gain": -0.9609375,
+    "interval_97_5": [
+      -0.970703125,
+      -0.951171875
+    ]
+  },
+  "teacher_only_grasp_retained": false,
+  "overconstraint_screen": false,
+  "harmful_forgetting_screen": true,
+  "conclusion": "Removing rehearsal caused major actual grasp loss without success gain in this fixed learner",
+  "scope": "Fixed rehearsal endpoints on two acquired actors; mechanism probe, not an optimized learner or general continual-learning result"
+}

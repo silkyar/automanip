@@ -1,0 +1,21 @@
+{
+  "admitted": true,
+  "experiment": "temperature-sufficiency-20261028",
+  "source_sha256": {
+    "temperature_sufficiency.py": "c477590118a83fa378c63bd1a1f603c734f34bfbc30252a604809a93611ea959",
+    "replay_robot.py": "e753b684f97b475dcadd7bdf1736395a79485ea4f431fa8f04083ffb89945d7f",
+    "replay_learner.py": "aeea61b2a55458a207f1dccb6c996a411acda67bc3238dc9c9c33fec7bd965bf",
+    "sac_baseline.py": "1191b6bafb1c5a34cb2f661a23da732cf2021ec680f3971477d4c02fa8f614ca"
+  },
+  "adapter_sha256": "c8b922d04952792299a4e8ef18ce6c4421fe4266f932ce3482926484d044804f",
+  "scientific_plan": "docs/replay-temperature-sufficiency-plan-20261028.md",
+  "initial_actor_sha256": "6f768e630c4751d41ed3bd032a21078ea44d12c219c00bf6e606caae0e4c149f",
+  "window_deadline_epoch": 1793219553,
+  "budget_cap_usd": 2,
+  "scientific_plan_sha256": "33a65efff657638412a3da39e6fac404649c43b298e09267fc18d502de617610",
+  "source_mapping": {
+    "replay_learner.py": "research/discovery/replay_learner_lowalpha.py"
+  },
+  "root_admitted_epoch": 1793214346.319359,
+  "review": "Independent bounded-review retry succeeded aftercapacity; exact1linealpha/source/config/firsttarget CPU proof and inheritedadaptercontrols passed. One attemptonly,no expansion."
+}

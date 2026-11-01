@@ -1,0 +1,351 @@
+{
+  "state": "complete",
+  "analysis": "exploratory_descriptive",
+  "parents": [
+    {
+      "parent": 2,
+      "reset_rows_excluded": 31,
+      "rehearsal": {
+        "all": {
+          "rows": 993,
+          "fraction": 1.0,
+          "closing_fraction": 0.7814702920443102,
+          "opening_fraction": 0.07250755287009064,
+          "mean_target_gap_metres": -0.021593108773231506
+        },
+        "grasped_not_on_top": {
+          "rows": 244,
+          "fraction": 0.2457200402819738,
+          "closing_fraction": 0.9918032786885246,
+          "opening_fraction": 0.00819672131147541,
+          "mean_target_gap_metres": -0.028564000502228737
+        },
+        "on_top_grasped": {
+          "rows": 445,
+          "fraction": 0.44813695871097686,
+          "closing_fraction": 1.0,
+          "opening_fraction": 0.0,
+          "mean_target_gap_metres": -0.02769891545176506
+        },
+        "on_top_grasped_static": {
+          "rows": 0,
+          "fraction": 0.0,
+          "closing_fraction": null,
+          "opening_fraction": null,
+          "mean_target_gap_metres": null
+        }
+      },
+      "rehearsal_by_time": {
+        "1-9": {
+          "all": {
+            "rows": 305,
+            "fraction": 1.0,
+            "closing_fraction": 0.38688524590163936,
+            "opening_fraction": 0.16393442622950818,
+            "mean_target_gap_metres": -0.011515702120959759
+          },
+          "grasped_not_on_top": {
+            "rows": 65,
+            "fraction": 0.21311475409836064,
+            "closing_fraction": 1.0,
+            "opening_fraction": 0.0,
+            "mean_target_gap_metres": -0.030308011919260025
+          },
+          "on_top_grasped": {
+            "rows": 0,
+            "fraction": 0.0,
+            "closing_fraction": null,
+            "opening_fraction": null,
+            "mean_target_gap_metres": null
+          },
+          "on_top_grasped_static": {
+            "rows": 0,
+            "fraction": 0.0,
+            "closing_fraction": null,
+            "opening_fraction": null,
+            "mean_target_gap_metres": null
+          }
+        },
+        "10-19": {
+          "all": {
+            "rows": 350,
+            "fraction": 1.0,
+            "closing_fraction": 0.9457142857142857,
+            "opening_fraction": 0.03142857142857143,
+            "mean_target_gap_metres": -0.026173532009124756
+          },
+          "grasped_not_on_top": {
+            "rows": 154,
+            "fraction": 0.44,
+            "closing_fraction": 1.0,
+            "opening_fraction": 0.0,
+            "mean_target_gap_metres": -0.02869674749672413
+          },
+          "on_top_grasped": {
+            "rows": 148,
+            "fraction": 0.4228571428571429,
+            "closing_fraction": 1.0,
+            "opening_fraction": 0.0,
+            "mean_target_gap_metres": -0.027636488899588585
+          },
+          "on_top_grasped_static": {
+            "rows": 0,
+            "fraction": 0.0,
+            "closing_fraction": null,
+            "opening_fraction": null,
+            "mean_target_gap_metres": null
+          }
+        },
+        "20-29": {
+          "all": {
+            "rows": 338,
+            "fraction": 1.0,
+            "closing_fraction": 0.9674556213017751,
+            "opening_fraction": 0.03254437869822485,
+            "mean_target_gap_metres": -0.025943586602807045
+          },
+          "grasped_not_on_top": {
+            "rows": 25,
+            "fraction": 0.07396449704142012,
+            "closing_fraction": 0.92,
+            "opening_fraction": 0.08,
+            "mean_target_gap_metres": -0.02321183681488037
+          },
+          "on_top_grasped": {
+            "rows": 297,
+            "fraction": 0.878698224852071,
+            "closing_fraction": 1.0,
+            "opening_fraction": 0.0,
+            "mean_target_gap_metres": -0.027730023488402367
+          },
+          "on_top_grasped_static": {
+            "rows": 0,
+            "fraction": 0.0,
+            "closing_fraction": null,
+            "opening_fraction": null,
+            "mean_target_gap_metres": null
+          }
+        }
+      },
+      "teacher_fit": {
+        "all": {
+          "rows": 384,
+          "fraction": 1.0,
+          "closing_fraction": 0.21354166666666666,
+          "opening_fraction": 0.7864583333333334,
+          "mean_target_gap_metres": 0.0009071399108506739
+        },
+        "grasped_not_on_top": {
+          "rows": 2,
+          "fraction": 0.005208333333333333,
+          "closing_fraction": 0.5,
+          "opening_fraction": 0.5,
+          "mean_target_gap_metres": 0.0010131048038601875
+        },
+        "on_top_grasped": {
+          "rows": 33,
+          "fraction": 0.0859375,
+          "closing_fraction": 0.3333333333333333,
+          "opening_fraction": 0.6666666666666666,
+          "mean_target_gap_metres": 0.0007788608781993389
+        },
+        "on_top_grasped_static": {
+          "rows": 0,
+          "fraction": 0.0,
+          "closing_fraction": null,
+          "opening_fraction": null,
+          "mean_target_gap_metres": null
+        }
+      },
+      "source_sha256": {
+        "artifacts/cumulative/prefix-search-20261030/remote/collection-0/candidate-0-r0/trace.npz": "485afd617099063fe42f45b37cf6e3fc73bbfbf93da2c109c83c74e011015532",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-0/current-candidate-7-r0/trace.npz": "47af8358523c80882ffc2cfcb0de41c074132a5463b99c6541fe48784bf1c041",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-0/current-candidate-2-r0/trace.npz": "66807fd0fa43cc74f459bc34932e8a9afeff007091c37175d59dd4b90d57267b",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-0/current-candidate-5-r0/trace.npz": "1d43ab3326fbde3003b03c87ed6103a4f45491af3c8b65439892981b37c1f6a7",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-0/current-candidate-1-r0/trace.npz": "76a3a8513e5a293fe62762f01fb77953a1160403883d3cbcb7e92690365a07e6",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-0/current-candidate-6-r0/trace.npz": "4da065d319e5d0812ffbb1d18cff422f44a94c7a993daecf1a1325b1f19ee57b",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-0/current-candidate-4-r0/trace.npz": "98d8813d2b61f205750a7ef10c13c805afe76e46218154b99ebf90dc85b0f6d2",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-0/current-candidate-8-r0/trace.npz": "0c8a38c90de09cffba9c0b65e18ee2d992708ff32b9bf26d0d407855059539dc",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-0/current-candidate-3-r0/trace.npz": "3b3e969ee3bf759e6a34001ed769ccdc4ab19d94bbf25313159558a36140c0c6"
+      },
+      "data_sha256": "e300ea3ee3cc57c64dc9dee7b87e115fd504114b9ab24f8444b7a8b624befbf2",
+      "audit_sha256": "719fd94758f0753fbae60bccb7d6aedf3c0cd70420aa53a552dbf0bc42963d28"
+    },
+    {
+      "parent": 3,
+      "reset_rows_excluded": 33,
+      "rehearsal": {
+        "all": {
+          "rows": 991,
+          "fraction": 1.0,
+          "closing_fraction": 0.8193743693239153,
+          "opening_fraction": 0.05953582240161453,
+          "mean_target_gap_metres": -0.022535907104611397
+        },
+        "grasped_not_on_top": {
+          "rows": 242,
+          "fraction": 0.24419778002018164,
+          "closing_fraction": 1.0,
+          "opening_fraction": 0.0,
+          "mean_target_gap_metres": -0.029338538646697998
+        },
+        "on_top_grasped": {
+          "rows": 502,
+          "fraction": 0.5065590312815338,
+          "closing_fraction": 1.0,
+          "opening_fraction": 0.0,
+          "mean_target_gap_metres": -0.026265952736139297
+        },
+        "on_top_grasped_static": {
+          "rows": 0,
+          "fraction": 0.0,
+          "closing_fraction": null,
+          "opening_fraction": null,
+          "mean_target_gap_metres": null
+        }
+      },
+      "rehearsal_by_time": {
+        "1-9": {
+          "all": {
+            "rows": 302,
+            "fraction": 1.0,
+            "closing_fraction": 0.4370860927152318,
+            "opening_fraction": 0.17218543046357615,
+            "mean_target_gap_metres": -0.013610467314720154
+          },
+          "grasped_not_on_top": {
+            "rows": 78,
+            "fraction": 0.2582781456953642,
+            "closing_fraction": 1.0,
+            "opening_fraction": 0.0,
+            "mean_target_gap_metres": -0.03062543272972107
+          },
+          "on_top_grasped": {
+            "rows": 1,
+            "fraction": 0.0033112582781456954,
+            "closing_fraction": 1.0,
+            "opening_fraction": 0.0,
+            "mean_target_gap_metres": -0.030267983675003052
+          },
+          "on_top_grasped_static": {
+            "rows": 0,
+            "fraction": 0.0,
+            "closing_fraction": null,
+            "opening_fraction": null,
+            "mean_target_gap_metres": null
+          }
+        },
+        "10-19": {
+          "all": {
+            "rows": 355,
+            "fraction": 1.0,
+            "closing_fraction": 0.9859154929577465,
+            "opening_fraction": 0.008450704225352112,
+            "mean_target_gap_metres": -0.027779346331954002
+          },
+          "grasped_not_on_top": {
+            "rows": 154,
+            "fraction": 0.43380281690140843,
+            "closing_fraction": 1.0,
+            "opening_fraction": 0.0,
+            "mean_target_gap_metres": -0.028722936287522316
+          },
+          "on_top_grasped": {
+            "rows": 186,
+            "fraction": 0.523943661971831,
+            "closing_fraction": 1.0,
+            "opening_fraction": 0.0,
+            "mean_target_gap_metres": -0.02727523446083069
+          },
+          "on_top_grasped_static": {
+            "rows": 0,
+            "fraction": 0.0,
+            "closing_fraction": null,
+            "opening_fraction": null,
+            "mean_target_gap_metres": null
+          }
+        },
+        "20-29": {
+          "all": {
+            "rows": 334,
+            "fraction": 1.0,
+            "closing_fraction": 0.9880239520958084,
+            "opening_fraction": 0.011976047904191617,
+            "mean_target_gap_metres": -0.025033093988895416
+          },
+          "grasped_not_on_top": {
+            "rows": 10,
+            "fraction": 0.029940119760479042,
+            "closing_fraction": 1.0,
+            "opening_fraction": 0.0,
+            "mean_target_gap_metres": -0.02878108061850071
+          },
+          "on_top_grasped": {
+            "rows": 315,
+            "fraction": 0.9431137724550899,
+            "closing_fraction": 1.0,
+            "opening_fraction": 0.0,
+            "mean_target_gap_metres": -0.02565728686749935
+          },
+          "on_top_grasped_static": {
+            "rows": 0,
+            "fraction": 0.0,
+            "closing_fraction": null,
+            "opening_fraction": null,
+            "mean_target_gap_metres": null
+          }
+        }
+      },
+      "teacher_fit": {
+        "all": {
+          "rows": 384,
+          "fraction": 1.0,
+          "closing_fraction": 0.15364583333333334,
+          "opening_fraction": 0.8463541666666666,
+          "mean_target_gap_metres": 0.0010597985237836838
+        },
+        "grasped_not_on_top": {
+          "rows": 1,
+          "fraction": 0.0026041666666666665,
+          "closing_fraction": 0.0,
+          "opening_fraction": 1.0,
+          "mean_target_gap_metres": 0.00151745043694973
+        },
+        "on_top_grasped": {
+          "rows": 40,
+          "fraction": 0.10416666666666667,
+          "closing_fraction": 0.375,
+          "opening_fraction": 0.625,
+          "mean_target_gap_metres": 0.0006808506441302598
+        },
+        "on_top_grasped_static": {
+          "rows": 2,
+          "fraction": 0.005208333333333333,
+          "closing_fraction": 1.0,
+          "opening_fraction": 0.0,
+          "mean_target_gap_metres": -0.000394187867641449
+        }
+      },
+      "source_sha256": {
+        "artifacts/cumulative/prefix-search-20261030/remote/collection-1/candidate-0-r0/trace.npz": "0ae2a776d1b3f9e7d9c3e3ac5e86e8d3c501d9b8e20ef87f809fd1f39b27643c",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-1/current-candidate-6-r0/trace.npz": "37937d239c9a717546a5114c6756512e520603ea4de3a5965930bd290afa9d5e",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-1/current-candidate-3-r0/trace.npz": "0286fdb71c9e05d028b510320f3a804ad958e4329fc9ec0255ce4928d7f9214b",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-1/current-candidate-7-r0/trace.npz": "2ee836604652bb3999fb4afdc473fcc3ddffdfa2641042da092c2f2ab111e6f3",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-1/current-candidate-8-r0/trace.npz": "d713f0c71a93af02b67db7e42cfa3f21a144316f0dbb640b005fd0daf26b301f",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-1/current-candidate-1-r0/trace.npz": "39f785a751a8ff5bf2773cee2130731694546c93e52e3c18b6ae155cb29e6308",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-1/current-candidate-4-r0/trace.npz": "71c29c5e13568639de473ff3254064c05ea6fa2e8824e5fac1bcd86baf4af85d",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-1/current-candidate-5-r0/trace.npz": "fa26a9686de77fa75e343b77fc40f0ff086f80fdbd18b45d73c57a293b07523a",
+        "artifacts/cumulative/relative-gripper-20261031/remote/collection-1/current-candidate-2-r0/trace.npz": "69e0c588d29824e5592583adf635899b2c97ec51299b1c9ddb905308f1a028b2"
+      },
+      "data_sha256": "528ee831a59a7fd287cae6a83e3a5f0cc8f8b597b696cc188adda38d964eafde",
+      "audit_sha256": "35f729fcb8bdeeb48815d67edd30c2c06b4f3e901731f69044ab49df5338ec47"
+    }
+  ],
+  "CPU_seconds": 0.7317880000000001,
+  "new_environment_transitions": 0,
+  "linear_solves": 0,
+  "optimizer_calls": 0,
+  "policy_exports": 0,
+  "robot_assessments": 0,
+  "limitation": "Saved acquired-policy stages. Shared coarse stage is not identical physical state, does not establish optimal action or causal interference. No memory rows removed, objective refit, thresholds selected or policies scored."
+}

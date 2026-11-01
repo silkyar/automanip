@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "status": "proposal_only_not_launched",
+  "track": "teacher_assisted_BC_plus_PPO",
+  "base_source_sha256": "c5ca37a6ff22ddd2e89288f5697e3041507e834adf8f8731a49a17d1423fd200",
+  "patch_source_sha256": "a7f7f7381ddd7b32f0bd19bbbcfa4d20f11d966ec9231aa345a70e7e9b28e147",
+  "payloads": {
+    "assist-bc-ppo-residual-std-mean-lr-r1.py": {
+      "sha256": "bd471bbe21528ba42d2e29dadfef8ff14697150c92129e01038201edc6bef55d",
+      "ratio_power": 1,
+      "bytes": 53294
+    },
+    "assist-bc-ppo-residual-std-mean-lr-r2.py": {
+      "sha256": "ec661250f7fb974cb0e98780fe3b03325505de05ba00a159b614d11071a18238",
+      "ratio_power": 2,
+      "bytes": 53294
+    }
+  },
+  "calibration": "reuse exact existing production training-only residual initialization; zero additional BC forward rows",
+  "ratio": "exp(mean(log(initial_sigma))) / exp(-0.5)",
+  "initial_ratio_fixed_during_training": true,
+  "mean_lr": "original active base LR times ratio ** power",
+  "critic_and_logstd_lr": "original active base LR",
+  "optimizer": "existing Adam regrouped before any optimizer state; epsilon 1e-5 and all defaults retained",
+  "frozen_comparator": "exact original residual-std v2 with identical production dataset and BC actor digests",
+  "cpu_checks": {
+    "tests": 4,
+    "unittest_seconds": 0.669,
+    "status": "passed",
+    "gpu_tests": 0,
+    "new_environment_transitions": 0
+  },
+  "strip": "remove all BC_MEAN_LR marked additions to recover base byte-for-byte"
+}

@@ -1,0 +1,18 @@
+{
+  "format": "automanip-persistent-switch-essential-toy-v1",
+  "created_at": 1793392620.620068,
+  "execution": "CPU scalar toy only; no robot, teacher policy, public diagnostic learning or cloudcalls",
+  "hypothesis": "A small outcome model can learn where to replace a fixed progressing policy with a persistent correction, without a supplied geometric trigger, while preserving its useful behavior elsewhere.",
+  "environment": "50steps;initialposition uniform1..2, speed uniform.02..08;baseaction=-speed; correctionaction0holdsposition. Terminal reward1iffpositionwithin.2ofunknown-to-learner target0. Existing base action and zero-action prior are given assistance, explicitly not a fromscratchalgorithm.",
+  "training": "2048completeepisodes per seed; randomdecisiontime uniform0..49 and balanced randomtreatment continuebase or holdforever. Observeonly2statecoordinates(position,speed), treatment and finalbinaryoutcome. No oracle actions or target labels.",
+  "models": "Two separately fitted logistic outcome models on generic degree2polynomial state features, normalized fromtrainingonly. L2.001,LBFGSmax100, fixedinit. Gate requires predictedholdsuccess>=.9 and predictedhold-basegain>=.1. It latches, without clock or target access.",
+  "calibration": "512freshfullclosedloopepisodes per seed. Gate admitted onlyif95%Wilsonlowerbound finalsuccess>=.8. This is rolloutcalibration, not randomstateclassificationaccuracy. Calibrationcostcounted; no thresholdtuning.",
+  "test": "16384newinitialconditions per seed; base, randomswitch, admittedlearnedswitch and oracleupperbound; eachcontroller50actualtoy steps. Oracleupperbound iscomparisononly, notdata ortraininginput.",
+  "seeds": [
+    94700001,
+    94700002,
+    94700003
+  ],
+  "screen": "All3seeds: learnedfinalsuccess-base>=.40; learnedfinalsuccesswithin.05oforacle; retain>=99%ofbase-successful episodes. Shuffledwholetrainingoutcomes negativecontrolmustfailadmission. Scope onlythisassistedtoy; no robottraining fromsuccess.",
+  "counting": "Perseed2048training+512learnedcalibration+512shuffledcalibration+4*16384testepisodes. Everyepisode50toytransitions. Count allfitclosures/backwards andwalltime. No robot efficiency inference."
+}

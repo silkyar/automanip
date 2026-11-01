@@ -1,0 +1,103 @@
+{
+  "state": "complete",
+  "passed": false,
+  "parents": [
+    {
+      "parent": 2,
+      "methods": {
+        "original": {
+          "finger_target_RMSE_metres": 0.013230500918934233,
+          "teacher_raw_MSE": 0.05486998006939399,
+          "retained_executed_RMS_change": 0.10880732977898884,
+          "positive_increment_fraction": 0.07307692307692308
+        },
+        "exact_coordinate": {
+          "finger_target_RMSE_metres": 0.01197615643999967,
+          "teacher_raw_MSE": 0.0495347479995462,
+          "retained_executed_RMS_change": 0.11947666041097336,
+          "positive_increment_fraction": 0.13076923076923078
+        }
+      },
+      "passed": false,
+      "fit": {
+        "teacher_rows": 384,
+        "retain_rows": 1024,
+        "linear_solves": 1,
+        "teacher_mse_before": 0.2749403751579857,
+        "teacher_mse_after": 0.034170259579302475,
+        "retain_raw_mean_square_change": 0.009090850440959718,
+        "normal_equation_max_residual": 9.325873406851315e-15,
+        "rehearsal_weight": 4.0,
+        "ridge": 0.001
+      },
+      "exact_coordinate_coefficient": [
+        -0.05159264723830978,
+        0.005604538004376553,
+        -0.08403128710745643,
+        0.07264939754701237,
+        -0.02491689397303965,
+        0.08470370706679284,
+        -0.03274492661287598,
+        1.532479172766892
+      ],
+      "teacher_fit_rows": 384,
+      "rehearsal_fit_rows": 1024,
+      "validation_rows": 260,
+      "validation_rehearsal_rows": 480,
+      "data_sha256": "e300ea3ee3cc57c64dc9dee7b87e115fd504114b9ab24f8444b7a8b624befbf2",
+      "audit_sha256": "719fd94758f0753fbae60bccb7d6aedf3c0cd70420aa53a552dbf0bc42963d28"
+    },
+    {
+      "parent": 3,
+      "methods": {
+        "original": {
+          "finger_target_RMSE_metres": 0.01029054536476863,
+          "teacher_raw_MSE": 0.041875917134905696,
+          "retained_executed_RMS_change": 0.11902840387533681,
+          "positive_increment_fraction": 0.016666666666666666
+        },
+        "exact_coordinate": {
+          "finger_target_RMSE_metres": 0.009861100056464255,
+          "teacher_raw_MSE": 0.04066683271851738,
+          "retained_executed_RMS_change": 0.10620109037038832,
+          "positive_increment_fraction": 0.058333333333333334
+        }
+      },
+      "passed": false,
+      "fit": {
+        "teacher_rows": 384,
+        "retain_rows": 1024,
+        "linear_solves": 1,
+        "teacher_mse_before": 0.26619767452410337,
+        "teacher_mse_after": 0.023877856586212175,
+        "retain_raw_mean_square_change": 0.006709809520694358,
+        "normal_equation_max_residual": 7.327471962526033e-15,
+        "rehearsal_weight": 4.0,
+        "ridge": 0.001
+      },
+      "exact_coordinate_coefficient": [
+        0.005308160349281083,
+        -0.05543806964233127,
+        0.05140025462551015,
+        -0.007265409506632537,
+        0.011068957653769161,
+        -0.008855391853326747,
+        -0.2758141917392073,
+        1.71085104422387
+      ],
+      "teacher_fit_rows": 384,
+      "rehearsal_fit_rows": 1024,
+      "validation_rows": 120,
+      "validation_rehearsal_rows": 480,
+      "data_sha256": "528ee831a59a7fd287cae6a83e3a5f0cc8f8b597b696cc188adda38d964eafde",
+      "audit_sha256": "35f729fcb8bdeeb48815d67edd30c2c06b4f3e901731f69044ab49df5338ec47"
+    }
+  ],
+  "CPU_seconds": 0.14765799999999998,
+  "linear_solves": 2,
+  "optimizer_calls": 0,
+  "new_environment_transitions": 0,
+  "policy_exports": 0,
+  "robot_assessments": 0,
+  "scope": "Exact observed coordinate sufficiency under fixed assisted readout objective; adaptively reused diagnostic corpus, not a fresh generalization or from-scratch test"
+}

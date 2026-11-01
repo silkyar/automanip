@@ -1,0 +1,106 @@
+{
+  "state": "complete",
+  "grasped_saved_state_rows": 1904,
+  "actor_forward_rows": 1904,
+  "quadrature_orders": [
+    32,
+    64
+  ],
+  "quadrature_log_Jacobian_evaluations": 1462272,
+  "quadrature_max_abs_difference": 7.409434465976972e-08,
+  "quadrature_gate_passed": true,
+  "scalar_signal_mean": 1.2896898936155818,
+  "scalar_decrease_state_fraction": 0.29516806722689076,
+  "coordinates": [
+    {
+      "index": 0,
+      "expected_log_density_mean": 1.0681599146233118,
+      "coordinate_signal_mean": 0.06815991462331188,
+      "scalar_decrease_coordinate_increase_fraction": 0.04044117647058824,
+      "blind_spot_gate": false
+    },
+    {
+      "index": 1,
+      "expected_log_density_mean": 3.950356686628862,
+      "coordinate_signal_mean": 2.950356686628862,
+      "scalar_decrease_coordinate_increase_fraction": 0.2689075630252101,
+      "blind_spot_gate": false
+    },
+    {
+      "index": 2,
+      "expected_log_density_mean": 0.8098737748370299,
+      "coordinate_signal_mean": -0.19012622516297006,
+      "scalar_decrease_coordinate_increase_fraction": 0.03676470588235294,
+      "blind_spot_gate": false
+    },
+    {
+      "index": 3,
+      "expected_log_density_mean": 0.8297536894795092,
+      "coordinate_signal_mean": -0.17024631052049066,
+      "scalar_decrease_coordinate_increase_fraction": 0.03361344537815126,
+      "blind_spot_gate": false
+    },
+    {
+      "index": 4,
+      "expected_log_density_mean": 0.03047833182092668,
+      "coordinate_signal_mean": -0.9695216681790733,
+      "scalar_decrease_coordinate_increase_fraction": 0.0005252100840336134,
+      "blind_spot_gate": false
+    },
+    {
+      "index": 5,
+      "expected_log_density_mean": 1.122414769190439,
+      "coordinate_signal_mean": 0.12241476919043887,
+      "scalar_decrease_coordinate_increase_fraction": 0.06460084033613446,
+      "blind_spot_gate": false
+    },
+    {
+      "index": 6,
+      "expected_log_density_mean": -0.07075596059155208,
+      "coordinate_signal_mean": -1.0707559605915522,
+      "scalar_decrease_coordinate_increase_fraction": 0.0005252100840336134,
+      "blind_spot_gate": false
+    },
+    {
+      "index": 7,
+      "expected_log_density_mean": 1.5494086876270552,
+      "coordinate_signal_mean": 0.549408687627055,
+      "scalar_decrease_coordinate_increase_fraction": 0.16544117647058823,
+      "blind_spot_gate": false
+    }
+  ],
+  "negative_control": {
+    "kind": "Unsquashed exact quadratic, not a robot model",
+    "curvatures": [
+      100.0,
+      1.0
+    ],
+    "optimal_variances": [
+      0.1,
+      10.0
+    ],
+    "equal_variances": [
+      1.0,
+      1.0
+    ],
+    "common_joint_entropy": 2.8378770664093453,
+    "optimal_expected_cost": 10.0,
+    "equal_expected_cost": 50.5,
+    "cost_ratio": 5.05,
+    "gate_for_general_equal_coordinate_remedy": false
+  },
+  "optimizer_calls": 0,
+  "new_simulator_transitions": 0,
+  "protected_evaluations": 0,
+  "elapsed_seconds": 0.060753208003006876,
+  "input_sha256": {
+    "state": "ed55d938dcf21a5e80a1268921303ebed23d67dbb556b761cdd736f761f4ae6f",
+    "trajectory": "fdd401f214a41f8f7dcd26df6c7d4797b0dd0e3be3ce7ab8fc6750cf123d6332"
+  },
+  "source_sha256": "ab371ca6915b18c18e6a04b5dceafc80dbd35afd8d1bee966183df38b46f954e",
+  "limitations": [
+    "Selected current actor/states, not historical optimizer or replay reconstruction",
+    "Per-coordinate constraints change the objective; a scalar blind spot is not a bug",
+    "Quadratic negative control is an analytic counterexample, not empirical generalization"
+  ]
+}

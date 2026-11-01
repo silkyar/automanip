@@ -1,0 +1,258 @@
+{
+  "format": "automanip-credit-target-public-probe-v1",
+  "created_at": 1793382552.6056461,
+  "execution_authorized": true,
+  "user_authorization": "2026-10-30 continue autonomous research, distinct GPU experiments, cost not an issue",
+  "purpose": "Separate historical GAE baseline, fitted state baseline, and GAE versus finite MC target at identical readout geometry and mean KL. No hard heldout/fitted proxy admission rule.",
+  "production_pins": {
+    "mani_skill": "3.0.0b21",
+    "sapien": "3.0.0b1",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "gymnasium": "0.29.1"
+  },
+  "source_actor_weights_sha256": "4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2",
+  "policies": {
+    "no_update": "policies/no_update",
+    "90282001/gae_legacy_forward": "policies/90282001/gae_legacy_forward",
+    "90282001/gae_legacy_reverse": "policies/90282001/gae_legacy_reverse",
+    "90282001/gae_state_forward": "policies/90282001/gae_state_forward",
+    "90282001/gae_state_reverse": "policies/90282001/gae_state_reverse",
+    "90282001/mc_state_forward": "policies/90282001/mc_state_forward",
+    "90282001/mc_state_reverse": "policies/90282001/mc_state_reverse",
+    "90282002/gae_legacy_forward": "policies/90282002/gae_legacy_forward",
+    "90282002/gae_legacy_reverse": "policies/90282002/gae_legacy_reverse",
+    "90282002/gae_state_forward": "policies/90282002/gae_state_forward",
+    "90282002/gae_state_reverse": "policies/90282002/gae_state_reverse",
+    "90282002/mc_state_forward": "policies/90282002/mc_state_forward",
+    "90282002/mc_state_reverse": "policies/90282002/mc_state_reverse",
+    "90282003/gae_legacy_forward": "policies/90282003/gae_legacy_forward",
+    "90282003/gae_legacy_reverse": "policies/90282003/gae_legacy_reverse",
+    "90282003/gae_state_forward": "policies/90282003/gae_state_forward",
+    "90282003/gae_state_reverse": "policies/90282003/gae_state_reverse",
+    "90282003/mc_state_forward": "policies/90282003/mc_state_forward",
+    "90282003/mc_state_reverse": "policies/90282003/mc_state_reverse"
+  },
+  "policy_files": {
+    "policies/90282001/gae_legacy_forward/manifest.json": "9c1b9687cbced212f4b752d04fdb8c251e9f773cdac8e19a56b548f6a2830af4",
+    "policies/90282001/gae_legacy_forward/weights.json": "78ce19a622e0c508d9d7070bd269ee6c97512e720d8dd2ce49a85f6d5c841784",
+    "policies/90282001/gae_legacy_reverse/manifest.json": "316f5a5838ea4d9bcc6f3f3760da89d9bbd7df4c1a89a5299990ad37a5020cd6",
+    "policies/90282001/gae_legacy_reverse/weights.json": "473bae4d4be5666fbf2ae3bb2c540f5841f22471b86d66d1b8775d4e885d46f9",
+    "policies/90282001/gae_state_forward/manifest.json": "d86010e0b51a15fa55574d67bbda7f684254a166f56ab29c880972d62910349a",
+    "policies/90282001/gae_state_forward/weights.json": "702684ca0bb8fc3dba4ae7ce0637c212f3650b819c817d648f3d50f8d597891f",
+    "policies/90282001/gae_state_reverse/manifest.json": "7692efd2b64a288d3aae0f59fcdceaec2be2d1d467cc9bbf4b431b6983cfc8b3",
+    "policies/90282001/gae_state_reverse/weights.json": "b307e49e0f2ee275b0ada27fa9dcc04c246dd4e93a4c79389088ca18b37c5264",
+    "policies/90282001/mc_state_forward/manifest.json": "5dd1b3dad31f44411bf385019dbc6efd31c1b00723b4ae1d0f22527701667bc6",
+    "policies/90282001/mc_state_forward/weights.json": "c80958504d8cf2791cc525062deb6c45639bbe4d0dbd4fe7e17257d448a15230",
+    "policies/90282001/mc_state_reverse/manifest.json": "d7bf89a9d81438f23648ce75627ff4de4660eee45d791066430e97dc86eac61a",
+    "policies/90282001/mc_state_reverse/weights.json": "2a0435d4ca96626907e2b1b192e8361226afd1d9e2abfced32fcee709247ec9a",
+    "policies/90282002/gae_legacy_forward/manifest.json": "feb456ac503585a41711bab02a70cc188b022c57653a4313576b9bd48ba759ef",
+    "policies/90282002/gae_legacy_forward/weights.json": "e693657ae025e8491c55a67382cdf2a5a029c6711595e2548568e32a08e43ef9",
+    "policies/90282002/gae_legacy_reverse/manifest.json": "aae787054e0f700f95838e6b466ac08ff988db09394cd39461c8480b0bf34121",
+    "policies/90282002/gae_legacy_reverse/weights.json": "a1ce5916fdb7abcad1da519c54cbc3f6708b4a1faab083a8b04bfd33c74c035f",
+    "policies/90282002/gae_state_forward/manifest.json": "db1abb6d7616efe807d669dbc2105a48771654158eeb5095c2af88deea9f472c",
+    "policies/90282002/gae_state_forward/weights.json": "b1423fe05d867ebf0b1cb8cfbd0c4b4167457b98f81f22f3c8ffcd464353dbb2",
+    "policies/90282002/gae_state_reverse/manifest.json": "6f9dd0ccc6a00d5685921cdac8e683c206be69954b995e8c0982b0edea9c9ffa",
+    "policies/90282002/gae_state_reverse/weights.json": "bfac4082392a8db59c18abce748ad7b7e8b7c686c3b544b8e2770ae8e341d246",
+    "policies/90282002/mc_state_forward/manifest.json": "fc6773da5b966f6e90d8d12d7323cbe5dc16c9c123d2df4c9b018b35ae68c252",
+    "policies/90282002/mc_state_forward/weights.json": "cfec154a5f43a0f740efb565e72f6987d2ea7b60ea0340155d48cf2d6bc0a80f",
+    "policies/90282002/mc_state_reverse/manifest.json": "9bbdb775b412be02080778e6ed4a9873e8e0b12a5c3b00590982d229e2c62832",
+    "policies/90282002/mc_state_reverse/weights.json": "519e96327764e67d4b5b7a7ef96b0e2f4b9d4c20330fea1bb4c7ba5c333d0bf3",
+    "policies/90282003/gae_legacy_forward/manifest.json": "26cc79bb6daa575f657c4ced0d865d419c9078b4b065daf95321bd4c7ae6d95e",
+    "policies/90282003/gae_legacy_forward/weights.json": "99c23805e84a62db08bbb90f813b535333e7518bfae8c70b1a2d378343bdf154",
+    "policies/90282003/gae_legacy_reverse/manifest.json": "01642172ed8a802628ea21fe6d295fa8a2897097b192b275415a07f01219419c",
+    "policies/90282003/gae_legacy_reverse/weights.json": "b9bc152ab867974f2b20141b61f75cf8274dc5996511d6209f7adb364503520b",
+    "policies/90282003/gae_state_forward/manifest.json": "4d5711fb45dcdd586e7ac8313300679d348b9cbac4b1268fd3bc2611540e62e6",
+    "policies/90282003/gae_state_forward/weights.json": "58cb415f5d167278460dd66783c69d6b9e2b675c0642bb1ff640dd1d2ffb6a65",
+    "policies/90282003/gae_state_reverse/manifest.json": "59308a430921342bf4845c6907ce016c7bc3ba2afa6d935aa3df03e6c8b3bff6",
+    "policies/90282003/gae_state_reverse/weights.json": "334c2d1cde628633f999cb8b67628cc0dcdfeff801207681a3899dc5e8a8be7f",
+    "policies/90282003/mc_state_forward/manifest.json": "ce5475ad4f09f23dab7983f4158c0074b9669d3fcdab5922fb17c5537344c9a4",
+    "policies/90282003/mc_state_forward/weights.json": "a4642185ebbd4c0b3d1b07d128b43a506c79a2b6416a949709c13dec9a9030f3",
+    "policies/90282003/mc_state_reverse/manifest.json": "0afe64f2aca77dffc211dc4e45fdf8e2b2d04e353c7e0bbb8ef93a606bee00f5",
+    "policies/90282003/mc_state_reverse/weights.json": "f400cd632cfc8b63f0df196791bb727eecbd002f5e6daf3bcf3e60165ed2abfd",
+    "policies/no_update/manifest.json": "d2ea7ec00b2f5b4d21028d52c18dc66ef00a18a7695f4675fe8a4f5a065c9da9",
+    "policies/no_update/weights.json": "4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2"
+  },
+  "safe_export_parity": [
+    {
+      "policy": "90282001/gae_legacy_forward",
+      "max_action_error": 7.633728883460478e-07
+    },
+    {
+      "policy": "90282001/gae_legacy_reverse",
+      "max_action_error": 8.449410615618547e-07
+    },
+    {
+      "policy": "90282001/gae_state_forward",
+      "max_action_error": 8.803839737225871e-07
+    },
+    {
+      "policy": "90282001/gae_state_reverse",
+      "max_action_error": 6.920476396388153e-07
+    },
+    {
+      "policy": "90282002/gae_legacy_forward",
+      "max_action_error": 5.725297462788603e-07
+    },
+    {
+      "policy": "90282002/gae_legacy_reverse",
+      "max_action_error": 9.808199971095277e-07
+    },
+    {
+      "policy": "90282002/gae_state_forward",
+      "max_action_error": 7.883991899326759e-07
+    },
+    {
+      "policy": "90282002/gae_state_reverse",
+      "max_action_error": 7.417213760962937e-07
+    },
+    {
+      "policy": "90282003/gae_legacy_forward",
+      "max_action_error": 6.426666130376901e-07
+    },
+    {
+      "policy": "90282003/gae_legacy_reverse",
+      "max_action_error": 9.186720832943251e-07
+    },
+    {
+      "policy": "90282003/gae_state_forward",
+      "max_action_error": 9.259689345286759e-07
+    },
+    {
+      "policy": "90282003/gae_state_reverse",
+      "max_action_error": 7.560061194844536e-07
+    }
+  ],
+  "preparation_inputs": {
+    ".runtime/proxy-calibration-20261030/inputs/policies/no_update/manifest.json": "d2ea7ec00b2f5b4d21028d52c18dc66ef00a18a7695f4675fe8a4f5a065c9da9",
+    ".runtime/proxy-calibration-20261030/inputs/policies/no_update/weights.json": "4bab8b71061341ea985a6bb0384170c66a1b9a963d283942b84a99c2ad42c0a2",
+    "runs/stackcube-first-update-probe-20261028/run/90282001/update-state.npz": "73f0fa57f92a8c9d23f10b1ddb209b3b89dffa396601465eaeaac9cc3c11555c",
+    "runs/stackcube-first-update-probe-20261028/run/90282001/collection.npz": "bc108daad42475af31ff3fc1651d40887fe392ac23573d577729e4caa69b5171",
+    "artifacts/cumulative/gradient-aggregation-cpu-v1/90282001-statistics.npz": "552adea80feb29624c0e51cc350f692222730151423cbca760c186827cb37962",
+    ".runtime/proxy-calibration-20261030/inputs/policies/90282001/state_forward/manifest.json": "5dd1b3dad31f44411bf385019dbc6efd31c1b00723b4ae1d0f22527701667bc6",
+    ".runtime/proxy-calibration-20261030/inputs/policies/90282001/state_forward/weights.json": "c80958504d8cf2791cc525062deb6c45639bbe4d0dbd4fe7e17257d448a15230",
+    ".runtime/proxy-calibration-20261030/inputs/policies/90282001/state_reverse/manifest.json": "d7bf89a9d81438f23648ce75627ff4de4660eee45d791066430e97dc86eac61a",
+    ".runtime/proxy-calibration-20261030/inputs/policies/90282001/state_reverse/weights.json": "2a0435d4ca96626907e2b1b192e8361226afd1d9e2abfced32fcee709247ec9a",
+    "runs/stackcube-first-update-probe-20261028/run/90282002/update-state.npz": "af26033f0170e827ea70bcd4328bc93f622a8d35bf7c758aef10c43c53b639fa",
+    "runs/stackcube-first-update-probe-20261028/run/90282002/collection.npz": "91ed1a0392780a1eb921b5dd31f82b44c6f357fc3e2502a7e2882ed151113c97",
+    "artifacts/cumulative/gradient-aggregation-cpu-v1/90282002-statistics.npz": "b6a8e1a06400bfad533a692af9b9f79fc43d9704f3b02e29a294d813376222b0",
+    ".runtime/proxy-calibration-20261030/inputs/policies/90282002/state_forward/manifest.json": "fc6773da5b966f6e90d8d12d7323cbe5dc16c9c123d2df4c9b018b35ae68c252",
+    ".runtime/proxy-calibration-20261030/inputs/policies/90282002/state_forward/weights.json": "cfec154a5f43a0f740efb565e72f6987d2ea7b60ea0340155d48cf2d6bc0a80f",
+    ".runtime/proxy-calibration-20261030/inputs/policies/90282002/state_reverse/manifest.json": "9bbdb775b412be02080778e6ed4a9873e8e0b12a5c3b00590982d229e2c62832",
+    ".runtime/proxy-calibration-20261030/inputs/policies/90282002/state_reverse/weights.json": "519e96327764e67d4b5b7a7ef96b0e2f4b9d4c20330fea1bb4c7ba5c333d0bf3",
+    "runs/stackcube-first-update-probe-20261028/run/90282003/update-state.npz": "7ad3abb01c8da2ba16614352f1a2970498451f0ba7d7f3f1e45c3d79b0d84569",
+    "runs/stackcube-first-update-probe-20261028/run/90282003/collection.npz": "9c8a948e03f67fe8fa7cf8591e72aa3217ab6f334690cfecba93a02c18f7cbd1",
+    "artifacts/cumulative/gradient-aggregation-cpu-v1/90282003-statistics.npz": "0ea4e3033797933ec0cf091873a8224aee0e1a9c03542006854c2107166918d3",
+    ".runtime/proxy-calibration-20261030/inputs/policies/90282003/state_forward/manifest.json": "ce5475ad4f09f23dab7983f4158c0074b9669d3fcdab5922fb17c5537344c9a4",
+    ".runtime/proxy-calibration-20261030/inputs/policies/90282003/state_forward/weights.json": "a4642185ebbd4c0b3d1b07d128b43a506c79a2b6416a949709c13dec9a9030f3",
+    ".runtime/proxy-calibration-20261030/inputs/policies/90282003/state_reverse/manifest.json": "0afe64f2aca77dffc211dc4e45fdf8e2b2d04e353c7e0bbb8ef93a606bee00f5",
+    ".runtime/proxy-calibration-20261030/inputs/policies/90282003/state_reverse/weights.json": "f400cd632cfc8b63f0df196791bb727eecbd002f5e6daf3bcf3e60165ed2abfd"
+  },
+  "preparation_fits": [
+    {
+      "collection_seed": 90282001,
+      "gae_state": {
+        "current_KL": 0.0100000000000003,
+        "old_KL": 0.0,
+        "linear_gain": 0.028960052128790256
+      },
+      "fitting_rows": 51200,
+      "baseline_MSE": 0.7910312963725227,
+      "baseline_folds": "whole episode even/odd; own labels excluded"
+    },
+    {
+      "collection_seed": 90282002,
+      "gae_state": {
+        "current_KL": 0.01000000000000014,
+        "old_KL": 0.0,
+        "linear_gain": 0.02702363238721416
+      },
+      "fitting_rows": 51200,
+      "baseline_MSE": 0.7810402204854273,
+      "baseline_folds": "whole episode even/odd; own labels excluded"
+    },
+    {
+      "collection_seed": 90282003,
+      "gae_state": {
+        "current_KL": 0.01000000000000004,
+        "old_KL": 0.0,
+        "linear_gain": 0.0279125479710632
+      },
+      "fitting_rows": 51200,
+      "baseline_MSE": 0.8168842729266789,
+      "baseline_folds": "whole episode even/odd; own labels excluded"
+    }
+  ],
+  "preparation_seconds": 3.1900943749933504,
+  "value_linear_solves": 6,
+  "actor_linear_solves": 3,
+  "new_fitting_interactions": 0,
+  "collection_seeds": [
+    90282001,
+    90282002,
+    90282003
+  ],
+  "diagnostic_seed_bases": [
+    93900000,
+    93901000,
+    93902000
+  ],
+  "noise_seed_bases": [
+    93910000,
+    93911000,
+    93912000
+  ],
+  "gaussian_std": [
+    0.07161122560501099,
+    0.07851020991802216,
+    0.07931241393089294,
+    0.08390970528125763,
+    0.11644907295703888,
+    0.09796664118766785,
+    0.11457139998674393,
+    0.09181715548038483
+  ],
+  "modes": [
+    "stochastic"
+  ],
+  "branch_order": [
+    "no_update",
+    "gae_legacy_forward",
+    "gae_legacy_reverse",
+    "gae_state_forward",
+    "gae_state_reverse",
+    "mc_state_forward",
+    "mc_state_reverse"
+  ],
+  "horizon": 50,
+  "vector_environments": 64,
+  "batches_per_branch": 8,
+  "episodes_per_branch": 512,
+  "max_public_transitions": 537600,
+  "max_public_transitions_per_collection": 179200,
+  "optimizer_calls": 0,
+  "protected_benchmark_queries": 0,
+  "confirmation_queries": 0,
+  "final_queries": 0,
+  "target_difference": "GAE uses archived production returns=GAE_advantage+initialV including original bootstrap. MC uses sum of future rewards gamma.9 to50 with zero tail. Different estimands, not an unbiased equivalence claim.",
+  "baseline_control": "GAE-state and MC-state both fit same257 actor features, ridge.001trace/d, same episode crossfit. GAE-legacy retains original untrainedV and historical advantage centering.",
+  "geometry": "All gradients aggregate51200 old rows; same current covariance, ridge, mean Gaussian KL=.01, frozen features/std. This is not a comparison of complete PPO learners.",
+  "primary_contrasts": [
+    "mc_state_forward-minus-gae_state_forward: target choice at matched baseline class",
+    "gae_state_forward-minus-gae_legacy_forward: baseline choice at fixed GAE target"
+  ],
+  "primary_rule": "A contrast supports material local benefit only if mean discounted-return gain>=.03 and paired97.5%bootstrap lower bound>0. Otherwise inconclusive unless upper bound<0. Forward/reverse and success are diagnostic, no revised stepsize.",
+  "intervals": "10000 batch-bootstrap draws within each fixed collection;8batches of64episodes. Conditional on three fixed directions, not independent training seeds.",
+  "bootstrap_seed": 93909999,
+  "assistance": {
+    "teacher_transitions": 49971200,
+    "teacher_trainer_seconds": 2295.408300588,
+    "demo_transitions": 25600,
+    "bc_optimizer_updates": 5000
+  },
+  "worker_sha256": "5464a11911dd2e525994da3301aeb91eb267f6eef9865d1b743cf6a52f72dfdf",
+  "timeout_seconds": 240,
+  "startup_timeout_seconds": 60,
+  "internal_seconds": 200,
+  "followup": "Reassess before iterative learner; no automatic retraining, retries or holdout queries"
+}

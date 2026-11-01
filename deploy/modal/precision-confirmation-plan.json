@@ -1,0 +1,57 @@
+{
+  "experiment_id": "stackcube-precision-confirmation-20261028",
+  "registered_at": "2026-10-28T13:10:05.765250+00:00",
+  "launch_enabled": true,
+  "root_reviewed": true,
+  "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
+  "confirmation_weights_sha256": [
+    "ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16",
+    "c3abf0e70973e39c3616f0a217f75583aeff56aea86ad253370e501a24472959",
+    "ec3202403c8cb7c705c1591ce61d61a242d4d9ab957241b4b98d8697bef5cb10"
+  ],
+  "training_seeds": [
+    1,
+    2,
+    3
+  ],
+  "policies": [
+    {
+      "seed": 1,
+      "weights_sha256": "ebe92bbc1ce5dec3f8a271792dd4befb81296b36a5f131345c84e8715a39ea16",
+      "policy_dir": "runs/stackcube-precision-screen-20261027/precision-constant/step-49971200"
+    },
+    {
+      "seed": 2,
+      "weights_sha256": "c3abf0e70973e39c3616f0a217f75583aeff56aea86ad253370e501a24472959",
+      "policy_dir": "runs/stackcube-precision-replication-20261027/stackcube-precision-replication-20261027-precision-constant-seed-2/step-49971200"
+    },
+    {
+      "seed": 3,
+      "weights_sha256": "ec3202403c8cb7c705c1591ce61d61a242d4d9ab957241b4b98d8697bef5cb10",
+      "policy_dir": "runs/stackcube-precision-replication-20261027/stackcube-precision-replication-20261027-precision-constant-seed-3/step-49971200"
+    }
+  ],
+  "split": "confirmation",
+  "episodes_per_policy": 512,
+  "total_episodes": 1536,
+  "max_parallel": 3,
+  "gpu": "L40S",
+  "evaluation_timeout_seconds": 220,
+  "gpu_container_timeout_seconds": 240,
+  "coordinator_timeout_seconds": 1800,
+  "budget_cap_usd": 1,
+  "new_training_runs": 0,
+  "retries": 0,
+  "acceptance_rule": {
+    "mean_success_at_least": 0.99,
+    "every_seed_success_at_least": 0.98
+  },
+  "frozen_adapter_source_sha256": "83179bb0c31a1b621f96da9e1c5f8767cc3377b8b8fc0e3afa6ccabbced42a93",
+  "no_requery_on_failure": true,
+  "private_final_holdout": false,
+  "meaning": "Once-only promotion measurement for fixed50Mrecipe; existing historicalconfirmationdistribution, not privatefinalholdout; never feedepisodeoutputs orscorestocandidatetraining.",
+  "cost_bound_usd": 0.5151807,
+  "root_review_at": "2026-10-28T13:14:01.886806+00:00",
+  "root_review": "Full correcteddriver/contract reviewed;3admission/frozenbodyparitytests passed;SDK1.6.2localregistrationpassed. Frozen evaluator source unchanged; no confirmationattempt before setupfix.",
+  "setup_failure_record": ".runtime/modal-precision-confirmation-setup-failure.json"
+}

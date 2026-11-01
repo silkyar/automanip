@@ -1,0 +1,62 @@
+{
+  "format": "automanip-readout-spectral-results-v1",
+  "state": "complete",
+  "parents": [
+    {
+      "parent": 2,
+      "weighted_design_condition_number": 1177.2082287068818,
+      "ridge_effective_rank": 195.7783305961641,
+      "numerical_rank": 257,
+      "fits": {
+        "registered_ridge": {
+          "heldout_finger_target_RMSE_metres": 0.013230500918934207,
+          "heldout_action_MSE": 0.054689588102609286,
+          "heldout_rehearsal_executed_RMS_change": 0.10880732977898899,
+          "coefficient_norm": 7.80616592441198,
+          "float32_clipped_action_discrepancy": 9.818155410901142e-08
+        },
+        "minimum_norm_OLS": {
+          "heldout_finger_target_RMSE_metres": 0.011742775249570132,
+          "heldout_action_MSE": 0.0458216835366119,
+          "heldout_rehearsal_executed_RMS_change": 0.14162661056470696,
+          "coefficient_norm": 19.077149181270496,
+          "float32_clipped_action_discrepancy": 1.214695433127133e-07
+        }
+      },
+      "hold_coordinate_RMSE_metres": {
+        "ridge": 0.003879401206322548,
+        "OLS": 0.0032457609252547802
+      }
+    },
+    {
+      "parent": 3,
+      "weighted_design_condition_number": 1200.4854912680707,
+      "ridge_effective_rank": 197.23566731291442,
+      "numerical_rank": 257,
+      "fits": {
+        "registered_ridge": {
+          "heldout_finger_target_RMSE_metres": 0.010290545364768717,
+          "heldout_action_MSE": 0.04187591713490617,
+          "heldout_rehearsal_executed_RMS_change": 0.11902840387533553,
+          "coefficient_norm": 6.612594024861556,
+          "float32_clipped_action_discrepancy": 5.8022216586905984e-08
+        },
+        "minimum_norm_OLS": {
+          "heldout_finger_target_RMSE_metres": 0.009164647897950259,
+          "heldout_action_MSE": 0.03634599626860387,
+          "heldout_rehearsal_executed_RMS_change": 0.1565639086023714,
+          "coefficient_norm": 17.161090034193492,
+          "float32_clipped_action_discrepancy": 1.9645907761711712e-07
+        }
+      },
+      "hold_coordinate_RMSE_metres": {
+        "ridge": 0.0036383988048223994,
+        "OLS": 0.003092151593833847
+      }
+    }
+  ],
+  "new_physics": 0,
+  "SVDs": 4,
+  "exported_candidates": 0,
+  "CPU_seconds": 0.23386416694847867
+}

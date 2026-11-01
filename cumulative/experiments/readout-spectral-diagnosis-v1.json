@@ -1,0 +1,15 @@
+{
+  "format": "automanip-readout-spectral-diagnosis-v1",
+  "created_at": 1793461562.7991512,
+  "execution_authorized": true,
+  "scope": "CPU-only identifiability/regularization diagnosis on original fitting/internal-validation rows; no model export or robot queries",
+  "question": "Is poor actuator decoding due to missing information, or suppression of low-variance feature directions by isotropic ridge?",
+  "probes": [
+    "Same weighted teacher+4rehearsal system: compare registeredridge.001 and numericalminimum-norm leastsquares rcond1e-10 viaoneSVD",
+    "Same fitting-feature finger hold inverse target: ridge.001 versusminimum-norm OLS; measure heldout prediction and singular-spectrum shrinkage",
+    "Simulate float32 rounding of lastlayer coefficients offline to quantify numerical usability, without exporting candidates"
+  ],
+  "new_physics": 0,
+  "SVDs": 4,
+  "selection": "No lambda grid or public-performance selection. Endpoints are analytic diagnostics only; deciding any new learning experiment requires separate registration."
+}

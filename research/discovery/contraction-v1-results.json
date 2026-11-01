@@ -1,0 +1,735 @@
+{
+  "hypothesis": "Learned Euclidean closed-loop contraction improves local final-state reliability beyond direct reward optimization and spatial smoothness.",
+  "gate": "Candidate gains at least13/256 successes versus direct reward Q in at least4/6 paired seeds, in both smooth and hybrid plants.",
+  "gate_passed": false,
+  "decision": "stop this Euclidean-contraction version",
+  "summary": [
+    {
+      "hybrid": false,
+      "means": {
+        "direct-reward-Q": 0.8333333333333334,
+        "Q+spatial-smoothness": 0.6666666666666666,
+        "Q+learned-contraction": 0.6666666666666666
+      },
+      "candidate_paired_wins": 0,
+      "candidate_five_percentage_point_wins": 0
+    },
+    {
+      "hybrid": true,
+      "means": {
+        "direct-reward-Q": 0.0006510416666666666,
+        "Q+spatial-smoothness": 0.005859375,
+        "Q+learned-contraction": 0.24088541666666666
+      },
+      "candidate_paired_wins": 6,
+      "candidate_five_percentage_point_wins": 6
+    }
+  ],
+  "records": [
+    {
+      "hybrid": false,
+      "seed": 0,
+      "method": "direct-reward-Q",
+      "initial": {
+        "successes": 16,
+        "episodes": 256,
+        "mean_final_energy": 0.0632130354642868,
+        "final_energy_p95": 0.21447883546352386
+      },
+      "final": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.0007984017138369381,
+        "final_energy_p95": 0.0008546110475435853
+      },
+      "training_model_delta_mse": 9.546911314828321e-06,
+      "training_q_mse": 4.627828820957802e-05
+    },
+    {
+      "hybrid": false,
+      "seed": 0,
+      "method": "Q+spatial-smoothness",
+      "initial": {
+        "successes": 16,
+        "episodes": 256,
+        "mean_final_energy": 0.0632130354642868,
+        "final_energy_p95": 0.21447883546352386
+      },
+      "final": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.0012174156727269292,
+        "final_energy_p95": 0.0013557318598031998
+      },
+      "training_model_delta_mse": 9.546911314828321e-06,
+      "training_q_mse": 4.627828820957802e-05
+    },
+    {
+      "hybrid": false,
+      "seed": 0,
+      "method": "Q+learned-contraction",
+      "initial": {
+        "successes": 16,
+        "episodes": 256,
+        "mean_final_energy": 0.0632130354642868,
+        "final_energy_p95": 0.21447883546352386
+      },
+      "final": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.0014851492596790195,
+        "final_energy_p95": 0.0015902603045105934
+      },
+      "training_model_delta_mse": 9.546911314828321e-06,
+      "training_q_mse": 4.627828820957802e-05
+    },
+    {
+      "hybrid": false,
+      "seed": 1,
+      "method": "direct-reward-Q",
+      "initial": {
+        "successes": 18,
+        "episodes": 256,
+        "mean_final_energy": 0.05815451592206955,
+        "final_energy_p95": 0.18900620937347412
+      },
+      "final": {
+        "successes": 256,
+        "episodes": 256,
+        "mean_final_energy": 1.4515363773170975e-06,
+        "final_energy_p95": 3.961944003094686e-06
+      },
+      "training_model_delta_mse": 6.634659257542808e-06,
+      "training_q_mse": 4.9222006055060774e-05
+    },
+    {
+      "hybrid": false,
+      "seed": 1,
+      "method": "Q+spatial-smoothness",
+      "initial": {
+        "successes": 18,
+        "episodes": 256,
+        "mean_final_energy": 0.05815451592206955,
+        "final_energy_p95": 0.18900620937347412
+      },
+      "final": {
+        "successes": 256,
+        "episodes": 256,
+        "mean_final_energy": 5.327664894139161e-06,
+        "final_energy_p95": 1.5673715097364038e-05
+      },
+      "training_model_delta_mse": 6.634659257542808e-06,
+      "training_q_mse": 4.9222006055060774e-05
+    },
+    {
+      "hybrid": false,
+      "seed": 1,
+      "method": "Q+learned-contraction",
+      "initial": {
+        "successes": 18,
+        "episodes": 256,
+        "mean_final_energy": 0.05815451592206955,
+        "final_energy_p95": 0.18900620937347412
+      },
+      "final": {
+        "successes": 256,
+        "episodes": 256,
+        "mean_final_energy": 2.7867288736160845e-05,
+        "final_energy_p95": 4.2051979107782245e-05
+      },
+      "training_model_delta_mse": 6.634659257542808e-06,
+      "training_q_mse": 4.9222006055060774e-05
+    },
+    {
+      "hybrid": false,
+      "seed": 2,
+      "method": "direct-reward-Q",
+      "initial": {
+        "successes": 10,
+        "episodes": 256,
+        "mean_final_energy": 0.06879620999097824,
+        "final_energy_p95": 0.2327742874622345
+      },
+      "final": {
+        "successes": 256,
+        "episodes": 256,
+        "mean_final_energy": 7.531774463132024e-05,
+        "final_energy_p95": 9.330748434877023e-05
+      },
+      "training_model_delta_mse": 7.875404662627261e-06,
+      "training_q_mse": 3.98882657464128e-05
+    },
+    {
+      "hybrid": false,
+      "seed": 2,
+      "method": "Q+spatial-smoothness",
+      "initial": {
+        "successes": 10,
+        "episodes": 256,
+        "mean_final_energy": 0.06879620999097824,
+        "final_energy_p95": 0.2327742874622345
+      },
+      "final": {
+        "successes": 256,
+        "episodes": 256,
+        "mean_final_energy": 8.342467481270432e-05,
+        "final_energy_p95": 0.00012600979243870825
+      },
+      "training_model_delta_mse": 7.875404662627261e-06,
+      "training_q_mse": 3.98882657464128e-05
+    },
+    {
+      "hybrid": false,
+      "seed": 2,
+      "method": "Q+learned-contraction",
+      "initial": {
+        "successes": 10,
+        "episodes": 256,
+        "mean_final_energy": 0.06879620999097824,
+        "final_energy_p95": 0.2327742874622345
+      },
+      "final": {
+        "successes": 256,
+        "episodes": 256,
+        "mean_final_energy": 1.5807002000656212e-06,
+        "final_energy_p95": 4.877548690274125e-06
+      },
+      "training_model_delta_mse": 7.875404662627261e-06,
+      "training_q_mse": 3.98882657464128e-05
+    },
+    {
+      "hybrid": false,
+      "seed": 3,
+      "method": "direct-reward-Q",
+      "initial": {
+        "successes": 15,
+        "episodes": 256,
+        "mean_final_energy": 0.07876498252153397,
+        "final_energy_p95": 0.25795674324035645
+      },
+      "final": {
+        "successes": 256,
+        "episodes": 256,
+        "mean_final_energy": 0.0001321866293437779,
+        "final_energy_p95": 0.00015002542932052165
+      },
+      "training_model_delta_mse": 8.870611054589972e-06,
+      "training_q_mse": 0.00020098577078897506
+    },
+    {
+      "hybrid": false,
+      "seed": 3,
+      "method": "Q+spatial-smoothness",
+      "initial": {
+        "successes": 15,
+        "episodes": 256,
+        "mean_final_energy": 0.07876498252153397,
+        "final_energy_p95": 0.25795674324035645
+      },
+      "final": {
+        "successes": 256,
+        "episodes": 256,
+        "mean_final_energy": 3.779899998335168e-05,
+        "final_energy_p95": 6.384637526934966e-05
+      },
+      "training_model_delta_mse": 8.870611054589972e-06,
+      "training_q_mse": 0.00020098577078897506
+    },
+    {
+      "hybrid": false,
+      "seed": 3,
+      "method": "Q+learned-contraction",
+      "initial": {
+        "successes": 15,
+        "episodes": 256,
+        "mean_final_energy": 0.07876498252153397,
+        "final_energy_p95": 0.25795674324035645
+      },
+      "final": {
+        "successes": 256,
+        "episodes": 256,
+        "mean_final_energy": 0.0003851161745842546,
+        "final_energy_p95": 0.0004351177776698023
+      },
+      "training_model_delta_mse": 8.870611054589972e-06,
+      "training_q_mse": 0.00020098577078897506
+    },
+    {
+      "hybrid": false,
+      "seed": 4,
+      "method": "direct-reward-Q",
+      "initial": {
+        "successes": 19,
+        "episodes": 256,
+        "mean_final_energy": 0.06585405021905899,
+        "final_energy_p95": 0.2102721780538559
+      },
+      "final": {
+        "successes": 256,
+        "episodes": 256,
+        "mean_final_energy": 1.983437323360704e-05,
+        "final_energy_p95": 2.643303196236957e-05
+      },
+      "training_model_delta_mse": 8.28058909974061e-06,
+      "training_q_mse": 9.69385655480437e-05
+    },
+    {
+      "hybrid": false,
+      "seed": 4,
+      "method": "Q+spatial-smoothness",
+      "initial": {
+        "successes": 19,
+        "episodes": 256,
+        "mean_final_energy": 0.06585405021905899,
+        "final_energy_p95": 0.2102721780538559
+      },
+      "final": {
+        "successes": 256,
+        "episodes": 256,
+        "mean_final_energy": 5.424121263786219e-05,
+        "final_energy_p95": 8.491281187161803e-05
+      },
+      "training_model_delta_mse": 8.28058909974061e-06,
+      "training_q_mse": 9.69385655480437e-05
+    },
+    {
+      "hybrid": false,
+      "seed": 4,
+      "method": "Q+learned-contraction",
+      "initial": {
+        "successes": 19,
+        "episodes": 256,
+        "mean_final_energy": 0.06585405021905899,
+        "final_energy_p95": 0.2102721780538559
+      },
+      "final": {
+        "successes": 256,
+        "episodes": 256,
+        "mean_final_energy": 9.212638474309642e-07,
+        "final_energy_p95": 2.9451675800373778e-06
+      },
+      "training_model_delta_mse": 8.28058909974061e-06,
+      "training_q_mse": 9.69385655480437e-05
+    },
+    {
+      "hybrid": false,
+      "seed": 5,
+      "method": "direct-reward-Q",
+      "initial": {
+        "successes": 19,
+        "episodes": 256,
+        "mean_final_energy": 0.07572401314973831,
+        "final_energy_p95": 0.24389690160751343
+      },
+      "final": {
+        "successes": 256,
+        "episodes": 256,
+        "mean_final_energy": 0.0001175239885924384,
+        "final_energy_p95": 0.00013257079990580678
+      },
+      "training_model_delta_mse": 8.630882803117856e-06,
+      "training_q_mse": 0.0001365622883895412
+    },
+    {
+      "hybrid": false,
+      "seed": 5,
+      "method": "Q+spatial-smoothness",
+      "initial": {
+        "successes": 19,
+        "episodes": 256,
+        "mean_final_energy": 0.07572401314973831,
+        "final_energy_p95": 0.24389690160751343
+      },
+      "final": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.003476906567811966,
+        "final_energy_p95": 0.00368765601888299
+      },
+      "training_model_delta_mse": 8.630882803117856e-06,
+      "training_q_mse": 0.0001365622883895412
+    },
+    {
+      "hybrid": false,
+      "seed": 5,
+      "method": "Q+learned-contraction",
+      "initial": {
+        "successes": 19,
+        "episodes": 256,
+        "mean_final_energy": 0.07572401314973831,
+        "final_energy_p95": 0.24389690160751343
+      },
+      "final": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.010376682505011559,
+        "final_energy_p95": 0.010603697039186954
+      },
+      "training_model_delta_mse": 8.630882803117856e-06,
+      "training_q_mse": 0.0001365622883895412
+    },
+    {
+      "hybrid": true,
+      "seed": 0,
+      "method": "direct-reward-Q",
+      "initial": {
+        "successes": 5,
+        "episodes": 256,
+        "mean_final_energy": 0.0779450535774231,
+        "final_energy_p95": 0.24276183545589447
+      },
+      "final": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.0523366816341877,
+        "final_energy_p95": 0.15072357654571533
+      },
+      "training_model_delta_mse": 0.004433154594153166,
+      "training_q_mse": 0.00018090291996486485
+    },
+    {
+      "hybrid": true,
+      "seed": 0,
+      "method": "Q+spatial-smoothness",
+      "initial": {
+        "successes": 5,
+        "episodes": 256,
+        "mean_final_energy": 0.0779450535774231,
+        "final_energy_p95": 0.24276183545589447
+      },
+      "final": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.049531374126672745,
+        "final_energy_p95": 0.10151610523462296
+      },
+      "training_model_delta_mse": 0.004433154594153166,
+      "training_q_mse": 0.00018090291996486485
+    },
+    {
+      "hybrid": true,
+      "seed": 0,
+      "method": "Q+learned-contraction",
+      "initial": {
+        "successes": 5,
+        "episodes": 256,
+        "mean_final_energy": 0.0779450535774231,
+        "final_energy_p95": 0.24276183545589447
+      },
+      "final": {
+        "successes": 92,
+        "episodes": 256,
+        "mean_final_energy": 0.0005608323263004422,
+        "final_energy_p95": 0.0016936197644099593
+      },
+      "training_model_delta_mse": 0.004433154594153166,
+      "training_q_mse": 0.00018090291996486485
+    },
+    {
+      "hybrid": true,
+      "seed": 1,
+      "method": "direct-reward-Q",
+      "initial": {
+        "successes": 5,
+        "episodes": 256,
+        "mean_final_energy": 0.06960401684045792,
+        "final_energy_p95": 0.20884296298027039
+      },
+      "final": {
+        "successes": 1,
+        "episodes": 256,
+        "mean_final_energy": 0.01751304231584072,
+        "final_energy_p95": 0.0448002964258194
+      },
+      "training_model_delta_mse": 0.004931105300784111,
+      "training_q_mse": 9.481641609454527e-05
+    },
+    {
+      "hybrid": true,
+      "seed": 1,
+      "method": "Q+spatial-smoothness",
+      "initial": {
+        "successes": 5,
+        "episodes": 256,
+        "mean_final_energy": 0.06960401684045792,
+        "final_energy_p95": 0.20884296298027039
+      },
+      "final": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.014282874763011932,
+        "final_energy_p95": 0.030689824372529984
+      },
+      "training_model_delta_mse": 0.004931105300784111,
+      "training_q_mse": 9.481641609454527e-05
+    },
+    {
+      "hybrid": true,
+      "seed": 1,
+      "method": "Q+learned-contraction",
+      "initial": {
+        "successes": 5,
+        "episodes": 256,
+        "mean_final_energy": 0.06960401684045792,
+        "final_energy_p95": 0.20884296298027039
+      },
+      "final": {
+        "successes": 40,
+        "episodes": 256,
+        "mean_final_energy": 0.0016192044131457806,
+        "final_energy_p95": 0.004732146393507719
+      },
+      "training_model_delta_mse": 0.004931105300784111,
+      "training_q_mse": 9.481641609454527e-05
+    },
+    {
+      "hybrid": true,
+      "seed": 2,
+      "method": "direct-reward-Q",
+      "initial": {
+        "successes": 3,
+        "episodes": 256,
+        "mean_final_energy": 0.07916436344385147,
+        "final_energy_p95": 0.24859382212162018
+      },
+      "final": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.007860979996621609,
+        "final_energy_p95": 0.03254416957497597
+      },
+      "training_model_delta_mse": 0.0054135448299348354,
+      "training_q_mse": 0.00011573821393540129
+    },
+    {
+      "hybrid": true,
+      "seed": 2,
+      "method": "Q+spatial-smoothness",
+      "initial": {
+        "successes": 3,
+        "episodes": 256,
+        "mean_final_energy": 0.07916436344385147,
+        "final_energy_p95": 0.24859382212162018
+      },
+      "final": {
+        "successes": 9,
+        "episodes": 256,
+        "mean_final_energy": 0.018322356045246124,
+        "final_energy_p95": 0.05018964409828186
+      },
+      "training_model_delta_mse": 0.0054135448299348354,
+      "training_q_mse": 0.00011573821393540129
+    },
+    {
+      "hybrid": true,
+      "seed": 2,
+      "method": "Q+learned-contraction",
+      "initial": {
+        "successes": 3,
+        "episodes": 256,
+        "mean_final_energy": 0.07916436344385147,
+        "final_energy_p95": 0.24859382212162018
+      },
+      "final": {
+        "successes": 73,
+        "episodes": 256,
+        "mean_final_energy": 0.000751843152102083,
+        "final_energy_p95": 0.002492277417331934
+      },
+      "training_model_delta_mse": 0.0054135448299348354,
+      "training_q_mse": 0.00011573821393540129
+    },
+    {
+      "hybrid": true,
+      "seed": 3,
+      "method": "direct-reward-Q",
+      "initial": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.09790836274623871,
+        "final_energy_p95": 0.2675156593322754
+      },
+      "final": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.1086045503616333,
+        "final_energy_p95": 0.20722438395023346
+      },
+      "training_model_delta_mse": 0.005669302772730589,
+      "training_q_mse": 0.0006475314730778337
+    },
+    {
+      "hybrid": true,
+      "seed": 3,
+      "method": "Q+spatial-smoothness",
+      "initial": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.09790836274623871,
+        "final_energy_p95": 0.2675156593322754
+      },
+      "final": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.1044670045375824,
+        "final_energy_p95": 0.18816015124320984
+      },
+      "training_model_delta_mse": 0.005669302772730589,
+      "training_q_mse": 0.0006475314730778337
+    },
+    {
+      "hybrid": true,
+      "seed": 3,
+      "method": "Q+learned-contraction",
+      "initial": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.09790836274623871,
+        "final_energy_p95": 0.2675156593322754
+      },
+      "final": {
+        "successes": 27,
+        "episodes": 256,
+        "mean_final_energy": 0.001489776186645031,
+        "final_energy_p95": 0.004198695532977581
+      },
+      "training_model_delta_mse": 0.005669302772730589,
+      "training_q_mse": 0.0006475314730778337
+    },
+    {
+      "hybrid": true,
+      "seed": 4,
+      "method": "direct-reward-Q",
+      "initial": {
+        "successes": 65,
+        "episodes": 256,
+        "mean_final_energy": 0.02971080131828785,
+        "final_energy_p95": 0.11229594051837921
+      },
+      "final": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.1090775579214096,
+        "final_energy_p95": 0.21616636216640472
+      },
+      "training_model_delta_mse": 0.003653870429843664,
+      "training_q_mse": 0.0002086508320644498
+    },
+    {
+      "hybrid": true,
+      "seed": 4,
+      "method": "Q+spatial-smoothness",
+      "initial": {
+        "successes": 65,
+        "episodes": 256,
+        "mean_final_energy": 0.02971080131828785,
+        "final_energy_p95": 0.11229594051837921
+      },
+      "final": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.10886973887681961,
+        "final_energy_p95": 0.21551118791103363
+      },
+      "training_model_delta_mse": 0.003653870429843664,
+      "training_q_mse": 0.0002086508320644498
+    },
+    {
+      "hybrid": true,
+      "seed": 4,
+      "method": "Q+learned-contraction",
+      "initial": {
+        "successes": 65,
+        "episodes": 256,
+        "mean_final_energy": 0.02971080131828785,
+        "final_energy_p95": 0.11229594051837921
+      },
+      "final": {
+        "successes": 85,
+        "episodes": 256,
+        "mean_final_energy": 0.0005769189447164536,
+        "final_energy_p95": 0.001667676493525505
+      },
+      "training_model_delta_mse": 0.003653870429843664,
+      "training_q_mse": 0.0002086508320644498
+    },
+    {
+      "hybrid": true,
+      "seed": 5,
+      "method": "direct-reward-Q",
+      "initial": {
+        "successes": 46,
+        "episodes": 256,
+        "mean_final_energy": 0.0488470159471035,
+        "final_energy_p95": 0.16012950241565704
+      },
+      "final": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.1073736697435379,
+        "final_energy_p95": 0.2364712804555893
+      },
+      "training_model_delta_mse": 0.0036965389735996723,
+      "training_q_mse": 0.00035796925658360124
+    },
+    {
+      "hybrid": true,
+      "seed": 5,
+      "method": "Q+spatial-smoothness",
+      "initial": {
+        "successes": 46,
+        "episodes": 256,
+        "mean_final_energy": 0.0488470159471035,
+        "final_energy_p95": 0.16012950241565704
+      },
+      "final": {
+        "successes": 0,
+        "episodes": 256,
+        "mean_final_energy": 0.10644320398569107,
+        "final_energy_p95": 0.1981569528579712
+      },
+      "training_model_delta_mse": 0.0036965389735996723,
+      "training_q_mse": 0.00035796925658360124
+    },
+    {
+      "hybrid": true,
+      "seed": 5,
+      "method": "Q+learned-contraction",
+      "initial": {
+        "successes": 46,
+        "episodes": 256,
+        "mean_final_energy": 0.0488470159471035,
+        "final_energy_p95": 0.16012950241565704
+      },
+      "final": {
+        "successes": 53,
+        "episodes": 256,
+        "mean_final_energy": 0.0010223624994978309,
+        "final_energy_p95": 0.0031935209408402443
+      },
+      "training_model_delta_mse": 0.0036965389735996723,
+      "training_q_mse": 0.00035796925658360124
+    }
+  ],
+  "wall_seconds": 10.495420708000893,
+  "source_sha256": "8e4e3ca27406fe580f3336b460895bf1de982497b4562720ce871f62958949d9",
+  "accounting": {
+    "toy_transition_data": 49152,
+    "model_updates": 7200,
+    "direct_reward_q_updates": 7200,
+    "actor_updates": 14400,
+    "training_sample_rows": 921600,
+    "actor_sample_rows": 1843200,
+    "heldout_toy_evaluation_steps": 614400,
+    "robot_transitions": 0,
+    "simulator_queries": 0,
+    "gpu_seconds": 0,
+    "dollars_spent": 0
+  },
+  "limitations": [
+    "Offline one-step local toy, not a full RL control.",
+    "Dynamics/Q fits shared across actor methods; contraction requires additional second-derivative computation.",
+    "Euclidean units/metric are fixed by this toy; no learned certificate or stability guarantee.",
+    "Hybrid actuation flip is a synthetic contact-style stress, not a model of StackCube contacts."
+  ]
+}

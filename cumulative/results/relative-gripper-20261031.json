@@ -1,0 +1,1250 @@
+{
+  "format": "automanip-relative-gripper-analysis-v1",
+  "state": "complete",
+  "new_transitions": 115200,
+  "optimizer_calls": 0,
+  "worker_seconds": [
+    8.268034281,
+    6.456916574999999,
+    6.589863652000002,
+    6.430433811999997,
+    6.366818305999999,
+    6.234537856000003,
+    6.3016439490000025,
+    6.300442239000006,
+    6.196401705999989,
+    6.342590131999998,
+    6.322440534999998,
+    6.319549130000013,
+    6.173733806000001,
+    6.293642009999999,
+    6.291345495000002,
+    6.245508635999997,
+    7.134163093000012,
+    6.337653565000011,
+    8.228547378,
+    7.0506533099999995,
+    6.979563162999998,
+    6.887562059000004,
+    7.042914379999999,
+    6.849405397000005,
+    6.832017065999992,
+    6.817356478999997,
+    6.961803438999993,
+    6.817801003,
+    6.876817962000004,
+    6.923756139999995,
+    6.887225253000011,
+    6.940337935000002,
+    6.960946004000007,
+    6.855406655999985,
+    6.85331648799999,
+    6.873765265999992
+  ],
+  "fidelity_passed": true,
+  "coverage_passed": true,
+  "screen_passed": true,
+  "covered_source_states": {
+    "absolute": 1,
+    "anchor": 19,
+    "current": 89
+  },
+  "source_states": 128,
+  "current_minus_absolute": 0.6875,
+  "parents": [
+    {
+      "parent": 2,
+      "covered_states": {
+        "absolute": 0,
+        "anchor": 11,
+        "current": 50
+      },
+      "candidate_successes": {
+        "absolute": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "anchor": [
+          1,
+          1,
+          0,
+          5,
+          1,
+          1,
+          3,
+          2
+        ],
+        "current": [
+          16,
+          10,
+          14,
+          9,
+          16,
+          7,
+          14,
+          12
+        ]
+      },
+      "opening_fraction": {
+        "absolute": 0.0546875,
+        "anchor": 0.53125,
+        "current": 0.53125
+      },
+      "first_requested_gap_median": {
+        "absolute": -0.0034421063028275967,
+        "anchor": 9.218882769346237e-05,
+        "current": 9.218882769346237e-05
+      },
+      "prefixes": [
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 1,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 2,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 3,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 4,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 5,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 6,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 7,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 8,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 1,
+          "repeat": 1,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 1,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 2,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 3,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 4,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 5,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 6,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 7,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 8,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 1,
+          "repeat": 1,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        }
+      ],
+      "repeated_continuations": [
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "action_tape_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "action_tape_identical": true
+        }
+      ],
+      "first_anchor_current_matches": [
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 1,
+          "first_action_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 2,
+          "first_action_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 3,
+          "first_action_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 4,
+          "first_action_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 5,
+          "first_action_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 6,
+          "first_action_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 7,
+          "first_action_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 8,
+          "first_action_identical": true
+        }
+      ],
+      "selected_candidates": [
+        7,
+        -1,
+        2,
+        5,
+        2,
+        -1,
+        1,
+        2,
+        2,
+        1,
+        6,
+        4,
+        1,
+        8,
+        -1,
+        -1,
+        1,
+        1,
+        8,
+        8,
+        1,
+        3,
+        1,
+        -1,
+        5,
+        1,
+        -1,
+        6,
+        1,
+        5,
+        -1,
+        -1,
+        7,
+        4,
+        7,
+        2,
+        -1,
+        -1,
+        -1,
+        4,
+        5,
+        7,
+        3,
+        7,
+        3,
+        3,
+        1,
+        8,
+        8,
+        -1,
+        1,
+        5,
+        -1,
+        7,
+        6,
+        4,
+        7,
+        3,
+        -1,
+        8,
+        3,
+        8,
+        5,
+        8
+      ]
+    },
+    {
+      "parent": 3,
+      "covered_states": {
+        "absolute": 1,
+        "anchor": 8,
+        "current": 39
+      },
+      "candidate_successes": {
+        "absolute": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "anchor": [
+          0,
+          2,
+          2,
+          1,
+          1,
+          2,
+          3,
+          1
+        ],
+        "current": [
+          7,
+          6,
+          12,
+          10,
+          7,
+          8,
+          11,
+          10
+        ]
+      },
+      "opening_fraction": {
+        "absolute": 0.02734375,
+        "anchor": 0.4921875,
+        "current": 0.4921875
+      },
+      "first_requested_gap_median": {
+        "absolute": -0.0031602480448782444,
+        "anchor": -4.3307431042194366e-05,
+        "current": -4.3307431042194366e-05
+      },
+      "prefixes": [
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 1,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 2,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 3,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 4,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 5,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 6,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 7,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 8,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "candidate": 1,
+          "repeat": 1,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 1,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 2,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 3,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 4,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 5,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 6,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 7,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 8,
+          "repeat": 0,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "candidate": 1,
+          "repeat": 1,
+          "prefix_actions_identical": true,
+          "arm_actions_identical": true
+        }
+      ],
+      "repeated_continuations": [
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "anchor",
+          "action_tape_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "mode": "current",
+          "action_tape_identical": true
+        }
+      ],
+      "first_anchor_current_matches": [
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 1,
+          "first_action_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 2,
+          "first_action_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 3,
+          "first_action_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 4,
+          "first_action_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 5,
+          "first_action_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 6,
+          "first_action_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 7,
+          "first_action_identical": true
+        },
+        {
+          "maximum_errors": {
+            "position": 0.0,
+            "qpos": 0.0,
+            "qvel": 0.0,
+            "linear_velocity": 0.0,
+            "angular_velocity": 0.0,
+            "rotation": 0.0
+          },
+          "grasp_or_success_changed_lanes": 0,
+          "final_success_changed_lanes": 0,
+          "passed": true,
+          "candidate": 8,
+          "first_action_identical": true
+        }
+      ],
+      "selected_candidates": [
+        -1,
+        6,
+        3,
+        7,
+        8,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        4,
+        8,
+        -1,
+        -1,
+        6,
+        7,
+        6,
+        -1,
+        -1,
+        4,
+        8,
+        -1,
+        1,
+        5,
+        -1,
+        -1,
+        -1,
+        4,
+        -1,
+        -1,
+        -1,
+        3,
+        3,
+        6,
+        1,
+        6,
+        -1,
+        6,
+        3,
+        7,
+        7,
+        8,
+        2,
+        -1,
+        -1,
+        8,
+        5,
+        6,
+        4,
+        7,
+        -1,
+        5,
+        2,
+        -1,
+        -1,
+        8,
+        -1,
+        7,
+        -1,
+        3,
+        8,
+        -1,
+        8,
+        -1
+      ]
+    }
+  ],
+  "decision": "Register matched student/control test",
+  "scope": "Sampler-coordinate diagnosis on acquired policies; not a learned-policy benchmark or general learning principle"
+}

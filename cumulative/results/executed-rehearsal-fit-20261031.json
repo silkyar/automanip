@@ -1,0 +1,166 @@
+{
+  "state": "complete",
+  "new_physics": 0,
+  "optimizer_calls": 1024,
+  "CPU_fits": 4,
+  "CPU_seconds": 4.053272542078048,
+  "last_layer_training_rows": 1441792,
+  "reports": [
+    {
+      "state": "complete",
+      "parent": 2,
+      "method": "raw_refinement",
+      "source_sha256": "0a771e74328a0ed2f89206359bb4aa490a18b8036876667b3042ab8e3db34c83",
+      "data_sha256": "e300ea3ee3cc57c64dc9dee7b87e115fd504114b9ab24f8444b7a8b624befbf2",
+      "adam_steps": 256,
+      "cached_hidden_feature_rows": 2148,
+      "last_layer_training_rows": 360448,
+      "new_physics": 0,
+      "initial_gradient_max": 1.0547118733938987e-14,
+      "delta_parameter_RMS_change": 2.8670764667489676e-05,
+      "validation_teacher_action_MSE": 0.05468958449116945,
+      "validation_finger_target_RMSE_metres": 0.013230481721299661,
+      "validation_positive_increment_fraction": 0.07307692307692308,
+      "validation_rehearsal_executed_RMS_change": 0.10880673120191689,
+      "validation_rehearsal_raw_RMS_change": 0.13759112914824378,
+      "export_parity_max_error": 9.905832243362056e-08,
+      "weights_sha256": "245176704a5dc4350ce3afebcfe31072ccdad219ba3ec48f9929947cca6a1566",
+      "losses": [
+        {
+          "step": 1,
+          "objective": 0.7285529449685858
+        },
+        {
+          "step": 64,
+          "objective": 0.728554735532076
+        },
+        {
+          "step": 128,
+          "objective": 0.7285529684003923
+        },
+        {
+          "step": 256,
+          "objective": 0.7285529501135116
+        }
+      ],
+      "CPU_seconds": 1.014569167047739
+    },
+    {
+      "state": "complete",
+      "parent": 2,
+      "method": "executed_refinement",
+      "source_sha256": "0a771e74328a0ed2f89206359bb4aa490a18b8036876667b3042ab8e3db34c83",
+      "data_sha256": "e300ea3ee3cc57c64dc9dee7b87e115fd504114b9ab24f8444b7a8b624befbf2",
+      "adam_steps": 256,
+      "cached_hidden_feature_rows": 2148,
+      "last_layer_training_rows": 360448,
+      "new_physics": 0,
+      "initial_gradient_max": 0.10738439714193011,
+      "delta_parameter_RMS_change": 0.019929523444763664,
+      "validation_teacher_action_MSE": 0.0527347677176566,
+      "validation_finger_target_RMSE_metres": 0.012976108818996496,
+      "validation_positive_increment_fraction": 0.07307692307692308,
+      "validation_rehearsal_executed_RMS_change": 0.1044899726777021,
+      "validation_rehearsal_raw_RMS_change": 0.16779024518073268,
+      "export_parity_max_error": 3.519501756699128e-08,
+      "weights_sha256": "caddf1eb78ca2544f7b08f3d739dcb4f382b87283dbd8da0d7fed9bb11ee404f",
+      "losses": [
+        {
+          "step": 1,
+          "objective": 0.6421931994326535
+        },
+        {
+          "step": 64,
+          "objective": 0.6200632656158515
+        },
+        {
+          "step": 128,
+          "objective": 0.6078052579793111
+        },
+        {
+          "step": 256,
+          "objective": 0.5899255640084539
+        }
+      ],
+      "CPU_seconds": 0.9823099999921396
+    },
+    {
+      "state": "complete",
+      "parent": 3,
+      "method": "raw_refinement",
+      "source_sha256": "0a771e74328a0ed2f89206359bb4aa490a18b8036876667b3042ab8e3db34c83",
+      "data_sha256": "528ee831a59a7fd287cae6a83e3a5f0cc8f8b597b696cc188adda38d964eafde",
+      "adam_steps": 256,
+      "cached_hidden_feature_rows": 2008,
+      "last_layer_training_rows": 360448,
+      "new_physics": 0,
+      "initial_gradient_max": 1.3211653993039363e-14,
+      "delta_parameter_RMS_change": 1.741226800050627e-05,
+      "validation_teacher_action_MSE": 0.04187716337606907,
+      "validation_finger_target_RMSE_metres": 0.010290801218814842,
+      "validation_positive_increment_fraction": 0.016666666666666666,
+      "validation_rehearsal_executed_RMS_change": 0.11902843796316716,
+      "validation_rehearsal_raw_RMS_change": 0.14673676582986664,
+      "export_parity_max_error": 3.9335634582915446e-08,
+      "weights_sha256": "19030ca98e80ce8006930a23952594794b6ccdff0e97bbf19f4e095438bda402",
+      "losses": [
+        {
+          "step": 1,
+          "objective": 0.5884000363712697
+        },
+        {
+          "step": 64,
+          "objective": 0.588404194848086
+        },
+        {
+          "step": 128,
+          "objective": 0.588400050935426
+        },
+        {
+          "step": 256,
+          "objective": 0.5884000387842939
+        }
+      ],
+      "CPU_seconds": 1.0324191669933498
+    },
+    {
+      "state": "complete",
+      "parent": 3,
+      "method": "executed_refinement",
+      "source_sha256": "0a771e74328a0ed2f89206359bb4aa490a18b8036876667b3042ab8e3db34c83",
+      "data_sha256": "528ee831a59a7fd287cae6a83e3a5f0cc8f8b597b696cc188adda38d964eafde",
+      "adam_steps": 256,
+      "cached_hidden_feature_rows": 2008,
+      "last_layer_training_rows": 360448,
+      "new_physics": 0,
+      "initial_gradient_max": 0.17188009747022748,
+      "delta_parameter_RMS_change": 0.01772927500307822,
+      "validation_teacher_action_MSE": 0.03740700383274765,
+      "validation_finger_target_RMSE_metres": 0.009365753955468063,
+      "validation_positive_increment_fraction": 0.075,
+      "validation_rehearsal_executed_RMS_change": 0.11750225178574436,
+      "validation_rehearsal_raw_RMS_change": 0.1962371481046893,
+      "export_parity_max_error": 1.0892798352202249e-07,
+      "weights_sha256": "720b072357a4ce035736bd93893958c911739b080717a600f76546fe6739428d",
+      "losses": [
+        {
+          "step": 1,
+          "objective": 0.5234948360614616
+        },
+        {
+          "step": 64,
+          "objective": 0.4952676135797997
+        },
+        {
+          "step": 128,
+          "objective": 0.48309297973615123
+        },
+        {
+          "step": 256,
+          "objective": 0.46632277292954294
+        }
+      ],
+      "CPU_seconds": 1.0239742080448195
+    }
+  ]
+}
