@@ -1,0 +1,45 @@
+{
+ "campaign": "td3-utd16-confirmation-20261031",
+ "status": "prepared, NOT run; requires root-reviewed admission per docs/stackcube-precision-confirmation-plan-20261028.md",
+ "volume": "automanip-sample-efficiency-r4-20261031",
+ "policies": [
+  {
+   "seed": 21,
+   "steps": 7680000,
+   "public_dev_successes": 124,
+   "weights_sha256": "2af097c2dc1e3c4cb7e6498ad9adab6eefec7524e109ac54a829d63ccb45593e",
+   "path": "trial-0/work/runs/se-r4-td3-utd16-seed-21/actors/7680000"
+  },
+  {
+   "seed": 22,
+   "steps": 7680000,
+   "public_dev_successes": 127,
+   "weights_sha256": "aed562e322f46e0e4684ca28c4b29a5a1c23c7021d75caaae274d8142e302a7c",
+   "path": "trial-1/work/runs/se-r4-td3-utd16-seed-22/actors/7680000"
+  },
+  {
+   "seed": 23,
+   "steps": 7680000,
+   "public_dev_successes": 122,
+   "weights_sha256": "d0744ec8b4f855d6e609bb75f5aa8b3b66b93bc44cc496c196c80682e8265294",
+   "path": "trial-2/work/runs/se-r4-td3-utd16-seed-23/actors/7680000"
+  },
+  {
+   "seed": 24,
+   "steps": 7680000,
+   "public_dev_successes": 121,
+   "weights_sha256": "91d1055897bf1a22ae4699226983d80995f2381933d0f180b6edf1a0ed1070f2",
+   "path": "trial-3/work/runs/se-r4-td3-utd16-seed-24/actors/7680000"
+  },
+  {
+   "seed": 25,
+   "steps": 7680000,
+   "public_dev_successes": 124,
+   "weights_sha256": "f3d385a4f93c29faa59569d7415be12933d7c21e4059d6a9d8c16a1dd3b53388",
+   "path": "trial-4/work/runs/se-r4-td3-utd16-seed-25/actors/7680000"
+  }
+ ],
+ "episodes_per_policy": 512,
+ "split": "confirmation (1,000,000-1,000,511)",
+ "selection_rule": "final export of every r4 seed, fixed before any confirmation query"
+}
