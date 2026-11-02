@@ -290,3 +290,55 @@ PER is later than its paired control on every seed (by one to two checkpoints) a
 ### smoke-x1 (PokeCube, 1.024M, execution check after the predictions were registered)
 
 All 12 trainer calls completed. At 1.024M, research-side successes: PPO control 0, 0, 0; env512 22, 6, 0; env512-bineps 0, 0, 0; td3-utd16 40, 128, 125 (seeds 11, 12, 13). The predictions in [lesson-transfer-predictions](lesson-transfer-predictions-20261101.md) were written before this smoke and are not changed. The early TD3 numbers already point against P3; the full x1 run scores the predictions.
+
+## Protected confirmation of td3-utd16 (once-only, root-approved) — **target met**
+
+Approved one-time by the repository owner on Nov 1 ([plan](td3-utd16-confirmation-plan-20261101.md)). 512 frozen confirmation episodes per policy, the unchanged frozen evaluator, the final 7.68M export of every r4 seed (fixed before any query). The first launch omitted `--detach`: the app stopped when the local entrypoint returned, and the coordinator ended before claiming the campaign. It was verified that no claim, summary or evaluation attempt existed for any digest, so no protected episode was queried. That is recorded in `.runtime/modal-td3-confirmation-setup-failure-1.json`, and the campaign was then launched once with `--detach`.
+
+| seed | success at end | success ever | Wilson 95% |
+|---|---|---|---|
+| 21 | 483/512 (94.34%) | 98.63% | 92.0–96.0% |
+| 22 | 490/512 (95.70%) | 99.22% | 93.6–97.1% |
+| 23 | 489/512 (95.51%) | 98.83% | 93.3–97.0% |
+| 24 | 488/512 (95.31%) | 99.02% | 93.1–96.8% |
+| 25 | 492/512 (96.09%) | 98.63% | 94.0–97.5% |
+| **mean** | **95.39%** | | |
+
+Preregistered target: mean ≥95% and every seed ≥90%. **Met** (mean 95.39%, minimum 94.34%). For comparison, the historical 50M PPO recipe confirmed at 95.90% on the same confirmation distribution after 49.97M transitions (about 37 trainer minutes per seed on an L40S). The TD3 recipe confirms at 95.39% after 7.68M transitions (about 26 trainer minutes per seed): about 6.5× fewer environment interactions and about 0.7× the trainer time for a similar confirmed success. To 80–90% on public development episodes, TD3 is about 40% slower in wall-clock than the PPO control (median 12.4 vs about 8.5 minutes to 80%; one of five control seeds never reached 80%).
+
+## x1: lesson transfer to an unseen task (PokeCube-v1; predictions registered first in [lesson-transfer-predictions](lesson-transfer-predictions-20261101.md))
+
+Research-side evaluation, 128 fixed episodes, T80 = 103/128, seeds 11/12/13:
+
+| Arm | T80 | Finals |
+|---|---|---|
+| ppo-control | 10.24, 7.17M, censored at 15.36M | 111, 124, 0 |
+| ppo-env512 | 9.22, 3.07, 3.07M (median 0.30×) | 121, 128, 126 |
+| ppo-env512-bineps | 4.10, 5.12, 3.07M | 128, 126, 128 |
+| td3-utd16 | 1.02M ×3 (about 0.10×) | 127, 128, 128 |
+
+Predictions: P1 (cadence helps) correct; P2 (the gripper floor adds nothing without a release step) correct; P3 (TD3 stalls on precise alignment, as on PlaceSphere) **wrong**; P4 (any stall is at alignment) wrong. The "precision frontier" explanation was a property of PlaceSphere's reward, not a task category. Execution notes: the first td3-utd16 seed-13 attempt crashed at env creation (SAPIEN CUDA error 700) before training. Its log and receipt are kept in `.runtime/sample-efficiency-x1-20261031/failed-trial-11-setup-cuda700/`, and the trial was rerun once. The rerun trained to completion, with every checkpoint evaluation present and a final of 128/128, but the process exited with code 1 at teardown with no traceback, so its receipt state is `failed`. It is counted as a completed training run, with this caveat.
+
+## Overnight Nov 1–2 (owner-authorized exploration, extra $100)
+
+### c1: reverse curriculum on PlaceSphere td3-utd16 — fails its bar; it moves the frontier, not the ceiling
+See the [plan](sample-efficiency-plan-20261031.md) for the registration and table. Median T80: control 6.14M; demo curriculum 5.12M (0.83×); self curriculum 4.61M (0.75×). Bar ≤0.67×. Both curricula bring the jump to about 75% roughly 2× earlier (median first ≥64/128 at 2.05M and 2.56M vs 5.12M), and the demo-free self curriculum matches the demo one. All arms then plateau at 75–85%. Final stage counts: in every run 128/128 episodes end on the bin, released; all failures are the sphere still moving at the last step (`is_obj_static`). About 27 trainer minutes per run.
+
+### h1: hard-task headroom probe (2 seeds; PPO 30.72M, td3-utd16 10.24M)
+PegInsertionSide: PPO 0 and 2/128; td3-utd16 82 and 75, still rising. PushT: PPO 7 and 22 (unstable); td3-utd16 127 and 128. PullCubeTool: PPO 79 and 114; td3-utd16 127 and 128. PlugCharger: 0 for all. Trainer minutes: PPO 18–36, td3-utd16 34–42. Without any retuning, the StackCube lesson (high-update-ratio TD3) transfers to three harder tasks and is the only learner here that solves PushT and PullCubeTool reliably within the budget. PegInsertionSide is chosen as the next target.
+
+### c2: reverse curriculum on StackCube — negative
+Frozen scorer, public development episodes. Median T80: control 3.07M; rc-self 3.07M (1.0×); rc-demo 3.58M (1.17×). Finals 114–125 for all arms. The curriculum only helps where success is a rare frontier for a long stretch. It is not a category-level method on this evidence.
+
+### p1: PegInsertionSide — the discount, not the curriculum
+Research-side evaluation, 15.36M, seeds 11–13. Under td3-utd16 at γ 0.9, all three seeds are censored (finals 89, 87, 60). Per-env self curriculum: T80 in 1/3 seeds, so it fails. **γ 0.95: T80 9.73, 6.66, 7.17M; finals 121, 124, 126. Passes.** Every arm grasps and pre-aligns the peg. Under γ 0.9 the failures are completed alignments that never insert. Peg episodes last 100 steps, twice StackCube's 50, so an effective horizon of about 10 steps is too short to reach the insertion stage.
+
+### r7: g95 replication on fresh seeds 21–25 — passes
+T80 6.66, 4.61, 6.66, 7.17, 7.17M (median 6.66M); finals 125, 128, 127, 121, 118 (median 125/128 = 97.7%). About 60 trainer minutes per run on an L40S. For reference, PPO at γ 0.9 reached 0 and 2/128 at 30.72M (h1), and PPO at γ 0.95 reached 0/128 on all three seeds (s1). ManiSkill's own PegInsertionSide PPO example budgets 250M steps; that example is not run here.
+
+### s1: attribution
+- γ 0.97: median T80 7.17M, finals 125–127, the same as γ 0.95.
+- PPO at γ 0.95: 0/128 throughout 30.72M on seeds 11–13. The prediction held: the gain needs the off-policy learner *and* a discount matched to the horizon.
+- PlugCharger at γ 0.97: 0/128 on seeds 11–13. The prediction held. There is no success signal for the discount to propagate.
+
+**Transferable lesson (candidate, one task so far):** scale γ with the episode horizon. StackCube (50 steps) is best at 0.9 and worse at 0.95 under PPO. PegInsertionSide (100 steps) needs at least 0.95. This should be tested as a registered prediction on another long-horizon task before it is called a rule.

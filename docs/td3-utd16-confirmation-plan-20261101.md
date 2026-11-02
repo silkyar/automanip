@@ -1,6 +1,6 @@
 # Once-only confirmation of the td3-utd16 StackCube recipe (prepared, not run)
 
-Registered before any confirmation query. **Status: launch disabled; awaiting root review.** The research agent wrote this package; under the [earlier confirmation protocol](stackcube-precision-confirmation-plan-20261028.md) root must review the admission, contract and driver, and only root sets `root_reviewed` and `launch_enabled`.
+Registered before any confirmation query. **Status: approved one-time by the repository owner on Nov 1 and run once; target met (mean 95.39%, minimum seed 94.34%).** See the [results](sample-efficiency-results-20261031.md#protected-confirmation-of-td3-utd16-once-only-root-approved--target-met). The research agent wrote this package; under the [earlier confirmation protocol](stackcube-precision-confirmation-plan-20261028.md) root must review the admission, contract and driver, and only root sets `root_reviewed` and `launch_enabled`.
 
 **Policies (fixed).** The final 7.68M export of every fresh-seed r4 run (seeds 21–25), selected by rule before any confirmation query, so no seed is cherry-picked: [candidates](td3-utd16-confirmation-candidates-20261031.json). Local copies: `runs/sample-efficiency-r4-20261031/td3-utd16-seed-*/step-7680000`; digests were verified against the volume on Nov 1. Public-dev successes 124, 127, 122, 121, 124 /128.
 

@@ -29,9 +29,12 @@ class TD3ConfirmationAdmissionTests(unittest.TestCase):
             plan=copy.deepcopy(self.plan);plan[key]=value
             with self.assertRaises(ValueError,msg=key):c.validate(plan)
 
-    def test_committed_plan_is_disabled_until_root_review(self):
+    def test_plan_needs_recorded_root_review(self):
         plan=json.loads((ROOT/'deploy/modal/td3-confirmation-plan.json').read_bytes())
-        with self.assertRaises(PermissionError):c.validate(plan)
+        self.assertTrue(plan['root_review_at'] and plan['root_review'])
+        for key in ('launch_enabled','root_reviewed'):
+            stripped=copy.deepcopy(plan);stripped.pop(key)
+            with self.assertRaises(PermissionError):c.validate(stripped)
 
     def test_reject_policy_list_swap(self):
         plan=copy.deepcopy(self.plan);plan['policies']=list(reversed(plan['policies']))

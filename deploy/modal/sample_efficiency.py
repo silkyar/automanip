@@ -21,7 +21,7 @@ SOURCE=ROOT/'research/sample-efficiency-20261031'
 RUNTIME=ROOT/f'.runtime/sample-efficiency-{BATCH}-20261031'
 PUBLIC_SEED_BASE=97100000  # disjoint from protected development (0-127) and confirmation (1,000,000+)
 TOTAL=int(os.environ.get('AUTOMANIP_SE_TOTAL','15360000'))
-TRAINER_SECONDS=2700
+TRAINER_SECONDS=int(os.environ.get('AUTOMANIP_SE_TRAINER_SECONDS','2700'))
 CHECKPOINT=int(os.environ.get('AUTOMANIP_SE_CHECKPOINT','1024000'))
 ARMS_BY_BATCH={
     'b1':{
@@ -140,6 +140,61 @@ ARMS_BY_BATCH={
         'ppo-env512-bineps':dict(num_envs=512,obs_norm=False,binary_gripper=True,binary_eps=0.02,binary_logit_l2=1e-3,total=15360000,env_id='PokeCube-v1',transfer=True),
         'td3-utd16':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=7680000,env_id='PokeCube-v1',transfer=True),
     },
+    # Wall-clock: compute-only speedups and a late update-ratio drop for td3-utd16 (StackCube, 5.12M).
+    'f1':{
+        'td3-utd16':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16),
+        'td3-utd16-fast':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,fast=True),
+        'td3-utd16-fast-bf16':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,fast=True,bf16=True),
+        'td3-utd16-fast-late4':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,fast=True,utd_late=4),
+    },
+    # Reverse curriculum on PlaceSphere td3-utd16 (stalls at 5 mm placement, d1): 25% of episodes start along successful
+    # trajectories, moving back as mastered. demo = 5 motion-planned demos (demo-assisted track); self = own first successes.
+    'c1':{
+        'td3-utd16':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=7680000,env_id='PlaceSphere-v1',transfer=True),
+        'td3-utd16-rc-demo':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=7680000,env_id='PlaceSphere-v1',transfer=True,
+                                 rc_source='demo',rc_demos='PlaceSphere-v1-5.json'),
+        'td3-utd16-rc-self':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=7680000,env_id='PlaceSphere-v1',transfer=True,
+                                 rc_source='self'),
+    },
+    # Headroom probe on harder tasks: our PPO (ManiSkill's tuned gamma, rollout = horizon) vs td3-utd16, 2 seeds each.
+    'h1':{f'{name}-{arm}':cfg for name,env_id,horizon,gamma in [('peg','PegInsertionSide-v1',100,0.8),('pusht','PushT-v1',100,0.99),
+                                                                ('tool','PullCubeTool-v1',100,0.8),('plug','PlugCharger-v1',200,0.8)]
+          for arm,cfg in [('ppo',dict(num_envs=1024,obs_norm=False,total=30720000,env_id=env_id,transfer=True,num_steps=horizon,gamma=gamma)),
+                          ('td3-utd16',dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=10240000,env_id=env_id,
+                                            transfer=True,gamma=0.99 if gamma==0.99 else 0.9))]},
+    # Does the self (demo-free) reverse curriculum shorten td3-utd16's StackCube discovery waits? Frozen-scorer exports.
+    'c2':{
+        'td3-utd16':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16),
+        'td3-utd16-rc-self':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,rc_source='self'),
+        'td3-utd16-rc-demo':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,rc_source='demo',rc_demos='StackCube-v1-5.json'),
+    },
+    # Smoke only: exercise self-local resets (PlaceSphere finds early successes) and the Peg stage diagnostics.
+    'p0':{
+        'ps-rc-self-local':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,env_id='PlaceSphere-v1',transfer=True,rc_source='self-local'),
+        'peg-td3-utd16':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,env_id='PegInsertionSide-v1',transfer=True),
+    },
+    # PegInsertionSide (h1: PPO ~0/128 at 30.7M; td3-utd16 75-82/128 at 10.24M, still rising): per-env self curriculum.
+    'p1':{
+        'peg-td3-utd16':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=15360000,env_id='PegInsertionSide-v1',transfer=True),
+        'peg-td3-utd16-rc-self-local':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=15360000,
+                                           env_id='PegInsertionSide-v1',transfer=True,rc_source='self-local',rc_frac=0.5),
+        'peg-td3-utd16-g95':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=15360000,env_id='PegInsertionSide-v1',
+                                 transfer=True,gamma=0.95),
+    },
+    # Fresh-seed replication of the p1 winner (PegInsertionSide, gamma 0.95).
+    'r7':{
+        'peg-td3-utd16-g95':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=15360000,env_id='PegInsertionSide-v1',
+                                 transfer=True,gamma=0.95),
+    },
+    # Attribution and extension of the horizon-scaled discount: gamma 0.97 on Peg; PPO at gamma 0.95 on Peg (is it the learner or
+    # the discount?); TD3 at gamma 0.97 on the 200-step PlugCharger (registered prediction: still 0, no stage signal).
+    's1':{
+        'peg-td3-utd16-g97':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=15360000,env_id='PegInsertionSide-v1',
+                                 transfer=True,gamma=0.97),
+        'peg-ppo-g95':dict(num_envs=1024,obs_norm=False,total=30720000,env_id='PegInsertionSide-v1',transfer=True,num_steps=100,gamma=0.95),
+        'plug-td3-utd16-g97':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=10240000,env_id='PlugCharger-v1',
+                                  transfer=True,gamma=0.97),
+    },
     'r5':{
         'ppo-control-anneal':dict(num_envs=1024,obs_norm=False,anneal_lr=True,env_id='PlaceSphere-v1',transfer=True,total=15360000),
         'ppo-env512-bineps-anneal':dict(num_envs=512,obs_norm=False,binary_gripper=True,binary_eps=0.02,binary_logit_l2=1e-3,anneal_lr=True,env_id='PlaceSphere-v1',transfer=True,total=15360000),
@@ -164,9 +219,9 @@ ARMS_BY_BATCH={
 ARMS=ARMS_BY_BATCH[BATCH.split('-',1)[1] if BATCH.startswith('smoke-') else 'b1' if BATCH.startswith('smoke') else BATCH]
 if BATCH.startswith('smoke-') and 'AUTOMANIP_SE_TOTAL' in os.environ:
     ARMS={k:{**v,'total':TOTAL} for k,v in ARMS.items()}
-SEEDS={'r1':(21,22,23,24,25),'r2':(21,22,23,24,25),'o1':(11,12),'r3':(21,22,23,24,25),'o2':(11,12),'r4':(21,22,23,24,25),'o3':(11,12),'r5':(21,22,23,24,25),'r6':(21,22,23,24,25)}.get(BATCH,(11,12,13))
+SEEDS={'r1':(21,22,23,24,25),'r2':(21,22,23,24,25),'o1':(11,12),'r3':(21,22,23,24,25),'o2':(11,12),'r4':(21,22,23,24,25),'o3':(11,12),'r5':(21,22,23,24,25),'r6':(21,22,23,24,25),'h1':(11,12),'r7':(21,22,23,24,25)}.get(BATCH,(11,12,13))
 TRIALS=[(arm,seed) for arm in ARMS for seed in SEEDS]
-FILES=('ppo.py','export_helper.py','symmetry.py','td3.py')
+FILES=('ppo.py','export_helper.py','symmetry.py','td3.py')+tuple('demos/'+p.name for p in sorted((SOURCE/'demos').glob('*.json')))
 PINS={'mani_skill':'3.0.0b21','sapien':'3.0.0b1','torch':'2.6.0+cu124','numpy':'1.26.4','gymnasium':'0.29.1'}
 SOURCE_SHA={f:hashlib.sha256((SOURCE/f).read_bytes()).hexdigest() for f in FILES}
 
@@ -175,6 +230,8 @@ training_image=trainer_image.add_local_file(SOURCE/'ppo.py','/opt/se/ppo.py',cop
     SOURCE/'export_helper.py','/opt/se/export_helper.py',copy=True).add_local_file(
     SOURCE/'symmetry.py','/opt/se/symmetry.py',copy=True).add_local_file(
     SOURCE/'td3.py','/opt/se/td3.py',copy=True)
+for _f in FILES:
+    if _f.startswith('demos/'):training_image=training_image.add_local_file(SOURCE/_f,'/opt/se/'+_f,copy=True)
 training_outputs=modal.Volume.from_name(NAME,create_if_missing=True,version=2)
 score_outputs=modal.Volume.from_name(NAME+'-scores',create_if_missing=True,version=2)
 cache=results.with_mount_options(read_only=True,sub_path='/runtime/sapien-cache')
@@ -214,7 +271,8 @@ def train_trial(index,expected_sha):
         env['PYTHONPATH']='/opt/se'
         command=[sys.executable,'/opt/se/ppo.py','--env-id',config.get('env_id','StackCube-v1'),'--seed',str(seed),'--num-envs',str(config['num_envs']),
                  '--num-eval-envs','8','--num-minibatches','32','--update-epochs','8','--total-timesteps',str(config.get('total',TOTAL)),
-                 '--exp-name',f'se-{BATCH}-{arm}-seed-{seed}','--gamma','0.9','--ent-coef',str(config.get('ent_coef',0.003)),'--learning-rate','0.0003',
+                 '--exp-name',f'se-{BATCH}-{arm}-seed-{seed}','--gamma',str(config.get('gamma',0.9)),'--num-steps',str(config.get('num_steps',50)),
+                 '--num-eval-steps',str(config.get('num_steps',50)),'--ent-coef',str(config.get('ent_coef',0.003)),'--learning-rate','0.0003',
                  '--checkpoint-every','1024000','--obs-norm' if config['obs_norm'] else '--no-obs-norm',
                  '--heavy-tail-dims',config.get('heavy_tail_dims','none'),'--t-df',str(config.get('t_df',2.0)),
                  '--critic-width',str(config.get('critic_width',256)),
@@ -234,7 +292,10 @@ def train_trial(index,expected_sha):
                      '--env-id',config.get('env_id','StackCube-v1'),'--transfer-eval' if config.get('transfer') else '--no-transfer-eval',
                      '--exp-name',f'se-{BATCH}-{arm}-seed-{seed}','--checkpoint-every',str(CHECKPOINT),
                      '--burst-prob',str(config.get('burst_prob',0.0)),'--sym-theta',str(config.get('sym_theta',0.0)),
-                     '--updates-per-step',str(config.get('updates_per_step',4)),'--per-alpha',str(config.get('per_alpha',0.0))]
+                     '--updates-per-step',str(config.get('updates_per_step',4)),'--per-alpha',str(config.get('per_alpha',0.0)),
+                     '--fast' if config.get('fast') else '--no-fast','--bf16' if config.get('bf16') else '--no-bf16',
+                     '--utd-late',str(config.get('utd_late',0)),'--gamma',str(config.get('gamma',0.9)),'--rc-source',config.get('rc_source','none'),'--rc-frac',str(config.get('rc_frac',0.25)),
+                     '--rc-demos',('/opt/se/demos/'+config['rc_demos']) if config.get('rc_demos') else '']
         record['command']=command;tick=time.monotonic()
         with (root/'train.log').open('x') as log:
             process=subprocess.Popen(command,cwd=work,env=env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)

@@ -143,3 +143,109 @@ User instruction (Oct 31 night): total cap $200; test whether the learnings tran
 **d1 reading (recorded before d2).** The bottleneck is placement precision, not release: for 4–6M transitions the median closest object–bin xy distance is 8–24 mm and on-bin (5 mm tolerance) is ever reached in 0–18/128 episodes; release follows within one checkpoint once the median closest distance falls below about 2 mm. Shaping between 10 mm and 5 mm changes the dense reward by about 0.025/13, so on-bin transitions form a rare frontier event.
 
 **d2 — prioritized replay on PlaceSphere.** `td3-utd16-per` (α 0.6), seeds 11–13, 7.68M, stage diagnostics. Prediction: PER fixes the precision frontier. Pass: T80 in ≥2/3 seeds, median T80 ≤6.14M (≤0.67× the anneal control's 9.22M in t5), median final ≥116.
+
+## Wall-clock track (registered Nov 1 before outcomes)
+
+The owner's deployment framing: a robot either interacts in the real world (cost = interactions) or uploads a human demo to simulation and learns in about 5 minutes (cost = wall-clock). Results are now reported on both axes. Reference points on L40S: the PPO control reaches 80% in a median of about 8.5 trainer minutes (one of five fresh seeds never), and td3-utd16 in 12.4 minutes (r4).
+
+**f1 — compute-only speedups for td3-utd16 (StackCube, seeds 11–13, 5.12M, 512k frozen-scorer exports).** Arms:
+- `td3-utd16`: paired control on the current code.
+- `fast`: TF32, fused Adam, a compiled critic and training-time actor, and foreach target updates. Same algorithm; the exported actor is unchanged.
+- `fast-bf16`: adds a bf16 critic forward.
+- `fast-late4`: drops to 4 updates per step once mean training success_once over the last 3 episodes is ≥0.5.
+
+Primary metric: trainer minutes to T80 and T90. An arm passes if its median minutes-to-T80 is ≤0.67× the paired control's, its median T80 in transitions is no more than one checkpoint later, and its median final is ≥116. Stretch goal: a median of ≤8.5 minutes to T80 (at or below PPO), which would make td3 better on both axes.
+
+## Reverse-curriculum track c1 (owner approved Nov 1: "search novel methods… try the demo idea"; registered before any c1 outcome)
+
+Mechanism: d1 shows td3-utd16 on PlaceSphere stalls for 4–6M transitions because on-bin placement (5 mm) is a rare frontier event under uniform-start exploration. Starting some training episodes close to success makes that frontier common and then moves it back toward true starts (Florensa et al. 2017; RFCL, Tao et al. 2024). Evaluation is unchanged: the 128 fixed research-side PlaceSphere episodes from the benchmark's normal start distribution.
+
+Implementation (`td3.py --rc-source`): at each aligned episode start, 25% of the 1024 envs are reset by simulator state to a point on a successful trajectory. Each trajectory has a start pointer at its first-success state. The env starts uniformly within 4 states after the pointer; when ≥50% of that trajectory's episodes succeed at the end, the pointer moves back 4 states. When every pointer reaches 0, the curriculum switches off (all true starts).
+- `rc-demo` (**demo-assisted track**, reported separately from from-scratch results): 5 motion-planned PlaceSphere demos (ManiSkill's planner solution, CPU sim, reset seeds 400,000,000+; 9 planner attempts, 1,065 recorded demo transitions, which are added to the interaction count). Only states are used, not actions.
+- `rc-self` (**from scratch; the novel candidate**): no demos. The first 16 training episodes that succeed from a true start are kept (states up to first success) and used as the curriculum trajectories. Hypothesis: one rare early success, replayed as a reverse curriculum, turns the precision frontier into a dense one. If so, the method is task-agnostic for any task where success happens occasionally before it is reliable.
+- `td3-utd16`: paired control on the current code.
+
+Seeds 11–13, 7.68M, 512k checkpoints with stage diagnostics. Pass for each curriculum arm (vs the paired control, T80 censored at 7.68M): T80 in ≥2/3 seeds, median T80 ≤0.67× control, and median final ≥116/128. If `rc-self` passes, replicate it on StackCube (frozen-scorer exports) and on fresh PlaceSphere seeds 21–25 before calling it a category-level method.
+
+## Hard-task headroom probe h1 (owner approved Nov 1, extra budget up to $100; registered before any h1 outcome)
+
+Goal: find a ManiSkill state task where our baselines stall, so the next autoresearch target has real headroom. Tasks: PegInsertionSide-v1 (100 steps; ManiSkill's PPO example uses 250M transitions), PushT-v1 (100 steps, 7-D stick robot; example uses 25M and γ 0.99), PullCubeTool-v1 (100 steps), PlugCharger-v1 (200 steps). Arms: our PPO (1024 envs, rollout = horizon, γ from ManiSkill's example, else its default of 0.8; 30.72M) and td3-utd16 (γ 0.9, or 0.99 on PushT; 10.24M). Seeds 11–12; research-side evaluation on 128 fixed episodes (seeds 300,000,000+) at each checkpoint, ManiSkill success at episode end, plus stage diagnostics. Neither trainer is retuned per task; this is a probe, not a comparison of tuned methods.
+
+Reading: a task becomes the next target if both baselines end at ≤64/128 while the stage counts show partial progress (e.g. grasp or alignment is reached), so the stall is diagnosable. A task where both stay at 0 with no stage progress is set aside as too hard for this budget. A task where either baseline exceeds 115/128 has no headroom.
+
+**c1 outcome (recorded before any follow-up).** T80 (≥103/128) in transitions; all runs complete, about 27 trainer minutes each on L40S.
+
+| Arm | T80 seeds 11/12/13 | Median T80 | First ≥64/128 (median) | Finals |
+|---|---|---|---|---|
+| td3-utd16 (control) | 5.12, 6.14, 6.66M | 6.14M | 5.12M | 95, 111, 90 |
+| rc-demo (+1,065 demo transitions) | 2.56M, censored (peak 101), 5.12M | 5.12M (0.83×) | 2.05M (0.40×) | 96, 94, 103 |
+| rc-self | 4.10, 4.61, 5.12M | 4.61M (0.75×) | 2.56M (0.50×) | 95, 102, 102 |
+
+Both curriculum arms **fail** the registered bar (median T80 ≤0.67× control, median final ≥116); the control's median final (95) also misses 116. Exploratory, not registered: both curricula bring the jump to about 75% success roughly twice as early, and the demo-free self curriculum matches the demo curriculum. All arms then plateau at 75–85%. The stage counts at the final checkpoint locate that ceiling: in every run the sphere is on the bin and released in 128/128 episodes, and every failure is `is_obj_static` false at episode end. The ceiling is settling (the sphere is still moving at the last step), not placement, and the curriculum does not address it.
+
+## c2 — reverse curriculum on StackCube (owner authorized overnight exploration within $100, Nov 1; registered before any c2 outcome)
+
+Rationale: c1 brought PlaceSphere's main success jump about 2× earlier for both curriculum sources. On StackCube, td3-utd16's stage counts show two discovery waits (transport→placement, placement→release). If the self curriculum is a general mechanism and not a PlaceSphere effect, it should shorten those waits. Arms, seeds 11–13, 5.12M, 512k exports scored by the frozen scorer on public development episodes:
+- `td3-utd16`: paired control.
+- `td3-utd16-rc-self`: own first 16 true-start successes.
+- `td3-utd16-rc-demo`: 5 motion-planned StackCube demos (demo-assisted track; 5 planner attempts, 523 demo transitions added to interactions).
+
+The settings are unchanged from c1 (25% of envs, stride 4, threshold 0.5). Promising if median T80 ≤0.75× the paired control with median final ≥116. Promising `rc-self` → fresh-seed replication on 21–25 against r4 (median T80 3.58M): pass if median T80 ≤2.56M with finals ≥116.
+
+**h1 outcome (recorded before any follow-up).** Final research-side success /128 (seeds 11, 12), with trainer minutes per run on L40S:
+
+| Task | PPO, 30.72M | td3-utd16, 10.24M | Reading |
+|---|---|---|---|
+| PegInsertionSide-v1 | 0, 2 (28–36 min) | 82, 75, still rising (42 min) | **Target**: PPO stalls; TD3 makes partial, diagnosable progress |
+| PushT-v1 | 7, 22, unstable, peak 51 (18 min) | 127, 128; ≥98 from about 3.6M (34 min) | TD3 solves it; no headroom left |
+| PullCubeTool-v1 | 79, 114 (23–27 min) | 127, 128; T80 4.6M and 6.7M (37–38 min) | TD3 solves it; no headroom left |
+| PlugCharger-v1 | 0, 0 (25–28 min) | 0, 0 (35 min) | Set aside: no success signal; the task exposes no stage flags |
+
+Strictly, TD3's Peg finals exceed the registered ≤64/128 target line. Peg is still taken as the target because neither baseline exceeds 115 and TD3 is far from converged. Unregistered observation: the StackCube lesson (high-update-ratio TD3 instead of PPO) transfers to three harder tasks without any retuning, and it is the only learner here that solves PushT and PullCubeTool reliably within the budget.
+
+## p1 — PegInsertionSide: per-env self curriculum (overnight authorization; registered before any p1 outcome)
+
+PegInsertionSide builds a different peg and hole in every parallel env, so a curriculum state can only be restored into the env it came from. `rc-self-local`: each env stores its own first true-start success (states up to first success). Afterwards, with probability 0.5 per episode (raised from 0.25 after the p0 smoke showed only about 5 of 1024 envs in the curriculum at 1.5M on PlaceSphere), that env starts from a point on its stored trajectory; the point moves back 4 states each time such an episode succeeds at the end. Arms `peg-td3-utd16` (control), `peg-td3-utd16-rc-self-local`, and `peg-td3-utd16-g95` (γ 0.95: the episodes are twice StackCube's 50 steps, and γ 0.9 gives an effective lookahead of about 10 steps across four reward stages), seeds 11–13, 15.36M, 512k checkpoints, research-side evaluation (seeds 300,000,000+) with Peg stage counts (grasped with ≤20° misalignment; pre-inserted, i.e. peg head and center within 1 cm yz of the hole axis). Trainer limit raised to 75 min. Pass (each treatment arm): reaches T80 in ≥2/3 seeds, median T80 ≤0.67× control (control censored at 15.36M), median final ≥ control's.
+
+**c2 outcome (recorded before any follow-up).** Frozen scorer, public development episodes, T80 = 103/128:
+
+| Arm | T80 seeds 11/12/13 | Median | Finals at 5.12M |
+|---|---|---|---|
+| td3-utd16 | 3.07, 3.07, 3.58M | 3.07M | 120, 120, 119 |
+| rc-self | 3.07, 3.58, 3.07M | 3.07M (1.0×) | 123, 117, 125 |
+| rc-demo (+523 demo transitions) | 3.58, 4.10, 3.07M | 3.58M (1.17×) | 114, 116, 121 |
+
+Neither arm is promising (bar ≤0.75×), so there is no replication. rc-self raises success one checkpoint early in 2 of 3 seeds (52 and 34 vs ≤1 at 2.56M) but does not move T80. Reading: the curriculum shortens a rare-success frontier on PlaceSphere, but StackCube's td3-utd16 waits are already short (about 1.5M), so there is little left to remove. Not a category-level method on this evidence.
+
+**p1 outcome (recorded before any follow-up).** T80 = 103/128 at 512k checkpoints, 15.36M, about 62–65 trainer minutes per run:
+
+| Arm | T80 seeds 11/12/13 | Finals |
+|---|---|---|
+| peg-td3-utd16 (γ 0.9) | censored ×3 (peaks 90, 95, 82) | 89, 87, 60 |
+| rc-self-local (frac 0.5) | censored, censored, 9.73M | 91, 83, 112 — **fails** (T80 in 1/3) |
+| **g95 (γ 0.95)** | **9.73, 6.66, 7.17M (median 7.17M, ≤0.47×)** | **121, 124, 126 — passes** |
+
+Final stage counts: every arm grasps and pre-aligns in ≥124/128 episodes. Under γ 0.9 the failures are completed alignments that never insert. With a 10-step effective lookahead, the insertion bonus (stage 4) is presumably too far ahead of the alignment stage to pull the policy through.
+
+## r7 and s1 (registered before any outcome)
+
+**r7 — replicate g95 on fresh seeds 21–25** (15.36M). Pass: T80 in ≥4/5 seeds, median T80 ≤10.24M, median final ≥116/128.
+
+**s1 — attribution and reach, seeds 11–13.**
+- `peg-td3-utd16-g97`: does a longer horizon help further? Reported only, no bar.
+- `peg-ppo-g95` (30.72M): is the Peg gain the learner or the discount? Prediction: PPO at γ 0.95 stays below 64/128 at 30.72M (so the gain needs both TD3 and the longer horizon).
+- `plug-td3-utd16-g97` (200-step PlugCharger, 10.24M): prediction, still 0/128. PlugCharger gave no success signal in h1, and a discount change alone should not create one.
+
+**r7 outcome (recorded before any follow-up).** T80 = 103/128 at 512k checkpoints, about 59–61 trainer minutes per run.
+
+| Seed | 21 | 22 | 23 | 24 | 25 |
+|---|---|---|---|---|---|
+| T80 | 6.66M | 4.61M | 6.66M | 7.17M | 7.17M |
+| Final /128 | 125 | 128 | 127 | 121 | 118 |
+
+T80 in 5/5 seeds, median 6.66M (bar ≤10.24M), median final 125 (bar ≥116). **Passes.** Stage counts: pre-insertion is reached in 123–128/128 episodes.
+
+**s1 outcome.**
+- `peg-td3-utd16-g97`: T80 8.70, 6.66, 7.17M (median 7.17M), finals 125, 127, 127. This matches γ 0.95, so going beyond 0.95 adds nothing at this horizon.
+- `peg-ppo-g95`: 0/128 at every checkpoint on all three seeds through 30.72M. **The prediction held**: the Peg result needs both TD3 and the longer discount. PPO at γ 0.9 had reached 0 and 2/128 in h1, so a longer discount alone does not rescue PPO.
+- `plug-td3-utd16-g97`: 0/128 at every checkpoint on all three seeds. **The prediction held**: PlugCharger needs a different mechanism, either exploration or a curriculum, since there is no success signal to propagate.

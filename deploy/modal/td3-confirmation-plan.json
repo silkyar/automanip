@@ -1,8 +1,8 @@
 {
   "experiment_id": "stackcube-td3-utd16-confirmation-20261101",
   "registered_at": "2026-11-01T15:59:25.980196+00:00",
-  "launch_enabled": false,
-  "root_reviewed": false,
+  "launch_enabled": true,
+  "root_reviewed": true,
   "protocol_sha256": "fe2cc5987576a84b7a66ae9c8c9c4099b688c682d5736c5388217f5372391764",
   "confirmation_weights_sha256": [
     "2af097c2dc1e3c4cb7e6498ad9adab6eefec7524e109ac54a829d63ccb45593e",
@@ -64,6 +64,6 @@
   "no_requery_on_failure": true,
   "private_final_holdout": false,
   "meaning": "Once-only confirmation of the fixed td3-utd16 recipe (final 7.68M export of every fresh seed 21-25, selected before any confirmation query); existing historical confirmation distribution, not the private final holdout; outputs never feed candidate training.",
-  "root_review_at": null,
-  "root_review": null
+  "root_review_at": "2026-11-01T17:16:14.084584+00:00",
+  "root_review": "Approved one-time by the repository owner in the Nov 1 session ('approved one-time. don't ever cheat.'). Plan, contract and driver unchanged since registration; frozen evaluator digest checked; five r4 final policies verified by sha256."
 }

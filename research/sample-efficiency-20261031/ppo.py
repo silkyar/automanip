@@ -328,8 +328,9 @@ def refinement_schedule(step, method):
 # END PRECISION schedule
 if __name__ == "__main__":
     args = tyro.cli(Args)
-    if args.checkpoint or args.evaluate or args.partial_reset or args.num_steps != 50 or args.env_id not in (
-            ('StackCube-v1',) if not args.transfer_eval else ('PlaceSphere-v1', 'PickCube-v1', 'LiftPegUpright-v1', 'PokeCube-v1')):
+    if args.checkpoint or args.evaluate or args.partial_reset or (args.num_steps != 50 and not args.transfer_eval) or args.env_id not in (
+            ('StackCube-v1',) if not args.transfer_eval else ('PlaceSphere-v1', 'PickCube-v1', 'LiftPegUpright-v1', 'PokeCube-v1',
+                                                              'PegInsertionSide-v1', 'PushT-v1', 'PullCubeTool-v1', 'PlugCharger-v1')):
         raise ValueError('Closed from-scratch StackCube training contract')
     args.batch_size = int(args.num_envs * args.num_steps)
     args.minibatch_size = int(args.batch_size // args.num_minibatches)
@@ -446,7 +447,8 @@ if __name__ == "__main__":
     from export_helper import export_actor
     automanip_root = Path('runs')/run_name
     automanip_owner = envs._env.unwrapped
-    if (envs.single_observation_space.shape != (48,) and not args.transfer_eval) or envs.single_action_space.shape != (8,) or max_episode_steps != 50:
+    if max_episode_steps != args.num_steps or (not args.transfer_eval and (envs.single_observation_space.shape != (48,)
+            or envs.single_action_space.shape != (8,) or max_episode_steps != 50)):
         raise ValueError('Frozen StackCube interface/horizon differs')
     if automanip_owner.control_freq != 20 or automanip_owner.sim_freq != 100:
         raise ValueError('Physical clocks differ')
