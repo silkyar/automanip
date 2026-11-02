@@ -195,6 +195,22 @@ ARMS_BY_BATCH={
         'plug-td3-utd16-g97':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=10240000,env_id='PlugCharger-v1',
                                   transfer=True,gamma=0.97),
     },
+    # Nov 2 (owner approved: "do both"). g1 tests the horizon-scaled discount (gamma = 1 - 5/H) on an unseen task, RollBall-v1
+    # (80 steps -> 0.94). b1: PlugCharger's dense reward is identically zero in ManiSkill, so it is trained on its sparse
+    # (success) reward; control from true starts vs success-guided sampling over motion-planned demo states (AlphaNIST-style). Batch pc1.
+    'g1':{
+        'roll-td3-utd16-g90':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=10240000,env_id='RollBall-v1',
+                                  transfer=True,gamma=0.9),
+        'roll-td3-utd16-g94':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=10240000,env_id='RollBall-v1',
+                                  transfer=True,gamma=0.94),
+    },
+    'pc1':{
+        'plug-sparse':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=10240000,env_id='PlugCharger-v1',
+                           transfer=True,gamma=0.97,reward_mode='sparse'),
+        'plug-sparse-sgs':dict(algo='td3',num_envs=1024,obs_norm=False,updates_per_step=16,total=10240000,env_id='PlugCharger-v1',
+                               transfer=True,gamma=0.97,reward_mode='sparse',rc_source='demo',rc_demos='PlugCharger-v1-10.json',
+                               rc_sampler='sgs',rc_frac=0.5),
+    },
     'r5':{
         'ppo-control-anneal':dict(num_envs=1024,obs_norm=False,anneal_lr=True,env_id='PlaceSphere-v1',transfer=True,total=15360000),
         'ppo-env512-bineps-anneal':dict(num_envs=512,obs_norm=False,binary_gripper=True,binary_eps=0.02,binary_logit_l2=1e-3,anneal_lr=True,env_id='PlaceSphere-v1',transfer=True,total=15360000),
@@ -295,7 +311,8 @@ def train_trial(index,expected_sha):
                      '--updates-per-step',str(config.get('updates_per_step',4)),'--per-alpha',str(config.get('per_alpha',0.0)),
                      '--fast' if config.get('fast') else '--no-fast','--bf16' if config.get('bf16') else '--no-bf16',
                      '--utd-late',str(config.get('utd_late',0)),'--gamma',str(config.get('gamma',0.9)),'--rc-source',config.get('rc_source','none'),'--rc-frac',str(config.get('rc_frac',0.25)),
-                     '--rc-demos',('/opt/se/demos/'+config['rc_demos']) if config.get('rc_demos') else '']
+                     '--rc-demos',('/opt/se/demos/'+config['rc_demos']) if config.get('rc_demos') else '',
+                     '--rc-sampler',config.get('rc_sampler','march'),'--reward-mode',config.get('reward_mode','normalized_dense')]
         record['command']=command;tick=time.monotonic()
         with (root/'train.log').open('x') as log:
             process=subprocess.Popen(command,cwd=work,env=env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)

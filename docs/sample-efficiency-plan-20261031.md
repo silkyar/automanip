@@ -249,3 +249,58 @@ T80 in 5/5 seeds, median 6.66M (bar ≤10.24M), median final 125 (bar ≥116). *
 - `peg-td3-utd16-g97`: T80 8.70, 6.66, 7.17M (median 7.17M), finals 125, 127, 127. This matches γ 0.95, so going beyond 0.95 adds nothing at this horizon.
 - `peg-ppo-g95`: 0/128 at every checkpoint on all three seeds through 30.72M. **The prediction held**: the Peg result needs both TD3 and the longer discount. PPO at γ 0.9 had reached 0 and 2/128 in h1, so a longer discount alone does not rescue PPO.
 - `plug-td3-utd16-g97`: 0/128 at every checkpoint on all three seeds. **The prediction held**: PlugCharger needs a different mechanism, either exploration or a curriculum, since there is no success signal to propagate.
+
+**Correction (Nov 2).** ManiSkill's PlugCharger-v1 `compute_dense_reward` returns zeros, so the h1 and s1 PlugCharger runs trained on a reward that was identically zero. Their 0/128 says nothing about the discount or the learner, and the s1 prediction was confirmed only trivially.
+
+## g1 and pc1 (owner approved Nov 2: "sure do both"; registered before any outcome)
+
+Seeds 11–13. 10.24M interactions, 512k checkpoints. Research-side evaluation on seeds 300,000,000+ from normal starts. T80 = 103/128.
+
+**g1: does the horizon-scaled discount transfer to an unseen task?** Candidate rule: γ = 1 − 5/H, which gives 0.9 for H = 50 and 0.95 for H = 100. RollBall-v1 (H = 80) has not been run before, so the rule gives γ = 0.94. Arms `roll-td3-utd16-g90` and `roll-td3-utd16-g94`.
+- **Prediction:** g94 is no slower than g90 in median T80, with g90 censored at 10.24M. Median final for g94 is at least g90's minus 3.
+- **Stronger form:** if g90 is censored in at least 2/3 seeds, g94 reaches T80 in at least 2/3 seeds.
+- **Falsified if** g94's median T80 is later than g90's by at least one checkpoint, or its median final is lower by more than 3.
+- RollBall's dense reward is staged (reach, then roll) but continuous, so this is a weaker test than PegInsertionSide. A null result is plausible.
+
+**pc1 (first launched as `b1`, which collided with an Oct 31 batch name; the trainer refused to overwrite its runs and the launch was stopped): PlugCharger with a binary reward plus success-guided demo starts (after AlphaNIST, arXiv 2610.13354).** The training reward is ManiSkill's `sparse` mode, the success indicator. The evaluator, its rules and its normal starts are unchanged.
+- `plug-sparse`: TD3 from true starts only.
+- `plug-sparse-sgs`: half the envs at each episode start reset to a state drawn from a bank of every state in 10 motion-planned demos (seeds 400,000,000+). The draw is weighted by 0.01 + √(p(1−p)), where p is that state's rolling end-of-episode success over its last 20 tries; untried states count as p = 0.5. Demo transitions are counted as interactions.
+- **Predictions:**
+  - `plug-sparse` stays at 0/128 throughout.
+  - `plug-sparse-sgs` trains successfully from late demo states, and its solved region moves earlier along the demos.
+  - From normal starts, at least one seed reaches at least 13/128 (10%) by 10.24M.
+- **Pass** (promising, worth replicating): median final at least 13/128 from normal starts. Solving 80% is not expected in this budget.
+- The curriculum journal records which bank positions are solved, so the backward progress is visible either way.
+
+**g1 outcome (recorded before any follow-up).** RollBall-v1, 10.24M, about 34 trainer minutes per run. **Success at the episode end, the registered metric, is 0–3/128 at every checkpoint in both arms.** The ball reaches the goal and rolls on through it. Both arms are therefore censored with final 0:
+- The basic prediction holds, but only trivially.
+- **The stronger form fails:** g90 is censored on 3/3 seeds, and g94 reaches T80 on 0/3.
+
+Not registered, reported as exploratory: episodes where the ball was ever in the goal (`success_once`), out of 128.
+
+| Arm | Seed 11 | Seed 12 | Seed 13 | Shape |
+|---|---|---|---|---|
+| g90 | peak 47 → final 38 | peak 55 → final 16 | peak 44 → final 33 | plateaus at 2–3M |
+| g94 | final 95 | final 107 | final 90 | rises through 10.24M |
+
+Reading: the longer discount roughly triples how often the policy rolls the ball into the goal. That fits the horizon rule's mechanism, since the roll is long and uncontrolled after the hit. Neither arm learns to stop the ball there, which is what RollBall's success actually requires. The rule is supported on reaching the goal, not on the task's success metric. Its status stays "candidate".
+
+**pc1 outcome (recorded before any follow-up).** PlugCharger-v1, sparse training reward, 10.24M, about 34–39 trainer minutes per run. **From normal starts both arms are 0/128 at every checkpoint, so pc1 fails its bar.** The charger's closest approach to the plugged pose is the same in both arms (median about 198 mm), so neither policy moves the charger from a normal start.
+
+Curriculum journal for `plug-sparse-sgs`, with the bank of 1,855 demo states all tried by 1.4M:
+- Success of curriculum-started episodes rose from 0 to 26%, 22% and 28% by 10.24M.
+- 13, 6 and 22 bank states were mastered (p ≥ 0.9).
+- The earliest solved position moved back only from about 0.99 to 0.97 of the demo length.
+
+Predictions:
+
+| Prediction | Result |
+|---|---|
+| Control stays at 0 | Correct |
+| Late demo states become trainable | Correct, weakly |
+| The solved region moves well back | Barely moved |
+| At least 13/128 from normal starts | Wrong |
+
+Diagnosis: with 200-step episodes and aligned resets, each env starts only 50 episodes in 10.24M steps. That gives about 25,600 curriculum starts in total, or roughly 14 per bank state. AlphaNIST resets asynchronously, with 32-step rollouts, over about 10¹⁰ steps. **The binding constraint here is reset turnover, not the sampler.**
+
+A fair follow-up would shorten curriculum episodes or end them early on success. Our trainer currently requires aligned fixed-horizon episodes, so that is an engineering change. Not started.

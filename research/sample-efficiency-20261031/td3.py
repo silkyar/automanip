@@ -16,11 +16,13 @@ from types import SimpleNamespace
 import gymnasium as gym
 import mani_skill.envs  # noqa: F401
 import numpy as np
+import sapien
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import tyro
 from mani_skill.utils import gym_utils
+from transforms3d.euler import euler2quat
 from mani_skill.vector.wrappers.gymnasium import ManiSkillVectorEnv
 
 from export_helper import export_actor
@@ -84,6 +86,13 @@ class Args:
     """move a trajectory's start back by rc_stride states once this fraction of its episodes succeed at the end"""
     rc_pool: int = 16
     """self source: number of own successful true-start trajectories kept (first ones found, never replaced)"""
+    rc_sampler: str = "march"
+    """demo source: march (each trajectory's start moves back on mastery) or sgs (success-guided sampling over every demo
+    state, weight eps + sqrt(p(1-p)) of its rolling end-of-episode success p, after AlphaNIST, arXiv 2610.13354)"""
+    rc_history: int = 20
+    """sgs: rolling outcome window per demo state; unvisited states count as p = 0.5"""
+    reward_mode: str = "normalized_dense"
+    """training reward: ManiSkill's own modes only (transfer tasks); StackCube stays normalized_dense"""
     transfer_eval: bool = False
     """other Panda tasks: research-side deterministic evaluation at each checkpoint instead of frozen-evaluator export"""
     eval_seed_base: int = 300_000_000
@@ -155,6 +164,14 @@ class ReverseCurriculum:
             if owner.get_state().shape[1] != self.trajs[0].shape[1]:
                 raise ValueError('demo state layout differs')
 
+        if args.rc_sampler == 'sgs':
+            if args.rc_source != 'demo':
+                raise ValueError('sgs sampling needs demo states')
+            self.bank = torch.cat(self.trajs)
+            self.hist = torch.zeros(len(self.bank), args.rc_history, device=device)
+            self.seen = torch.zeros(len(self.bank), dtype=torch.long, device=device)
+            self.bank_pos = torch.cat([torch.arange(t.shape[0], device=device)/(t.shape[0]-1) for t in self.trajs])
+
     def add(self, traj):
         self.trajs.append(traj); self.ptr.append(traj.shape[0]-1)
 
@@ -181,6 +198,13 @@ class ReverseCurriculum:
                               self.local_len[idx]-1)
             self.owner.set_state(self.local_traj[k, idx], idx)
             which = torch.zeros_like(idx)
+        elif self.args.rc_sampler == 'sgs':
+            n = int(E*self.args.rc_frac)
+            idx = torch.randperm(E, device=self.device)[:n].sort().values
+            count = self.seen.clamp(max=self.args.rc_history)
+            p = torch.where(count > 0, self.hist.sum(1)/count.clamp(min=1), torch.full_like(count, 0.5, dtype=torch.float32))
+            which = torch.multinomial(1e-2 + (p*(1-p)).sqrt(), n, replacement=True)
+            self.owner.set_state(self.bank[which], idx)
         else:
             if self.done or not self.trajs:
                 return obs
@@ -200,6 +224,9 @@ class ReverseCurriculum:
         for c in (controllers.values() if isinstance(controllers, dict) else [controllers]):
             c.reset()
         scene._reset_mask = torch.ones(E, dtype=torch.bool, device=self.device)
+        if hasattr(self.owner, 'receptacle') and hasattr(self.owner, 'goal_pose'):
+            # PlugCharger caches goal_pose from the receptacle at reset; restored states move the receptacle
+            self.owner.goal_pose = self.owner.receptacle.pose * sapien.Pose(q=euler2quat(0, 0, np.pi))
         fresh = self.owner.get_obs(self.owner.get_info())
         obs = obs.clone(); obs[idx] = fresh[idx]
         self.slot[idx] = which
@@ -215,6 +242,27 @@ class ReverseCurriculum:
                 journal.write(json.dumps(dict(event='rc', steps=global_step, envs_with_traj=int(have.sum()),
                                               curriculum_envs=int((self.slot >= 0).sum()), advanced=int(hit.sum()),
                                               at_zero=int((have & (self.local_ptr == 0)).sum())))+'\n')
+            return
+        if self.args.rc_sampler == 'sgs':
+            sel = torch.nonzero(self.slot >= 0).flatten()
+            if len(sel):
+                w = self.slot[sel]
+                # several envs may share a bank entry; each outcome takes the next slot of that entry's window
+                order = torch.argsort(w, stable=True); w, ok = w[order], success_end[sel][order].float()
+                first = torch.searchsorted(w, w, right=False)
+                rank = torch.arange(len(w), device=self.device) - first
+                col = (self.seen[w] + rank) % self.args.rc_history
+                self.hist[w, col] = ok
+                self.seen.index_add_(0, w, torch.ones_like(w))
+            count = self.seen.clamp(max=self.args.rc_history)
+            p = self.hist.sum(1)/count.clamp(min=1)
+            tried = count > 0
+            journal.write(json.dumps(dict(event='rc', steps=global_step, sampler='sgs', bank=len(self.bank),
+                                          tried=int(tried.sum()), curriculum_envs=int(len(sel)),
+                                          curriculum_success=float(success_end[sel].float().mean()) if len(sel) else None,
+                                          mastered=int((tried & (p >= 0.9)).sum()),
+                                          frontier_pos=float((self.bank_pos*(tried & (p >= 0.5))).max()) if tried.any() else None,
+                                          earliest_solved_pos=float(self.bank_pos[tried & (p >= 0.5)].min()) if (tried & (p >= 0.5)).any() else None))+'\n')
             return
         moved = 0
         for j in range(len(self.trajs)):
@@ -236,8 +284,10 @@ def main():
     device = torch.device('cuda')
     deadline = float(os.environ.get('AUTOMANIP_TRAINING_DEADLINE', time.monotonic()+1300))
     started = time.monotonic()
+    if args.reward_mode != 'normalized_dense' and not args.transfer_eval:
+        raise ValueError('StackCube keeps its normalized_dense training reward')
     envs = gym.make(args.env_id, num_envs=args.num_envs, obs_mode='state', control_mode=args.control_mode,
-                    render_mode='rgb_array', sim_backend='physx_cuda')
+                    render_mode='rgb_array', sim_backend='physx_cuda', reward_mode=args.reward_mode)
     envs = ManiSkillVectorEnv(envs, args.num_envs, ignore_terminations=True, record_metrics=True)
     horizon = gym_utils.find_max_episode_steps_value(envs._env)
     owner = envs._env.unwrapped
@@ -309,11 +359,13 @@ def main():
                     for k, v in dict(peg_grasped=grasped, peg_pre_inserted=grasped & (head < 0.01) & (body < 0.01)).items():
                         ever[k] = ever.get(k, torch.zeros_like(v)) | v
                         end[k] = v
+                if 'obj_to_goal_dist' in end and hasattr(te, 'charger'):  # PlugCharger: closest approach to the plugged pose
+                    min_xy = torch.minimum(min_xy, end['obj_to_goal_dist'].float())
                 if hasattr(te, 'obj') and hasattr(te, 'bin'):
                     min_xy = torch.minimum(min_xy, torch.linalg.norm((te.obj.pose.p - te.bin.pose.p)[:, :2], dim=1))
             stages = {k: dict(ever=int(v.sum()), end=int(end[k].bool().sum())) for k, v in ever.items()}
             if torch.isfinite(min_xy).all():
-                stages['min_obj_goal_xy_mm'] = [round(float(q)*1000, 1) for q in min_xy.quantile(torch.tensor([.1, .5, .9], device=device))]
+                stages['min_charger_goal_mm' if hasattr(te, 'charger') else 'min_obj_goal_xy_mm'] = [round(float(q)*1000, 1) for q in min_xy.quantile(torch.tensor([.1, .5, .9], device=device))]
             journal.write(json.dumps(dict(event='transfer_eval', steps=global_step, success_at_end=int(end['success'].sum()),
                                           success_once=int(once.sum()), episodes=128, stages=stages,
                                           trainer_seconds=time.monotonic()-started))+'\n')

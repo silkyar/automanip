@@ -24,7 +24,7 @@ def generate(env_id: str, count: int, max_attempts: int = 40):
     import gymnasium as gym
     import mani_skill.envs  # noqa: F401
     import torch
-    module = {'PlaceSphere-v1': 'place_sphere', 'StackCube-v1': 'stack_cube'}[env_id]
+    module = {'PlaceSphere-v1': 'place_sphere', 'StackCube-v1': 'stack_cube', 'PlugCharger-v1': 'plug_charger'}[env_id]
     solve = __import__(f'mani_skill.examples.motionplanning.panda.solutions.{module}', fromlist=['solve']).solve
 
     def flat(state):

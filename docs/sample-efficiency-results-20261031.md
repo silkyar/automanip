@@ -325,7 +325,7 @@ Predictions: P1 (cadence helps) correct; P2 (the gripper floor adds nothing with
 See the [plan](sample-efficiency-plan-20261031.md) for the registration and table. Median T80: control 6.14M; demo curriculum 5.12M (0.83×); self curriculum 4.61M (0.75×). Bar ≤0.67×. Both curricula bring the jump to about 75% roughly 2× earlier (median first ≥64/128 at 2.05M and 2.56M vs 5.12M), and the demo-free self curriculum matches the demo one. All arms then plateau at 75–85%. Final stage counts: in every run 128/128 episodes end on the bin, released; all failures are the sphere still moving at the last step (`is_obj_static`). About 27 trainer minutes per run.
 
 ### h1: hard-task headroom probe (2 seeds; PPO 30.72M, td3-utd16 10.24M)
-PegInsertionSide: PPO 0 and 2/128; td3-utd16 82 and 75, still rising. PushT: PPO 7 and 22 (unstable); td3-utd16 127 and 128. PullCubeTool: PPO 79 and 114; td3-utd16 127 and 128. PlugCharger: 0 for all. Trainer minutes: PPO 18–36, td3-utd16 34–42. Without any retuning, the StackCube lesson (high-update-ratio TD3) transfers to three harder tasks and is the only learner here that solves PushT and PullCubeTool reliably within the budget. PegInsertionSide is chosen as the next target.
+PegInsertionSide: PPO 0 and 2/128; td3-utd16 82 and 75, still rising. PushT: PPO 7 and 22 (unstable); td3-utd16 127 and 128. PullCubeTool: PPO 79 and 114; td3-utd16 127 and 128. PlugCharger: 0 for all, but its ManiSkill dense reward is identically zero, so it was never a learnable configuration here (corrected Nov 2). Trainer minutes: PPO 18–36, td3-utd16 34–42. Without any retuning, the StackCube lesson (high-update-ratio TD3) transfers to three harder tasks and is the only learner here that solves PushT and PullCubeTool reliably within the budget. PegInsertionSide is chosen as the next target.
 
 ### c2: reverse curriculum on StackCube — negative
 Frozen scorer, public development episodes. Median T80: control 3.07M; rc-self 3.07M (1.0×); rc-demo 3.58M (1.17×). Finals 114–125 for all arms. The curriculum only helps where success is a rare frontier for a long stretch. It is not a category-level method on this evidence.
@@ -339,6 +339,18 @@ T80 6.66, 4.61, 6.66, 7.17, 7.17M (median 6.66M); finals 125, 128, 127, 121, 118
 ### s1: attribution
 - γ 0.97: median T80 7.17M, finals 125–127, the same as γ 0.95.
 - PPO at γ 0.95: 0/128 throughout 30.72M on seeds 11–13. The prediction held: the gain needs the off-policy learner *and* a discount matched to the horizon.
-- PlugCharger at γ 0.97: 0/128 on seeds 11–13. The prediction held. There is no success signal for the discount to propagate.
+- PlugCharger at γ 0.97: 0/128 on seeds 11–13. **Correction:** ManiSkill's PlugCharger dense reward is identically zero, so these runs, and the h1 PlugCharger runs, had no training signal at all. They say nothing about the learner or the discount (see b1).
 
 **Transferable lesson (candidate, one task so far):** scale γ with the episode horizon. StackCube (50 steps) is best at 0.9 and worse at 0.95 under PPO. PegInsertionSide (100 steps) needs at least 0.95. This should be tested as a registered prediction on another long-horizon task before it is called a rule.
+
+## Nov 2 (owner approved "sure do both")
+
+### g1: horizon-scaled discount on an unseen task (RollBall-v1, H = 80, rule γ = 0.94)
+On the registered metric, success at episode end, both γ 0.9 and γ 0.94 stay at 0–3/128 throughout 10.24M. The ball passes through the goal without stopping, so the stronger prediction fails (g94 T80 on 0/3 seeds).
+
+Exploratory, not registered: the ball ever reached the goal in 90–107/128 episodes under γ 0.94, still rising, versus 16–38/128 under γ 0.9, which plateaued by about 3M. The discount effect is large on reaching the goal, but neither arm solves RollBall's actual success condition. About 34 trainer minutes per run.
+
+### pc1: PlugCharger with sparse reward plus AlphaNIST-style success-guided demo starts — fails
+Both arms score 0/128 from normal starts. With success-guided starts from 10 motion-planned demos, which cost 2,756 transitions, training succeeds only from states in the last ~3% of each demo: curriculum success reaches 22–28%. The frontier barely moves back, because 200-step aligned episodes allow only ~50 resets per env in 10.24M steps. The method's precondition is many short resets, which our trainer's fixed-horizon design does not provide.
+
+Separately, the first launch of this batch was named `b1`, which collided with an Oct 31 batch name. The trainer refused to overwrite the existing runs (FileExistsError), and the launch was stopped. The old b1 runs are intact, but its scores-volume `coordinator.jsonl` gained a few lines from this launch: a submit event, six spawned events, and two failed events at t ≈ 1793628330.
