@@ -3,6 +3,14 @@
 A small foundation for autonomous experiments on robot policies. ManiSkill and
 PyTorch are the intended simulator/training stack. No Tinker service is needed.
 
+## Blog
+
+- [Where robotics is heading](blog/2026-11-autoresearch-robotics/README.md) (Nov 17, 2026): what an agent
+  running hundreds of quick ManiSkill experiments achieved, where its lessons transferred, and what it didn't invent.
+  [All posts](blog/README.md).
+
+## Overview
+
 The [experiment ledger](docs/experiment-ledger.md) covers all 72 completed
 scientific training runs, including changes, tasks, time, steps, per-seed results
 and current work. The 50M StackCube recipe reaches 98.70% development and 95.90%
