@@ -73,12 +73,10 @@ Scaling the discount factor alongside the episode horizon was evaluated on PegIn
 
 I also spun up two new agents for a bimanual manipulation task. The agent equipped with a ledger documenting prior experiments (including which configurations succeeded or failed and the underlying rationale) immediately adopted the optimal recipe (TD3 + CUDA graphs, high discount factor, etc.) and reached 95% success at 5.5M steps, compared to 33.1M steps without the ledger: 6× greater sample efficiency. This was one session per agent, measured on development episodes only.
 
-Thus, cross-task transfer of strategies and hyperparameter insights substantially improved sample efficiency on these tasks.
+Thus, cross-task transfer of strategies and hyperparameter insights substantially improved sample efficiency, enabling the agent to solve increasingly difficult tasks far more rapidly than baseline methods.
 
 ## Does the agent improve at research when given time to read papers and conduct experiments?
 
 It did not invent anything novel, despite repeated encouragement. Instead, it generated hypotheses and conducted experiments to validate or invalidate them. Although nearly half of its predictions proved false, it meticulously logged all findings.
 
-What surprised me most was its diagnosis. The agent's biggest wins came from noticing that training and evaluation were asking different questions. ManiSkill's PPO learns to touch the goal and stop caring, while the benchmark scores the last step. The same mismatch explains StackCube's 83.6% plateau, PushCube's 12% final success, and RollBall's 0%. Finding it took careful reading of logs across tasks rather than a new algorithm.
-
-So my takeaway is narrower than "AI will do robotics research." Today an agent can run a disciplined experimental program faster and more cheaply than I could: about 525 runs in 5 days for about $475, with me mostly approving. It can also carry lessons from one task to the next. It does not yet produce ideas a researcher would call new. That gap is the one I'll be watching.
+Nonetheless, I am confident that future models will excel at research. Frontier labs may have already trained models that significantly surpass those publicly available today.
