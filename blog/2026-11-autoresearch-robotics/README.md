@@ -79,4 +79,4 @@ Thus, cross-task transfer of strategies and hyperparameter insights substantiall
 
 It did not invent anything novel, despite repeated encouragement. Instead, it generated hypotheses and conducted experiments to validate or invalidate them. Although nearly half of its predictions proved false, it meticulously logged all findings.
 
-Nonetheless, I am confident that future models will excel at research. Frontier labs may have already trained models that significantly surpass those publicly available today.
+So while publicly available models aren't there yet, we have evidence that labs are working on developing models that can do scientific research, and I expect that it would accelerate robotics deployments.
