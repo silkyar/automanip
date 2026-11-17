@@ -43,9 +43,9 @@ For sample efficiency, substantial gains came from heavy experience reuse in TD3
 
 The agent also attempted to reproduce ManiSkill's results using their published configs; the comparison below contrasts those results with AutoManip's. "Unreached" indicates that the system never reached the target ≥94% performance threshold (93.75%, held over three consecutive evaluations and still met at the last evaluation).
 
-![Sample efficiency: steps to 94% success](assets/sample-efficiency.png)
+<img src="assets/sample-efficiency.png" alt="Sample efficiency: steps to 94% success" width="600">
 
-![Training time and final success](assets/time-and-performance.png)
+<img src="assets/time-and-performance.png" alt="Training time and final success" width="600">
 
 While the results are quite strong, I was more interested in a few meta-level questions:
 
