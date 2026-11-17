@@ -35,7 +35,7 @@ Removing early termination allowed the policy to experience the consequences of 
 
 The resulting policy achieved 94.1% success on separate confirmation episodes, with approximately 17.8 minutes of training per seed on an L4 GPU.
 
-This first phase demonstrated that an AI agent could substantially improve a robot-learning baseline. However, most of the gains came from conventional RL tuning and correcting training-evaluation mismatches, nothing truly novel.
+**This first phase demonstrated that an AI agent could substantially improve a robot-learning baseline. However, most of the gains came from conventional RL tuning and correcting training-evaluation mismatches, nothing truly novel.**
 
 After experimenting with a few more tasks, I asked the agent to shift focus to sample efficiency once high performance (≥94%) on a task was achieved. Over the course of 5 days, during which I mostly just approved experiments and occasionally prioritized certain runs, Claude conducted about 525 training runs at a cost of about $475. Each batch was written down with its predictions before it ran, in the [sample-efficiency plan](../../docs/sample-efficiency-plan-20261031.md), and the [results](../../docs/sample-efficiency-results-20261031.md) are summarized separately.
 
