@@ -51,7 +51,7 @@ While the results are quite strong, I was more interested in a few meta-level qu
 
 ## Does the agent improve at solving tasks over time by transferring knowledge?
 
-Yes. Below are several examples of applying learnings from one task to another.
+**Yes.** Below are several examples of applying learnings from one task to another.
 
 ### Where Transfer Helped
 
@@ -77,6 +77,6 @@ Thus, cross-task transfer of strategies and hyperparameter insights substantiall
 
 ## Does the agent improve at research when given time to read papers and conduct experiments?
 
-It did not invent anything novel, despite repeated encouragement. Instead, it generated hypotheses and conducted experiments to validate or invalidate them. Although nearly half of its predictions proved false, it meticulously logged all findings.
+**It did not invent anything novel, despite repeated encouragement.** Instead, it generated hypotheses and conducted experiments to validate or invalidate them. Although nearly half of its predictions proved false, it meticulously logged all findings.
 
 So while publicly available models aren't there yet, we have evidence that labs are working on developing models that can do scientific research, and I expect that it would accelerate robotics deployments.
