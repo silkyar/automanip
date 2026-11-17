@@ -73,7 +73,7 @@ Scaling the discount factor alongside the episode horizon was evaluated on PegIn
 
 I also spun up two new agents for a bimanual manipulation task. The agent equipped with a ledger documenting prior experiments (including which configurations succeeded or failed and the underlying rationale) immediately adopted the optimal recipe (TD3 + CUDA graphs, high discount factor, etc.) and reached 95% success at 5.5M steps, compared to 33.1M steps without the ledger: 6× greater sample efficiency. This was one session per agent, measured on development episodes only.
 
-Thus, cross-task transfer of strategies and hyperparameter insights substantially improved sample efficiency, enabling the agent to solve increasingly difficult tasks far more rapidly than baseline methods.
+**Thus, cross-task transfer of strategies and hyperparameter insights substantially improved sample efficiency, enabling the agent to solve increasingly difficult tasks far more rapidly than baseline methods.**
 
 ## Does the agent improve at research when given time to read papers and conduct experiments?
 
