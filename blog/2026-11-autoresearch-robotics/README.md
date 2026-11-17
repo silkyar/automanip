@@ -4,7 +4,7 @@
 
 I see the field of robotics shifting in two major ways.
 
-First, AI will do most of the robotics research. There are reports of AI already assisting R&D for building AI models. According to OpenAI, they [hit their milestone for an autonomous research intern in September 2026](https://www.helpnetsecurity.com/2026/09/07/openai-research-automation-intern/) and predict that they will create an automated AI researcher by early 2028 ([OpenAI's post](https://openai.com/index/research-acceleration-view-inside-openai/)). This would apply to robotics as well, and we will witness agents coming up with novel algorithms to solve robotics tasks under a multitude of constraints, such as edge inference and sample efficiency.
+First, AI will do most of the robotics research. There are reports of AI already assisting R&D for building AI models. [According to OpenAI](https://openai.com/index/research-acceleration-view-inside-openai/), they hit their milestone for an autonomous research intern in September 2026 and predict that they will create an automated AI researcher by early 2028. This would apply to robotics as well, and we will witness agents coming up with novel algorithms to solve robotics tasks under a multitude of constraints, such as edge inference and sample efficiency.
 
 Second, frontier models can directly perform robotics tasks. Astra was the first major release in this direction in September 2026, and other labs have since followed suit. We will distill these models into cheaper models and use deployment data to improve them. The focus is shifting from large-scale human data collection to simulation-driven data generation and iteration (real-to-sim-to-real).
 
